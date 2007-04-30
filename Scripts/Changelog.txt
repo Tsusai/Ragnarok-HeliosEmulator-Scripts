@@ -1,3 +1,7 @@
+- Rev 3 -
+[2007/04/29] Tsusai - Removed MapLoaders directory.
+-
+
 - Rev 2 -
 [2007/04/22] Tsusai - Added Core folder with Core.lua and NPC_ID.lua
 [2007/04/22] Tsusai - Added MapLoaders directory.
