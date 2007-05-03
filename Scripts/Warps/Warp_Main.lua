@@ -1,0 +1,1 @@
+require "Scripts/Warps/novice_link"
