@@ -1,3 +1,7 @@
+- Rev 4 -
+[2007/05/02] Tsusai - Added novice training ground warps and some folders.
+-
+
 - Rev 3 -
 [2007/04/29] Tsusai - Removed MapLoaders directory.
 -
