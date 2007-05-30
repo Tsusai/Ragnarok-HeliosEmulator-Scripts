@@ -1,1 +1,5 @@
-require "Scripts/Warps/novice_link"
+require "Scripts/Warps/Jobs/novice_training_1"
+require "Scripts/Warps/Jobs/novice_training_2"
+require "Scripts/Warps/Jobs/novice_training_3"
+require "Scripts/Warps/Jobs/novice_training_4"
+require "Scripts/Warps/Jobs/novice_training_5"
