@@ -15,3 +15,7 @@
 
 -- Warp master list
    require("Scripts/Warps/Warp_Main")
+
+-- Quest Master List   
+   require("Scripts/Quests/Quests_Main")
+
