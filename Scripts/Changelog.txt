@@ -1,3 +1,7 @@
+- Rev 6 -
+[2007/06/10] Tsusai - Core/NPC_ID: Added St. Patrick's day sprite
+-
+
 - Rev 5 -
 [2007/05/29] Tsusai - Warps/Jobs/novice_training_0#: Added new versions of warps
 [2007/05/29] Tsusai - Quests/Jobs/novice_1: Added.  Any NPCs that are supported
