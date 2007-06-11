@@ -1,3 +1,7 @@
+- Rev 7 -
+[2007/06/11] RaX - Added Custom script folder along with a custom warper.
+-
+
 - Rev 6 -
 [2007/06/10] Tsusai - Core/NPC_ID: Added St. Patrick's day sprite
 -
