@@ -19,3 +19,5 @@
 -- Quest Master List   
    require("Scripts/Quests/Quests_Main")
 
+-- Custom Master List   
+   require("Scripts/Custom/Custom_Main")
