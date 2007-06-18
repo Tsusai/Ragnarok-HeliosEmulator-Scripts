@@ -1,3 +1,8 @@
+- Rev 8 -
+[2007/06/11] Tsusai - Core/NPC_ID: Added L0ne_W0lf's changes.  Some NPCs
+ had their IDs as part of their names.
+-
+
 - Rev 7 -
 [2007/06/11] RaX - Added Custom script folder along with a custom warper.
 -
