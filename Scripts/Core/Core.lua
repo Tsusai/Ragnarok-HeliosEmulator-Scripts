@@ -21,3 +21,6 @@
 
 -- Custom Master List   
    require("Scripts/Custom/Custom_Main")
+
+-- Sample MasterList
+   require("Scripts/Sample/Sample_Main")
