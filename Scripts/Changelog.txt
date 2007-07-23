@@ -1,3 +1,8 @@
+- Rev 10 -
+[2007/07/22] Tsusai - Added a sample script for zeny subtraction and addition
+ (reflects server rev 294)
+-
+
 - Rev 9 -
 [2007/07/22] Tsusai - Added a sample script for menu and character vars
  (reflects server rev 293)
