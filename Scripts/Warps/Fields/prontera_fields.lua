@@ -12,11 +12,12 @@
 -- |-------------------------------------------------------------|
 -- | Current Version: 1.0      | Episode 10.3 File.              |
 -- |-------------------------------------------------------------|
--- | 11/26/2007 : prontera_fields Created. [RabidChocobo]        |
+-- | 26/11/2007 : prontera_fields Created. [RabidCh]             |
+-- | 26/11/2007 : prt_fild08 -> izlude warp added. [RabidCh]     |
 -- |-------------------------------------------------------------|
 -- | Credits: Gravity                                            |
 -- |-------------------------------------------------------------|
--- | Notes: Converted to Helios by RabidChocobo with Tsusai's    |
+-- | Notes: Converted to Helios by RabidCh with Tsusai's         |
 -- | Aegis Script Converter                                      |
 -- |                                                             |
 -- \____________________________________________________________/
@@ -437,3 +438,7 @@ function p05f_m09d()
 	moveto("mjolnir_09",106,34)
 end
 
+warp("prt_fild08","Field_Iz",371,212,3,3)
+function Field_Iz()
+	moveto("izlude",35,78)
+end

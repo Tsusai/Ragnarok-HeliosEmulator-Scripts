@@ -12,11 +12,11 @@
 -- |-------------------------------------------------------------|
 -- | Current Version: 1.0      | Episode 10.3 File.              |
 -- |-------------------------------------------------------------|
--- | 11/26/2007 : geffen_town Created. [RabidChocobo]            |
+-- | 26/11/2007 : geffen_town Created. [RabidCh]                 |
 -- |-------------------------------------------------------------|
 -- | Credits: Gravity                                            |
 -- |-------------------------------------------------------------|
--- | Notes: Converted to Helios by RabidChocobo with Tsusai's    |
+-- | Notes: Converted to Helios by RabidCh with Tsusai's         |
 -- | Aegis Script Converter                                      |
 -- |                                                             |
 -- \____________________________________________________________/

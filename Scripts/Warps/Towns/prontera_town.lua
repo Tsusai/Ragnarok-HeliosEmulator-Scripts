@@ -13,7 +13,7 @@
 -- | Current Version: 1.0      | Episode 10.3 File.              |
 -- |-------------------------------------------------------------|
 -- | 05/12/2006 : Added 1st Version. [Muad_Dib]                  |
--- | 11/26/2007 : Split up warps into fields towns etc. and      |
+-- | 26/11/2007 : Split up warps into fields towns etc. and      |
 -- | renamed prontera_link to prontera_town. [RabidChocobo]      |
 -- |-------------------------------------------------------------|
 -- | Credits: Gravity                                            |
