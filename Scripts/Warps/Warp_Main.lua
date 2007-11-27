@@ -1,5 +1,29 @@
-require "Scripts/Warps/Jobs/novice_training_1"
-require "Scripts/Warps/Jobs/novice_training_2"
-require "Scripts/Warps/Jobs/novice_training_3"
-require "Scripts/Warps/Jobs/novice_training_4"
-require "Scripts/Warps/Jobs/novice_training_5"
+require("Scripts/Warps/Jobs/novice_training_1")
+require("Scripts/Warps/Jobs/novice_training_2")
+require("Scripts/Warps/Jobs/novice_training_3")
+require("Scripts/Warps/Jobs/novice_training_4")
+require("Scripts/Warps/Jobs/novice_training_5")
+-------------------- Towns -----------------------
+require("Scripts/Warps/Towns/prontera_town")
+require("Scripts/Warps/Towns/aldebaran_town")
+require("Scripts/Warps/Towns/payon_town")
+require("Scripts/Warps/Towns/geffen_town")
+require("Scripts/Warps/Towns/morroc_town")
+require("Scripts/Warps/Towns/izlude_town")
+-------------------- Dungeons --------------------
+require("Scripts/Warps/Dungeons/anthell")
+require("Scripts/Warps/Dungeons/gef_dun")
+require("Scripts/Warps/Dungeons/in_sphinx")
+require("Scripts/Warps/Dungeons/iz_dun")
+require("Scripts/Warps/Dungeons/mjo_dun")
+require("Scripts/Warps/Dungeons/moc_pryd")
+require("Scripts/Warps/Dungeons/orcsdun")
+require("Scripts/Warps/Dungeons/pay_dun")
+require("Scripts/Warps/Dungeons/prt_maze")
+require("Scripts/Warps/Dungeons/prt_sewb")
+-------------------- Fields ----------------------
+require("Scripts/Warps/Fields/prontera_fields")
+require("Scripts/Warps/Fields/mjolnir_fields")
+require("Scripts/Warps/Fields/payon_fields")
+require("Scripts/Warps/Fields/geffen_fields")
+require("Scripts/Warps/Fields/morroc_fields")

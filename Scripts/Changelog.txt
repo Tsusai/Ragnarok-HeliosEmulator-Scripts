@@ -1,3 +1,8 @@
+- Rev 11 -
+[2007/11/26] RabidChocobo - Added prontera_link.sc from Aegis and split it up into different files
+[2007/11/26] RabidChocobo - Renamed Cities/ to Towns/
+-
+
 - Rev 10 -
 [2007/07/22] Tsusai - Added a sample script for zeny subtraction and addition
  (reflects server rev 294)
