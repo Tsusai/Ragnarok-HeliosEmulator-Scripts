@@ -1,3 +1,8 @@
+- Rev 13 -
+[2007/11/27] RabidCh - Added glastheim_link.sc, alberta_link.sc from Yaros
+[2007/11/27] RabidCh - Added alberta_town and treasure from split alberta_link.sc
+-
+
 - Rev 12 -
 [2007/11/26] RabidCh - Merged izlude_link.sc from Yaros with izlude_town, prontera_fields, iz_dun.
 [2007/11/26] RabidCh - Fixed previous change dates on the warp scripts from Rev 11.
