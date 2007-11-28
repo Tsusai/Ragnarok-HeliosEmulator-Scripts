@@ -174,8 +174,8 @@ function KASINO_to_2f_1()
 	moveto("cmd_in02",63,73)
 end
 
-warp("cmd_in02","2f_1_to_KASINO",58,74,1,1)
-function 2f_1_to_KASINO()
+warp("cmd_in02","_2f_1_to_KASINO",58,74,1,1)
+function _2f_1_to_KASINO()
 	moveto("cmd_in02",166,116)
 end
 
@@ -184,7 +184,7 @@ function KASINO_to_2f_2()
 	moveto("cmd_in02",84,37)
 end
 
-warp("cmd_in02","2f_2_to_KASINO",90,37,1,1)
-function 2f_2_to_KASINO()
+warp("cmd_in02","_2f_2_to_KASINO",90,37,1,1)
+function _2f_2_to_KASINO()
 	moveto("cmd_in02",191,77)
 end
