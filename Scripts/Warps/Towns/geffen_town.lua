@@ -89,14 +89,14 @@ function Mage_Academyi()
 	moveto("geffen_in",162,97)
 end
 
-__warp "geffen_in" "Etco" 166 55 25 15
-__	moveto "geffen"
-__return
-
-__warp "geffen" "Etci"
-__	moveto "geffen_in" 166 52
-__return
-
+--warp "geffen_in" "Etco" 166 55 25 15
+--	moveto "geffen"
+--return
+--
+--warp "geffen" "Etci"
+--	moveto "geffen_in" 166 52
+--return
+--
 warp("geffen_in","PubInno",70,48,3,2)
 function PubInno()
 	moveto("geffen",168,170)
@@ -237,68 +237,68 @@ function UndergroundB_()
 	moveto("gef_tower",158,107)
 end
 
-warp("gef_tower","1F_L_U",38,160,2,1)
-function 1F_L_U()
+warp("gef_tower","_1F_L_U",38,160,2,1)
+function _1F_L_U()
 	moveto("gef_tower",42,90)
 end
 
-warp("gef_tower","1F_R_U",66,156,2,1)
-function 1F_R_U()
+warp("gef_tower","_1F_R_U",66,156,2,1)
+function _1F_R_U()
 	moveto("gef_tower",42,90)
 end
 
-warp("gef_tower","2F_L_D",42,86,1,1)
-function 2F_L_D()
+warp("gef_tower","_2F_L_D",42,86,1,1)
+function _2F_L_D()
 	moveto("gef_tower",38,157)
 end
 
-warp("gef_tower","2F_R_U",62,87,1,1)
-function 2F_R_U()
+warp("gef_tower","_2F_R_U",62,87,1,1)
+function _2F_R_U()
 	moveto("gef_tower",60,30)
 end
 
-warp("gef_tower","3F_R_D",60,34,1,1)
-function 3F_R_D()
+warp("gef_tower","_3F_R_D",60,34,1,1)
+function _3F_R_D()
 	moveto("gef_tower",60,90)
 end
 
-warp("gef_tower","3F_L_U",44,36,1,1)
-function 3F_L_U()
+warp("gef_tower","_3F_L_U",44,36,1,1)
+function _3F_L_U()
 	moveto("gef_tower",106,162)
 end
 
-warp("gef_tower","4F_L_D",106,158,1,1)
-function 4F_L_D()
+warp("gef_tower","_4F_L_D",106,158,1,1)
+function _4F_L_D()
 	moveto("gef_tower",44,33)
 end
 
-warp("gef_tower","4F_R_U",120,158,1,1)
-function 4F_R_U()
+warp("gef_tower","_4F_R_U",120,158,1,1)
+function _4F_R_U()
 	moveto("gef_tower",118,111)
 end
 
-warp("gef_tower","5F_R_D",118,114,1,1)
-function 5F_R_D()
+warp("gef_tower","_5F_R_D",118,114,1,1)
+function _5F_R_D()
 	moveto("gef_tower",120,161)
 end
 
-warp("gef_tower","5F_L_U",106,115,1,1)
-function 5F_L_U()
+warp("gef_tower","_5F_L_U",106,115,1,1)
+function _5F_L_U()
 	moveto("gef_tower",106,72)
 end
 
-warp("gef_tower","6F_L_D",106,69,1,1)
-function 6F_L_D()
+warp("gef_tower","_6F_L_D",106,69,1,1)
+function _6F_L_D()
 	moveto("gef_tower",106,112)
 end
 
-warp("gef_tower","6F_R_U",118,68,1,1)
-function 6F_R_U()
+warp("gef_tower","_6F_R_U",118,68,1,1)
+function _6F_R_U()
 	moveto("gef_tower",116,28)
 end
 
 warp("gef_tower","7F_R_D",116,31,1,1)
-function 7F_R_D()
+function _7F_R_D()
 	moveto("gef_tower",118,71)
 end
 
