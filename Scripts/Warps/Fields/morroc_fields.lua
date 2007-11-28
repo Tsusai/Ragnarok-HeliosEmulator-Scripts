@@ -12,11 +12,12 @@
 -- |-------------------------------------------------------------|
 -- | Current Version: 1.0      | Episode 10.3 File.              |
 -- |-------------------------------------------------------------|
--- | 26/11/2007 : morroc_fields Created. [RabidChocobo]          |
+-- | 26/11/2007 : morroc_fields Created from prontera_link.      |
+-- | 27/11/2007 : Morroc warp added from comodo_link. [RabidCh]  |
 -- |-------------------------------------------------------------|
 -- | Credits: Gravity                                            |
 -- |-------------------------------------------------------------|
--- | Notes: Converted to Helios by RabidChocobo with Tsusai's    |
+-- | Notes: Converted to Helios by RabidCh with Tsusai's         |
 -- | Aegis Script Converter                                      |
 -- |                                                             |
 -- \____________________________________________________________/
@@ -473,3 +474,7 @@ function m19_sphinx1()
 	moveto("in_sphinx1",288,9)
 end
 
+warp("moc_fild18","moc_fild18_to_cmd_fild09",51,170,1,3)
+function moc_fild18_to_cmd_fild09()
+	moveto("cmd_fild09",363,164)
+end

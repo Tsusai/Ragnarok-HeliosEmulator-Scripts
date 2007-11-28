@@ -12,7 +12,8 @@
 -- |-------------------------------------------------------------|
 -- | Current Version: 1.0      | Episode 10.3 File.              |
 -- |-------------------------------------------------------------|
--- | 26/11/2007 : payon_fields Created. [RabidChocobo]           |
+-- | 26/11/2007 : Created from prontera_link. [RabidCh]          |
+-- | 27/11/2007 : Added warp to Payon from payon_link [RabidCh]  |
 -- |-------------------------------------------------------------|
 -- | Credits: Gravity                                            |
 -- |-------------------------------------------------------------|
@@ -20,6 +21,11 @@
 -- | Aegis Script Converter                                      |
 -- |                                                             |
 -- \____________________________________________________________/
+
+warp("pay_fild01","pay_South_Field",333,361,5,3)
+function pay_South_Field()
+	moveto("payon",122,31)
+end
 
 warp("pay_fild01","p01a_m03b",13,152,2,7)
 function p01a_m03b()

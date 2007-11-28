@@ -12,14 +12,40 @@
 -- |-------------------------------------------------------------|
 -- | Current Version: 1.0      | Episode 10.3 File.              |
 -- |-------------------------------------------------------------|
--- | 26/11/2007 : pay_dun Created. [RabidChocobo]                |
+-- | 26/11/2007 : Created pay_dun from prontera_link. [RabidCh]  |
+-- | 27/11/2007 : Added warps from payon_link. [RabidCh]         |
 -- |-------------------------------------------------------------|
 -- | Credits: Gravity                                            |
 -- |-------------------------------------------------------------|
--- | Notes: Converted to Helios by RabidChocobo with Tsusai's    |
+-- | Notes: Converted to Helios by RabidCh with Tsusai's         |
 -- | Aegis Script Converter                                      |
 -- |                                                             |
 -- \____________________________________________________________/
+
+warp("pay_dun00","Dungeon_Fronto",21,186,2,2)
+function Dungeon_Fronto()
+	moveto("pay_arche",39,131)
+end
+
+warp("pay_dun00","d0_d1",184,33,2,7)
+function d0_d1()
+	moveto("pay_dun01",19,33)
+end
+
+warp("pay_dun01","d1_d0",15,33,2,6)
+function d1_d0()
+	moveto("pay_dun00",181,33)
+end
+
+warp("pay_dun01","d1_d2",286,25,2,7)
+function d1_d2()
+	moveto("pay_dun02",19,63)
+end
+
+warp("pay_dun02","d2_d1",16,63,2,7)
+function d2_d1()
+	moveto("pay_dun01",283,28)
+end
 
 warp("pay_dun02","Payon3_4F",137,128,4,1)
 function Payon3_4F()
