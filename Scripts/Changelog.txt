@@ -1,3 +1,7 @@
+- Rev 16 -
+[2007/11/27] RabidCh - Fixed function names in Warps/Towns/geffen_town.lua >:(
+-
+
 - Rev 15 -
 [2007/11/27] RabidCh - Fixed a broken function name in Warps/Towns/comodo_town.lua
 -
