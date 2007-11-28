@@ -32,8 +32,8 @@ function Geffen_Dungeon3_2()
 	moveto("gef_dun01",197,40)
 end
 
-warp("gef_dun00","UndergroundC'",104,103,3,3)
-function UndergroundC'()
+warp("gef_dun00","UndergroundC_",104,103,3,3)
+function UndergroundC_()
 	moveto("gef_tower",153,31)
 end
 
