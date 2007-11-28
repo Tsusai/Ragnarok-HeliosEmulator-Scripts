@@ -12,7 +12,9 @@
 -- |-------------------------------------------------------------|
 -- | Current Version: 1.0      | Episode 10.3 File.              |
 -- |-------------------------------------------------------------|
--- | 26/11/2007 : geffen_fields Created. [RabidChocobo]          |
+-- | 26/11/2007 : geffen_fields Created from prontera_link.      |
+-- | 27/11/2007 : Added warps from comodo_link.                  |
+-- |              Added warp from geffen_link. [RabidCh]         |
 -- |-------------------------------------------------------------|
 -- | Credits: Gravity                                            |
 -- |-------------------------------------------------------------|
@@ -20,6 +22,11 @@
 -- | Aegis Script Converter                                      |
 -- |                                                             |
 -- \____________________________________________________________/
+
+warp("gef_fild00","Western_Field_gef",40,199,2,7)
+function Western_Field_gef()
+	moveto("geffen",213,119)
+end
 
 warp("gef_fild00","g00a_00a",381,137,3,9)
 function g00a_00a()
@@ -231,3 +238,72 @@ function g10_orc_in()
 	moveto("in_orcs01",162,53)
 end
 
+warp("gef_fild07","gef07a_gef13a",40,19,1,1)
+function gef07a_gef13a()
+	moveto("gef_fild13",41,369)
+end
+
+warp("gef_fild08","gef08a_gef12a",215,18,1,1)
+function gef08a_gef12a()
+	moveto("gef_fild12",221,369)
+end
+
+warp("gef_fild09","gef09a_gef13b",23,56,1,1)
+function gef09a_gef13b()
+	moveto("gef_fild13",376,56)
+end
+
+warp("gef_fild10","gef10a_gef14b",27,219,1,1)
+function gef10a_gef14b()
+	moveto("gef_fild14",367,219)
+end
+
+warp("gef_fild12","gef12a_gef08a",221,374,1,1)
+function gef12a_gef08a()
+	moveto("gef_fild08",215,25)
+end
+
+warp("gef_fild12","gef12b_gef13e",368,180,1,1)
+function gef12b_gef13e()
+	moveto("gef_fild13",29,202)
+end
+
+warp("gef_fild12","gef12c_gef13d",373,50,1,1)
+function gef12c_gef13d()
+	moveto("gef_fild13",29,59)
+end
+
+warp("gef_fild13","gef13a_gef07a",41,373,1,1)
+function gef13a_gef07a()
+	moveto("gef_fild07",40,23)
+end
+
+warp("gef_fild13","gef13b_gef09a",380,56,1,1)
+function gef13b_gef09a()
+	moveto("gef_fild09",27,56)
+end
+
+warp("gef_fild13","gef13c_gef14a",200,25,1,1)
+function gef13c_gef14a()
+	moveto("gef_fild14",180,357)
+end
+
+warp("gef_fild13","gef13d_gef12c",25,59,1,1)
+function gef13d_gef12c()
+	moveto("gef_fild12",369,50)
+end
+
+warp("gef_fild13","gef13e_gef12b",25,202,1,1)
+function gef13e_gef12b()
+	moveto("gef_fild12",364,180)
+end
+
+warp("gef_fild14","gef14a_gef13c",180,360,1,1)
+function gef14a_gef13c()
+	moveto("gef_fild13",200,29)
+end
+
+warp("gef_fild14","gef14b_gef10a",371,219,1,1)
+function gef14b_gef10a()
+	moveto("gef_fild10",31,219)
+end

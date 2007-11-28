@@ -1,3 +1,8 @@
+- Rev 14 -
+[2007/11/27] RabidCh - Added comodo_link.sc, geffen_link.sc, payon_link.sc, xmas_link.sc from Yaros
+[2007/11/27] RabidCh - Added Comodo warps, Payon warps, Geffen warps, and Lutie warps.
+-
+
 - Rev 13 -
 [2007/11/27] RabidCh - Added glastheim_link.sc, alberta_link.sc from Yaros
 [2007/11/27] RabidCh - Added alberta_town and treasure from split alberta_link.sc
