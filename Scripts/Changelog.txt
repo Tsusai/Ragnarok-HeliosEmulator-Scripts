@@ -1,3 +1,7 @@
+- Rev 18 -
+[2007/11/28] RabidCh - Added Clock Tower and Yuno warps.
+-
+
 - Rev 17 -
 [2007/11/27] RabidCh - Fixed the rest of the broken scripts from Revision 14.
 -
