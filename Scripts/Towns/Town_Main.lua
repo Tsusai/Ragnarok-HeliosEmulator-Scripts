@@ -1,4 +1,5 @@
-require("Scripts/Towns/Izlude/iz_npc")
+require("Scripts/Towns/Izlude/izlude")
 require("Scripts/Towns/Veins/veins_npc")
 require("Scripts/Towns/Veins/veins_ryu")
 require("Scripts/Towns/Niflheim/divorce")
+require("Scripts/Towns/Niflheim/Niflheim_1")

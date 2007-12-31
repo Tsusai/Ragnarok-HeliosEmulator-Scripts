@@ -15,6 +15,7 @@ require("Scripts/Warps/Towns/prontera_town")
 require("Scripts/Warps/Towns/xmas_town")
 require("Scripts/Warps/Towns/yuno_town")
 require("Scripts/Warps/Towns/veins_town")
+require("Scripts/Warps/Towns/niflheim_town")
 -------------------- Dungeons --------------------
 require("Scripts/Warps/Dungeons/anthell")
 require("Scripts/Warps/Dungeons/beach_dun")

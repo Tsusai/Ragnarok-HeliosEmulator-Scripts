@@ -19,8 +19,8 @@
 --|                                        	    |--
 --\_________________________________________________/--
 
-npc("nif_in","Deviruchidivorce",spr_4_DEVIRUCHI,190,112,5,0,0,"nif_in_Deviruchidivorce_190112")
-function nif_in_Deviruchidivorce_190112()
+npc("nif_in","Deviruchi",spr_4_DEVIRUCHI,190,112,5,0,0,"nif_in_Deviruchi_190112")
+function nif_in_Deviruchi_190112()
 	if getvar("wedding_sign") == 0 then
 		dialog "[Deviruchi]"
 		dialog "Heh heh..."
@@ -35,7 +35,7 @@ function nif_in_Deviruchidivorce_190112()
 		dialog "I hear that my kind is very"
 		dialog "popular nowadays, heh heh~"
 		close()
-	elseif getvar(VAR_ISMARRIED) == 0 then
+	elseif (GetVar(VAR_ISMARRIED)) == 0 then
 		dialog "[Deviruchi]"
 		dialog "Bwah hah hah~!"
 		dialog "That look in your eyes~!"
@@ -189,8 +189,8 @@ function nif_in_Deviruchidivorce_190112()
 					dialog "being hopelessly married"
 					dialog "^FF0000for the rest of your life.^000000"
 					wait()
-					ShowEffect("Deviruchi#divorce","EF_MAGICROD")
-					ShowEffect("EF_DEVIL")
+					--ShowEffect("divorce","EF_MAGICROD")
+					--ShowEffect("EF_DEVIL")
 					dropgold(2500000)
 					hpdrain(50)
 					hpdrain(50)
