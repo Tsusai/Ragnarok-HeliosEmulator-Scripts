@@ -1,3 +1,7 @@
+- Rev 20 -
+[2007/12/30] Spre - Added Unsaved Change to Scripts/Core/Core.lua
+-
+
 - Rev 19 -
 [2007/12/30] Spre - Added Veins and Izlude Town scripts, Including the Town_Main lua script. Also added warps for Veins. Changed Core/Core.lua to include the new require for the Town_Main.lua that was added to Towns/
 -
