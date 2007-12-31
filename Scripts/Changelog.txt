@@ -1,4 +1,8 @@
-- Rev 26 -
+- Rev 28 -
+[2007/12/31] Spre - Fixed Changelog, If I do this again Imma scream.
+-
+
+- Rev 27 -
 [2007/12/31] Spre - Added Scripts/Towns/Alberta_1, which is the first of 3 alberta town scripts.
 Modified Twn_main.lua to show the NPC.
 -
