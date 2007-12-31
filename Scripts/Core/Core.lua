@@ -13,6 +13,9 @@
 -- Job IDs
 -- require("Scripts/Core/JobID")
 
+-- Lua Const
+   require("Scripts/Core/Var_const")
+
 -- Warp master list
    require("Scripts/Warps/Warp_Main")
 

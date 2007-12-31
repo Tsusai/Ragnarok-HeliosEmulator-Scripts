@@ -1,3 +1,7 @@
+- Rev 21 -
+[2007/12/30] Tsusai - Added Aeomin's Var_Const.lua for character constants.  Requires Core Rev 404
+-
+
 - Rev 20 -
 [2007/12/30] Spre - Added Unsaved Change to Scripts/Core/Core.lua
 -
