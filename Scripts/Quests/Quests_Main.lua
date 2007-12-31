@@ -12,7 +12,7 @@
 --|		   -First Version for Helios  [Spre]    |--
 --|-------------------------------------------------|--
 --| Credits: Gravity                       	    |--
---|		 Muad_Dib                      	    |--
+--|		 Yaros                         	    |--
 --|-------------------------------------------------|--
 --| Notes:                                 	    |--
 --|                                        	    |--
@@ -30,4 +30,5 @@ require("Scripts/Quests/Jobs/novice_1")
 
 require("Scripts/Quests/Items/bunny_band")
 require("Scripts/Quests/Items/smile_event")
-require("Scripts/Quests/Items/solution_mixture")
+--Solution Commented out until it can be fixed
+--require("Scripts/Quests/Items/solution_mixture")

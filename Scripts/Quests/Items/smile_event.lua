@@ -12,7 +12,7 @@
 --|		   -First Version for Helios  [Spre]    |--
 --|-------------------------------------------------|--
 --| Credits: Gravity                       	    |--
---|		 Muad_Dib                      	    |--
+--|		 Yaros                           	    |--
 --|-------------------------------------------------|--
 --| Notes:                                 	    |--
 --|      All item code is commented out             |--
@@ -26,7 +26,7 @@ function prontera_Smile_Assistance_157187()
 	dialog "This is Smile Assistance."
 	dialog "How may I help you ?"
 	wait()
-	local mresulta = menu("^3355FFMr. Smile^000000 ?","Construct ^3355FFMr. Smile^000000 ","Quit")
+	local mresulta = menu("^3355FFMr. Smile^000000 ?","Quit")
 	if mresulta == 1 then
 		dialog "[Smile Girl]"
 		dialog "National Event held by the command of ^5577FFHis majesty Tristram the 3rd^000000,"
@@ -53,36 +53,36 @@ function prontera_Smile_Assistance_157187()
 		dialog "getting together with other people,"
 		dialog "And will try to make Ragnarok the most enjoyable game in the world."
 		close()
-	elseif mresulta == 2 then
+	--elseif mresulta == 2 then
 		--if ((getvar(Jellopy) > 9) and (getvar(Fluff) > 9) and (getvar(Clover) > 9)) then
-			dialog "[Smile Girl]"
-			dialog "Congratulations !"
-			dialog "Now please take this Mr.Smile."
-			wait()
+			--dialog "[Smile Girl]"
+			--dialog "Congratulations !"
+			--dialog "Now please take this Mr.Smile."
+			--wait()
 			--dropitem("Jellopy",10)
 			--dropitem("Fluff",10)
 			--dropitem("Clover",10)
 			--getitem("Mr_Smile",1)
-			dialog "[Smile Girl]"
-			dialog "His majesty,Tristram the 3rd"
-			dialog "has promised to try his best to make Ragnarok better and more enjoyable."
-			wait()
-			dialog "The fact mentioned above"
-			dialog "was announced by"
-			dialog "the Public Information Bureau of the Rune-Midgarts Kingom."
-			close()
-		else
-			dialog "[Smile Girl]"
-			dialog "Oh - unfortunately"
-			dialog "You have not brought"
-			dialog "enough items for Mr. Smile."
-			dialog "^3355FF10 Jellopy^000000"
-			dialog "^3355FF10 Fluff^000000"
-			dialog "^3355FF10 Clover^000000"
-			dialog "Please check the requirements above."
-			close()
-		end
-	elseif mresulta == 3 then
+			--dialog "[Smile Girl]"
+			--dialog "His majesty,Tristram the 3rd"
+			--dialog "has promised to try his best to make Ragnarok better and more enjoyable."
+			--wait()
+			--dialog "The fact mentioned above"
+			--dialog "was announced by"
+			--dialog "the Public Information Bureau of the Rune-Midgarts Kingom."
+			--close()
+		--else
+			--dialog "[Smile Girl]"
+		--	dialog "Oh - unfortunately"
+			--dialog "You have not brought"
+			--dialog "enough items for Mr. Smile."
+			--dialog "^3355FF10 Jellopy^000000"
+			--dialog "^3355FF10 Fluff^000000"
+			--dialog "^3355FF10 Clover^000000"
+			--dialog "Please check the requirements above."
+			--close()
+		--end
+	elseif mresulta == 2 then
 		dialog "[Smile Girl]"
 		dialog "Thank you for visiting us."
 		dialog "We .."
@@ -98,7 +98,7 @@ function prontera_Smile_Assistance_157187()
 		close()
 	end
 end
-
+ 
 npc("morocc","Smile Assistance",spr_4_F_03,158,97,4,4,5,"morocc_Smile_Assistance_15897")
 function morocc_Smile_Assistance_15897()
 	dialog "[Smile Girl]"
@@ -106,7 +106,7 @@ function morocc_Smile_Assistance_15897()
 	dialog "This is Smile Assistance."
 	dialog "How may I help you ?"
 	wait()
-	local mresulta = menu("^3355FFMr. Smile^000000 ?","Construct ^3355FFMr. Smile^000000 ","Quit")
+	local mresulta = menu("^3355FFMr. Smile^000000 ?","Quit")
 	if mresulta == 1 then
 		dialog "[Smile Girl]"
 		dialog "National Event held by the command of ^5577FFHis majesty Tristram the 3rd^000000,"
@@ -133,36 +133,36 @@ function morocc_Smile_Assistance_15897()
 		dialog "getting together with other people,"
 		dialog "And will try to make Ragnarok the most enjoyable game in the world."
 		close()
-	elseif mresulta == 2 then
+	--elseif mresulta == 2 then
 		--if ((getvar(Jellopy) > 9) and (getvar(Fluff) > 9) and (getvar(Clover) > 9)) then
-			dialog "[Smile Girl]"
-			dialog "Congratulations!"
-			dialog "Now please take this Mr.Smile."
-			wait()
+			--dialog "[Smile Girl]"
+			--dialog "Congratulations !"
+			--dialog "Now please take this Mr.Smile."
+			--wait()
 			--dropitem("Jellopy",10)
 			--dropitem("Fluff",10)
 			--dropitem("Clover",10)
 			--getitem("Mr_Smile",1)
-			dialog "[Smile Girl]"
-			dialog "His majesty,Tristram the 3rd"
-			dialog "has promised to try his best to make Ragnarok better and more enjoyable."
-			wait()
-			dialog "The fact mentioned above"
-			dialog "was announced by"
-			dialog "the Public Information Bureau of the Rune-Midgarts Kingom."
-			close()
-		else
-			dialog "[Smile Girl]"
-			dialog "Oh - unfortunately"
-			dialog "You have not brought"
-			dialog "enough items for Mr. Smile."
-			dialog "^3355FF10 Jellopy^000000"
-			dialog "^3355FF10 Fluff^000000"
-			dialog "^3355FF10 Clover^000000"
-			dialog "Please check the requirements above."
-			close()
-		end
-	elseif mresulta == 3 then
+			--dialog "[Smile Girl]"
+			--dialog "His majesty,Tristram the 3rd"
+			--dialog "has promised to try his best to make Ragnarok better and more enjoyable."
+			--wait()
+			--dialog "The fact mentioned above"
+			--dialog "was announced by"
+			--dialog "the Public Information Bureau of the Rune-Midgarts Kingom."
+			--close()
+		--else
+			--dialog "[Smile Girl]"
+		--	dialog "Oh - unfortunately"
+			--dialog "You have not brought"
+			--dialog "enough items for Mr. Smile."
+			--dialog "^3355FF10 Jellopy^000000"
+			--dialog "^3355FF10 Fluff^000000"
+			--dialog "^3355FF10 Clover^000000"
+			--dialog "Please check the requirements above."
+			--close()
+		--end
+	elseif mresulta == 2 then
 		dialog "[Smile Girl]"
 		dialog "Thank you for visiting us."
 		dialog "We .."
@@ -178,7 +178,7 @@ function morocc_Smile_Assistance_15897()
 		close()
 	end
 end
-
+ 
 npc("aldebaran","Smile Assistance",spr_4_F_03,136,135,4,4,5,"aldebaran_Smile_Assistance_136135")
 function aldebaran_Smile_Assistance_136135()
 	dialog "[Smile Girl]"
@@ -186,7 +186,7 @@ function aldebaran_Smile_Assistance_136135()
 	dialog "This is Smile Assistance."
 	dialog "How may I help you ?"
 	wait()
-	local mresulta = menu("^3355FFMr. Smile^000000 ?","Construct ^3355FFMr. Smile^000000 ","Quit")
+	local mresulta = menu("^3355FFMr. Smile^000000 ?","Quit")
 	if mresulta == 1 then
 		dialog "[Smile Girl]"
 		dialog "National Event held by the command of ^5577FFHis majesty Tristram the 3rd^000000,"
@@ -213,36 +213,36 @@ function aldebaran_Smile_Assistance_136135()
 		dialog "getting together with other people,"
 		dialog "And will try to make Ragnarok the most enjoyable game in the world."
 		close()
-	elseif mresulta == 2 then
+		--elseif mresulta == 2 then
 		--if ((getvar(Jellopy) > 9) and (getvar(Fluff) > 9) and (getvar(Clover) > 9)) then
-			dialog "[Smile Girl]"
-			dialog "Congratulations!"
-			dialog "Now please take this Mr.Smile."
-			wait()
-		--	dropitem("Jellopy",10)
-			---dropitem("Fluff",10)
+			--dialog "[Smile Girl]"
+			--dialog "Congratulations !"
+			--dialog "Now please take this Mr.Smile."
+			--wait()
+			--dropitem("Jellopy",10)
+			--dropitem("Fluff",10)
 			--dropitem("Clover",10)
 			--getitem("Mr_Smile",1)
-			dialog "[Smile Girl]"
-			dialog "His majesty,Tristram the 3rd"
-			dialog "has promised to try his best to make Ragnarok better and more enjoyable."
-			wait()
-			dialog "The fact mentioned above"
-			dialog "was announced by"
-			dialog "the Public Information Bureau of the Rune-Midgarts Kingom."
-			close()
-		else
-			dialog "[Smile Girl]"
-			dialog "Oh - unfortunately"
-			dialog "You have not brought"
-			dialog "enough items for Mr. Smile."
-			dialog "^3355FF10 Jellopy^000000"
-			dialog "^3355FF10 Fluff^000000"
-			dialog "^3355FF10 Clover^000000."
-			dialog "Please check the requirements above."
-			close()
-		end
-	elseif mresulta == 3 then
+			--dialog "[Smile Girl]"
+			--dialog "His majesty,Tristram the 3rd"
+			--dialog "has promised to try his best to make Ragnarok better and more enjoyable."
+			--wait()
+			--dialog "The fact mentioned above"
+			--dialog "was announced by"
+			--dialog "the Public Information Bureau of the Rune-Midgarts Kingom."
+			--close()
+		--else
+			--dialog "[Smile Girl]"
+		--	dialog "Oh - unfortunately"
+			--dialog "You have not brought"
+			--dialog "enough items for Mr. Smile."
+			--dialog "^3355FF10 Jellopy^000000"
+			--dialog "^3355FF10 Fluff^000000"
+			--dialog "^3355FF10 Clover^000000"
+			--dialog "Please check the requirements above."
+			--close()
+		--end
+	elseif mresulta == 2 then
 		dialog "[Smile Girl]"
 		dialog "Thank you for visiting us."
 		dialog "We .."
@@ -258,7 +258,7 @@ function aldebaran_Smile_Assistance_136135()
 		close()
 	end
 end
-
+ 
 npc("geffen","Smile Assistance",spr_4_F_03,119,107,4,4,5,"geffen_Smile_Assistance_119107")
 function geffen_Smile_Assistance_119107()
 	dialog "[Smile Girl]"
@@ -266,7 +266,7 @@ function geffen_Smile_Assistance_119107()
 	dialog "This is Smile Assistance."
 	dialog "How may I help you ?"
 	wait()
-	local mresulta = menu("^3355FFMr. Smile^000000 ?","Construct ^3355FFMr. Smile^000000 ","Quit")
+	local mresulta = menu("^3355FFMr. Smile^000000 ?","Quit")
 	if mresulta == 1 then
 		dialog "[Smile Girl]"
 		dialog "National Event held by the command of ^5577FFHis majesty Tristram the 3rd^000000,"
@@ -293,36 +293,36 @@ function geffen_Smile_Assistance_119107()
 		dialog "getting together with other people,"
 		dialog "And will try to make Ragnarok the most enjoyable game in the world."
 		close()
-	elseif mresulta == 2 then
+	--elseif mresulta == 2 then
 		--if ((getvar(Jellopy) > 9) and (getvar(Fluff) > 9) and (getvar(Clover) > 9)) then
-			dialog "[Smile Girl]"
-			dialog "Congratulations!"
-			dialog "Now please take this Mr.Smile."
-			wait()
+			--dialog "[Smile Girl]"
+			--dialog "Congratulations !"
+			--dialog "Now please take this Mr.Smile."
+			--wait()
 			--dropitem("Jellopy",10)
 			--dropitem("Fluff",10)
 			--dropitem("Clover",10)
 			--getitem("Mr_Smile",1)
-			dialog "[Smile Girl]"
-			dialog "His majesty,Tristram the 3rd"
-			dialog "has promised to try his best to make Ragnarok better and more enjoyable."
-			wait()
-			dialog "The fact mentioned above"
-			dialog "was announced by"
-			dialog "the Public Information Bureau of the Rune-Midgarts Kingom."
-			close()
-		else
-			dialog "[Smile Girl]"
-			dialog "Oh - unfortunately"
-			dialog "You have not brought"
-			dialog "enough items for Mr. Smile."
-			dialog "^3355FF10 Jellopy^000000"
-			dialog "^3355FF10 Fluff^000000"
-			dialog "^3355FF10 Clover^000000."
-			dialog "Please check the requirements above."
-			close()
-		end
-	elseif mresulta == 3 then
+			--dialog "[Smile Girl]"
+			--dialog "His majesty,Tristram the 3rd"
+			--dialog "has promised to try his best to make Ragnarok better and more enjoyable."
+			--wait()
+			--dialog "The fact mentioned above"
+			--dialog "was announced by"
+			--dialog "the Public Information Bureau of the Rune-Midgarts Kingom."
+			--close()
+		--else
+			--dialog "[Smile Girl]"
+		--	dialog "Oh - unfortunately"
+			--dialog "You have not brought"
+			--dialog "enough items for Mr. Smile."
+			--dialog "^3355FF10 Jellopy^000000"
+			--dialog "^3355FF10 Fluff^000000"
+			--dialog "^3355FF10 Clover^000000"
+			--dialog "Please check the requirements above."
+			--close()
+		--end
+	elseif mresulta == 2 then
 		dialog "[Smile Girl]"
 		dialog "Thank you for visiting us."
 		dialog "We .."
@@ -338,7 +338,7 @@ function geffen_Smile_Assistance_119107()
 		close()
 	end
 end
-
+ 
 npc("alberta","Smile Assistance",spr_4_F_03,113,53,4,4,5,"alberta_Smile_Assistance_11353")
 function alberta_Smile_Assistance_11353()
 	dialog "[Smile Girl]"
@@ -346,7 +346,7 @@ function alberta_Smile_Assistance_11353()
 	dialog "This is Smile Assistance."
 	dialog "How may I help you ?"
 	wait()
-	local mresulta = menu("^3355FFMr. Smile^000000 ?","Construct ^3355FFMr. Smile^000000 ","Quit")
+	local mresulta = menu("^3355FFMr. Smile^000000 ?","Quit")
 	if mresulta == 1 then
 		dialog "[Smile Girl]"
 		dialog "National Event held by the command of ^5577FFHis majesty Tristram the 3rd^000000,"
@@ -373,36 +373,36 @@ function alberta_Smile_Assistance_11353()
 		dialog "getting together with other people,"
 		dialog "And will try to make Ragnarok the most enjoyable game in the world."
 		close()
-	elseif mresulta == 2 then
+	--elseif mresulta == 2 then
 		--if ((getvar(Jellopy) > 9) and (getvar(Fluff) > 9) and (getvar(Clover) > 9)) then
-			dialog "[Smile Girl]"
-			dialog "Congratulations!"
-			dialog "Now please take this Mr.Smile."
-			wait()
+			--dialog "[Smile Girl]"
+			--dialog "Congratulations !"
+			--dialog "Now please take this Mr.Smile."
+			--wait()
 			--dropitem("Jellopy",10)
 			--dropitem("Fluff",10)
 			--dropitem("Clover",10)
 			--getitem("Mr_Smile",1)
-			dialog "[Smile Girl]"
-			dialog "His majesty,Tristram the 3rd"
-			dialog "has promised to try his best to make Ragnarok better and more enjoyable."
-			wait()
-			dialog "The fact mentioned above"
-			dialog "was announced by"
-			dialog "the Public Information Bureau of the Rune-Midgarts Kingom."
-			close()
-		else
-			dialog "[Smile Girl]"
-			dialog "Oh - unfortunately"
-			dialog "You have not brought"
-			dialog "enough items for Mr. Smile."
-			dialog "^3355FF10 Jellopy^000000"
-			dialog "^3355FF10 Fluff^000000"
-			dialog "^3355FF10 Clover^000000."
-			dialog "Please check the requirements above."
-			close()
-		end
-	elseif mresulta == 3 then
+			--dialog "[Smile Girl]"
+			--dialog "His majesty,Tristram the 3rd"
+			--dialog "has promised to try his best to make Ragnarok better and more enjoyable."
+			--wait()
+			--dialog "The fact mentioned above"
+			--dialog "was announced by"
+			--dialog "the Public Information Bureau of the Rune-Midgarts Kingom."
+			--close()
+		--else
+			--dialog "[Smile Girl]"
+		--	dialog "Oh - unfortunately"
+			--dialog "You have not brought"
+			--dialog "enough items for Mr. Smile."
+			--dialog "^3355FF10 Jellopy^000000"
+			--dialog "^3355FF10 Fluff^000000"
+			--dialog "^3355FF10 Clover^000000"
+			--dialog "Please check the requirements above."
+			--close()
+		--end
+	elseif mresulta == 2 then
 		dialog "[Smile Girl]"
 		dialog "Thank you for visiting us."
 		dialog "We .."
@@ -418,7 +418,7 @@ function alberta_Smile_Assistance_11353()
 		close()
 	end
 end
-
+ 
 npc("payon","Smile Assistance",spr_4_F_03,186,104,5,0,0,"payon_Smile_Assistance_186104")
 function payon_Smile_Assistance_186104()
 	dialog "[Smile Girl]"
@@ -426,7 +426,7 @@ function payon_Smile_Assistance_186104()
 	dialog "This is Smile Assistance."
 	dialog "How may I help you ?"
 	wait()
-	local mresulta = menu("^3355FFMr. Smile^000000 ?","Construct ^3355FFMr. Smile^000000 ","Quit")
+	local mresulta = menu("^3355FFMr. Smile^000000 ?","Quit")
 	if mresulta == 1 then
 		dialog "[Smile Girl]"
 		dialog "National Event held by the command of ^5577FFHis majesty Tristram the 3rd^000000,"
@@ -453,36 +453,36 @@ function payon_Smile_Assistance_186104()
 		dialog "getting together with other people,"
 		dialog "And will try to make Ragnarok the most enjoyable game in the world."
 		close()
-	elseif mresulta == 2 then
+--elseif mresulta == 2 then
 		--if ((getvar(Jellopy) > 9) and (getvar(Fluff) > 9) and (getvar(Clover) > 9)) then
-			dialog "[Smile Girl]"
-			dialog "Congratulations!"
-			dialog "Now please take this Mr.Smile."
-			wait()
+			--dialog "[Smile Girl]"
+			--dialog "Congratulations !"
+			--dialog "Now please take this Mr.Smile."
+			--wait()
 			--dropitem("Jellopy",10)
 			--dropitem("Fluff",10)
 			--dropitem("Clover",10)
 			--getitem("Mr_Smile",1)
-			dialog "[Smile Girl]"
-			dialog "His majesty,Tristram the 3rd"
-			dialog "has promised to try his best to make Ragnarok better and more enjoyable."
-			wait()
-			dialog "The fact mentioned above"
-			dialog "was announced by"
-			dialog "the Public Information Bureau of the Rune-Midgarts Kingom."
-			close()
-		else
-			dialog "[Smile Girl]"
-			dialog "Oh - unfortunately"
-			dialog "You have not brought"
-			dialog "enough items for Mr. Smile."
-			dialog "^3355FF10 Jellopy^000000"
-			dialog "^3355FF10 Fluff^000000"
-			dialog "^3355FF10 Clover^000000."
-			dialog "Please check the requirements above."
-			close()
-		end
-	elseif mresulta == 3 then
+			--dialog "[Smile Girl]"
+			--dialog "His majesty,Tristram the 3rd"
+			--dialog "has promised to try his best to make Ragnarok better and more enjoyable."
+			--wait()
+			--dialog "The fact mentioned above"
+			--dialog "was announced by"
+			--dialog "the Public Information Bureau of the Rune-Midgarts Kingom."
+			--close()
+		--else
+			--dialog "[Smile Girl]"
+		--	dialog "Oh - unfortunately"
+			--dialog "You have not brought"
+			--dialog "enough items for Mr. Smile."
+			--dialog "^3355FF10 Jellopy^000000"
+			--dialog "^3355FF10 Fluff^000000"
+			--dialog "^3355FF10 Clover^000000"
+			--dialog "Please check the requirements above."
+			--close()
+		--end
+	elseif mresulta == 2 then
 		dialog "[Smile Girl]"
 		dialog "Thank you for visiting us."
 		dialog "We .."
@@ -498,7 +498,7 @@ function payon_Smile_Assistance_186104()
 		close()
 	end
 end
-
+ 
 npc("izlude","Smile Assistance",spr_4_F_03,129,118,4,4,5,"izlude_Smile_Assistance_129118")
 function izlude_Smile_Assistance_129118()
 	dialog "[Smile Girl]"
@@ -506,7 +506,7 @@ function izlude_Smile_Assistance_129118()
 	dialog "This is Smile Assistance."
 	dialog "How may I help you ?"
 	wait()
-	local mresulta = menu("^3355FFMr. Smile^000000 ?","Construct ^3355FFMr. Smile^000000 ","Quit")
+	local mresulta = menu("^3355FFMr. Smile^000000 ?","Quit")
 	if mresulta == 1 then
 		dialog "[Smile Girl]"
 		dialog "National Event held by the command of ^5577FFHis majesty Tristram the 3rd^000000,"
@@ -533,36 +533,36 @@ function izlude_Smile_Assistance_129118()
 		dialog "getting together with other people,"
 		dialog "And will try to make Ragnarok the most enjoyable game in the world."
 		close()
-	elseif mresulta == 2 then
+	--elseif mresulta == 2 then
 		--if ((getvar(Jellopy) > 9) and (getvar(Fluff) > 9) and (getvar(Clover) > 9)) then
-			dialog "[Smile Girl]"
-			dialog "Congratulations!"
-			dialog "Now please take this Mr.Smile."
-			wait()
+			--dialog "[Smile Girl]"
+			--dialog "Congratulations !"
+			--dialog "Now please take this Mr.Smile."
+			--wait()
 			--dropitem("Jellopy",10)
 			--dropitem("Fluff",10)
 			--dropitem("Clover",10)
 			--getitem("Mr_Smile",1)
-			dialog "[Smile Girl]"
-			dialog "His majesty,Tristram the 3rd"
-			dialog "has promised to try his best to make Ragnarok better and more enjoyable."
-			wait()
-			dialog "The fact mentioned above"
-			dialog "was announced by"
-			dialog "the Public Information Bureau of the Rune-Midgarts Kingom."
-			close()
-		else
-			dialog "[Smile Girl]"
-			dialog "Oh - unfortunately"
-			dialog "You have not brought"
-			dialog "enough items for Mr. Smile."
-			dialog "^3355FF10 Jellopy^000000"
-			dialog "^3355FF10 Fluff^000000"
-			dialog "^3355FF10 Clover^000000."
-			dialog "Please check the requirements above."
-			close()
-		end
-	elseif mresulta == 3 then
+			--dialog "[Smile Girl]"
+			--dialog "His majesty,Tristram the 3rd"
+			--dialog "has promised to try his best to make Ragnarok better and more enjoyable."
+			--wait()
+			--dialog "The fact mentioned above"
+			--dialog "was announced by"
+			--dialog "the Public Information Bureau of the Rune-Midgarts Kingom."
+			--close()
+		--else
+			--dialog "[Smile Girl]"
+		--	dialog "Oh - unfortunately"
+			--dialog "You have not brought"
+			--dialog "enough items for Mr. Smile."
+			--dialog "^3355FF10 Jellopy^000000"
+			--dialog "^3355FF10 Fluff^000000"
+			--dialog "^3355FF10 Clover^000000"
+			--dialog "Please check the requirements above."
+			--close()
+		--end
+	elseif mresulta == 2 then
 		dialog "[Smile Girl]"
 		dialog "Thank you for visiting us."
 		dialog "We .."
