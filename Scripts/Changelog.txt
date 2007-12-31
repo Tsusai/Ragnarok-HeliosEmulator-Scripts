@@ -1,4 +1,9 @@
 - Rev 26 -
+[2007/12/31] Spre - Added Scripts/Towns/Alberta_1, which is the first of 3 alberta town scripts.
+Modified Twn_main.lua to show the NPC.
+-
+
+- Rev 26 -
 [2007/12/31] Spre - Fixed end errors in Scripts/Quests/Items/Smile_event.lua, thanks Aeomin. Modified Quests_main.lua
 Commented out the mixture quest untill it can be fixed. Also Changed the header on some files to credit
 Yaros     as per requested.
