@@ -12,7 +12,7 @@
 --|		   -First Version for Helios  [Spre]    |--
 --|-------------------------------------------------|--
 --| Credits: Gravity                       	    |--
---|		 Muad_Dib                      	    |--
+--|		 Yaros                          	    |--
 --|-------------------------------------------------|--
 --| Notes:                                 	    |--
 --|      All item code is commented out             |--
@@ -197,80 +197,80 @@ end
 			dialog "Good talking"
 			dialog "to you pal. Uh,"
 			dialog "see ya 'round. Take"
-			dialog "care of yourself, 'kay?"
+			dialog "care of yourself, kay?"
 			close()
 	end
 	return
-end
+--end
 
 --if getvar(Detrimindexta) > 0 then
-	local mresulta = menu("Talk","Talk about Detrimindexta","Cancel")
-		if mresulta == 1 then
-			dialog "[Merchant Louitz]"
-			dialog "When I was in Geffen"
-			dialog "looking for magic items,"
-			dialog "I heard rumors of this really"
-			dialog "crazy scientist guy. So I got"
-			dialog "curious, asked around, and"
-			dialog "eventually found this guy."
-			wait()
-			dialog "[Merchant Louitz]"
-			dialog "Boy, oh boy, this guy was"
-			dialog "screwy. He didn't even know"
-			dialog "I was there the whole time and"
-			dialog "just kept mumbling this mumbo"
-			dialog "jumbo while working on his"
-			dialog "experiments. Words like, um..."
-			wait()
-			dialog "[Merchant Louitz]"
-			dialog "Yeah, he kept mumbling"
-			dialog "words like ''Karvodailnirol''"
-			dialog "and ''Detrimindexta.'' The"
-			dialog "first time I heard it, I thought^FFFFFFddd^000000 it was just crazy talk, you know? ^FFFFFFcobo^000000"
-			wait()
-			dialog "[Merchant Louitz]"
-			dialog "But it turns out,"
-			dialog "this Karvodailnirol"
-			dialog "and Detrimindexta actually"
-			dialog "exist. I think they're special"
-			dialog "liquids that don't work quite"
-			dialog "like any liquids we're used to."
-			close()
-		elseif mresulta == 2 then
-			setitem("molgenstain",1)
-			dialog "[Merchant Louitz]"
-			dialog "Oh hey, this is that"
-			dialog "Detrimindexta that the"
-			dialog "old scientist was talking"
-			dialog "about, huh? Of course, only"
-			dialog "someone like that guy would"
-			dialog "know what to do with it..."
-			wait()
-			dialog "[Merchant Louitz]"
-			dialog "Hey, why don't you go"
-			dialog "and ask him about it?"
-			dialog "I don't remember exactly"
-			dialog "where he lives, but I know"
-			dialog "he's in Geffen and that his"
-			dialog "name is ^0000FFMolgenstein^000000."
-			wait()
-			dialog "[Merchant Louitz]"
-			dialog "Hmm... You better"
-			dialog "go around Geffen and"
-			dialog "around first. I know for"
-			dialog "ask around first. I know for"
-			dialog "sure that somebody knows"
-			dialog "where you can find Molgenstein."
-			close()
-		elseif mresulta == 3 then
-			dialog "[Merchant Louitz]"
-			dialog "Um..."
-			dialog "Good talking"
-			dialog "to you pal. Uh,"
-			dialog "see ya 'round. Take"
-			dialog "care of yourself, 'kay?"
-			close()
-	end
+	--local mresult = menu("Talk","Talk about Detrimindexta","Cancel")
+	--	if mresult == 1 then
+		--	dialog "[Merchant Louitz]"
+		--	dialog "When I was in Geffen"
+			--dialog "looking for magic items,"
+			--dialog "I heard rumors of this really"
+			--dialog "crazy scientist guy. So I got"
+			--dialog "curious, asked around, and"
+			--dialog "eventually found this guy."
+			--wait()
+			--dialog "[Merchant Louitz]"
+			--dialog "Boy, oh boy, this guy was"
+			--dialog "screwy. He didn't even know"
+			--dialog "I was there the whole time and"
+			--dialog "just kept mumbling this mumbo"
+			--dialog "jumbo while working on his"
+			--dialog "experiments. Words like, um..."
+			--wait()
+			--dialog "[Merchant Louitz]"
+			--dialog "Yeah, he kept mumbling"
+			--dialog "words like ''Karvodailnirol''"
+			--dialog "and ''Detrimindexta.'' The"
+			--dialog "first time I heard it, I thought^FFFFFFddd^000000 it was just crazy talk, you know? ^FFFFFFcobo^000000"
+			--wait()
+			--dialog "[Merchant Louitz]"
+			--dialog "But it turns out,"
+			--dialog "this Karvodailnirol"
+			--dialog "and Detrimindexta actually"
+			--dialog "exist. I think they're special"
+			--dialog "liquids that don't work quite"
+			--dialog "like any liquids we're used to."
+			--close()
+		--elseif mresult == 2 then
+			--setitem("molgenstain",1)
+			--dialog "[Merchant Louitz]"
+			--dialog "Oh hey, this is that"
+			--dialog "Detrimindexta that the"
+			--dialog "old scientist was talking"
+			--dialog "about, huh? Of course, only"
+			---dialog "someone like that guy would"
+			--dialog "know what to do with it..."
+			--wait()
+			--dialog "[Merchant Louitz]"
+			--dialog "Hey, why don't you go"
+			--dialog "and ask him about it?"
+			--dialog "I don't remember exactly"
+			--dialog "where he lives, but I know"
+			--dialog "he's in Geffen and that his"
+			--dialog "name is ^0000FFMolgenstein^000000."
+			--wait()
+			--dialog "[Merchant Louitz]"
+			--dialog "Hmm... You better"
+			--dialog "go around Geffen and"
+			--dialog "around first. I know for"
+			---dialog "ask around first. I know for"
+			--dialog "sure that somebody knows"
+			--dialog "where you can find Molgenstein."
+			--close()
+		--elseif mresult == 3 then
+			--dialog "[Merchant Louitz]"
+			--dialog "Um..."
+			--dialog "Good talking"
+			--dialog "to you pal. Uh,"
+			--dialog "see ya 'round. Take"
+			--dialog "care of yourself, 'kay?"
+			--close()
+	--end
 	return
 end
 
