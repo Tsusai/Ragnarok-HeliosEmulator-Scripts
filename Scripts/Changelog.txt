@@ -1,4 +1,12 @@
 - Rev 21 -
+[2007/12/30] Spre - Minor Typo adjustment in Izlude Directory.
+-
+
+- Rev 21 -
+[2007/12/30] Spre - Added Const Change in Scripts/Core for Aeomin, Also Added Nif Directory with the Niflhein Divorce script.
+-
+
+- Rev 21 -
 [2007/12/30] Tsusai - Added Aeomin's Var_Const.lua for character constants.  Requires Core Rev 404
 -
 
