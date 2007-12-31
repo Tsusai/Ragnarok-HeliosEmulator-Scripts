@@ -1,8 +1,14 @@
-- Rev 21 -
+- Rev 24 -
+[2007/12/30] Spre - Fixed Bugs in the Scripts/Warps/Niflheim_town script. Fixed Typo 
+in Scripts/Warps/Warp_main. Added in Scripts/Towns/Niflheim_1 Which is 1 out of 4 Niflheim town
+scripts. Added More to Core/var_const, Thanks Aeomin
+-
+
+- Rev 23 -
 [2007/12/30] Spre - Minor Typo adjustment in Izlude Directory.
 -
 
-- Rev 21 -
+- Rev 22 -
 [2007/12/30] Spre - Added Const Change in Scripts/Core for Aeomin, Also Added Nif Directory with the Niflhein Divorce script.
 -
 
