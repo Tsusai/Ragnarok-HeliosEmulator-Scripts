@@ -1,3 +1,7 @@
+- Rev 31 -
+[2008/1/1] RaX - Updated Geffen warps. uncommented/helios-ized a warp in geffen_in (function Exit16654)
+-
+
 - Rev 30 -
 [2008/1/1] Spre - Added The last of the alberta Town scripts, also added clocktower and alde scripts.
 [2008/1/1] Spre - Mdified Town_main.lua added new working scripts to it, as well as new buggy scripts, these are commented out.

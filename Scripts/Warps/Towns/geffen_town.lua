@@ -306,7 +306,7 @@ function UndergroundC()
 	moveto("gef_dun00",104,99)
 end
 
---warp "geffen_in" "Exit" 166 54 3 3
---OnTouch:
---	moveto "geffen" 120 38
---return
+warp("geffen_in","Exit16654",166,54,3,3)
+function Exit16654()
+	moveto("geffen",138,101)
+end
