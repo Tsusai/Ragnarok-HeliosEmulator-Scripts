@@ -1,3 +1,9 @@
+- Rev 29 -
+[2007/12/31] RabidCh - TODO : LOTS OF BROKEN WARP NAMES BECAUSE OF FUNCTION NAME CONFLICTS.
+[2007/12/31] RabidCh - Fixed all of Spre's indented headers >:( (DO NOT USE INDENTS)
+[2007/12/31] RabidCh - Fixed SOME warp function name conflicts in prontera.lua/izlude.lua.
+-
+
 - Rev 28 -
 [2007/12/31] Spre - Fixed Changelog, If I do this again Imma scream.
 -

@@ -1,30 +1,30 @@
 -- _________________________________________________ --
 --/                                                 \--
---| 	    _    _          _   _                   |--
---|	   | |  | |        | | (_)                  |--
---|	   | |__| |   ___  | |  _    ___    ___     |--
---|	   |  __  |  / _ \ | | | |  / _ \  / __|    |--
---|	   | |  | | |  __/ | | | | | (_) | \__ \    |--
---|	   |_|  |_|  \___| |_| |_|  \___/  |___/    |--
---|				                    |--
+--|    _    _          _   _                        |--
+--|   | |  | |        | | (_)                       |--
+--|   | |__| |   ___  | |  _    ___    ___          |--
+--|   |  __  |  / _ \ | | | |  / _ \  / __|         |--
+--|   | |  | | |  __/ | | | | | (_) | \__ \         |--
+--|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
+--|                                                 |--
 --|-------------------------------------------------|--
---|     31/12/2007                                  |--
---|                -Added New header [Spre]         |--
+--| 31/12/2007                                      |--
+--|   -Added New header [Spre]                      |--
 --|                                                 |--
 --|                                                 |--
---|	29/12/2007                             	    |--
---|		   -First Version for Helios  [Spre]|--
+--| 29/12/2007                                      |--
+--|   -First Version for Helios  [Spre]             |--
 --|-------------------------------------------------|--
---| Credits: Gravity                       	    |--
---|		 Muad_Dib                      	    |--
+--| Credits: Gravity                                |--
+--|          Yaros                                  |--
 --|-------------------------------------------------|--
---| Notes:                                 	    |--
---|                                        	    |--
---|                                        	    |--
+--| Notes:                                          |--
+--|                                                 |--
+--|                                                 |--
 --\_________________________________________________/--
 
-hiddenwarp("izlude_in","sword_out",63,165,1,1)
-function sword_out()
+hiddenwarp("izlude_in","Iz_sword_out",63,165,1,1)
+function Iz_sword_out()
 	checkpoint("izlude_in",68,165)
 	moveto("izlude_in",68,165)
 end
@@ -34,23 +34,23 @@ function Iz_Field()
 	moveto("prt_fild08",367,212)
 end
 
-warp("izlude","Kit_Shopi",148,148,2,2)
-function Kit_Shopi()
+warp("izlude","Iz_Kit_Shopi",148,148,2,2)
+function Iz_Kit_Shopi()
 	moveto("izlude_in",116,49)
 end
 
-warp("izlude_in","Kit_Shopo",116,46,3,2)
-function Kit_Shopo()
+warp("izlude_in","Iz_Kit_Shopo",116,46,3,2)
+function Iz_Kit_Shopo()
 	moveto("izlude",145,145)
 end
 
-warp("izlude","Armoryi",109,151,3,3)
-function Armoryi()
+warp("izlude","Iz_Armoryi",109,151,3,3)
+function Iz_Armoryi()
 	moveto("izlude_in",65,87)
 end
 
-warp("izlude_in","Armoryo",65,84,5,2)
-function Armoryo()
+warp("izlude_in","Iz_Armoryo",65,84,5,2)
+function Iz_Armoryo()
 	moveto("izlude",113,147)
 end
 

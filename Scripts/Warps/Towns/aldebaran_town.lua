@@ -1,26 +1,26 @@
 -- _________________________________________________ --
 --/                                                 \--
---| 	    _    _          _   _                   |--
---|	   | |  | |        | | (_)                  |--
---|	   | |__| |   ___  | |  _    ___    ___     |--
---|	   |  __  |  / _ \ | | | |  / _ \  / __|    |--
---|	   | |  | | |  __/ | | | | | (_) | \__ \    |--
---|	   |_|  |_|  \___| |_| |_|  \___/  |___/    |--
---|				                    |--
+--|    _    _          _   _                        |--
+--|   | |  | |        | | (_)                       |--
+--|   | |__| |   ___  | |  _    ___    ___          |--
+--|   |  __  |  / _ \ | | | |  / _ \  / __|         |--
+--|   | |  | | |  __/ | | | | | (_) | \__ \         |--
+--|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
+--|                                                 |--
 --|-------------------------------------------------|--
---|     31/12/2007                                  |--
---|                -Added New header [Spre]         |--
+--| 31/12/2007                                      |--
+--|   -Added New header [Spre]                      |--
 --|                                                 |--
 --|                                                 |--
---|	29/12/2007                             	    |--
---|		   -First Version for Helios  [Spre]|--
+--| 29/12/2007                                      |--
+--|   -First Version for Helios  [Spre]             |--
 --|-------------------------------------------------|--
---| Credits: Gravity                       	    |--
---|		 Muad_Dib                      	    |--
+--| Credits: Gravity                                |--
+--|          Yaros                                  |--
 --|-------------------------------------------------|--
---| Notes:                                 	    |--
---|                                        	    |--
---|                                        	    |--
+--| Notes:                                          |--
+--|                                                 |--
+--|                                                 |--
 --\_________________________________________________/--
 
 warp("aldebaran","alde_m12north",138,34,2,2)
@@ -28,73 +28,73 @@ function alde_m12north()
 	moveto("mjolnir_12",199,375)
 end
 
-warp("aldebaran","al_kapra",61,229,1,1)
-function al_kapra()
+warp("aldebaran","alde_kapra_in",61,229,1,1)
+function alde_kapra_in()
 	moveto("aldeba_in",148,227)
 end
 
-warp("aldeba_in","al_kapra",148,224,2,2)
-function al_kapra()
+warp("aldeba_in","alde_kapra_out",148,224,2,2)
+function alde_kapra_out()
 	moveto("aldebaran",63,227)
 end
 
-warp("aldebaran","al_kapra",51,218,1,1)
-function al_kapra()
+warp("aldebaran","alde_kapra_in",51,218,1,1)
+function alde_kapra_in()
 	moveto("aldeba_in",24,227)
 end
 
-warp("aldeba_in","al_kapra",24,224,2,2)
-function al_kapra()
+warp("aldeba_in","alde_kapra_out",24,224,2,2)
+function alde_kapra_out()
 	moveto("aldebaran",53,216)
 end
 
-warp("aldeba_in","al_kapra",37,238,2,2)
-function al_kapra()
+warp("aldeba_in","alde_kapra_1",37,238,2,2)
+function alde_kapra_1()
 	moveto("aldeba_in",67,157)
 end
 
-warp("aldeba_in","al_kapra",64,157,2,2)
-function al_kapra()
+warp("aldeba_in","alde_kapra_2",64,157,2,2)
+function alde_kapra_2()
 	moveto("aldeba_in",34,238)
 end
 
-warp("aldeba_in","al_kapra",83,191,2,2)
-function al_kapra()
+warp("aldeba_in","alde_kapra_3",83,191,2,2)
+function alde_kapra_3()
 	moveto("aldeba_in",83,227)
 end
 
-warp("aldeba_in","al_kapra",83,224,2,2)
-function al_kapra()
+warp("aldeba_in","alde_kapra_4",83,224,2,2)
+function alde_kapra_4()
 	moveto("aldeba_in",83,188)
 end
 
-warp("aldeba_in","al_kapra",134,237,2,2)
-function al_kapra()
+warp("aldeba_in","alde_kapra_5",134,237,2,2)
+function alde_kapra_5()
 	moveto("aldeba_in",100,157)
 end
 
-warp("aldeba_in","al_kapra",103,157,2,2)
-function al_kapra()
+warp("aldeba_in","alde_kapra_6",103,157,2,2)
+function alde_kapra_6()
 	moveto("aldeba_in",137,237)
 end
 
-warp("aldebaran","minga1",89,234,1,1)
-function minga1()
+warp("aldebaran","alde_minga1_in",89,234,1,1)
+function alde_minga1()
 	moveto("aldeba_in",242,237)
 end
 
-warp("aldeba_in","minga1",245,237,2,2)
-function minga1()
+warp("aldeba_in","alde_minga1_out",245,237,2,2)
+function alde_minga1()
 	moveto("aldebaran",91,234)
 end
 
-warp("aldebaran","weapon",72,197,1,1)
-function weapon()
+warp("aldebaran","alde_weapon_in",72,197,1,1)
+function alde_weapon()
 	moveto("aldeba_in",27,37)
 end
 
-warp("aldeba_in","weapon",27,34,2,2)
-function weapon()
+warp("aldeba_in","alde_weapon_out",27,34,2,2)
+function alde_weapon()
 	moveto("aldebaran",72,195)
 end
 
