@@ -1,3 +1,8 @@
+- Rev 33 -
+[2008/1/3] Spre - Commited Muads NPC_ID.LUA and VAR_CONST.LUA into Scripts/core/. These include numerous new noc ids and vars from his zone.
+Also Updated the alberta guide, it now loads.
+-
+
 - Rev 32 -
 [2008/1/3] RabidCh - Fixed function name conflects in existing warp files.  Format added on warp coordinates and x-coord of OnTouch to the end.
 [2008/1/3] RabidCh - Fixed headers in Town_Main.lua and Warp_Main.lua

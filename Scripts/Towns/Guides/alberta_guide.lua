@@ -40,20 +40,20 @@ function alberta_Guide_23238()
 					dialog "and is located in the"
 					dialog "southwest corner"
 					dialog "of Alberta."
-					if getvar(compass_check) == 1 then
-						compass(2,33,41,1,0xFFFF0000)
+					if getvar("compass_check") == 1 then
+						compass(2,33,41,1,"0xFFFF0000")
 					else
-						compass(2,33,41,0,0xFFFF0000)
+						compass(2,33,41,0,"0xFFFF0000")
 					end
 				elseif mresultb == 2 then
 					dialog "[Alberta Guide]"
 					dialog "The Weapon Shop"
 					dialog "can be found in the"
 					dialog "southern end of Alberta."
-					if getvar(compass_check) == 1 then
-						compass(3,117,37,1,0xFFFF00FF)
+					if getvar("compass_check") == 1 then
+						compass(3,117,37,1,"0xFFFF00FF")
 					else
-						compass(3,117,37,0,0xFFFF00FF)
+						compass(3,117,37,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 3 then
 					dialog "[Alberta Guide]"
@@ -63,9 +63,9 @@ function alberta_Guide_23238()
 					dialog "Alberta. It shouldn't"
 					dialog "be too hard to find."
 					if getvar(compass_check) == 1 then
-						compass(4,98,154,1,0xFFFF00FF)
+						compass(4,98,154,1,"0xFFFF00FF")
 					else
-						compass(4,98,154,0,0xFFFF00FF)
+						compass(4,98,154,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 4 then
 					dialog "[Alberta Guide]"
@@ -74,9 +74,9 @@ function alberta_Guide_23238()
 					dialog "end of Alberta"
 					dialog "where you can rest."
 					if getvar(compass_check) == 1 then
-						compass(5,65,233,1,0xFFFF00FF)
+						compass(5,65,233,1,"0xFFFF00FF")
 					else
-						compass(5,65,233,0,0xFFFF00FF)
+						compass(5,65,233,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 5 then
 					dialog "[Alberta Guide]"
@@ -85,9 +85,9 @@ function alberta_Guide_23238()
 					dialog "as the Merchant Guild."
 					dialog "It's to the southwest."
 					if getvar(compass_check) == 1 then
-						compass(6,35,41,1,0xFFFF00FF)
+						compass(6,35,41,1,"0xFFFF00FF")
 					else
-						compass(6,35,41,0,0xFFFF00FF)
+						compass(6,35,41,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 6 then
 					compass_check("=",1)
@@ -101,11 +101,11 @@ function alberta_Guide_23238()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(2,237,41,2,0xFF00FF00)
-			compass(3,237,41,2,0xFF0000FF)
-			compass(4,46,345,2,0xFF00FF00)
-			compass(5,175,220,2,0xFFFF0000)
-			compass(6,175,220,2,0xFFFF0000)
+			compass(2,237,41,2,"0xFF00FF00")
+			compass(3,237,41,2,"0xFF0000FF")
+			compass(4,46,345,2,"0xFF00FF00")
+			compass(5,175,220,2,"0xFFFF0000")
+			compass(6,175,220,2,"0xFFFF0000")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Alberta Guide]"
@@ -186,9 +186,9 @@ function alberta_Guide_12060()
 					dialog "southwest corner"
 					dialog "of Alberta."
 					if getvar(compass_check) == 1 then
-						compass(2,33,41,1,0xFFFF0000)
+						compass(2,33,41,1,"0xFFFF0000")
 					else
-						compass(2,33,41,0,0xFFFF0000)
+						compass(2,33,41,0,"0xFFFF0000")
 					end
 				elseif mresultb == 2 then
 					dialog "[Alberta Guide]"
@@ -196,9 +196,9 @@ function alberta_Guide_12060()
 					dialog "can be found in the"
 					dialog "southern end of Alberta."
 					if getvar(compass_check) == 1 then
-						compass(3,117,37,1,0xFFFF00FF)
+						compass(3,117,37,1,"0xFFFF00FF")
 					else
-						compass(3,117,37,0,0xFFFF00FF)
+						compass(3,117,37,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 3 then
 					dialog "[Alberta Guide]"
@@ -208,9 +208,9 @@ function alberta_Guide_12060()
 					dialog "Alberta. It shouldn't"
 					dialog "be too hard to find."
 					if getvar(compass_check) == 1 then
-						compass(4,98,154,1,0xFFFF00FF)
+						compass(4,98,154,1,"0xFFFF00FF")
 					else
-						compass(4,98,154,0,0xFFFF00FF)
+						compass(4,98,154,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 4 then
 					dialog "[Alberta Guide]"
@@ -219,9 +219,9 @@ function alberta_Guide_12060()
 					dialog "end of Alberta"
 					dialog "where you can rest."
 					if getvar(compass_check) == 1 then
-						compass(5,65,233,1,0xFFFF00FF)
+						compass(5,65,233,1,"0xFFFF00FF")
 					else
-						compass(5,65,233,0,0xFFFF00FF)
+						compass(5,65,233,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 5 then
 					dialog "[Alberta Guide]"
@@ -230,9 +230,9 @@ function alberta_Guide_12060()
 					dialog "as the Merchant Guild."
 					dialog "It's to the southwest."
 					if getvar(compass_check) == 1 then
-						compass(6,35,41,1,0xFFFF00FF)
+						compass(6,35,41,1,"0xFFFF00FF")
 					else
-						compass(6,35,41,0,0xFFFF00FF)
+						compass(6,35,41,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 6 then
 					compass_check("=",1)
@@ -246,11 +246,11 @@ function alberta_Guide_12060()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(2,237,41,2,0xFF00FF00)
-			compass(3,237,41,2,0xFF0000FF)
-			compass(4,46,345,2,0xFF00FF00)
-			compass(5,175,220,2,0xFFFF0000)
-			compass(6,175,220,2,0xFFFF0000)
+			compass(2,237,41,2,"0xFF00FF00")
+			compass(3,237,41,2,"0xFF0000FF")
+			compass(4,46,345,2,"0xFF00FF00")
+			compass(5,175,220,2,"0xFFFF0000")
+			compass(6,175,220,2,"0xFFFF0000")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Alberta Guide]"
