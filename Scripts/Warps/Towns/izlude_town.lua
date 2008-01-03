@@ -8,12 +8,13 @@
 --|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
 --|                                                 |--
 --|-------------------------------------------------|--
+--| 03/01/2008                                      |--
+--|   - Updated all function names to fix           |--
+--|     function name conflicts in Lua. [RabidCh]   |--
 --| 31/12/2007                                      |--
---|   -Added New header [Spre]                      |--
---|                                                 |--
---|                                                 |--
+--|   - Added New header [Spre]                     |--
 --| 29/12/2007                                      |--
---|   -First Version for Helios  [Spre]             |--
+--|   - First Version for Helios [Spre]             |--
 --|-------------------------------------------------|--
 --| Credits: Gravity                                |--
 --|          Yaros                                  |--
@@ -23,89 +24,89 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-hiddenwarp("izlude_in","Iz_sword_out",63,165,1,1)
-function Iz_sword_out()
+hiddenwarp("izlude_in","Iz_sword_out_63_1651",63,165,1,1)
+function Iz_sword_out_63_1651()
 	checkpoint("izlude_in",68,165)
 	moveto("izlude_in",68,165)
 end
 
-warp("izlude","Iz_Field",30,78,3,3)
-function Iz_Field()
+warp("izlude","Iz_Field_30_783",30,78,3,3)
+function Iz_Field_30_783()
 	moveto("prt_fild08",367,212)
 end
 
-warp("izlude","Iz_Kit_Shopi",148,148,2,2)
-function Iz_Kit_Shopi()
+warp("izlude","Iz_Kit_Shopi_148_1482",148,148,2,2)
+function Iz_Kit_Shopi_148_1482()
 	moveto("izlude_in",116,49)
 end
 
-warp("izlude_in","Iz_Kit_Shopo",116,46,3,2)
-function Iz_Kit_Shopo()
+warp("izlude_in","Iz_Kit_Shopo_116_463",116,46,3,2)
+function Iz_Kit_Shopo_116_463()
 	moveto("izlude",145,145)
 end
 
-warp("izlude","Iz_Armoryi",109,151,3,3)
-function Iz_Armoryi()
+warp("izlude","Iz_Armoryi_109_1513",109,151,3,3)
+function Iz_Armoryi_109_1513()
 	moveto("izlude_in",65,87)
 end
 
-warp("izlude_in","Iz_Armoryo",65,84,5,2)
-function Iz_Armoryo()
+warp("izlude_in","Iz_Armoryo_65_845",65,84,5,2)
+function Iz_Armoryo_65_845()
 	moveto("izlude",113,147)
 end
 
-warp("izlude","Swordman_Associationi",52,140,2,2)
-function Swordman_Associationi()
+warp("izlude","Swordman_Associationi_52_1402",52,140,2,2)
+function Swordman_Associationi_52_1402()
 	moveto("izlude_in",74,161)
 end
 
-warp("izlude_in","Swordman_Associationo",74,158,3,2)
-function Swordman_Associationo()
+warp("izlude_in","Swordman_Associationo_74_1583",74,158,3,2)
+function Swordman_Associationo_74_1583()
 	moveto("izlude",52,136)
 end
 
-warp("izlude_in","Swordman_AssociationL__L",43,169,2,3)
-function Swordman_AssociationL__L()
+warp("izlude_in","Swordman_AssociationL_L_43_1692",43,169,2,3)
+function Swordman_AssociationL_L_43_1692()
 	moveto("izlude_in",63,169)
 end
 
-warp("izlude_in","Swordman_AssociationR_R_",87,169,2,3)
-function Swordman_AssociationR_R_()
+warp("izlude_in","Swordman_AssociationR_R_87_1692",87,169,2,3)
+function Swordman_AssociationR_R_87_1692()
 	moveto("izlude_in",111,169)
 end
 
-warp("izlude_in","Swordman_AssociationR__R",108,169,2,3)
-function Swordman_AssociationR__R()
+warp("izlude_in","Swordman_AssociationR_R_108_1692",108,169,2,3)
+function Swordman_AssociationR_R_108_1692()
 	moveto("izlude_in",84,169)
 end
 
-warp("izlude","Swordman_Associationi",216,129,3,2)
-function Swordman_Associationi()
+warp("izlude","Swordman_Associationi_216_1293",216,129,3,2)
+function Swordman_Associationi_216_1293()
 	moveto("izlude_in",151,127)
 end
 
-warp("izlude_in","Swordman_Associationo",148,127,2,5)
-function Swordman_Associationo()
+warp("izlude_in","Swordman_Associationo_148_1272",148,127,2,5)
+function Swordman_Associationo_148_1272()
 	moveto("izlude",212,129)
 end
 
-warp("izlude_in","Swordman_AssociationL_L_",172,139,3,2)
-function Swordman_AssociationL_L_()
+warp("izlude_in","Swordman_AssociationL_L_172_1393",172,139,3,2)
+function Swordman_AssociationL_L_172_1393()
 	moveto("izlude_in",172,161)
 end
 
-warp("izlude_in","Swordman_AssociationL__L",172,158,3,2)
-function Swordman_AssociationL__L()
+warp("izlude_in","Swordman_AssociationL_L_172_1583",172,158,3,2)
+function Swordman_AssociationL_L_172_1583()
 	moveto("izlude_in",172,136)
 end
 
-warp("izlude_in","Swordman_AssociationR_R_",172,116,3,2)
-function Swordman_AssociationR_R_()
+warp("izlude_in","Swordman_AssociationR_R_172_1163",172,116,3,2)
+function Swordman_AssociationR_R_172_1163()
 	moveto("izlude_in",172,94)
 end
 
-warp("izlude_in","Swordman_AssociationR__R",171,97,3,2)
-function Swordman_AssociationR__R()
+warp("izlude_in","Swordman_AssociationR_R_171_973",171,97,3,2)
+function Swordman_AssociationR_R_171_973()
 	moveto("izlude_in",172,119)
 end
 

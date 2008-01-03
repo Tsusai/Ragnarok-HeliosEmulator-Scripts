@@ -8,12 +8,13 @@
 --|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
 --|                                                 |--
 --|-------------------------------------------------|--
+--| 03/01/2008                                      |--
+--|   - Updated all function names to fix           |--
+--|     function name conflicts in Lua. [RabidCh]   |--
 --| 31/12/2007                                      |--
---|   -Added New header [Spre]                      |--
---|                                                 |--
---|                                                 |--
+--|   - Added New header [Spre]                     |--
 --| 29/12/2007                                      |--
---|   -First Version for Helios  [Spre]             |--
+--|   - First Version for Helios [Spre]             |--
 --|-------------------------------------------------|--
 --| Credits: Gravity                                |--
 --|          Yaros                                  |--
@@ -23,17 +24,17 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-warp("mag_dun01","mag01a_mag02a",243,240,1,1)
-function mag01a_mag02a()
+warp("mag_dun01","mag01a_mag02a_243_2401",243,240,1,1)
+function mag01a_mag02a_243_2401()
 	moveto("mag_dun02",48,37)
 end
 
-warp("mag_dun01","mag01b_yuno03c",125,67,1,1)
-function mag01b_yuno03c()
+warp("mag_dun01","mag01b_yuno03c_125_671",125,67,1,1)
+function mag01b_yuno03c_125_671()
 	moveto("yuno_fild03",37,140)
 end
 
-warp("mag_dun02","mag02a_mag01a",48,33,1,1)
-function mag02a_mag01a()
+warp("mag_dun02","mag02a_mag01a_48_331",48,33,1,1)
+function mag02a_mag01a_48_331()
 	moveto("mag_dun01",239,240)
 end
