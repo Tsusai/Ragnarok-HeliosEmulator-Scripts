@@ -8,12 +8,13 @@
 --|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
 --|                                                 |--
 --|-------------------------------------------------|--
+--| 03/01/2008                                      |--
+--|   - Updated all function names to fix           |--
+--|     function name conflicts in Lua. [RabidCh]   |--
 --| 31/12/2007                                      |--
---|   -Added New header [Spre]                      |--
---|                                                 |--
---|                                                 |--
+--|   - Added New header [Spre]                     |--
 --| 29/12/2007                                      |--
---|   -First Version for Helios  [Spre]             |--
+--|   - First Version for Helios [Spre]             |--
 --|-------------------------------------------------|--
 --| Credits: Gravity                                |--
 --|          Yaros                                  |--
@@ -23,17 +24,17 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-warp("xmas_fild01","x_fild_in",69,252,10,2)
-function x_fild_in()
+warp("xmas_fild01","x_fild_in_69_25210",69,252,10,2)
+function x_fild_in_69_25210()
 	moveto("xmas",149,44)
 end
 
-warp("xmas_fild01","x_fild_in01",90,252,10,2)
-function x_fild_in01()
+warp("xmas_fild01","x_fild_in01_90_25210",90,252,10,2)
+function x_fild_in01_90_25210()
 	moveto("xmas",149,44)
 end
 
-warp("xmas_fild01","xmas_27",84,48,10,2)
-function xmas_27()
+warp("xmas_fild01","xmas_27_84_4810",84,48,10,2)
+function xmas_27_84_4810()
 	moveto("aldebaran",140,234)
 end

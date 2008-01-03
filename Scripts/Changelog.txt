@@ -1,3 +1,8 @@
+- Rev 32 -
+[2008/1/3] RabidCh - Fixed function name conflects in existing warp files.  Format added on warp coordinates and x-coord of OnTouch to the end.
+[2008/1/3] RabidCh - Fixed headers in Town_Main.lua and Warp_Main.lua
+-
+
 - Rev 31 -
 [2008/1/1] RaX - Updated Geffen warps. uncommented/helios-ized a warp in geffen_in (function Exit16654)
 -

@@ -8,12 +8,13 @@
 --|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
 --|                                                 |--
 --|-------------------------------------------------|--
+--| 03/01/2008                                      |--
+--|   - Updated all function names to fix           |--
+--|     function name conflicts in Lua. [RabidCh]   |--
 --| 31/12/2007                                      |--
---|   -Added New header [Spre]                      |--
---|                                                 |--
---|                                                 |--
+--|   - Added New header [Spre]                     |--
 --| 29/12/2007                                      |--
---|   -First Version for Helios  [Spre]             |--
+--|   - First Version for Helios [Spre]             |--
 --|-------------------------------------------------|--
 --| Credits: Gravity                                |--
 --|          Yaros                                  |--
@@ -23,18 +24,18 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-warp("morocc","morocc_m10a",302,207,2,2)
-function morocc_m10a()
+warp("morocc","morocc_m10a_302_2072",302,207,2,2)
+function morocc_m10a_302_2072()
 	moveto("moc_fild10",22,207)
 end
 
-warp("morocc","moc_West_Field",24,164,1,2)
-function moc_West_Field()
+warp("morocc","moc_West_Field_24_1641",24,164,1,2)
+function moc_West_Field_24_1641()
 	moveto("moc_fild19",164,107)
 end
 
-warp("morocc","morocc_m12a",160,17,2,2)
-function morocc_m12a()
+warp("morocc","morocc_m12a_160_172",160,17,2,2)
+function morocc_m12a_160_172()
 	moveto("moc_fild12",159,378)
 end
 
