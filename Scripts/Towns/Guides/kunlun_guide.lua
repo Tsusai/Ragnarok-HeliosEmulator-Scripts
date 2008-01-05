@@ -22,7 +22,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("gonryun","Kunlun Guide",spr_8_M_TWSOLDIER,163,60,4,0,0,"gonryun_Kunlun_Guide_16360")
+npc("gonryun","Kunlun Guide",SPRITE_8_M_TWSOLDIER,163,60,4,0,0,"gonryun_Kunlun_Guide_16360")
 function gonryun_Kunlun_Guide_16360()
 	dialog "[He Yuen Zhe]"
 	dialog "Ni Hao!"

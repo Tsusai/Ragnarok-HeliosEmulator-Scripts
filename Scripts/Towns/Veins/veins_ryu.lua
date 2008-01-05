@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("veins","Towner",spr_4_M_DESERT,162,34,5,0,0,"veins_Towner_16234")
+npc("veins","Towner",SPRITE_4_M_DESERT,162,34,5,0,0,"veins_Towner_16234")
 
 function veins_Towner_16234()
 	dialog "[Towner]"
@@ -37,7 +37,7 @@ function veins_Towner_16234()
 	close()
 end
 
-npc("veins","Towner",spr_4_F_DESERT,148,41,3,0,0,"veins_Towner_14841")
+npc("veins","Towner",SPRITE_4_F_DESERT,148,41,3,0,0,"veins_Towner_14841")
 
 function veins_Towner_14841()
 	dialog "[Towner]"
@@ -57,7 +57,7 @@ function veins_Towner_14841()
 	close()
 end
 
-npc("veins","Towner",spr_4_M_DESERT,137,179,5,0,0,"veins_Towner_137179")
+npc("veins","Towner",SPRITE_4_M_DESERT,137,179,5,0,0,"veins_Towner_137179")
 
 function veins_Towner_137179()
 	dialog "[Towner]"
@@ -71,7 +71,7 @@ function veins_Towner_137179()
 	close()
 end
 
-npc("veins","Towner",spr_4_M_DST_MASTER,166,91,5,0,0,"veins_Towner_16691")
+npc("veins","Towner",SPRITE_4_M_DST_MASTER,166,91,5,0,0,"veins_Towner_16691")
 
 function veins_Towner_16691()
 	dialog "[Towner]"
@@ -86,7 +86,7 @@ function veins_Towner_16691()
 	close()
 end
 
-npc("veins","Kid",spr_4_F_DST_CHILD,138,71,5,0,0,"veins_Kid_13871")
+npc("veins","Kid",SPRITE_4_F_DST_CHILD,138,71,5,0,0,"veins_Kid_13871")
 
 function veins_Kid_13871()
 	dialog "[Kid]"
@@ -96,7 +96,7 @@ function veins_Kid_13871()
 	close()
 end
 
-npc("veins","Kid",spr_4_M_DST_CHILD,253,133,3,0,0,"veins_Kid_253133")
+npc("veins","Kid",SPRITE_4_M_DST_CHILD,253,133,3,0,0,"veins_Kid_253133")
 
 function veins_Kid_253133()
 	dialog "[Kid]"
@@ -108,7 +108,7 @@ function veins_Kid_253133()
 	close()
 end
 
-npc("veins","Old Man",spr_4_M_DST_GRAND,270,164,5,0,0,"veins_Old_Man_270164")
+npc("veins","Old Man",SPRITE_4_M_DST_GRAND,270,164,5,0,0,"veins_Old_Man_270164")
 
 function veins_Old_Man_270164()
 	dialog "[Old Man]"
@@ -123,7 +123,7 @@ function veins_Old_Man_270164()
 	close()
 end
 
-npc("veins","Towner",spr_4_M_DST_MASTER,310,195,1,0,0,"veins_Towner_310195")
+npc("veins","Towner",SPRITE_4_M_DST_MASTER,310,195,1,0,0,"veins_Towner_310195")
 
 function veins_Towner_310195()
 	dialog "[Towner]"
@@ -137,7 +137,7 @@ function veins_Towner_310195()
 	close()
 end
 
-npc("veins","Towner",spr_4_M_DESERT,320,254,5,0,0,"veins_Towner_320254")
+npc("veins","Towner",SPRITE_4_M_DESERT,320,254,5,0,0,"veins_Towner_320254")
 
 function veins_Towner_320254()
 	dialog "[Towner]"
@@ -158,7 +158,7 @@ function veins_Towner_320254()
 	close()
 end
 
-npc("veins","Towner",spr_4_F_DESERT,333,318,3,0,0,"veins_Towner_333318")
+npc("veins","Towner",SPRITE_4_F_DESERT,333,318,3,0,0,"veins_Towner_333318")
 
 function veins_Towner_333318()
 	dialog "[Towner]"
@@ -168,7 +168,7 @@ function veins_Towner_333318()
 	close()
 end
 
-npc("veins","Towner",spr_4_M_DST_GRAND,218,323,1,0,0,"veins_Towner_218323")
+npc("veins","Towner",SPRITE_4_M_DST_GRAND,218,323,1,0,0,"veins_Towner_218323")
 
 function veins_Towner_218323()
 	dialog "[Towner]"
@@ -188,7 +188,7 @@ function veins_Towner_218323()
 	close()
 end
 
-npc("veins","Kid",spr_4_F_DST_CHILD,206,275,3,0,0,"veins_Kid_206275")
+npc("veins","Kid",SPRITE_4_F_DST_CHILD,206,275,3,0,0,"veins_Kid_206275")
 
 function veins_Kid_206275()
 	dialog "[Kid]"
@@ -198,7 +198,7 @@ function veins_Kid_206275()
 	close()
 end
 
-npc("veins","Towner",spr_4_M_DESERT,171,256,3,0,0,"veins_Towner_171256")
+npc("veins","Towner",SPRITE_4_M_DESERT,171,256,3,0,0,"veins_Towner_171256")
 
 function veins_Towner_171256()
 	dialog "[Towner]"
@@ -208,7 +208,7 @@ function veins_Towner_171256()
 	close()
 end
 
-npc("veins","Towner",spr_4_M_DESERT,197,219,5,0,0,"veins_Towner_197219")
+npc("veins","Towner",SPRITE_4_M_DESERT,197,219,5,0,0,"veins_Towner_197219")
 
 function veins_Towner_197219()
 	dialog "[Towner]"
@@ -217,7 +217,7 @@ function veins_Towner_197219()
 	close()
 end
 
-npc("veins","Old lady",spr_4_F_DST_GRAND,232,169,5,0,0,"veins_Old_lady_232169")
+npc("veins","Old lady",SPRITE_4_F_DST_GRAND,232,169,5,0,0,"veins_Old_lady_232169")
 
 function veins_Old_lady_232169()
 	dialog "[Old Lady]"
@@ -233,7 +233,7 @@ function veins_Old_lady_232169()
 	close()
 end
 
-npc("veins","Old Man",spr_4_M_DST_GRAND,121,199,3,0,0,"veins_Old_Man_121199")
+npc("veins","Old Man",SPRITE_4_M_DST_GRAND,121,199,3,0,0,"veins_Old_Man_121199")
 
 function veins_Old_Man_121199()
 	dialog "[Old Man]"
@@ -248,7 +248,7 @@ function veins_Old_Man_121199()
 	close()
 end
 
-npc("veins","Towner",spr_4_M_DESERT,111,50,3,0,0,"veins_Towner_11150")
+npc("veins","Towner",SPRITE_4_M_DESERT,111,50,3,0,0,"veins_Towner_11150")
 
 function veins_Towner_11150()
 	dialog "[Towner]"
@@ -265,7 +265,7 @@ function veins_Towner_11150()
 	close()
 end
 
-npc("veins","Towner",spr_4_F_DESERT,112,51,3,0,0,"veins_Towner_11251")
+npc("veins","Towner",SPRITE_4_F_DESERT,112,51,3,0,0,"veins_Towner_11251")
 
 function veins_Towner_11251()
 	dialog "[Towner]"
@@ -280,7 +280,7 @@ function veins_Towner_11251()
 	close()
 end
 
-npc("veins","Old Man",spr_4_M_DST_GRAND,191,134,3,0,0,"veins_Old_Man_191134")
+npc("veins","Old Man",SPRITE_4_M_DST_GRAND,191,134,3,0,0,"veins_Old_Man_191134")
 
 function veins_Old_Man_191134()
 	dialog "[Old Man]"
@@ -295,7 +295,7 @@ function veins_Old_Man_191134()
 	close()
 end
 
-npc("veins","Old Lady",spr_4_F_DST_GRAND,177,147,3,0,0,"veins_Old_Lady_177147")
+npc("veins","Old Lady",SPRITE_4_F_DST_GRAND,177,147,3,0,0,"veins_Old_Lady_177147")
 
 function veins_Old_Lady_177147()
 	dialog "[Old lady]"
@@ -312,7 +312,7 @@ function veins_Old_Lady_177147()
 	close()
 end
 
-npc("veins","Kid",spr_4_M_DST_CHILD,223,165,5,0,0,"veins_Kid_223165")
+npc("veins","Kid",SPRITE_4_M_DST_CHILD,223,165,5,0,0,"veins_Kid_223165")
 
 function veins_Kid_223165()
 	dialog "[Kid]"
@@ -328,7 +328,7 @@ function veins_Kid_223165()
 	close()
 end
 
-npc("veins","Towner",spr_4_M_DESERT,263,153,5,0,0,"veins_Towner_263153")
+npc("veins","Towner",SPRITE_4_M_DESERT,263,153,5,0,0,"veins_Towner_263153")
 
 function veins_Towner_263153()
 	dialog "[Towner]"
@@ -343,7 +343,7 @@ function veins_Towner_263153()
 	close()
 end
 
-npc("veins","Towner",spr_4_F_DESERT,296,184,3,0,0,"veins_Towner_296184")
+npc("veins","Towner",SPRITE_4_F_DESERT,296,184,3,0,0,"veins_Towner_296184")
 
 function veins_Towner_296184()
 	dialog "[Towner]"
@@ -371,7 +371,7 @@ function veins_Towner_296184()
 	close()
 end
 
-npc("veins","Kid",spr_4_M_DST_CHILD,291,205,3,0,0,"veins_Kid_291205")
+npc("veins","Kid",SPRITE_4_M_DST_CHILD,291,205,3,0,0,"veins_Kid_291205")
 
 function veins_Kid_291205()
 	dialog "[Kid]"
@@ -389,7 +389,7 @@ function veins_Kid_291205()
 	close()
 end
 
-npc("veins","Old Man",spr_4_M_DST_GRAND,291,259,3,0,0,"veins_Old_Man_291259")
+npc("veins","Old Man",SPRITE_4_M_DST_GRAND,291,259,3,0,0,"veins_Old_Man_291259")
 
 function veins_Old_Man_291259()
 	dialog "[Old Man]"
@@ -411,7 +411,7 @@ function veins_Old_Man_291259()
 	close()
 end
 
-npc("veins","Old Lady",spr_4_F_DST_GRAND,291,284,3,0,0,"veins_Old_Lady_291284")
+npc("veins","Old Lady",SPRITE_4_F_DST_GRAND,291,284,3,0,0,"veins_Old_Lady_291284")
 
 function veins_Old_Lady_291284()
 	dialog "[Old Lady]"
@@ -421,7 +421,7 @@ function veins_Old_Lady_291284()
 	close()
 end
 
-npc("veins","Kid",spr_4_M_DST_CHILD,248,301,3,0,0,"veins_Kid_248301")
+npc("veins","Kid",SPRITE_4_M_DST_CHILD,248,301,3,0,0,"veins_Kid_248301")
 
 function veins_Kid_248301()
 	dialog "[Kid]"
@@ -439,7 +439,7 @@ function veins_Kid_248301()
 	close()
 end
 
-npc("veins","Old Man",spr_4_M_DST_GRAND,161,63,3,0,0,"veins_Old_Man_16163")
+npc("veins","Old Man",SPRITE_4_M_DST_GRAND,161,63,3,0,0,"veins_Old_Man_16163")
 
 function veins_Old_Man_16163()
 	dialog "[Old Man]"
@@ -462,7 +462,7 @@ function veins_Old_Man_16163()
 	close()
 end
 
-npc("veins","Towner",spr_4_M_DST_MASTER,157,123,3,0,0,"veins_Towner_157123")
+npc("veins","Towner",SPRITE_4_M_DST_MASTER,157,123,3,0,0,"veins_Towner_157123")
 
 function veins_Towner_157123()
 	dialog "[Towner]"
@@ -476,7 +476,7 @@ function veins_Towner_157123()
 	close()
 end
 
-npc("ve_in","Prisoner",spr_4_M_DST_MASTER,119,386,3,0,0,"ve_in_Prisoner_119386")
+npc("ve_in","Prisoner",SPRITE_4_M_DST_MASTER,119,386,3,0,0,"ve_in_Prisoner_119386")
 
 function ve_in_Prisoner_119386()
 	dialog "[Prisoner]"
@@ -492,7 +492,7 @@ function ve_in_Prisoner_119386()
 	close()
 end
 
-npc("ve_in","Ward",spr_4_M_DST_MASTER,111,379,8,0,0,"ve_in_Ward_111379")
+npc("ve_in","Ward",SPRITE_4_M_DST_MASTER,111,379,8,0,0,"ve_in_Ward_111379")
 
 function ve_in_Ward_111379()
 	dialog "[Ward]"
@@ -503,7 +503,7 @@ function ve_in_Ward_111379()
 	close()
 end
 
-npc("ve_in","Ward",spr_4_M_DST_MASTER,126,378,3,0,0,"ve_in_Ward_126378")
+npc("ve_in","Ward",SPRITE_4_M_DST_MASTER,126,378,3,0,0,"ve_in_Ward_126378")
 
 function ve_in_Ward_126378()
 	dialog "[Ward]"
@@ -517,7 +517,7 @@ function ve_in_Ward_126378()
 	close()
 end
 
-npc("ve_in","Towner",spr_4_M_DESERT,101,314,1,0,0,"ve_in_Towner_101314")
+npc("ve_in","Towner",SPRITE_4_M_DESERT,101,314,1,0,0,"ve_in_Towner_101314")
 
 function ve_in_Towner_101314()
 	dialog "[Towner]"
@@ -529,7 +529,7 @@ function ve_in_Towner_101314()
 	close()
 end
 
-npc("ve_in","Towner",spr_4_M_DIEMAN,90,298,3,0,0,"ve_in_Towner_90298")
+npc("ve_in","Towner",SPRITE_4_M_DIEMAN,90,298,3,0,0,"ve_in_Towner_90298")
 
 function ve_in_Towner_90298()
 	dialog "[Towner]"
@@ -540,7 +540,7 @@ function ve_in_Towner_90298()
 	close()
 end
 
-npc("ve_in","Towner",spr_4_M_DIEMAN,361,243,5,0,0,"ve_in_Towner_361243")
+npc("ve_in","Towner",SPRITE_4_M_DIEMAN,361,243,5,0,0,"ve_in_Towner_361243")
 
 function ve_in_Towner_361243()
 	dialog "[Towner]"
@@ -556,7 +556,7 @@ function ve_in_Towner_361243()
 	close()
 end
 
-npc("ve_in","Towner",spr_4_M_DIEMAN,242,124,3,0,0,"ve_in_Towner_242124")
+npc("ve_in","Towner",SPRITE_4_M_DIEMAN,242,124,3,0,0,"ve_in_Towner_242124")
 
 function ve_in_Towner_242124()
 	dialog "[Towner]"
@@ -575,7 +575,7 @@ function ve_in_Towner_242124()
 	close()
 end
 
-npc("ve_in","Towner",spr_4_M_DST_MASTER,180,232,5,0,0,"ve_in_Towner_180232")
+npc("ve_in","Towner",SPRITE_4_M_DST_MASTER,180,232,5,0,0,"ve_in_Towner_180232")
 
 function ve_in_Towner_180232()
 	dialog "[Towner]"
@@ -588,7 +588,7 @@ function ve_in_Towner_180232()
 	close()
 end
 
-npc("ve_in","Towner",spr_4_F_DESERT,163,212,3,0,0,"ve_in_Towner_163212")
+npc("ve_in","Towner",SPRITE_4_F_DESERT,163,212,3,0,0,"ve_in_Towner_163212")
 
 function ve_in_Towner_163212()
 	dialog "[Towner]"
@@ -603,7 +603,7 @@ function ve_in_Towner_163212()
 	close()
 end
 
-npc("ve_in","Towner",spr_4_M_DST_MASTER,190,215,3,0,0,"ve_in_Towner_190215")
+npc("ve_in","Towner",SPRITE_4_M_DST_MASTER,190,215,3,0,0,"ve_in_Towner_190215")
 
 function ve_in_Towner_190215()
 	dialog "[Towner]"
@@ -619,7 +619,7 @@ function ve_in_Towner_190215()
 	close()
 end
 
-npc("ve_in","Towner",spr_4_M_DESERT,318,121,3,0,0,"ve_in_Towner_318121")
+npc("ve_in","Towner",SPRITE_4_M_DESERT,318,121,3,0,0,"ve_in_Towner_318121")
 
 function ve_in_Towner_318121()
 	dialog "[Towner]"
@@ -638,7 +638,7 @@ function ve_in_Towner_318121()
 	close()
 end
 
-npc("ve_in","Towner",spr_4_M_DESERT,222,125,5,0,0,"ve_in_Towner_222125")
+npc("ve_in","Towner",SPRITE_4_M_DESERT,222,125,5,0,0,"ve_in_Towner_222125")
 
 function ve_in_Towner_222125()
 	dialog "[Towner]"
@@ -651,7 +651,7 @@ function ve_in_Towner_222125()
 	close()
 end
 
-npc("ve_in","Towner",spr_4_F_DESERT,222,122,1,0,0,"ve_in_Towner_222122")
+npc("ve_in","Towner",SPRITE_4_F_DESERT,222,122,1,0,0,"ve_in_Towner_222122")
 
 function ve_in_Towner_222122()
 	dialog "[Towner]"
@@ -662,7 +662,7 @@ function ve_in_Towner_222122()
 	close()
 end
 
-npc("ve_in","Towner",spr_4_M_DST_MASTER,232,135,5,0,0,"ve_in_Towner_232135")
+npc("ve_in","Towner",SPRITE_4_M_DST_MASTER,232,135,5,0,0,"ve_in_Towner_232135")
 
 function ve_in_Towner_232135()
 	dialog "[Towner]"
@@ -676,7 +676,7 @@ function ve_in_Towner_232135()
 	close()
 end
 
-npc("ve_in","Towner",spr_4_M_DST_MASTER,239,135,5,0,0,"ve_in_Towner_239135")
+npc("ve_in","Towner",SPRITE_4_M_DST_MASTER,239,135,5,0,0,"ve_in_Towner_239135")
 
 function ve_in_Towner_239135()
 	dialog "[Towner]"
@@ -691,7 +691,7 @@ function ve_in_Towner_239135()
 	close()
 end
 
-npc("ve_in","Towner",spr_4_M_DESERT,232,124,5,0,0,"ve_in_Towner_232124")
+npc("ve_in","Towner",SPRITE_4_M_DESERT,232,124,5,0,0,"ve_in_Towner_232124")
 
 function ve_in_Towner_232124()
 	dialog "[Towner]"
@@ -705,7 +705,7 @@ function ve_in_Towner_232124()
 	close()
 end
 
-npc("ve_in","Towner",spr_4_M_DST_MASTER,234,105,3,0,0,"ve_in_Towner_234105")
+npc("ve_in","Towner",SPRITE_4_M_DST_MASTER,234,105,3,0,0,"ve_in_Towner_234105")
 
 function ve_in_Towner_234105()
 	dialog "[Towner]"

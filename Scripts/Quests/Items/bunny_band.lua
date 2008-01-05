@@ -19,7 +19,7 @@
 --|      untill the code is in Helios               |--
 --\_________________________________________________/--
 
-npc("alberta","Kafra Employee",spr_4_M_01,26,229,0,0,0,"alberta_Kafra_Employee_26229")
+npc("alberta","Kafra Employee",SPRITE_4_M_01,26,229,0,0,0,"alberta_Kafra_Employee_26229")
 function alberta_Kafra_Employee_26229()
 if getvar("kafra_xmas") == 1 then
 	dialog "[Kafra Employee]"

@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("new_1-1","Bulletin Board",spr_HIDDEN_NPC,66,114,4,0,0,"new_1_1_Bulletin_Board_66114")
+npc("new_1-1","Bulletin Board",SPRITE_HIDDEN_NPC,66,114,4,0,0,"new_1_1_Bulletin_Board_66114")
 function new_1_1_Bulletin_Board_66114()
 	dialog "^FF0000=================================^000000"
 	dialog "^FF0000 ==^000000 ^E40CAA[Welcome] ^CC0000to^FF9000Training ^3366FFGrounds^E40CAA [Welcome] ^FF0000==^000000"
@@ -27,7 +27,7 @@ function new_1_1_Bulletin_Board_66114()
 	close()
 end
 
-npc("new_1-1","Guard",spr_8W_SOLDIER,144,116,2,0,0,"new_1_1_Guard_144116")
+npc("new_1-1","Guard",SPRITE_8W_SOLDIER,144,116,2,0,0,"new_1_1_Guard_144116")
 function new_1_1_Guard_144116()
 	dialog "[Training Ground Guard]"
 	dialog "Welcome to the Training Grounds."
@@ -37,7 +37,7 @@ function new_1_1_Guard_144116()
 	close()
 end
 
-npc("new_1-1","Guard",spr_8W_SOLDIER,144,107,2,0,0,"new_1_1_Guard_144107")
+npc("new_1-1","Guard",SPRITE_8W_SOLDIER,144,107,2,0,0,"new_1_1_Guard_144107")
 function new_1_1_Guard_144107()
 	dialog "[Training Ground Guard]"
 	local temp = math.random(1,2)
@@ -60,7 +60,7 @@ function new_1_1_Guard_144107()
 	close()
 end
 
---npc("new_1-2","Receptionist",spr_4_M_04,100,29,4,0,0,"new_1_2_Receptionist_10029")
+--npc("new_1-2","Receptionist",SPRITE_4_M_04,100,29,4,0,0,"new_1_2_Receptionist_10029")
 function new_1_2_Receptionist_10029()
 	dialog "[Training Grounds Receptionist]"
 	dialog "Welcome!"
@@ -207,7 +207,7 @@ function new_1_2_Receptionist_10029()
 	end
 end
 
---npc("new_1-1","Shion",spr_4_F_JOB_HUNTER,53,114,4,0,0,"new_1_1_Shion_53114")
+--npc("new_1-1","Shion",SPRITE_4_F_JOB_HUNTER,53,114,4,0,0,"new_1_1_Shion_53114")
 function new_1_1_Shion_53114()
 	local name = PcName
 	if ((getvar(nov_get_item04) > 9) or (getvar(nov_get_item05) > 9)) then
@@ -420,7 +420,7 @@ function new_1_1_Shion_53114()
 	end
 end
 
---npc("new_1-2","Interface Tutor",spr_4_M_CRU,99,105,3,0,0,"new_1_2_Interface_Tutor_99105")
+--npc("new_1-2","Interface Tutor",SPRITE_4_M_CRU,99,105,3,0,0,"new_1_2_Interface_Tutor_99105")
 function new_1_2_Interface_Tutor_99105()
 	local name = PcName
 	if ((getvar(nov_get_item02) > 9) and (getvar(nov_get_item03) > 9) and (getvar(nov_get_item04) > 9)) then
@@ -1052,7 +1052,7 @@ function new_1_2_Interface_Tutor_99105()
 	end
 end
 
---npc("new_1-2","Skill Tutor",spr_4_M_MONK,83,111,3,0,0,"new_1_2_Skill_Tutor_83111")
+--npc("new_1-2","Skill Tutor",SPRITE_4_M_MONK,83,111,3,0,0,"new_1_2_Skill_Tutor_83111")
 function new_1_2_Skill_Tutor_83111()
 	local name = PcName
 	if ((getvar(nov_get_item02) > 9) and (getvar(nov_get_item03) > 9) and (getvar(nov_get_item04) > 9)) then
@@ -1629,7 +1629,7 @@ function new_1_2_Skill_Tutor_83111()
 	end
 end
 
---npc("new_1-2","Item Tutor",spr_4_F_JOB_BLACKSMITH,115,111,3,0,0,"new_1_2_Item_Tutor_115111")
+--npc("new_1-2","Item Tutor",SPRITE_4_F_JOB_BLACKSMITH,115,111,3,0,0,"new_1_2_Item_Tutor_115111")
 function new_1_2_Item_Tutor_115111()
 	local name = PcName
 	if ((getvar(nov_get_item02) > 9) and (getvar(nov_get_item03) > 9) and (getvar(nov_get_item04) > 9)) then
@@ -2476,7 +2476,7 @@ function new_1_2_Item_Tutor_115111()
 	end
 end
 
---npc("new_1-2","Kafra Employee",spr_4_F_KAFRA1,118,108,3,0,0,"new_1_2_Kafra_Employee_118108")
+--npc("new_1-2","Kafra Employee",SPRITE_4_F_KAFRA1,118,108,3,0,0,"new_1_2_Kafra_Employee_118108")
 function new_1_2_Kafra_Employee_118108()
 	dialog "[Kafra Employee]"
 	dialog "Welcome to"
@@ -2924,7 +2924,7 @@ function new_1_2_Kafra_Employee_118108()
 	end
 end
 
---npc("new_1-2","Instructor#Edwin",spr_4_F_03,161,182,5,0,0,"new_1_2_InstructorEdwin_161182")
+--npc("new_1-2","Instructor#Edwin",SPRITE_4_F_03,161,182,5,0,0,"new_1_2_InstructorEdwin_161182")
 function new_1_2_InstructorEdwin_161182()
 	local name = PcName
 	dialog "[Edwin]"
@@ -3181,7 +3181,7 @@ function new_1_2_InstructorEdwin_161182()
 	end
 end
 
---npc("new_1-2","Status Assistant",spr_4_M_SAGE_A,182,182,3,0,0,"new_1_2_Status_Assistant_182182")
+--npc("new_1-2","Status Assistant",SPRITE_4_M_SAGE_A,182,182,3,0,0,"new_1_2_Status_Assistant_182182")
 function new_1_2_Status_Assistant_182182()
 	local name = PcName
 	dialog "[Jare Riotte]"
@@ -3481,7 +3481,7 @@ function new_1_2_Status_Assistant_182182()
 	end
 end
 
---npc("new_1-2","Understandings of Skill",spr_1_M_01,184,172,1,0,0,"new_1_2_Understandings_of_Skill_184172")
+--npc("new_1-2","Understandings of Skill",SPRITE_1_M_01,184,172,1,0,0,"new_1_2_Understandings_of_Skill_184172")
 function new_1_2_Understandings_of_Skill_184172()
 	dialog "[Leo Handerson]"
 	dialog "Welcome~"
@@ -3835,7 +3835,7 @@ function new_1_2_Understandings_of_Skill_184172()
 	end
 end
 
-npc("new_1-2","Guide Soldier",spr_8W_SOLDIER,121,101,2,0,0,"new_1_2_Guide_Soldier_121101")
+npc("new_1-2","Guide Soldier",SPRITE_8W_SOLDIER,121,101,2,0,0,"new_1_2_Guide_Soldier_121101")
 function new_1_2_Guide_Soldier_121101()
 	dialog "[Guide Soldier]"
 	dialog "We Guide Soldiers provide location"
@@ -3858,7 +3858,7 @@ function new_1_2_Guide_Soldier_121101()
 	close()
 end
 
---npc("new_1-2","Helper",spr_4_M_02,17,182,5,0,0,"new_1_2_Helper_17182")
+--npc("new_1-2","Helper",SPRITE_4_M_02,17,182,5,0,0,"new_1_2_Helper_17182")
 function new_1_2_Helper_17182()
 	if (getvar(nov_2nd_cos) < 11) then
 		dialog "[Elmeen]"
@@ -4362,7 +4362,7 @@ function new_1_2_Helper_17182()
 	end
 end
 
---npc("new_1-2","Entrance Guard",spr_4_F_03,38,182,3,0,0,"new_1_2_Entrance_Guard_38182")
+--npc("new_1-2","Entrance Guard",SPRITE_4_F_03,38,182,3,0,0,"new_1_2_Entrance_Guard_38182")
 function new_1_2_Entrance_Guard_38182()
 	if (getvar(nov_2nd_cos) == 0) then
 		dialog "[Muriel]"
@@ -4551,7 +4551,7 @@ function new_1_2_Entrance_Guard_38182()
 	end
 end
 
---npc("new_1-3","Trainer",spr_4_M_02,95,30,4,0,0,"new_1_3_Trainer_9530")
+--npc("new_1-3","Trainer",SPRITE_4_M_02,95,30,4,0,0,"new_1_3_Trainer_9530")
 function new_1_3_Trainer_9530()
 	local warp1 = math.random(1,2)
 	dialog "[Hoffman]"
@@ -4618,7 +4618,7 @@ function new_1_3_Trainer_9530()
 	close()
 end
 
---npc("new_1-3","Test Examiner",spr_4_M_03,96,174,3,0,0,"new_1_3_Test_Examiner_96174")
+--npc("new_1-3","Test Examiner",SPRITE_4_M_03,96,174,3,0,0,"new_1_3_Test_Examiner_96174")
 function new_1_3_Test_Examiner_96174()
 	dialog "[Keyman]"
 	dialog "Good!!"
@@ -4652,7 +4652,7 @@ end
 --	sellitem Sweet_Potato
 --end
 
-npc("new_1-4","Final Tutor",spr_1_ETC_01,100,29,1,0,0,"new_1_4_Final_Tutor_10029")
+npc("new_1-4","Final Tutor",SPRITE_1_ETC_01,100,29,1,0,0,"new_1_4_Final_Tutor_10029")
 function new_1_4_Final_Tutor_10029()
 	local max_max_c = CheckMaxCount(1201,1)
 	if max_max_c == 1 then
@@ -7766,7 +7766,7 @@ function new_1_4_Final_Tutor_10029()
 	end
 end
 
---npc("new_1-4","Bruce",spr_1_M_LIBRARYMASTER,91,22,100,4,0,0,new_1_4_Bruce_9122)
+--npc("new_1-4","Bruce",SPRITE_1_M_LIBRARYMASTER,91,22,100,4,0,0,new_1_4_Bruce_9122)
 function new_1_4_Bruce_9122()
 	local name = PcName
 	if (getvar(VAR_JOB) == NOVICE) then

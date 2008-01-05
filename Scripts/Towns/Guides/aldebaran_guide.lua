@@ -20,7 +20,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("aldebaran","Soldier",spr_8W_SOLDIER,139,63,4,0,0,"aldebaran_Soldier_13963")
+npc("aldebaran","Soldier",SPRITE_8W_SOLDIER,139,63,4,0,0,"aldebaran_Soldier_13963")
 function aldebaran_Soldier_13963()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Al De Baran Guard]"
@@ -56,7 +56,7 @@ function aldebaran_Soldier_13963()
 	end
 end
 
-npc("aldebaran","Soldier",spr_8W_SOLDIER,133,108,4,0,0,"aldebaran_Soldier_133108")
+npc("aldebaran","Soldier",SPRITE_8W_SOLDIER,133,108,4,0,0,"aldebaran_Soldier_133108")
 function aldebaran_Soldier_133108()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Al De Baran Guard]"

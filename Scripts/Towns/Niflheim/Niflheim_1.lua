@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("nif_in","Undead Chicken",spr_4_NFCOCK,16,27,1,1,1,"nif_in_Undead_Chicken_1627")
+npc("nif_in","Undead Chicken",SPRITE_4_NFCOCK,16,27,1,1,1,"nif_in_Undead_Chicken_1627")
 function nif_in_Undead_Chicken_1627()
 	hpdrain(5)
 	dialog "[Undead Chicken]"
@@ -40,7 +40,7 @@ function nif_in_Undead_Chicken_1627()
 	close()
 end
 
-npc("nif_in","Undead Familiar",spr_4_NFBAT,16,30,4,1,1,"nif_in_Undead_Familiar_1630")
+npc("nif_in","Undead Familiar",SPRITE_4_NFBAT,16,30,4,1,1,"nif_in_Undead_Familiar_1630")
 function nif_in_Undead_Familiar_1630()
 	hpdrain(5)
 	local name = PcName()
@@ -62,7 +62,7 @@ function nif_in_Undead_Familiar_1630()
 	close()
 end
 
-npc("niflheim","Gigantia",spr_4_M_NFDEADSWDMAN,195,211,6,3,3,"niflheim_Gigantia_195211")
+npc("niflheim","Gigantia",SPRITE_4_M_NFDEADSWDMAN,195,211,6,3,3,"niflheim_Gigantia_195211")
 function niflheim_Gigantia_195211()
 	local hat1 = GetEquipCount(Deviruchi_Cap)
 	local hat2 = GetEquipCount(snowy_Horn)
@@ -108,7 +108,7 @@ function niflheim_Gigantia_195211()
 	close()
 end
 
-npc("prt_in","Erious",spr_4_F_03,161,20,3,0,0,"prt_in_Erious_16120")
+npc("prt_in","Erious",SPRITE_4_F_03,161,20,3,0,0,"prt_in_Erious_16120")
 function prt_in_Erious_16120()
 	if (getvar(nif_revive) == 0) then
 		dialog "[Erious]"
@@ -329,7 +329,7 @@ function prt_in_Erious_16120()
 	end
 end
 
-npc("umbala","Billik",spr_4_M_JOB_KNIGHT1,215,181,3,0,0,"umbala_Billik_215181")
+npc("umbala","Billik",SPRITE_4_M_JOB_KNIGHT1,215,181,3,0,0,"umbala_Billik_215181")
 function umbala_Billik_215181()
 	if (getvar("nif_revive") == 1) then
 		dialog "[Billik]"
@@ -395,7 +395,7 @@ function umbala_Billik_215181()
 	end
 end
 
-npc("niflheim","Feylin",spr_4_M_NFDEADMAN2,153,215,3,0,0,"niflheim_Feylin_153215")
+npc("niflheim","Feylin",SPRITE_4_M_NFDEADMAN2,153,215,3,0,0,"niflheim_Feylin_153215")
 function niflheim_Feylin_153215()
 	if (getvar("nif_revive") == 2) then
 		dialog "[Feylin]"

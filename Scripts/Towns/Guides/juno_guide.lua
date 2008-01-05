@@ -21,7 +21,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("yuno","Juno Guide",spr_8_F_GIRL,153,47,4,0,0,"yuno_Juno_Guide_15347")
+npc("yuno","Juno Guide",SPRITE_8_F_GIRL,153,47,4,0,0,"yuno_Juno_Guide_15347")
 function yuno_Juno_Guide_15347()
 	dialog "[Ms. Yoon]"
 	dialog "A place that takes the vision of the future, and gives it form in the present. Welcome to"

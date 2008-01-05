@@ -20,7 +20,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("comodo","Comodo Guide",spr_8_F_GIRL,322,178,4,0,0,"comodo_Comodo_Guide_322178")
+npc("comodo","Comodo Guide",SPRITE_8_F_GIRL,322,178,4,0,0,"comodo_Comodo_Guide_322178")
 function comodo_Comodo_Guide_322178()
 	dialog "[Native Kokomo]"
 	dialog "Welcome to Comodo, the"
@@ -117,7 +117,7 @@ function comodo_Comodo_Guide_322178()
 	end
 end
 
-npc("comodo","Comodo Guide",spr_8_F_GIRL,176,350,4,0,0,"comodo_Comodo_Guide_176350")
+npc("comodo","Comodo Guide",SPRITE_8_F_GIRL,176,350,4,0,0,"comodo_Comodo_Guide_176350")
 function comodo_Comodo_Guide_176350()
 	dialog "[Native Nutcoco]"
 	dialog "Welcome to Comodo, the"
@@ -214,7 +214,7 @@ function comodo_Comodo_Guide_176350()
 	end
 end
 
-npc("comodo","Comodo Guide",spr_8_F_GIRL,37,219,4,0,0,"comodo_Comodo_Guide_37219")
+npc("comodo","Comodo Guide",SPRITE_8_F_GIRL,37,219,4,0,0,"comodo_Comodo_Guide_37219")
 function comodo_Comodo_Guide_37219()
 	dialog "[Native Papaya]"
 	dialog "Welcome to Comodo, the"

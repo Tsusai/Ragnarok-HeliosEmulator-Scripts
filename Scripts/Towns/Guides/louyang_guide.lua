@@ -21,7 +21,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("louyang","Soldier#BA",spr_4_M_CHNSOLDIER,213,213,3,0,0,"louyang_Soldier#BA_213213")
+npc("louyang","Soldier#BA",SPRITE_4_M_CHNSOLDIER,213,213,3,0,0,"louyang_Soldier#BA_213213")
 function louyang_Soldier#BA_213213()
 	dialog "[Soldier]"
 	dialog "Welcome to Louyang,"
@@ -154,7 +154,7 @@ function louyang_Soldier#BA_213213()
 	close()
 end
 
-npc("louyang","Soldier#BB",spr_4_M_CHNSOLDIER,160,175,3,0,0,"louyang_Soldier#BB_160175")
+npc("louyang","Soldier#BB",SPRITE_4_M_CHNSOLDIER,160,175,3,0,0,"louyang_Soldier#BB_160175")
 function louyang_Soldier#BB_160175()
 	dialog "[Soldier]"
 	dialog "Welcome to Louyang,"
@@ -287,7 +287,7 @@ function louyang_Soldier#BB_160175()
 	close()
 end
 
-npc("louyang","Representative",spr_4_F_CHNWOMAN,224,104,3,0,0,"louyang_Representative_224104")
+npc("louyang","Representative",SPRITE_4_F_CHNWOMAN,224,104,3,0,0,"louyang_Representative_224104")
 function louyang_Representative_224104()
 	dialog "[Representative]"
 	dialog "Welcome to Louyang,"

@@ -20,7 +20,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("ayothaya","Noi",spr_4_F_THAIGIRL,203,169,3,0,0,"ayothaya_Noi_203169")
+npc("ayothaya","Noi",SPRITE_4_F_THAIGIRL,203,169,3,0,0,"ayothaya_Noi_203169")
 function ayothaya_Noi_203169()
 	dialog "[Noi]"
 	dialog "Welcome to Ayotaya."

@@ -21,7 +21,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("umbala","Adventurer",spr_4_F_GON,128,94,4,1,1,"umbala_Adventurer_12894")
+npc("umbala","Adventurer",SPRITE_4_F_GON,128,94,4,1,1,"umbala_Adventurer_12894")
 function umbala_Adventurer_12894()
 	dialog "[Adventurer]"
 	dialog "This is a very strange place..."

@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("nif_in","Deviruchi",spr_4_DEVIRUCHI,190,112,5,0,0,"nif_in_Deviruchi_190112")
+npc("nif_in","Deviruchi",SPRITE_4_DEVIRUCHI,190,112,5,0,0,"nif_in_Deviruchi_190112")
 function nif_in_Deviruchi_190112()
 	if getvar("wedding_sign") == 0 then
 		dialog "[Deviruchi]"

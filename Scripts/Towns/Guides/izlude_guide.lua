@@ -22,7 +22,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("izlude","Guide",spr_8W_SOLDIER,121,87,6,0,0,"izlude_Guide_12187")
+npc("izlude","Guide",SPRITE_8W_SOLDIER,121,87,6,0,0,"izlude_Guide_12187")
 function izlude_Guide_12187()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Izlude Guide]"

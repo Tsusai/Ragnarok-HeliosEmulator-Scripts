@@ -22,7 +22,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("lighthalzen","Guide",spr_4_M_EIN_SOLDIER,207,310,5,0,0,"lighthalzen_Guide_207310")
+npc("lighthalzen","Guide",SPRITE_4_M_EIN_SOLDIER,207,310,5,0,0,"lighthalzen_Guide_207310")
 function lighthalzen_Guide_207310()
 	showimage("ein_soldier.bmp",2)
 	dialog "[Lighthalzen Guide]"
@@ -253,7 +253,7 @@ function lighthalzen_Guide_207310()
 	showimage("ein_soldier.bmp",255)
 end
 
-npc("lighthalzen","Guide",spr_4_M_EIN_SOLDIER,220,311,3,0,0,"lighthalzen_Guide_220311")
+npc("lighthalzen","Guide",SPRITE_4_M_EIN_SOLDIER,220,311,3,0,0,"lighthalzen_Guide_220311")
 function lighthalzen_Guide_220311()
 	showimage("ein_soldier.bmp",2)
 	dialog "[Lighthalzen Guide]"
@@ -391,7 +391,7 @@ function lighthalzen_Guide_220311()
 	showimage("ein_soldier.bmp",255)
 end
 
-npc("lighthalzen","Guide",spr_4_M_EIN_SOLDIER,154,100,5,0,0,"lighthalzen_Guide_154100")
+npc("lighthalzen","Guide",SPRITE_4_M_EIN_SOLDIER,154,100,5,0,0,"lighthalzen_Guide_154100")
 function lighthalzen_Guide_154100()
 	showimage("ein_soldier.bmp",2)
 	dialog "[Lighthalzen Guide]"
@@ -622,7 +622,7 @@ function lighthalzen_Guide_154100()
 	showimage("ein_soldier.bmp",255)
 end
 
-npc("lighthalzen","Guide",spr_4_M_EIN_SOLDIER,307,224,3,0,0,"lighthalzen_Guide_307224")
+npc("lighthalzen","Guide",SPRITE_4_M_EIN_SOLDIER,307,224,3,0,0,"lighthalzen_Guide_307224")
 function lighthalzen_Guide_307224()
 	showimage("ein_soldier.bmp",2)
 	dialog "[Lighthalzen Guide]"

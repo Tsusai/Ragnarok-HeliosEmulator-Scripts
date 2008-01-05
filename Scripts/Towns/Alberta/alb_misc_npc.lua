@@ -21,7 +21,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("alberta_in","Pharmacist",spr_1_M_PUBMASTER,16,28,4,5,5,"alberta_in_Pharmacist_1628")
+npc("alberta_in","Pharmacist",SPRITE_1_M_PUBMASTER,16,28,4,5,5,"alberta_in_Pharmacist_1628")
 function alberta_in_Pharmacist_1628()
 	local max_max_c = CheckMaxCount(1201,1)
 	if max_max_c == 1 then

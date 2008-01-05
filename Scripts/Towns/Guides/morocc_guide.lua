@@ -22,7 +22,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("morocc","Guide",spr_4_M_MOC_SOLDIER,153,286,6,0,0,"morocc_Guide_153286")
+npc("morocc","Guide",SPRITE_4_M_MOC_SOLDIER,153,286,6,0,0,"morocc_Guide_153286")
 function morocc_Guide_153286()
 	showimage("moc_soldier.bmp",2)
 	dialog "[Morroc Guide]"
@@ -177,7 +177,7 @@ function morocc_Guide_153286()
 	showimage("moc_soldier.bmp",255)
 end
 
-npc("morocc","Guide",spr_4_M_MOC_SOLDIER,54,97,0,0,0,"morocc_Guide_5497")
+npc("morocc","Guide",SPRITE_4_M_MOC_SOLDIER,54,97,0,0,0,"morocc_Guide_5497")
 function morocc_Guide_5497()
 	showimage("moc_soldier.bmp",2)
 	dialog "[Morroc Guide]"
