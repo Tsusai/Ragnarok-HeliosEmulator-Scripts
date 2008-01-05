@@ -1,25 +1,24 @@
---  ____________________________________________________________
--- /                                                            \
--- |  ##       ##  ########  #########     ##########   ######   |
--- |   ##     ##  ##    ##  ##     ##     ##      ##   ##    ##  |
--- |    ##   ##  ##    ##  ##     ##     ##      ##   ##         |
--- |     ## ##  ##    ##  ##     ##     ##      ##   ##          |
--- |      ###  ########  #########     ##      ##   #######      |
--- |      ##  ##    ##  ##    ##      ##      ##        ##       |
--- |     ##  ##    ##  ##      ##    ##      ##  ##    ##        |
--- |    ##  ##    ##  ##        ##  ##########    ######         |
--- |   Yaros Package                                             |
--- |-------------------------------------------------------------|
--- | Current Version: 1.0      | Episode 10.3 File.              |
--- |-------------------------------------------------------------|
--- | 01/12/2006 : Added 1st Version. [Muad_Dib]                  |
--- |-------------------------------------------------------------|
--- | Credits: Gravity                                            |
--- |-------------------------------------------------------------|
--- | Notes:                                                      |
--- |                                                             |
--- |                                                             |
--- \____________________________________________________________/
+-- _________________________________________________ --
+--/                                                 \--
+--|    _    _          _   _                        |--
+--|   | |  | |        | | (_)                       |--
+--|   | |__| |   ___  | |  _    ___    ___          |--
+--|   |  __  |  / _ \ | | | |  / _ \  / __|         |--
+--|   | |  | | |  __/ | | | | | (_) | \__ \         |--
+--|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
+--|                                                 |--
+--|-------------------------------------------------|--
+--| 05/01/2008                                      |--
+--|   - First version for helios, Loads but does    |--
+--|     not fully operate. [Spre]                   |--
+--|-------------------------------------------------|--
+--| Credits: Gravity                                |--
+--|          Yaros                                  |--
+--|-------------------------------------------------|--
+--| Notes:                                          |--
+--|                                                 |--
+--|                                                 |--
+--\_________________________________________________/--
 
 npc("amatsu","Amatsu Guide",spr_4_F_JPN,207,89,3,0,0,"amatsu_Amatsu_Guide_20789")
 function amatsu_Amatsu_Guide_20789()
@@ -38,7 +37,7 @@ function amatsu_Amatsu_Guide_20789()
 	wait()
 	local mresulta = menu("Palace","Tool Shop","Weapon Shop","Bar")
 	if mresulta == 1 then
-		compass(0,85,235,1,0xFFFF3355)
+		compass(0,85,235,1,"0xFFFF3355")
 		dialog "[Amachang]"
 		dialog "On the mini-map,"
 		dialog "go to ^FF3355+^000000"
@@ -47,7 +46,7 @@ function amatsu_Amatsu_Guide_20789()
 		dialog "in Amatsu."
 		close()
 	elseif mresulta == 2 then
-		compass(1,96,118,1,0xFFCE6300)
+		compass(1,96,118,1,"0xFFCE6300")
 		dialog "[Amachang]"
 		dialog "On the mini-map,"
 		dialog "go to ^FF3355+^000000"
@@ -56,7 +55,7 @@ function amatsu_Amatsu_Guide_20789()
 		dialog "in Amatsu."
 		close()
 	elseif mresulta == 3 then
-		compass(2,132,117,1,0xFF55FF33)
+		compass(2,132,117,1,"0xFF55FF33")
 		dialog "[Amachang]"
 		dialog "On the mini-map,"
 		dialog "go to ^55FF33+^000000"
@@ -65,7 +64,7 @@ function amatsu_Amatsu_Guide_20789()
 		dialog "in Amatsu."
 		close()
 	elseif mresulta == 4 then
-		compass(3,217,116,1,0xFF3355FF)
+		compass(3,217,116,1,"0xFF3355FF")
 		dialog "[Amachang]"
 		dialog "On the mini-map,"
 		dialog "go to ^3355FF+^000000"
@@ -88,7 +87,7 @@ function amatsu_Guide_Man_251283()
 	wait()
 	local mresulta = menu("Palace","Tool Shop","Weapon Shop","Bar")
 	if mresulta == 1 then
-		compass(0,85,235,1,0xFFFF3355)
+		compass(0,85,235,1,"0xFFFF3355")
 		dialog "[Guide Man]"
 		dialog "On the mini-map,"
 		dialog "go to ^FF3355+^000000"
@@ -97,7 +96,7 @@ function amatsu_Guide_Man_251283()
 		dialog "in Amatsu."
 		close()
 	elseif mresulta == 2 then
-		compass(1,96,118,1,0xFFCE6300)
+		compass(1,96,118,1,"0xFFCE6300")
 		dialog "[Guide Man]"
 		dialog "On the mini-map,"
 		dialog "go to ^FF3355+^000000"
@@ -106,7 +105,7 @@ function amatsu_Guide_Man_251283()
 		dialog "in Amatsu."
 		close()
 	elseif mresulta == 3 then
-		compass(2,132,117,1,0xFF55FF33)
+		compass(2,132,117,1,"0xFF55FF33")
 		dialog "[Guide Man]"
 		dialog "On the mini-map,"
 		dialog "go to ^55FF33+^000000"
@@ -115,7 +114,7 @@ function amatsu_Guide_Man_251283()
 		dialog "in Amatsu."
 		close()
 	elseif mresulta == 4 then
-		compass(3,217,116,1,0xFF3355FF)
+		compass(3,217,116,1,"0xFF3355FF")
 		dialog "[Guide Man]"
 		dialog "On the mini-map,"
 		dialog "go to ^3355FF+^000000"
