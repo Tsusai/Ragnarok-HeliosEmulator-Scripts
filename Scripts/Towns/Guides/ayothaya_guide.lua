@@ -1,25 +1,24 @@
---  ____________________________________________________________
--- /                                                            \
--- |  ##       ##  ########  #########     ##########   ######   |
--- |   ##     ##  ##    ##  ##     ##     ##      ##   ##    ##  |
--- |    ##   ##  ##    ##  ##     ##     ##      ##   ##         |
--- |     ## ##  ##    ##  ##     ##     ##      ##   ##          |
--- |      ###  ########  #########     ##      ##   #######      |
--- |      ##  ##    ##  ##    ##      ##      ##        ##       |
--- |     ##  ##    ##  ##      ##    ##      ##  ##    ##        |
--- |    ##  ##    ##  ##        ##  ##########    ######         |
--- |   Yaros Package                                             |
--- |-------------------------------------------------------------|
--- | Current Version: 1.0      | Episode 10.3 File.              |
--- |-------------------------------------------------------------|
--- | 30/11/2006 : Added 1st Version. [Muad_Dib]                  |
--- |-------------------------------------------------------------|
--- | Credits: Gravity                                            |
--- |-------------------------------------------------------------|
--- | Notes:                                                      |
--- |                                                             |
--- |                                                             |
--- \____________________________________________________________/
+-- _________________________________________________ --
+--/                                                 \--
+--|    _    _          _   _                        |--
+--|   | |  | |        | | (_)                       |--
+--|   | |__| |   ___  | |  _    ___    ___          |--
+--|   |  __  |  / _ \ | | | |  / _ \  / __|         |--
+--|   | |  | | |  __/ | | | | | (_) | \__ \         |--
+--|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
+--|                                                 |--
+--|-------------------------------------------------|--
+--| 05/01/2008                                      |--
+--|   - First version for helios, Loads but does    |--
+--|     not fully operate. [Spre]                   |--
+--|-------------------------------------------------|--
+--| Credits: Gravity                                |--
+--|          Yaros                                  |--
+--|-------------------------------------------------|--
+--| Notes:                                          |--
+--|                                                 |--
+--|                                                 |--
+--\_________________________________________________/--
 
 npc("ayothaya","Noi",spr_4_F_THAIGIRL,203,169,3,0,0,"ayothaya_Noi_203169")
 function ayothaya_Noi_203169()
@@ -55,9 +54,9 @@ function ayothaya_Noi_203169()
 			dialog "is located at ^55FF33+^000000."
 
 			if (getvar(compass_check) == 1) then
-				compass(2,165,90,1,0xFF55FF33)
+				compass(2,165,90,1,"0xFF55FF33")
 			else
-				compass(2,165,90,0,0xFF55FF33)
+				compass(2,165,90,0,"0xFF55FF33")
 			end
 		elseif mresultb == 2 then
 			dialog "[Noi]"
@@ -67,9 +66,9 @@ function ayothaya_Noi_203169()
 			dialog "Our Tool Shop"
 			dialog "is located at ^3355FF+^000000."
 			if (getvar(compass_check) == 1) then
-				compass(3,129,86,1,0xFF3355FF)
+				compass(3,129,86,1,"0xFF3355FF")
 			else
-				compass(3,129,86,0,0xFF3355FF)
+				compass(3,129,86,0,"0xFF3355FF")
 			end
 		elseif mresultb == 3 then
 			dialog "[Noi]"
@@ -80,9 +79,9 @@ function ayothaya_Noi_203169()
 			dialog "drop by our Tavern."
 			dialog "It is located at ^00FF00+^000000."
 			if (getvar(compass_check) == 1) then
-				compass(4,232,76,1,0xFF00FF00)
+				compass(4,232,76,1,"0xFF00FF00")
 			else
-				compass(4,232,76,0,0xFF00FF00)
+				compass(4,232,76,0,"0xFF00FF00")
 			end
 		elseif mresultb == 4 then
 			dialog "[Noi]"
@@ -93,9 +92,9 @@ function ayothaya_Noi_203169()
 			dialog "Our Shrine"
 			dialog "is located at ^00FF00+^000000."
 			if (getvar(compass_check) == 1) then
-				compass(5,208,283,1,0xFF00FF00)
+				compass(5,208,283,1,"0xFF00FF00")
 			else
-				compass(5,208,283,0,0xFF00FF00)
+				compass(5,208,283,0,"0xFF00FF00")
 			end
 		elseif mresultb == 5 then
 			dialog "[Noi]"
@@ -106,9 +105,9 @@ function ayothaya_Noi_203169()
 			dialog "Fishing Spot"
 			dialog "is located at ^00FF00+^000000"
 			if (getvar(compass_check) == 1) then
-				compass(6,253,99,1,0xFF00FF00)
+				compass(6,253,99,1,"0xFF00FF00")
 			else
-				compass(6,253,99,0,0xFF00FF00)
+				compass(6,253,99,0,"0xFF00FF00")
 			end
 		elseif mresultb == 6 then
 			dialog "[Noi]"
@@ -117,11 +116,11 @@ function ayothaya_Noi_203169()
 		end
 		close()
 	elseif mresulta == 2 then
-		compass(2,165,90,2,0xFF00FF00)
-		compass(3,129,86,2,0xFF00FF00)
-		compass(4,232,76,2,0xFF00FF00)
-		compass(5,208,283,2,0xFF00FF00)
-		compass(6,253,99,2,0xFF00FF00)
+		compass(2,165,90,2,"0xFF00FF00")
+		compass(3,129,86,2,"0xFF00FF00")
+		compass(4,232,76,2,"0xFF00FF00")
+		compass(5,208,283,2,"0xFF00FF00")
+		compass(6,253,99,2,"0xFF00FF00")
 		compass_check("=",0)
 		dialog "[Noi]"
 		dialog "Alright..."
