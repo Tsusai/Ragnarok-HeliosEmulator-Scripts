@@ -22,7 +22,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("prontera","Guide",spr_8W_SOLDIER,154,187,4,0,0,"prontera_Guide_154187")
+npc("prontera","Guide",SPRITE_8W_SOLDIER,154,187,4,0,0,"prontera_Guide_154187")
 function prontera_Guide_154187()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Prontera Guide]"
@@ -254,7 +254,7 @@ function prontera_Guide_154187()
 	showimage("prt_soldier.bmp",255)
 end
 
-npc("prontera","East Gate-Guide",spr_8W_SOLDIER,282,208,2,0,0,"prontera_East_Gate-Guide_282208")
+npc("prontera","East Gate-Guide",SPRITE_8W_SOLDIER,282,208,2,0,0,"prontera_East_Gate-Guide_282208")
 function prontera_East_Gate-Guide_282208()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Prontera Guide]"
@@ -486,7 +486,7 @@ function prontera_East_Gate-Guide_282208()
 	showimage("prt_soldier.bmp",255)
 end
 
-npc("prontera","West Gate-Guide",spr_8W_SOLDIER,29,200,6,0,0,"prontera_West_Gate-Guide_29200")
+npc("prontera","West Gate-Guide",SPRITE_8W_SOLDIER,29,200,6,0,0,"prontera_West_Gate-Guide_29200")
 function prontera_West_Gate-Guide_29200()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Prontera Guide]"
@@ -718,7 +718,7 @@ function prontera_West_Gate-Guide_29200()
 	showimage("prt_soldier.bmp",255)
 end
 
-npc("prontera","South Gate-Guide",spr_8W_SOLDIER,160,29,0,0,0,"prontera_South_Gate-Guide_16029")
+npc("prontera","South Gate-Guide",SPRITE_8W_SOLDIER,160,29,0,0,0,"prontera_South_Gate-Guide_16029")
 function prontera_South_Gate-Guide_16029()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Prontera Guide]"
@@ -950,7 +950,7 @@ function prontera_South_Gate-Guide_16029()
 	showimage("prt_soldier.bmp",255)
 end
 
-npc("prontera","North Gate-Guide",spr_8W_SOLDIER,151,330,4,0,0,"prontera_North_Gate-Guide_151330")
+npc("prontera","North Gate-Guide",SPRITE_8W_SOLDIER,151,330,4,0,0,"prontera_North_Gate-Guide_151330")
 function prontera_North_Gate-Guide_151330()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Prontera Guide]"

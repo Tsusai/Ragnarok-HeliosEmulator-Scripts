@@ -23,7 +23,7 @@
 -- |        reconize them.   [Spre]                              |
 -- \_____________________________________________________________/
 
-npc("aldebaran","Forger Munster",spr_1_M_02,113,70,4,0,0,"aldebaran_Forger_Munster_11370")
+npc("aldebaran","Forger Munster",SPRITE_1_M_02,113,70,4,0,0,"aldebaran_Forger_Munster_11370")
 function aldebaran_Forger_Munster_11370()
 	dialog "[Munster]"
 	dialog "My family used to live in Geffen. So I guess it was natural that we studied forging and eventually became Blacksmiths. Then, we finally moved to this town,"
@@ -51,7 +51,7 @@ function aldebaran_Forger_Munster_11370()
 	end
 end
 
-npc("aldebaran","Smithing Guy",spr_1_M_JOBTESTER,64,104,4,0,0,"aldebaran_Smithing_Guy_64104")
+npc("aldebaran","Smithing Guy",SPRITE_1_M_JOBTESTER,64,104,4,0,0,"aldebaran_Smithing_Guy_64104")
 function aldebaran_Smithing_Guy_64104()
 	dialog "[Quatro]"
 	dialog "Have you heard that a famous Blacksmith moved here from Geffen?"
@@ -77,7 +77,7 @@ function aldebaran_Smithing_Guy_64104()
 	end
 end
 
-npc("aldebaran","Young Man",spr_4_M_01,49,93,4,0,0,"aldebaran_Young_Man_4993")
+npc("aldebaran","Young Man",SPRITE_4_M_01,49,93,4,0,0,"aldebaran_Young_Man_4993")
 function aldebaran_Young_Man_4993()
 	dialog "[Miller]"
 	dialog "Aren't level 4 weapons cool!"
@@ -89,7 +89,7 @@ function aldebaran_Young_Man_4993()
 	close()
 end
 
-npc("aldebaran","Shell Gathering Lady",spr_4W_F_01,81,61,4,0,0,"aldebaran_Shell_Gathering_Lady_8161")
+npc("aldebaran","Shell Gathering Lady",SPRITE_4W_F_01,81,61,4,0,0,"aldebaran_Shell_Gathering_Lady_8161")
 function aldebaran_Shell_Gathering_Lady_8161()
 	dialog "[Joanne]"
 	dialog "I enjoy gathering shells from the sea. It's really fun and relaxing~"
@@ -122,7 +122,7 @@ function aldebaran_Shell_Gathering_Lady_8161()
 	end
 end
 
-npc("aldebaran","Canal Guy",spr_4W_M_01,46,129,4,0,0,"aldebaran_Canal_Guy_46129")
+npc("aldebaran","Canal Guy",SPRITE_4W_M_01,46,129,4,0,0,"aldebaran_Canal_Guy_46129")
 function aldebaran_Canal_Guy_46129()
 	dialog "[Panama]"
 	dialog "Al De Baran is known world wide as the City of Canals. The waterways really add a sophisticated, romantic touch to our fair city."
@@ -143,7 +143,7 @@ function aldebaran_Canal_Guy_46129()
 	end
 end
 
-npc("aldebaran","Forest Guy",spr_4W_M_02,67,154,4,0,0,"aldebaran_Forest_Guy_67154")
+npc("aldebaran","Forest Guy",SPRITE_4W_M_02,67,154,4,0,0,"aldebaran_Forest_Guy_67154")
 function aldebaran_Forest_Guy_67154()
 	dialog "[Isenberg]"
 	dialog "Mt. Mjolnir and Payon Forest."
@@ -182,7 +182,7 @@ function aldebaran_Forest_Guy_67154()
 	end
 end
 
-npc("aldebaran","Slot Guy",spr_1_M_01,90,170,4,0,0,"aldebaran_Slot_Guy_90170")
+npc("aldebaran","Slot Guy",SPRITE_1_M_01,90,170,4,0,0,"aldebaran_Slot_Guy_90170")
 function aldebaran_Slot_Guy_90170()
 	dialog "[Epthiel]"
 	dialog "Some weapons or armor have Slots where you can insert Cards obtained from monsters."
@@ -215,7 +215,7 @@ function aldebaran_Slot_Guy_90170()
 	end
 end
 
-npc("aldebaran","Phracon Guy",spr_1_M_02,117,181,4,0,0,"aldebaran_Phracon_Guy_117181")
+npc("aldebaran","Phracon Guy",SPRITE_1_M_02,117,181,4,0,0,"aldebaran_Phracon_Guy_117181")
 function aldebaran_Phracon_Guy_117181()
 	dialog "[Joy]"
 	dialog "Level 1 weapons, which are the lowest grade, need a metal named ^3355FFPhracon^000000 in order to be upgraded."
@@ -244,7 +244,7 @@ function aldebaran_Phracon_Guy_117181()
 	end
 end
 
-npc("aldebaran","Alchemy Guy",spr_1_M_03,121,231,4,0,0,"aldebaran_Alchemy_Guy_121231")
+npc("aldebaran","Alchemy Guy",SPRITE_1_M_03,121,231,4,0,0,"aldebaran_Alchemy_Guy_121231")
 function aldebaran_Alchemy_Guy_121231()
 	dialog "[Chemirre]"
 	dialog "Alchemists, one of the 2nd Jobs, are able to create items out of several materials using knowledge from the ancient age of Al De Baran."
@@ -316,7 +316,7 @@ function aldebaran_Alchemy_Guy_121231()
 	end
 end
 
-npc("aldebaran","Little Kid",spr_1_M_SIZ,86,228,4,0,0,"aldebaran_Little_Kid_86228")
+npc("aldebaran","Little Kid",SPRITE_1_M_SIZ,86,228,4,0,0,"aldebaran_Little_Kid_86228")
 function aldebaran_Little_Kid_86228()
 	dialog "[Bebe]"
 	dialog "A while ago I went out for a walk toward Mt. Mjolnir with my pet Savage Bebe. His name is NukNuk!"
@@ -351,7 +351,7 @@ function aldebaran_Little_Kid_86228()
 	end
 end
 
-npc("aldebaran","Insect Guy",spr_2_M_SWORDMASTER,159,242,4,0,0,"aldebaran_Insect_Guy_159242")
+npc("aldebaran","Insect Guy",SPRITE_2_M_SWORDMASTER,159,242,4,0,0,"aldebaran_Insect_Guy_159242")
 function aldebaran_Insect_Guy_159242()
 	dialog "[Stromme]"
 	dialog "Even to a strong Swordman, the Insects or Mt. Mjolnir pose a considerable threat. You've got to know your enemy before engaging it in battle!"
@@ -383,7 +383,7 @@ function aldebaran_Insect_Guy_159242()
 	end
 end
 
-npc("aldeba_in","RS125",spr_1_M_02,232,241,4,0,0,"aldeba_in_RS125_232241")
+npc("aldeba_in","RS125",SPRITE_1_M_02,232,241,4,0,0,"aldeba_in_RS125_232241")
 function aldeba_in_RS125_232241()
 	dialog "[RS125]"
 	dialog "I may sound unhuman rather robotic"
@@ -429,7 +429,7 @@ function aldeba_in_RS125_232241()
 	end
 end
 
-npc("aldeba_in","ThreateningLooking Man",spr_1_M_SMITH,223,121,4,0,0,"aldeba_in_ThreateningLooking_Man_223121")
+npc("aldeba_in","ThreateningLooking Man",SPRITE_1_M_SMITH,223,121,4,0,0,"aldeba_in_ThreateningLooking_Man_223121")
 function aldeba_in_ThreateningLooking_Man_223121()
 	dialog "[Threatening-Looking Man]"
 	dialog "Hey, you don't come inside someone else's house without permission."
@@ -478,7 +478,7 @@ function aldeba_in_ThreateningLooking_Man_223121()
 	end
 end
 
-npc("aldeba_in","FriendlyLooking Man",spr_4_M_MANAGER,219,61,4,4,5,"aldeba_in_FriendlyLooking_Man_21961")
+npc("aldeba_in","FriendlyLooking Man",SPRITE_4_M_MANAGER,219,61,4,4,5,"aldeba_in_FriendlyLooking_Man_21961")
 function aldeba_in_FriendlyLooking_Man_21961()
 	dialog "[Friendly-Looking Man]"
 	dialog "You don't have to listen to a guy right next to my room."
@@ -491,7 +491,7 @@ function aldeba_in_FriendlyLooking_Man_21961()
 	close()
 end
 
-npc("aldeba_in","Fussy Man",spr_4W_M_01,152,47,4,0,0,"aldeba_in_Fussy_Man_15247")
+npc("aldeba_in","Fussy Man",SPRITE_4W_M_01,152,47,4,0,0,"aldeba_in_Fussy_Man_15247")
 function aldeba_in_Fussy_Man_15247()
 	dialog "[Fussy Man]"
 	dialog "Aaaaarrrggghhh...I AM IN TROUBLE!"
@@ -529,7 +529,7 @@ function aldeba_in_Fussy_Man_15247()
 	return
 end
 
-npc("aldeba_in","Master",spr_1_M_PUBMASTER,156,179,4,0,0,"aldeba_in_Master_156179")
+npc("aldeba_in","Master",SPRITE_1_M_PUBMASTER,156,179,4,0,0,"aldeba_in_Master_156179")
 function aldeba_in_Master_156179()
 	dialog "[Master]"
 	dialog "The Kafra Corporation Headquarters is located here in Al De Baran."
@@ -622,7 +622,7 @@ function aldeba_in_Master_156179()
 	end
 end
 
-npc("aldeba_in","Kafra Service",spr_4_F_KAFRA1,84,166,4,0,0,"aldeba_in_Kafra_Service_84166")
+npc("aldeba_in","Kafra Service",SPRITE_4_F_KAFRA1,84,166,4,0,0,"aldeba_in_Kafra_Service_84166")
 function aldeba_in_Kafra_Service_84166()
 	showimage("kafra_01.bmp",2)
 	dialog "[Kafra Pavianne]"
@@ -683,7 +683,7 @@ function aldeba_in_Kafra_Service_84166()
 	end
 end
 
-npc("aldeba_in","Kafra Service",spr_4_F_KAFRA2,83,245,4,0,0,"aldeba_in_Kafra_Service_83245")
+npc("aldeba_in","Kafra Service",SPRITE_4_F_KAFRA2,83,245,4,0,0,"aldeba_in_Kafra_Service_83245")
 function aldeba_in_Kafra_Service_83245()
 	showimage("kafra_02.bmp",2)
 	dialog "[Kafra Blossom]"
@@ -749,7 +749,7 @@ function aldeba_in_Kafra_Service_83245()
 	showimage("kafra_02.bmp",255)
 end
 
-npc("aldeba_in","Kafra Jasmine",spr_4_F_KAFRA3,24,245,4,0,0,"aldeba_in_Kafra_Jasmine_24245")
+npc("aldeba_in","Kafra Jasmine",SPRITE_4_F_KAFRA3,24,245,4,0,0,"aldeba_in_Kafra_Jasmine_24245")
 function aldeba_in_Kafra_Jasmine_24245()
 	showimage("kafra_03.bmp",2)
 	dialog "[Kafra Jasmine]"
@@ -811,7 +811,7 @@ function aldeba_in_Kafra_Jasmine_24245()
 	end
 end
 
-npc("aldeba_in","Kafra Service",spr_4_F_KAFRA4,142,238,4,0,0,"aldeba_in_Kafra_Service_142238")
+npc("aldeba_in","Kafra Service",SPRITE_4_F_KAFRA4,142,238,4,0,0,"aldeba_in_Kafra_Service_142238")
 function aldeba_in_Kafra_Service_142238()
 	showimage("kafra_04.bmp",2)
 	dialog "[Kafra Roxie]"
@@ -883,7 +883,7 @@ function aldeba_in_Kafra_Service_142238()
 	showimage("kafra_04.bmp",255)
 end
 
-npc("aldeba_in","Kafra Service",spr_4_F_KAFRA6,91,244,4,4,5,"aldeba_in_Kafra_Service_91244")
+npc("aldeba_in","Kafra Service",SPRITE_4_F_KAFRA6,91,244,4,4,5,"aldeba_in_Kafra_Service_91244")
 function aldeba_in_Kafra_Service_91244()
 	showimage("kafra_06.bmp",2)
 	dialog "[Kafra Curly Sue]"
@@ -910,7 +910,7 @@ function aldeba_in_Kafra_Service_91244()
 	end
 end
 
-npc("aldebaran","Sylvia",spr_1_F_04,60,70,4,0,0,"aldebaran_Sylvia_6070")
+npc("aldebaran","Sylvia",SPRITE_1_F_04,60,70,4,0,0,"aldebaran_Sylvia_6070")
 function aldebaran_Sylvia_6070()
 	dialog "[Sylvia]"
 	dialog "I came all the way here from Prontera because I heard the Kafra Main Office was somewhere here in Al De Baran."
@@ -943,7 +943,7 @@ function aldebaran_Sylvia_6070()
 	end
 end
 
-npc("aldebaran","Issei",spr_1_M_02,93,80,4,0,0,"aldebaran_Issei_9380")
+npc("aldebaran","Issei",SPRITE_1_M_02,93,80,4,0,0,"aldebaran_Issei_9380")
 function aldebaran_Issei_9380()
 	dialog "[Issei]"
 	dialog "Al De Baran is such a wonderful place with its romantic canals and classic architecture. I love nothing more than to stroll through this city with my beautiful girlfriend."
@@ -972,7 +972,7 @@ function aldebaran_Issei_9380()
 	end
 end
 
-npc("aldebaran","Joo Jahk",spr_4_M_ORIENT01,180,46,4,0,0,"aldebaran_Joo_Jahk_18046")
+npc("aldebaran","Joo Jahk",SPRITE_4_M_ORIENT01,180,46,4,0,0,"aldebaran_Joo_Jahk_18046")
 function aldebaran_Joo_Jahk_18046()
 	dialog "[Joo Jahk]"
 	dialog "I'm a tourist"
@@ -1000,7 +1000,7 @@ function aldebaran_Joo_Jahk_18046()
 	end
 end
 
-npc("aldebaran","Citizen",spr_4W_M_01,212,122,4,0,0,"aldebaran_Citizen_212122")
+npc("aldebaran","Citizen",SPRITE_4W_M_01,212,122,4,0,0,"aldebaran_Citizen_212122")
 function aldebaran_Citizen_212122()
 	dialog "[Gavin]"
 	dialog "Welcome!"
@@ -1035,7 +1035,7 @@ function aldebaran_Citizen_212122()
 	end
 end
 
-npc("aldebaran","Town Girl",spr_4W_F_01,146,124,4,0,0,"aldebaran_Town_Girl_146124")
+npc("aldebaran","Town Girl",SPRITE_4W_F_01,146,124,4,0,0,"aldebaran_Town_Girl_146124")
 function aldebaran_Town_Girl_146124()
 	dialog "[Nastasia]"
 	dialog "Somewhere in the world there is an ^3355FFAssassin Guild^000000, where they teach people the subtle art of assassination."
@@ -1061,7 +1061,7 @@ function aldebaran_Town_Girl_146124()
 	end
 end
 
-npc("aldebaran","Bell KeeperA",spr_4_M_ORIENT02,143,136,4,0,0,"aldebaran_Bell_KeeperA_143136")
+npc("aldebaran","Bell KeeperA",SPRITE_4_M_ORIENT02,143,136,4,0,0,"aldebaran_Bell_KeeperA_143136")
 function aldebaran_Bell_KeeperA_143136()
 	dialog "[Bell Keeper]"
 	dialog "I have been charged by the Committee of 'Heaven on Earth' to guard this entrance of the Clock Tower."
@@ -1087,7 +1087,7 @@ function aldebaran_Bell_KeeperA_143136()
 	end
 end
 
-npc("aldeba_in","Inn Maid",spr_1_M_INNKEEPER,92,58,5,0,0,"aldeba_in_Inn_Maid_9258")
+npc("aldeba_in","Inn Maid",SPRITE_1_M_INNKEEPER,92,58,5,0,0,"aldeba_in_Inn_Maid_9258")
 function aldeba_in_Inn_Maid_9258()
 	dialog "[Rilim]"
 	dialog "Welcome to Al De Baran Inn."

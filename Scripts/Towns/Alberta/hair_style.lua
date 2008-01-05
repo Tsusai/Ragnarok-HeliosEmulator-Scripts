@@ -21,7 +21,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("alberta_in","Hair Dresser",spr_4_F_02,55,142,7,0,0,"alberta_in_Hair_Dresser_55142")
+npc("alberta_in","Hair Dresser",SPRITE_4_F_02,55,142,7,0,0,"alberta_in_Hair_Dresser_55142")
 function alberta_in_Hair_Dresser_55142()
 	dialog "[Veronica]"
 	dialog "Welcome to Veronica's hair salon."
@@ -600,7 +600,7 @@ function alberta_in_Hair_Dresser_55142()
 	end
 end
 
-npc("alberta","Roving Hair Dresser",spr_4_M_BARBER,33,141,7,0,0,"alberta_Roving_Hair_Dresser_33141")
+npc("alberta","Roving Hair Dresser",SPRITE_4_M_BARBER,33,141,7,0,0,"alberta_Roving_Hair_Dresser_33141")
 function alberta_Roving_Hair_Dresser_33141()
 	dialog "[Rui Vishop]"
 	dialog "That Veronica..."

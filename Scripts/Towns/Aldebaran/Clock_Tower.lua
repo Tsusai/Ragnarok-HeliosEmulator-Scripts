@@ -21,7 +21,7 @@
 -- |       Untill we gain the item commands                      |
 -- \____________________________________________________________/
 
-npc("c_tower3","Gatekeeper",spr_4_M_02,10,249,4,0,0,"c_tower3_Gatekeeper_10249")
+npc("c_tower3","Gatekeeper",SPRITE_4_M_02,10,249,4,0,0,"c_tower3_Gatekeeper_10249")
 function c_tower3_Gatekeeper_10249()
 	dialog "[Gatekeeper Riku]"
 	dialog "Welcome to "
@@ -124,7 +124,7 @@ function c_tower3_Gatekeeper_10249()
 	end
 end
 
-npc("alde_dun03","Gatekeeper",spr_4W_F_01,264,16,4,0,0,"alde_dun03_Gatekeeper_26416")
+npc("alde_dun03","Gatekeeper",SPRITE_4W_F_01,264,16,4,0,0,"alde_dun03_Gatekeeper_26416")
 function alde_dun03_Gatekeeper_26416()
 	dialog "[Gatekeeper Boy]"
 	dialog "Welcome to"

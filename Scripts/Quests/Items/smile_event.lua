@@ -19,7 +19,7 @@
 --|      untill the code is in Helios               |--
 --\_________________________________________________/--
 
-npc("prontera","Smile Assistance",spr_4_F_03,157,187,4,4,5,"prontera_Smile_Assistance_157187")
+npc("prontera","Smile Assistance",SPRITE_4_F_03,157,187,4,4,5,"prontera_Smile_Assistance_157187")
 function prontera_Smile_Assistance_157187()
 	dialog "[Smile Girl]"
 	dialog "Hi ~ Hi ~"
@@ -99,7 +99,7 @@ function prontera_Smile_Assistance_157187()
 	end
 end
  
-npc("morocc","Smile Assistance",spr_4_F_03,158,97,4,4,5,"morocc_Smile_Assistance_15897")
+npc("morocc","Smile Assistance",SPRITE_4_F_03,158,97,4,4,5,"morocc_Smile_Assistance_15897")
 function morocc_Smile_Assistance_15897()
 	dialog "[Smile Girl]"
 	dialog "Hi ~ Hi ~"
@@ -179,7 +179,7 @@ function morocc_Smile_Assistance_15897()
 	end
 end
  
-npc("aldebaran","Smile Assistance",spr_4_F_03,136,135,4,4,5,"aldebaran_Smile_Assistance_136135")
+npc("aldebaran","Smile Assistance",SPRITE_4_F_03,136,135,4,4,5,"aldebaran_Smile_Assistance_136135")
 function aldebaran_Smile_Assistance_136135()
 	dialog "[Smile Girl]"
 	dialog "Hi ~ Hi ~"
@@ -259,7 +259,7 @@ function aldebaran_Smile_Assistance_136135()
 	end
 end
  
-npc("geffen","Smile Assistance",spr_4_F_03,119,107,4,4,5,"geffen_Smile_Assistance_119107")
+npc("geffen","Smile Assistance",SPRITE_4_F_03,119,107,4,4,5,"geffen_Smile_Assistance_119107")
 function geffen_Smile_Assistance_119107()
 	dialog "[Smile Girl]"
 	dialog "Hi ~ Hi ~"
@@ -339,7 +339,7 @@ function geffen_Smile_Assistance_119107()
 	end
 end
  
-npc("alberta","Smile Assistance",spr_4_F_03,113,53,4,4,5,"alberta_Smile_Assistance_11353")
+npc("alberta","Smile Assistance",SPRITE_4_F_03,113,53,4,4,5,"alberta_Smile_Assistance_11353")
 function alberta_Smile_Assistance_11353()
 	dialog "[Smile Girl]"
 	dialog "Hi ~ Hi ~"
@@ -419,7 +419,7 @@ function alberta_Smile_Assistance_11353()
 	end
 end
  
-npc("payon","Smile Assistance",spr_4_F_03,186,104,5,0,0,"payon_Smile_Assistance_186104")
+npc("payon","Smile Assistance",SPRITE_4_F_03,186,104,5,0,0,"payon_Smile_Assistance_186104")
 function payon_Smile_Assistance_186104()
 	dialog "[Smile Girl]"
 	dialog "Hi ~ Hi ~"
@@ -499,7 +499,7 @@ function payon_Smile_Assistance_186104()
 	end
 end
  
-npc("izlude","Smile Assistance",spr_4_F_03,129,118,4,4,5,"izlude_Smile_Assistance_129118")
+npc("izlude","Smile Assistance",SPRITE_4_F_03,129,118,4,4,5,"izlude_Smile_Assistance_129118")
 function izlude_Smile_Assistance_129118()
 	dialog "[Smile Girl]"
 	dialog "Hi ~ Hi ~"

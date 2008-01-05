@@ -21,7 +21,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("hugel","Hugel Guide Granny",spr_4_F_LGTGRAND,98,56,3,0,0,"hugel_Hugel_Guide_Granny_9856")
+npc("hugel","Hugel Guide Granny",SPRITE_4_F_LGTGRAND,98,56,3,0,0,"hugel_Hugel_Guide_Granny_9856")
 function hugel_Hugel_Guide_Granny_9856()
 	dialog "[Hugel Guide Granny]"
 	dialog "Oh, hello~ you are one energetic adventurer."

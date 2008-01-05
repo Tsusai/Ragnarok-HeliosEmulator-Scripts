@@ -1,4 +1,4 @@
-npc("new_1-1","Menu and Var",spr_4_F_JOB_HUNTER,54,115,4,0,0,"new_1_1_Menu_and_Var_54115")
+npc("new_1-1","Menu and Var",SPRITE_4_F_JOB_HUNTER,54,115,4,0,0,"new_1_1_Menu_and_Var_54115")
 function new_1_1_Menu_and_Var_54115()
 	dialog "Hello"
 	local temp = getvar("temp")

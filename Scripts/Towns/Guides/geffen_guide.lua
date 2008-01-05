@@ -22,7 +22,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("geffen","Guide",spr_4_M_GEF_SOLDIER,203,116,0,0,0,"geffen_Guide_203116")
+npc("geffen","Guide",SPRITE_4_M_GEF_SOLDIER,203,116,0,0,0,"geffen_Guide_203116")
 function geffen_Guide_203116()
 	showimage("gef_soldier.bmp",2)
 	dialog "[Geffen Guide]"
@@ -185,7 +185,7 @@ function geffen_Guide_203116()
 	showimage("gef_soldier.bmp",255)
 end
 
-npc("geffen","Guide",spr_4_M_GEF_SOLDIER,118,62,0,0,0,"geffen_Guide_11862")
+npc("geffen","Guide",SPRITE_4_M_GEF_SOLDIER,118,62,0,0,0,"geffen_Guide_11862")
 function geffen_Guide_11862()
 	showimage("gef_soldier.bmp",2)
 	dialog "[Geffen Guide]"

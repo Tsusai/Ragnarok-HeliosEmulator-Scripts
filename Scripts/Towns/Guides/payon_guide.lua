@@ -22,7 +22,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("payon","Guide",spr_4_M_PAY_SOLDIER,162,67,4,0,0,"payon_Guide_16267")
+npc("payon","Guide",SPRITE_4_M_PAY_SOLDIER,162,67,4,0,0,"payon_Guide_16267")
 function payon_Guide_16267()
 	showimage("pay_soldier.bmp",2)
 	dialog "[Payon Guide]"
@@ -213,7 +213,7 @@ function payon_Guide_16267()
 	showimage("pay_soldier.bmp",255)
 end
 
-npc("pay_arche","Guide",spr_4_M_PAY_SOLDIER,85,30,2,0,0,"pay_arche_Guide_8530")
+npc("pay_arche","Guide",SPRITE_4_M_PAY_SOLDIER,85,30,2,0,0,"pay_arche_Guide_8530")
 function pay_arche_Guide_8530()
 	showimage("pay_soldier.bmp",2)
 	dialog "[Payon Guide]"

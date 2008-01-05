@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("ve_in","Inn Masterveinsin",spr_4_M_SEAMAN,157,219,5,0,0,"ve_in_Inn_Master#veinsin_157219")
+npc("ve_in","Inn Masterveinsin",SPRITE_4_M_SEAMAN,157,219,5,0,0,"ve_in_Inn_Master#veinsin_157219")
 
 function ve_in_Inn_Masterveinsin_157219()
 	dialog "[Inn Master]"

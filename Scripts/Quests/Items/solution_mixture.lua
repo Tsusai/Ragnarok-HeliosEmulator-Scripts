@@ -19,7 +19,7 @@
 --|      untill the code is in Helios               |--
 --\_________________________________________________/--
 
-npc("alberta_in","Louitz",spr_4_M_02,133,55,3,0,0,"alberta_in_Louitz_13355")
+npc("alberta_in","Louitz",SPRITE_4_M_02,133,55,3,0,0,"alberta_in_Louitz_13355")
 function alberta_in_Louitz_13355()
 if getvar("molgenstain") == 2 then
 	dialog "[Merchant Louitz]"
@@ -317,7 +317,7 @@ local mresulta = menu("Talk","Cancel")
 end
 end
 
-npc("geffen","Aure Dupon",spr_4_KID01,181,114,3,0,0,"geffen_Aure_Dupon_181114")
+npc("geffen","Aure Dupon",SPRITE_4_KID01,181,114,3,0,0,"geffen_Aure_Dupon_181114")
 function geffen_Aure_Dupon_181114()
 if getvar("molgenstain") == 2 then
 	dialog "[Aure Dupon]"
@@ -414,7 +414,7 @@ close()
 end
 end
 
-npc("geffen_in","Molgenstein",spr_2_M_MOLGENSTEIN,141,140,3,0,0,"geffen_in_Molgenstein_141140")
+npc("geffen_in","Molgenstein",SPRITE_2_M_MOLGENSTEIN,141,140,3,0,0,"geffen_in_Molgenstein_141140")
 function geffen_in_Molgenstein_141140()
 -- 아이템 소지가 100개인가 체크하는 루틴, 상세 대사는 npc별로 수정 예정입니다.
 --local max_max_c = CheckMaxCount 1201 1

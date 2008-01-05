@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("izlude","Sailor",spr_4W_SAILOR,201,181,2,5,5,"izlude_Sailor_201181")
+npc("izlude","Sailor",SPRITE_4W_SAILOR,201,181,2,5,5,"izlude_Sailor_201181")
 function izlude_Sailor_201181()
 	dialog "[Sailor]"
 	dialog "Hey everybody!"
@@ -53,7 +53,7 @@ function izlude_Sailor_201181()
 	end
 end
 
-npc("izlu2dun","Sailor",spr_4W_SAILOR,108,27,0,5,5,"izlu2dun_Sailor_10827")
+npc("izlu2dun","Sailor",SPRITE_4W_SAILOR,108,27,0,5,5,"izlu2dun_Sailor_10827")
 function izlu2dun_Sailor_10827()
 	dialog "[Sailor]"
 	dialog "Wanna"
@@ -66,7 +66,7 @@ function izlu2dun_Sailor_10827()
 	end
 end
 
-npc("izlude","Bonne",spr_4_F_01,55,74,2,5,5,"izlude_Bonne_5574")
+npc("izlude","Bonne",SPRITE_4_F_01,55,74,2,5,5,"izlude_Bonne_5574")
 function izlude_Bonne_5574()
 	dialog "[Bonne]"
 	dialog "Greetings!"
@@ -91,7 +91,7 @@ function izlude_Bonne_5574()
 	close()
 end
 
-npc("izlude","Charfri",spr_4_F_02,135,78,2,5,5,"izlude_Charfri_13578")
+npc("izlude","Charfri",SPRITE_4_F_02,135,78,2,5,5,"izlude_Charfri_13578")
 function izlude_Charfri_13578()
 	local mresult = math.random(1,2)
 	if mresult == 1 then
@@ -124,7 +124,7 @@ function izlude_Charfri_13578()
 	end
 end
 
-npc("izlude","Cuskoal",spr_4_F_TELEPORTER,119,121,2,5,5,"izlude_Cuskoal_119121")
+npc("izlude","Cuskoal",SPRITE_4_F_TELEPORTER,119,121,2,5,5,"izlude_Cuskoal_119121")
 function izlude_Cuskoal_119121()
 	local mresult = math.random(1,2)
 	if mresult == 1 then
@@ -150,7 +150,7 @@ function izlude_Cuskoal_119121()
 	end
 end
 
-npc("izlude","Dega",spr_4_M_02,150,118,2,5,5,"izlude_Dega_150118")
+npc("izlude","Dega",SPRITE_4_M_02,150,118,2,5,5,"izlude_Dega_150118")
 function izlude_Dega_150118()
 	local mresult = math.random(1,3)
 	if mresult == 1 then
@@ -228,7 +228,7 @@ function izlude_Dega_150118()
 	end
 end
 
-npc("izlude","Kylick",spr_4W_M_01,150,143,2,5,5,"izlude_Kylick_150143")
+npc("izlude","Kylick",SPRITE_4W_M_01,150,143,2,5,5,"izlude_Kylick_150143")
 function izlude_Kylick_150143()
 	local mresult = math.random(1,2)
 	if mresult == 1 then
@@ -262,7 +262,7 @@ function izlude_Kylick_150143()
 	end
 end
 
-npc("izlude","Red",spr_4_M_03,56,126,2,5,5,"izlude_Red_56126")
+npc("izlude","Red",SPRITE_4_M_03,56,126,2,5,5,"izlude_Red_56126")
 function izlude_Red_56126()
 	dialog "[Red]"
 	dialog "The only skill that's needed for a Swordman is ^FF2400Bash^000000! Bash, Bash and ONLY ^FF2400Bash^000000! No need to waste time and effort for smaller skills! Everything else is for cowards and wusses!"
@@ -337,7 +337,7 @@ function izlude_Red_56126()
 	end
 end
 
-npc("izlude","Cebalis",spr_4W_M_02,58,126,2,5,5,"izlude_Cebalis_58126")
+npc("izlude","Cebalis",SPRITE_4W_M_02,58,126,2,5,5,"izlude_Cebalis_58126")
 function izlude_Cebalis_58126()
 	dialog "[Red]"
 	dialog "The only skill that's needed for a Swordman is ^FF2400Bash^000000! Bash, Bash and ONLY ^FF2400Bash^000000! No need to waste time and effort on smaller skills~~ Everything else is for cowards and wusses!"
@@ -419,7 +419,7 @@ function izlude_Cebalis_58126()
 	end
 end
 
-npc("izlude_in","Aaron",spr_1_M_YOUNGKNIGHT,125,164,2,5,5,"izlude_in_Aaron_125164")
+npc("izlude_in","Aaron",SPRITE_1_M_YOUNGKNIGHT,125,164,2,5,5,"izlude_in_Aaron_125164")
 function izlude_in_Aaron_125164()
 	dialog "[Aaron]"
 	dialog "Don't you think Strong VIT and training in a unique breathing method which enables quick HP recovery are the greatest advantages for a Swordman?"
@@ -462,7 +462,7 @@ function izlude_in_Aaron_125164()
 	end
 end
 
-npc("izlude","Soldier",spr_8W_SOLDIER,124,178,2,5,5,"izlude_Soldier_124178")
+npc("izlude","Soldier",SPRITE_8W_SOLDIER,124,178,2,5,5,"izlude_Soldier_124178")
 function izlude_Soldier_124178()
 	dialog "[Soldier]"
 	dialog "HeHeHeHe..HaHaHaHa "
@@ -524,7 +524,7 @@ function izlude_Soldier_124178()
 	end
 end
 
-npc("izlude","Edgar",spr_1_M_03,182,186,2,5,5,"izlude_Edgar_182186")
+npc("izlude","Edgar",SPRITE_1_M_03,182,186,2,5,5,"izlude_Edgar_182186")
 function izlude_Edgar_182186()
 	if getvar("iz_move_alberta") == 0 then
 		dialog "[Edgar]"

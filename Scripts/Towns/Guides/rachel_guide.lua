@@ -23,7 +23,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("rachel","Rachel Guide",spr_4_M_RASWORD,138,146,5,0,0,"rachel_Rachel_Guide_138146")
+npc("rachel","Rachel Guide",SPRITE_4_M_RASWORD,138,146,5,0,0,"rachel_Rachel_Guide_138146")
 function rachel_Rachel_Guide_138146()
 	dialog "[Rachel Guide]"
 	dialog "Welcome to the capital of"

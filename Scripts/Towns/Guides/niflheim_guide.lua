@@ -21,7 +21,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("niflheim","Roaming Man",spr_4_M_NFMAN,107,156,6,1,1,"niflheim_Roaming_Man_107156")
+npc("niflheim","Roaming Man",SPRITE_4_M_NFMAN,107,156,6,1,1,"niflheim_Roaming_Man_107156")
 function niflheim_Roaming_Man_107156()
 	dialog "[Ricael]"
 	dialog "You must be lost..."

@@ -20,7 +20,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("einbroch","Guide#ein",spr_4_M_EIN_SOLDIER,72,202,4,0,0,"einbroch_Guide#ein_72202")
+npc("einbroch","Guide#ein",SPRITE_4_M_EIN_SOLDIER,72,202,4,0,0,"einbroch_Guide#ein_72202")
 function einbroch_Guide_ein_72202()
 	showimage("ein_soldier.bmp",2)
 	dialog "[Einbroch Guide]"
@@ -229,7 +229,7 @@ function einbroch_Guide_ein_72202()
 	showimage("ein_soldier.bmp",255)
 end
 
-npc("einbroch","Guide",spr_4_M_EIN_SOLDIER,155,43,4,0,0,"einbroch_Guide_15543")
+npc("einbroch","Guide",SPRITE_4_M_EIN_SOLDIER,155,43,4,0,0,"einbroch_Guide_15543")
 function einbroch_Guide_15543()
 	showimage("ein_soldier.bmp",2)
 	dialog "[Einbroch Guide]"
@@ -438,7 +438,7 @@ function einbroch_Guide_15543()
 	showimage("ein_soldier.bmp",255)
 end
 
-npc("einbroch","Guide",spr_4_M_EIN_SOLDIER,162,317,4,0,0,"einbroch_Guide_162317")
+npc("einbroch","Guide",SPRITE_4_M_EIN_SOLDIER,162,317,4,0,0,"einbroch_Guide_162317")
 function einbroch_Guide_162317()
 	showimage("ein_soldier.bmp",2)
 	dialog "[Einbroch Guide]"
@@ -647,7 +647,7 @@ function einbroch_Guide_162317()
 	showimage("ein_soldier.bmp",255)
 end
 
-npc("einbech","Guide",spr_4_M_EIN_SOLDIER,67,37,4,0,0,"einbech_Guide_6737")
+npc("einbech","Guide",SPRITE_4_M_EIN_SOLDIER,67,37,4,0,0,"einbech_Guide_6737")
 function einbech_Guide_6737()
 	showimage("ein_soldier.bmp",2)
 	dialog "[Einbech Guide]"
@@ -805,7 +805,7 @@ function einbech_Guide_6737()
 	showimage("ein_soldier.bmp",255)
 end
 
-npc("einbech","Guide",spr_4_M_EIN_SOLDIER,48,214,4,0,0,"einbech_Guide_48214")
+npc("einbech","Guide",SPRITE_4_M_EIN_SOLDIER,48,214,4,0,0,"einbech_Guide_48214")
 function einbech_Guide_48214()
 	showimage("ein_soldier.bmp",2)
 	dialog "[Einbech Guide]"

@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("alberta","Elin",spr_4W_KID,117,135,0,5,5,"alberta_Elin_117135")
+npc("alberta","Elin",SPRITE_4W_KID,117,135,0,5,5,"alberta_Elin_117135")
 function alberta_Elin_117135()
 	local max_max_c = CheckMaxCount(1201,1)
 	if max_max_c == 1 then
@@ -371,7 +371,7 @@ function alberta_Elin_117135()
 	end
 end
 
-npc("alberta","Fabian",spr_4_M_02,97,51,0,5,5,"alberta_Fabian_9751")
+npc("alberta","Fabian",SPRITE_4_M_02,97,51,0,5,5,"alberta_Fabian_9751")
 function alberta_Fabian_9751()
 	dialog "[Fabian]"
 	dialog "Man... When you travel all around the world, you'll hear of some crazy things."
@@ -387,7 +387,7 @@ function alberta_Fabian_9751()
 	close()
 end
 
-npc("alberta","Steiner",spr_4W_SAILOR,53,39,0,5,5,"alberta_Steiner_5339")
+npc("alberta","Steiner",SPRITE_4W_SAILOR,53,39,0,5,5,"alberta_Steiner_5339")
 function alberta_Steiner_5339()
 	dialog "[Steiner]"
 	dialog "Oh...!"
@@ -402,7 +402,7 @@ function alberta_Steiner_5339()
 	close()
 end
 
-npc("alberta_in","Chad",spr_1_M_03,20,183,0,5,5,"alberta_in_Chad_20183")
+npc("alberta_in","Chad",SPRITE_1_M_03,20,183,0,5,5,"alberta_in_Chad_20183")
 function alberta_in_Chad_20183()
 	dialog "[Chad]"
 	dialog "People say the legendary weapon Gungnir never misses its target. I wonder if it's possibly true..."
@@ -418,7 +418,7 @@ function alberta_in_Chad_20183()
 	close()
 end
 
-npc("alberta","Drunken Old Man",spr_1_M_JOBGUIDER,131,139,2,5,5,"alberta_Drunken_Old_Man_131139")
+npc("alberta","Drunken Old Man",SPRITE_1_M_JOBGUIDER,131,139,2,5,5,"alberta_Drunken_Old_Man_131139")
 function alberta_Drunken_Old_Man_131139()
 	dialog "[Deagle]"
 	dialog "^666666*Hiccup*^000000"
@@ -467,7 +467,7 @@ function alberta_Drunken_Old_Man_131139()
 	end
 end
 
-npc("alberta","Shakir",spr_4W_M_03,58,80,2,5,5,"alberta_Shakir_5880")
+npc("alberta","Shakir",SPRITE_4W_M_03,58,80,2,5,5,"alberta_Shakir_5880")
 function alberta_Shakir_5880()
 	local mresult = math.random(1,2)
 	if mresult == 1 then
@@ -497,7 +497,7 @@ function alberta_Shakir_5880()
 	end
 end
 
-npc("alberta","Sonya",spr_8_F,62,156,2,5,5,"alberta_Sonya_62156")
+npc("alberta","Sonya",SPRITE_8_F,62,156,2,5,5,"alberta_Sonya_62156")
 function alberta_Sonya_62156()
 	local mresult = math.random(1,3)
 	if mresult == 1 then
@@ -536,7 +536,7 @@ function alberta_Sonya_62156()
 	end
 end
 
-npc("alberta","Grandma Alma",spr_8_F_GRANDMOTHER,93,174,2,5,5,"alberta_Grandma_Alma_93174")
+npc("alberta","Grandma Alma",SPRITE_8_F_GRANDMOTHER,93,174,2,5,5,"alberta_Grandma_Alma_93174")
 function alberta_Grandma_Alma_93174()
 	dialog "[Grandma Alma]"
 	dialog "Some time ago,"
@@ -558,7 +558,7 @@ function alberta_Grandma_Alma_93174()
 	close()
 end
 
-npc("alberta","Fisk",spr_4W_SAILOR,189,151,5,5,5,"alberta_Fisk_189151")
+npc("alberta","Fisk",SPRITE_4W_SAILOR,189,151,5,5,5,"alberta_Fisk_189151")
 function alberta_Fisk_189151()
 	dialog "[Fisk]"
 	dialog "Ahoy mate,"
@@ -592,7 +592,7 @@ function alberta_Fisk_189151()
 	end
 end
 
-npc("alb2trea","Fisk",spr_4W_SAILOR,39,50,6,5,5,"alb2trea_Fisk_3950")
+npc("alb2trea","Fisk",SPRITE_4W_SAILOR,39,50,6,5,5,"alb2trea_Fisk_3950")
 function alb2trea_Fisk_3950()
 	dialog "[Fisk]"
 	dialog "So you wanna head back to the mainland in Alberta, eh? "
@@ -603,7 +603,7 @@ function alb2trea_Fisk_3950()
 	end
 end
 
-npc("alberta","Paul",spr_4_M_04,195,151,2,5,5,"alberta_Paul_195151")
+npc("alberta","Paul",SPRITE_4_M_04,195,151,2,5,5,"alberta_Paul_195151")
 function alberta_Paul_195151()
 	dialog "[Paul]"
 	dialog "Good day~"
@@ -644,7 +644,7 @@ function alberta_Paul_195151()
 	end
 end
 
-npc("alberta","Phelix",spr_4_M_03,190,173,4,5,5,"alberta_Phelix_190173")
+npc("alberta","Phelix",SPRITE_4_M_03,190,173,4,5,5,"alberta_Phelix_190173")
 function alberta_Phelix_190173()
 	if getvar("event_zelopy") == 0 then
 		dialog "[Phelix]"
@@ -825,7 +825,7 @@ function alberta_Phelix_190173()
 	end
 end
 
-npc("alberta_in","Inn Employee",spr_1_M_INNKEEPER,32,142,3,0,0,"alberta_in_Inn_Employee_32142")
+npc("alberta_in","Inn Employee",SPRITE_1_M_INNKEEPER,32,142,3,0,0,"alberta_in_Inn_Employee_32142")
 function alberta_in_Inn_Employee_32142()
 	dialog "[Employee Jennie]"
 	dialog "Welcome to"

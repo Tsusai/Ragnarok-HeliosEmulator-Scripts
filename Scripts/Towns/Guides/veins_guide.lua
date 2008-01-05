@@ -24,7 +24,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("veins","Veins Guide",spr_4_M_RASWORD,210,345,5,0,0,"veins_Veins_Guide_210345")
+npc("veins","Veins Guide",SPRITE_4_M_RASWORD,210,345,5,0,0,"veins_Veins_Guide_210345")
 function veins_Veins_Guide_210345()
 	dialog "[Veins Guide]"
 	dialog "Thank you for comming through the harsh sandstorms."
@@ -161,7 +161,7 @@ function veins_Veins_Guide_210345()
 	end
 end
 
-npc("veins","Veins Guide",spr_4_M_RASWORD,189,101,5,0,0,"veins_Veins_Guide_189101")
+npc("veins","Veins Guide",SPRITE_4_M_RASWORD,189,101,5,0,0,"veins_Veins_Guide_189101")
 function veins_Veins_Guide_189101()
 	dialog "[Veins Guide]"
 	dialog "Thank you for comming through the harsh sandstorms."
