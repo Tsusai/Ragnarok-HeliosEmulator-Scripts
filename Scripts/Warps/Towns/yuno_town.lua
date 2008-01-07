@@ -24,11 +24,6 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-warp("aldebaran","aldeNorthGate_yuno01c_140_2431",140,243,1,1)
-function aldeNorthGate_yuno01c_140_2431()
-	moveto("yuno_fild01",208,22)
-end
-
 warp("yuno","yunoGate_yuno04b_158_131",158,13,1,1)
 function yunoGate_yuno04b_158_131()
 	moveto("yuno_fild04",231,284)

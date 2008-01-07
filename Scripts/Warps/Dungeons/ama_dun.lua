@@ -8,13 +8,8 @@
 --|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
 --|                                                 |--
 --|-------------------------------------------------|--
---| 03/01/2008                                      |--
---|   - Updated all function names to fix           |--
---|     function name conflicts in Lua. [RabidCh]   |--
---| 31/12/2007                                      |--
---|   - Added New header [Spre]                     |--
---| 29/12/2007                                      |--
---|   - First Version for Helios [Spre]             |--
+--| 07/01/2008                                      |--
+--|   - First Version for Helios [RabidCh]          |--
 --|-------------------------------------------------|--
 --| Credits: Gravity                                |--
 --|          Yaros                                  |--
@@ -24,27 +19,22 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-warp("beach_dun3","dun3_to_fild01_286_571",286,57,1,1)
-function dun3_to_fild01_286_571()
-	moveto("cmd_fild01",30,317)
+warp("ama_dun01","ama_dun01_ama01a_ama02a_235144",235,144,1,1)
+function ama_dun01_ama01a_ama02a_235144()
+	moveto("ama_dun02",33,40)
 end
 
-warp("beach_dun3","dun3_to_comodo_17_2651",17,265,1,1)
-function dun3_to_comodo_17_2651()
-	moveto("comodo",328,175)
+warp("ama_dun02","ama_dun02_ama02a_ama01a_3040",30,40,1,1)
+function ama_dun02_ama02a_ama01a_3040()
+	moveto("ama_dun01",232,144)
 end
 
-warp("beach_dun2","dun2_to_comodo_154_132",154,13,2,1)
-function dun2_to_comodo_154_132()
-	moveto("comodo",176,353)
+warp("ama_dun02","ama_dun02_ama02a_ama01a_196123",196,123,1,1)
+function ama_dun02_ama02a_ama01a_196123()
+	moveto("ama_dun03",120,12)
 end
 
-warp("beach_dun","dun_to_comodo_276_671",276,67,1,1)
-function dun_to_comodo_276_671()
-	moveto("comodo",31,215)
-end
-
-warp("beach_dun2","beach_dun2_beachD_A_f01a_258244",258,244,1,1)
-function beach_dun2_beachD_A_f01a_258244()
-	moveto("um_fild01",35,276)
+warp("ama_dun03","ama_dun03_ama03a_ama02a_1209",120,9,1,1)
+function ama_dun03_ama03a_ama02a_1209()
+	moveto("ama_dun02",196,120)
 end

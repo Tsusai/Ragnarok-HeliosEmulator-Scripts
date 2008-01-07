@@ -8,13 +8,8 @@
 --|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
 --|                                                 |--
 --|-------------------------------------------------|--
---| 03/01/2008                                      |--
---|   - Updated all function names to fix           |--
---|     function name conflicts in Lua. [RabidCh]   |--
---| 31/12/2007                                      |--
---|   - Added New header [Spre]                     |--
---| 29/12/2007                                      |--
---|   - First Version for Helios [Spre]             |--
+--| 07/01/2008                                      |--
+--|   - First Version for Helios [RabidCh]          |--
 --|-------------------------------------------------|--
 --| Credits: Gravity                                |--
 --|          Yaros                                  |--
@@ -24,27 +19,36 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-warp("beach_dun3","dun3_to_fild01_286_571",286,57,1,1)
-function dun3_to_fild01_286_571()
-	moveto("cmd_fild01",30,317)
+warp("jawaii","jawaii_cabaretGate_cabaret_192215",192,215,1,1)
+function jawaii_cabaretGate_cabaret_192215()
+	moveto("jawaii_in",27,94)
 end
 
-warp("beach_dun3","dun3_to_comodo_17_2651",17,265,1,1)
-function dun3_to_comodo_17_2651()
-	moveto("comodo",328,175)
+warp("jawaii_in","jawaii_in_room101_room101Gate_9078",90,78,1,1)
+function jawaii_in_room101_room101Gate_9078()
+	moveto("jawaii",117,175)
 end
 
-warp("beach_dun2","dun2_to_comodo_154_132",154,13,2,1)
-function dun2_to_comodo_154_132()
-	moveto("comodo",176,353)
+warp("jawaii_in","jawaii_in_room102_room102Gate_89117",89,117,1,1)
+function jawaii_in_room102_room102Gate_89117()
+	moveto("jawaii",111,186)
 end
 
-warp("beach_dun","dun_to_comodo_276_671",276,67,1,1)
-function dun_to_comodo_276_671()
-	moveto("comodo",31,215)
+warp("jawaii_in","jawaii_in_room103_room103Gate_132107",132,107,1,1)
+function jawaii_in_room103_room103Gate_132107()
+	moveto("jawaii",114,196)
 end
 
-warp("beach_dun2","beach_dun2_beachD_A_f01a_258244",258,244,1,1)
-function beach_dun2_beachD_A_f01a_258244()
-	moveto("um_fild01",35,276)
+warp("jawaii_in","jawaii_in_room104_room104Gate_11361",113,61,1,1)
+function jawaii_in_room104_room104Gate_11361()
+	moveto("jawaii",136,203)
+end
+
+warp("jawaii_in","jawaii_in_cabaret_cabaretGate_2791",27,91,1,1)
+function jawaii_in_cabaret_cabaretGate_2791()
+	if getvar(VAR_ISMARRIED) == 1 then
+		moveto("jawaii",192,218)
+	else
+		moveto("jawaii_in",27,94)
+	end
 end

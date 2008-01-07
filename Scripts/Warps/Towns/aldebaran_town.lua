@@ -189,3 +189,7 @@ function bar_157_1933()
 	moveto("aldebaran",231,107)
 end
 
+warp("aldebaran","aldebaran_aldeNorthGate_yuno01c_140243",140,243,1,1)
+function aldebaran_aldeNorthGate_yuno01c_140243()
+	moveto("yuno_fild01",208,22)
+end

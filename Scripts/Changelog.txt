@@ -1,3 +1,12 @@
+- Rev 36 -
+[2008/1/7] RabidCh - Replaced warp file niflheim_town in Scripts/Warps/Towns.
+[2008/1/7] RabidCh - Added town warp files: amatsu_town, ayothaya_town, gonryun_town, louyang_town, jawaii_town, umbala_town.
+[2008/1/7] RabidCh - Added dungeon warp files: tur_dun, lou_dun, ama_dun, gon_dun, um_dun, ayo_dun.
+[2008/1/7] RabidCh - Added field warp files: gonryun_fields, louyang_fields, amatsu_fields, ayothaya_fields, umbala_fields, niflheim_fields, and yggdrasil.
+[2008/1/7] RabidCh - Moved warp "aldebaran_aldeNorthGate_yuno01c_140243" from yuno_town to aldebaran_town; both are in Scripts/Warps/Towns.
+[2008/1/7] RabidCh - Moved warp "dun3_to_fild01_286_571" in Scripts/Warps/Fields from comodo_fields to beach_dun in Scripts/Warps/Dungeons.
+-
+
 - Rev 35 -
 [2008/1/5] Muad_Dib - Fixed all NPC_ID's since my file broke them.
 -
