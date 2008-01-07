@@ -8,13 +8,8 @@
 --|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
 --|                                                 |--
 --|-------------------------------------------------|--
---| 03/01/2008                                      |--
---|   - Updated all function names to fix           |--
---|     function name conflicts in Lua. [RabidCh]   |--
---| 31/12/2007                                      |--
---|   - Added New header [Spre]                     |--
---| 29/12/2007                                      |--
---|   - First Version for Helios [Spre]             |--
+--| 07/01/2008                                      |--
+--|   - First Version for Helios [RabidCh]          |--
 --|-------------------------------------------------|--
 --| Credits: Gravity                                |--
 --|          Yaros                                  |--
@@ -24,27 +19,12 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-warp("beach_dun3","dun3_to_fild01_286_571",286,57,1,1)
-function dun3_to_fild01_286_571()
-	moveto("cmd_fild01",30,317)
+warp("ayo_fild01","ayo_fild01_Fild01_gateway_32240",32,240,1,1)
+function ayo_fild01_Fild01_gateway_32240()
+	moveto("ayothaya",273,176)
 end
 
-warp("beach_dun3","dun3_to_comodo_17_2651",17,265,1,1)
-function dun3_to_comodo_17_2651()
-	moveto("comodo",328,175)
-end
-
-warp("beach_dun2","dun2_to_comodo_154_132",154,13,2,1)
-function dun2_to_comodo_154_132()
-	moveto("comodo",176,353)
-end
-
-warp("beach_dun","dun_to_comodo_276_671",276,67,1,1)
-function dun_to_comodo_276_671()
-	moveto("comodo",31,215)
-end
-
-warp("beach_dun2","beach_dun2_beachD_A_f01a_258244",258,244,1,1)
-function beach_dun2_beachD_A_f01a_258244()
-	moveto("um_fild01",35,276)
+warp("ayo_fild02","ayo_fild02_Fild02_Dun01toFild_285149",285,149,1,1)
+function ayo_fild02_Fild02_Dun01toFild_285149()
+	moveto("ayo_dun01",275,18)
 end

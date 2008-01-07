@@ -198,3 +198,13 @@ warp("cmd_fild09","fild09_to_08_left_75_3822",75,382,2,1)
 function fild09_to_08_left_75_3822()
 	moveto("cmd_fild08",75,42)
 end
+
+warp("cmd_fild01","cmd_fild01_cmdF01a_A_f03c_77366",77,366,1,1)
+function cmd_fild01_cmdF01a_A_f03c_77366()
+	moveto("um_fild03",114,53)
+end
+
+warp("cmd_fild01","cmd_fild01_cmdF01b_A_f03d_178370",178,370,1,1)
+function cmd_fild01_cmdF01b_A_f03d_178370()
+	moveto("um_fild03",243,29)
+end
