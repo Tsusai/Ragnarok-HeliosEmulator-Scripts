@@ -139,8 +139,8 @@ function ama_in02_TO2f_FORM3f_5644()
 	moveto("ama_in02",59,144)
 end
 
-warp "ama_in02" "TO3f_FORM2f" 59 14 1 1 1
-function ama_in02_TO2f_FORM3f_5644()
+warp ("ama_in02","ama_in02_TO3f_FORM2f_5914",59,14,1,1,1)
+function ama_in02_TO2f_FORM3f_5914()
 	moveto("ama_in02",56,41)
 end
 

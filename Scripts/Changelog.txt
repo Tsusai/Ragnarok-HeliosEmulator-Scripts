@@ -1,3 +1,7 @@
+- Rev 37 -
+[2008/1/7] RabidCh - Fixed faulty script coversion in amatsu_town and louyang_town in Scripts/Warps/Towns.
+-
+
 - Rev 36 -
 [2008/1/7] RabidCh - Replaced warp file niflheim_town in Scripts/Warps/Towns.
 [2008/1/7] RabidCh - Added town warp files: amatsu_town, ayothaya_town, gonryun_town, louyang_town, jawaii_town, umbala_town.

@@ -84,8 +84,8 @@ function lou_in01_pRight_rRight_125141()
 	moveto("lou_in01",156,141)
 end
 
-warp "lou_in01" "pLeft_rLeft" 79 141 1 1 --재료체크
-function lou_in01_pRight_rRight_125141()
+warp ("lou_in01","lou_in01_pLeft_rLeft_79141",79,141,1,1) --재료체크
+function lou_in01_pLeft_rLeft_79141()
 	if ((getvar(Burn_Tree) > 0) or (getvar(Cold_Magma) > 0) or (getvar(Mud_Lump) > 0)) then
 		moveto("lou_in01",83,141)
 	else
@@ -98,8 +98,8 @@ function lou_in01_rRight_pRight_153141()
 	moveto("lou_in01",122,141)
 end
 
-warp "lou_in01" "rLeft_pLeft" 50 141 1 1 --화약체크
-function lou_in01_rRight_pRight_153141()
+warp ("lou_in01","lou_in01_rLeft_pLeft_50141",50,141,1,1) --화약체크
+function lou_in01_rLeft_pLeft_50141()
 	if getvar(Gunpowder) > 0 then
 		moveto("lou_in01",46,141)
 	else
