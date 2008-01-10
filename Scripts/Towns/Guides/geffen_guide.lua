@@ -1,26 +1,24 @@
---  ____________________________________________________________
--- /                                                            \
--- |  ##       ##  ########  #########     ##########   ######   |
--- |   ##     ##  ##    ##  ##     ##     ##      ##   ##    ##  |
--- |    ##   ##  ##    ##  ##     ##     ##      ##   ##         |
--- |     ## ##  ##    ##  ##     ##     ##      ##   ##          |
--- |      ###  ########  #########     ##      ##   #######      |
--- |      ##  ##    ##  ##    ##      ##      ##        ##       |
--- |     ##  ##    ##  ##      ##    ##      ##  ##    ##        |
--- |    ##  ##    ##  ##        ##  ##########    ######         |
--- |   Yaros Package                                             |
--- |-------------------------------------------------------------|
--- | Current Version: 1.1      | Episode 10.3 File.              |
--- |-------------------------------------------------------------|
--- | 01/05/2007 : Added 1st Version. [Muad_Dib]                  |
--- | 22/08/2007 : Corrected some typo's. [Muad_Dib]              |
--- |-------------------------------------------------------------|
--- | Credits: Gravity                                            |
--- |-------------------------------------------------------------|
--- | Notes:                                                      |
--- |                                                             |
--- |                                                             |
--- \____________________________________________________________/
+-- _________________________________________________ --
+--/                                                 \--
+--|    _    _          _   _                        |--
+--|   | |  | |        | | (_)                       |--
+--|   | |__| |   ___  | |  _    ___    ___          |--
+--|   |  __  |  / _ \ | | | |  / _ \  / __|         |--
+--|   | |  | | |  __/ | | | | | (_) | \__ \         |--
+--|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
+--|                                                 |--
+--|-------------------------------------------------|--
+--| 05/01/2008                                      |--
+--|   - First version for helios, Loads but does    |--
+--|     not fully operate. [Spre]                   |--
+--|-------------------------------------------------|--
+--| Credits: Gravity                                |--
+--|          Yaros                                  |--
+--|-------------------------------------------------|--
+--| Notes:                                          |--
+--|                                                 |--
+--|                                                 |--
+--\_________________________________________________/--
 
 npc("geffen","Guide",SPRITE_4_M_GEF_SOLDIER,203,116,0,0,0,"geffen_Guide_203116")
 function geffen_Guide_203116()
@@ -60,9 +58,9 @@ function geffen_Guide_203116()
 					dialog "northwest Geffen handles"
 					dialog "Job Changes to the Mage class."
 					if getvar(compass_check) == 1 then
-						compass(2,61,180,1,0xFFFF0000)
+						compass(2,61,180,1,"0xFFFF0000")
 					else
-						compass(2,61,180,0,0xFFFF0000)
+						compass(2,61,180,0,"0xFFFF0000")
 					end
 				elseif mresultb == 2 then
 					dialog "[Geffen Guide]"
@@ -70,9 +68,9 @@ function geffen_Guide_203116()
 					dialog "located just southeast"
 					dialog "from the center of Geffen."
 					if getvar(compass_check) == 1 then
-						compass(3,182,59,1,0xFF00FF00)
+						compass(3,182,59,1,"0xFF00FF00")
 					else
-						compass(3,182,59,0,0xFF00FF00)
+						compass(3,182,59,0,"0xFF00FF00")
 					end
 				elseif mresultb == 3 then
 					dialog "[Geffen Guide]"
@@ -80,9 +78,9 @@ function geffen_Guide_203116()
 					dialog "can be found northwest"
 					dialog "from the center of Geffen."
 					if getvar(compass_check) == 1 then
-						compass(4,99,140,1,0xFFFF00FF)
+						compass(4,99,140,1,"0xFFFF00FF")
 					else
-						compass(4,99,140,0,0xFFFF00FF)
+						compass(4,99,140,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 4 then
 					dialog "[Geffen Guide]"
@@ -91,9 +89,9 @@ function geffen_Guide_203116()
 					dialog "southwest from the"
 					dialog "center of Geffen."
 					if getvar(compass_check) == 1 then
-						compass(5,44,86,1,0xFFFF00FF)
+						compass(5,44,86,1,"0xFFFF00FF")
 					else
-						compass(5,44,86,0,0xFFFF00FF)
+						compass(5,44,86,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 5 then
 					dialog "[Geffen Guide]"
@@ -101,9 +99,9 @@ function geffen_Guide_203116()
 					dialog "found northeast"
 					dialog "from the Geffen Tower."
 					if getvar(compass_check) == 1 then
-						compass(6,138,138,1,0xFFFF00FF)
+						compass(6,138,138,1,"0xFFFF00FF")
 					else
-						compass(6,138,138,0,0xFFFF00FF)
+						compass(6,138,138,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 6 then
 					dialog "[Geffen Guide]"
@@ -112,9 +110,9 @@ function geffen_Guide_203116()
 					dialog "northeast from the"
 					dialog "center of Geffen."
 					if getvar(compass_check) == 1 then
-						compass(7,172,174,1,0xFFFF00FF)
+						compass(7,172,174,1,"0xFFFF00FF")
 					else
-						compass(7,172,174,0,0xFFFF00FF)
+						compass(7,172,174,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 7 then
 					dialog "[Geffen Guide]"
@@ -125,15 +123,15 @@ function geffen_Guide_203116()
 					dialog "underneath it. There's many a"
 					dialog "mystery surrounding that tower..."
 					if getvar(compass_check) == 1 then
-						compass(8,120,114,1,0xFF00FF00)
+						compass(8,120,114,1,"0xFF00FF00")
 					else
-						compass(8,120,114,0,0xFF00FF00)
+						compass(8,120,114,0,"0xFF00FF00")
 					end
 				elseif mresultb == 8 then
 					compass_check("=",1)
 					dialog "[Geffen Guide]"
-					dialog("Please ask me to ","Remove"")
-					dialog("Marks from Mini-Map","if","you"")
+					dialog "Please ask me to  Remove"
+					dialog "Marks from Mini-Map if you"
 					dialog "no longer wish to have the"
 					dialog "location marks displayed"
 					dialog "on your Mini-Map."
@@ -141,13 +139,13 @@ function geffen_Guide_203116()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(2,237,41,2,0xFF00FF00)
-			compass(3,237,41,2,0xFF0000FF)
-			compass(4,46,345,2,0xFF00FF00)
-			compass(5,175,220,2,0xFFFF0000)
-			compass(6,134,221,2,0xFFFF0000)
-			compass(7,204,214,2,0xFFFF0000)
-			compass(8,204,214,2,0xFF00FF00)
+			compass(2,237,41,2,"0xFF00FF00")
+			compass(3,237,41,2,"0xFF0000FF")
+			compass(4,46,345,2,"0xFF00FF00")
+			compass(5,175,220,2,"0xFFFF0000")
+			compass(6,134,221,2,"0xFFFF0000")
+			compass(7,204,214,2,"0xFFFF0000")
+			compass(8,204,214,2,"0xFF00FF00")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Geffen Guide]"
@@ -163,11 +161,11 @@ function geffen_Guide_203116()
 			dialog "in the upper right corner"
 			dialog "of the screen. If you can't"
 			dialog "see it, press the Ctrl + Tab"
-			dialog("keys or click the ","Map"","button","in","your","Basic","Info","Window."")
+			dialog "keys or click the  Map button in your Basic Info Window."
 			wait()
 			dialog "[Geffen Guide]"
 			dialog "On your Mini-Map,"
-			dialog("click on the ","+"","and","-")
+			dialog "click on the + and -"
 			dialog "symbols to zoom in and"
 			dialog "our of your Mini-Map. We"
 			dialog "hope you enjoy your travels"
@@ -223,9 +221,9 @@ function geffen_Guide_11862()
 					dialog "northwest Geffen handles"
 					dialog "Job Changes to the Mage class."
 					if getvar(compass_check) == 1 then
-						compass(2,61,180,1,0xFFFF0000)
+						compass(2,61,180,1,"0xFFFF0000")
 					else
-						compass(2,61,180,0,0xFFFF0000)
+						compass(2,61,180,0,"0xFFFF0000")
 					end
 				elseif mresultb == 2 then
 					dialog "[Geffen Guide]"
@@ -233,9 +231,9 @@ function geffen_Guide_11862()
 					dialog "located just southeast"
 					dialog "from the center of Geffen."
 					if getvar(compass_check) == 1 then
-						compass(3,182,59,1,0xFF00FF00)
+						compass(3,182,59,1,"0xFF00FF00")
 					else
-						compass(3,182,59,0,0xFF00FF00)
+						compass(3,182,59,0,"0xFF00FF00")
 					end
 				elseif mresultb == 3 then
 					dialog "[Geffen Guide]"
@@ -243,9 +241,9 @@ function geffen_Guide_11862()
 					dialog "can be found northwest"
 					dialog "from the center of Geffen."
 					if getvar(compass_check) == 1 then
-						compass(4,99,140,1,0xFFFF00FF)
+						compass(4,99,140,1,"0xFFFF00FF")
 					else
-						compass(4,99,140,0,0xFFFF00FF)
+						compass(4,99,140,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 4 then
 					dialog "[Geffen Guide]"
@@ -254,9 +252,9 @@ function geffen_Guide_11862()
 					dialog "southwest from the"
 					dialog "center of Geffen."
 					if getvar(compass_check) == 1 then
-						compass(5,44,86,1,0xFFFF00FF)
+						compass(5,44,86,1,"0xFFFF00FF")
 					else
-						compass(5,44,86,0,0xFFFF00FF)
+						compass(5,44,86,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 5 then
 					dialog "[Geffen Guide]"
@@ -264,9 +262,9 @@ function geffen_Guide_11862()
 					dialog "found northeast"
 					dialog "from the Geffen Tower."
 					if getvar(compass_check) == 1 then
-						compass(6,138,138,1,0xFFFF00FF)
+						compass(6,138,138,1,"0xFFFF00FF")
 					else
-						compass(6,138,138,0,0xFFFF00FF)
+						compass(6,138,138,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 6 then
 					dialog "[Geffen Guide]"
@@ -275,9 +273,9 @@ function geffen_Guide_11862()
 					dialog "northeast from the"
 					dialog "center of Geffen."
 					if getvar(compass_check) == 1 then
-						compass(7,172,174,1,0xFFFF00FF)
+						compass(7,172,174,1,"0xFFFF00FF")
 					else
-						compass(7,172,174,0,0xFFFF00FF)
+						compass(7,172,174,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 7 then
 					dialog "[Geffen Guide]"
@@ -288,15 +286,15 @@ function geffen_Guide_11862()
 					dialog "underneath it. There's many a"
 					dialog "mystery surrounding that tower..."
 					if getvar(compass_check) == 1 then
-						compass(8,120,114,1,0xFF00FF00)
+						compass(8,120,114,1,"0xFF00FF00")
 					else
-						compass(8,120,114,0,0xFF00FF00)
+						compass(8,120,114,0,"0xFF00FF00")
 					end
 				elseif mresultb == 8 then
 					compass_check("=",1)
 					dialog "[Geffen Guide]"
-					dialog("Please ask me to ","Remove"")
-					dialog("Marks from Mini-Map","if","you"")
+					dialog "Please ask me to Remove"
+					dialog "Marks from Mini-Map if you"
 					dialog "no longer wish to have the"
 					dialog "location marks displayed"
 					dialog "on your Mini-Map."
@@ -304,13 +302,13 @@ function geffen_Guide_11862()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(2,237,41,2,0xFF00FF00)
-			compass(3,237,41,2,0xFF0000FF)
-			compass(4,46,345,2,0xFF00FF00)
-			compass(5,175,220,2,0xFFFF0000)
-			compass(6,134,221,2,0xFFFF0000)
-			compass(7,204,214,2,0xFFFF0000)
-			compass(8,204,214,2,0xFF00FF00)
+			compass(2,237,41,2,"0xFF00FF00")
+			compass(3,237,41,2,"0xFF0000FF")
+			compass(4,46,345,2,"0xFF00FF00")
+			compass(5,175,220,2,"0xFFFF0000")
+			compass(6,134,221,2,"0xFFFF0000")
+			compass(7,204,214,2,"0xFFFF0000")
+			compass(8,204,214,2,"0xFF00FF00")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Geffen Guide]"
@@ -326,11 +324,11 @@ function geffen_Guide_11862()
 			dialog "in the upper right corner"
 			dialog "of the screen. If you can't"
 			dialog "see it, press the Ctrl + Tab"
-			dialog("keys or click the ","Map"","button","in","your","Basic","Info","Window."")
+			dialog"keys or click the Map button in your Basic Info Window."
 			wait()
 			dialog "[Geffen Guide]"
 			dialog "On your Mini-Map,"
-			dialog("click on the ","+"","and","-")
+			dialog "click on the  + and -"
 			dialog "symbols to zoom in and"
 			dialog "our of your Mini-Map. We"
 			dialog "hope you enjoy your travels"

@@ -1,26 +1,24 @@
---  ____________________________________________________________
--- /                                                            \
--- |  ##       ##  ########  #########     ##########   ######   |
--- |   ##     ##  ##    ##  ##     ##     ##      ##   ##    ##  |
--- |    ##   ##  ##    ##  ##     ##     ##      ##   ##         |
--- |     ## ##  ##    ##  ##     ##     ##      ##   ##          |
--- |      ###  ########  #########     ##      ##   #######      |
--- |      ##  ##    ##  ##    ##      ##      ##        ##       |
--- |     ##  ##    ##  ##      ##    ##      ##  ##    ##        |
--- |    ##  ##    ##  ##        ##  ##########    ######         |
--- |   Yaros Package                                             |
--- |-------------------------------------------------------------|
--- | Current Version: 1.1      | Episode 10.3 File.              |
--- |-------------------------------------------------------------|
--- | 01/05/2007 : Added 1st Version. [Muad_Dib]                  |
--- | 22/08/2007 : Corrected some typo's. [Muad_Dib]              |
--- |-------------------------------------------------------------|
--- | Credits: Gravity                                            |
--- |-------------------------------------------------------------|
--- | Notes:                                                      |
--- |                                                             |
--- |                                                             |
--- \____________________________________________________________/
+-- _________________________________________________ --
+--/                                                 \--
+--|    _    _          _   _                        |--
+--|   | |  | |        | | (_)                       |--
+--|   | |__| |   ___  | |  _    ___    ___          |--
+--|   |  __  |  / _ \ | | | |  / _ \  / __|         |--
+--|   | |  | | |  __/ | | | | | (_) | \__ \         |--
+--|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
+--|                                                 |--
+--|-------------------------------------------------|--
+--| 05/01/2008                                      |--
+--|   - First version for helios, Loads but does    |--
+--|     not fully operate. [Spre]                   |--
+--|-------------------------------------------------|--
+--| Credits: Gravity                                |--
+--|          Yaros                                  |--
+--|-------------------------------------------------|--
+--| Notes:                                          |--
+--|                                                 |--
+--|                                                 |--
+--\_________________________________________________/--
 
 npc("izlude","Guide",SPRITE_8W_SOLDIER,121,87,6,0,0,"izlude_Guide_12187")
 function izlude_Guide_12187()
@@ -62,9 +60,9 @@ function izlude_Guide_12187()
 					dialog "in west Izlude. If you're thinking of changing jobs to Swordman,"
 					dialog "you should check it out."
 					if getvar(compass_check) == 1 then
-						compass(0,52,140,1,0xFFFF0000)
+						compass(0,52,140,1,"0xFFFF0000")
 					else
-						compass(0,52,140,0,0xFFFF0000)
+						compass(0,52,140,0,"0xFFFF0000")
 					end
 				elseif mresultb == 2 then
 					dialog "[Izlude Guide]"
@@ -72,9 +70,9 @@ function izlude_Guide_12187()
 					dialog "is located in the eastern"
 					dialog "island connected to Izlude."
 					if getvar(compass_check) == 1 then
-						compass(1,214,130,1,0xFF00FF00)
+						compass(1,214,130,1,"0xFF00FF00")
 					else
-						compass(1,214,130,0,0xFF00FF00)
+						compass(1,214,130,0,"0xFF00FF00")
 					end
 				elseif mresultb == 3 then
 					dialog "[Izlude Guide]"
@@ -82,9 +80,9 @@ function izlude_Guide_12187()
 					dialog "Arena is located at the"
 					dialog "northern end of Izlude."
 					if getvar(compass_check) == 1 then
-						compass(2,128,225,1,0xFF00FF00)
+						compass(2,128,225,1,"0xFF00FF00")
 					else
-						compass(2,128,225,0,0xFF00FF00)
+						compass(2,128,225,0,"0xFF00FF00")
 					end
 				elseif mresultb == 4 then
 					dialog "[Izlude Guide]"
@@ -94,9 +92,9 @@ function izlude_Guide_12187()
 					dialog "ride a ship which will take you"
 					dialog "to Alberta or Byalan Island."
 					if getvar(compass_check) == 1 then
-						compass(3,200,180,1,0xFFFF0000)
+						compass(3,200,180,1,"0xFFFF0000")
 					else
-						compass(3,200,180,0,0xFFFF0000)
+						compass(3,200,180,0,"0xFFFF0000")
 					end
 				elseif mresultb == 5 then
 					dialog "[Izlude Guide]"
@@ -104,9 +102,9 @@ function izlude_Guide_12187()
 					dialog "find the Weapon Shop"
 					dialog "in northwest Izlude."
 					if getvar(compass_check) == 1 then
-						compass(4,111,149,1,0xFFFF00FF)
+						compass(4,111,149,1,"0xFFFF00FF")
 					else
-						compass(4,111,149,0,0xFFFF00FF)
+						compass(4,111,149,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 6 then
 					dialog "[Izlude Guide]"
@@ -114,15 +112,15 @@ function izlude_Guide_12187()
 					dialog "be too hard to find in the"
 					dialog "northeast part of Izlude."
 					if getvar(compass_check) == 1 then
-						compass(5,148,148,1,0xFFFF00FF)
+						compass(5,148,148,1,"0xFFFF00FF")
 					else
-						compass(5,148,148,0,0xFFFF00FF)
+						compass(5,148,148,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 7 then
 					compass_check("=",1)
 					dialog "[Izlude Guide]"
-					dialog("Please ask me to ","Remove"")
-					dialog("Marks from Mini-Map","if","you"")
+					dialog "Please ask me to Remove"
+					dialog "Marks from Mini-Map if you"
 					dialog "no longer wish to have the"
 					dialog "location marks displayed"
 					dialog "on your Mini-Map."
@@ -130,12 +128,12 @@ function izlude_Guide_12187()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(0,237,41,2,0xFF00FF00)
-			compass(1,237,41,2,0xFF0000FF)
-			compass(2,46,345,2,0xFF00FF00)
-			compass(3,175,220,2,0xFFFF0000)
-			compass(4,134,221,2,0xFFFF0000)
-			compass(5,204,214,2,0xFFFF0000)
+			compass(0,237,41,2,"0xFF00FF00")
+			compass(1,237,41,2,"0xFF0000FF")
+			compass(2,46,345,2,"0xFF00FF00")
+			compass(3,175,220,2,"0xFFFF0000")
+			compass(4,134,221,2,"0xFFFF0000")
+			compass(5,204,214,2,"0xFFFF0000")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Izlude Guide]"
@@ -151,11 +149,11 @@ function izlude_Guide_12187()
 			dialog "in the upper right corner"
 			dialog "of the screen. If you can't"
 			dialog "see it, press the Ctrl + Tab"
-			dialog("keys or click the ","Map"","button","in","your","Basic","Info","Window."")
+			dialog "keys or click the  Map button in your Basic Info Window."
 			wait()
 			dialog "[Izlude Guide]"
 			dialog "On your Mini-Map,"
-			dialog("click on the ","+"","and","-")
+			dialog "click on the  + and -"
 			dialog "symbols to zoom in and"
 			dialog "our of your Mini-Map. We"
 			dialog "hope you enjoy your travels"
