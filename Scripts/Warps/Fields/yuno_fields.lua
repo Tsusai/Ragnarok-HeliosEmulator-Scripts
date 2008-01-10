@@ -8,9 +8,10 @@
 --|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
 --|                                                 |--
 --|-------------------------------------------------|--
+--| 09/01/2008 - Added episode 10 warps. [RabidCh]  |--
 --| 03/01/2008                                      |--
 --|   - Updated all function names to fix           |--
---|     function name conflicts in Lua. [RabidCh]   |--
+--|     name conflicts in Lua. [RabidCh]            |--
 --| 31/12/2007                                      |--
 --|   - Added New header [Spre]                     |--
 --| 29/12/2007                                      |--
@@ -228,3 +229,94 @@ warp("yuno_fild12","fild12d_fild11b_23_3391",23,339,1,1)
 function fild12d_fild11b_23_3391()
 	moveto("yuno_fild11",364,356)
 end
+
+warp("yuno_fild04","yuno_fild04_YunoF04a_EinF06A_24922",249,22,1,1)
+function yuno_fild04_YunoF04a_EinF06A_24922()
+		moveto("ein_fild06",251,362)
+end
+
+warp("yuno_fild07","yuno_fild07_YunoF07b_EinF06B_73220",73,220,1,1)
+function yuno_fild07_YunoF07b_EinF06B_73220()
+		moveto("ein_fild06",332,176)
+end
+
+warp("yuno_fild07","yuno_fild07_YunoF07a_EinF06C_5779",57,79,1,1)
+function yuno_fild07_YunoF07a_EinF06C_5779()
+		moveto("ein_fild06",352,95)
+end
+
+warp("yuno_fild11","yuno_fild11_YunoF11a_EinF07B_28266",28,266,1,1)
+function yuno_fild11_YunoF11a_EinF07B_28266()
+		moveto("ein_fild07",378,264)
+end
+
+warp("yuno_fild05","yuno_fild05_YuF05L01_EinF01R01_41350",41,350,1,1)
+function yuno_fild05_YuF05L01_EinF01R01_41350()
+	moveto("ein_fild01",345,367)
+end
+
+warp("yuno_fild04","yuno_fild04_YuF04L01_EinF02R01_33279",33,279,1,1)
+function yuno_fild04_YuF04L01_EinF02R01_33279()
+	moveto("ein_fild02",350,250)
+end
+
+warp("yuno_fild09","yuno_fild09_YuF09R01_YuF10L01_377184",377,184,1,1)
+function yuno_fild09_YuF09R01_YuF10L01_377184()
+	moveto("yuno_fild10",44,183)
+end
+
+warp("yuno_fild10","yuno_fild10_YuF10L01_YuF09R01_39183",39,183,1,1)
+function yuno_fild10_YuF10L01_YuF09R01_39183()
+	moveto("yuno_fild09",371,184)
+end
+
+warp("yuno_fild02","yuno_fild02_YunoF02Up_HuF04Dn_117375",117,375,1,1)
+function yuno_fild02_YunoF02Up_HuF04Dn_117375()
+	moveto("hu_fild04",122,35)
+end
+
+warp("yuno_fild02","yuno_fild02_YunoF02R_HuF07L_383339",383,339,1,1)
+function yuno_fild02_YunoF02R_HuF07L_383339()
+	moveto("hu_fild07",42,351)
+end
+
+warp("yuno_fild03","yuno_fild03_YunoF03Up_YunoF06Dn_215382",215,382,1,1)
+function yuno_fild03_YunoF03Up_YunoF06Dn_215382()
+	moveto("yuno_fild06",218,33)
+end
+
+warp("yuno_fild05","yuno_fild05_YunoF05R_YunoF06L_370321",370,321,1,1)
+function yuno_fild05_YunoF05R_YunoF06L_370321()
+	moveto("yuno_fild06",48,322)
+end
+
+warp("yuno_fild06","yuno_fild06_YunoF06Up_HuF01Dn_151370",151,370,1,1)
+function yuno_fild06_YunoF06Up_HuF01Dn_151370()
+	moveto("hu_fild01",135,42)
+end
+
+warp("yuno_fild06","yuno_fild06_YunoF06R_HuF04L_369132",369,132,1,1)
+function yuno_fild06_YunoF06R_HuF04L_369132()
+	moveto("hu_fild04",34,126)
+end
+
+warp("yuno_fild09","yuno_fild09_YunoF09Up1_HuF07Dn1_48376",48,376,1,1)
+function yuno_fild09_YunoF09Up1_HuF07Dn1_48376()
+	moveto("hu_fild07",58,42)
+end
+
+warp("yuno_fild09","yuno_fild09_YunoF09Up2_HuF07Dn2_220373",220,373,1,1)
+function yuno_fild09_YunoF09Up2_HuF07Dn2_220373()
+	moveto("hu_fild07",224,43)
+end
+
+warp("yuno_fild06","yuno_fild06_YunoF06Dn_YunoF03Up_21427",214,27,1,1)
+function yuno_fild06_YunoF06Dn_YunoF03Up_21427()
+	moveto("yuno_fild03",215,375)
+end
+
+warp("yuno_fild06","yuno_fild06_YunoF06L_YunoF05R_41319",41,319,1,1)
+function yuno_fild06_YunoF06L_YunoF05R_41319()
+	moveto("yuno_fild05",366,319)
+end
+

@@ -1,3 +1,10 @@
+- Rev 38 -
+[2008/1/9] RabidCh - Added WoE warps, episode 10 warps, valkyrie.lua, and rachel warps.
+[2008/1/9] RabidCh - Moved ve_fild, ra_fild, and thor_v warps from veins_town to organize them.
+[2008/1/9] RabidCh - Added various warps in Scripts/Warps/Other/
+[2008/1/9] RabidCh - TODO: Still many various warps scattered across Aegis to do.
+-
+
 - Rev 37 -
 [2008/1/7] RabidCh - Fixed faulty script coversion in amatsu_town and louyang_town in Scripts/Warps/Towns.
 -

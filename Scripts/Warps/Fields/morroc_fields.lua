@@ -8,6 +8,7 @@
 --|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
 --|                                                 |--
 --|-------------------------------------------------|--
+--| 09/01/2008 - Added warps to WoE area. [RabidCh] |--
 --| 03/01/2008                                      |--
 --|   - Updated all function names to fix           |--
 --|     function name conflicts in Lua. [RabidCh]   |--
@@ -479,4 +480,9 @@ end
 warp("moc_fild18","moc_fild18_to_cmd_fild09_51_1701",51,170,1,3)
 function moc_fild18_to_cmd_fild09_51_1701()
 	moveto("cmd_fild09",363,164)
+end
+
+warp("moc_fild02","moc_fild02_moc02a_payg02_378272",378,272,1,1)
+function moc_fild02_moc02a_payg02_378272()
+	moveto("pay_gld",20,276)
 end
