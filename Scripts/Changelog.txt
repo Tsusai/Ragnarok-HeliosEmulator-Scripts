@@ -1,3 +1,7 @@
+- Rev 39-
+[2008/1/10] Spre - Modified The following guides, Izlude, Geffen, Hugel, Juno. They now load without errors.
+-
+
 - Rev 38 -
 [2008/1/9] RabidCh - Added WoE warps, episode 10 warps, valkyrie.lua, and rachel warps.
 [2008/1/9] RabidCh - Moved ve_fild, ra_fild, and thor_v warps from veins_town to organize them.
