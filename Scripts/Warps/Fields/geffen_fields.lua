@@ -8,6 +8,7 @@
 --|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
 --|                                                 |--
 --|-------------------------------------------------|--
+--| 09/01/2008 - Added gef_fild13. [RabidCh]        |--
 --| 03/01/2008                                      |--
 --|   - Updated all function names to fix           |--
 --|     function name conflicts in Lua. [RabidCh]   |--
@@ -307,4 +308,54 @@ end
 warp("gef_fild14","gef14b_gef10a_371_2191",371,219,1,1)
 function gef14b_gef10a_371_2191()
 	moveto("gef_fild10",31,219)
+end
+
+warp("gef_fild13","gef_fild13_gef_g1_0_gefg_1_07_15054",150,54,1,1)
+function gef_fild13_gef_g1_0_gefg_1_07_15054()
+	moveto("gefg_cas01",34,140)
+end
+
+warp("gef_fild13","gef_fild13_gef_g1_1_gefg_1_04_21075",210,75,1,1)
+function gef_fild13_gef_g1_1_gefg_1_04_21075()
+	moveto("gefg_cas01",95,178)
+end
+
+warp("gef_fild13","gef_fild13_gef_g2_gefg_2_07_308244",308,244,1,1)
+function gef_fild13_gef_g2_gefg_2_07_308244()
+	moveto("gefg_cas02",70,143)
+end
+
+warp("gef_fild13","gef_fild13_gef_g3_0_g_cas3_12_77284",77,284,1,1)
+function gef_fild13_gef_g3_0_g_cas3_12_77284()
+	moveto("gefg_cas03",60,286)
+end
+
+warp("gef_fild13","gef_fild13_gef_g3_1_g_cas3_13_112269",112,269,1,1)
+function gef_fild13_gef_g3_1_g_cas3_13_112269()
+	moveto("gefg_cas03",100,280)
+end
+
+warp("gef_fild13","gef_fild13_gef_g3_2_g_cas3_14_139240",139,240,1,1)
+function gef_fild13_gef_g3_2_g_cas3_14_139240()
+	moveto("gefg_cas03",125,250)
+end
+
+warp("gef_fild13","gef_fild13_gef_g3_3_g_cas3_15_83185",83,185,1,1)
+function gef_fild13_gef_g3_3_g_cas3_15_83185()
+	moveto("gefg_cas03",89,159)
+end
+
+warp("gef_fild13","gef_fild13_gef_g4_gefg_4_05_196281",196,281,1,1)
+function gef_fild13_gef_g4_gefg_4_05_196281()
+	moveto("gefg_cas04",24,149)
+end
+
+warp("gef_fild13","gef_fild13_gef_5_0_gefg_5_04_25657",256,57,1,1)
+function gef_fild13_gef_5_0_gefg_5_04_25657()
+	moveto("gefg_cas05",11,134)
+end
+
+warp("gef_fild13","gef_fild13_gef_5_1_gefg_5_01_30583",305,83,1,1)
+function gef_fild13_gef_5_1_gefg_5_01_30583()
+	moveto("gefg_cas05",99,200)
 end

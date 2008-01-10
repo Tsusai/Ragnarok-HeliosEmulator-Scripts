@@ -8,6 +8,7 @@
 --|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
 --|                                                 |--
 --|-------------------------------------------------|--
+--| 09/01/2008 - Added warps to WoE area. [RabidCh] |--
 --| 03/01/2008                                      |--
 --|   - Updated all function names to fix           |--
 --|     function name conflicts in Lua. [RabidCh]   |--
@@ -192,4 +193,9 @@ end
 warp("aldebaran","aldebaran_aldeNorthGate_yuno01c_140243",140,243,1,1)
 function aldebaran_aldeNorthGate_yuno01c_140243()
 	moveto("yuno_fild01",208,22)
+end
+
+warp("aldebaran","aldebaran_alde_a_aldeg01_35140",35,140,1,1)
+function aldebaran_alde_a_aldeg01_35140()
+	moveto("alde_gld",280,160)
 end

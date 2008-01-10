@@ -8,6 +8,7 @@
 --|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
 --|                                                 |--
 --|-------------------------------------------------|--
+--| 09/01/2008 - Added warps to WoE area. [RabidCh] |--
 --| 03/01/2008                                      |--
 --|   - Updated all function names to fix           |--
 --|     function name conflicts in Lua. [RabidCh]   |--
@@ -447,4 +448,9 @@ end
 warp("pay_arche","Dungeon_Fronti_36_1312",36,131,2,2)
 function Dungeon_Fronti_36_1312()
 	moveto("pay_dun00",21,183)
+end
+
+warp("payon","payon_payon_a_payg01_16143",16,143,1,1)
+function payon_payon_a_payg01_16143()
+	moveto("pay_gld",370,149)
 end
