@@ -1,26 +1,24 @@
---  ____________________________________________________________
--- /                                                            \
--- |  ##       ##  ########  #########     ##########   ######   |
--- |   ##     ##  ##    ##  ##     ##     ##      ##   ##    ##  |
--- |    ##   ##  ##    ##  ##     ##     ##      ##   ##         |
--- |     ## ##  ##    ##  ##     ##     ##      ##   ##          |
--- |      ###  ########  #########     ##      ##   #######      |
--- |      ##  ##    ##  ##    ##      ##      ##        ##       |
--- |     ##  ##    ##  ##      ##    ##      ##  ##    ##        |
--- |    ##  ##    ##  ##        ##  ##########    ######         |
--- |   Yaros Package                                             |
--- |-------------------------------------------------------------|
--- | Current Version: 1.1      | Episode 10.3 File.              |
--- |-------------------------------------------------------------|
--- | 01/05/2007 : Added 1st Version. [Muad_Dib]                  |
--- | 22/08/2007 : Corrected some typo's. [Muad_Dib]              |
--- |-------------------------------------------------------------|
--- | Credits: Gravity                                            |
--- |-------------------------------------------------------------|
--- | Notes:                                                      |
--- |                                                             |
--- |                                                             |
--- \____________________________________________________________/
+-- _________________________________________________ --
+--/                                                 \--
+--|    _    _          _   _                        |--
+--|   | |  | |        | | (_)                       |--
+--|   | |__| |   ___  | |  _    ___    ___          |--
+--|   |  __  |  / _ \ | | | |  / _ \  / __|         |--
+--|   | |  | | |  __/ | | | | | (_) | \__ \         |--
+--|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
+--|                                                 |--
+--|-------------------------------------------------|--
+--| 05/01/2008                                      |--
+--|   - First version for helios, Loads but does    |--
+--|     not fully operate. [Spre]                   |--
+--|-------------------------------------------------|--
+--| Credits: Gravity                                |--
+--|          Yaros                                  |--
+--|-------------------------------------------------|--
+--| Notes:                                          |--
+--|                                                 |--
+--|                                                 |--
+--\_________________________________________________/--
 
 npc("prontera","Guide",SPRITE_8W_SOLDIER,154,187,4,0,0,"prontera_Guide_154187")
 function prontera_Guide_154187()
@@ -62,9 +60,9 @@ function prontera_Guide_154187()
 					dialog "moved to Izlude. This facility"
 					dialog "is just an empty building now."
 					if getvar(compass_check) == 1 then
-						compass(4,237,41,1,0xFF00FF00)
+						compass(4,237,41,1,"0xFF00FF00")
 					else
-						compass(4,237,41,0,0xFF00FF00)
+						compass(4,237,41,0,"0xFF00FF00")
 					end
 				elseif mresultb == 2 then
 					dialog "[Prontera Guide]"
@@ -74,9 +72,9 @@ function prontera_Guide_154187()
 					dialog "be found in the northeast"
 					dialog "corner of Prontera."
 					if getvar(compass_check) == 1 then
-						compass(5,236,316,1,0xFFFF0000)
+						compass(5,236,316,1,"0xFFFF0000")
 					else
-						compass(5,236,316,0,0xFFFF0000)
+						compass(5,236,316,0,"0xFFFF0000")
 					end
 				elseif mresultb == 3 then
 					dialog "[Prontera Guide]"
@@ -85,9 +83,9 @@ function prontera_Guide_154187()
 					dialog "the safety of our capital, is"
 					dialog "in Prontera's northwest corner."
 					if getvar(compass_check) == 1 then
-						compass(6,46,345,1,0xFF00FF00)
+						compass(6,46,345,1,"0xFF00FF00")
 					else
-						compass(6,46,345,0,0xFF00FF00)
+						compass(6,46,345,0,"0xFF00FF00")
 					end
 				elseif mresultb == 4 then
 					dialog "[Prontera Guide]"
@@ -95,9 +93,9 @@ function prontera_Guide_154187()
 					dialog "is located northeast"
 					dialog "of the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(7,175,220,1,0xFFFF00FF)
+						compass(7,175,220,1,"0xFFFF00FF")
 					else
-						compass(7,175,220,0,0xFFFF00FF)
+						compass(7,175,220,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 5 then
 					dialog "[Prontera Guide]"
@@ -105,9 +103,9 @@ function prontera_Guide_154187()
 					dialog "is located northwest"
 					dialog "of the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(8,134,221,1,0xFFFF00FF)
+						compass(8,134,221,1,"0xFFFF00FF")
 					else
-						compass(8,134,221,0,0xFFFF00FF)
+						compass(8,134,221,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 6 then
 					dialog "[Prontera Guide]"
@@ -116,11 +114,11 @@ function prontera_Guide_154187()
 					dialog "and west of Prontera's"
 					dialog "central fountain area."
 					if getvar(compass_check) == 1 then
-						compass(9,204,191,1,0xFFFF00FF)
-						compass(10,107,192,1,0xFFFF00FF)
+						compass(9,204,191,1,"0xFFFF00FF")
+						compass(10,107,192,1,"0xFFFF00FF")
 					else
-						compass(9,204,191,0,0xFFFF00FF)
-						compass(10,107,192,0,0xFFFF00FF)
+						compass(9,204,191,0,"0xFFFF00FF")
+						compass(10,107,192,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 7 then
 					dialog "[Prontera Guide]"
@@ -128,9 +126,9 @@ function prontera_Guide_154187()
 					dialog "can be found southeast"
 					dialog "from the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(11,179,184,1,0xFF00FF00)
+						compass(11,179,184,1,"0xFF00FF00")
 					else
-						compass(11,179,184,0,0xFF00FF00)
+						compass(11,179,184,0,"0xFF00FF00")
 					end
 				elseif mresultb == 8 then
 					dialog "[Prontera Guide]"
@@ -138,9 +136,9 @@ function prontera_Guide_154187()
 					dialog "southeast of the fountain,"
 					dialog "behind the Trading Post."
 					if getvar(compass_check) == 1 then
-						compass(12,208,154,1,0xFF00FF00)
+						compass(12,208,154,1,"0xFF00FF00")
 					else
-						compass(12,208,154,0,0xFF00FF00)
+						compass(12,208,154,0,"0xFF00FF00")
 					end
 				elseif mresultb == 9 then
 					dialog "[Prontera Guide]"
@@ -151,11 +149,11 @@ function prontera_Guide_154187()
 					dialog "Library can be accessed if you"
 					dialog "head towards the east or west."
 					if getvar(compass_check) == 1 then
-						compass(13,120,267,1,0xFF00FF00)
-						compass(14,192,267,1,0xFF00FF00)
+						compass(13,120,267,1,"0xFF00FF00")
+						compass(14,192,267,1,"0xFF00FF00")
 					else
-						compass(13,120,267,0,0xFF00FF00)
-						compass(14,192,267,0,0xFF00FF00)
+						compass(13,120,267,0,"0xFF00FF00")
+						compass(14,192,267,0,"0xFF00FF00")
 					end
 				elseif mresultb == 10 then
 					dialog "[Prontera Guide]"
@@ -163,9 +161,9 @@ function prontera_Guide_154187()
 					dialog "just southwest of the"
 					dialog "central fountain area."
 					if getvar(compass_check) == 1 then
-						compass(15,133,183,1,0xFF00FF00)
+						compass(15,133,183,1,"0xFF00FF00")
 					else
-						compass(15,133,183,0,0xFF00FF00)
+						compass(15,133,183,0,"0xFF00FF00")
 					end
 				elseif mresultb == 11 then
 					dialog "[Prontera Guide]"
@@ -176,9 +174,9 @@ function prontera_Guide_154187()
 					dialog "of Prontera by going through"
 					dialog "the castle's rear exit."
 					if getvar(compass_check) == 1 then
-						compass(16,156,360,1,0xFF00FF00)
+						compass(16,156,360,1,"0xFF00FF00")
 					else
-						compass(16,156,360,0,0xFF00FF00)
+						compass(16,156,360,0,"0xFF00FF00")
 					end
 				elseif mresultb == 12 then
 					dialog "[Prontera Guide]"
@@ -187,15 +185,15 @@ function prontera_Guide_154187()
 					dialog "southwest corner"
 					dialog "in our city of Prontera."
 					if getvar(compass_check) == 1 then
-						compass(17,75,91,1,0xFF01FF01)
+						compass(17,75,91,1,"0xFF01FF01")
 					else
-						compass(17,75,91,0,0xFF00FF00)
+						compass(17,75,91,0,"0xFF00FF00")
 					end
 				elseif mresultb == 13 then
 					compass_check("=",1)
 					dialog "[Prontera Guide]"
-					dialog("Please ask me to ","Remove"")
-					dialog("Marks from Mini-Map","if","you"")
+					dialog "Please ask me to Remove"
+					dialog "Marks from Mini-Map if you"
 					dialog "no longer wish to have the"
 					dialog "location marks displayed"
 					dialog "on your Mini-Map."
@@ -203,20 +201,20 @@ function prontera_Guide_154187()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(4,237,41,2,0xFF00FF00)
-			compass(5,237,41,2,0xFF0000FF)
-			compass(6,46,345,2,0xFF00FF00)
-			compass(7,175,220,2,0xFFFF0000)
-			compass(8,134,221,2,0xFFFF0000)
-			compass(9,204,191,2,0xFFFF0000)
-			compass(10,107,192,2,0xFFFF0000)
-			compass(11,179,184,2,0xFF00FF00)
-			compass(12,208,154,2,0xFF00FF00)
-			compass(13,120,267,2,0xFF00FF00)
-			compass(14,192,267,2,0xFF00FF00)
-			compass(15,133,183,2,0xFF00FF00)
-			compass(16,156,360,2,0xFF00FF00)
-			compass(17,75,91,2,0xFF00FF00)
+			compass(4,237,41,2,"0xFF00FF00")
+			compass(5,237,41,2,"0xFF0000FF")
+			compass(6,46,345,2,"0xFF00FF00")
+			compass(7,175,220,2,"0xFFFF0000")
+			compass(8,134,221,2,"0xFFFF0000")
+			compass(9,204,191,2,"0xFFFF0000")
+			compass(10,107,192,2,"0xFFFF0000")
+			compass(11,179,184,2,"0xFF00FF00")
+			compass(12,208,154,2,"0xFF00FF00")
+			compass(13,120,267,2,"0xFF00FF00")
+			compass(14,192,267,2,"0xFF00FF00")
+			compass(15,133,183,2,"0xFF00FF00")
+			compass(16,156,360,2,"0xFF00FF00")
+			compass(17,75,91,2,"0xFF00FF00")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Prontera Guide]"
@@ -232,11 +230,11 @@ function prontera_Guide_154187()
 			dialog "in the upper right corner"
 			dialog "of the screen. If you can't"
 			dialog "see it, press the Ctrl + Tab"
-			dialog("keys or click the ","Map"","button","in","your","Basic","Info","Window."")
+			dialog "keys or click the  Map button in your Basic Info Window."
 			wait()
 			dialog "[Prontera Guide]"
 			dialog "On your Mini-Map,"
-			dialog("click on the ","+"","and","-")
+			dialog "click on the + and -"
 			dialog "symbols to zoom in and"
 			dialog "our of your Mini-Map. We"
 			dialog "hope you enjoy your travels"
@@ -254,8 +252,8 @@ function prontera_Guide_154187()
 	showimage("prt_soldier.bmp",255)
 end
 
-npc("prontera","East Gate-Guide",SPRITE_8W_SOLDIER,282,208,2,0,0,"prontera_East_Gate-Guide_282208")
-function prontera_East_Gate-Guide_282208()
+npc("prontera","East GateGuide",SPRITE_8W_SOLDIER,282,208,2,0,0,"prontera_East_GateGuide_282208")
+function prontera_East_GateGuide_282208()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Prontera Guide]"
 	dialog "Welcome to Prontera,"
@@ -294,9 +292,9 @@ function prontera_East_Gate-Guide_282208()
 					dialog "moved to Izlude. This facility"
 					dialog "is just an empty building now."
 					if getvar(compass_check) == 1 then
-						compass(4,237,41,1,0xFF00FF00)
+						compass(4,237,41,1,"0xFF00FF00")
 					else
-						compass(4,237,41,0,0xFF00FF00)
+						compass(4,237,41,0,"0xFF00FF00")
 					end
 				elseif mresultb == 2 then
 					dialog "[Prontera Guide]"
@@ -306,9 +304,9 @@ function prontera_East_Gate-Guide_282208()
 					dialog "be found in the northeast"
 					dialog "corner of Prontera."
 					if getvar(compass_check) == 1 then
-						compass(5,236,316,1,0xFFFF0000)
+						compass(5,236,316,1,"0xFFFF0000")
 					else
-						compass(5,236,316,0,0xFFFF0000)
+						compass(5,236,316,0,"0xFFFF0000")
 					end
 				elseif mresultb == 3 then
 					dialog "[Prontera Guide]"
@@ -317,9 +315,9 @@ function prontera_East_Gate-Guide_282208()
 					dialog "the safety of our capital, is"
 					dialog "in Prontera's northwest corner."
 					if getvar(compass_check) == 1 then
-						compass(6,46,345,1,0xFF00FF00)
+						compass(6,46,345,1,"0xFF00FF00")
 					else
-						compass(6,46,345,0,0xFF00FF00)
+						compass(6,46,345,0,"0xFF00FF00")
 					end
 				elseif mresultb == 4 then
 					dialog "[Prontera Guide]"
@@ -327,9 +325,9 @@ function prontera_East_Gate-Guide_282208()
 					dialog "is located northeast"
 					dialog "of the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(7,175,220,1,0xFFFF00FF)
+						compass(7,175,220,1,"0xFFFF00FF")
 					else
-						compass(7,175,220,0,0xFFFF00FF)
+						compass(7,175,220,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 5 then
 					dialog "[Prontera Guide]"
@@ -337,9 +335,9 @@ function prontera_East_Gate-Guide_282208()
 					dialog "is located northwest"
 					dialog "of the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(8,134,221,1,0xFFFF00FF)
+						compass(8,134,221,1,"0xFFFF00FF")
 					else
-						compass(8,134,221,0,0xFFFF00FF)
+						compass(8,134,221,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 6 then
 					dialog "[Prontera Guide]"
@@ -348,11 +346,11 @@ function prontera_East_Gate-Guide_282208()
 					dialog "and west of Prontera's"
 					dialog "central fountain area."
 					if getvar(compass_check) == 1 then
-						compass(9,204,191,1,0xFFFF00FF)
-						compass(10,107,192,1,0xFFFF00FF)
+						compass(9,204,191,1,"0xFFFF00FF")
+						compass(10,107,192,1,"0xFFFF00FF")
 					else
-						compass(9,204,191,0,0xFFFF00FF)
-						compass(10,107,192,0,0xFFFF00FF)
+						compass(9,204,191,0,"0xFFFF00FF")
+						compass(10,107,192,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 7 then
 					dialog "[Prontera Guide]"
@@ -360,9 +358,9 @@ function prontera_East_Gate-Guide_282208()
 					dialog "can be found southeast"
 					dialog "from the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(11,179,184,1,0xFF00FF00)
+						compass(11,179,184,1,"0xFF00FF00")
 					else
-						compass(11,179,184,0,0xFF00FF00)
+						compass(11,179,184,0,"0xFF00FF00")
 					end
 				elseif mresultb == 8 then
 					dialog "[Prontera Guide]"
@@ -370,9 +368,9 @@ function prontera_East_Gate-Guide_282208()
 					dialog "southeast of the fountain,"
 					dialog "behind the Trading Post."
 					if getvar(compass_check) == 1 then
-						compass(12,208,154,1,0xFF00FF00)
+						compass(12,208,154,1,"0xFF00FF00")
 					else
-						compass(12,208,154,0,0xFF00FF00)
+						compass(12,208,154,0,"0xFF00FF00")
 					end
 				elseif mresultb == 9 then
 					dialog "[Prontera Guide]"
@@ -383,11 +381,11 @@ function prontera_East_Gate-Guide_282208()
 					dialog "Library can be accessed if you"
 					dialog "head towards the east or west."
 					if getvar(compass_check) == 1 then
-						compass(13,120,267,1,0xFF00FF00)
-						compass(14,192,267,1,0xFF00FF00)
+						compass(13,120,267,1,"0xFF00FF00")
+						compass(14,192,267,1,"0xFF00FF00")
 					else
-						compass(13,120,267,0,0xFF00FF00)
-						compass(14,192,267,0,0xFF00FF00)
+						compass(13,120,267,0,"0xFF00FF00")
+						compass(14,192,267,0,"0xFF00FF00")
 					end
 				elseif mresultb == 10 then
 					dialog "[Prontera Guide]"
@@ -395,9 +393,9 @@ function prontera_East_Gate-Guide_282208()
 					dialog "just southwest of the"
 					dialog "central fountain area."
 					if getvar(compass_check) == 1 then
-						compass(15,133,183,1,0xFF00FF00)
+						compass(15,133,183,1,"0xFF00FF00")
 					else
-						compass(15,133,183,0,0xFF00FF00)
+						compass(15,133,183,0,"0xFF00FF00")
 					end
 				elseif mresultb == 11 then
 					dialog "[Prontera Guide]"
@@ -408,9 +406,9 @@ function prontera_East_Gate-Guide_282208()
 					dialog "of Prontera by going through"
 					dialog "the castle's rear exit."
 					if getvar(compass_check) == 1 then
-						compass(16,156,360,1,0xFF00FF00)
+						compass(16,156,360,1,"0xFF00FF00")
 					else
-						compass(16,156,360,0,0xFF00FF00)
+						compass(16,156,360,0,"0xFF00FF00")
 					end
 				elseif mresultb == 12 then
 					dialog "[Prontera Guide]"
@@ -419,15 +417,15 @@ function prontera_East_Gate-Guide_282208()
 					dialog "southwest corner"
 					dialog "in our city of Prontera."
 					if getvar(compass_check) == 1 then
-						compass(17,75,91,1,0xFF01FF01)
+						compass(17,75,91,1,"0xFF01FF01")
 					else
-						compass(17,75,91,0,0xFF00FF00)
+						compass(17,75,91,0,"0xFF00FF00")
 					end
 				elseif mresultb == 13 then
 					compass_check("=",1)
 					dialog "[Prontera Guide]"
-					dialog("Please ask me to ","Remove"")
-					dialog("Marks from Mini-Map","if","you"")
+					dialog "Please ask me to Remove"
+					dialog "Marks from Mini-Map if you"
 					dialog "no longer wish to have the"
 					dialog "location marks displayed"
 					dialog "on your Mini-Map."
@@ -435,20 +433,20 @@ function prontera_East_Gate-Guide_282208()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(4,237,41,2,0xFF00FF00)
-			compass(5,237,41,2,0xFF0000FF)
-			compass(6,46,345,2,0xFF00FF00)
-			compass(7,175,220,2,0xFFFF0000)
-			compass(8,134,221,2,0xFFFF0000)
-			compass(9,204,191,2,0xFFFF0000)
-			compass(10,107,192,2,0xFFFF0000)
-			compass(11,179,184,2,0xFF00FF00)
-			compass(12,208,154,2,0xFF00FF00)
-			compass(13,120,267,2,0xFF00FF00)
-			compass(14,192,267,2,0xFF00FF00)
-			compass(15,133,183,2,0xFF00FF00)
-			compass(16,156,360,2,0xFF00FF00)
-			compass(17,75,91,2,0xFF00FF00)
+			compass(4,237,41,2,"0xFF00FF00")
+			compass(5,237,41,2,"0xFF0000FF")
+			compass(6,46,345,2,"0xFF00FF00")
+			compass(7,175,220,2,"0xFFFF0000")
+			compass(8,134,221,2,"0xFFFF0000")
+			compass(9,204,191,2,"0xFFFF0000")
+			compass(10,107,192,2,"0xFFFF0000")
+			compass(11,179,184,2,"0xFF00FF00")
+			compass(12,208,154,2,"0xFF00FF00")
+			compass(13,120,267,2,"0xFF00FF00")
+			compass(14,192,267,2,"0xFF00FF00")
+			compass(15,133,183,2,"0xFF00FF00")
+			compass(16,156,360,2,"0xFF00FF00")
+			compass(17,75,91,2,"0xFF00FF00")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Prontera Guide]"
@@ -464,11 +462,11 @@ function prontera_East_Gate-Guide_282208()
 			dialog "in the upper right corner"
 			dialog "of the screen. If you can't"
 			dialog "see it, press the Ctrl + Tab"
-			dialog("keys or click the ","Map"","button","in","your","Basic","Info","Window."")
+			dialog "keys or click the  Map button in your Basic Info Window."
 			wait()
 			dialog "[Prontera Guide]"
 			dialog "On your Mini-Map,"
-			dialog("click on the ","+"","and","-")
+			dialog "click on the  + and -"
 			dialog "symbols to zoom in and"
 			dialog "our of your Mini-Map. We"
 			dialog "hope you enjoy your travels"
@@ -486,8 +484,8 @@ function prontera_East_Gate-Guide_282208()
 	showimage("prt_soldier.bmp",255)
 end
 
-npc("prontera","West Gate-Guide",SPRITE_8W_SOLDIER,29,200,6,0,0,"prontera_West_Gate-Guide_29200")
-function prontera_West_Gate-Guide_29200()
+npc("prontera","West GateGuide",SPRITE_8W_SOLDIER,29,200,6,0,0,"prontera_West_GateGuide_29200")
+function prontera_West_GateGuide_29200()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Prontera Guide]"
 	dialog "Welcome to Prontera,"
@@ -526,9 +524,9 @@ function prontera_West_Gate-Guide_29200()
 					dialog "moved to Izlude. This facility"
 					dialog "is just an empty building now."
 					if getvar(compass_check) == 1 then
-						compass(4,237,41,1,0xFF00FF00)
+						compass(4,237,41,1,"0xFF00FF00")
 					else
-						compass(4,237,41,0,0xFF00FF00)
+						compass(4,237,41,0,"0xFF00FF00")
 					end
 				elseif mresultb == 2 then
 					dialog "[Prontera Guide]"
@@ -538,9 +536,9 @@ function prontera_West_Gate-Guide_29200()
 					dialog "be found in the northeast"
 					dialog "corner of Prontera."
 					if getvar(compass_check) == 1 then
-						compass(5,236,316,1,0xFFFF0000)
+						compass(5,236,316,1,"0xFFFF0000")
 					else
-						compass(5,236,316,0,0xFFFF0000)
+						compass(5,236,316,0,"0xFFFF0000")
 					end
 				elseif mresultb == 3 then
 					dialog "[Prontera Guide]"
@@ -549,9 +547,9 @@ function prontera_West_Gate-Guide_29200()
 					dialog "the safety of our capital, is"
 					dialog "in Prontera's northwest corner."
 					if getvar(compass_check) == 1 then
-						compass(6,46,345,1,0xFF00FF00)
+						compass(6,46,345,1,"0xFF00FF00")
 					else
-						compass(6,46,345,0,0xFF00FF00)
+						compass(6,46,345,0,"0xFF00FF00")
 					end
 				elseif mresultb == 4 then
 					dialog "[Prontera Guide]"
@@ -559,9 +557,9 @@ function prontera_West_Gate-Guide_29200()
 					dialog "is located northeast"
 					dialog "of the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(7,175,220,1,0xFFFF00FF)
+						compass(7,175,220,1,"0xFFFF00FF")
 					else
-						compass(7,175,220,0,0xFFFF00FF)
+						compass(7,175,220,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 5 then
 					dialog "[Prontera Guide]"
@@ -569,9 +567,9 @@ function prontera_West_Gate-Guide_29200()
 					dialog "is located northwest"
 					dialog "of the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(8,134,221,1,0xFFFF00FF)
+						compass(8,134,221,1,"0xFFFF00FF")
 					else
-						compass(8,134,221,0,0xFFFF00FF)
+						compass(8,134,221,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 6 then
 					dialog "[Prontera Guide]"
@@ -580,11 +578,11 @@ function prontera_West_Gate-Guide_29200()
 					dialog "and west of Prontera's"
 					dialog "central fountain area."
 					if getvar(compass_check) == 1 then
-						compass(9,204,191,1,0xFFFF00FF)
-						compass(10,107,192,1,0xFFFF00FF)
+						compass(9,204,191,1,"0xFFFF00FF")
+						compass(10,107,192,1,"0xFFFF00FF")
 					else
-						compass(9,204,191,0,0xFFFF00FF)
-						compass(10,107,192,0,0xFFFF00FF)
+						compass(9,204,191,0,"0xFFFF00FF")
+						compass(10,107,192,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 7 then
 					dialog "[Prontera Guide]"
@@ -592,9 +590,9 @@ function prontera_West_Gate-Guide_29200()
 					dialog "can be found southeast"
 					dialog "from the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(11,179,184,1,0xFF00FF00)
+						compass(11,179,184,1,"0xFF00FF00")
 					else
-						compass(11,179,184,0,0xFF00FF00)
+						compass(11,179,184,0,"0xFF00FF00")
 					end
 				elseif mresultb == 8 then
 					dialog "[Prontera Guide]"
@@ -602,9 +600,9 @@ function prontera_West_Gate-Guide_29200()
 					dialog "southeast of the fountain,"
 					dialog "behind the Trading Post."
 					if getvar(compass_check) == 1 then
-						compass(12,208,154,1,0xFF00FF00)
+						compass(12,208,154,1,"0xFF00FF00")
 					else
-						compass(12,208,154,0,0xFF00FF00)
+						compass(12,208,154,0,"0xFF00FF00")
 					end
 				elseif mresultb == 9 then
 					dialog "[Prontera Guide]"
@@ -615,11 +613,11 @@ function prontera_West_Gate-Guide_29200()
 					dialog "Library can be accessed if you"
 					dialog "head towards the east or west."
 					if getvar(compass_check) == 1 then
-						compass(13,120,267,1,0xFF00FF00)
-						compass(14,192,267,1,0xFF00FF00)
+						compass(13,120,267,1,"0xFF00FF00")
+						compass(14,192,267,1,"0xFF00FF00")
 					else
-						compass(13,120,267,0,0xFF00FF00)
-						compass(14,192,267,0,0xFF00FF00)
+						compass(13,120,267,0,"0xFF00FF00")
+						compass(14,192,267,0,"0xFF00FF00")
 					end
 				elseif mresultb == 10 then
 					dialog "[Prontera Guide]"
@@ -627,9 +625,9 @@ function prontera_West_Gate-Guide_29200()
 					dialog "just southwest of the"
 					dialog "central fountain area."
 					if getvar(compass_check) == 1 then
-						compass(15,133,183,1,0xFF00FF00)
+						compass(15,133,183,1,"0xFF00FF00")
 					else
-						compass(15,133,183,0,0xFF00FF00)
+						compass(15,133,183,0,"0xFF00FF00")
 					end
 				elseif mresultb == 11 then
 					dialog "[Prontera Guide]"
@@ -640,9 +638,9 @@ function prontera_West_Gate-Guide_29200()
 					dialog "of Prontera by going through"
 					dialog "the castle's rear exit."
 					if getvar(compass_check) == 1 then
-						compass(16,156,360,1,0xFF00FF00)
+						compass(16,156,360,1,"0xFF00FF00")
 					else
-						compass(16,156,360,0,0xFF00FF00)
+						compass(16,156,360,0,"0xFF00FF00")
 					end
 				elseif mresultb == 12 then
 					dialog "[Prontera Guide]"
@@ -651,15 +649,15 @@ function prontera_West_Gate-Guide_29200()
 					dialog "southwest corner"
 					dialog "in our city of Prontera."
 					if getvar(compass_check) == 1 then
-						compass(17,75,91,1,0xFF01FF01)
+						compass(17,75,91,1,"0xFF01FF01")
 					else
-						compass(17,75,91,0,0xFF00FF00)
+						compass(17,75,91,0,"0xFF00FF00")
 					end
 				elseif mresultb == 13 then
 					compass_check("=",1)
 					dialog "[Prontera Guide]"
-					dialog("Please ask me to ","Remove"")
-					dialog("Marks from Mini-Map","if","you"")
+					dialog "Please ask me to Remove"
+					dialog "Marks from Mini-Map if you"
 					dialog "no longer wish to have the"
 					dialog "location marks displayed"
 					dialog "on your Mini-Map."
@@ -667,20 +665,20 @@ function prontera_West_Gate-Guide_29200()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(4,237,41,2,0xFF00FF00)
-			compass(5,237,41,2,0xFF0000FF)
-			compass(6,46,345,2,0xFF00FF00)
-			compass(7,175,220,2,0xFFFF0000)
-			compass(8,134,221,2,0xFFFF0000)
-			compass(9,204,191,2,0xFFFF0000)
-			compass(10,107,192,2,0xFFFF0000)
-			compass(11,179,184,2,0xFF00FF00)
-			compass(12,208,154,2,0xFF00FF00)
-			compass(13,120,267,2,0xFF00FF00)
-			compass(14,192,267,2,0xFF00FF00)
-			compass(15,133,183,2,0xFF00FF00)
-			compass(16,156,360,2,0xFF00FF00)
-			compass(17,75,91,2,0xFF00FF00)
+			compass(4,237,41,2,"0xFF00FF00")
+			compass(5,237,41,2,"0xFF0000FF")
+			compass(6,46,345,2,"0xFF00FF00")
+			compass(7,175,220,2,"0xFFFF0000")
+			compass(8,134,221,2,"0xFFFF0000")
+			compass(9,204,191,2,"0xFFFF0000")
+			compass(10,107,192,2,"0xFFFF0000")
+			compass(11,179,184,2,"0xFF00FF00")
+			compass(12,208,154,2,"0xFF00FF00")
+			compass(13,120,267,2,"0xFF00FF00")
+			compass(14,192,267,2,"0xFF00FF00")
+			compass(15,133,183,2,"0xFF00FF00")
+			compass(16,156,360,2,"0xFF00FF00")
+			compass(17,75,91,2,"0xFF00FF00")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Prontera Guide]"
@@ -696,11 +694,11 @@ function prontera_West_Gate-Guide_29200()
 			dialog "in the upper right corner"
 			dialog "of the screen. If you can't"
 			dialog "see it, press the Ctrl + Tab"
-			dialog("keys or click the ","Map"","button","in","your","Basic","Info","Window."")
+			dialog "keys or click the  Map button in your Basic Info Window."
 			wait()
 			dialog "[Prontera Guide]"
 			dialog "On your Mini-Map,"
-			dialog("click on the ","+"","and","-")
+			dialog "click on the  + and -"
 			dialog "symbols to zoom in and"
 			dialog "our of your Mini-Map. We"
 			dialog "hope you enjoy your travels"
@@ -718,8 +716,8 @@ function prontera_West_Gate-Guide_29200()
 	showimage("prt_soldier.bmp",255)
 end
 
-npc("prontera","South Gate-Guide",SPRITE_8W_SOLDIER,160,29,0,0,0,"prontera_South_Gate-Guide_16029")
-function prontera_South_Gate-Guide_16029()
+npc("prontera","South GateGuide",SPRITE_8W_SOLDIER,160,29,0,0,0,"prontera_South_GateGuide_16029")
+function prontera_South_GateGuide_16029()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Prontera Guide]"
 	dialog "Welcome to Prontera,"
@@ -758,9 +756,9 @@ function prontera_South_Gate-Guide_16029()
 					dialog "moved to Izlude. This facility"
 					dialog "is just an empty building now."
 					if getvar(compass_check) == 1 then
-						compass(4,237,41,1,0xFF00FF00)
+						compass(4,237,41,1,"0xFF00FF00")
 					else
-						compass(4,237,41,0,0xFF00FF00)
+						compass(4,237,41,0,"0xFF00FF00")
 					end
 				elseif mresultb == 2 then
 					dialog "[Prontera Guide]"
@@ -770,9 +768,9 @@ function prontera_South_Gate-Guide_16029()
 					dialog "be found in the northeast"
 					dialog "corner of Prontera."
 					if getvar(compass_check) == 1 then
-						compass(5,236,316,1,0xFFFF0000)
+						compass(5,236,316,1,"0xFFFF0000")
 					else
-						compass(5,236,316,0,0xFFFF0000)
+						compass(5,236,316,0,"0xFFFF0000")
 					end
 				elseif mresultb == 3 then
 					dialog "[Prontera Guide]"
@@ -781,9 +779,9 @@ function prontera_South_Gate-Guide_16029()
 					dialog "the safety of our capital, is"
 					dialog "in Prontera's northwest corner."
 					if getvar(compass_check) == 1 then
-						compass(6,46,345,1,0xFF00FF00)
+						compass(6,46,345,1,"0xFF00FF00")
 					else
-						compass(6,46,345,0,0xFF00FF00)
+						compass(6,46,345,0,"0xFF00FF00")
 					end
 				elseif mresultb == 4 then
 					dialog "[Prontera Guide]"
@@ -791,9 +789,9 @@ function prontera_South_Gate-Guide_16029()
 					dialog "is located northeast"
 					dialog "of the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(7,175,220,1,0xFFFF00FF)
+						compass(7,175,220,1,"0xFFFF00FF")
 					else
-						compass(7,175,220,0,0xFFFF00FF)
+						compass(7,175,220,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 5 then
 					dialog "[Prontera Guide]"
@@ -801,9 +799,9 @@ function prontera_South_Gate-Guide_16029()
 					dialog "is located northwest"
 					dialog "of the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(8,134,221,1,0xFFFF00FF)
+						compass(8,134,221,1,"0xFFFF00FF")
 					else
-						compass(8,134,221,0,0xFFFF00FF)
+						compass(8,134,221,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 6 then
 					dialog "[Prontera Guide]"
@@ -812,11 +810,11 @@ function prontera_South_Gate-Guide_16029()
 					dialog "and west of Prontera's"
 					dialog "central fountain area."
 					if getvar(compass_check) == 1 then
-						compass(9,204,191,1,0xFFFF00FF)
-						compass(10,107,192,1,0xFFFF00FF)
+						compass(9,204,191,1,"0xFFFF00FF")
+						compass(10,107,192,1,"0xFFFF00FF")
 					else
-						compass(9,204,191,0,0xFFFF00FF)
-						compass(10,107,192,0,0xFFFF00FF)
+						compass(9,204,191,0,"0xFFFF00FF")
+						compass(10,107,192,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 7 then
 					dialog "[Prontera Guide]"
@@ -824,9 +822,9 @@ function prontera_South_Gate-Guide_16029()
 					dialog "can be found southeast"
 					dialog "from the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(11,179,184,1,0xFF00FF00)
+						compass(11,179,184,1,"0xFF00FF00")
 					else
-						compass(11,179,184,0,0xFF00FF00)
+						compass(11,179,184,0,"0xFF00FF00")
 					end
 				elseif mresultb == 8 then
 					dialog "[Prontera Guide]"
@@ -834,9 +832,9 @@ function prontera_South_Gate-Guide_16029()
 					dialog "southeast of the fountain,"
 					dialog "behind the Trading Post."
 					if getvar(compass_check) == 1 then
-						compass(12,208,154,1,0xFF00FF00)
+						compass(12,208,154,1,"0xFF00FF00")
 					else
-						compass(12,208,154,0,0xFF00FF00)
+						compass(12,208,154,0,"0xFF00FF00")
 					end
 				elseif mresultb == 9 then
 					dialog "[Prontera Guide]"
@@ -847,11 +845,11 @@ function prontera_South_Gate-Guide_16029()
 					dialog "Library can be accessed if you"
 					dialog "head towards the east or west."
 					if getvar(compass_check) == 1 then
-						compass(13,120,267,1,0xFF00FF00)
-						compass(14,192,267,1,0xFF00FF00)
+						compass(13,120,267,1,"0xFF00FF00")
+						compass(14,192,267,1,"0xFF00FF00")
 					else
-						compass(13,120,267,0,0xFF00FF00)
-						compass(14,192,267,0,0xFF00FF00)
+						compass(13,120,267,0,"0xFF00FF00")
+						compass(14,192,267,0,"0xFF00FF00")
 					end
 				elseif mresultb == 10 then
 					dialog "[Prontera Guide]"
@@ -859,9 +857,9 @@ function prontera_South_Gate-Guide_16029()
 					dialog "just southwest of the"
 					dialog "central fountain area."
 					if getvar(compass_check) == 1 then
-						compass(15,133,183,1,0xFF00FF00)
+						compass(15,133,183,1,"0xFF00FF00")
 					else
-						compass(15,133,183,0,0xFF00FF00)
+						compass(15,133,183,0,"0xFF00FF00")
 					end
 				elseif mresultb == 11 then
 					dialog "[Prontera Guide]"
@@ -872,9 +870,9 @@ function prontera_South_Gate-Guide_16029()
 					dialog "of Prontera by going through"
 					dialog "the castle's rear exit."
 					if getvar(compass_check) == 1 then
-						compass(16,156,360,1,0xFF00FF00)
+						compass(16,156,360,1,"0xFF00FF00")
 					else
-						compass(16,156,360,0,0xFF00FF00)
+						compass(16,156,360,0,"0xFF00FF00")
 					end
 				elseif mresultb == 12 then
 					dialog "[Prontera Guide]"
@@ -883,15 +881,15 @@ function prontera_South_Gate-Guide_16029()
 					dialog "southwest corner"
 					dialog "in our city of Prontera."
 					if getvar(compass_check) == 1 then
-						compass(17,75,91,1,0xFF01FF01)
+						compass(17,75,91,1,"0xFF01FF01")
 					else
-						compass(17,75,91,0,0xFF00FF00)
+						compass(17,75,91,0,"0xFF00FF00")
 					end
 				elseif mresultb == 13 then
 					compass_check("=",1)
 					dialog "[Prontera Guide]"
-					dialog("Please ask me to ","Remove"")
-					dialog("Marks from Mini-Map","if","you"")
+					dialog "Please ask me to Remove"
+					dialog "Marks from Mini-Map if you"
 					dialog "no longer wish to have the"
 					dialog "location marks displayed"
 					dialog "on your Mini-Map."
@@ -899,20 +897,20 @@ function prontera_South_Gate-Guide_16029()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(4,237,41,2,0xFF00FF00)
-			compass(5,237,41,2,0xFF0000FF)
-			compass(6,46,345,2,0xFF00FF00)
-			compass(7,175,220,2,0xFFFF0000)
-			compass(8,134,221,2,0xFFFF0000)
-			compass(9,204,191,2,0xFFFF0000)
-			compass(10,107,192,2,0xFFFF0000)
-			compass(11,179,184,2,0xFF00FF00)
-			compass(12,208,154,2,0xFF00FF00)
-			compass(13,120,267,2,0xFF00FF00)
-			compass(14,192,267,2,0xFF00FF00)
-			compass(15,133,183,2,0xFF00FF00)
-			compass(16,156,360,2,0xFF00FF00)
-			compass(17,75,91,2,0xFF00FF00)
+			compass(4,237,41,2,"0xFF00FF00")
+			compass(5,237,41,2,"0xFF0000FF")
+			compass(6,46,345,2,"0xFF00FF00")
+			compass(7,175,220,2,"0xFFFF0000")
+			compass(8,134,221,2,"0xFFFF0000")
+			compass(9,204,191,2,"0xFFFF0000")
+			compass(10,107,192,2,"0xFFFF0000")
+			compass(11,179,184,2,"0xFF00FF00")
+			compass(12,208,154,2,"0xFF00FF00")
+			compass(13,120,267,2,"0xFF00FF00")
+			compass(14,192,267,2,"0xFF00FF00")
+			compass(15,133,183,2,"0xFF00FF00")
+			compass(16,156,360,2,"0xFF00FF00")
+			compass(17,75,91,2,"0xFF00FF00")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Prontera Guide]"
@@ -928,11 +926,11 @@ function prontera_South_Gate-Guide_16029()
 			dialog "in the upper right corner"
 			dialog "of the screen. If you can't"
 			dialog "see it, press the Ctrl + Tab"
-			dialog("keys or click the ","Map"","button","in","your","Basic","Info","Window."")
+			dialog "keys or click the  Map button in your Basic Info Window."
 			wait()
 			dialog "[Prontera Guide]"
 			dialog "On your Mini-Map,"
-			dialog("click on the ","+"","and","-")
+			dialog "click on the  + and -"
 			dialog "symbols to zoom in and"
 			dialog "our of your Mini-Map. We"
 			dialog "hope you enjoy your travels"
@@ -950,8 +948,8 @@ function prontera_South_Gate-Guide_16029()
 	showimage("prt_soldier.bmp",255)
 end
 
-npc("prontera","North Gate-Guide",SPRITE_8W_SOLDIER,151,330,4,0,0,"prontera_North_Gate-Guide_151330")
-function prontera_North_Gate-Guide_151330()
+npc("prontera","North GateGuide",SPRITE_8W_SOLDIER,151,330,4,0,0,"prontera_North_GateGuide_151330")
+function prontera_North_GateGuide_151330()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Prontera Guide]"
 	dialog "Welcome to Prontera,"
@@ -990,9 +988,9 @@ function prontera_North_Gate-Guide_151330()
 					dialog "moved to Izlude. This facility"
 					dialog "is just an empty building now."
 					if getvar(compass_check) == 1 then
-						compass(4,237,41,1,0xFF00FF00)
+						compass(4,237,41,1,"0xFF00FF00")
 					else
-						compass(4,237,41,0,0xFF00FF00)
+						compass(4,237,41,0,"0xFF00FF00")
 					end
 				elseif mresultb == 2 then
 					dialog "[Prontera Guide]"
@@ -1002,9 +1000,9 @@ function prontera_North_Gate-Guide_151330()
 					dialog "be found in the northeast"
 					dialog "corner of Prontera."
 					if getvar(compass_check) == 1 then
-						compass(5,236,316,1,0xFFFF0000)
+						compass(5,236,316,1,"0xFFFF0000")
 					else
-						compass(5,236,316,0,0xFFFF0000)
+						compass(5,236,316,0,"0xFFFF0000")
 					end
 				elseif mresultb == 3 then
 					dialog "[Prontera Guide]"
@@ -1013,9 +1011,9 @@ function prontera_North_Gate-Guide_151330()
 					dialog "the safety of our capital, is"
 					dialog "in Prontera's northwest corner."
 					if getvar(compass_check) == 1 then
-						compass(6,46,345,1,0xFF00FF00)
+						compass(6,46,345,1,"0xFF00FF00")
 					else
-						compass(6,46,345,0,0xFF00FF00)
+						compass(6,46,345,0,"0xFF00FF00")
 					end
 				elseif mresultb == 4 then
 					dialog "[Prontera Guide]"
@@ -1023,9 +1021,9 @@ function prontera_North_Gate-Guide_151330()
 					dialog "is located northeast"
 					dialog "of the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(7,175,220,1,0xFFFF00FF)
+						compass(7,175,220,1,"0xFFFF00FF")
 					else
-						compass(7,175,220,0,0xFFFF00FF)
+						compass(7,175,220,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 5 then
 					dialog "[Prontera Guide]"
@@ -1033,9 +1031,9 @@ function prontera_North_Gate-Guide_151330()
 					dialog "is located northwest"
 					dialog "of the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(8,134,221,1,0xFFFF00FF)
+						compass(8,134,221,1,"0xFFFF00FF")
 					else
-						compass(8,134,221,0,0xFFFF00FF)
+						compass(8,134,221,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 6 then
 					dialog "[Prontera Guide]"
@@ -1044,11 +1042,11 @@ function prontera_North_Gate-Guide_151330()
 					dialog "and west of Prontera's"
 					dialog "central fountain area."
 					if getvar(compass_check) == 1 then
-						compass(9,204,191,1,0xFFFF00FF)
-						compass(10,107,192,1,0xFFFF00FF)
+						compass(9,204,191,1,"0xFFFF00FF")
+						compass(10,107,192,1,"0xFFFF00FF")
 					else
-						compass(9,204,191,0,0xFFFF00FF)
-						compass(10,107,192,0,0xFFFF00FF)
+						compass(9,204,191,0,"0xFFFF00FF")
+						compass(10,107,192,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 7 then
 					dialog "[Prontera Guide]"
@@ -1056,9 +1054,9 @@ function prontera_North_Gate-Guide_151330()
 					dialog "can be found southeast"
 					dialog "from the central fountain."
 					if getvar(compass_check) == 1 then
-						compass(11,179,184,1,0xFF00FF00)
+						compass(11,179,184,1,"0xFF00FF00")
 					else
-						compass(11,179,184,0,0xFF00FF00)
+						compass(11,179,184,0,"0xFF00FF00")
 					end
 				elseif mresultb == 8 then
 					dialog "[Prontera Guide]"
@@ -1066,9 +1064,9 @@ function prontera_North_Gate-Guide_151330()
 					dialog "southeast of the fountain,"
 					dialog "behind the Trading Post."
 					if getvar(compass_check) == 1 then
-						compass(12,208,154,1,0xFF00FF00)
+						compass(12,208,154,1,"0xFF00FF00")
 					else
-						compass(12,208,154,0,0xFF00FF00)
+						compass(12,208,154,0,"0xFF00FF00")
 					end
 				elseif mresultb == 9 then
 					dialog "[Prontera Guide]"
@@ -1079,11 +1077,11 @@ function prontera_North_Gate-Guide_151330()
 					dialog "Library can be accessed if you"
 					dialog "head towards the east or west."
 					if getvar(compass_check) == 1 then
-						compass(13,120,267,1,0xFF00FF00)
-						compass(14,192,267,1,0xFF00FF00)
+						compass(13,120,267,1,"0xFF00FF00")
+						compass(14,192,267,1,"0xFF00FF00")
 					else
-						compass(13,120,267,0,0xFF00FF00)
-						compass(14,192,267,0,0xFF00FF00)
+						compass(13,120,267,0,"0xFF00FF00")
+						compass(14,192,267,0,"0xFF00FF00")
 					end
 				elseif mresultb == 10 then
 					dialog "[Prontera Guide]"
@@ -1091,9 +1089,9 @@ function prontera_North_Gate-Guide_151330()
 					dialog "just southwest of the"
 					dialog "central fountain area."
 					if getvar(compass_check) == 1 then
-						compass(15,133,183,1,0xFF00FF00)
+						compass(15,133,183,1,"0xFF00FF00")
 					else
-						compass(15,133,183,0,0xFF00FF00)
+						compass(15,133,183,0,"0xFF00FF00")
 					end
 				elseif mresultb == 11 then
 					dialog "[Prontera Guide]"
@@ -1104,9 +1102,9 @@ function prontera_North_Gate-Guide_151330()
 					dialog "of Prontera by going through"
 					dialog "the castle's rear exit."
 					if getvar(compass_check) == 1 then
-						compass(16,156,360,1,0xFF00FF00)
+						compass(16,156,360,1,"0xFF00FF00")
 					else
-						compass(16,156,360,0,0xFF00FF00)
+						compass(16,156,360,0,"0xFF00FF00")
 					end
 				elseif mresultb == 12 then
 					dialog "[Prontera Guide]"
@@ -1115,15 +1113,15 @@ function prontera_North_Gate-Guide_151330()
 					dialog "southwest corner"
 					dialog "in our city of Prontera."
 					if getvar(compass_check) == 1 then
-						compass(17,75,91,1,0xFF01FF01)
+						compass(17,75,91,1,"0xFF01FF01")
 					else
-						compass(17,75,91,0,0xFF00FF00)
+						compass(17,75,91,0,"0xFF00FF00")
 					end
 				elseif mresultb == 13 then
 					compass_check("=",1)
 					dialog "[Prontera Guide]"
-					dialog("Please ask me to ","Remove"")
-					dialog("Marks from Mini-Map","if","you"")
+					dialog "Please ask me to Remove"
+					dialog "Marks from Mini-Map if you"
 					dialog "no longer wish to have the"
 					dialog "location marks displayed"
 					dialog "on your Mini-Map."
@@ -1131,20 +1129,20 @@ function prontera_North_Gate-Guide_151330()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(4,237,41,2,0xFF00FF00)
-			compass(5,237,41,2,0xFF0000FF)
-			compass(6,46,345,2,0xFF00FF00)
-			compass(7,175,220,2,0xFFFF0000)
-			compass(8,134,221,2,0xFFFF0000)
-			compass(9,204,191,2,0xFFFF0000)
-			compass(10,107,192,2,0xFFFF0000)
-			compass(11,179,184,2,0xFF00FF00)
-			compass(12,208,154,2,0xFF00FF00)
-			compass(13,120,267,2,0xFF00FF00)
-			compass(14,192,267,2,0xFF00FF00)
-			compass(15,133,183,2,0xFF00FF00)
-			compass(16,156,360,2,0xFF00FF00)
-			compass(17,75,91,2,0xFF00FF00)
+			compass(4,237,41,2,"0xFF00FF00")
+			compass(5,237,41,2,"0xFF0000FF")
+			compass(6,46,345,2,"0xFF00FF00")
+			compass(7,175,220,2,"0xFFFF0000")
+			compass(8,134,221,2,"0xFFFF0000")
+			compass(9,204,191,2,"0xFFFF0000")
+			compass(10,107,192,2,"0xFFFF0000")
+			compass(11,179,184,2,"0xFF00FF00")
+			compass(12,208,154,2,"0xFF00FF00")
+			compass(13,120,267,2,"0xFF00FF00")
+			compass(14,192,267,2,"0xFF00FF00")
+			compass(15,133,183,2,"0xFF00FF00")
+			compass(16,156,360,2,"0xFF00FF00")
+			compass(17,75,91,2,"0xFF00FF00")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Prontera Guide]"
@@ -1160,11 +1158,11 @@ function prontera_North_Gate-Guide_151330()
 			dialog "in the upper right corner"
 			dialog "of the screen. If you can't"
 			dialog "see it, press the Ctrl + Tab"
-			dialog("keys or click the ","Map"","button","in","your","Basic","Info","Window."")
+			dialog "keys or click the  Map button in your Basic Info Window."
 			wait()
 			dialog "[Prontera Guide]"
 			dialog "On your Mini-Map,"
-			dialog("click on the ","+"","and","-")
+			dialog "click on the  + and -"
 			dialog "symbols to zoom in and"
 			dialog "our of your Mini-Map. We"
 			dialog "hope you enjoy your travels"

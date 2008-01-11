@@ -1,28 +1,27 @@
---  ____________________________________________________________
--- /                                                            \
--- |  ##       ##  ########  #########     ##########   ######   |
--- |   ##     ##  ##    ##  ##     ##     ##      ##   ##    ##  |
--- |    ##   ##  ##    ##  ##     ##     ##      ##   ##         |
--- |     ## ##  ##    ##  ##     ##     ##      ##   ##          |
--- |      ###  ########  #########     ##      ##   #######      |
--- |      ##  ##    ##  ##    ##      ##      ##        ##       |
--- |     ##  ##    ##  ##      ##    ##      ##  ##    ##        |
--- |    ##  ##    ##  ##        ##  ##########    ######         |
--- |   Yaros Package                                             |
--- |-------------------------------------------------------------|
--- | Current Version: 1.0      | Episode 10.3 File.              |
--- |-------------------------------------------------------------|
--- | 01/05/2007 : Added 1st Version. [Muad_Dib]                  |
--- |-------------------------------------------------------------|
--- | Credits: Gravity                                            |
--- |-------------------------------------------------------------|
--- | Notes:                                                      |
--- |                                                             |
--- |                                                             |
--- \____________________________________________________________/
+-- _________________________________________________ --
+--/                                                 \--
+--|    _    _          _   _                        |--
+--|   | |  | |        | | (_)                       |--
+--|   | |__| |   ___  | |  _    ___    ___          |--
+--|   |  __  |  / _ \ | | | |  / _ \  / __|         |--
+--|   | |  | | |  __/ | | | | | (_) | \__ \         |--
+--|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
+--|                                                 |--
+--|-------------------------------------------------|--
+--| 05/01/2008                                      |--
+--|   - First version for helios, Loads but does    |--
+--|     not fully operate. [Spre]                   |--
+--|-------------------------------------------------|--
+--| Credits: Gravity                                |--
+--|          Yaros                                  |--
+--|-------------------------------------------------|--
+--| Notes:                                          |--
+--|                                                 |--
+--|                                                 |--
+--\_________________________________________________/--
 
-npc("louyang","Soldier#BA",SPRITE_4_M_CHNSOLDIER,213,213,3,0,0,"louyang_Soldier#BA_213213")
-function louyang_Soldier#BA_213213()
+npc("louyang","Soldier#BA",SPRITE_4_M_CHNSOLDIER,213,213,3,0,0,"louyang_SoldierBA_213213")
+function louyang_SoldierBA_213213()
 	dialog "[Soldier]"
 	dialog "Welcome to Louyang,"
 	dialog "a city with a long"
@@ -56,9 +55,9 @@ function louyang_Soldier#BA_213213()
 			dialog "[Soldier]"
 			dialog "Since you're an outsider, I guess it would be appropriate for you to visit our lord first."
 			if (getvar(compass_check) == 1) then
-				compass(2,218,255,1,0xFFFF3355)
+				compass(2,218,255,1,"0xFFFF3355")
 			else
-				compass(2,218,255,0,0xFFFF3355)
+				compass(2,218,255,0,"0xFFFF3355")
 			end
 		elseif mresultb == 2 then
 			dialog "[Soldier]"
@@ -69,9 +68,9 @@ function louyang_Soldier#BA_213213()
 			dialog "It is said that there"
 			dialog "is no disease she cannot cure. Well, I can't guarantee if that's true or not."
 			if (getvar(compass_check) == 1) then
-				compass(3,263,94,1,0xFFCE6300)
+				compass(3,263,94,1,"0xFFCE6300")
 			else
-				compass(3,263,94,0,0xFFCE6300)
+				compass(3,263,94,0,"0xFFCE6300")
 			end
 		elseif mresultb == 3 then
 			dialog "[Soldier]"
@@ -83,9 +82,9 @@ function louyang_Soldier#BA_213213()
 			dialog "you should talk with the"
 			dialog "employees in City Hall."
 			if (getvar(compass_check) == 1) then
-				compass(4,309,80,1,0xFF00FF00)
+				compass(4,309,80,1,"0xFF00FF00")
 			else
-				compass(4,309,80,0,0xFF00FF00)
+				compass(4,309,80,0,"0xFF00FF00")
 			end
 		elseif mresultb == 4 then
 			dialog "[Soldier]"
@@ -97,9 +96,9 @@ function louyang_Soldier#BA_213213()
 			dialog "by the well-experienced"
 			dialog "blacksmiths of Louyang."
 			if (getvar(compass_check) == 1) then
-				compass(5,145,174,1,0xFF55FF33)
+				compass(5,145,174,1,"0xFF55FF33")
 			else
-				compass(5,145,174,0,0xFF55FF33)
+				compass(5,145,174,0,"0xFF55FF33")
 			end
 		elseif mresultb == 5 then
 			dialog "[Soldier]"
@@ -110,9 +109,9 @@ function louyang_Soldier#BA_213213()
 			dialog "is half the battle!"
 			dialog "It's also safer to prepare yourself than to be sorry later. Why don't you go check their supplies?"
 			if (getvar(compass_check) == 1) then
-				compass(6,135,98,1,0xFF3355FF)
+				compass(6,135,98,1,"0xFF3355FF")
 			else
-				compass(6,135,98,0,0xFF3355FF)
+				compass(6,135,98,0,"0xFF3355FF")
 			end
 		elseif mresultb == 6 then
 			dialog "[Soldier]"
@@ -122,9 +121,9 @@ function louyang_Soldier#BA_213213()
 			dialog "The Tavern is a good place"
 			dialog "to meet other tourists, as well as to hear of any news that may be helpful to know."
 			if (getvar(compass_check) == 1) then
-				compass(7,280,167,1,0xFF00FF00)
+				compass(7,280,167,1,"0xFF00FF00")
 			else
-				compass(7,280,167,0,0xFF00FF00)
+				compass(7,280,167,0,"0xFF00FF00")
 			end
 		elseif mresultb == 7 then
 			dialog "[Soldier]"
@@ -134,12 +133,12 @@ function louyang_Soldier#BA_213213()
 		end
 		close()
 	elseif mresulta == 2 then
-		compass(2,218,255,2,0xFF00FF00)
-		compass(3,263,94,2,0xFF00FF00)
-		compass(4,309,80,2,0xFF00FF00)
-		compass(5,145,174,2,0xFF00FF00)
-		compass(6,135,98,2,0xFF00FF00)
-		compass(7,280,167,2,0xFF00FF00)
+		compass(2,218,255,2,"0xFF00FF00")
+		compass(3,263,94,2,"0xFF00FF00")
+		compass(4,309,80,2,"0xFF00FF00")
+		compass(5,145,174,2,"0xFF00FF00")
+		compass(6,135,98,2,"0xFF00FF00")
+		compass(7,280,167,2,"0xFF00FF00")
 		compass_check("=",0)
 		dialog "[Soldier]"
 		dialog "There, I've erased all the marks on your mini-map. Feel free to ask me about building locations whenever you need to."
@@ -154,8 +153,8 @@ function louyang_Soldier#BA_213213()
 	close()
 end
 
-npc("louyang","Soldier#BB",SPRITE_4_M_CHNSOLDIER,160,175,3,0,0,"louyang_Soldier#BB_160175")
-function louyang_Soldier#BB_160175()
+npc("louyang","Soldier#BB",SPRITE_4_M_CHNSOLDIER,160,175,3,0,0,"louyang_SoldierBB_160175")
+function louyang_SoldierBB_160175()
 	dialog "[Soldier]"
 	dialog "Welcome to Louyang,"
 	dialog "a city with a long"
@@ -189,9 +188,9 @@ function louyang_Soldier#BB_160175()
 			dialog "[Soldier]"
 			dialog "Since you're an outsider, I guess it would be appropriate for you to visit our lord first."
 			if (getvar(compass_check) == 1) then
-				compass(2,218,255,1,0xFFFF3355)
+				compass(2,218,255,1,"0xFFFF3355")
 			else
-				compass(2,218,255,0,0xFFFF3355)
+				compass(2,218,255,0,"0xFFFF3355")
 			end
 		elseif mresultb == 2 then
 			dialog "[Soldier]"
@@ -202,9 +201,9 @@ function louyang_Soldier#BB_160175()
 			dialog "It is said that there"
 			dialog "is no disease she cannot cure. Well, I can't guarantee if that's true or not."
 			if (getvar(compass_check) == 1) then
-				compass(3,263,94,1,0xFFCE6300)
+				compass(3,263,94,1,"0xFFCE6300")
 			else
-				compass(3,263,94,0,0xFFCE6300)
+				compass(3,263,94,0,"0xFFCE6300")
 			end
 		elseif mresultb == 3 then
 			dialog "[Soldier]"
@@ -216,9 +215,9 @@ function louyang_Soldier#BB_160175()
 			dialog "you should talk with the"
 			dialog "employees in City Hall."
 			if (getvar(compass_check) == 1) then
-				compass(4,309,80,1,0xFF00FF00)
+				compass(4,309,80,1,"0xFF00FF00")
 			else
-				compass(4,309,80,0,0xFF00FF00)
+				compass(4,309,80,0,"0xFF00FF00")
 			end
 		elseif mresultb == 4 then
 			dialog "[Soldier]"
@@ -230,9 +229,9 @@ function louyang_Soldier#BB_160175()
 			dialog "by the well-experienced"
 			dialog "blacksmiths of Louyang."
 			if (getvar(compass_check) == 1) then
-				compass(5,145,174,1,0xFF55FF33)
+				compass(5,145,174,1,"0xFF55FF33")
 			else
-				compass(5,145,174,0,0xFF55FF33)
+				compass(5,145,174,0,"0xFF55FF33")
 			end
 		elseif mresultb == 5 then
 			dialog "[Soldier]"
@@ -243,9 +242,9 @@ function louyang_Soldier#BB_160175()
 			dialog "is half the battle!"
 			dialog "It's also safer to prepare yourself than to be sorry later. Why don't you go check their supplies?"
 			if (getvar(compass_check) == 1) then
-				compass(6,135,98,1,0xFF3355FF)
+				compass(6,135,98,1,"0xFF3355FF")
 			else
-				compass(6,135,98,0,0xFF3355FF)
+				compass(6,135,98,0,"0xFF3355FF")
 			end
 		elseif mresultb == 6 then
 			dialog "[Soldier]"
@@ -255,9 +254,9 @@ function louyang_Soldier#BB_160175()
 			dialog "The Tavern is a good place"
 			dialog "to meet other tourists, as well as to hear of any news that may be helpful to know."
 			if (getvar(compass_check) == 1) then
-				compass(7,280,167,1,0xFF00FF00)
+				compass(7,280,167,1,"0xFF00FF00")
 			else
-				compass(7,280,167,0,0xFF00FF00)
+				compass(7,280,167,0,"0xFF00FF00")
 			end
 		elseif mresultb == 7 then
 			dialog "[Soldier]"
@@ -267,12 +266,12 @@ function louyang_Soldier#BB_160175()
 		end
 		close()
 	elseif mresulta == 2 then
-		compass(2,218,255,2,0xFF00FF00)
-		compass(3,263,94,2,0xFF00FF00)
-		compass(4,309,80,2,0xFF00FF00)
-		compass(5,145,174,2,0xFF00FF00)
-		compass(6,135,98,2,0xFF00FF00)
-		compass(7,280,167,2,0xFF00FF00)
+		compass(2,218,255,2,"0xFF00FF00")
+		compass(3,263,94,2,"0xFF00FF00")
+		compass(4,309,80,2,"0xFF00FF00")
+		compass(5,145,174,2,"0xFF00FF00")
+		compass(6,135,98,2,"0xFF00FF00")
+		compass(7,280,167,2,"0xFF00FF00")
 		compass_check("=",0)
 		dialog "[Soldier]"
 		dialog "There, I've erased all the marks on your mini-map. Feel free to ask me about building locations whenever you need to."
@@ -316,9 +315,9 @@ function louyang_Representative_224104()
 			dialog "[Representative]"
 			dialog "Since you're an outsider, I guess it would be appropriate for you to visit our lord first."
 			if (getvar(compass_check) == 1) then
-				compass(2,218,255,1,0xFFFF3355)
+				compass(2,218,255,1,"0xFFFF3355")
 			else
-				compass(2,218,255,0,0xFFFF3355)
+				compass(2,218,255,0,"0xFFFF3355")
 			end
 		elseif mresultb == 2 then
 			dialog "[Representative]"
@@ -329,9 +328,9 @@ function louyang_Representative_224104()
 			dialog "It is said that there"
 			dialog "is no disease she cannot cure. Well, I can't guarantee if that's true or not."
 			if (getvar(compass_check) == 1) then
-				compass(3,263,94,1,0xFFCE6300)
+				compass(3,263,94,1,"0xFFCE6300")
 			else
-				compass(3,263,94,0,0xFFCE6300)
+				compass(3,263,94,0,"0xFFCE6300")
 			end
 		elseif mresultb == 3 then
 			dialog "[Representative]"
@@ -343,9 +342,9 @@ function louyang_Representative_224104()
 			dialog "you should talk with the"
 			dialog "employees in City Hall."
 			if (getvar(compass_check) == 1) then
-				compass(4,309,80,1,0xFF00FF00)
+				compass(4,309,80,1,"0xFF00FF00")
 			else
-				compass(4,309,80,0,0xFF00FF00)
+				compass(4,309,80,0,"0xFF00FF00")
 			end
 		elseif mresultb == 4 then
 			dialog "[Representative]"
@@ -357,9 +356,9 @@ function louyang_Representative_224104()
 			dialog "by the well-experienced"
 			dialog "blacksmiths of Louyang."
 			if (getvar(compass_check) == 1) then
-				compass(5,145,174,1,0xFF55FF33)
+				compass(5,145,174,1,"0xFF55FF33")
 			else
-				compass(5,145,174,0,0xFF55FF33)
+				compass(5,145,174,0,"0xFF55FF33")
 			end
 		elseif mresultb == 5 then
 			dialog "[Representative]"
@@ -370,9 +369,9 @@ function louyang_Representative_224104()
 			dialog "is half the battle!"
 			dialog "It's also safer to prepare yourself than to be sorry later. Why don't you go check their supplies?"
 			if (getvar(compass_check) == 1) then
-				compass(6,135,98,1,0xFF3355FF)
+				compass(6,135,98,1,"0xFF3355FF")
 			else
-				compass(6,135,98,0,0xFF3355FF)
+				compass(6,135,98,0,"0xFF3355FF")
 			end
 		elseif mresultb == 6 then
 			dialog "[Representative]"
@@ -382,9 +381,9 @@ function louyang_Representative_224104()
 			dialog "The Tavern is a good place"
 			dialog "to meet other tourists, as well as to hear of any news that may be helpful to know."
 			if (getvar(compass_check) == 1) then
-				compass(7,280,167,1,0xFF00FF00)
+				compass(7,280,167,1,"0xFF00FF00")
 			else
-				compass(7,280,167,0,0xFF00FF00)
+				compass(7,280,167,0,"0xFF00FF00")
 			end
 		elseif mresultb == 7 then
 			dialog "[Representative]"
@@ -394,12 +393,12 @@ function louyang_Representative_224104()
 		end
 		close()
 	elseif mresulta == 2 then
-		compass(2,218,255,2,0xFF00FF00)
-		compass(3,263,94,2,0xFF00FF00)
-		compass(4,309,80,2,0xFF00FF00)
-		compass(5,145,174,2,0xFF00FF00)
-		compass(6,135,98,2,0xFF00FF00)
-		compass(7,280,167,2,0xFF00FF00)
+		compass(2,218,255,2,"0xFF00FF00")
+		compass(3,263,94,2,"0xFF00FF00")
+		compass(4,309,80,2,"0xFF00FF00")
+		compass(5,145,174,2,"0xFF00FF00")
+		compass(6,135,98,2,"0xFF00FF00")
+		compass(7,280,167,2,"0xFF00FF00")
 		compass_check("=",0)
 		dialog "[Representative]"
 		dialog "Done! All the marks on your mini-map are erased. Feel free to ask me about building locations whenever you need to."

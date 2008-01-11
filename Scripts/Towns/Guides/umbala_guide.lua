@@ -1,25 +1,24 @@
---  ____________________________________________________________
--- /                                                            \
--- |  ##       ##  ########  #########     ##########   ######   |
--- |   ##     ##  ##    ##  ##     ##     ##      ##   ##    ##  |
--- |    ##   ##  ##    ##  ##     ##     ##      ##   ##         |
--- |     ## ##  ##    ##  ##     ##     ##      ##   ##          |
--- |      ###  ########  #########     ##      ##   #######      |
--- |      ##  ##    ##  ##    ##      ##      ##        ##       |
--- |     ##  ##    ##  ##      ##    ##      ##  ##    ##        |
--- |    ##  ##    ##  ##        ##  ##########    ######         |
--- |   Yaros Package                                             |
--- |-------------------------------------------------------------|
--- | Current Version: 1.0      | Episode 10.3 File.              |
--- |-------------------------------------------------------------|
--- | 01/05/2007 : Added 1st Version. [Muad_Dib]                  |
--- |-------------------------------------------------------------|
--- | Credits: Gravity                                            |
--- |-------------------------------------------------------------|
--- | Notes:                                                      |
--- |                                                             |
--- |                                                             |
--- \____________________________________________________________/
+-- _________________________________________________ --
+--/                                                 \--
+--|    _    _          _   _                        |--
+--|   | |  | |        | | (_)                       |--
+--|   | |__| |   ___  | |  _    ___    ___          |--
+--|   |  __  |  / _ \ | | | |  / _ \  / __|         |--
+--|   | |  | | |  __/ | | | | | (_) | \__ \         |--
+--|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
+--|                                                 |--
+--|-------------------------------------------------|--
+--| 05/01/2008                                      |--
+--|   - First version for helios, Loads but does    |--
+--|     not fully operate. [Spre]                   |--
+--|-------------------------------------------------|--
+--| Credits: Gravity                                |--
+--|          Yaros                                  |--
+--|-------------------------------------------------|--
+--| Notes:                                          |--
+--|                                                 |--
+--|                                                 |--
+--\_________________________________________________/--
 
 npc("umbala","Adventurer",SPRITE_4_F_GON,128,94,4,1,1,"umbala_Adventurer_12894")
 function umbala_Adventurer_12894()
@@ -53,9 +52,9 @@ function umbala_Adventurer_12894()
 			dialog "of the outside world. So you'd"
 			dialog "better visit him before anything else."
 			if (getvar(compass_check) == 1) then
-				compass(2,66,250,1,0xFFFF3355)
+				compass(2,66,250,1,"0xFFFF3355")
 			else
-				compass(2,66,250,0,0xFFFF3355)
+				compass(2,66,250,0,"0xFFFF3355")
 			end
 		elseif mresultb == 2 then
 			dialog "[Adventurer]"
@@ -69,9 +68,9 @@ function umbala_Adventurer_12894()
 			dialog "enchanted stones, and divide a"
 			dialog "pure enchanted stone into rough ones."
 			if (getvar(compass_check) == 1) then
-				compass(3,217,186,1,0xFFCE6300)
+				compass(3,217,186,1,"0xFFCE6300")
 			else
-				compass(3,217,186,0,0xFFCE6300)
+				compass(3,217,186,0,"0xFFCE6300")
 			end
 		elseif mresultb == 3 then
 			dialog "[Adventurer]"
@@ -84,9 +83,9 @@ function umbala_Adventurer_12894()
 			dialog "their enemies. Apparently, they"
 			dialog "have been attacked from the outside many times in the past."
 			if (getvar(compass_check) == 1) then
-				compass(4,126,154,1,0xFF55FF33)
+				compass(4,126,154,1,"0xFF55FF33")
 			else
-				compass(4,126,154,0,0xFF55FF33)
+				compass(4,126,154,0,"0xFF55FF33")
 			end
 		elseif mresultb == 4 then
 			dialog "[Adventurer]"
@@ -97,9 +96,9 @@ function umbala_Adventurer_12894()
 			dialog "There are many useful things for"
 			dialog "traveling in the Tool Shop, so why don't you go look around?"
 			if (getvar(compass_check) == 1) then
-				compass(5,136,127,1,0xFF3355FF)
+				compass(5,136,127,1,"0xFF3355FF")
 			else
-				compass(5,136,127,0,0xFF3355FF)
+				compass(5,136,127,0,"0xFF3355FF")
 			end
 		elseif mresultb == 5 then
 			dialog "[Adventurer]"
@@ -114,9 +113,9 @@ function umbala_Adventurer_12894()
 			dialog "and partake in this Utan"
 			dialog "ritual yourself?"
 			if (getvar(compass_check) == 1) then
-				compass(6,139,198,1,0xFF00FF00)
+				compass(6,139,198,1,"0xFF00FF00")
 			else
-				compass(6,139,198,0,0xFF00FF00)
+				compass(6,139,198,0,"0xFF00FF00")
 			end
 		elseif mresultb == 6 then
 			dialog "[Adventurer]"
@@ -127,11 +126,11 @@ function umbala_Adventurer_12894()
 		end
 		close()
 	elseif mresulta == 2 then
-		compass(2,66,250,2,0xFF00FF00)
-		compass(3,217,186,2,0xFF00FF00)
-		compass(4,126,154,2,0xFF00FF00)
-		compass(5,136,127,2,0xFF00FF00)
-		compass(6,139,198,2,0xFF00FF00)
+		compass(2,66,250,2,"0xFF00FF00")
+		compass(3,217,186,2,"0xFF00FF00")
+		compass(4,126,154,2,"0xFF00FF00")
+		compass(5,136,127,2,"0xFF00FF00")
+		compass(6,139,198,2,"0xFF00FF00")
 		compass_check("=",0)
 		dialog "[Adventurer]"
 		dialog "I removed all the marks from your"

@@ -1,26 +1,24 @@
---  ____________________________________________________________
--- /                                                            \
--- |  ##       ##  ########  #########     ##########   ######   |
--- |   ##     ##  ##    ##  ##     ##     ##      ##   ##    ##  |
--- |    ##   ##  ##    ##  ##     ##     ##      ##   ##         |
--- |     ## ##  ##    ##  ##     ##     ##      ##   ##          |
--- |      ###  ########  #########     ##      ##   #######      |
--- |      ##  ##    ##  ##    ##      ##      ##        ##       |
--- |     ##  ##    ##  ##      ##    ##      ##  ##    ##        |
--- |    ##  ##    ##  ##        ##  ##########    ######         |
--- |   Yaros Package                                             |
--- |-------------------------------------------------------------|
--- | Current Version: 1.1      | Episode 10.3 File.              |
--- |-------------------------------------------------------------|
--- | 01/05/2007 : Added 1st Version. [Muad_Dib]                  |
--- | 22/08/2007 : Corrected some typo's. [Muad_Dib]              |
--- |-------------------------------------------------------------|
--- | Credits: Gravity                                            |
--- |-------------------------------------------------------------|
--- | Notes:                                                      |
--- |                                                             |
--- |                                                             |
--- \____________________________________________________________/
+-- _________________________________________________ --
+--/                                                 \--
+--|    _    _          _   _                        |--
+--|   | |  | |        | | (_)                       |--
+--|   | |__| |   ___  | |  _    ___    ___          |--
+--|   |  __  |  / _ \ | | | |  / _ \  / __|         |--
+--|   | |  | | |  __/ | | | | | (_) | \__ \         |--
+--|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
+--|                                                 |--
+--|-------------------------------------------------|--
+--| 05/01/2008                                      |--
+--|   - First version for helios, Loads but does    |--
+--|     not fully operate. [Spre]                   |--
+--|-------------------------------------------------|--
+--| Credits: Gravity                                |--
+--|          Yaros                                  |--
+--|-------------------------------------------------|--
+--| Notes:                                          |--
+--|                                                 |--
+--|                                                 |--
+--\_________________________________________________/--
 
 npc("lighthalzen","Guide",SPRITE_4_M_EIN_SOLDIER,207,310,5,0,0,"lighthalzen_Guide_207310")
 function lighthalzen_Guide_207310()
@@ -76,9 +74,9 @@ function lighthalzen_Guide_207310()
 					dialog "Lighthalzen. You can't miss"
 					dialog "the headquarters building."
 					if getvar(compass_check) == 1 then
-						compass(2,102,247,1,0xFFFF0000)
+						compass(2,102,247,1,"0xFFFF0000")
 					else
-						compass(2,102,247,0,0xFFFF0000)
+						compass(2,102,247,0,"0xFFFF0000")
 					end
 				elseif mresultb == 2 then
 					dialog "[Lighthalzen Guide]"
@@ -87,9 +85,9 @@ function lighthalzen_Guide_207310()
 					dialog "the city, where we have"
 					dialog "a direct railroad to Einbroch."
 					if getvar(compass_check) == 1 then
-						compass(3,233,164,1,0xFFFF00FF)
+						compass(3,233,164,1,"0xFFFF00FF")
 					else
-						compass(3,233,164,0,0xFFFF00FF)
+						compass(3,233,164,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 3 then
 					dialog "[Lighthalzen Guide]"
@@ -100,9 +98,9 @@ function lighthalzen_Guide_207310()
 					dialog "activity, or if you have any"
 					dialog "problems whatsoever."
 					if getvar(compass_check) == 1 then
-						compass(4,236,276,1,0xFF99FFFF)
+						compass(4,236,276,1,"0xFF99FFFF")
 					else
-						compass(4,236,276,0,0xFF99FFFF)
+						compass(4,236,276,0,"0xFF99FFFF")
 					end
 				elseif mresultb == 4 then
 					dialog "[Lighthalzen Guide]"
@@ -112,9 +110,9 @@ function lighthalzen_Guide_207310()
 					dialog "which is a pretty good idea"
 					dialog "when I think about it, actually. ^FFFFFFspacer^000000"
 					if getvar(compass_check) == 1 then
-						compass(5,198,257,1,0xFF0000FF)
+						compass(5,198,257,1,"0xFF0000FF")
 					else
-						compass(5,198,257,0,0xFF0000FF)
+						compass(5,198,257,0,"0xFF0000FF")
 					end
 				elseif mresultb == 5 then
 					dialog "[Lighthalzen Guide]"
@@ -124,9 +122,9 @@ function lighthalzen_Guide_207310()
 					dialog "luxurious accomodations, this"
 					dialog "hotel is extremely popular."
 					if getvar(compass_check) == 1 then
-						compass(6,159,133,1,0xFF00FF00)
+						compass(6,159,133,1,"0xFF00FF00")
 					else
-						compass(6,159,133,0,0xFF00FF00)
+						compass(6,159,133,0,"0xFF00FF00")
 					end
 				elseif mresultb == 6 then
 					dialog "[Lighthalzen Guide]"
@@ -136,9 +134,9 @@ function lighthalzen_Guide_207310()
 					dialog "the Schwaltzvalt Republic by"
 					dialog "riding on one of the Airships."
 					if getvar(compass_check) == 1 then
-						compass(7,267,75,1,0xFF00FF00)
+						compass(7,267,75,1,"0xFF00FF00")
 					else
-						compass(7,267,75,0,0xFF00FF00)
+						compass(7,267,75,0,"0xFF00FF00")
 					end
 				elseif mresultb == 7 then
 					dialog "[Lighthalzen Guide]"
@@ -146,9 +144,9 @@ function lighthalzen_Guide_207310()
 					dialog "found in the southwestern"
 					dialog "part of Lighthalzen."
 					if getvar(compass_check) == 1 then
-						compass(8,74,53,1,0xFFFF99FF)
+						compass(8,74,53,1,"0xFFFF99FF")
 					else
-						compass(8,74,53,0,0xFFFF99FF)
+						compass(8,74,53,0,"0xFFFF99FF")
 					end
 				elseif mresultb == 8 then
 					dialog "[Lighthalzen Guide]"
@@ -156,9 +154,9 @@ function lighthalzen_Guide_207310()
 					dialog "located just west of"
 					dialog "the South Plaza."
 					if getvar(compass_check) == 1 then
-						compass(9,93,110,1,0xFFFF9900)
+						compass(9,93,110,1,"0xFFFF9900")
 					else
-						compass(9,93,110,0,0xFFFF9900)
+						compass(9,93,110,0,"0xFFFF9900")
 					end
 				elseif mresultb == 9 then
 					dialog "[Lighthalzen Guide]"
@@ -169,9 +167,9 @@ function lighthalzen_Guide_207310()
 					dialog "if you're serious about"
 					dialog "adventuring around here."
 					if getvar(compass_check) == 1 then
-						compass(10,196,46,1,0xFF330033)
+						compass(10,196,46,1,"0xFF330033")
 					else
-						compass(10,196,46,0,0xFF330033)
+						compass(10,196,46,0,"0xFF330033")
 					end
 				elseif mresultb == 10 then
 					dialog "[Lighthalzen Guide]"
@@ -181,15 +179,15 @@ function lighthalzen_Guide_207310()
 					dialog "and most convenient place for"
 					dialog "shopping for almost everything."
 					if getvar(compass_check) == 1 then
-						compass(11,199,163,1,0xFFFFFF00)
+						compass(11,199,163,1,"0xFFFFFF00")
 					else
-						compass(11,199,163,0,0xFFFFFF00)
+						compass(11,199,163,0,"0xFFFFFF00")
 					end
 				elseif mresultb == 11 then
 					compass_check("=",1)
 					dialog "[Lighthalzen Guide]"
-					dialog("Please ask me to ","Remove"")
-					dialog("Marks from Mini-Map","if","you"")
+					dialog "Please ask me to Remove"
+					dialog "Marks from Mini-Map if you"
 					dialog "no longer wish to have the"
 					dialog "location marks displayed"
 					dialog "on your Mini-Map."
@@ -197,16 +195,16 @@ function lighthalzen_Guide_207310()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(2,102,247,2,0xFF00FF00)
-			compass(3,233,164,2,0xFF00FF00)
-			compass(4,236,276,2,0xFF00FF00)
-			compass(5,198,257,2,0xFF00FF00)
-			compass(6,159,133,2,0xFF00FF00)
-			compass(7,267,75,2,0xFF00FF00)
-			compass(8,74,53,2,0xFF00FF00)
-			compass(9,93,110,2,0xFF00FF00)
-			compass(10,196,46,2,0xFF00FF00)
-			compass(11,199,163,2,0xFF00FF00)
+			compass(2,102,247,2,"0xFF00FF00")
+			compass(3,233,164,2,"0xFF00FF00")
+			compass(4,236,276,2,"0xFF00FF00")
+			compass(5,198,257,2,"0xFF00FF00")
+			compass(6,159,133,2,"0xFF00FF00")
+			compass(7,267,75,2,"0xFF00FF00")
+			compass(8,74,53,2,"0xFF00FF00")
+			compass(9,93,110,2,"0xFF00FF00")
+			compass(10,196,46,2,"0xFF00FF00")
+			compass(11,199,163,2,"0xFF00FF00")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Lighthalzen Guide]"
@@ -222,11 +220,11 @@ function lighthalzen_Guide_207310()
 			dialog "in the upper right corner"
 			dialog "of the screen. If you can't"
 			dialog "see it, press the Ctrl + Tab"
-			dialog("keys or click the ","Map"","button","in","your","Basic","Info","Window."")
+			dialog "keys or click the  Map button in your Basic Info Window."
 			wait()
 			dialog "[Lighthalzen Guide]"
 			dialog "On your Mini-Map,"
-			dialog("click on the ","+"","and","-")
+			dialog "click on the  + and -"
 			dialog "symbols to zoom in and"
 			dialog "our of your Mini-Map. We"
 			dialog "hope you enjoy your travels"
@@ -305,9 +303,9 @@ function lighthalzen_Guide_220311()
 					dialog "direction from the center"
 					dialog "of the East District."
 					if getvar(compass_check) == 1 then
-						compass(2,324,301,1,0xFFFF0000)
+						compass(2,324,301,1,"0xFFFF0000")
 					else
-						compass(2,324,301,0,0xFFFF0000)
+						compass(2,324,301,0,"0xFFFF0000")
 					end
 				elseif mresultb == 2 then
 					dialog "[Lighthalzen Guide]"
@@ -316,9 +314,9 @@ function lighthalzen_Guide_220311()
 					dialog "the 1 o'clock direction"
 					dialog "in the East District."
 					if getvar(compass_check) == 1 then
-						compass(3,365,300,1,0xFFFF00FF)
+						compass(3,365,300,1,"0xFFFF00FF")
 					else
-						compass(3,365,300,0,0xFFFF00FF)
+						compass(3,365,300,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 3 then
 					dialog "[Lighthalzen Guide]"
@@ -326,15 +324,15 @@ function lighthalzen_Guide_220311()
 					dialog "in the southern part"
 					dialog "of the East District."
 					if getvar(compass_check) == 1 then
-						compass(4,340,240,1,0xFF99FFFF)
+						compass(4,340,240,1,"0xFF99FFFF")
 					else
-						compass(4,340,240,0,0xFF99FFFF)
+						compass(4,340,240,0,"0xFF99FFFF")
 					end
 				elseif mresultb == 4 then
 					compass_check("=",1)
 					dialog "[Lighthalzen Guide]"
-					dialog("Please ask me to ","Remove"")
-					dialog("Marks from Mini-Map","if","you"")
+					dialog "Please ask me to Remove"
+					dialog "Marks from Mini-Map if you"
 					dialog "no longer wish to have the"
 					dialog "location marks displayed"
 					dialog "on your Mini-Map."
@@ -342,9 +340,9 @@ function lighthalzen_Guide_220311()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(2,324,301,2,0xFF00FF00)
-			compass(3,365,300,2,0xFF00FF00)
-			compass(4,340,240,2,0xFF00FF00)
+			compass(2,324,301,2,"0xFF00FF00")
+			compass(3,365,300,2,"0xFF00FF00")
+			compass(4,340,240,2,"0xFF00FF00")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Lighthalzen Guide]"
@@ -360,11 +358,11 @@ function lighthalzen_Guide_220311()
 			dialog "in the upper right corner"
 			dialog "of the screen. If you can't"
 			dialog "see it, press the Ctrl + Tab"
-			dialog("keys or click the ","Map"","button","in","your","Basic","Info","Window."")
+			dialog "keys or click the  Map button in your Basic Info Window."
 			wait()
 			dialog "[Lighthalzen Guide]"
 			dialog "On your Mini-Map,"
-			dialog("click on the ","+"","and","-")
+			dialog "click on the  + and -"
 			dialog "symbols to zoom in and"
 			dialog "our of your Mini-Map. We"
 			dialog "hope you enjoy your travels"
@@ -445,9 +443,9 @@ function lighthalzen_Guide_154100()
 					dialog "Lighthalzen. You can't miss"
 					dialog "the headquarters building."
 					if getvar(compass_check) == 1 then
-						compass(2,102,247,1,0xFFFF0000)
+						compass(2,102,247,1,"0xFFFF0000")
 					else
-						compass(2,102,247,0,0xFFFF0000)
+						compass(2,102,247,0,"0xFFFF0000")
 					end
 				elseif mresultb == 2 then
 					dialog "[Lighthalzen Guide]"
@@ -456,9 +454,9 @@ function lighthalzen_Guide_154100()
 					dialog "the city, where we have"
 					dialog "a direct railroad to Einbroch."
 					if getvar(compass_check) == 1 then
-						compass(3,233,164,1,0xFFFF00FF)
+						compass(3,233,164,1,"0xFFFF00FF")
 					else
-						compass(3,233,164,0,0xFFFF00FF)
+						compass(3,233,164,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 3 then
 					dialog "[Lighthalzen Guide]"
@@ -469,9 +467,9 @@ function lighthalzen_Guide_154100()
 					dialog "activity, or if you have any"
 					dialog "problems whatsoever."
 					if getvar(compass_check) == 1 then
-						compass(4,236,276,1,0xFF99FFFF)
+						compass(4,236,276,1,"0xFF99FFFF")
 					else
-						compass(4,236,276,0,0xFF99FFFF)
+						compass(4,236,276,0,"0xFF99FFFF")
 					end
 				elseif mresultb == 4 then
 					dialog "[Lighthalzen Guide]"
@@ -481,9 +479,9 @@ function lighthalzen_Guide_154100()
 					dialog "which is a pretty good idea"
 					dialog "when I think about it, actually. ^FFFFFFspacer^000000"
 					if getvar(compass_check) == 1 then
-						compass(5,198,257,1,0xFF0000FF)
+						compass(5,198,257,1,"0xFF0000FF")
 					else
-						compass(5,198,257,0,0xFF0000FF)
+						compass(5,198,257,0,"0xFF0000FF")
 					end
 				elseif mresultb == 5 then
 					dialog "[Lighthalzen Guide]"
@@ -493,9 +491,9 @@ function lighthalzen_Guide_154100()
 					dialog "luxurious accomodations, this"
 					dialog "hotel is extremely popular."
 					if getvar(compass_check) == 1 then
-						compass(6,159,133,1,0xFF00FF00)
+						compass(6,159,133,1,"0xFF00FF00")
 					else
-						compass(6,159,133,0,0xFF00FF00)
+						compass(6,159,133,0,"0xFF00FF00")
 					end
 				elseif mresultb == 6 then
 					dialog "[Lighthalzen Guide]"
@@ -505,9 +503,9 @@ function lighthalzen_Guide_154100()
 					dialog "the Schwaltzvalt Republic by"
 					dialog "riding on one of the Airships."
 					if getvar(compass_check) == 1 then
-						compass(7,267,75,1,0xFF00FF00)
+						compass(7,267,75,1,"0xFF00FF00")
 					else
-						compass(7,267,75,0,0xFF00FF00)
+						compass(7,267,75,0,"0xFF00FF00")
 					end
 				elseif mresultb == 7 then
 					dialog "[Lighthalzen Guide]"
@@ -515,9 +513,9 @@ function lighthalzen_Guide_154100()
 					dialog "found in the southwestern"
 					dialog "part of Lighthalzen."
 					if getvar(compass_check) == 1 then
-						compass(8,74,53,1,0xFFFF99FF)
+						compass(8,74,53,1,"0xFFFF99FF")
 					else
-						compass(8,74,53,0,0xFFFF99FF)
+						compass(8,74,53,0,"0xFFFF99FF")
 					end
 				elseif mresultb == 8 then
 					dialog "[Lighthalzen Guide]"
@@ -525,9 +523,9 @@ function lighthalzen_Guide_154100()
 					dialog "located just west of"
 					dialog "the South Plaza."
 					if getvar(compass_check) == 1 then
-						compass(9,93,110,1,0xFFFF9900)
+						compass(9,93,110,1,"0xFFFF9900")
 					else
-						compass(9,93,110,0,0xFFFF9900)
+						compass(9,93,110,0,"0xFFFF9900")
 					end
 				elseif mresultb == 9 then
 					dialog "[Lighthalzen Guide]"
@@ -538,9 +536,9 @@ function lighthalzen_Guide_154100()
 					dialog "if you're serious about"
 					dialog "adventuring around here."
 					if getvar(compass_check) == 1 then
-						compass(10,196,46,1,0xFF330033)
+						compass(10,196,46,1,"0xFF330033")
 					else
-						compass(10,196,46,0,0xFF330033)
+						compass(10,196,46,0,"0xFF330033")
 					end
 				elseif mresultb == 10 then
 					dialog "[Lighthalzen Guide]"
@@ -550,15 +548,15 @@ function lighthalzen_Guide_154100()
 					dialog "and most convenient place for"
 					dialog "shopping for almost everything."
 					if getvar(compass_check) == 1 then
-						compass(11,199,163,1,0xFFFFFF00)
+						compass(11,199,163,1,"0xFFFFFF00")
 					else
-						compass(11,199,163,0,0xFFFFFF00)
+						compass(11,199,163,0,"0xFFFFFF00")
 					end
 				elseif mresultb == 11 then
 					compass_check("=",1)
 					dialog "[Lighthalzen Guide]"
-					dialog("Please ask me to ","Remove"")
-					dialog("Marks from Mini-Map","if","you"")
+					dialog "Please ask me to Remove"
+					dialog "Marks from Mini-Map if you"
 					dialog "no longer wish to have the"
 					dialog "location marks displayed"
 					dialog "on your Mini-Map."
@@ -566,16 +564,16 @@ function lighthalzen_Guide_154100()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(2,102,247,2,0xFF00FF00)
-			compass(3,233,164,2,0xFF00FF00)
-			compass(4,236,276,2,0xFF00FF00)
-			compass(5,198,257,2,0xFF00FF00)
-			compass(6,159,133,2,0xFF00FF00)
-			compass(7,267,75,2,0xFF00FF00)
-			compass(8,74,53,2,0xFF00FF00)
-			compass(9,93,110,2,0xFF00FF00)
-			compass(10,196,46,2,0xFF00FF00)
-			compass(11,199,163,2,0xFF00FF00)
+			compass(2,102,247,2,"0xFF00FF00")
+			compass(3,233,164,2,"0xFF00FF00")
+			compass(4,236,276,2,"0xFF00FF00")
+			compass(5,198,257,2,"0xFF00FF00")
+			compass(6,159,133,2,"0xFF00FF00")
+			compass(7,267,75,2,"0xFF00FF00")
+			compass(8,74,53,2,"0xFF00FF00")
+			compass(9,93,110,2,"0xFF00FF00")
+			compass(10,196,46,2,"0xFF00FF00")
+			compass(11,199,163,2,"0xFF00FF00")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Lighthalzen Guide]"
@@ -591,11 +589,11 @@ function lighthalzen_Guide_154100()
 			dialog "in the upper right corner"
 			dialog "of the screen. If you can't"
 			dialog "see it, press the Ctrl + Tab"
-			dialog("keys or click the ","Map"","button","in","your","Basic","Info","Window."")
+			dialog "keys or click the  Map button in your Basic Info Window."
 			wait()
 			dialog "[Lighthalzen Guide]"
 			dialog "On your Mini-Map,"
-			dialog("click on the ","+"","and","-")
+			dialog "click on the  + and -"
 			dialog "symbols to zoom in and"
 			dialog "our of your Mini-Map. We"
 			dialog "hope you enjoy your travels"
@@ -674,9 +672,9 @@ function lighthalzen_Guide_307224()
 					dialog "direction from the center"
 					dialog "of the East District."
 					if getvar(compass_check) == 1 then
-						compass(2,324,301,1,0xFFFF0000)
+						compass(2,324,301,1,"0xFFFF0000")
 					else
-						compass(2,324,301,0,0xFFFF0000)
+						compass(2,324,301,0,"0xFFFF0000")
 					end
 				elseif mresultb == 2 then
 					dialog "[Lighthalzen Guide]"
@@ -685,9 +683,9 @@ function lighthalzen_Guide_307224()
 					dialog "the 1 o'clock direction"
 					dialog "in the East District."
 					if getvar(compass_check) == 1 then
-						compass(3,365,300,1,0xFFFF00FF)
+						compass(3,365,300,1,"0xFFFF00FF")
 					else
-						compass(3,365,300,0,0xFFFF00FF)
+						compass(3,365,300,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 3 then
 					dialog "[Lighthalzen Guide]"
@@ -695,15 +693,15 @@ function lighthalzen_Guide_307224()
 					dialog "in the southern part"
 					dialog "of the East District."
 					if getvar(compass_check) == 1 then
-						compass(4,340,240,1,0xFF99FFFF)
+						compass(4,340,240,1,"0xFF99FFFF")
 					else
-						compass(4,340,240,0,0xFF99FFFF)
+						compass(4,340,240,0,"0xFF99FFFF")
 					end
 				elseif mresultb == 4 then
 					compass_check("=",1)
 					dialog "[Lighthalzen Guide]"
-					dialog("Please ask me to ","Remove"")
-					dialog("Marks from Mini-Map","if","you"")
+					dialog "Please ask me to Remove"
+					dialog "Marks from Mini-Map if you"
 					dialog "no longer wish to have the"
 					dialog "location marks displayed"
 					dialog "on your Mini-Map."
@@ -711,9 +709,9 @@ function lighthalzen_Guide_307224()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(2,324,301,2,0xFF00FF00)
-			compass(3,365,300,2,0xFF00FF00)
-			compass(4,340,240,2,0xFF00FF00)
+			compass(2,324,301,2,"0xFF00FF00")
+			compass(3,365,300,2,"0xFF00FF00")
+			compass(4,340,240,2,"0xFF00FF00")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Lighthalzen Guide]"
@@ -729,11 +727,11 @@ function lighthalzen_Guide_307224()
 			dialog "in the upper right corner"
 			dialog "of the screen. If you can't"
 			dialog "see it, press the Ctrl + Tab"
-			dialog("keys or click the ","Map"","button","in","your","Basic","Info","Window."")
+			dialog "keys or click the  Map button in your Basic Info Window."
 			wait()
 			dialog "[Lighthalzen Guide]"
 			dialog "On your Mini-Map,"
-			dialog("click on the ","+"","and","-")
+			dialog "click on the  + and -"
 			dialog "symbols to zoom in and"
 			dialog "our of your Mini-Map. We"
 			dialog "hope you enjoy your travels"
