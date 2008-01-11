@@ -1,25 +1,24 @@
---  ____________________________________________________________
--- /                                                            \
--- |  ##       ##  ########  #########     ##########   ######   |
--- |   ##     ##  ##    ##  ##     ##     ##      ##   ##    ##  |
--- |    ##   ##  ##    ##  ##     ##     ##      ##   ##         |
--- |     ## ##  ##    ##  ##     ##     ##      ##   ##          |
--- |      ###  ########  #########     ##      ##   #######      |
--- |      ##  ##    ##  ##    ##      ##      ##        ##       |
--- |     ##  ##    ##  ##      ##    ##      ##  ##    ##        |
--- |    ##  ##    ##  ##        ##  ##########    ######         |
--- |   Yaros Package                                             |
--- |-------------------------------------------------------------|
--- | Current Version: 1.0      | Episode 10.3 File.              |
--- |-------------------------------------------------------------|
--- | 01/05/2007 : Added 1st Version. [Muad_Dib]                  |
--- |-------------------------------------------------------------|
--- | Credits: Gravity                                            |
--- |-------------------------------------------------------------|
--- | Notes:                                                      |
--- |                                                             |
--- |                                                             |
--- \____________________________________________________________/
+-- _________________________________________________ --
+--/                                                 \--
+--|    _    _          _   _                        |--
+--|   | |  | |        | | (_)                       |--
+--|   | |__| |   ___  | |  _    ___    ___          |--
+--|   |  __  |  / _ \ | | | |  / _ \  / __|         |--
+--|   | |  | | |  __/ | | | | | (_) | \__ \         |--
+--|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
+--|                                                 |--
+--|-------------------------------------------------|--
+--| 05/01/2008                                      |--
+--|   - First version for helios, Loads but does    |--
+--|     not fully operate. [Spre]                   |--
+--|-------------------------------------------------|--
+--| Credits: Gravity                                |--
+--|          Yaros                                  |--
+--|-------------------------------------------------|--
+--| Notes:                                          |--
+--|                                                 |--
+--|                                                 |--
+--\_________________________________________________/--
 
 npc("niflheim","Roaming Man",SPRITE_4_M_NFMAN,107,156,6,1,1,"niflheim_Roaming_Man_107156")
 function niflheim_Roaming_Man_107156()
@@ -62,9 +61,9 @@ function niflheim_Roaming_Man_107156()
 			dialog "much my life goal here in"
 			dialog "Niflheim."
 			if (getvar(compass_check) == 1) then
-				compass(2,253,191,1,0xFFFF3355)
+				compass(2,253,191,1,"0xFFFF3355")
 			else
-				compass(2,253,191,0,0xFFFF3355)
+				compass(2,253,191,0,"0xFFFF3355")
 			end
 		elseif mresultb == 2 then
 			dialog "[Ricael]"
@@ -81,9 +80,9 @@ function niflheim_Roaming_Man_107156()
 			dialog "...I wish I was in prison."
 			Emotion("Roaming Man","ET_KEK")
 			if (getvar(compass_check) == 1) then
-				compass(3,217,196,1,0xFFCE6300)
+				compass(3,217,196,1,"0xFFCE6300")
 			else
-				compass(3,217,196,0,0xFFCE6300)
+				compass(3,217,196,0,"0xFFCE6300")
 			end
 		elseif mresultb == 3 then
 			dialog "[Ricael]"
@@ -100,9 +99,9 @@ function niflheim_Roaming_Man_107156()
 			dialog "well let them eat you."
 			Emotion("Roaming Man","ET_KEK")
 			if (getvar(compass_check) == 1) then
-				compass(4,216,171,1,0xFF55FF33)
+				compass(4,216,171,1,"0xFF55FF33")
 			else
-				compass(4,216,171,0,0xFF55FF33)
+				compass(4,216,171,0,"0xFF55FF33")
 			end
 		elseif mresultb == 4 then
 			dialog "[Ricael]"
@@ -118,9 +117,9 @@ function niflheim_Roaming_Man_107156()
 			dialog "is the cold tingle of loneliness"
 			dialog "and despair...every waking moment."
 			if (getvar(compass_check) == 1) then
-				compass(5,189,207,1,0xFF3355FF)
+				compass(5,189,207,1,"0xFF3355FF")
 			else
-				compass(5,189,207,0,0xFF3355FF)
+				compass(5,189,207,0,"0xFF3355FF")
 			end
 		elseif mresultb == 5 then
 			dialog "[Ricael]"
@@ -132,10 +131,10 @@ function niflheim_Roaming_Man_107156()
 		end
 		close()
 	elseif mresulta == 2 then
-		compass(2,253,191,2,0xFF00FF00)
-		compass(3,217,196,2,0xFF00FF00)
-		compass(4,216,171,2,0xFF00FF00)
-		compass(5,189,207,2,0xFF00FF00)
+		compass(2,253,191,2,"0xFF00FF00")
+		compass(3,217,196,2,"0xFF00FF00")
+		compass(4,216,171,2,"0xFF00FF00")
+		compass(5,189,207,2,"0xFF00FF00")
 		compass_check("=",0)
 		dialog "[Ricael]"
 		dialog "I removed the location marks from"

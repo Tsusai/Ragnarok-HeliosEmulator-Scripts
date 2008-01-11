@@ -1,26 +1,24 @@
---  ____________________________________________________________
--- /                                                            \
--- |  ##       ##  ########  #########     ##########   ######   |
--- |   ##     ##  ##    ##  ##     ##     ##      ##   ##    ##  |
--- |    ##   ##  ##    ##  ##     ##     ##      ##   ##         |
--- |     ## ##  ##    ##  ##     ##     ##      ##   ##          |
--- |      ###  ########  #########     ##      ##   #######      |
--- |      ##  ##    ##  ##    ##      ##      ##        ##       |
--- |     ##  ##    ##  ##      ##    ##      ##  ##    ##        |
--- |    ##  ##    ##  ##        ##  ##########    ######         |
--- |   Yaros Package                                             |
--- |-------------------------------------------------------------|
--- | Current Version: 1.1      | Episode 10.3 File.              |
--- |-------------------------------------------------------------|
--- | 01/05/2007 : Added 1st Version. [Muad_Dib]                  |
--- | 22/08/2007 : Corrected some typo's. [Muad_Dib]              |
--- |-------------------------------------------------------------|
--- | Credits: Gravity                                            |
--- |-------------------------------------------------------------|
--- | Notes:                                                      |
--- |                                                             |
--- |                                                             |
--- \____________________________________________________________/
+-- _________________________________________________ --
+--/                                                 \--
+--|    _    _          _   _                        |--
+--|   | |  | |        | | (_)                       |--
+--|   | |__| |   ___  | |  _    ___    ___          |--
+--|   |  __  |  / _ \ | | | |  / _ \  / __|         |--
+--|   | |  | | |  __/ | | | | | (_) | \__ \         |--
+--|   |_|  |_|  \___| |_| |_|  \___/  |___/         |--
+--|                                                 |--
+--|-------------------------------------------------|--
+--| 05/01/2008                                      |--
+--|   - First version for helios, Loads but does    |--
+--|     not fully operate. [Spre]                   |--
+--|-------------------------------------------------|--
+--| Credits: Gravity                                |--
+--|          Yaros                                  |--
+--|-------------------------------------------------|--
+--| Notes:                                          |--
+--|                                                 |--
+--|                                                 |--
+--\_________________________________________________/--
 
 npc("morocc","Guide",SPRITE_4_M_MOC_SOLDIER,153,286,6,0,0,"morocc_Guide_153286")
 function morocc_Guide_153286()
@@ -65,9 +63,9 @@ function morocc_Guide_153286()
 					dialog "you can find them inside"
 					dialog "the Pyramids nearby..."
 					if getvar(compass_check) == 1 then
-						compass(2,24,297,1,0xFFFF0000)
+						compass(2,24,297,1,"0xFFFF0000")
 					else
-						compass(2,24,297,0,0xFFFF0000)
+						compass(2,24,297,0,"0xFFFF0000")
 					end
 				elseif mresultb == 2 then
 					dialog "[Morroc Guide]"
@@ -75,9 +73,9 @@ function morocc_Guide_153286()
 					dialog "is in the southeast"
 					dialog "end of Morroc."
 					if getvar(compass_check) == 1 then
-						compass(3,253,56,1,0xFFFF00FF)
+						compass(3,253,56,1,"0xFFFF00FF")
 					else
-						compass(3,253,56,0,0xFFFF00FF)
+						compass(3,253,56,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 3 then
 					dialog "[Morroc Guide]"
@@ -86,20 +84,20 @@ function morocc_Guide_153286()
 					dialog "at the southeast and"
 					dialog "northeast ends of Morroc."
 					if getvar(compass_check) == 1 then
-						compass(4,197,66,1,0xFFFF00FF)
-						compass(5,273,269,1,0xFFFF00FF)
+						compass(4,197,66,1,"0xFFFF00FF")
+						compass(5,273,269,1,"0xFFFF00FF")
 					else
-						compass(4,197,66,0,0xFFFF00FF)
-						compass(5,273,269,0,0xFFFF00FF)
+						compass(4,197,66,0,"0xFFFF00FF")
+						compass(5,273,269,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 4 then
 					dialog "[Morroc Guide]"
 					dialog "You can find the"
 					dialog "Pub in northeast Morroc."
 					if getvar(compass_check) == 1 then
-						compass(6,52,259,1,0xFFFF00FF)
+						compass(6,52,259,1,"0xFFFF00FF")
 					else
-						compass(6,52,259,0,0xFFFF00FF)
+						compass(6,52,259,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 5 then
 					dialog "[Morroc Guide]"
@@ -107,9 +105,9 @@ function morocc_Guide_153286()
 					dialog "Guild is located"
 					dialog "in East Morroc."
 					if getvar(compass_check) == 1 then
-						compass(7,284,171,1,0xFF00FF00)
+						compass(7,284,171,1,"0xFF00FF00")
 					else
-						compass(7,284,171,0,0xFF00FF00)
+						compass(7,284,171,0,"0xFF00FF00")
 					end
 				elseif mresultb == 6 then
 					dialog "[Morroc Guide]"
@@ -118,15 +116,15 @@ function morocc_Guide_153286()
 					dialog "southwest from"
 					dialog "the center of Morroc."
 					if getvar(compass_check) == 1 then
-						compass(7,47,47,1,0xFFFF00FF)
+						compass(7,47,47,1,"0xFFFF00FF")
 					else
-						compass(7,47,47,0,0xFFFF00FF)
+						compass(7,47,47,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 7 then
 					compass_check("=",1)
 					dialog "[Morroc Guide]"
-					dialog("Please ask me to ","Remove"")
-					dialog("Marks from Mini-Map","if","you"")
+					dialog "Please ask me to Remove"
+					dialog "Marks from Mini-Map if you"
 					dialog "no longer wish to have the"
 					dialog "location marks displayed"
 					dialog "on your Mini-Map."
@@ -134,12 +132,12 @@ function morocc_Guide_153286()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(2,237,41,2,0xFF00FF00)
-			compass(3,237,41,2,0xFF0000FF)
-			compass(4,46,345,2,0xFF00FF00)
-			compass(5,175,220,2,0xFFFF0000)
-			compass(6,175,220,2,0xFFFF0000)
-			compass(7,175,220,2,0xFFFF0000)
+			compass(2,237,41,2,"0xFF00FF00")
+			compass(3,237,41,2,"0xFF0000FF")
+			compass(4,46,345,2,"0xFF00FF00")
+			compass(5,175,220,2,"0xFFFF0000")
+			compass(6,175,220,2,"0xFFFF0000")
+			compass(7,175,220,2,"0xFFFF0000")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Morroc Guide]"
@@ -155,11 +153,11 @@ function morocc_Guide_153286()
 			dialog "in the upper right corner"
 			dialog "of the screen. If you can't"
 			dialog "see it, press the Ctrl + Tab"
-			dialog("keys or click the ","Map"","button","in","your","Basic","Info","Window."")
+			dialog "keys or click the  Map button in your Basic Info Window."
 			wait()
 			dialog "[Morroc Guide]"
 			dialog "On your Mini-Map,"
-			dialog("click on the ","+"","and","-")
+			dialog "click on the  + and -"
 			dialog "symbols to zoom in and"
 			dialog "our of your Mini-Map. We"
 			dialog "hope you enjoy your travels"
@@ -220,9 +218,9 @@ function morocc_Guide_5497()
 					dialog "you can find them inside"
 					dialog "the Pyramids nearby..."
 					if getvar(compass_check) == 1 then
-						compass(2,24,297,1,0xFFFF0000)
+						compass(2,24,297,1,"0xFFFF0000")
 					else
-						compass(2,24,297,0,0xFFFF0000)
+						compass(2,24,297,0,"0xFFFF0000")
 					end
 				elseif mresultb == 2 then
 					dialog "[Morroc Guide]"
@@ -230,9 +228,9 @@ function morocc_Guide_5497()
 					dialog "is in the southeast"
 					dialog "end of Morroc."
 					if getvar(compass_check) == 1 then
-						compass(3,253,56,1,0xFFFF00FF)
+						compass(3,253,56,1,"0xFFFF00FF")
 					else
-						compass(3,253,56,0,0xFFFF00FF)
+						compass(3,253,56,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 3 then
 					dialog "[Morroc Guide]"
@@ -241,20 +239,20 @@ function morocc_Guide_5497()
 					dialog "at the southeast and"
 					dialog "northeast ends of Morroc."
 					if getvar(compass_check) == 1 then
-						compass(4,197,66,1,0xFFFF00FF)
-						compass(5,273,269,1,0xFFFF00FF)
+						compass(4,197,66,1,"0xFFFF00FF")
+						compass(5,273,269,1,"0xFFFF00FF")
 					else
-						compass(4,197,66,0,0xFFFF00FF)
-						compass(5,273,269,0,0xFFFF00FF)
+						compass(4,197,66,0,"0xFFFF00FF")
+						compass(5,273,269,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 4 then
 					dialog "[Morroc Guide]"
 					dialog "You can find the"
 					dialog "Pub in northeast Morroc."
 					if getvar(compass_check) == 1 then
-						compass(6,52,259,1,0xFFFF00FF)
+						compass(6,52,259,1,"0xFFFF00FF")
 					else
-						compass(6,52,259,0,0xFFFF00FF)
+						compass(6,52,259,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 5 then
 					dialog "[Morroc Guide]"
@@ -262,9 +260,9 @@ function morocc_Guide_5497()
 					dialog "Guild is located"
 					dialog "in East Morroc."
 					if getvar(compass_check) == 1 then
-						compass(7,284,171,1,0xFF00FF00)
+						compass(7,284,171,1,"0xFF00FF00")
 					else
-						compass(7,284,171,0,0xFF00FF00)
+						compass(7,284,171,0,"0xFF00FF00")
 					end
 				elseif mresultb == 6 then
 					dialog "[Morroc Guide]"
@@ -273,15 +271,15 @@ function morocc_Guide_5497()
 					dialog "southwest from"
 					dialog "the center of Morroc."
 					if getvar(compass_check) == 1 then
-						compass(7,47,47,1,0xFFFF00FF)
+						compass(7,47,47,1,"0xFFFF00FF")
 					else
-						compass(7,47,47,0,0xFFFF00FF)
+						compass(7,47,47,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 7 then
 					compass_check("=",1)
 					dialog "[Morroc Guide]"
-					dialog("Please ask me to ","Remove"")
-					dialog("Marks from Mini-Map","if","you"")
+					dialog "Please ask me to Remove"
+					dialog "Marks from Mini-Map if you"
 					dialog "no longer wish to have the"
 					dialog "location marks displayed"
 					dialog "on your Mini-Map."
@@ -289,12 +287,12 @@ function morocc_Guide_5497()
 				end
 			end
 		elseif mresulta == 2 then
-			compass(2,237,41,2,0xFF00FF00)
-			compass(3,237,41,2,0xFF0000FF)
-			compass(4,46,345,2,0xFF00FF00)
-			compass(5,175,220,2,0xFFFF0000)
-			compass(6,175,220,2,0xFFFF0000)
-			compass(7,175,220,2,0xFFFF0000)
+			compass(2,237,41,2,"0xFF00FF00")
+			compass(3,237,41,2,"0xFF0000FF")
+			compass(4,46,345,2,"0xFF00FF00")
+			compass(5,175,220,2,"0xFFFF0000")
+			compass(6,175,220,2,"0xFFFF0000")
+			compass(7,175,220,2,"0xFFFF0000")
 			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Morroc Guide]"
@@ -310,11 +308,11 @@ function morocc_Guide_5497()
 			dialog "in the upper right corner"
 			dialog "of the screen. If you can't"
 			dialog "see it, press the Ctrl + Tab"
-			dialog("keys or click the ","Map"","button","in","your","Basic","Info","Window."")
+			dialog "keys or click the  Map button in your Basic Info Window."
 			wait()
 			dialog "[Morroc Guide]"
 			dialog "On your Mini-Map,"
-			dialog("click on the ","+"","and","-")
+			dialog "click on the  + and -"
 			dialog "symbols to zoom in and"
 			dialog "our of your Mini-Map. We"
 			dialog "hope you enjoy your travels"
