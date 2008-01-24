@@ -31,6 +31,12 @@ require("Scripts/Towns/Aldebaran/Aldebaran")
 require("Scripts/Towns/Alberta/Alberta_2")
 require("Scripts/Towns/Geffen/Geffen_1")
 require("Scripts/Towns/Alberta/Alberta_Hair")
+require("Scripts/Towns/Comodo/Comodo_Dairy")
+require("Scripts/Towns/Comodo/Comodo_Casino")
+require("Scripts/Towns/Juno/fly_ship")
+
+
+
 --
 --Town Guides
 --
@@ -64,3 +70,5 @@ require("Scripts/Towns/Guides/kunlun_guide")
 --
 
 --require("Scripts/Towns/Geffen/Geff_Random")
+--require("Scripts/Towns/Jawaii/jawaii")
+--require("Scripts/Towns/Comodo/Comodo_1")

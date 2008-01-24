@@ -1,3 +1,7 @@
+- Rev 42 -
+[2008/1/24] Spre - Added The comodo Diary and Casino Town scripts.
+[2008/1/24] Spre - Added the Juno Airship Script. May need mroe testing.
+
 - Rev 41 -
 [2008/1/23] RabidCh - Added gefenia warps, updated airship warps, and added special izlude acolyte arena warps.  Some are commented out.
 [2008/1/23] RabidCh - Airships  warps might need to be tested...
