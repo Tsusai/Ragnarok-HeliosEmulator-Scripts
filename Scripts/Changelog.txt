@@ -1,6 +1,11 @@
+- Rev 43 -
+[2008/1/24] Spre - Modified all Guides, They SHOULD work as expected now.
+[2008/1/24] Spre - Modified the last changelog entry...typo :D
+[2008/1/24] Spre - Added some yuno/juperous town scripts.
+
 - Rev 42 -
 [2008/1/24] Spre - Added The comodo Diary and Casino Town scripts.
-[2008/1/24] Spre - Added the Juno Airship Script. May need mroe testing.
+[2008/1/24] Spre - Added the Juno Airship Script. May need more testing.
 
 - Rev 41 -
 [2008/1/23] RabidCh - Added gefenia warps, updated airship warps, and added special izlude acolyte arena warps.  Some are commented out.

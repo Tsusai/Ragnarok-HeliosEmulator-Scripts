@@ -73,7 +73,7 @@ function lighthalzen_Guide_207310()
 					dialog "in located in northwestern"
 					dialog "Lighthalzen. You can't miss"
 					dialog "the headquarters building."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,102,247,1,"0xFFFF0000")
 					else
 						compass(2,102,247,0,"0xFFFF0000")
@@ -84,7 +84,7 @@ function lighthalzen_Guide_207310()
 					dialog "located in the center of"
 					dialog "the city, where we have"
 					dialog "a direct railroad to Einbroch."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,233,164,1,"0xFFFF00FF")
 					else
 						compass(3,233,164,0,"0xFFFF00FF")
@@ -97,7 +97,7 @@ function lighthalzen_Guide_207310()
 					dialog "any suspicious persons and"
 					dialog "activity, or if you have any"
 					dialog "problems whatsoever."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,236,276,1,"0xFF99FFFF")
 					else
 						compass(4,236,276,0,"0xFF99FFFF")
@@ -109,7 +109,7 @@ function lighthalzen_Guide_207310()
 					dialog "Lighthalzen Police Station,"
 					dialog "which is a pretty good idea"
 					dialog "when I think about it, actually. ^FFFFFFspacer^000000"
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,198,257,1,"0xFF0000FF")
 					else
 						compass(5,198,257,0,"0xFF0000FF")
@@ -121,7 +121,7 @@ function lighthalzen_Guide_207310()
 					dialog "Due to its quality services and"
 					dialog "luxurious accomodations, this"
 					dialog "hotel is extremely popular."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,159,133,1,"0xFF00FF00")
 					else
 						compass(6,159,133,0,"0xFF00FF00")
@@ -133,7 +133,7 @@ function lighthalzen_Guide_207310()
 					dialog "You can travel anywhere within"
 					dialog "the Schwaltzvalt Republic by"
 					dialog "riding on one of the Airships."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,267,75,1,"0xFF00FF00")
 					else
 						compass(7,267,75,0,"0xFF00FF00")
@@ -143,7 +143,7 @@ function lighthalzen_Guide_207310()
 					dialog "The Merchant Guild can be"
 					dialog "found in the southwestern"
 					dialog "part of Lighthalzen."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,74,53,1,"0xFFFF99FF")
 					else
 						compass(8,74,53,0,"0xFFFF99FF")
@@ -153,7 +153,7 @@ function lighthalzen_Guide_207310()
 					dialog "The Jewelry Shop is"
 					dialog "located just west of"
 					dialog "the South Plaza."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(9,93,110,1,"0xFFFF9900")
 					else
 						compass(9,93,110,0,"0xFFFF9900")
@@ -166,7 +166,7 @@ function lighthalzen_Guide_207310()
 					dialog "It's at least worth a look"
 					dialog "if you're serious about"
 					dialog "adventuring around here."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(10,196,46,1,"0xFF330033")
 					else
 						compass(10,196,46,0,"0xFF330033")
@@ -178,13 +178,13 @@ function lighthalzen_Guide_207310()
 					dialog "Lighthalzen and is the biggest"
 					dialog "and most convenient place for"
 					dialog "shopping for almost everything."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(11,199,163,1,"0xFFFFFF00")
 					else
 						compass(11,199,163,0,"0xFFFFFF00")
 					end
 				elseif mresultb == 11 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Lighthalzen Guide]"
 					dialog "Please ask me to Remove"
 					dialog "Marks from Mini-Map if you"
@@ -302,7 +302,7 @@ function lighthalzen_Guide_220311()
 					dialog "located in the 11 o'clock"
 					dialog "direction from the center"
 					dialog "of the East District."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,324,301,1,"0xFFFF0000")
 					else
 						compass(2,324,301,0,"0xFFFF0000")
@@ -313,7 +313,7 @@ function lighthalzen_Guide_220311()
 					dialog "the Mill can be found in"
 					dialog "the 1 o'clock direction"
 					dialog "in the East District."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,365,300,1,"0xFFFF00FF")
 					else
 						compass(3,365,300,0,"0xFFFF00FF")
@@ -323,13 +323,13 @@ function lighthalzen_Guide_220311()
 					dialog "The Pub is located"
 					dialog "in the southern part"
 					dialog "of the East District."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,340,240,1,"0xFF99FFFF")
 					else
 						compass(4,340,240,0,"0xFF99FFFF")
 					end
 				elseif mresultb == 4 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Lighthalzen Guide]"
 					dialog "Please ask me to Remove"
 					dialog "Marks from Mini-Map if you"
@@ -442,7 +442,7 @@ function lighthalzen_Guide_154100()
 					dialog "in located in northwestern"
 					dialog "Lighthalzen. You can't miss"
 					dialog "the headquarters building."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,102,247,1,"0xFFFF0000")
 					else
 						compass(2,102,247,0,"0xFFFF0000")
@@ -453,7 +453,7 @@ function lighthalzen_Guide_154100()
 					dialog "located in the center of"
 					dialog "the city, where we have"
 					dialog "a direct railroad to Einbroch."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,233,164,1,"0xFFFF00FF")
 					else
 						compass(3,233,164,0,"0xFFFF00FF")
@@ -466,7 +466,7 @@ function lighthalzen_Guide_154100()
 					dialog "any suspicious persons and"
 					dialog "activity, or if you have any"
 					dialog "problems whatsoever."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,236,276,1,"0xFF99FFFF")
 					else
 						compass(4,236,276,0,"0xFF99FFFF")
@@ -478,7 +478,7 @@ function lighthalzen_Guide_154100()
 					dialog "Lighthalzen Police Station,"
 					dialog "which is a pretty good idea"
 					dialog "when I think about it, actually. ^FFFFFFspacer^000000"
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,198,257,1,"0xFF0000FF")
 					else
 						compass(5,198,257,0,"0xFF0000FF")
@@ -490,7 +490,7 @@ function lighthalzen_Guide_154100()
 					dialog "Due to its quality services and"
 					dialog "luxurious accomodations, this"
 					dialog "hotel is extremely popular."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,159,133,1,"0xFF00FF00")
 					else
 						compass(6,159,133,0,"0xFF00FF00")
@@ -502,7 +502,7 @@ function lighthalzen_Guide_154100()
 					dialog "You can travel anywhere within"
 					dialog "the Schwaltzvalt Republic by"
 					dialog "riding on one of the Airships."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,267,75,1,"0xFF00FF00")
 					else
 						compass(7,267,75,0,"0xFF00FF00")
@@ -512,7 +512,7 @@ function lighthalzen_Guide_154100()
 					dialog "The Merchant Guild can be"
 					dialog "found in the southwestern"
 					dialog "part of Lighthalzen."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,74,53,1,"0xFFFF99FF")
 					else
 						compass(8,74,53,0,"0xFFFF99FF")
@@ -522,7 +522,7 @@ function lighthalzen_Guide_154100()
 					dialog "The Jewelry Shop is"
 					dialog "located just west of"
 					dialog "the South Plaza."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(9,93,110,1,"0xFFFF9900")
 					else
 						compass(9,93,110,0,"0xFFFF9900")
@@ -535,7 +535,7 @@ function lighthalzen_Guide_154100()
 					dialog "It's at least worth a look"
 					dialog "if you're serious about"
 					dialog "adventuring around here."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(10,196,46,1,"0xFF330033")
 					else
 						compass(10,196,46,0,"0xFF330033")
@@ -547,13 +547,13 @@ function lighthalzen_Guide_154100()
 					dialog "Lighthalzen and is the biggest"
 					dialog "and most convenient place for"
 					dialog "shopping for almost everything."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(11,199,163,1,"0xFFFFFF00")
 					else
 						compass(11,199,163,0,"0xFFFFFF00")
 					end
 				elseif mresultb == 11 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Lighthalzen Guide]"
 					dialog "Please ask me to Remove"
 					dialog "Marks from Mini-Map if you"
@@ -671,7 +671,7 @@ function lighthalzen_Guide_307224()
 					dialog "located in the 11 o'clock"
 					dialog "direction from the center"
 					dialog "of the East District."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,324,301,1,"0xFFFF0000")
 					else
 						compass(2,324,301,0,"0xFFFF0000")
@@ -682,7 +682,7 @@ function lighthalzen_Guide_307224()
 					dialog "the Mill can be found in"
 					dialog "the 1 o'clock direction"
 					dialog "in the East District."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,365,300,1,"0xFFFF00FF")
 					else
 						compass(3,365,300,0,"0xFFFF00FF")
@@ -692,13 +692,13 @@ function lighthalzen_Guide_307224()
 					dialog "The Pub is located"
 					dialog "in the southern part"
 					dialog "of the East District."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,340,240,1,"0xFF99FFFF")
 					else
 						compass(4,340,240,0,"0xFF99FFFF")
 					end
 				elseif mresultb == 4 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Lighthalzen Guide]"
 					dialog "Please ask me to Remove"
 					dialog "Marks from Mini-Map if you"

@@ -51,7 +51,7 @@ function umbala_Adventurer_12894()
 			dialog "Only the chief knows the language"
 			dialog "of the outside world. So you'd"
 			dialog "better visit him before anything else."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(2,66,250,1,"0xFFFF3355")
 			else
 				compass(2,66,250,0,"0xFFFF3355")
@@ -67,7 +67,7 @@ function umbala_Adventurer_12894()
 			dialog "People say she can create rough"
 			dialog "enchanted stones, and divide a"
 			dialog "pure enchanted stone into rough ones."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(3,217,186,1,"0xFFCE6300")
 			else
 				compass(3,217,186,0,"0xFFCE6300")
@@ -82,7 +82,7 @@ function umbala_Adventurer_12894()
 			dialog "in preparation for attacks from"
 			dialog "their enemies. Apparently, they"
 			dialog "have been attacked from the outside many times in the past."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(4,126,154,1,"0xFF55FF33")
 			else
 				compass(4,126,154,0,"0xFF55FF33")
@@ -95,7 +95,7 @@ function umbala_Adventurer_12894()
 			dialog "[Adventurer]"
 			dialog "There are many useful things for"
 			dialog "traveling in the Tool Shop, so why don't you go look around?"
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(5,136,127,1,"0xFF3355FF")
 			else
 				compass(5,136,127,0,"0xFF3355FF")
@@ -112,7 +112,7 @@ function umbala_Adventurer_12894()
 			dialog "your courage, why don't you go"
 			dialog "and partake in this Utan"
 			dialog "ritual yourself?"
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(6,139,198,1,"0xFF00FF00")
 			else
 				compass(6,139,198,0,"0xFF00FF00")

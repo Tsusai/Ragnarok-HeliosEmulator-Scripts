@@ -62,7 +62,7 @@ function morocc_Guide_153286()
 					dialog "Class. From what I hear,"
 					dialog "you can find them inside"
 					dialog "the Pyramids nearby..."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,24,297,1,"0xFFFF0000")
 					else
 						compass(2,24,297,0,"0xFFFF0000")
@@ -72,7 +72,7 @@ function morocc_Guide_153286()
 					dialog "The Weapon Shop"
 					dialog "is in the southeast"
 					dialog "end of Morroc."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,253,56,1,"0xFFFF00FF")
 					else
 						compass(3,253,56,0,"0xFFFF00FF")
@@ -83,7 +83,7 @@ function morocc_Guide_153286()
 					dialog "where you can rest"
 					dialog "at the southeast and"
 					dialog "northeast ends of Morroc."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,197,66,1,"0xFFFF00FF")
 						compass(5,273,269,1,"0xFFFF00FF")
 					else
@@ -94,7 +94,7 @@ function morocc_Guide_153286()
 					dialog "[Morroc Guide]"
 					dialog "You can find the"
 					dialog "Pub in northeast Morroc."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,52,259,1,"0xFFFF00FF")
 					else
 						compass(6,52,259,0,"0xFFFF00FF")
@@ -104,7 +104,7 @@ function morocc_Guide_153286()
 					dialog "The Mercenary"
 					dialog "Guild is located"
 					dialog "in East Morroc."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,284,171,1,"0xFF00FF00")
 					else
 						compass(7,284,171,0,"0xFF00FF00")
@@ -115,13 +115,13 @@ function morocc_Guide_153286()
 					dialog "located just"
 					dialog "southwest from"
 					dialog "the center of Morroc."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,47,47,1,"0xFFFF00FF")
 					else
 						compass(7,47,47,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 7 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Morroc Guide]"
 					dialog "Please ask me to Remove"
 					dialog "Marks from Mini-Map if you"
@@ -217,7 +217,7 @@ function morocc_Guide_5497()
 					dialog "Class. From what I hear,"
 					dialog "you can find them inside"
 					dialog "the Pyramids nearby..."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,24,297,1,"0xFFFF0000")
 					else
 						compass(2,24,297,0,"0xFFFF0000")
@@ -227,7 +227,7 @@ function morocc_Guide_5497()
 					dialog "The Weapon Shop"
 					dialog "is in the southeast"
 					dialog "end of Morroc."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,253,56,1,"0xFFFF00FF")
 					else
 						compass(3,253,56,0,"0xFFFF00FF")
@@ -238,7 +238,7 @@ function morocc_Guide_5497()
 					dialog "where you can rest"
 					dialog "at the southeast and"
 					dialog "northeast ends of Morroc."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,197,66,1,"0xFFFF00FF")
 						compass(5,273,269,1,"0xFFFF00FF")
 					else
@@ -249,7 +249,7 @@ function morocc_Guide_5497()
 					dialog "[Morroc Guide]"
 					dialog "You can find the"
 					dialog "Pub in northeast Morroc."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,52,259,1,"0xFFFF00FF")
 					else
 						compass(6,52,259,0,"0xFFFF00FF")
@@ -259,7 +259,7 @@ function morocc_Guide_5497()
 					dialog "The Mercenary"
 					dialog "Guild is located"
 					dialog "in East Morroc."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,284,171,1,"0xFF00FF00")
 					else
 						compass(7,284,171,0,"0xFF00FF00")
@@ -270,13 +270,13 @@ function morocc_Guide_5497()
 					dialog "located just"
 					dialog "southwest from"
 					dialog "the center of Morroc."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,47,47,1,"0xFFFF00FF")
 					else
 						compass(7,47,47,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 7 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Morroc Guide]"
 					dialog "Please ask me to Remove"
 					dialog "Marks from Mini-Map if you"

@@ -57,7 +57,7 @@ function geffen_Guide_203116()
 					dialog "The Magic Academy in"
 					dialog "northwest Geffen handles"
 					dialog "Job Changes to the Mage class."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,61,180,1,"0xFFFF0000")
 					else
 						compass(2,61,180,0,"0xFFFF0000")
@@ -67,7 +67,7 @@ function geffen_Guide_203116()
 					dialog "The Forge Shop is"
 					dialog "located just southeast"
 					dialog "from the center of Geffen."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,182,59,1,"0xFF00FF00")
 					else
 						compass(3,182,59,0,"0xFF00FF00")
@@ -77,7 +77,7 @@ function geffen_Guide_203116()
 					dialog "The Weapon Shop"
 					dialog "can be found northwest"
 					dialog "from the center of Geffen."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,99,140,1,"0xFFFF00FF")
 					else
 						compass(4,99,140,0,"0xFFFF00FF")
@@ -88,7 +88,7 @@ function geffen_Guide_203116()
 					dialog "Tool Shop by heading"
 					dialog "southwest from the"
 					dialog "center of Geffen."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,44,86,1,"0xFFFF00FF")
 					else
 						compass(5,44,86,0,"0xFFFF00FF")
@@ -98,7 +98,7 @@ function geffen_Guide_203116()
 					dialog "The Pub can be"
 					dialog "found northeast"
 					dialog "from the Geffen Tower."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,138,138,1,"0xFFFF00FF")
 					else
 						compass(6,138,138,0,"0xFFFF00FF")
@@ -109,7 +109,7 @@ function geffen_Guide_203116()
 					dialog "found by traveling"
 					dialog "northeast from the"
 					dialog "center of Geffen."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,172,174,1,"0xFFFF00FF")
 					else
 						compass(7,172,174,0,"0xFFFF00FF")
@@ -122,13 +122,13 @@ function geffen_Guide_203116()
 					dialog "top, and there's even a dungeon"
 					dialog "underneath it. There's many a"
 					dialog "mystery surrounding that tower..."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,120,114,1,"0xFF00FF00")
 					else
 						compass(8,120,114,0,"0xFF00FF00")
 					end
 				elseif mresultb == 8 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Geffen Guide]"
 					dialog "Please ask me to  Remove"
 					dialog "Marks from Mini-Map if you"
@@ -220,7 +220,7 @@ function geffen_Guide_11862()
 					dialog "The Magic Academy in"
 					dialog "northwest Geffen handles"
 					dialog "Job Changes to the Mage class."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,61,180,1,"0xFFFF0000")
 					else
 						compass(2,61,180,0,"0xFFFF0000")
@@ -230,7 +230,7 @@ function geffen_Guide_11862()
 					dialog "The Forge Shop is"
 					dialog "located just southeast"
 					dialog "from the center of Geffen."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,182,59,1,"0xFF00FF00")
 					else
 						compass(3,182,59,0,"0xFF00FF00")
@@ -240,7 +240,7 @@ function geffen_Guide_11862()
 					dialog "The Weapon Shop"
 					dialog "can be found northwest"
 					dialog "from the center of Geffen."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,99,140,1,"0xFFFF00FF")
 					else
 						compass(4,99,140,0,"0xFFFF00FF")
@@ -251,7 +251,7 @@ function geffen_Guide_11862()
 					dialog "Tool Shop by heading"
 					dialog "southwest from the"
 					dialog "center of Geffen."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,44,86,1,"0xFFFF00FF")
 					else
 						compass(5,44,86,0,"0xFFFF00FF")
@@ -261,7 +261,7 @@ function geffen_Guide_11862()
 					dialog "The Pub can be"
 					dialog "found northeast"
 					dialog "from the Geffen Tower."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,138,138,1,"0xFFFF00FF")
 					else
 						compass(6,138,138,0,"0xFFFF00FF")
@@ -272,7 +272,7 @@ function geffen_Guide_11862()
 					dialog "found by traveling"
 					dialog "northeast from the"
 					dialog "center of Geffen."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,172,174,1,"0xFFFF00FF")
 					else
 						compass(7,172,174,0,"0xFFFF00FF")
@@ -285,13 +285,13 @@ function geffen_Guide_11862()
 					dialog "top, and there's even a dungeon"
 					dialog "underneath it. There's many a"
 					dialog "mystery surrounding that tower..."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,120,114,1,"0xFF00FF00")
 					else
 						compass(8,120,114,0,"0xFF00FF00")
 					end
 				elseif mresultb == 8 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Geffen Guide]"
 					dialog "Please ask me to Remove"
 					dialog "Marks from Mini-Map if you"
