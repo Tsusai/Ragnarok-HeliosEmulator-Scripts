@@ -60,7 +60,7 @@ function veins_Veins_Guide_210345()
 					dialog "[Veins Guide]"
 					dialog "Our Temple is located North,"
 					dialog "and always crowded with sincere followers of Goddess Freya."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,196,274,1,"0xFFFF0000")
 					else
 						compass(2,196,274,0,"0xFFFF0000")
@@ -69,7 +69,7 @@ function veins_Veins_Guide_210345()
 					dialog "[Veins Guide]"
 					dialog "You can rest your fatigue of the journey in the Inn."
 					dialog "The Inn is located in the North-West side of Veins."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,131,280,1,"0xFFFF00FF")
 					else
 						compass(3,131,280,0,"0xFFFF00FF")
@@ -79,7 +79,7 @@ function veins_Veins_Guide_210345()
 					dialog "Yes, you should protect yourself from danger on your own."
 					dialog "Purchase high quality weapons at affordable prices."
 					dialog "The Veins Weapon Shop is located to the West side of Veins."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,149,184,1,"0xFF99FFFF")
 					else
 						compass(4,149,184,0,"0xFF99FFFF")
@@ -88,7 +88,7 @@ function veins_Veins_Guide_210345()
 					dialog "[Veins Guide]"
 					dialog "Have you packed enough necessities  for your adventure?"
 					dialog "If not, I suggest you check what the Veins Tool Shop in the Center can offer you."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,230,172,1,"0xFF0000FF")
 					else
 						compass(5,230,172,0,"0xFF0000FF")
@@ -96,7 +96,7 @@ function veins_Veins_Guide_210345()
 				elseif mresultb == 5 then
 					dialog "[Veins Guide]"
 					dialog "Please be aware that Veins only operates cargoships."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,272,292,1,"0xFFCE9CFF")
 					else
 						compass(6,272,292,0,"0xFF00FF00")
@@ -108,7 +108,7 @@ function veins_Veins_Guide_210345()
 					dialog "go have a drink at the Tavern."
 					dialog "The Tavern is located on the West side"
 					dialog "of Veins."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,140,227,1,"0xFFCECE31")
 					else
 						compass(7,140,227,0,"0xFF00FF00")
@@ -119,7 +119,7 @@ function veins_Veins_Guide_210345()
 					dialog "Then you'd better go check out the"
 					dialog "Geological Research Institute on"
 					dialog "the 2nd floor of the Weapon Shop."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,149,184,1,"0xFFFF9C00")
 					else
 						compass(8,149,184,0,"0xFF00FF00")
@@ -197,7 +197,7 @@ function veins_Veins_Guide_189101()
 					dialog "[Veins Guide]"
 					dialog "Our Temple is located North,"
 					dialog "and always crowded with sincere followers of Goddess Freya."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,196,274,1,"0xFFFF0000")
 					else
 						compass(2,196,274,0,"0xFFFF0000")
@@ -206,7 +206,7 @@ function veins_Veins_Guide_189101()
 					dialog "[Veins Guide]"
 					dialog "You can rest your fatigue of the journey in the Inn."
 					dialog "The Inn is located in the North-West side of Veins."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,131,280,1,"0xFFFF00FF")
 					else
 						compass(3,131,280,0,"0xFFFF00FF")
@@ -216,7 +216,7 @@ function veins_Veins_Guide_189101()
 					dialog "Yes, you should protect yourself from danger on your own."
 					dialog "Purchase high quality weapons at affordable prices."
 					dialog "The Veins Weapon Shop is located to the West side of Veins."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,149,184,1,"0xFF99FFFF")
 					else
 						compass(4,149,184,0,"0xFF99FFFF")
@@ -225,7 +225,7 @@ function veins_Veins_Guide_189101()
 					dialog "[Veins Guide]"
 					dialog "Have you packed enough necessities  for your adventure?"
 					dialog "If not, I suggest you check what the Veins Tool Shop in the Center can offer you."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,230,172,1,"0xFF0000FF")
 					else
 						compass(5,230,172,0,"0xFF0000FF")
@@ -233,7 +233,7 @@ function veins_Veins_Guide_189101()
 				elseif mresultb == 5 then
 					dialog "[Veins Guide]"
 					dialog "Please be aware that Veins only operates cargoships."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,272,292,1,"0xFFCE9CFF")
 					else
 						compass(6,272,292,0,"0xFF00FF00")
@@ -245,7 +245,7 @@ function veins_Veins_Guide_189101()
 					dialog "go have a drink at the Tavern."
 					dialog "The Tavern is located on the West side"
 					dialog "of Veins."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,140,227,1,"0xFFCECE31")
 					else
 						compass(7,140,227,0,"0xFF00FF00")
@@ -256,7 +256,7 @@ function veins_Veins_Guide_189101()
 					dialog "Then you'd better go check out the"
 					dialog "Geological Research Institute on"
 					dialog "the 2nd floor of the Weapon Shop."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,149,184,1,"0xFFFF9C00")
 					else
 						compass(8,149,184,0,"0xFF00FF00")
@@ -265,7 +265,7 @@ function veins_Veins_Guide_189101()
 					dialog "[Veins Guide]"
 					dialog "We have a Public Security Office here in Veins."
 					dialog "If you are in trouble, run tot he Public Security Office."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(9,87,170,1,"0xFFFF9C00")
 					else
 						compass(9,87,170,0,"0xFF00FF00")

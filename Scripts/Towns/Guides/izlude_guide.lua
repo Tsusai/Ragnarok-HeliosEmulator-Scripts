@@ -59,7 +59,7 @@ function izlude_Guide_12187()
 					dialog "is located on an island that is"
 					dialog "in west Izlude. If you're thinking of changing jobs to Swordman,"
 					dialog "you should check it out."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(0,52,140,1,"0xFFFF0000")
 					else
 						compass(0,52,140,0,"0xFFFF0000")
@@ -69,7 +69,7 @@ function izlude_Guide_12187()
 					dialog "The Swordman Hall"
 					dialog "is located in the eastern"
 					dialog "island connected to Izlude."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(1,214,130,1,"0xFF00FF00")
 					else
 						compass(1,214,130,0,"0xFF00FF00")
@@ -79,7 +79,7 @@ function izlude_Guide_12187()
 					dialog "Izlude's famous"
 					dialog "Arena is located at the"
 					dialog "northern end of Izlude."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,128,225,1,"0xFF00FF00")
 					else
 						compass(2,128,225,0,"0xFF00FF00")
@@ -91,7 +91,7 @@ function izlude_Guide_12187()
 					dialog "part of Izlude. There, you can"
 					dialog "ride a ship which will take you"
 					dialog "to Alberta or Byalan Island."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,200,180,1,"0xFFFF0000")
 					else
 						compass(3,200,180,0,"0xFFFF0000")
@@ -101,7 +101,7 @@ function izlude_Guide_12187()
 					dialog "You can easily"
 					dialog "find the Weapon Shop"
 					dialog "in northwest Izlude."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,111,149,1,"0xFFFF00FF")
 					else
 						compass(4,111,149,0,"0xFFFF00FF")
@@ -111,13 +111,13 @@ function izlude_Guide_12187()
 					dialog "The Tool Shop shouldn't"
 					dialog "be too hard to find in the"
 					dialog "northeast part of Izlude."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,148,148,1,"0xFFFF00FF")
 					else
 						compass(5,148,148,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 7 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Izlude Guide]"
 					dialog "Please ask me to Remove"
 					dialog "Marks from Mini-Map if you"

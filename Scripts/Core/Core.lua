@@ -31,3 +31,6 @@
 --Towns NPC Master List
    require("Scripts/Towns/Town_Main")
    
+ --Mob Master List
+  require("Scripts/Mobs/Mob_Main")
+   

@@ -54,7 +54,7 @@ function louyang_SoldierBA_213213()
 			wait()
 			dialog "[Soldier]"
 			dialog "Since you're an outsider, I guess it would be appropriate for you to visit our lord first."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(2,218,255,1,"0xFFFF3355")
 			else
 				compass(2,218,255,0,"0xFFFF3355")
@@ -67,7 +67,7 @@ function louyang_SoldierBA_213213()
 			dialog "[Soldier]"
 			dialog "It is said that there"
 			dialog "is no disease she cannot cure. Well, I can't guarantee if that's true or not."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(3,263,94,1,"0xFFCE6300")
 			else
 				compass(3,263,94,0,"0xFFCE6300")
@@ -81,7 +81,7 @@ function louyang_SoldierBA_213213()
 			dialog "If you have any problems,"
 			dialog "you should talk with the"
 			dialog "employees in City Hall."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(4,309,80,1,"0xFF00FF00")
 			else
 				compass(4,309,80,0,"0xFF00FF00")
@@ -95,7 +95,7 @@ function louyang_SoldierBA_213213()
 			dialog "marvelous weapons forged"
 			dialog "by the well-experienced"
 			dialog "blacksmiths of Louyang."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(5,145,174,1,"0xFF55FF33")
 			else
 				compass(5,145,174,0,"0xFF55FF33")
@@ -108,7 +108,7 @@ function louyang_SoldierBA_213213()
 			dialog "Knowing your enemy"
 			dialog "is half the battle!"
 			dialog "It's also safer to prepare yourself than to be sorry later. Why don't you go check their supplies?"
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(6,135,98,1,"0xFF3355FF")
 			else
 				compass(6,135,98,0,"0xFF3355FF")
@@ -120,7 +120,7 @@ function louyang_SoldierBA_213213()
 			dialog "[Soldier]"
 			dialog "The Tavern is a good place"
 			dialog "to meet other tourists, as well as to hear of any news that may be helpful to know."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(7,280,167,1,"0xFF00FF00")
 			else
 				compass(7,280,167,0,"0xFF00FF00")
@@ -187,7 +187,7 @@ function louyang_SoldierBB_160175()
 			wait()
 			dialog "[Soldier]"
 			dialog "Since you're an outsider, I guess it would be appropriate for you to visit our lord first."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(2,218,255,1,"0xFFFF3355")
 			else
 				compass(2,218,255,0,"0xFFFF3355")
@@ -200,7 +200,7 @@ function louyang_SoldierBB_160175()
 			dialog "[Soldier]"
 			dialog "It is said that there"
 			dialog "is no disease she cannot cure. Well, I can't guarantee if that's true or not."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(3,263,94,1,"0xFFCE6300")
 			else
 				compass(3,263,94,0,"0xFFCE6300")
@@ -214,7 +214,7 @@ function louyang_SoldierBB_160175()
 			dialog "If you have any problems,"
 			dialog "you should talk with the"
 			dialog "employees in City Hall."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(4,309,80,1,"0xFF00FF00")
 			else
 				compass(4,309,80,0,"0xFF00FF00")
@@ -228,7 +228,7 @@ function louyang_SoldierBB_160175()
 			dialog "marvelous weapons forged"
 			dialog "by the well-experienced"
 			dialog "blacksmiths of Louyang."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(5,145,174,1,"0xFF55FF33")
 			else
 				compass(5,145,174,0,"0xFF55FF33")
@@ -241,7 +241,7 @@ function louyang_SoldierBB_160175()
 			dialog "Knowing your enemy"
 			dialog "is half the battle!"
 			dialog "It's also safer to prepare yourself than to be sorry later. Why don't you go check their supplies?"
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(6,135,98,1,"0xFF3355FF")
 			else
 				compass(6,135,98,0,"0xFF3355FF")
@@ -253,7 +253,7 @@ function louyang_SoldierBB_160175()
 			dialog "[Soldier]"
 			dialog "The Tavern is a good place"
 			dialog "to meet other tourists, as well as to hear of any news that may be helpful to know."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(7,280,167,1,"0xFF00FF00")
 			else
 				compass(7,280,167,0,"0xFF00FF00")
@@ -314,7 +314,7 @@ function louyang_Representative_224104()
 			wait()
 			dialog "[Representative]"
 			dialog "Since you're an outsider, I guess it would be appropriate for you to visit our lord first."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(2,218,255,1,"0xFFFF3355")
 			else
 				compass(2,218,255,0,"0xFFFF3355")
@@ -327,7 +327,7 @@ function louyang_Representative_224104()
 			dialog "[Representative]"
 			dialog "It is said that there"
 			dialog "is no disease she cannot cure. Well, I can't guarantee if that's true or not."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(3,263,94,1,"0xFFCE6300")
 			else
 				compass(3,263,94,0,"0xFFCE6300")
@@ -341,7 +341,7 @@ function louyang_Representative_224104()
 			dialog "If you have any problems,"
 			dialog "you should talk with the"
 			dialog "employees in City Hall."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(4,309,80,1,"0xFF00FF00")
 			else
 				compass(4,309,80,0,"0xFF00FF00")
@@ -355,7 +355,7 @@ function louyang_Representative_224104()
 			dialog "marvelous weapons forged"
 			dialog "by the well-experienced"
 			dialog "blacksmiths of Louyang."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(5,145,174,1,"0xFF55FF33")
 			else
 				compass(5,145,174,0,"0xFF55FF33")
@@ -368,7 +368,7 @@ function louyang_Representative_224104()
 			dialog "Knowing your enemy"
 			dialog "is half the battle!"
 			dialog "It's also safer to prepare yourself than to be sorry later. Why don't you go check their supplies?"
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(6,135,98,1,"0xFF3355FF")
 			else
 				compass(6,135,98,0,"0xFF3355FF")
@@ -380,7 +380,7 @@ function louyang_Representative_224104()
 			dialog "[Soldier]"
 			dialog "The Tavern is a good place"
 			dialog "to meet other tourists, as well as to hear of any news that may be helpful to know."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(7,280,167,1,"0xFF00FF00")
 			else
 				compass(7,280,167,0,"0xFF00FF00")

@@ -20,7 +20,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("alberta","Guide",SPRITE_8W_SOLDIER,23,238,4,0,0,"alberta_Guide_23238")
+npc("alberta","Guide",spr_8W_SOLDIER,23,238,4,0,0,"alberta_Guide_23238")
 function alberta_Guide_23238()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Alberta Guide]"
@@ -62,7 +62,7 @@ function alberta_Guide_23238()
 					dialog "and is located in the"
 					dialog "southwest corner"
 					dialog "of Alberta."
-					if getvar("compass_check") == 1 then
+					if compass_check == 1 then
 						compass(2,33,41,1,"0xFFFF0000")
 					else
 						compass(2,33,41,0,"0xFFFF0000")
@@ -72,7 +72,7 @@ function alberta_Guide_23238()
 					dialog "The Weapon Shop"
 					dialog "can be found in the"
 					dialog "southern end of Alberta."
-					if getvar("compass_check") == 1 then
+					if compass_check == 1 then
 						compass(3,117,37,1,"0xFFFF00FF")
 					else
 						compass(3,117,37,0,"0xFFFF00FF")
@@ -84,7 +84,7 @@ function alberta_Guide_23238()
 					dialog "to the center of"
 					dialog "Alberta. It shouldn't"
 					dialog "be too hard to find."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,98,154,1,"0xFFFF00FF")
 					else
 						compass(4,98,154,0,"0xFFFF00FF")
@@ -95,7 +95,7 @@ function alberta_Guide_23238()
 					dialog "at the northern"
 					dialog "end of Alberta"
 					dialog "where you can rest."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,65,233,1,"0xFFFF00FF")
 					else
 						compass(5,65,233,0,"0xFFFF00FF")
@@ -106,13 +106,13 @@ function alberta_Guide_23238()
 					dialog "is in the same building"
 					dialog "as the Merchant Guild."
 					dialog "It's to the southwest."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,35,41,1,"0xFFFF00FF")
 					else
 						compass(6,35,41,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 6 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Alberta Guide]"
 					--dialog("Please ask me to ","Remove"")
 					--dialog("Marks from Mini-Map","if","you"")
@@ -165,7 +165,7 @@ function alberta_Guide_23238()
 	showimage("prt_soldier.bmp",255)
 end
 
-npc("alberta","Guide",SPRITE_8W_SOLDIER,120,60,3,0,0,"alberta_Guide_12060")
+npc("alberta","Guide",spr_8W_SOLDIER,120,60,3,0,0,"alberta_Guide_12060")
 function alberta_Guide_12060()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Alberta Guide]"
@@ -207,7 +207,7 @@ function alberta_Guide_12060()
 					dialog "and is located in the"
 					dialog "southwest corner"
 					dialog "of Alberta."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,33,41,1,"0xFFFF0000")
 					else
 						compass(2,33,41,0,"0xFFFF0000")
@@ -217,7 +217,7 @@ function alberta_Guide_12060()
 					dialog "The Weapon Shop"
 					dialog "can be found in the"
 					dialog "southern end of Alberta."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,117,37,1,"0xFFFF00FF")
 					else
 						compass(3,117,37,0,"0xFFFF00FF")
@@ -229,7 +229,7 @@ function alberta_Guide_12060()
 					dialog "to the center of"
 					dialog "Alberta. It shouldn't"
 					dialog "be too hard to find."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,98,154,1,"0xFFFF00FF")
 					else
 						compass(4,98,154,0,"0xFFFF00FF")
@@ -240,7 +240,7 @@ function alberta_Guide_12060()
 					dialog "at the northern"
 					dialog "end of Alberta"
 					dialog "where you can rest."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,65,233,1,"0xFFFF00FF")
 					else
 						compass(5,65,233,0,"0xFFFF00FF")
@@ -251,13 +251,13 @@ function alberta_Guide_12060()
 					dialog "is in the same building"
 					dialog "as the Merchant Guild."
 					dialog "It's to the southwest."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,35,41,1,"0xFFFF00FF")
 					else
 						compass(6,35,41,0,"0xFFFF00FF")
 					end
 				elseif mresultb == 6 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Alberta Guide]"
 					--dialog("Please ask me to ","Remove"")
 					--dialog("Marks from Mini-Map","if","you"")

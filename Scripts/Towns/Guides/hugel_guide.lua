@@ -57,7 +57,7 @@ function hugel_Hugel_Guide_Granny_9856()
 				if mresultb == 1 then
 					dialog "[Hugel Guide Granny]"
 					dialog "Well, to me, this Church is rather like a place for old folks like me, you know..."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,156,116,1,"0xFFFF0000")
 					else
 						compass(2,156,116,0,"0xFFFF0000")
@@ -67,7 +67,7 @@ function hugel_Hugel_Guide_Granny_9856()
 					dialog "Pudding rather than praise."
 					dialog "You'd better unpack your stuffs first before you start looking around this village."
 					dialog "It is the building right next to me."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,104,79,1,"0xFFFF00FF")
 					else
 						compass(3,104,79,0,"0xFFFF00FF")
@@ -76,7 +76,7 @@ function hugel_Hugel_Guide_Granny_9856()
 					dialog "[Hugel Guide Granny]"
 					dialog "Yes, when you travel, you want to drop by a pub and make new friends."
 					dialog "Go east from here, then you will arrive at the pub."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,129,66,1,"0xFF99FFFF")
 					else
 						compass(4,129,66,0,"0xFF99FFFF")
@@ -85,7 +85,7 @@ function hugel_Hugel_Guide_Granny_9856()
 					dialog "[Hugel Guide Granny]"
 					dialog "A while ago, strangers came to village and built that strange airport kind of thing..."
 					dialog "What do they call it? Airship?"
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,178,146,1,"0xFF0000FF")
 					else
 						compass(5,178,146,0,"0xFF0000FF")
@@ -94,7 +94,7 @@ function hugel_Hugel_Guide_Granny_9856()
 					dialog "[Hugel Guide Granny]"
 					dialog "Well, we have a weapon shop in the center of village."
 					dialog "But I don't know if there is any weapon that you find useful."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,70,158,1,"0xFF00FF00")
 					else
 						compass(6,70,158,0,"0xFF00FF00")
@@ -103,7 +103,7 @@ function hugel_Hugel_Guide_Granny_9856()
 					dialog "[Hugel Guide Granny]"
 					dialog "Yes, I love Hugel brand Red Potions. I haven't tasted Red Potions from any other brands yet...hohoho. "
 					dialog "The tool shop is located in the center of village."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,93,167,1,"0xFF00FF00")
 					else
 						compass(7,93,167,0,"0xFF00FF00")
@@ -112,7 +112,7 @@ function hugel_Hugel_Guide_Granny_9856()
 					dialog "[Hugel Guide Granny]"
 					dialog "The party supplies shop is around the center of village."
 					dialog "Make sure that you will not use any firecracker stuffs near other people, because it is dangerous, you know?"
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,91,105,1,"0xFFFF99FF")
 					else
 						compass(8,91,105,0,"0xFFFF99FF")
@@ -121,7 +121,7 @@ function hugel_Hugel_Guide_Granny_9856()
 					dialog "[Hugel Guide Granny]"
 					dialog "Oh, are you an aspiring Hunter?"
 					dialog "Then head northeast following the beach, then you will find the Hunter job change place."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(9,206,228,1,"0xFFFF9900")
 					else
 						compass(9,206,228,0,"0xFFFF9900")
@@ -131,7 +131,7 @@ function hugel_Hugel_Guide_Granny_9856()
 					dialog "I heard that the shrine expedition is staying in a house at the west."
 					dialog "They have put some kind of sign in the middle of village, so I guess that they are hiring people for something..."
 					dialog "I wonder what they are doing in here...hmmm."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(10,52,91,1,"0xFFFFFFFF")
 					else
 						compass(10,52,91,0,"0xFFFFFFFF")
@@ -140,7 +140,7 @@ function hugel_Hugel_Guide_Granny_9856()
 					dialog "[Hugel Guide Granny]"
 					dialog "I also like playing Monster Race games. It is pretty fun, you know?"
 					dialog "Oh, you haven't tried it yet? No~ you'd better try. Trust me, you will like it."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(11,58,72,1,"0xFFFF9900")
 					else
 						compass(11,58,72,0,"0xFFFF9900")
@@ -148,7 +148,7 @@ function hugel_Hugel_Guide_Granny_9856()
 				elseif mresultb == 11 then
 					dialog "[Hugel Guide Granny]"
 					dialog "Do you like bingo games? If you do, go visit Euklan's Bingo Game Room."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(12,55,209,1,"0xFF66FFFF")
 					else
 						compass(12,55,209,0,"0xFF66FFFF")

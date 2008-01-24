@@ -59,7 +59,7 @@ function prontera_Guide_154187()
 					dialog "to the Swordman class, has"
 					dialog "moved to Izlude. This facility"
 					dialog "is just an empty building now."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,237,41,1,"0xFF00FF00")
 					else
 						compass(4,237,41,0,"0xFF00FF00")
@@ -71,7 +71,7 @@ function prontera_Guide_154187()
 					dialog "the Acolyte class, and can"
 					dialog "be found in the northeast"
 					dialog "corner of Prontera."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,236,316,1,"0xFFFF0000")
 					else
 						compass(5,236,316,0,"0xFFFF0000")
@@ -82,7 +82,7 @@ function prontera_Guide_154187()
 					dialog "which is responsible for"
 					dialog "the safety of our capital, is"
 					dialog "in Prontera's northwest corner."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,46,345,1,"0xFF00FF00")
 					else
 						compass(6,46,345,0,"0xFF00FF00")
@@ -92,7 +92,7 @@ function prontera_Guide_154187()
 					dialog "The Weapon Shop"
 					dialog "is located northeast"
 					dialog "of the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,175,220,1,"0xFFFF00FF")
 					else
 						compass(7,175,220,0,"0xFFFF00FF")
@@ -102,7 +102,7 @@ function prontera_Guide_154187()
 					dialog "The Tool Shop"
 					dialog "is located northwest"
 					dialog "of the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,134,221,1,"0xFFFF00FF")
 					else
 						compass(8,134,221,0,"0xFFFF00FF")
@@ -113,7 +113,7 @@ function prontera_Guide_154187()
 					dialog "located both to the east"
 					dialog "and west of Prontera's"
 					dialog "central fountain area."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(9,204,191,1,"0xFFFF00FF")
 						compass(10,107,192,1,"0xFFFF00FF")
 					else
@@ -125,7 +125,7 @@ function prontera_Guide_154187()
 					dialog "The Trading Post"
 					dialog "can be found southeast"
 					dialog "from the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(11,179,184,1,"0xFF00FF00")
 					else
 						compass(11,179,184,0,"0xFF00FF00")
@@ -135,7 +135,7 @@ function prontera_Guide_154187()
 					dialog "The Pub is located"
 					dialog "southeast of the fountain,"
 					dialog "behind the Trading Post."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(12,208,154,1,"0xFF00FF00")
 					else
 						compass(12,208,154,0,"0xFF00FF00")
@@ -148,7 +148,7 @@ function prontera_Guide_154187()
 					dialog "both branches of the Prontera"
 					dialog "Library can be accessed if you"
 					dialog "head towards the east or west."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(13,120,267,1,"0xFF00FF00")
 						compass(14,192,267,1,"0xFF00FF00")
 					else
@@ -160,7 +160,7 @@ function prontera_Guide_154187()
 					dialog "The Job Agency is"
 					dialog "just southwest of the"
 					dialog "central fountain area."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(15,133,183,1,"0xFF00FF00")
 					else
 						compass(15,133,183,0,"0xFF00FF00")
@@ -173,7 +173,7 @@ function prontera_Guide_154187()
 					dialog "go to the fields that are north"
 					dialog "of Prontera by going through"
 					dialog "the castle's rear exit."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(16,156,360,1,"0xFF00FF00")
 					else
 						compass(16,156,360,0,"0xFF00FF00")
@@ -184,13 +184,13 @@ function prontera_Guide_154187()
 					dialog "is located in the"
 					dialog "southwest corner"
 					dialog "in our city of Prontera."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(17,75,91,1,"0xFF01FF01")
 					else
 						compass(17,75,91,0,"0xFF00FF00")
 					end
 				elseif mresultb == 13 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Prontera Guide]"
 					dialog "Please ask me to Remove"
 					dialog "Marks from Mini-Map if you"
@@ -291,7 +291,7 @@ function prontera_East_GateGuide_282208()
 					dialog "to the Swordman class, has"
 					dialog "moved to Izlude. This facility"
 					dialog "is just an empty building now."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,237,41,1,"0xFF00FF00")
 					else
 						compass(4,237,41,0,"0xFF00FF00")
@@ -303,7 +303,7 @@ function prontera_East_GateGuide_282208()
 					dialog "the Acolyte class, and can"
 					dialog "be found in the northeast"
 					dialog "corner of Prontera."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,236,316,1,"0xFFFF0000")
 					else
 						compass(5,236,316,0,"0xFFFF0000")
@@ -314,7 +314,7 @@ function prontera_East_GateGuide_282208()
 					dialog "which is responsible for"
 					dialog "the safety of our capital, is"
 					dialog "in Prontera's northwest corner."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,46,345,1,"0xFF00FF00")
 					else
 						compass(6,46,345,0,"0xFF00FF00")
@@ -324,7 +324,7 @@ function prontera_East_GateGuide_282208()
 					dialog "The Weapon Shop"
 					dialog "is located northeast"
 					dialog "of the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,175,220,1,"0xFFFF00FF")
 					else
 						compass(7,175,220,0,"0xFFFF00FF")
@@ -334,7 +334,7 @@ function prontera_East_GateGuide_282208()
 					dialog "The Tool Shop"
 					dialog "is located northwest"
 					dialog "of the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,134,221,1,"0xFFFF00FF")
 					else
 						compass(8,134,221,0,"0xFFFF00FF")
@@ -345,7 +345,7 @@ function prontera_East_GateGuide_282208()
 					dialog "located both to the east"
 					dialog "and west of Prontera's"
 					dialog "central fountain area."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(9,204,191,1,"0xFFFF00FF")
 						compass(10,107,192,1,"0xFFFF00FF")
 					else
@@ -357,7 +357,7 @@ function prontera_East_GateGuide_282208()
 					dialog "The Trading Post"
 					dialog "can be found southeast"
 					dialog "from the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(11,179,184,1,"0xFF00FF00")
 					else
 						compass(11,179,184,0,"0xFF00FF00")
@@ -367,7 +367,7 @@ function prontera_East_GateGuide_282208()
 					dialog "The Pub is located"
 					dialog "southeast of the fountain,"
 					dialog "behind the Trading Post."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(12,208,154,1,"0xFF00FF00")
 					else
 						compass(12,208,154,0,"0xFF00FF00")
@@ -380,7 +380,7 @@ function prontera_East_GateGuide_282208()
 					dialog "both branches of the Prontera"
 					dialog "Library can be accessed if you"
 					dialog "head towards the east or west."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(13,120,267,1,"0xFF00FF00")
 						compass(14,192,267,1,"0xFF00FF00")
 					else
@@ -392,7 +392,7 @@ function prontera_East_GateGuide_282208()
 					dialog "The Job Agency is"
 					dialog "just southwest of the"
 					dialog "central fountain area."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(15,133,183,1,"0xFF00FF00")
 					else
 						compass(15,133,183,0,"0xFF00FF00")
@@ -405,7 +405,7 @@ function prontera_East_GateGuide_282208()
 					dialog "go to the fields that are north"
 					dialog "of Prontera by going through"
 					dialog "the castle's rear exit."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(16,156,360,1,"0xFF00FF00")
 					else
 						compass(16,156,360,0,"0xFF00FF00")
@@ -416,13 +416,13 @@ function prontera_East_GateGuide_282208()
 					dialog "is located in the"
 					dialog "southwest corner"
 					dialog "in our city of Prontera."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(17,75,91,1,"0xFF01FF01")
 					else
 						compass(17,75,91,0,"0xFF00FF00")
 					end
 				elseif mresultb == 13 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Prontera Guide]"
 					dialog "Please ask me to Remove"
 					dialog "Marks from Mini-Map if you"
@@ -523,7 +523,7 @@ function prontera_West_GateGuide_29200()
 					dialog "to the Swordman class, has"
 					dialog "moved to Izlude. This facility"
 					dialog "is just an empty building now."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,237,41,1,"0xFF00FF00")
 					else
 						compass(4,237,41,0,"0xFF00FF00")
@@ -535,7 +535,7 @@ function prontera_West_GateGuide_29200()
 					dialog "the Acolyte class, and can"
 					dialog "be found in the northeast"
 					dialog "corner of Prontera."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,236,316,1,"0xFFFF0000")
 					else
 						compass(5,236,316,0,"0xFFFF0000")
@@ -546,7 +546,7 @@ function prontera_West_GateGuide_29200()
 					dialog "which is responsible for"
 					dialog "the safety of our capital, is"
 					dialog "in Prontera's northwest corner."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,46,345,1,"0xFF00FF00")
 					else
 						compass(6,46,345,0,"0xFF00FF00")
@@ -556,7 +556,7 @@ function prontera_West_GateGuide_29200()
 					dialog "The Weapon Shop"
 					dialog "is located northeast"
 					dialog "of the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,175,220,1,"0xFFFF00FF")
 					else
 						compass(7,175,220,0,"0xFFFF00FF")
@@ -566,7 +566,7 @@ function prontera_West_GateGuide_29200()
 					dialog "The Tool Shop"
 					dialog "is located northwest"
 					dialog "of the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,134,221,1,"0xFFFF00FF")
 					else
 						compass(8,134,221,0,"0xFFFF00FF")
@@ -577,7 +577,7 @@ function prontera_West_GateGuide_29200()
 					dialog "located both to the east"
 					dialog "and west of Prontera's"
 					dialog "central fountain area."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(9,204,191,1,"0xFFFF00FF")
 						compass(10,107,192,1,"0xFFFF00FF")
 					else
@@ -589,7 +589,7 @@ function prontera_West_GateGuide_29200()
 					dialog "The Trading Post"
 					dialog "can be found southeast"
 					dialog "from the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(11,179,184,1,"0xFF00FF00")
 					else
 						compass(11,179,184,0,"0xFF00FF00")
@@ -599,7 +599,7 @@ function prontera_West_GateGuide_29200()
 					dialog "The Pub is located"
 					dialog "southeast of the fountain,"
 					dialog "behind the Trading Post."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(12,208,154,1,"0xFF00FF00")
 					else
 						compass(12,208,154,0,"0xFF00FF00")
@@ -612,7 +612,7 @@ function prontera_West_GateGuide_29200()
 					dialog "both branches of the Prontera"
 					dialog "Library can be accessed if you"
 					dialog "head towards the east or west."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(13,120,267,1,"0xFF00FF00")
 						compass(14,192,267,1,"0xFF00FF00")
 					else
@@ -624,7 +624,7 @@ function prontera_West_GateGuide_29200()
 					dialog "The Job Agency is"
 					dialog "just southwest of the"
 					dialog "central fountain area."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(15,133,183,1,"0xFF00FF00")
 					else
 						compass(15,133,183,0,"0xFF00FF00")
@@ -637,7 +637,7 @@ function prontera_West_GateGuide_29200()
 					dialog "go to the fields that are north"
 					dialog "of Prontera by going through"
 					dialog "the castle's rear exit."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(16,156,360,1,"0xFF00FF00")
 					else
 						compass(16,156,360,0,"0xFF00FF00")
@@ -648,13 +648,13 @@ function prontera_West_GateGuide_29200()
 					dialog "is located in the"
 					dialog "southwest corner"
 					dialog "in our city of Prontera."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(17,75,91,1,"0xFF01FF01")
 					else
 						compass(17,75,91,0,"0xFF00FF00")
 					end
 				elseif mresultb == 13 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Prontera Guide]"
 					dialog "Please ask me to Remove"
 					dialog "Marks from Mini-Map if you"
@@ -755,7 +755,7 @@ function prontera_South_GateGuide_16029()
 					dialog "to the Swordman class, has"
 					dialog "moved to Izlude. This facility"
 					dialog "is just an empty building now."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,237,41,1,"0xFF00FF00")
 					else
 						compass(4,237,41,0,"0xFF00FF00")
@@ -767,7 +767,7 @@ function prontera_South_GateGuide_16029()
 					dialog "the Acolyte class, and can"
 					dialog "be found in the northeast"
 					dialog "corner of Prontera."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,236,316,1,"0xFFFF0000")
 					else
 						compass(5,236,316,0,"0xFFFF0000")
@@ -778,7 +778,7 @@ function prontera_South_GateGuide_16029()
 					dialog "which is responsible for"
 					dialog "the safety of our capital, is"
 					dialog "in Prontera's northwest corner."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,46,345,1,"0xFF00FF00")
 					else
 						compass(6,46,345,0,"0xFF00FF00")
@@ -788,7 +788,7 @@ function prontera_South_GateGuide_16029()
 					dialog "The Weapon Shop"
 					dialog "is located northeast"
 					dialog "of the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,175,220,1,"0xFFFF00FF")
 					else
 						compass(7,175,220,0,"0xFFFF00FF")
@@ -798,7 +798,7 @@ function prontera_South_GateGuide_16029()
 					dialog "The Tool Shop"
 					dialog "is located northwest"
 					dialog "of the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,134,221,1,"0xFFFF00FF")
 					else
 						compass(8,134,221,0,"0xFFFF00FF")
@@ -809,7 +809,7 @@ function prontera_South_GateGuide_16029()
 					dialog "located both to the east"
 					dialog "and west of Prontera's"
 					dialog "central fountain area."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(9,204,191,1,"0xFFFF00FF")
 						compass(10,107,192,1,"0xFFFF00FF")
 					else
@@ -821,7 +821,7 @@ function prontera_South_GateGuide_16029()
 					dialog "The Trading Post"
 					dialog "can be found southeast"
 					dialog "from the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(11,179,184,1,"0xFF00FF00")
 					else
 						compass(11,179,184,0,"0xFF00FF00")
@@ -831,7 +831,7 @@ function prontera_South_GateGuide_16029()
 					dialog "The Pub is located"
 					dialog "southeast of the fountain,"
 					dialog "behind the Trading Post."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(12,208,154,1,"0xFF00FF00")
 					else
 						compass(12,208,154,0,"0xFF00FF00")
@@ -844,7 +844,7 @@ function prontera_South_GateGuide_16029()
 					dialog "both branches of the Prontera"
 					dialog "Library can be accessed if you"
 					dialog "head towards the east or west."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(13,120,267,1,"0xFF00FF00")
 						compass(14,192,267,1,"0xFF00FF00")
 					else
@@ -856,7 +856,7 @@ function prontera_South_GateGuide_16029()
 					dialog "The Job Agency is"
 					dialog "just southwest of the"
 					dialog "central fountain area."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(15,133,183,1,"0xFF00FF00")
 					else
 						compass(15,133,183,0,"0xFF00FF00")
@@ -869,7 +869,7 @@ function prontera_South_GateGuide_16029()
 					dialog "go to the fields that are north"
 					dialog "of Prontera by going through"
 					dialog "the castle's rear exit."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(16,156,360,1,"0xFF00FF00")
 					else
 						compass(16,156,360,0,"0xFF00FF00")
@@ -880,13 +880,13 @@ function prontera_South_GateGuide_16029()
 					dialog "is located in the"
 					dialog "southwest corner"
 					dialog "in our city of Prontera."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(17,75,91,1,"0xFF01FF01")
 					else
 						compass(17,75,91,0,"0xFF00FF00")
 					end
 				elseif mresultb == 13 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Prontera Guide]"
 					dialog "Please ask me to Remove"
 					dialog "Marks from Mini-Map if you"
@@ -987,7 +987,7 @@ function prontera_North_GateGuide_151330()
 					dialog "to the Swordman class, has"
 					dialog "moved to Izlude. This facility"
 					dialog "is just an empty building now."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,237,41,1,"0xFF00FF00")
 					else
 						compass(4,237,41,0,"0xFF00FF00")
@@ -999,7 +999,7 @@ function prontera_North_GateGuide_151330()
 					dialog "the Acolyte class, and can"
 					dialog "be found in the northeast"
 					dialog "corner of Prontera."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,236,316,1,"0xFFFF0000")
 					else
 						compass(5,236,316,0,"0xFFFF0000")
@@ -1010,7 +1010,7 @@ function prontera_North_GateGuide_151330()
 					dialog "which is responsible for"
 					dialog "the safety of our capital, is"
 					dialog "in Prontera's northwest corner."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,46,345,1,"0xFF00FF00")
 					else
 						compass(6,46,345,0,"0xFF00FF00")
@@ -1020,7 +1020,7 @@ function prontera_North_GateGuide_151330()
 					dialog "The Weapon Shop"
 					dialog "is located northeast"
 					dialog "of the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,175,220,1,"0xFFFF00FF")
 					else
 						compass(7,175,220,0,"0xFFFF00FF")
@@ -1030,7 +1030,7 @@ function prontera_North_GateGuide_151330()
 					dialog "The Tool Shop"
 					dialog "is located northwest"
 					dialog "of the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,134,221,1,"0xFFFF00FF")
 					else
 						compass(8,134,221,0,"0xFFFF00FF")
@@ -1041,7 +1041,7 @@ function prontera_North_GateGuide_151330()
 					dialog "located both to the east"
 					dialog "and west of Prontera's"
 					dialog "central fountain area."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(9,204,191,1,"0xFFFF00FF")
 						compass(10,107,192,1,"0xFFFF00FF")
 					else
@@ -1053,7 +1053,7 @@ function prontera_North_GateGuide_151330()
 					dialog "The Trading Post"
 					dialog "can be found southeast"
 					dialog "from the central fountain."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(11,179,184,1,"0xFF00FF00")
 					else
 						compass(11,179,184,0,"0xFF00FF00")
@@ -1063,7 +1063,7 @@ function prontera_North_GateGuide_151330()
 					dialog "The Pub is located"
 					dialog "southeast of the fountain,"
 					dialog "behind the Trading Post."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(12,208,154,1,"0xFF00FF00")
 					else
 						compass(12,208,154,0,"0xFF00FF00")
@@ -1076,7 +1076,7 @@ function prontera_North_GateGuide_151330()
 					dialog "both branches of the Prontera"
 					dialog "Library can be accessed if you"
 					dialog "head towards the east or west."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(13,120,267,1,"0xFF00FF00")
 						compass(14,192,267,1,"0xFF00FF00")
 					else
@@ -1088,7 +1088,7 @@ function prontera_North_GateGuide_151330()
 					dialog "The Job Agency is"
 					dialog "just southwest of the"
 					dialog "central fountain area."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(15,133,183,1,"0xFF00FF00")
 					else
 						compass(15,133,183,0,"0xFF00FF00")
@@ -1101,7 +1101,7 @@ function prontera_North_GateGuide_151330()
 					dialog "go to the fields that are north"
 					dialog "of Prontera by going through"
 					dialog "the castle's rear exit."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(16,156,360,1,"0xFF00FF00")
 					else
 						compass(16,156,360,0,"0xFF00FF00")
@@ -1112,13 +1112,13 @@ function prontera_North_GateGuide_151330()
 					dialog "is located in the"
 					dialog "southwest corner"
 					dialog "in our city of Prontera."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(17,75,91,1,"0xFF01FF01")
 					else
 						compass(17,75,91,0,"0xFF00FF00")
 					end
 				elseif mresultb == 13 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Prontera Guide]"
 					dialog "Please ask me to Remove"
 					dialog "Marks from Mini-Map if you"

@@ -60,7 +60,7 @@ function niflheim_Roaming_Man_107156()
 			dialog "as possible. That's pretty"
 			dialog "much my life goal here in"
 			dialog "Niflheim."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(2,253,191,1,"0xFFFF3355")
 			else
 				compass(2,253,191,0,"0xFFFF3355")
@@ -79,7 +79,7 @@ function niflheim_Roaming_Man_107156()
 			dialog "Potion can ease the pain I feel."
 			dialog "...I wish I was in prison."
 			Emotion("Roaming Man","ET_KEK")
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(3,217,196,1,"0xFFCE6300")
 			else
 				compass(3,217,196,0,"0xFFCE6300")
@@ -98,7 +98,7 @@ function niflheim_Roaming_Man_107156()
 			dialog "make them angrier. You may as"
 			dialog "well let them eat you."
 			Emotion("Roaming Man","ET_KEK")
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(4,216,171,1,"0xFF55FF33")
 			else
 				compass(4,216,171,0,"0xFF55FF33")
@@ -116,7 +116,7 @@ function niflheim_Roaming_Man_107156()
 			dialog "have fun once, but now all I feel"
 			dialog "is the cold tingle of loneliness"
 			dialog "and despair...every waking moment."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(5,189,207,1,"0xFF3355FF")
 			else
 				compass(5,189,207,0,"0xFF3355FF")

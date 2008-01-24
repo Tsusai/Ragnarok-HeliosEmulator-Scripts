@@ -65,7 +65,7 @@ function payon_Guide_16267()
 					dialog "Class. You'll need to enter"
 					dialog "the Archer Village which is"
 					dialog "to the northeast of Payon."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,227,328,1,"0xFFFF0000")
 					else
 						compass(2,227,328,0,"0xFFFF0000")
@@ -76,7 +76,7 @@ function payon_Guide_16267()
 					dialog "can be found in the"
 					dialog "northwest corner of"
 					dialog "the city of Payon."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,139,159,1,"0xFFFF00FF")
 					else
 						compass(3,139,159,0,"0xFFFF00FF")
@@ -87,7 +87,7 @@ function payon_Guide_16267()
 					dialog "is located near"
 					dialog "the northwest"
 					dialog "corner of Payon."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,144,85,1,"0xFFFF00FF")
 					else
 						compass(4,144,85,0,"0xFFFF00FF")
@@ -99,7 +99,7 @@ function payon_Guide_16267()
 					dialog "part of Payon. It's the"
 					dialog "best place to relax after"
 					dialog "a long day of hunting."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,220,117,1,"0xFFFF00FF")
 					else
 						compass(5,220,117,0,"0xFFFF00FF")
@@ -109,7 +109,7 @@ function payon_Guide_16267()
 					dialog "The Central Palace"
 					dialog "is located to the north"
 					dialog "within the city of Payon."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,155,245,1,"0xFF00FF00")
 					else
 						compass(6,155,245,0,"0xFF00FF00")
@@ -119,7 +119,7 @@ function payon_Guide_16267()
 					dialog "The Empress"
 					dialog "can be found to the"
 					dialog "northwest in Payon."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,107,324,1,"0xFF00FF00")
 					else
 						compass(7,107,324,0,"0xFF00FF00")
@@ -129,7 +129,7 @@ function payon_Guide_16267()
 					dialog "The Palace Annex"
 					dialog "can be found in the"
 					dialog "western part of Payon."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,130,204,1,"0xFF00FF00")
 					else
 						compass(8,130,204,0,"0xFF00FF00")
@@ -139,7 +139,7 @@ function payon_Guide_16267()
 					dialog "The Royal Kitchen"
 					dialog "is located near the"
 					dialog "northern end of Payon."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(9,154,325,1,"0xFF00FF00")
 					else
 						compass(9,154,325,0,"0xFF00FF00")
@@ -149,13 +149,13 @@ function payon_Guide_16267()
 					dialog "The Forge is"
 					dialog "situated near"
 					dialog "the center of Payon."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(10,126,169,1,"0xFFFFFF00")
 					else
 						compass(10,126,169,0,"0xFFFFFF00")
 					end
 				elseif mresultb == 10 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Payon Guide]"
 					dialog "Please ask me to Remove"
 					dialog "Marks from Mini-Map if you"
@@ -252,7 +252,7 @@ function pay_arche_Guide_8530()
 					dialog "the Archer Village,"
 					dialog "handles Job Changes"
 					dialog "to the Archer Class."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(0,144,164,1,"0xFFFF0000")
 					else
 						compass(0,144,164,0,"0xFFFF0000")
@@ -263,7 +263,7 @@ function pay_arche_Guide_8530()
 					dialog "a Tool Shop in"
 					dialog "the northeast corner"
 					dialog "of the Archer Village."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(1,71,156,1,"0xFFFF00FF")
 					else
 						compass(1,71,156,0,"0xFFFF00FF")
@@ -274,13 +274,13 @@ function pay_arche_Guide_8530()
 					dialog "the Payon Dungeon"
 					dialog "is located at the west"
 					dialog "end of the village."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,34,132,1,"0xFFFFFFFF")
 					else
 						compass(2,34,132,0,"0xFFFFFFFF")
 					end
 				elseif mresultb == 4 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Payon Guide]"
 					dialog "If you'd like to erase the marks on the mini-map, select menu, 'Wipe all indicators on the mini-map'."
 					break

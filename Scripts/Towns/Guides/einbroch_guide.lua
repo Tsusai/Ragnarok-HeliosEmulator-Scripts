@@ -64,7 +64,7 @@ function einbroch_Guide_ein_72202()
 					dialog "in the northwestern part"
 					dialog "of the city. There you can"
 					dialog "see our city's pride and joy, the Airship. Remember that you must pay admission to board the Airship."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,63,228,1,"0xFFFF0000")
 					else
 						compass(2,63,228,0,"0xFFFF0000")
@@ -77,7 +77,7 @@ function einbroch_Guide_ein_72202()
 					dialog "running between here"
 					dialog "and Einbech run all day"
 					dialog "long, everyday."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,236,279,1,"0xFFFF00FF")
 					else
 						compass(3,236,279,0,"0xFFFF00FF")
@@ -88,7 +88,7 @@ function einbroch_Guide_ein_72202()
 					dialog "most important facility in"
 					dialog "Einbroch, is located in the"
 					dialog "southern part of the city."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,158,78,1,"0xFFFF00FF")
 					else
 						compass(4,158,78,0,"0xFFFF00FF")
@@ -99,7 +99,7 @@ function einbroch_Guide_ein_72202()
 					dialog "shopping district, can be"
 					dialog "found just east from the"
 					dialog "center of Einbroch."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,232,190,1,"0xFFFF00FF")
 					else
 						compass(5,232,190,0,"0xFFFF00FF")
@@ -111,7 +111,7 @@ function einbroch_Guide_ein_72202()
 					dialog "caliber accomodations."
 					dialog "There, you can enjoy your"
 					dialog "stay in Einbroch in comfort~"
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,260,201,1,"0xFF00FF00")
 					else
 						compass(6,260,201,0,"0xFF00FF00")
@@ -123,7 +123,7 @@ function einbroch_Guide_ein_72202()
 					dialog "Plaza. There you can"
 					dialog "purchase weapons for"
 					dialog "your personal use."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,215,221,1,"0xFF00FF00")
 					else
 						compass(7,215,221,0,"0xFF00FF00")
@@ -134,7 +134,7 @@ function einbroch_Guide_ein_72202()
 					dialog "annex of the Factory and"
 					dialog "is located in the southwest"
 					dialog "sector of Einbroch."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,36,49,1,"0xFF00FF00")
 					else
 						compass(8,36,49,0,"0xFF00FF00")
@@ -146,7 +146,7 @@ function einbroch_Guide_ein_72202()
 					dialog "part of Einbroch. You can"
 					dialog "upgrade your equipment"
 					dialog "by using their services."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(9,244,90,1,"0xFF00FF00")
 					else
 						compass(9,244,90,0,"0xFF00FF00")
@@ -158,13 +158,13 @@ function einbroch_Guide_ein_72202()
 					dialog "the city. From the top of"
 					dialog "the tower, you can view"
 					dialog "all of Einbroch."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(10,174,195,1,"0xFFFFFF00")
 					else
 						compass(10,174,195,0,"0xFFFFFF00")
 					end
 				elseif mresultb == 10 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Einbroch Guide]"
 					dialog("Please ask me to ","Remove")
 					dialog("Marks from Mini-Map","if","you")
@@ -273,7 +273,7 @@ function einbroch_Guide_15543()
 					dialog "in the northwestern part"
 					dialog "of the city. There you can"
 					dialog "see our city's pride and joy, the Airship. Remember that you must pay admission to board the Airship."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,63,228,1,"0xFFFF0000")
 					else
 						compass(2,63,228,0,"0xFFFF0000")
@@ -286,7 +286,7 @@ function einbroch_Guide_15543()
 					dialog "running between here"
 					dialog "and Einbech run all day"
 					dialog "long, everyday."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,236,279,1,"0xFFFF00FF")
 					else
 						compass(3,236,279,0,"0xFFFF00FF")
@@ -297,7 +297,7 @@ function einbroch_Guide_15543()
 					dialog "most important facility in"
 					dialog "Einbroch, is located in the"
 					dialog "southern part of the city."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,158,78,1,"0xFFFF00FF")
 					else
 						compass(4,158,78,0,"0xFFFF00FF")
@@ -308,7 +308,7 @@ function einbroch_Guide_15543()
 					dialog "shopping district, can be"
 					dialog "found just east from the"
 					dialog "center of Einbroch."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,232,190,1,"0xFFFF00FF")
 					else
 						compass(5,232,190,0,"0xFFFF00FF")
@@ -320,7 +320,7 @@ function einbroch_Guide_15543()
 					dialog "caliber accomodations."
 					dialog "There, you can enjoy your"
 					dialog "stay in Einbroch in comfort~"
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,260,201,1,"0xFF00FF00")
 					else
 						compass(6,260,201,0,"0xFF00FF00")
@@ -332,7 +332,7 @@ function einbroch_Guide_15543()
 					dialog "Plaza. There you can"
 					dialog "purchase weapons for"
 					dialog "your personal use."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,215,221,1,"0xFF00FF00")
 					else
 						compass(7,215,221,0,"0xFF00FF00")
@@ -343,7 +343,7 @@ function einbroch_Guide_15543()
 					dialog "annex of the Factory and"
 					dialog "is located in the southwest"
 					dialog "sector of Einbroch."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,36,49,1,"0xFF00FF00")
 					else
 						compass(8,36,49,0,"0xFF00FF00")
@@ -355,7 +355,7 @@ function einbroch_Guide_15543()
 					dialog "part of Einbroch. You can"
 					dialog "upgrade your equipment"
 					dialog "by using their services."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(9,244,90,1,"0xFF00FF00")
 					else
 						compass(9,244,90,0,"0xFF00FF00")
@@ -367,13 +367,13 @@ function einbroch_Guide_15543()
 					dialog "the city. From the top of"
 					dialog "the tower, you can view"
 					dialog "all of Einbroch."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(10,174,195,1,"0xFFFFFF00")
 					else
 						compass(10,174,195,0,"0xFFFFFF00")
 					end
 				elseif mresultb == 10 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Einbroch Guide]"
 					dialog("Please ask me to  Remove")
 					dialog("Marks from Mini-Map","if","you")
@@ -482,7 +482,7 @@ function einbroch_Guide_162317()
 					dialog "in the northwestern part"
 					dialog "of the city. There you can"
 					dialog "see our city's pride and joy, the Airship. Remember that you must pay admission to board the Airship."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,63,228,1,"0xFFFF0000")
 					else
 						compass(2,63,228,0,"0xFFFF0000")
@@ -495,7 +495,7 @@ function einbroch_Guide_162317()
 					dialog "running between here"
 					dialog "and Einbech run all day"
 					dialog "long, everyday."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,236,279,1,"0xFFFF00FF")
 					else
 						compass(3,236,279,0,"0xFFFF00FF")
@@ -506,7 +506,7 @@ function einbroch_Guide_162317()
 					dialog "most important facility in"
 					dialog "Einbroch, is located in the"
 					dialog "southern part of the city."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,158,78,1,"0xFFFF00FF")
 					else
 						compass(4,158,78,0,"0xFFFF00FF")
@@ -517,7 +517,7 @@ function einbroch_Guide_162317()
 					dialog "shopping district, can be"
 					dialog "found just east from the"
 					dialog "center of Einbroch."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,232,190,1,"0xFFFF00FF")
 					else
 						compass(5,232,190,0,"0xFFFF00FF")
@@ -529,7 +529,7 @@ function einbroch_Guide_162317()
 					dialog "caliber accomodations."
 					dialog "There, you can enjoy your"
 					dialog "stay in Einbroch in comfort~"
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,260,201,1,"0xFF00FF00")
 					else
 						compass(6,260,201,0,"0xFF00FF00")
@@ -541,7 +541,7 @@ function einbroch_Guide_162317()
 					dialog "Plaza. There you can"
 					dialog "purchase weapons for"
 					dialog "your personal use."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(7,215,221,1,"0xFF00FF00")
 					else
 						compass(7,215,221,0,"0xFF00FF00")
@@ -552,7 +552,7 @@ function einbroch_Guide_162317()
 					dialog "annex of the Factory and"
 					dialog "is located in the southwest"
 					dialog "sector of Einbroch."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(8,36,49,1,"0xFF00FF00")
 					else
 						compass(8,36,49,0,"0xFF00FF00")
@@ -564,7 +564,7 @@ function einbroch_Guide_162317()
 					dialog "part of Einbroch. You can"
 					dialog "upgrade your equipment"
 					dialog "by using their services."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(9,244,90,1,"0xFF00FF00")
 					else
 						compass(9,244,90,0,"0xFF00FF00")
@@ -576,13 +576,13 @@ function einbroch_Guide_162317()
 					dialog "the city. From the top of"
 					dialog "the tower, you can view"
 					dialog "all of Einbroch."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(10,174,195,1,"0xFFFFFF00")
 					else
 						compass(10,174,195,0,"0xFFFFFF00")
 					end
 				elseif mresultb == 10 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Einbroch Guide]"
 					dialog("Please ask me to Remove")
 					dialog("Marks from Mini-Map if you")
@@ -692,7 +692,7 @@ function einbech_Guide_6737()
 					dialog "and northeast parts of"
 					dialog "Einbech. There, you can"
 					dialog "take a train to Einbroch."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,43,213,1,"0xFFFF0000")
 					else
 						compass(2,43,213,0,"0xFFFF0000")
@@ -703,7 +703,7 @@ function einbech_Guide_6737()
 					dialog "in the southern part of"
 					dialog "Einbech. It's a nice place"
 					dialog "to relax after a long day."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,142,112,1,"0xFFFF00FF")
 					else
 						compass(3,142,112,0,"0xFFFF00FF")
@@ -715,7 +715,7 @@ function einbech_Guide_6737()
 					dialog "Einbech. There, you can"
 					dialog "purchase any tools you"
 					dialog "might need for your travels."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,176,136,1,"0xFFFF00FF")
 					else
 						compass(4,176,136,0,"0xFFFF00FF")
@@ -728,7 +728,7 @@ function einbech_Guide_6737()
 					dialog "under construction and they"
 					dialog "haven't started accepting"
 					dialog "applications."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,250,110,1,"0xFFFF00FF")
 					else
 						compass(5,250,110,0,"0xFFFF00FF")
@@ -740,13 +740,13 @@ function einbech_Guide_6737()
 					dialog "is located in the northern"
 					dialog "part of this town. It's where"
 					dialog "we get all our ores, although monsters get in the miners' way."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,138,251,1,"0xFF00FF00")
 					else
 						compass(6,138,251,0,"0xFF00FF00")
 					end
 				elseif mresultb == 6 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Einbech Guide]"
 					dialog("Please ask me to  Remove")
 					dialog("Marks from Mini-Map if you")
@@ -850,7 +850,7 @@ function einbech_Guide_48214()
 					dialog "and northeast parts of"
 					dialog "Einbech. There, you can"
 					dialog "take a train to Einbroch."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,43,213,1,"0xFFFF0000")
 					else
 						compass(2,43,213,0,"0xFFFF0000")
@@ -861,7 +861,7 @@ function einbech_Guide_48214()
 					dialog "in the southern part of"
 					dialog "Einbech. It's a nice place"
 					dialog "to relax after a long day."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,142,112,1,"0xFFFF00FF")
 					else
 						compass(3,142,112,0,"0xFFFF00FF")
@@ -873,7 +873,7 @@ function einbech_Guide_48214()
 					dialog "Einbech. There, you can"
 					dialog "purchase any tools you"
 					dialog "might need for your travels."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,176,136,1,"0xFFFF00FF")
 					else
 						compass(4,176,136,0,"0xFFFF00FF")
@@ -886,7 +886,7 @@ function einbech_Guide_48214()
 					dialog "under construction and they"
 					dialog "haven't started accepting"
 					dialog "applications."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,250,110,1,"0xFFFF00FF")
 					else
 						compass(5,250,110,0,"0xFFFF00FF")
@@ -898,13 +898,13 @@ function einbech_Guide_48214()
 					dialog "is located in the northern"
 					dialog "part of this town. It's where"
 					dialog "we get all our ores, although monsters get in the miners' way."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,138,251,1,"0xFF00FF00")
 					else
 						compass(6,138,251,0,"0xFF00FF00")
 					end
 				elseif mresultb == 6 then
-					compass_check("=",1)
+					--compass_check("=",1)
 					dialog "[Einbech Guide]"
 					dialog("Please ask me to ","Remove")
 					dialog("Marks from Mini-Map","if","you")

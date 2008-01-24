@@ -53,7 +53,7 @@ function ayothaya_Noi_203169()
 			dialog "Our Weapon Shop"
 			dialog "is located at ^55FF33+^000000."
 
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(2,165,90,1,"0xFF55FF33")
 			else
 				compass(2,165,90,0,"0xFF55FF33")
@@ -65,7 +65,7 @@ function ayothaya_Noi_203169()
 			dialog "[Noi]"
 			dialog "Our Tool Shop"
 			dialog "is located at ^3355FF+^000000."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(3,129,86,1,"0xFF3355FF")
 			else
 				compass(3,129,86,0,"0xFF3355FF")
@@ -78,7 +78,7 @@ function ayothaya_Noi_203169()
 			dialog "Of course, you must"
 			dialog "drop by our Tavern."
 			dialog "It is located at ^00FF00+^000000."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(4,232,76,1,"0xFF00FF00")
 			else
 				compass(4,232,76,0,"0xFF00FF00")
@@ -91,7 +91,7 @@ function ayothaya_Noi_203169()
 			dialog "[Noi]"
 			dialog "Our Shrine"
 			dialog "is located at ^00FF00+^000000."
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(5,208,283,1,"0xFF00FF00")
 			else
 				compass(5,208,283,0,"0xFF00FF00")
@@ -104,7 +104,7 @@ function ayothaya_Noi_203169()
 			dialog "Our famous"
 			dialog "Fishing Spot"
 			dialog "is located at ^00FF00+^000000"
-			if (getvar(compass_check) == 1) then
+			if compass_check == 1 then
 				compass(6,253,99,1,"0xFF00FF00")
 			else
 				compass(6,253,99,0,"0xFF00FF00")

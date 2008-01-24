@@ -61,7 +61,7 @@ function rachel_Rachel_Guide_138146()
 					dialog "[Rachel Guide]"
 					dialog "Cheshrumnir is a holy ground where pope, the incarnation of goddess Freya stays."
 					dialog "Take the road to the north to find the building."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(2,150,249,1,"0xFFFF0000")
 					else
 						compass(2,150,249,0,"0xFFFF0000")
@@ -70,7 +70,7 @@ function rachel_Rachel_Guide_138146()
 					dialog "[Rachel Guide]"
 					dialog "You can rest your fatigue off the journey in the Inn."
 					dialog "The left building next to me is the Inn of Rachel."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(3,115,149,1,"0xFFFF00FF")
 					else
 						compass(3,115,149,0,"0xFFFF00FF")
@@ -79,7 +79,7 @@ function rachel_Rachel_Guide_138146()
 					dialog "[Rachel Guide]"
 					dialog "Do you want to check out the weapons that are sold in Rachel?"
 					dialog "The weapon shop is located near the western gate."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(4,42,87,1,"0xFF99FFFF")
 					else
 						compass(4,42,87,0,"0xFF99FFFF")
@@ -88,7 +88,7 @@ function rachel_Rachel_Guide_138146()
 					dialog "[Rachel Guide]"
 					dialog "Rachel tool shop sells the best quality potions."
 					dialog "It's located near the western gate."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(5,83,78,1,"0xFF0000FF")
 					else
 						compass(5,83,78,0,"0xFF0000FF")
@@ -96,7 +96,7 @@ function rachel_Rachel_Guide_138146()
 				elseif mresultb == 5 then
 					dialog "[Rachel Guide]"
 					dialog "The Airport is located outside the eastern gate."
-					if getvar(compass_check) == 1 then
+					if compass_check == 1 then
 						compass(6,273,125,1,"0xFF00FF00")
 					else
 						compass(6,273,125,0,"0xFF00FF00")
