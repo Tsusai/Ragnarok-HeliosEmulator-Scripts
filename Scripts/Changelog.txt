@@ -1,3 +1,6 @@
+- Rev 44 -
+[2008/1/24] Spre - Juperous Scripts were not committed for some reason...
+
 - Rev 43 -
 [2008/1/24] Spre - Modified all Guides, They SHOULD work as expected now.
 [2008/1/24] Spre - Modified the last changelog entry...typo :D
