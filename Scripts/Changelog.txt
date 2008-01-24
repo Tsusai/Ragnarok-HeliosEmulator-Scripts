@@ -1,10 +1,14 @@
-- Rev 40-
+- Rev 41 -
+[2008/1/23] RabidCh - Added gefenia warps, updated airship warps, and added special izlude acolyte arena warps.  Some are commented out.
+[2008/1/23] RabidCh - Airships  warps might need to be tested...
+
+- Rev 40 -
 [2008/1/11] Spre - Comitted the rest f the guides, all load for me, but don't fully operate.
 [2008/1/11] Spre - Committed the Second to last Niflheim town script, named *Niflheim_2*.
 [2008/1/11] Spre - Committed The Geffen Town NPC, and added the Random Number game in Geffen Although it errors, it has comments where it errors so we can debug it.
 -
 
-- Rev 39-
+- Rev 39 -
 [2008/1/10] Spre - Modified The following guides, Izlude, Geffen, Hugel, Juno. They now load without errors.
 -
 
