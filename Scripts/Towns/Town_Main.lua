@@ -36,7 +36,7 @@ require("Scripts/Towns/Comodo/Comodo_Casino")
 require("Scripts/Towns/Juno/fly_ship")
 require("Scripts/Towns/Juno/yuno_museum")
 require("Scripts/Towns/Juno/yuno_ryusei")
-require("Scripts/Towns/Juperous/jupe_global")
+require("Scripts/Towns/Juperus/jupe_global")
 
 
 --
@@ -75,6 +75,6 @@ require("Scripts/Towns/Guides/kunlun_guide")
 --require("Scripts/Towns/Jawaii/jawaii")
 --require("Scripts/Towns/Comodo/Comodo_1")
 --require("Scripts/Towns/Juno/matnani_yuno")
---require("Scripts/Towns/Juperous/juperos_area1")
---require("Scripts/Towns/Juperous/juperos_area2")
---require("Scripts/Towns/Juperous/juperos_ele")
+--require("Scripts/Towns/Juperus/juperos_area1")
+--require("Scripts/Towns/Juperus/juperos_area2")
+--require("Scripts/Towns/Juperus/juperos_ele")
