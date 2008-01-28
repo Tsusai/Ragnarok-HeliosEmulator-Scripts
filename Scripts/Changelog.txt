@@ -1,3 +1,6 @@
+- Rev 45 -
+[2008/1/28] RabidCh - Renamed Scripts/Towns/Juperos spelling from "Juperus".
+
 - Rev 44 -
 [2008/1/24] Spre - Juperous Scripts were not committed for some reason...
 
