@@ -1,3 +1,9 @@
+- Rev 46 -
+[2008/1/28] RabidCh - Some standardization updates:
+[2008/1/28] RabidCh - Renamed Scripts/Towns/Yuno spelling from "Juno".
+[2008/1/28] RabidCh - Renamed Scripts/Towns/Guides/yuno_guide.lua spelling from "juno_guide.lua".
+[2008/1/28] RabidCh - Edited specified directories for files in Town_Main.lua.
+
 - Rev 45 -
 [2008/1/28] RabidCh - Renamed Scripts/Towns/Juperos spelling from "Juperus".
 
