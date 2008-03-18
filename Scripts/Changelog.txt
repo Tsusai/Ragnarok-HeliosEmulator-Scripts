@@ -1,54 +1,82 @@
-- Rev 47 -
+  _    _          _   _
+ | |  | |        | | (_)              
+ | |__| |   ___  | |  _    ___    ___
+ |  __  |  / _ \ | | | |  / _ \  / __|
+ | |  | | |  __/ | | | | | (_) | \__ \
+ |_|  |_|  \___| |_| |_|  \___/  |___/
+
+
+Ragnarok Emulator
+Developers & Contributers
+- RaX
+- Aeomin
+- Spre
+- RabidCh
+
+--------------------------------------------------------------------------------
+
+-Rev 48-
+[2008/3/18] Spre - Added Header to changelog and cleaned up the entries to look nicer.
+-
+
+-Rev 47-
 [2008/3/17] RaX - Added Sample script for showing emotions using the Emotion(const) function
 [2008/3/17] RaX - Added Emotion constants to /Core/Emotion_Const.lua
+-
 
-- Rev 46 -
+-Rev 46-
 [2008/1/28] RabidCh - Some standardization updates:
 [2008/1/28] RabidCh - Renamed Scripts/Towns/Yuno spelling from "Juno".
 [2008/1/28] RabidCh - Renamed Scripts/Towns/Guides/yuno_guide.lua spelling from "juno_guide.lua".
 [2008/1/28] RabidCh - Edited specified directories for files in Town_Main.lua.
+-
 
-- Rev 45 -
+-Rev 45-
 [2008/1/28] RabidCh - Renamed Scripts/Towns/Juperos spelling from "Juperus".
+-
 
-- Rev 44 -
+-Rev 44-
 [2008/1/24] Spre - Juperous Scripts were not committed for some reason...
+-
 
-- Rev 43 -
+-Rev 43-
 [2008/1/24] Spre - Modified all Guides, They SHOULD work as expected now.
 [2008/1/24] Spre - Modified the last changelog entry...typo :D
 [2008/1/24] Spre - Added some yuno/juperous town scripts.
+-
 
-- Rev 42 -
+-Rev 42-
 [2008/1/24] Spre - Added The comodo Diary and Casino Town scripts.
 [2008/1/24] Spre - Added the Juno Airship Script. May need more testing.
+-
 
-- Rev 41 -
+-Rev 41-
 [2008/1/23] RabidCh - Added gefenia warps, updated airship warps, and added special izlude acolyte arena warps.  Some are commented out.
 [2008/1/23] RabidCh - Airships  warps might need to be tested...
+-
 
-- Rev 40 -
+-Rev 40-
 [2008/1/11] Spre - Comitted the rest f the guides, all load for me, but don't fully operate.
 [2008/1/11] Spre - Committed the Second to last Niflheim town script, named *Niflheim_2*.
 [2008/1/11] Spre - Committed The Geffen Town NPC, and added the Random Number game in Geffen Although it errors, it has comments where it errors so we can debug it.
 -
 
-- Rev 39 -
+-Rev 39-
 [2008/1/10] Spre - Modified The following guides, Izlude, Geffen, Hugel, Juno. They now load without errors.
 -
 
-- Rev 38 -
+-Rev 38-
 [2008/1/9] RabidCh - Added WoE warps, episode 10 warps, valkyrie.lua, and rachel warps.
 [2008/1/9] RabidCh - Moved ve_fild, ra_fild, and thor_v warps from veins_town to organize them.
 [2008/1/9] RabidCh - Added various warps in Scripts/Warps/Other/
 [2008/1/9] RabidCh - TODO: Still many various warps scattered across Aegis to do.
 -
 
-- Rev 37 -
+-Rev 37-
 [2008/1/7] RabidCh - Fixed faulty script coversion in amatsu_town and louyang_town in Scripts/Warps/Towns.
 -
 
-- Rev 36 -
+-Rev 36-
 [2008/1/7] RabidCh - Replaced warp file niflheim_town in Scripts/Warps/Towns.
 [2008/1/7] RabidCh - Added town warp files: amatsu_town, ayothaya_town, gonryun_town, louyang_town, jawaii_town, umbala_town.
 [2008/1/7] RabidCh - Added dungeon warp files: tur_dun, lou_dun, ama_dun, gon_dun, um_dun, ayo_dun.
@@ -57,167 +85,167 @@
 [2008/1/7] RabidCh - Moved warp "dun3_to_fild01_286_571" in Scripts/Warps/Fields from comodo_fields to beach_dun in Scripts/Warps/Dungeons.
 -
 
-- Rev 35 -
+-Rev 35-
 [2008/1/5] Muad_Dib - Fixed all NPC_ID's since my file broke them.
 -
 
-- Rev 34 -
+-Rev 34-
 [2008/1/3] Spre - Fixed the following Guides. Alberta, Aldebaran, Amatsu, Ayothaya, Comodo, Einbroch
 They nw load and have some functionality, but not a whole lot.
 -
 
-- Rev 33 -
+-Rev 33-
 [2008/1/3] Spre - Commited Muads NPC_ID.LUA and VAR_CONST.LUA into Scripts/core/. These include numerous new noc ids and vars from his zone.
 Also Updated the alberta guide, it now loads.
 -
 
-- Rev 32 -
+-Rev 32-
 [2008/1/3] RabidCh - Fixed function name conflects in existing warp files.  Format added on warp coordinates and x-coord of OnTouch to the end.
 [2008/1/3] RabidCh - Fixed headers in Town_Main.lua and Warp_Main.lua
 -
 
-- Rev 31 -
+-Rev 31-
 [2008/1/1] RaX - Updated Geffen warps. uncommented/helios-ized a warp in geffen_in (function Exit16654)
 -
 
-- Rev 30 -
+-Rev 30-
 [2008/1/1] Spre - Added The last of the alberta Town scripts, also added clocktower and alde scripts.
 [2008/1/1] Spre - Mdified Town_main.lua added new working scripts to it, as well as new buggy scripts, these are commented out.
 [2008/1/1] Spre - TODO : Figure out the helios looping issue with guides, as well as geting the kafrapass function to work. These were commited so that all script devs can figure this out.
 -
 
-- Rev 29 -
+-Rev 29-
 [2007/12/31] RabidCh - TODO : LOTS OF BROKEN WARP NAMES BECAUSE OF FUNCTION NAME CONFLICTS.
 [2007/12/31] RabidCh - Fixed all of Spre's indented headers >:( (DO NOT USE INDENTS)
 [2007/12/31] RabidCh - Fixed SOME warp function name conflicts in prontera.lua/izlude.lua.
 -
 
-- Rev 28 -
+-Rev 28-
 [2007/12/31] Spre - Fixed Changelog, If I do this again Imma scream.
 -
 
-- Rev 27 -
+-Rev 27-
 [2007/12/31] Spre - Added Scripts/Towns/Alberta_1, which is the first of 3 alberta town scripts.
 Modified Twn_main.lua to show the NPC.
 -
 
-- Rev 26 -
+-Rev 26-
 [2007/12/31] Spre - Fixed end errors in Scripts/Quests/Items/Smile_event.lua, thanks Aeomin. Modified Quests_main.lua
 Commented out the mixture quest untill it can be fixed. Also Changed the header on some files to credit
 Yaros     as per requested.
 -
 
-- Rev 25 -
+-Rev 25-
 [2007/12/31 Spre - Added the header to current files(contact me if any issues.) Added the following to Scripts/Quests/
 Bunny_Band.Lua, Smile_Event.lua, and Solution_mixture.lua. Also Modified
 Quest_main.lua with the new quests as well as organized it more. Layout for item quests will go under
 Quests/Items for organizational purposes.
 -
 
-- Rev 24 -
+-Rev 24-
 [2007/12/31] Spre - Fixed Bugs in the Scripts/Warps/Niflheim_town script. Fixed Typo 
 in Scripts/Warps/Warp_main. Added in Scripts/Towns/Niflheim_1 Which is 1 out of 4 Niflheim town
 scripts. Added More to Core/var_const, Thanks Aeomin
 -
 
-- Rev 23 -
+-Rev 23-
 [2007/12/31] Spre - Minor Typo adjustment in Izlude Directory.
 -
 
-- Rev 22 -
+-Rev 22-
 [2007/12/31] Spre - Added Const Change in Scripts/Core for Aeomin, Also Added Nif Directory with the Niflhein Divorce script.
 -
 
-- Rev 21 -
+-Rev 21-
 [2007/12/30] Tsusai - Added Aeomin's Var_Const.lua for character constants.  Requires Core Rev 404
 -
 
-- Rev 20 -
+-Rev 20-
 [2007/12/30] Spre - Added Unsaved Change to Scripts/Core/Core.lua
 -
 
-- Rev 19 -
+-Rev 19-
 [2007/12/30] Spre - Added Veins and Izlude Town scripts, Including the Town_Main lua script. Also added warps for Veins. Changed Core/Core.lua to include the new require for the Town_Main.lua that was added to Towns/
 -
 
-- Rev 18 -
+-Rev 18-
 [2007/11/28] RabidCh - Added Clock Tower and Yuno warps.
 -
 
-- Rev 17 -
+-Rev 17-
 [2007/11/27] RabidCh - Fixed the rest of the broken scripts from Revision 14.
 -
 
-- Rev 16 -
+-Rev 16-
 [2007/11/27] RabidCh - Fixed function names in Warps/Towns/geffen_town.lua >:(
 -
 
-- Rev 15 -
+-Rev 15-
 [2007/11/27] RabidCh - Fixed a broken function name in Warps/Towns/comodo_town.lua
 -
 
-- Rev 14 -
+-Rev 14-
 [2007/11/27] RabidCh - Added comodo_link.sc, geffen_link.sc, payon_link.sc, xmas_link.sc from Yaros
 [2007/11/27] RabidCh - Added Comodo warps, Payon warps, Geffen warps, and Lutie warps.
 -
 
-- Rev 13 -
+-Rev 13-
 [2007/11/27] RabidCh - Added glastheim_link.sc, alberta_link.sc from Yaros
 [2007/11/27] RabidCh - Added alberta_town and treasure from split alberta_link.sc
 -
 
-- Rev 12 -
+-Rev 1 -
 [2007/11/26] RabidCh - Merged izlude_link.sc from Yaros with izlude_town, prontera_fields, iz_dun.
 [2007/11/26] RabidCh - Fixed previous change dates on the warp scripts from Rev 11.
 -
 
-- Rev 11 -
+-Rev 11-
 [2007/11/26] RabidChocobo - Added prontera_link.sc from Aegis and split it up into different files
 [2007/11/26] RabidChocobo - Renamed Cities/ to Towns/
 -
 
-- Rev 10 -
+-Rev 10-
 [2007/07/22] Tsusai - Added a sample script for zeny subtraction and addition
  (reflects server rev 294)
 -
 
-- Rev 9 -
+-Rev 9-
 [2007/07/22] Tsusai - Added a sample script for menu and character vars
  (reflects server rev 293)
 -
 
-- Rev 8 -
+-Rev 8-
 [2007/06/11] Tsusai - Core/NPC_ID: Added L0ne_W0lf's changes.  Some NPCs
  had their IDs as part of their names.
 -
 
-- Rev 7 -
+-Rev 7-
 [2007/06/11] RaX - Added Custom script folder along with a custom warper.
 -
 
-- Rev 6 -
+-Rev 6-
 [2007/06/10] Tsusai - Core/NPC_ID: Added St. Patrick's day sprite
 -
 
-- Rev 5 -
+-Rev 5-
 [2007/05/29] Tsusai - Warps/Jobs/novice_training_0#: Added new versions of warps
 [2007/05/29] Tsusai - Quests/Jobs/novice_1: Added.  Any NPCs that are supported
  are enabled. Everything is lua syntax sound.
 -
 
-- Rev 4 -
+-Rev 4-
 [2007/05/02] Tsusai - Added novice training ground warps and some folders.
 -
 
-- Rev 3 -
+-Rev 3-
 [2007/04/29] Tsusai - Removed MapLoaders directory.
 -
 
-- Rev 2 -
+-Rev 2-
 [2007/04/22] Tsusai - Added Core folder with Core.lua and NPC_ID.lua
 [2007/04/22] Tsusai - Added MapLoaders directory.
 -
 
-- Rev 1 -
+-Rev 1-
 [2007/04/17] Tsusai - Initial import
 -
