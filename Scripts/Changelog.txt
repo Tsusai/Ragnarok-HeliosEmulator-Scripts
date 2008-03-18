@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 49-
+[2008/3/18] Spre - Added CashItem scripts from Yaros 11.1? Note Helios doesn't have their functions yet.
+-
+
 -Rev 48-
 [2008/3/18] Spre - Added Header to changelog and cleaned up the entries to look nicer.
 -
