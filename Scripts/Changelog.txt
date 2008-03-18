@@ -1,3 +1,7 @@
+- Rev 47 -
+[2008/3/17] RaX - Added Sample script for showing emotions using the Emotion(const) function
+[2008/3/17] RaX - Added Emotion constants to /Core/Emotion_Const.lua
+
 - Rev 46 -
 [2008/1/28] RabidCh - Some standardization updates:
 [2008/1/28] RabidCh - Renamed Scripts/Towns/Yuno spelling from "Juno".

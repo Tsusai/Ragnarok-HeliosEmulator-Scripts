@@ -14,7 +14,10 @@
 -- require("Scripts/Core/JobID")
 
 -- Lua Const
-   require("Scripts/Core/Var_const")
+   require("Scripts/Core/Var_Const")
+
+-- Emotion Const
+   require("Scripts/Core/Emotion_Const")
 
 -- Warp master list
    require("Scripts/Warps/Warp_Main")
