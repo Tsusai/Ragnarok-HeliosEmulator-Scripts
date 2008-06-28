@@ -18,3 +18,15 @@
 --|    No Mob functions, this is just here for me   |--
 --|     when we get them                            |--
 --\_________________________________________________/--
+
+--ayo_dun01
+putmob("ayo_dun01",0,0,0,0,65,"LEAF_CAT",0,0,0)
+putmob("ayo_dun01",0,0,0,0,10,"WHISPER",0,0,0)
+putmob("ayo_dun01",0,0,0,0,5,"KRABEN",0,0,0)
+putmob("ayo_dun01",0,0,0,0,30,"GHOUL",0,0,0)
+
+--ayo_dun02
+putmob("ayo_dun02",0,0,0,0,100,"TAMRUAN",0,0,0)
+putmob("ayo_dun02",0,0,0,0,20,"WHISPER",0,0,0)
+putmob("ayo_dun02",0,0,0,0,20,"KRABEN",0,0,0)
+putboss("ayo_dun02",150,90,15,30,1,"LADY_TANEE",25200000,18000000,0)

@@ -18,3 +18,16 @@
 --|    No Mob functions, this is just here for me   |--
 --|     when we get them                            |--
 --\_________________________________________________/--
+
+--ayo_fild01
+putmob("ayo_fild01",0,0,0,0,30,"COCO",0,0,0)
+putmob("ayo_fild01",0,0,0,0,30,"YOYO",0,0,0)
+putmob("ayo_fild01",0,0,0,0,30,"SMOKIE",0,0,0)
+putmob("ayo_fild01",0,0,0,0,3,"LEAF_CAT",3600000,1800000,0)
+putmob("ayo_fild01",0,0,0,0,10,"GREEN_PLANT",0,0,0)
+
+--ayo_fild02
+putmob("ayo_fild02",0,0,0,0,50,"LEAF_CAT",0,0,0)
+putmob("ayo_fild02",0,0,0,0,20,"WOOTAN_FIGHTER",0,0,0)
+putmob("ayo_fild02",0,0,0,0,30,"KIND_OF_BEETLE",0,0,0)
+putmob("ayo_fild02",0,0,0,0,10,"YELLOW_PLANT",0,0,0)
