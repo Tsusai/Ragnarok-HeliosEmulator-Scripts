@@ -39,4 +39,7 @@
   
 --Events Master List
   require("Scripts/Events/Event_main")
+  
+--Trader Master List
+  require("Scripts/Trader/Trader_Main")
    

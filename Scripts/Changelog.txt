@@ -15,6 +15,11 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 51-
+[2008/6/28] Spre - Decided to add all the events I had finished. All Load, and pass syntax Checks Using Aeomins Syntac program.
+[2008/6/28] Spre - Also Committed all of the traders I did, Please note, Helios doesn;t fully support them.
+-
+
 -Rev 50-
 [2008/6/28] Spre - I still have access. I DELETED EVERYTHING!  .. ok joke :P
 [2008/6/28] Spre - Decided to Commit some things I never did. Commited Events/Breeder.lua Still needs some functions.
