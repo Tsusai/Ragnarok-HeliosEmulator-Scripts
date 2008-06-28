@@ -731,7 +731,7 @@ function einbroch_Security#ein_5152()
 	end
 end
 
-npc("airplane","John B.#ein",spr_1_M_BARD,32,61,4,1,1,"airplane_John_B.#ein_3261")
+npc("airplane","John B.#ein",SPRITE_1_M_BARD,32,61,4,1,1,"airplane_John_B.#ein_3261")
 function airplane_John_B.#ein_3261()
 	local wordtest1 = math.random(1 7
 	local name = PcName()

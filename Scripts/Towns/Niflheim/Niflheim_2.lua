@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("nif_in","Witch",spr_4_F_NFDEADMGCIAN,188,168,3,5,5,"nif_in_Witch_188168")
+npc("nif_in","Witch",SPRITE_4_F_NFDEADMGCIAN,188,168,3,5,5,"nif_in_Witch_188168")
 function nif_in_Witch_188168()
 	dialog "[Kirkena]"
 	dialog "Huh? ...You're alive, aren't you?"
@@ -39,7 +39,7 @@ function nif_in_Witch_188168()
 	moveto("umbala",138,208)
 end
 
-npc("niflheim","Alreg",spr_4_M_NFDEADMAN,224,243,3,5,5,"niflheim_Alreg_224243")
+npc("niflheim","Alreg",SPRITE_4_M_NFDEADMAN,224,243,3,5,5,"niflheim_Alreg_224243")
 function niflheim_Alreg_224243()
 	if getvar(nif_esc) == 0 then
 		local piano_root = math.random(1,2)
@@ -103,7 +103,7 @@ function niflheim_Alreg_224243()
 	close()
 end
 
-npc("nif_in","Crayu",spr_4_M_NFDEADMAN2,105,81,3,5,5,"nif_in_Crayu_10581")
+npc("nif_in","Crayu",SPRITE_4_M_NFDEADMAN2,105,81,3,5,5,"nif_in_Crayu_10581")
 function nif_in_Crayu_10581()
 	if getvar(nif_esc) == 1 then
 		local question = math.random(1,4)
@@ -430,7 +430,7 @@ function nif_in_Crayu_10581()
 	close()
 end
 
-npc("nif_in","Kuzkahina",spr_4_M_NFDEADMAN2,31,20,3,5,5,"nif_in_Kuzkahina_3120")
+npc("nif_in","Kuzkahina",SPRITE_4_M_NFDEADMAN2,31,20,3,5,5,"nif_in_Kuzkahina_3120")
 function nif_in_Kuzkahina_3120()
 	if getvar(nif_esc) == 3 then
 		dialog "[Kuzkahina]"
@@ -488,7 +488,7 @@ function nif_in_Kuzkahina_3120()
 	close()
 end
 
-npc("niflheim","#Graveyard1",spr_HIDDEN_NPC,208,103,1,1,1,"niflheim_Graveyard1_208103")
+npc("niflheim","#Graveyard1",SPRITE_HIDDEN_NPC,208,103,1,1,1,"niflheim_Graveyard1_208103")
 function niflheim_Graveyard1_208103()
 	if getvar(nif_esc) == 5 then
 		dialog "^3355FFYou found something"
@@ -552,7 +552,7 @@ function niflheim_Graveyard1_208103()
 	end
 end
 
-npc("niflheim","#Graveyard2",spr_HIDDEN_NPC,169,71,1,1,1,"niflheim_Graveyard2_16971")
+npc("niflheim","#Graveyard2",SPRITE_HIDDEN_NPC,169,71,1,1,1,"niflheim_Graveyard2_16971")
 function niflheim_Graveyard2_16971()
 	if getvar(nif_esc) == 9 then
 		dialog "^3355FFYou found something"
@@ -584,7 +584,7 @@ function niflheim_Graveyard2_16971()
 	end
 end
 
-npc("nif_in","#Piano",spr_HIDDEN_NPC,115,181,0,1,1,"nif_in_Piano_115181")
+npc("nif_in","#Piano",SPRITE_HIDDEN_NPC,115,181,0,1,1,"nif_in_Piano_115181")
 function nif_in_Piano_115181()
 	if getvar(nif_esc) == 0 then
 		dialog "^3355FFYou see a big, heavy piano."
@@ -615,7 +615,7 @@ function nif_in_Piano_115181()
 	end
 end
 
-npc("nif_in","#Piano3",spr_HIDDEN_NPC,114,181,0,1,1,"nif_in_Piano3_114181")
+npc("nif_in","#Piano3",SPRITE_HIDDEN_NPC,114,181,0,1,1,"nif_in_Piano3_114181")
 function nif_in_Piano3_114181()
 	if getvar(nif_esc) == 12 then
 		dialog "^3355FFAs you bend towards"
@@ -647,7 +647,7 @@ function nif_in_Piano3_114181()
 	end
 end
 
-npc("niflheim","Keedz",spr_4_M_NFDEADSWDMAN,52,147,3,5,5,"niflheim_Keedz_52147")
+npc("niflheim","Keedz",SPRITE_4_M_NFDEADSWDMAN,52,147,3,5,5,"niflheim_Keedz_52147")
 function niflheim_Keedz_52147()
 	dialog "[Keedz]"
 	dialog "I don't allow any living person"

@@ -21,7 +21,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("ein_in01","Calla",spr_4_F_01,31,138,3,0,0,"ein_in01_Calla_31138")
+npc("ein_in01","Calla",SPRITE_4_F_01,31,138,3,0,0,"ein_in01_Calla_31138")
 function ein_in01_Calla_31138()
 	local max_max_c = CheckMaxCount 1201 1
 	if (max_max_c == 1) then
@@ -380,7 +380,7 @@ function ein_in01_Calla_31138()
 	close()
 end
 
-npc("ein_in01","Clitzer",spr_4_M_EINMAN2,200,101,5,0,0,"ein_in01_Clitzer_200101")
+npc("ein_in01","Clitzer",SPRITE_4_M_EINMAN2,200,101,5,0,0,"ein_in01_Clitzer_200101")
 function ein_in01_Clitzer_200101()
 	if getvar(ein_love) == 16 then
 		dialog "[Clitzer]"
@@ -794,7 +794,7 @@ function ein_in01_Clitzer_200101()
 	close()
 end
 
-npc("ein_in01","Megass",spr_4_M_YURI,21,147,3,3,3,"ein_in01_Megass_21147")
+npc("ein_in01","Megass",SPRITE_4_M_YURI,21,147,3,3,3,"ein_in01_Megass_21147")
 function ein_in01_Megass_21147()
 	if ((getvar(ein_love) == 4) and (getvar(ein_love) == 5)) then
 		dialog "[Megass]"
@@ -860,7 +860,7 @@ function ein_in01_Megass_21147()
 	close()
 end
 
-npc("ein_in01","Satra",spr_4_F_EINWOMAN,31,151,3,0,0,"ein_in01_Satra_31151")
+npc("ein_in01","Satra",SPRITE_4_F_EINWOMAN,31,151,3,0,0,"ein_in01_Satra_31151")
 function ein_in01_Satra_31151()
 	if getvar(ein_love) > 12 then
 		dialog "[Satra]"
@@ -1368,7 +1368,7 @@ function ein_in01_Satra_31151()
 	close()
 end
 
-npc("ein_in01","Kaijeta",spr_4_F_EINOLD,191,102,5,0,0,"ein_in01_Kaijeta_191102")
+npc("ein_in01","Kaijeta",SPRITE_4_F_EINOLD,191,102,5,0,0,"ein_in01_Kaijeta_191102")
 function ein_in01_Kaijeta_191102()
 	if getvar(ein_love) > 15 then
 		dialog "[Kaijeta]"
@@ -1495,7 +1495,7 @@ function ein_in01_Kaijeta_191102()
 	close()
 end
 
-npc("einbroch","Keneshiotz",spr_4_M_EINMAN,188,72,3,0,0,"einbroch_Keneshiotz_18872")
+npc("einbroch","Keneshiotz",SPRITE_4_M_EINMAN,188,72,3,0,0,"einbroch_Keneshiotz_18872")
 OnCommand: "on"
 	enablenpc "Keneshiotz"
 end
@@ -1525,7 +1525,7 @@ function einbroch_Keneshiotz_18872()
 	close()
 end
 
-npc("einbech","Catzllanpu",spr_4_M_EINMAN2,216,118,3,0,0,"einbech_Catzllanpu_216118")
+npc("einbech","Catzllanpu",SPRITE_4_M_EINMAN2,216,118,3,0,0,"einbech_Catzllanpu_216118")
 function einbech_Catzllanpu_216118()
 	dialog "[Catzllanpu]"
 	dialog "^333333*Sigh...*^000000"
@@ -1552,7 +1552,7 @@ function einbech_Catzllanpu_216118()
 	close()
 end
 
-npc("einbroch","Kesunboss",spr_4_F_EINWOMAN,208,208,3,0,0,"einbroch_Kesunboss_208208")
+npc("einbroch","Kesunboss",SPRITE_4_F_EINWOMAN,208,208,3,0,0,"einbroch_Kesunboss_208208")
 OnCommand: "on"
 	enablenpc "Kesunboss"
 end
@@ -1590,7 +1590,7 @@ function einbroch_Kesunboss_208208()
 	close()
 end
 
-npc("einbech","Ellhenje",spr_4_F_EINWOMAN,176,125,3,0,0,"einbech_Ellhenje_176125")
+npc("einbech","Ellhenje",SPRITE_4_F_EINWOMAN,176,125,3,0,0,"einbech_Ellhenje_176125")
 function einbech_Ellhenje_176125()
 	dialog "[Ellhenje]"
 	dialog "Things might be"
@@ -1627,7 +1627,7 @@ function einbech_Ellhenje_176125()
 	close()
 end
 
-npc("ein_in01","Decii",spr_4_M_EINMAN,208,86,3,0,0,"ein_in01_Decii_20886")
+npc("ein_in01","Decii",SPRITE_4_M_EINMAN,208,86,3,0,0,"ein_in01_Decii_20886")
 function ein_in01_Decii_20886()
 	dialog "[Decii]"
 	dialog "This is so"
@@ -1644,7 +1644,7 @@ function ein_in01_Decii_20886()
 	close()
 end
 
-npc("ein_in01","Supineque",spr_4_M_DIEMAN,192,90,3,0,0,"ein_in01_Supineque_19290")
+npc("ein_in01","Supineque",SPRITE_4_M_DIEMAN,192,90,3,0,0,"ein_in01_Supineque_19290")
 function ein_in01_Supineque_19290()
 	dialog "[Supineque]"
 	dialog "Ugh..."

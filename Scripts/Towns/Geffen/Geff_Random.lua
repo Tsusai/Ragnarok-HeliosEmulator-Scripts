@@ -20,7 +20,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("geffen","Niayagu",spr_8_F_GIRL,122,77,4,0,0,"geffen_Niayagu_12277")
+npc("geffen","Niayagu",SPRITE_8_F_GIRL,122,77,4,0,0,"geffen_Niayagu_12277")
 function geffen_Niayagu_12277()
 	dialog "[Nia]"
 	dialog "Hello, I'm Nia, the fifth"

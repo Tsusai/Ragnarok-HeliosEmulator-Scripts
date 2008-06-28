@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("morocc_in","PVPNarrator",spr_4_M_02,144,138,4,0,0,"morocc_in_PVPNarrator_144138")
+npc("morocc_in","PVPNarrator",SPRITE_4_M_02,144,138,4,0,0,"morocc_in_PVPNarrator_144138")
 function morocc_in_PVPNarrator_144138()
 	dialog "[PVP Narrator]"
 	dialog "Hello and welcome!"
@@ -166,7 +166,7 @@ function morocc_in_PVPNarrator_144138()
 	end
 end
 
-npc("morocc_in","Gate Keeper",spr_4_M_01,144,142,4,0,0,"morocc_in_Gate_Keeper_144142")
+npc("morocc_in","Gate Keeper",SPRITE_4_M_01,144,142,4,0,0,"morocc_in_Gate_Keeper_144142")
 function morocc_in_Gate_Keeper_144142()
 	dialog "[Gate Keeper]"
 	dialog "Glad to be of service."
@@ -245,7 +245,7 @@ function morocc_in_Gate_Keeper_144142()
 	end
 end
 
-npc("alberta_in","PVP Narrator",spr_4_M_02,22,146,4,0,0,"alberta_in_PVP_Narrator_22146")
+npc("alberta_in","PVP Narrator",SPRITE_4_M_02,22,146,4,0,0,"alberta_in_PVP_Narrator_22146")
 function alberta_in_PVP_Narrator_22146()
 	dialog "[PVP Narrator]"
 	dialog "Hello and welcome!"
@@ -392,7 +392,7 @@ function alberta_in_PVP_Narrator_22146()
 	end
 end
 
-npc("alberta_in","Gate Keeper",spr_4_M_01,26,146,4,0,0,"alberta_in_Gate_Keeper_26146")
+npc("alberta_in","Gate Keeper",SPRITE_4_M_01,26,146,4,0,0,"alberta_in_Gate_Keeper_26146")
 function alberta_in_Gate_Keeper_26146()
 	dialog "[Gate Keeper]"
 	dialog "Glad to be of service."
@@ -471,7 +471,7 @@ function alberta_in_Gate_Keeper_26146()
 	end
 end
 
-npc("prt_in","PVPNarrator",spr_4_M_02,56,140,4,0,0,"prt_in_PVPNarrator_56140")
+npc("prt_in","PVPNarrator",SPRITE_4_M_02,56,140,4,0,0,"prt_in_PVPNarrator_56140")
 function prt_in_PVPNarrator_56140()
 	dialog "[PVP Narrator]"
 	dialog "Hello and welcome!"
@@ -618,7 +618,7 @@ function prt_in_PVPNarrator_56140()
 	end
 end
 
-npc("prt_in","Gate Keeper",spr_4_M_01,52,140,4,0,0,"prt_in_Gate_Keeper_52140")
+npc("prt_in","Gate Keeper",SPRITE_4_M_01,52,140,4,0,0,"prt_in_Gate_Keeper_52140")
 function prt_in_Gate_Keeper_52140()
 	dialog "[Gate Keeper]"
 	dialog "Glad to be of service."
@@ -697,7 +697,7 @@ function prt_in_Gate_Keeper_52140()
 	end
 end
 
-npc("geffen_in","PVPNarrator",spr_4_M_02,67,63,4,0,0,"geffen_in_PVPNarrator_6763")
+npc("geffen_in","PVPNarrator",SPRITE_4_M_02,67,63,4,0,0,"geffen_in_PVPNarrator_6763")
 function geffen_in_PVPNarrator_6763()
 	dialog "[PVP Narrator]"
 	dialog "Hello and welcome!"
@@ -844,7 +844,7 @@ function geffen_in_PVPNarrator_6763()
 	end
 end
 
-npc("geffen_in","Gate Keeper",spr_4_M_01,63,63,4,0,0,"geffen_in_Gate_Keeper_6363")
+npc("geffen_in","Gate Keeper",SPRITE_4_M_01,63,63,4,0,0,"geffen_in_Gate_Keeper_6363")
 function geffen_in_Gate_Keeper_6363()
 	dialog "[Gate Keeper]"
 	dialog "Glad to be of service."
@@ -923,7 +923,7 @@ function geffen_in_Gate_Keeper_6363()
 	end
 end
 
-npc("payon_in01","PVPNarrator",spr_4_M_02,142,50,4,0,0,"payon_in01_PVPNarrator_14250")
+npc("payon_in01","PVPNarrator",SPRITE_4_M_02,142,50,4,0,0,"payon_in01_PVPNarrator_14250")
 function payon_in01_PVPNarrator_14250()
 	dialog "[PVP Narrator]"
 	dialog "Hello and welcome!"
@@ -1070,7 +1070,7 @@ function payon_in01_PVPNarrator_14250()
 	end
 end
 
-npc("payon_in01","Gate Keeper",spr_4_M_01,140,53,4,0,0,"payon_in01_Gate_Keeper_14053")
+npc("payon_in01","Gate Keeper",SPRITE_4_M_01,140,53,4,0,0,"payon_in01_Gate_Keeper_14053")
 function payon_in01_Gate_Keeper_14053()
 	dialog "[Gate Keeper]"
 	dialog "Glad to be of service."
@@ -1149,7 +1149,7 @@ function payon_in01_Gate_Keeper_14053()
 	end
 end
 
-npc("pvp_y_room","Fight Square Reception Staff",spr_8W_SOLDIER,86,85,4,0,0,"pvp_y_room_Fight_Square_Reception_Staff_8685")
+npc("pvp_y_room","Fight Square Reception Staff",SPRITE_8W_SOLDIER,86,85,4,0,0,"pvp_y_room_Fight_Square_Reception_Staff_8685")
 --OnInit:()
 --	makewaitingroom("Free for all",0)
 --end
@@ -1226,7 +1226,7 @@ function pvp_y_room_Fight_Square_Reception_Staff_8685()
 	end
 end
 
-npc("pvp_n_room","Fight Square Reception Staff",spr_8W_SOLDIER,30,85,4,5,5,"pvp_n_room_Fight_Square_Reception_Staff_3085")
+npc("pvp_n_room","Fight Square Reception Staff",SPRITE_8W_SOLDIER,30,85,4,5,5,"pvp_n_room_Fight_Square_Reception_Staff_3085")
 --OnInit:()
 --	makewaitingroom("Free for all",0)
 --end

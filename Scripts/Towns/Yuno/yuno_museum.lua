@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("yuno_in03","Museum Guide",spr_1_F_02,32,15,3,0,0,"yuno_in03_Museum_Guide_3215")
+npc("yuno_in03","Museum Guide",SPRITE_1_F_02,32,15,3,0,0,"yuno_in03_Museum_Guide_3215")
 function yuno_in03_Museum_Guide_3215()
 	dialog "[Cenia]"
 	dialog "Welcome to the Monster Museum."
@@ -58,8 +58,8 @@ function yuno_in03_Museum_Guide_3215()
 	close()
 end
 
-npc("yuno_in03","Deviaceyuno",spr_DEVIACE,36,21,3,0,0,"yuno_in03_Deviaceyuno_3621")
-npc("yuno_in03","DEVIACE",spr_HIDDEN_NPC,33,21,1,0,0,"yuno_in03_DEVIACE_3321")
+npc("yuno_in03","Deviaceyuno",SPRITE_DEVIACE,36,21,3,0,0,"yuno_in03_Deviaceyuno_3621")
+npc("yuno_in03","DEVIACE",SPRITE_HIDDEN_NPC,33,21,1,0,0,"yuno_in03_DEVIACE_3321")
 function yuno_in03_DEVIACE_3321()
 	dialog " "
 	dialog "Scientific name : Deviace"
@@ -83,8 +83,8 @@ function yuno_in03_DEVIACE_3321()
 	close()
 end
 
-npc("yuno_in03","Sealyuno",spr_FUR_SEAL,36,27,3,0,0,"yuno_in03_Sealyuno_3627")
-npc("yuno_in03","FUR_SEAL",spr_HIDDEN_NPC,33,27,1,0,0,"yuno_in03_FUR_SEAL_3327")
+npc("yuno_in03","Sealyuno",SPRITE_FUR_SEAL,36,27,3,0,0,"yuno_in03_Sealyuno_3627")
+npc("yuno_in03","FUR_SEAL",SPRITE_HIDDEN_NPC,33,27,1,0,0,"yuno_in03_FUR_SEAL_3327")
 function yuno_in03_FUR_SEAL_3327()
 	dialog " "
 	dialog "Scientific name : Seal"
@@ -108,8 +108,8 @@ function yuno_in03_FUR_SEAL_3327()
 	close()
 end
 
-npc("yuno_in03","Sage Wormyuno",spr_SAGEWORM,36,33,3,0,0,"yuno_in03_Sage_Wormyuno_3633")
-npc("yuno_in03","SAGEWORM",spr_HIDDEN_NPC,33,33,1,0,0,"yuno_in03_SAGEWORM_3333")
+npc("yuno_in03","Sage Wormyuno",SPRITE_SAGEWORM,36,33,3,0,0,"yuno_in03_Sage_Wormyuno_3633")
+npc("yuno_in03","SAGEWORM",SPRITE_HIDDEN_NPC,33,33,1,0,0,"yuno_in03_SAGEWORM_3333")
 function yuno_in03_SAGEWORM_3333()
 	dialog " "
 	dialog "Scientific name : Sage Worm"
@@ -129,8 +129,8 @@ function yuno_in03_SAGEWORM_3333()
 	close()
 end
 
-npc("yuno_in03","Penomenayuno",spr_PENOMENA,39,39,3,0,0,"yuno_in03_Penomenayuno_3939")
-npc("yuno_in03","PENOMANA",spr_HIDDEN_NPC,38,39,1,0,0,"yuno_in03_PENOMANA_3839")
+npc("yuno_in03","Penomenayuno",SPRITE_PENOMENA,39,39,3,0,0,"yuno_in03_Penomenayuno_3939")
+npc("yuno_in03","PENOMANA",SPRITE_HIDDEN_NPC,38,39,1,0,0,"yuno_in03_PENOMANA_3839")
 function yuno_in03_PENOMANA_3839()
 	dialog " "
 	dialog "Scientific name : Penomena"
@@ -154,8 +154,8 @@ function yuno_in03_PENOMANA_3839()
 	close()
 end
 
-npc("yuno_in03","Galapago#yuno",spr_GALAPAGO,39,44,3,0,0,"yuno_in03_Galapagoyuno_3944")
-npc("yuno_in03","GALAPAGO",spr_HIDDEN_NPC,37,44,3,0,0,"yuno_in03_GALAPAGO_3744")
+npc("yuno_in03","Galapago#yuno",SPRITE_GALAPAGO,39,44,3,0,0,"yuno_in03_Galapagoyuno_3944")
+npc("yuno_in03","GALAPAGO",SPRITE_HIDDEN_NPC,37,44,3,0,0,"yuno_in03_GALAPAGO_3744")
 function yuno_in03_GALAPAGO_3744()
 	dialog " "
 	dialog "Scientific name : Galapago"
@@ -174,8 +174,8 @@ function yuno_in03_GALAPAGO_3744()
 	close()
 end
 
-npc("yuno_in03","Raydric#yuno",spr_RAYDRIC,15,21,5,0,0,"yuno_in03_Raydricyuno_1521")
-npc("yuno_in03","#RAYDRIC",spr_HIDDEN_NPC,19,21,1,0,0,"yuno_in03_RAYDRIC_1921")
+npc("yuno_in03","Raydric#yuno",SPRITE_RAYDRIC,15,21,5,0,0,"yuno_in03_Raydricyuno_1521")
+npc("yuno_in03","#RAYDRIC",SPRITE_HIDDEN_NPC,19,21,1,0,0,"yuno_in03_RAYDRIC_1921")
 function yuno_in03_RAYDRIC_1921()
 	dialog " "
 	dialog "Scientific name : Raydric"
@@ -194,8 +194,8 @@ function yuno_in03_RAYDRIC_1921()
 	close()
 end
 
-npc("yuno_in03","Chepet#yuno",spr_CHEPET,15,27,5,0,0,"yuno_in03_Chepetyuno_1527")
-npc("yuno_in03","CHEPET",spr_HIDDEN_NPC,19,27,1,0,0,"yuno_in03_CHEPET_1927")
+npc("yuno_in03","Chepet#yuno",SPRITE_CHEPET,15,27,5,0,0,"yuno_in03_Chepetyuno_1527")
+npc("yuno_in03","CHEPET",SPRITE_HIDDEN_NPC,19,27,1,0,0,"yuno_in03_CHEPET_1927")
 function yuno_in03_CHEPET_1927()
 	dialog " "
 	dialog "  Scientific name : Chepet"
@@ -212,8 +212,8 @@ function yuno_in03_CHEPET_1927()
 	close()
 end
 
-npc("yuno_in03","Violy#yuno",spr_VIOLY,15,33,5,0,0,"yuno_in03_Violy#yuno_1533")
-npc("yuno_in03","#VIOLY",spr_HIDDEN_NPC,19,33,1,0,0,"yuno_in03_VIOLY_1933")
+npc("yuno_in03","Violy#yuno",SPRITE_VIOLY,15,33,5,0,0,"yuno_in03_Violy#yuno_1533")
+npc("yuno_in03","#VIOLY",SPRITE_HIDDEN_NPC,19,33,1,0,0,"yuno_in03_VIOLY_1933")
 function yuno_in03_VIOLY_1933()
 	dialog " "
 	dialog "  Scientific name : Violy"
@@ -228,8 +228,8 @@ function yuno_in03_VIOLY_1933()
 	close()
 end
 
-npc("yuno_in03","Alice#yuno",spr_ALICE,10,39,5,0,0,"yuno_in03_Alice#yuno_1039")
-npc("yuno_in03","#ALICE",spr_HIDDEN_NPC,12,39,1,0,0,"yuno_in03_ALICE_1239")
+npc("yuno_in03","Alice#yuno",SPRITE_ALICE,10,39,5,0,0,"yuno_in03_Alice#yuno_1039")
+npc("yuno_in03","#ALICE",SPRITE_HIDDEN_NPC,12,39,1,0,0,"yuno_in03_ALICE_1239")
 function yuno_in03_ALICE_1239()
 	dialog " "
 	dialog "  Scientific name : Alice "
@@ -249,8 +249,8 @@ function yuno_in03_ALICE_1239()
 	close()
 end
 
-npc("yuno_in03","Assulter#yuno",spr_ASSULTER,10,45,5,0,0,"yuno_in03_Assulter#yuno_1045")
-npc("yuno_in03","#ASSULTER",spr_HIDDEN_NPC,12,45,1,0,0,"yuno_in03_ASSULTER_1245")
+npc("yuno_in03","Assulter#yuno",SPRITE_ASSULTER,10,45,5,0,0,"yuno_in03_Assulter#yuno_1045")
+npc("yuno_in03","#ASSULTER",SPRITE_HIDDEN_NPC,12,45,1,0,0,"yuno_in03_ASSULTER_1245")
 function yuno_in03_ASSULTER_1245()
 	dialog " "
 	dialog "  Scientific name : Assulter"
@@ -273,12 +273,12 @@ function yuno_in03_ASSULTER_1245()
 	close()
 end
 
-npc("yuno_in03","PecoPeco Egg#yuno",spr_PECOPECO_EGG,38,50,3,0,0,"yuno_in03_PecoPeco_Egg#yuno_3850")
-npc("yuno_in03","Thief Bug Egg#yuno",spr_THIEF_BUG_EGG,34,54,3,0,0,"yuno_in03_Thief_Bug_Egg#yuno_3454")
-npc("yuno_in03","Ant Egg#yuno",spr_ANT_EGG,12,50,3,0,0,"yuno_in03_Ant_Egg#yuno_1250")
+npc("yuno_in03","PecoPeco Egg#yuno",SPRITE_PECOPECO_EGG,38,50,3,0,0,"yuno_in03_PecoPeco_Egg#yuno_3850")
+npc("yuno_in03","Thief Bug Egg#yuno",SPRITE_THIEF_BUG_EGG,34,54,3,0,0,"yuno_in03_Thief_Bug_Egg#yuno_3454")
+npc("yuno_in03","Ant Egg#yuno",SPRITE_ANT_EGG,12,50,3,0,0,"yuno_in03_Ant_Egg#yuno_1250")
 
-npc("yuno_in03","Wanderer#yuno",spr_WANDER_MAN,18,96,5,0,0,"yuno_in03_Wanderer#yuno_1896")
-npc("yuno_in03","#WANDER_MAN",spr_HIDDEN_NPC,20,96,1,0,0,"yuno_in03_WANDER_MAN_2096")
+npc("yuno_in03","Wanderer#yuno",SPRITE_WANDER_MAN,18,96,5,0,0,"yuno_in03_Wanderer#yuno_1896")
+npc("yuno_in03","#WANDER_MAN",SPRITE_HIDDEN_NPC,20,96,1,0,0,"yuno_in03_WANDER_MAN_2096")
 function yuno_in03_WANDER_MAN_2096()
 	dialog " "
 	dialog "  Scientific name : Wanderer"
@@ -298,8 +298,8 @@ function yuno_in03_WANDER_MAN_2096()
 	close()
 end
 
-npc("yuno_in03","Caterpillar#yuno",spr_CATERPILLAR,16,100,5,0,0,"yuno_in03_Caterpillar#yuno_16100")
-npc("yuno_in03","#CATERPILLAR",spr_HIDDEN_NPC,18,100,1,0,0,"yuno_in03_CATERPILLAR_18100")
+npc("yuno_in03","Caterpillar#yuno",SPRITE_CATERPILLAR,16,100,5,0,0,"yuno_in03_Caterpillar#yuno_16100")
+npc("yuno_in03","#CATERPILLAR",SPRITE_HIDDEN_NPC,18,100,1,0,0,"yuno_in03_CATERPILLAR_18100")
 function yuno_in03_CATERPILLAR_18100()
 	dialog " "
 	dialog "  Scientific name : Caterpillar"
@@ -319,8 +319,8 @@ function yuno_in03_CATERPILLAR_18100()
 	close()
 end
 
-npc("yuno_in03","Male Thiefbug#yuno",spr_THIEF_BUG__,16,104,5,0,0,"yuno_in03_Male_Thiefbug#yuno_16104")
-npc("yuno_in03","#THIEF_BUG__",spr_HIDDEN_NPC,18,104,1,0,0,"yuno_in03_THIEF_BUG___18104")
+npc("yuno_in03","Male Thiefbug#yuno",SPRITE_THIEF_BUG__,16,104,5,0,0,"yuno_in03_Male_Thiefbug#yuno_16104")
+npc("yuno_in03","#THIEF_BUG__",SPRITE_HIDDEN_NPC,18,104,1,0,0,"yuno_in03_THIEF_BUG___18104")
 function yuno_in03_THIEF_BUG___18104()
 	dialog " "
 	dialog "  Scientific name : Thief Bug"
@@ -336,8 +336,8 @@ function yuno_in03_THIEF_BUG___18104()
 	close()
 end
 
-npc("yuno_in03","Tri Joint#yuno",spr_TRI_JOINT,16,108,5,0,0,"yuno_in03_Tri_Joint#yuno_16108")
-npc("yuno_in03","#TRI_JOINT",spr_HIDDEN_NPC,18,108,1,0,0,"yuno_in03_TRI_JOINT_18108")
+npc("yuno_in03","Tri Joint#yuno",SPRITE_TRI_JOINT,16,108,5,0,0,"yuno_in03_Tri_Joint#yuno_16108")
+npc("yuno_in03","#TRI_JOINT",SPRITE_HIDDEN_NPC,18,108,1,0,0,"yuno_in03_TRI_JOINT_18108")
 function yuno_in03_TRI_JOINT_18108()
 	dialog " "
 	dialog "  Scientific name : Tri Joint"
@@ -355,8 +355,8 @@ function yuno_in03_TRI_JOINT_18108()
 	close()
 end
 
-npc("yuno_in03","Arclouz#yuno",spr_ARCLOUSE,16,111,5,0,0,"yuno_in03_Arclouz#yuno_16111")
-npc("yuno_in03","#ARCLOUSE",spr_HIDDEN_NPC,18,111,1,0,0,"yuno_in03_ARCLOUSE_18111")
+npc("yuno_in03","Arclouz#yuno",SPRITE_ARCLOUSE,16,111,5,0,0,"yuno_in03_Arclouz#yuno_16111")
+npc("yuno_in03","#ARCLOUSE",SPRITE_HIDDEN_NPC,18,111,1,0,0,"yuno_in03_ARCLOUSE_18111")
 function yuno_in03_ARCLOUSE_18111()
 	dialog " "
 	dialog "  Scientific name : Arclouz"
@@ -377,8 +377,8 @@ function yuno_in03_ARCLOUSE_18111()
 	close()
 end
 
-npc("yuno_in03","Dragon Tail#yuno",spr_DRAGON_TAIL,16,117,5,0,0,"yuno_in03_Dragon_Tail#yuno_16117")
-npc("yuno_in03","#DRAGON_TAIL",spr_HIDDEN_NPC,18,116,1,0,0,"yuno_in03_DRAGON_TAIL_18116")
+npc("yuno_in03","Dragon Tail#yuno",SPRITE_DRAGON_TAIL,16,117,5,0,0,"yuno_in03_Dragon_Tail#yuno_16117")
+npc("yuno_in03","#DRAGON_TAIL",SPRITE_HIDDEN_NPC,18,116,1,0,0,"yuno_in03_DRAGON_TAIL_18116")
 function yuno_in03_DRAGON_TAIL_18116()
 	dialog " "
 	dialog "  Scientific name : Dragon Tail"
@@ -395,8 +395,8 @@ function yuno_in03_DRAGON_TAIL_18116()
 	close()
 end
 
-npc("yuno_in03","Owl Duke#yuno",spr_OWL_DUKE,46,96,3,0,0,"yuno_in03_Owl_Duke#yuno_4696")
-npc("yuno_in03","#OWL_DUKE",spr_HIDDEN_NPC,44,96,1,0,0,"yuno_in03_OWL_DUKE_4496")
+npc("yuno_in03","Owl Duke#yuno",SPRITE_OWL_DUKE,46,96,3,0,0,"yuno_in03_Owl_Duke#yuno_4696")
+npc("yuno_in03","#OWL_DUKE",SPRITE_HIDDEN_NPC,44,96,1,0,0,"yuno_in03_OWL_DUKE_4496")
 function yuno_in03_OWL_DUKE_4496()
 	dialog " "
 	dialog "  Scientific name : Owl Duke"
@@ -419,8 +419,8 @@ function yuno_in03_OWL_DUKE_4496()
 	close()
 end
 
-npc("yuno_in03","Marine Sphere#yuno",spr_MARINE_SPHERE,48,100,3,0,0,"yuno_in03_Marine_Sphere#yuno_48100")
-npc("yuno_in03","#MARINE_SPHERE",spr_HIDDEN_NPC,46,101,1,0,0,"yuno_in03_MARINE_SPHERE_46101")
+npc("yuno_in03","Marine Sphere#yuno",SPRITE_MARINE_SPHERE,48,100,3,0,0,"yuno_in03_Marine_Sphere#yuno_48100")
+npc("yuno_in03","#MARINE_SPHERE",SPRITE_HIDDEN_NPC,46,101,1,0,0,"yuno_in03_MARINE_SPHERE_46101")
 function yuno_in03_MARINE_SPHERE_46101()
 	dialog " "
 	dialog "  Scientific name : Marine Sphere"
@@ -442,8 +442,8 @@ function yuno_in03_MARINE_SPHERE_46101()
 	close()
 end
 
-npc("yuno_in03","Mandragora#yuno",spr_MANDRAGORA,48,104,3,0,0,"yuno_in03_Mandragora#yuno_48104")
-npc("yuno_in03","#MANDRAGORA",spr_HIDDEN_NPC,46,105,1,0,0,"yuno_in03_MANDRAGORA_46105")
+npc("yuno_in03","Mandragora#yuno",SPRITE_MANDRAGORA,48,104,3,0,0,"yuno_in03_Mandragora#yuno_48104")
+npc("yuno_in03","#MANDRAGORA",SPRITE_HIDDEN_NPC,46,105,1,0,0,"yuno_in03_MANDRAGORA_46105")
 function yuno_in03_MANDRAGORA_46105()
 	dialog " "
 	dialog "  Scientific name : Mandragora"
@@ -472,8 +472,8 @@ function yuno_in03_MANDRAGORA_46105()
 	close()
 end
 
-npc("yuno_in03","Geographer#yuno",spr_GEOGRAPHER,48,108,3,0,0,"yuno_in03_Geographer#yuno_48108")
-npc("yuno_in03","#GEOGRAPHER",spr_HIDDEN_NPC,46,108,1,0,0,"yuno_in03_GEOGRAPHER_46108")
+npc("yuno_in03","Geographer#yuno",SPRITE_GEOGRAPHER,48,108,3,0,0,"yuno_in03_Geographer#yuno_48108")
+npc("yuno_in03","#GEOGRAPHER",SPRITE_HIDDEN_NPC,46,108,1,0,0,"yuno_in03_GEOGRAPHER_46108")
 function yuno_in03_GEOGRAPHER_46108()
 	dialog " "
 	dialog "  Scientific name : Geographer"
@@ -505,8 +505,8 @@ function yuno_in03_GEOGRAPHER_46108()
 	close()
 end
 
-npc("yuno_in03","Rafflesia#yuno",spr_RAFFLESIA,48,112,3,0,0,"yuno_in03_Rafflesia#yuno_48112")
-npc("yuno_in03","#RAFFLESIA",spr_HIDDEN_NPC,46,112,1,0,0,"yuno_in03_RAFFLESIA_46112")
+npc("yuno_in03","Rafflesia#yuno",SPRITE_RAFFLESIA,48,112,3,0,0,"yuno_in03_Rafflesia#yuno_48112")
+npc("yuno_in03","#RAFFLESIA",SPRITE_HIDDEN_NPC,46,112,1,0,0,"yuno_in03_RAFFLESIA_46112")
 function yuno_in03_RAFFLESIA_46112()
 	dialog  " "
 	dialog "  Scientific name : Rafflesia"
@@ -529,8 +529,8 @@ function yuno_in03_RAFFLESIA_46112()
 	close()
 end
 
-npc("yuno_in03","Stem Worm#yuno",spr_STEM_WORM,48,116,3,0,0,"yuno_in03_Stem_Worm#yuno_48116")
-npc("yuno_in03","#STEM_WORM",spr_HIDDEN_NPC,45,116,1,0,0,"yuno_in03_STEM_WORM_45116")
+npc("yuno_in03","Stem Worm#yuno",SPRITE_STEM_WORM,48,116,3,0,0,"yuno_in03_Stem_Worm#yuno_48116")
+npc("yuno_in03","#STEM_WORM",SPRITE_HIDDEN_NPC,45,116,1,0,0,"yuno_in03_STEM_WORM_45116")
 function yuno_in03_STEM_WORM_45116()
 	dialog " "
 	dialog "  Scientific name : Stem Worm"
@@ -548,8 +548,8 @@ function yuno_in03_STEM_WORM_45116()
 end
 
 
-npc("yuno_in03","Blazzer#yuno",spr_BLAZZER,24,124,3,0,0,"yuno_in03_Blazzer#yuno_24124")
-npc("yuno_in03","#BLAZZER",spr_HIDDEN_NPC,24,122,1,0,0,"yuno_in03_BLAZZER_24122")
+npc("yuno_in03","Blazzer#yuno",SPRITE_BLAZZER,24,124,3,0,0,"yuno_in03_Blazzer#yuno_24124")
+npc("yuno_in03","#BLAZZER",SPRITE_HIDDEN_NPC,24,122,1,0,0,"yuno_in03_BLAZZER_24122")
 function yuno_in03_BLAZZER_24122()
 	dialog " "
 	dialog "  Scientific name : Blazzer"
@@ -572,8 +572,8 @@ function yuno_in03_BLAZZER_24122()
 	close()
 end
 
-npc("yuno_in03","Ride Word#yuno",spr_RIDEWORD,28,124,5,0,0,"yuno_in03_Ride_Word#yuno_28124")
-npc("yuno_in03","#RIDEWORD",spr_HIDDEN_NPC,28,122,1,0,0,"yuno_in03_RIDEWORD_28122")
+npc("yuno_in03","Ride Word#yuno",SPRITE_RIDEWORD,28,124,5,0,0,"yuno_in03_Ride_Word#yuno_28124")
+npc("yuno_in03","#RIDEWORD",SPRITE_HIDDEN_NPC,28,122,1,0,0,"yuno_in03_RIDEWORD_28122")
 function yuno_in03_RIDEWORD_28122()
 	dialog " "
 	dialog "  Scientific name : Ride Word"
@@ -586,8 +586,8 @@ function yuno_in03_RIDEWORD_28122()
 	close()
 end
 
-npc("yuno_in03","Megalodon#yuno",spr_MEGALODON,31,124,3,0,0,"yuno_in03_Megalodon#yuno_31124")
-npc("yuno_in03","#MEGALODON",spr_HIDDEN_NPC,31,122,1,0,0,"yuno_in03_MEGALODON_31122")
+npc("yuno_in03","Megalodon#yuno",SPRITE_MEGALODON,31,124,3,0,0,"yuno_in03_Megalodon#yuno_31124")
+npc("yuno_in03","#MEGALODON",SPRITE_HIDDEN_NPC,31,122,1,0,0,"yuno_in03_MEGALODON_31122")
 function yuno_in03_MEGALODON_31122()
 	dialog " "
 	dialog "  Scientific name : Megalodon"
@@ -603,8 +603,8 @@ function yuno_in03_MEGALODON_31122()
 	close()
 end
 
-npc("yuno_in03","Sleeper#yuno",spr_SLEEPER,35,124,3,0,0,"yuno_in03_Sleeper#yuno_35124")
-npc("yuno_in03","#SLEEPER",spr_HIDDEN_NPC,35,122,1,0,0,"yuno_in03_SLEEPER_35122")
+npc("yuno_in03","Sleeper#yuno",SPRITE_SLEEPER,35,124,3,0,0,"yuno_in03_Sleeper#yuno_35124")
+npc("yuno_in03","#SLEEPER",SPRITE_HIDDEN_NPC,35,122,1,0,0,"yuno_in03_SLEEPER_35122")
 function yuno_in03_SLEEPER_35122()
 	dialog " "
 	dialog "  Scientific name : Sleeper"
@@ -623,8 +623,8 @@ function yuno_in03_SLEEPER_35122()
 	close()
 end
 
-npc("yuno_in03","Ancient Mummy#yuno",spr_ANCIENT_MUMMY,39,124,3,0,0,"yuno_in03_Ancient_Mummy#yuno_39124")
-npc("yuno_in03","#ANCIENT_MUMMY",spr_HIDDEN_NPC,39,122,1,0,0,"yuno_in03_ANCIENT_MUMMY_39122")
+npc("yuno_in03","Ancient Mummy#yuno",SPRITE_ANCIENT_MUMMY,39,124,3,0,0,"yuno_in03_Ancient_Mummy#yuno_39124")
+npc("yuno_in03","#ANCIENT_MUMMY",SPRITE_HIDDEN_NPC,39,122,1,0,0,"yuno_in03_ANCIENT_MUMMY_39122")
 function yuno_in03_ANCIENT_MUMMY_39122()
 	dialog " "
 	dialog "  Scientific name : Ancient Mummy"
@@ -651,8 +651,8 @@ function yuno_in03_ANCIENT_MUMMY_39122()
 	close()
 end
 
-npc("yuno_in03","Incubus#yuno",spr_INCUBUS,18,122,5,0,0,"yuno_in03_Incubus#yuno_18122")
-npc("yuno_in03","#INCUBUS",spr_HIDDEN_NPC,19,120,1,0,0,"yuno_in03_INCUBUS_19120")
+npc("yuno_in03","Incubus#yuno",SPRITE_INCUBUS,18,122,5,0,0,"yuno_in03_Incubus#yuno_18122")
+npc("yuno_in03","#INCUBUS",SPRITE_HIDDEN_NPC,19,120,1,0,0,"yuno_in03_INCUBUS_19120")
 function yuno_in03_INCUBUS_19120()
 	dialog " "
 	dialog "  Scientific name : Incubus"
@@ -672,8 +672,8 @@ function yuno_in03_INCUBUS_19120()
 	close()
 end
 
-npc("yuno_in03","Succubus#yuno",spr_SUCCUBUS,44,120,3,0,0,"yuno_in03_Succubus#yuno_44120")
-npc("yuno_in03","#SUCCUBUS",spr_HIDDEN_NPC,42,120,1,0,0,"yuno_in03_SUCCUBUS_42120")
+npc("yuno_in03","Succubus#yuno",SPRITE_SUCCUBUS,44,120,3,0,0,"yuno_in03_Succubus#yuno_44120")
+npc("yuno_in03","#SUCCUBUS",SPRITE_HIDDEN_NPC,42,120,1,0,0,"yuno_in03_SUCCUBUS_42120")
 function yuno_in03_SUCCUBUS_42120()
 	dialog " "
 	dialog "  Scientific name : Succubus"

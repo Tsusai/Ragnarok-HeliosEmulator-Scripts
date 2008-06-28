@@ -25,7 +25,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("airplane","Apple Merchant#airplane",spr_4_M_04,50,66,5,0,0,"airplane_Apple_Merchant#airplane_5066")
+npc("airplane","Apple Merchant#airplane",SPRITE_4_M_04,50,66,5,0,0,"airplane_Apple_Merchant#airplane_5066")
 function airplane_Apple_Merchant#airplane_5066()
 	dialog "[Fruitz]"
 	dialog "Welcome to Fruitz's"
@@ -221,7 +221,7 @@ function airplane_Apple_Merchant#airplane_5066()
 	end
 end
 
-npc("airport","Airport Staff#airport1a",spr_4_F_01,143,43,5,0,0,"airport_Airport_Staff#airport1a_14343")
+npc("airport","Airport Staff#airport1a",SPRITE_4_F_01,143,43,5,0,0,"airport_Airport_Staff#airport1a_14343")
 function airport_Airport_Staff#airport1a_14343()
 	dialog "[Airport Staff]"
 	dialog "Welcome to the"
@@ -275,7 +275,7 @@ function airport_Airport_Staff#airport1a_14343()
 	end
 end
 
-npc("airport","Airport Staff#airport1b",spr_4_F_01,158,43,5,0,0,"airport_Airport_Staff#airport1b_15843")
+npc("airport","Airport Staff#airport1b",SPRITE_4_F_01,158,43,5,0,0,"airport_Airport_Staff#airport1b_15843")
 function airport_Airport_Staff#airport1b_15843()
 	dialog "[Airport Staff]"
 	dialog "Welcome to the"
@@ -329,7 +329,7 @@ function airport_Airport_Staff#airport1b_15843()
 	end
 end
 
-npc("airport","Airport Staff#airport1c",spr_4_F_01,126,43,5,0,0,"airport_Airport_Staff#airport1c_12643")
+npc("airport","Airport Staff#airport1c",SPRITE_4_F_01,126,43,5,0,0,"airport_Airport_Staff#airport1c_12643")
 function airport_Airport_Staff#airport1c_12643()
 	dialog "[Airport Staff]"
 	dialog "Welcome to the"
@@ -383,7 +383,7 @@ function airport_Airport_Staff#airport1c_12643()
 	end
 end
 
-npc("airport","Arrival Staff#airport2a",spr_4_F_01,143,49,3,0,0,"airport_Arrival_Staff#airport2a_14349")
+npc("airport","Arrival Staff#airport2a",SPRITE_4_F_01,143,49,3,0,0,"airport_Arrival_Staff#airport2a_14349")
 function airport_Arrival_Staff#airport2a_14349()
 	dialog "[Arrival Staff]"
 	dialog "Welcome to Einbroch Airport."
@@ -423,7 +423,7 @@ function airport_Arrival_Staff#airport2a_14349()
 	end
 end
 
-npc("airport","Arrival Staff#airport2b",spr_4_F_01,126,51,3,0,0,"airport_Arrival_Staff#airport2b_12651")
+npc("airport","Arrival Staff#airport2b",SPRITE_4_F_01,126,51,3,0,0,"airport_Arrival_Staff#airport2b_12651")
 function airport_Arrival_Staff#airport2b_12651()
 	dialog "[Arrival Staff]"
 	dialog "Welcome to Einbroch Airport."
@@ -463,7 +463,7 @@ function airport_Arrival_Staff#airport2b_12651()
 	end
 end
 
-npc("airport","Arrival Staff#airport2c",spr_4_F_01,158,50,3,0,0,"airport_Arrival_Staff#airport2c_15850")
+npc("airport","Arrival Staff#airport2c",SPRITE_4_F_01,158,50,3,0,0,"airport_Arrival_Staff#airport2c_15850")
 function airport_Arrival_Staff#airport2c_15850()
 	dialog "[Arrival Staff]"
 	dialog "Welcome to Einbroch Airport."
@@ -503,7 +503,7 @@ function airport_Arrival_Staff#airport2c_15850()
 	end
 end
 
-npc("yuno","Airship Staff#yuno1",spr_1_F_02,141,175,5,0,0,"yuno_Airship_Staff#yuno1_141175")
+npc("yuno","Airship Staff#yuno1",SPRITE_1_F_02,141,175,5,0,0,"yuno_Airship_Staff#yuno1_141175")
 function yuno_Airship_Staff#yuno1_141175()
 	dialog "[Airship Staff]"
 	dialog "Welcome to"
@@ -548,7 +548,7 @@ function yuno_Airship_Staff#yuno1_141175()
 end
 
 
-npc("lhz_airport","Airport Staff#lhz_airport1a",spr_4_F_01,143,43,5,0,0,"lhz_airport_Airport_Staff#lhz_airport1a_14343")
+npc("lhz_airport","Airport Staff#lhz_airport1a",SPRITE_4_F_01,143,43,5,0,0,"lhz_airport_Airport_Staff#lhz_airport1a_14343")
 function lhz_airport_Airport_Staff#lhz_airport1a_14343()
 	dialog "[Airport Staff]"
 	dialog "Welcome to the"
@@ -599,7 +599,7 @@ function lhz_airport_Airport_Staff#lhz_airport1a_14343()
 	end
 end
 
-npc("lhz_airport","Airship Staff#lhz_airport1b",spr_4_F_01,158,43,5,0,0,"lhz_airport_Airship_Staff#lhz_airport1b_15843")
+npc("lhz_airport","Airship Staff#lhz_airport1b",SPRITE_4_F_01,158,43,5,0,0,"lhz_airport_Airship_Staff#lhz_airport1b_15843")
 function lhz_airport_Airship_Staff#lhz_airport1b_15843()
 	dialog "[Airport Staff]"
 	dialog "Welcome to the"
@@ -650,7 +650,7 @@ function lhz_airport_Airship_Staff#lhz_airport1b_15843()
 	end
 end
 
-npc("lhz_airport","Airship Staff#lhz_airport1c",spr_4_F_01,126,43,5,0,0,"lhz_airport_Airship_Staff#lhz_airport1c_12643")
+npc("lhz_airport","Airship Staff#lhz_airport1c",SPRITE_4_F_01,126,43,5,0,0,"lhz_airport_Airship_Staff#lhz_airport1c_12643")
 function lhz_airport_Airship_Staff#lhz_airport1c_12643()
 	dialog "[Airport Staff]"
 	dialog "Welcome to the"
@@ -701,7 +701,7 @@ function lhz_airport_Airship_Staff#lhz_airport1c_12643()
 	end
 end
 
-npc("lhz_airport","Arrival Staff#lhz_airport2a",spr_4_F_01,143,49,3,0,0,"lhz_airport_Arrival_Staff#lhz_airport2a_14349")
+npc("lhz_airport","Arrival Staff#lhz_airport2a",SPRITE_4_F_01,143,49,3,0,0,"lhz_airport_Arrival_Staff#lhz_airport2a_14349")
 function lhz_airport_Arrival_Staff#lhz_airport2a_14349()
 	dialog "[Arrival Staff]"
 	dialog "Welcome to Lighthalzen Airport."
@@ -739,7 +739,7 @@ function lhz_airport_Arrival_Staff#lhz_airport2a_14349()
 	end
 end
 
-npc("lhz_airport","Arrival Staff#lhz_airport2b",spr_4_F_01,126,51,3,0,0,"lhz_airport_Arrival_Staff#lhz_airport2b_12651")
+npc("lhz_airport","Arrival Staff#lhz_airport2b",SPRITE_4_F_01,126,51,3,0,0,"lhz_airport_Arrival_Staff#lhz_airport2b_12651")
 function lhz_airport_Arrival_Staff#lhz_airport2b_12651()
 	dialog "[Arrival Staff]"
 	dialog "Welcome to Lighthalzen Airport."
@@ -777,7 +777,7 @@ function lhz_airport_Arrival_Staff#lhz_airport2b_12651()
 	end
 end
 
-npc("lhz_airport","Arrival Staff#lhz_airport2c",spr_4_F_01,158,50,3,0,0,"lhz_airport_Arrival_Staff#lhz_airport2c_15850")
+npc("lhz_airport","Arrival Staff#lhz_airport2c",SPRITE_4_F_01,158,50,3,0,0,"lhz_airport_Arrival_Staff#lhz_airport2c_15850")
 function lhz_airport_Arrival_Staff#lhz_airport2c_15850()
 	dialog "[Arrival Staff]"
 	dialog "Welcome to Lighthalzen Airport."
@@ -815,7 +815,7 @@ function lhz_airport_Arrival_Staff#lhz_airport2c_15850()
 	end
 end
 
-npc("y_airport","Airport Staff#y_airport1a",spr_4_F_01,143,43,5,0,0,"y_airport_Airport_Staff#y_airport1a_14343")
+npc("y_airport","Airport Staff#y_airport1a",SPRITE_4_F_01,143,43,5,0,0,"y_airport_Airport_Staff#y_airport1a_14343")
 function y_airport_Airport_Staff#y_airport1a_14343()
 	dialog "[Airport Staff]"
 	dialog "Welcome to Juno Airport where we offer domestic flights to Einbroch, Lighthalzen and Hugel,"
@@ -865,7 +865,7 @@ function y_airport_Airport_Staff#y_airport1a_14343()
 	end
 end
 
-npc("y_airport","Airport Staff#y_airport1b",spr_4_F_01,158,43,5,0,0,"y_airport_Airport_Staff#y_airport1b_15843")
+npc("y_airport","Airport Staff#y_airport1b",SPRITE_4_F_01,158,43,5,0,0,"y_airport_Airport_Staff#y_airport1b_15843")
 function y_airport_Airport_Staff#y_airport1b_15843()
 	dialog "[Airport Staff]"
 	dialog "Welcome to Juno Airport where we offer domestic flights to Einbroch, Lighthalzen and Hugel,"
@@ -915,7 +915,7 @@ function y_airport_Airport_Staff#y_airport1b_15843()
 	end
 end
 
-npc("y_airport","Airport Staff#y_airport1c",spr_4_F_01,126,43,5,0,0,"y_airport_Airport_Staff#y_airport1c_12643")
+npc("y_airport","Airport Staff#y_airport1c",SPRITE_4_F_01,126,43,5,0,0,"y_airport_Airport_Staff#y_airport1c_12643")
 function y_airport_Airport_Staff#y_airport1c_12643()
 	dialog "[Airport Staff]"
 	dialog "Welcome to Juno Airport where we offer domestic flights to Einbroch, Lighthalzen and Hugel,"
@@ -965,7 +965,7 @@ function y_airport_Airport_Staff#y_airport1c_12643()
 	end
 end
 
-npc("izlude","Airship Staff#izlude",spr_4_F_01,206,55,3,0,0,"izlude_Airship_Staff#izlude_20655")
+npc("izlude","Airship Staff#izlude",SPRITE_4_F_01,206,55,3,0,0,"izlude_Airship_Staff#izlude_20655")
 function izlude_Airship_Staff#izlude_20655()
 	dialog "[Airship Staff]"
 	dialog "Welcome! Would you like"
@@ -1017,7 +1017,7 @@ function izlude_Airship_Staff#izlude_20655()
 	end
 end
 
-npc("y_airport","Arrival Staff#y_airport2a",spr_4_F_01,143,49,3,0,0,"y_airport_Arrival_Staff#y_airport2a_14349")
+npc("y_airport","Arrival Staff#y_airport2a",SPRITE_4_F_01,143,49,3,0,0,"y_airport_Arrival_Staff#y_airport2a_14349")
 function y_airport_Arrival_Staff#y_airport2a_14349()
 	dialog "[Airport Staff]"
 	dialog "Welcome to Juno Airport. If you've just arrived from your"
@@ -1054,7 +1054,7 @@ function y_airport_Arrival_Staff#y_airport2a_14349()
 	end
 end
 
-npc("y_airport","Arrival Staff#y_airport2b",spr_4_F_01,126,51,3,0,0,"y_airport_Arrival_Staff#y_airport2b_12651")
+npc("y_airport","Arrival Staff#y_airport2b",SPRITE_4_F_01,126,51,3,0,0,"y_airport_Arrival_Staff#y_airport2b_12651")
 function y_airport_Arrival_Staff#y_airport2b_12651()
 	dialog "[Airport Staff]"
 	dialog "Welcome to Juno Airport. If you've just arrived from your"
@@ -1091,7 +1091,7 @@ function y_airport_Arrival_Staff#y_airport2b_12651()
 	end
 end
 
-npc("y_airport","Arrival Staff#y_airport2c",spr_4_F_01,158,50,3,0,0,"y_airport_Arrival_Staff#y_airport2c_15850")
+npc("y_airport","Arrival Staff#y_airport2c",SPRITE_4_F_01,158,50,3,0,0,"y_airport_Arrival_Staff#y_airport2c_15850")
 function y_airport_Arrival_Staff#y_airport2c_15850()
 	dialog "[Airport Staff]"
 	dialog "Welcome to Juno Airport. If you've just arrived from your"
@@ -1128,7 +1128,7 @@ function y_airport_Arrival_Staff#y_airport2c_15850()
 	end
 end
 
-npc("y_airport","Domestic Boarding#y_airport2d",spr_4_F_02,145,63,5,0,0,"y_airport_Domestic_Boarding#y_airport2d_14563")
+npc("y_airport","Domestic Boarding#y_airport2d",SPRITE_4_F_02,145,63,5,0,0,"y_airport_Domestic_Boarding#y_airport2d_14563")
 function y_airport_Domestic_Boarding#y_airport2d_14563()
 	dialog "[Boarding Staff]"
 	dialog "Would you like to board the"
@@ -1151,7 +1151,7 @@ function y_airport_Domestic_Boarding#y_airport2d_14563()
 	end
 end
 
-npc("y_airport","International Boarding#y_airport2d",spr_4_F_02,140,63,5,0,0,"y_airport_International_Boarding#y_airport2d_14063")
+npc("y_airport","International Boarding#y_airport2d",SPRITE_4_F_02,140,63,5,0,0,"y_airport_International_Boarding#y_airport2d_14063")
 function y_airport_International_Boarding#y_airport2d_14063()
 	dialog "[Boarding Staff]"
 	dialog "Would you like to board"
@@ -1175,17 +1175,17 @@ function y_airport_International_Boarding#y_airport2d_14063()
 	end
 end
 
-npc("airplane","Exit#airplane1a",spr_4_BOARD3,240,64,5,0,0,"airplane_Exit#airplane1a_24064")
-npc("airplane","Exit#airplane1b",spr_4_BOARD3,247,64,5,0,0,"airplane_Exit#airplane1b_24764")
-npc("airplane","Exit#airplane2a",spr_4_BOARD3,240,40,1,0,0,"airplane_Exit#airplane2a_24040")
-npc("airplane","Exit#airplane2b",spr_4_BOARD3,247,40,1,0,0,"airplane_Exit#airplane2b_24740")
+npc("airplane","Exit#airplane1a",SPRITE_4_BOARD3,240,64,5,0,0,"airplane_Exit#airplane1a_24064")
+npc("airplane","Exit#airplane1b",SPRITE_4_BOARD3,247,64,5,0,0,"airplane_Exit#airplane1b_24764")
+npc("airplane","Exit#airplane2a",SPRITE_4_BOARD3,240,40,1,0,0,"airplane_Exit#airplane2a_24040")
+npc("airplane","Exit#airplane2b",SPRITE_4_BOARD3,247,40,1,0,0,"airplane_Exit#airplane2b_24740")
 
-npc("airplane_01","Exit#airplane_011a",spr_4_BOARD3,240,64,5,0,0,"airplane_01_Exit#airplane_011a_24064")
-npc("airplane_01","Exit#airplane_011b",spr_4_BOARD3,247,64,5,0,0,"airplane_01_Exit#airplane_011b_24764")
-npc("airplane_01","Exit#airplane_012a",spr_4_BOARD3,240,40,1,0,0,"airplane_01_Exit#airplane_012a_24040")
-npc("airplane_01","Exit#airplane_012b",spr_4_BOARD3,247,40,1,0,0,"airplane_01_Exit#airplane_012b_24740")
+npc("airplane_01","Exit#airplane_011a",SPRITE_4_BOARD3,240,64,5,0,0,"airplane_01_Exit#airplane_011a_24064")
+npc("airplane_01","Exit#airplane_011b",SPRITE_4_BOARD3,247,64,5,0,0,"airplane_01_Exit#airplane_011b_24764")
+npc("airplane_01","Exit#airplane_012a",SPRITE_4_BOARD3,240,40,1,0,0,"airplane_01_Exit#airplane_012a_24040")
+npc("airplane_01","Exit#airplane_012b",SPRITE_4_BOARD3,247,40,1,0,0,"airplane_01_Exit#airplane_012b_24740")
 
-npc("airplane","Broadcast#airplane",spr_HIDDEN_NPC,245,90,4,0,0,"airplane_Broadcast#airplane_24590")
+npc("airplane","Broadcast#airplane",SPRITE_HIDDEN_NPC,245,90,4,0,0,"airplane_Broadcast#airplane_24590")
 OnInit:()
 	disablenpc "airwarp#einbroch1"
 	disablenpc "airwarp#einbroch2"

@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("airplane","Joshua Vansey",spr_4_F_CHNDOCTOR,248,65,1,0,0,"airplane_Joshua_Vansey_24865")
+npc("airplane","Joshua Vansey",SPRITE_4_F_CHNDOCTOR,248,65,1,0,0,"airplane_Joshua_Vansey_24865")
 function airplane_Joshua_Vansey_24865()
 	local max_max_c1 = CheckMaxCount(1201,1)
 	if (max_max_c1 == 1) then
@@ -187,7 +187,7 @@ function airplane_Joshua_Vansey_24865()
 	end
 end
 
-npc("airplane","assistant_1",spr_4_F_HUWOMAN,248,64,1,0,0,"airplane_assistant_1_24864")
+npc("airplane","assistant_1",SPRITE_4_F_HUWOMAN,248,64,1,0,0,"airplane_assistant_1_24864")
 function airplane_assistant_1_24864()
 	local max_max_c1 = CheckMaxCount(1201,1)
 	if (max_max_c1 == 1) then
@@ -344,7 +344,7 @@ function airplane_assistant_1_24864()
 	end
 end
 
-npc("yuno","assistant_2",spr_4_F_HUWOMAN,161,171,3,0,0,"yuno_assistant_2_161171")
+npc("yuno","assistant_2",SPRITE_4_F_HUWOMAN,161,171,3,0,0,"yuno_assistant_2_161171")
 function yuno_assistant_2_161171()
 	local max_max_c1 = CheckMaxCount(1201,1)
 	if (max_max_c1 == 1) then
@@ -458,7 +458,7 @@ function yuno_assistant_2_161171()
 	end
 end
 
-npc("lighthalzen","assistant_3",spr_4_F_HUWOMAN,220,204,3,0,0,"lighthalzen_assistant_3_220204")
+npc("lighthalzen","assistant_3",SPRITE_4_F_HUWOMAN,220,204,3,0,0,"lighthalzen_assistant_3_220204")
 function lighthalzen_assistant_3_220204()
 	local max_max_c1 = CheckMaxCount(1201,1)
 	if (max_max_c1 == 1) then
@@ -572,7 +572,7 @@ function lighthalzen_assistant_3_220204()
 	end
 end
 
-npc("einbroch","assistant_4",spr_4_F_HUWOMAN,238,205,3,0,0,"einbroch_assistant_4_238205")
+npc("einbroch","assistant_4",SPRITE_4_F_HUWOMAN,238,205,3,0,0,"einbroch_assistant_4_238205")
 function einbroch_assistant_4_238205()
 	local max_max_c1 = CheckMaxCount(1201,1)
 	if (max_max_c1 == 1) then
@@ -685,7 +685,7 @@ function einbroch_assistant_4_238205()
 	end
 end
 
-npc("hugel","assistant_5",spr_4_F_HUWOMAN,90,151,5,0,0,"hugel_assistant_5_90151")
+npc("hugel","assistant_5",SPRITE_4_F_HUWOMAN,90,151,5,0,0,"hugel_assistant_5_90151")
 function hugel_assistant_5_90151()
 	local max_max_c1 = CheckMaxCount(1201,1)
 	if (max_max_c1 == 1) then

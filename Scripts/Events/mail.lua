@@ -802,7 +802,7 @@ function louyang_Mailbox_204100()
 	end
 end
 
-npc("hugel","Mailbox",spr_HIDDEN_NPC,86,168,0,0,0,"hugel_Mailbox_86168")
+npc("hugel","Mailbox",SPRITE_HIDDEN_NPC,86,168,0,0,0,"hugel_Mailbox_86168")
 function hugel_Mailbox_86168()
 	dialog "[Mailbox]"
 	dialog "To use the mailbox service, you are required"

@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("izlude","Novice WoE Event Monument",spr_HIDDEN_NPC,124,218,0,0,0,"izlude_Novice_WoE_Event_Monument_124218")
+npc("izlude","Novice WoE Event Monument",SPRITE_HIDDEN_NPC,124,218,0,0,0,"izlude_Novice_WoE_Event_Monument_124218")
 function izlude_Novice_WoE_Event_Monument_124218()
 	dialog "=======[Monument]======="
 	dialog "^333333I hereby leave this"

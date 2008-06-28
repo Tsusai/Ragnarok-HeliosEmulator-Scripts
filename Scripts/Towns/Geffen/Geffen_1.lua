@@ -20,7 +20,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("geffen","Meera",spr_4_F_02,59,143,0,5,5,"geffen_Meera_59143")
+npc("geffen","Meera",SPRITE_4_F_02,59,143,0,5,5,"geffen_Meera_59143")
 function geffen_Meera_59143()
 	dialog "[Meera]"
 	dialog "Welcome to Geffen,"
@@ -44,7 +44,7 @@ function geffen_Meera_59143()
 	close()
 end
 
-npc("geffen","Orwalk",spr_4_KID01,156,190,0,5,5,"geffen_Orwalk_156190")
+npc("geffen","Orwalk",SPRITE_4_KID01,156,190,0,5,5,"geffen_Orwalk_156190")
 function geffen_Orwalk_156190()
 	dialog "[Orwalk]"
 	dialog "...Interesting."
@@ -63,7 +63,7 @@ function geffen_Orwalk_156190()
 	close()
 end
 
-npc("geffen_in","Wizard Stanza",spr_1_M_WIZARD,164,109,0,5,5,"geffen_in_Wizard_Stanza_164109")
+npc("geffen_in","Wizard Stanza",SPRITE_1_M_WIZARD,164,109,0,5,5,"geffen_in_Wizard_Stanza_164109")
 function geffen_in_Wizard_Stanza_164109()
 	dialog "[Stanza]"
 	dialog "I sense the presence of a mighty spirit. Can it be you...?"
@@ -95,7 +95,7 @@ function geffen_in_Wizard_Stanza_164109()
 	close()
 end
 
-npc("geffen","Ralphie",spr_4W_M_01,147,26,0,5,5,"geffen_Ralphie_14726")
+npc("geffen","Ralphie",SPRITE_4W_M_01,147,26,0,5,5,"geffen_Ralphie_14726")
 function geffen_Ralphie_14726()
 	dialog "[Ralphie]"
 	dialog "Somewhere in this world, there is a rare Staff which can transform psychic energy into physical force, endowing its owner with ^990000destructive power^000000..."
@@ -126,7 +126,7 @@ function geffen_Ralphie_14726()
 	close()
 end
 
-npc("geffen","Stacey",spr_4W_F_01,111,48,0,5,5,"geffen_Stacey_11148")
+npc("geffen","Stacey",SPRITE_4W_F_01,111,48,0,5,5,"geffen_Stacey_11148")
 function geffen_Stacey_11148()
 	local orchelm = GetEquipCount (Viking_Helm)
 	local orchero = GetEquipCount(Orc_Hero_Helm)
@@ -189,7 +189,7 @@ function geffen_Stacey_11148()
 	end
 end
 
-npc("geffen_in","Theodore",spr_1_M_01,34,170,0,5,5,"geffen_in_Theodore_34170")
+npc("geffen_in","Theodore",SPRITE_1_M_01,34,170,0,5,5,"geffen_in_Theodore_34170")
 function geffen_in_Theodore_34170()
 	dialog "[Theodore]"
 	dialog "Hello!"
@@ -222,7 +222,7 @@ function geffen_in_Theodore_34170()
 	close()
 end
 
-npc("geffen_in","Christopher",spr_1_M_SMITH,110,172,0,5,5,"geffen_in_Christopher_110172")
+npc("geffen_in","Christopher",SPRITE_1_M_SMITH,110,172,0,5,5,"geffen_in_Christopher_110172")
 function geffen_in_Christopher_110172()
 	dialog "[Christopher Guillenrow]"
 	dialog "Welcome to Christopher's Workshop. Ye can get all yer stuff for forging here. What business"
@@ -504,7 +504,7 @@ function geffen_in_Christopher_110172()
 	end
 end
 
-npc("geffen","Suspicious Guy",spr_4W_M_03,146,148,4,6,6,"geffen_Suspicious_Guy_146148")
+npc("geffen","Suspicious Guy",SPRITE_4W_M_03,146,148,4,6,6,"geffen_Suspicious_Guy_146148")
 function geffen_Suspicious_Guy_146148()
 	dialog "[?]"
 	dialog "^333333*Psssst!*"
@@ -722,7 +722,7 @@ function geffen_Suspicious_Guy_146148()
 	close()
 end
 
-npc("geffen_in","Crumpler",spr_1_M_HOF,22,125,1,3,3,"geffen_in_Crumpler_22125")
+npc("geffen_in","Crumpler",SPRITE_1_M_HOF,22,125,1,3,3,"geffen_in_Crumpler_22125")
 function geffen_in_Crumpler_22125()
 	dialog "[Crumpler]"
 	dialog "Ooooh~!"
@@ -823,7 +823,7 @@ function geffen_in_Crumpler_22125()
 	end
 end
 
-npc("geffen_in","Skyler",spr_1_M_PUBMASTER,59,61,1,5,5,"geffen_in_Skyler_5961")
+npc("geffen_in","Skyler",SPRITE_1_M_PUBMASTER,59,61,1,5,5,"geffen_in_Skyler_5961")
 function geffen_in_Skyler_5961()
 	dialog "[Skyler]"
 	dialog "Hello hello."
@@ -849,7 +849,7 @@ function geffen_in_Skyler_5961()
 	end
 end
 
-npc("geffen_in","Waitresselen",spr_4_F_02,27,134,5,4,4,"geffen_in_Waitresselen_27134")
+npc("geffen_in","Waitresselen",SPRITE_4_F_02,27,134,5,4,4,"geffen_in_Waitresselen_27134")
 function geffen_in_Waitresselen_27134()
 	dialog "[Elenore]"
 	dialog "This place..."
@@ -988,7 +988,7 @@ function geffen_in_Waitresselen_27134()
 	close()
 end
 
-npc("geffen_in","Waitress#elise",spr_4_F_01,70,67,3,4,4,"geffen_in_Waitresselise_7067")
+npc("geffen_in","Waitress#elise",SPRITE_4_F_01,70,67,3,4,4,"geffen_in_Waitresselise_7067")
 function geffen_in_Waitresselise_7067()
 	dialog "[Elisa]"
 	dialog "Hello there~"
@@ -1107,7 +1107,7 @@ function geffen_in_Waitresselise_7067()
 	end
 end
 
-npc("geffen_in","Merchant Daven",spr_2_M_PHARMACIST,79,76,2,4,4,"geffen_in_Merchant_Daven_7976")
+npc("geffen_in","Merchant Daven",SPRITE_2_M_PHARMACIST,79,76,2,4,4,"geffen_in_Merchant_Daven_7976")
 function geffen_in_Merchant_Daven_7976()
 	dialog "[Merchant Daven]"
 	dialog "I remember Geffen"
@@ -1173,7 +1173,7 @@ function geffen_in_Merchant_Daven_7976()
 	end
 end
 
-npc("geffen_in","Hadenheim",spr_4_M_SEAMAN,114,73,5,0,0,"geffen_in_Hadenheim_11473")
+npc("geffen_in","Hadenheim",SPRITE_4_M_SEAMAN,114,73,5,0,0,"geffen_in_Hadenheim_11473")
 function geffen_in_Hadenheim_11473()
 	dialog "[Hans Hadenheim]"
 	dialog "Man, the Rune-Midgard continent sure is big! How's it going, youngster?"
@@ -1224,7 +1224,7 @@ function geffen_in_Hadenheim_11473()
 	end
 end
 
-npc("geffen_in","Psychic Advisor",spr_4_M_BIBI,39,127,2,5,5,"geffen_in_Psychic_Advisor_39127")
+npc("geffen_in","Psychic Advisor",SPRITE_4_M_BIBI,39,127,2,5,5,"geffen_in_Psychic_Advisor_39127")
 function geffen_in_Psychic_Advisor_39127()
 	dialog "[Psychic Advisor]"
 	dialog "Ah..."
@@ -1667,7 +1667,7 @@ function geffen_in_Psychic_Advisor_39127()
 end
 
 
-npc("geffen_in","Monster Scholar",spr_4_F_01,109,72,2,5,5,"geffen_in_Monster_Scholar_10972")
+npc("geffen_in","Monster Scholar",SPRITE_4_F_01,109,72,2,5,5,"geffen_in_Monster_Scholar_10972")
 function geffen_in_Monster_Scholar_10972()
 	dialog "[Estheres]"
 	dialog "Hello, I'm the resident expert of Monsterology here in Geffen. Is there anything in particular that you're curious about?"
@@ -1733,7 +1733,7 @@ function geffen_in_Monster_Scholar_10972()
 	end
 end
 
-npc("geffen_in","Inn Employee",spr_1_M_INNKEEPER,70,64,3,0,0,"geffen_in_Inn_Employee_7064")
+npc("geffen_in","Inn Employee",SPRITE_1_M_INNKEEPER,70,64,3,0,0,"geffen_in_Inn_Employee_7064")
 function geffen_in_Inn_Employee_7064()
 	dialog "[Employee Cena]"
 	dialog "Welcome to 'Ifrit,'"

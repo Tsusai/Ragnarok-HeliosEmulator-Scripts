@@ -87,7 +87,7 @@ OnInit:()
 	sellitem Pumpkin
 end
 
-npc("hu_in01","Shopkeeper#hg",spr_4_M_HUMAN_01,23,311,5,0,0,"hu_in01_Shopkeeper#hg_23311")
+npc("hu_in01","Shopkeeper#hg",SPRITE_4_M_HUMAN_01,23,311,5,0,0,"hu_in01_Shopkeeper#hg_23311")
 function hu_in01_Shopkeeper#hg_23311()
 	local max_max_c1 = CheckMaxCount 1201 1
 		if (max_max_c1 == 1) then

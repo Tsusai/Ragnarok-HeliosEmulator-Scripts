@@ -21,7 +21,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("einbech","Buender Hikeman#ein",spr_4_M_EINOLD,165,105,7,0,0,"einbech_Buender_Hikeman#ein_165105")
+npc("einbech","Buender Hikeman#ein",SPRITE_4_M_EINOLD,165,105,7,0,0,"einbech_Buender_Hikeman#ein_165105")
 function einbech_Buender_Hikeman#ein_165105()
 	showimage("ein_hicman.bmp",2)
 	if (getvar(ein_main) == 0) then
@@ -516,7 +516,7 @@ function einbech_Buender_Hikeman#ein_165105()
 	end
 end
 
-npc("ein_in01","Sick Old Man#ein",spr_4_M_DIEMAN,231,163,7,0,0,"ein_in01_Sick_Old_Man#ein_231163")
+npc("ein_in01","Sick Old Man#ein",SPRITE_4_M_DIEMAN,231,163,7,0,0,"ein_in01_Sick_Old_Man#ein_231163")
 function ein_in01_Sick_Old_Man#ein_231163()
 	if (getvar(ein_main) < 2) then
 		dialog "[Sick Old Man]"
@@ -1052,7 +1052,7 @@ function ein_in01_Sick_Old_Man#ein_231163()
 	end
 end
 
-npc("ein_in01","Maid#ein",spr_4_F_EINWOMAN,32,133,7,0,0,"ein_in01_Maid#ein_32133")
+npc("ein_in01","Maid#ein",SPRITE_4_F_EINWOMAN,32,133,7,0,0,"ein_in01_Maid#ein_32133")
 function ein_in01_Maid#ein_32133()
 	if (getvar(ein_main) == 4) then
 		dialog "[Maid]"
@@ -1087,7 +1087,7 @@ function ein_in01_Maid#ein_32133()
 	end
 end
 
-npc("ein_in01","Scientist#ein",spr_4_M_ALCHE_B,254,35,1,0,0,"ein_in01_Scientist#ein_25435")
+npc("ein_in01","Scientist#ein",SPRITE_4_M_ALCHE_B,254,35,1,0,0,"ein_in01_Scientist#ein_25435")
 function ein_in01_Scientist#ein_25435()
 	dialog "[Scientist]"
 	dialog "^333333*Grumble grumble*^000000"
@@ -1152,7 +1152,7 @@ function ein_in01_Scientist#ein_25435()
 	close()
 end
 
-npc("ein_in01","Unknown Stuff#ein",spr_HIDDEN_NPC,266,27,3,0,0,"ein_in01_Unknown_Stuff#ein_26627")
+npc("ein_in01","Unknown Stuff#ein",SPRITE_HIDDEN_NPC,266,27,3,0,0,"ein_in01_Unknown_Stuff#ein_26627")
 function ein_in01_Unknown_Stuff#ein_26627()
 	dialog "^3355FFThere's something"
 	dialog "attached to a huge"
@@ -1161,7 +1161,7 @@ function ein_in01_Unknown_Stuff#ein_26627()
 	close()
 end
 
-npc("einbroch","Laboratory Soldier#ein-1",spr_4_M_EIN_SOLDIER,51,46,5,0,0,"einbroch_Laboratory_Soldier#ein-1_5146")
+npc("einbroch","Laboratory Soldier#ein-1",SPRITE_4_M_EIN_SOLDIER,51,46,5,0,0,"einbroch_Laboratory_Soldier#ein-1_5146")
 OnCommand: "on"
 	enablenpc "Laboratory Soldier#ein-1"
 end
@@ -1177,7 +1177,7 @@ function einbroch_Laboratory_Soldier#ein-1_5146()
 	close()
 end
 
-npc("einbroch","Laboratory Soldier#ein-2",spr_4_M_EIN_SOLDIER,51,56,5,0,0,"einbroch_Laboratory_Soldier#ein-2_5156")
+npc("einbroch","Laboratory Soldier#ein-2",SPRITE_4_M_EIN_SOLDIER,51,56,5,0,0,"einbroch_Laboratory_Soldier#ein-2_5156")
 OnCommand: "on"
 	enablenpc "Laboratory Soldier#ein-2"
 end
@@ -1200,7 +1200,7 @@ function einbroch_Laboratory_Soldier#ein-2_5156()
 	close()
 end
 
-npc("airplane","Drunken Man#ein",spr_4_M_YURI,31,77,5,0,0,"airplane_Drunken_Man#ein_3177")
+npc("airplane","Drunken Man#ein",SPRITE_4_M_YURI,31,77,5,0,0,"airplane_Drunken_Man#ein_3177")
 function airplane_Drunken_Man#ein_3177()
 	if (getvar(ein_main) == 8) then
 		dialog "[Drunken Man]"
@@ -1473,7 +1473,7 @@ function ein_in01_#kenka_231170()
 	end
 end
 
-npc("einbech","Young Man#ein_main",spr_4_M_EINMAN,57,210,3,0,0,"einbech_Young_Man#ein_main_57210")
+npc("einbech","Young Man#ein_main",SPRITE_4_M_EINMAN,57,210,3,0,0,"einbech_Young_Man#ein_main_57210")
 function einbech_Young_Man#ein_main_57210()
 	dialog "[Young Man]"
 	dialog "Behind the pub,"

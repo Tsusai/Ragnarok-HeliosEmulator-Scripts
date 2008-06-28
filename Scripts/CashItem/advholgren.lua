@@ -20,7 +20,7 @@
 --\_________________________________________________/--
 
 
-npc("payon","Suhnbi",spr_4_M_03,174,138,3,0,0,"payon_Suhnbi_174138")
+npc("payon","Suhnbi",SPRITE_4_M_03,174,138,3,0,0,"payon_Suhnbi_174138")
 function payon_Suhnbi_174138()
 	local strPart1
 	local strPart2

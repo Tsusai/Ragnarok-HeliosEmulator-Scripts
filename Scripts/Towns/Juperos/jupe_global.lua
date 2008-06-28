@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("sec_in02","Juperos Manager",spr_4_F_OPERATION,39,167,0,0,0,"sec_in02_Juperos_Manager_39167")
+npc("sec_in02","Juperos Manager",SPRITE_4_F_OPERATION,39,167,0,0,0,"sec_in02_Juperos_Manager_39167")
 --[[OnInit:()
 	SetGlobalVar("jupe_area1",0)
 	SetGlobalVar("jupe_area2",0)

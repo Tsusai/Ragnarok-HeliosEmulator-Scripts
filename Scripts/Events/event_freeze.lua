@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("alberta","Cool Event Employee_Give Goods",spr_4_M_ZONDAOYAJI,148,60,3,0,0,"alberta_Cool_Event_Employee_Give_Goods_14860")
+npc("alberta","Cool Event Employee_Give Goods",SPRITE_4_M_ZONDAOYAJI,148,60,3,0,0,"alberta_Cool_Event_Employee_Give_Goods_14860")
 function alberta_Cool_Event_Employee_Give_Goods_14860()
 	local max_max_c = CheckMaxCount(1201,1)
 	if max_max_c == 1 then
@@ -167,7 +167,7 @@ function alberta_Cool_Event_Employee_Give_Goods_14860()
 	end
 end
 
-npc("alberta","Cool Event Corp_Switch",spr_4_M_ZONDAOYAJI,250,250,0,0,0,"alberta_Cool_Event_Corp_Switch_250250")
+npc("alberta","Cool Event Corp_Switch",SPRITE_4_M_ZONDAOYAJI,250,250,0,0,0,"alberta_Cool_Event_Corp_Switch_250250")
 function alberta_Cool_Event_Corp_Switch_250250()
 	dialog "[Raven]"
 	dialog "I perform the function of"
@@ -184,7 +184,7 @@ function alberta_Cool_Event_Corp_Switch_250250()
 	end
 end
 
-npc("alberta","Cool Event Employee_GiveZeny",spr_4_F_ZONDAGIRL,148,53,3,0,0,"alberta_Cool_Event_Employee_GiveZeny_14853")
+npc("alberta","Cool Event Employee_GiveZeny",SPRITE_4_F_ZONDAGIRL,148,53,3,0,0,"alberta_Cool_Event_Employee_GiveZeny_14853")
 function alberta_Cool_Event_Employee_GiveZeny_14853()
 	local max_max_c = CheckMaxCount(1201,1)
 	if max_max_c == 1 then
@@ -340,7 +340,7 @@ function alberta_Cool_Event_Employee_GiveZeny_14853()
 	end
 end
 
-npc("alberta","Cool Event Corp_Zeny_Switch",spr_4_M_ZONDAOYAJI,245,245,0,0,0,"alberta_Cool_Event_Corp_Zeny_Switch_245245")
+npc("alberta","Cool Event Corp_Zeny_Switch",SPRITE_4_M_ZONDAOYAJI,245,245,0,0,0,"alberta_Cool_Event_Corp_Zeny_Switch_245245")
 function alberta_Cool_Event_Corp_Zeny_Switch_245245()
 	dialog "[Crest]"
 	dialog "I perform the function of"
