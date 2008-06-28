@@ -20,8 +20,10 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("einbroch","Guide#ein",SPRITE_4_M_EIN_SOLDIER,72,202,4,0,0,"einbroch_Guide#ein_72202")
+npc("einbroch","Guide_ein",SPRITE_4_M_EIN_SOLDIER,72,202,4,0,0,"einbroch_Guide_ein_72202")
 function einbroch_Guide_ein_72202()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("ein_soldier.bmp",2)
 	dialog "[Einbroch Guide]"
 	dialog "Welcome"
@@ -46,14 +48,14 @@ function einbroch_Guide_ein_72202()
 				wait()
 				local mresultb = menu("Yes.","No.")
 				if mresultb == 1 then
-					local compass_check = 1
+					compass_check = 1
 				elseif mresultb == 2 then
 					local compass_check = 2
 				end
 			end
 			while(1) do
 				if wait_button_chk == 0 then
-					wait_button_chk("=",1)
+					wait_button_chk = 1
 				else
 					wait()
 				end
@@ -184,7 +186,7 @@ function einbroch_Guide_ein_72202()
 			compass(8,36,49,2,"0xFF00FF00")
 			compass(9,244,90,2,"0xFF00FF00")
 			compass(10,174,195,2,"0xFF00FF00")
-			compass_check("=",0)
+			compass_check = 0
 			dialog "[Einbroch Guide]"
 			dialog "Okay, the marks from"
 			dialog "your Mini-Map have been"
@@ -255,14 +257,14 @@ function einbroch_Guide_15543()
 				wait()
 				local mresultb = menu("Yes.","No.")
 				if mresultb == 1 then
-					local compass_check = 1
+					compass_check = 1
 				elseif mresultb == 2 then
 					local compass_check = 2
 				end
 			end
 			while(1) do
 				if wait_button_chk == 0 then
-					wait_button_chk("=",1)
+					wait_button_chk = 1
 				else
 					wait()
 				end
@@ -393,7 +395,7 @@ function einbroch_Guide_15543()
 			compass(8,36,49,2,"0xFF00FF00")
 			compass(9,244,90,2,"0xFF00FF00")
 			compass(10,174,195,2,"0xFF00FF00")
-			compass_check("=",0)
+			compass_check = 0
 			dialog "[Einbroch Guide]"
 			dialog "Okay, the marks from"
 			dialog "your Mini-Map have been"
@@ -464,14 +466,14 @@ function einbroch_Guide_162317()
 				wait()
 				local mresultb = menu("Yes.","No.")
 				if mresultb == 1 then
-					local compass_check = 1
+					compass_check = 1
 				elseif mresultb == 2 then
 					local compass_check = 2
 				end
 			end
 			while(1) do
 				if wait_button_chk == 0 then
-					wait_button_chk("=",1)
+					wait_button_chk = 1
 				else
 					wait()
 				end
@@ -602,7 +604,7 @@ function einbroch_Guide_162317()
 			compass(8,36,49,2,"0xFF00FF00")
 			compass(9,244,90,2,"0xFF00FF00")
 			compass(10,174,195,2,"0xFF00FF00")
-			compass_check("=",0)
+			compass_check = 0
 			dialog "[Einbroch Guide]"
 			dialog "Okay, the marks from"
 			dialog "your Mini-Map have been"
@@ -673,14 +675,14 @@ function einbech_Guide_6737()
 				wait()
 				local mresultb = menu("Yes.","No.")
 				if mresultb == 1 then
-					local compass_check = 1
+					compass_check = 1
 				elseif mresultb == 2 then
 					local compass_check = 2
 				end
 			end
 			while(1) do
 				if wait_button_chk == 0 then
-					wait_button_chk("=",1)
+					wait_button_chk = 1
 				else
 					wait()
 				end
@@ -762,7 +764,7 @@ function einbech_Guide_6737()
 			compass(4,176,136,2,"0xFF00FF00")
 			compass(5,250,110,2,"0xFF00FF00")
 			compass(6,138,251,2,"0xFF00FF00")
-			compass_check("=",0)
+			compass_check = 0
 			dialog "[Einbech Guide]"
 			dialog "Okay, the marks from"
 			dialog "your Mini-Map have been"
@@ -831,14 +833,14 @@ function einbech_Guide_48214()
 				wait()
 				local mresultb = menu("Yes.","No.")
 				if mresultb == 1 then
-					local compass_check = 1
+					compass_check = 1
 				elseif mresultb == 2 then
 					local compass_check = 2
 				end
 			end
 			while(1) do
 				if wait_button_chk == 0 then
-					wait_button_chk("=",1)
+					wait_button_chk = 1
 				else
 					wait()
 				end
@@ -920,7 +922,7 @@ function einbech_Guide_48214()
 			compass(4,176,136,2,"0xFF00FF00")
 			compass(5,250,110,2,"0xFF00FF00")
 			compass(6,138,251,2,"0xFF00FF00")
-			compass_check("=",0)
+			compass_check = 0
 			dialog "[Einbech Guide]"
 			dialog "Okay, the marks from"
 			dialog "your Mini-Map have been"

@@ -22,6 +22,8 @@
 
 npc("ayothaya","Noi",SPRITE_4_F_THAIGIRL,203,169,3,0,0,"ayothaya_Noi_203169")
 function ayothaya_Noi_203169()
+	local compass_check = 0
+	local wait_button_chk = 0
 	dialog "[Noi]"
 	dialog "Welcome to Ayotaya."
 	dialog "Our beautiful village is built"
@@ -121,7 +123,7 @@ function ayothaya_Noi_203169()
 		compass(4,232,76,2,"0xFF00FF00")
 		compass(5,208,283,2,"0xFF00FF00")
 		compass(6,253,99,2,"0xFF00FF00")
-		compass_check("=",0)
+		compass_check = 0
 		dialog "[Noi]"
 		dialog "Alright..."
 		dialog "I've removed all the"

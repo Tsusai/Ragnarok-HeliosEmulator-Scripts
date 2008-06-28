@@ -22,6 +22,8 @@
 
 npc("rachel","Rachel Guide",SPRITE_4_M_RASWORD,138,146,5,0,0,"rachel_Rachel_Guide_138146")
 function rachel_Rachel_Guide_138146()
+	local compass_check = 0
+	local wait_button_chk = 0
 	dialog "[Rachel Guide]"
 	dialog "Welcome to the capital of"
 	dialog "Arunafeltz, Rachel where a warm"
@@ -45,14 +47,14 @@ function rachel_Rachel_Guide_138146()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					local compass_check = 1
+					compass_check = 1
 				elseif mresultb == 2 then
 					local compass_check = 2
 				end
 			end
 			while(1) do
 				if wait_button_chk == 0 then
-					wait_button_chk("=",1)
+					wait_button_chk = 1
 				else
 					wait()
 				end
@@ -114,7 +116,7 @@ function rachel_Rachel_Guide_138146()
 			compass(4,42,87,2,"0xFF99FFFF")
 			compass(5,83,78,2,"0xFF0000FF")
 			compass(6,273,125,2,"0xFF00FF00")
-			compass_check("=",0)
+			compass_check = 0
 			dialog "[Rachel Guide]"
 			dialog "Okay, they are gone now. If you have more locations to ask, just let me know."
 		elseif mresulta == 3 then

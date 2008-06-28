@@ -22,6 +22,8 @@
 
 npc("umbala","Adventurer",SPRITE_4_F_GON,128,94,4,1,1,"umbala_Adventurer_12894")
 function umbala_Adventurer_12894()
+	local compass_check = 0
+	local wait_button_chk = 0
 	dialog "[Adventurer]"
 	dialog "This is a very strange place..."
 	dialog "It's underdeveloped, and there"
@@ -131,7 +133,7 @@ function umbala_Adventurer_12894()
 		compass(4,126,154,2,"0xFF00FF00")
 		compass(5,136,127,2,"0xFF00FF00")
 		compass(6,139,198,2,"0xFF00FF00")
-		compass_check("=",0)
+		compass_check = 0
 		dialog "[Adventurer]"
 		dialog "I removed all the marks from your"
 		dialog "mini map. Feel free to ask me"

@@ -22,6 +22,8 @@
 
 npc("aldebaran","Soldier",SPRITE_8W_SOLDIER,139,63,4,0,0,"aldebaran_Soldier_13963")
 function aldebaran_Soldier_13963()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("prt_soldier.bmp",2)
 	dialog "[Al De Baran Guard]"
 	dialog "I'm just an ordinary guard"

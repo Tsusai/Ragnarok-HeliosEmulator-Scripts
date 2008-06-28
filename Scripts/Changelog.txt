@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 59-
+[2008/6/28] Spre - Reapplied Aeomins fix, it should work this time.
+-
+
 -Rev 58-
 [2008/6/28] Spre - Reverted Rev57 - Something fucked the files.
 -
