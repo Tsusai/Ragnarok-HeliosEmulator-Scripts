@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("yuno_in03","Metto",spr_4_M_SEAMAN,26,39,3,0,0,"yuno_in03_Metto_2639")
+npc("yuno_in03","Metto",SPRITE_4_M_SEAMAN,26,39,3,0,0,"yuno_in03_Metto_2639")
 function yuno_in03_Metto_2639()
 	if getvar(mad) == 0 then
 		dialog "[Metto]"
@@ -132,7 +132,7 @@ function yuno_in03_Metto_2639()
 end
 
 
-npc("yuno_in01","Wagan",spr_4_M_03,17,30,5,0,0,"yuno_in01_Wagan_1730")
+npc("yuno_in01","Wagan",SPRITE_4_M_03,17,30,5,0,0,"yuno_in01_Wagan_1730")
 function yuno_in01_Wagan_1730()
 	if getvar(mad) == 0 then
 		dialog "[Wagan]"
@@ -268,7 +268,7 @@ function yuno_in01_Wagan_1730()
 		end
 	return
 end
-npc("yuno_in01","Stangckle",spr_4W_M_03,17,95,5,0,0,"yuno_in01_Stangckle_1795")
+npc("yuno_in01","Stangckle",SPRITE_4W_M_03,17,95,5,0,0,"yuno_in01_Stangckle_1795")
 function yuno_in01_Stangckle_1795()
 	if getvar(mad) == 2 then
 		dialog "[Stangckle]"
@@ -337,7 +337,7 @@ function yuno_in01_Stangckle_1795()
 	end
 end
 
-npc("yuno_in01","Kato",spr_1_M_JOBTESTER,19,183,5,0,0,"yuno_in01_Kato_19183")
+npc("yuno_in01","Kato",SPRITE_1_M_JOBTESTER,19,183,5,0,0,"yuno_in01_Kato_19183")
 function yuno_in01_Kato_19183()
 	if getvar(mad) == 4 then
 		dialog "[Kato]"
@@ -439,7 +439,7 @@ function yuno_in01_Kato_19183()
 	end
 end
 
-npc("yuno_in03","CiCi",spr_2_M_MOLGENSTEIN,178,43,0,0,0,"yuno_in03_CiCi_17843")
+npc("yuno_in03","CiCi",SPRITE_2_M_MOLGENSTEIN,178,43,0,0,0,"yuno_in03_CiCi_17843")
 function yuno_in03_CiCi_17843()
 	if getvar(mad) == 6 then
 		dialog "[CiCi]"
@@ -493,7 +493,7 @@ function yuno_in03_CiCi_17843()
 	end
 end
 
-npc("yuno_in01","Bain",spr_4W_M_02,103,157,3,0,0,"yuno_in01_Bain_103157")
+npc("yuno_in01","Bain",SPRITE_4W_M_02,103,157,3,0,0,"yuno_in01_Bain_103157")
 function yuno_in01_Bain_103157()
 	local max_max_c = CheckMaxCount(1201,1)
 	if max_max_c == 1 then
@@ -682,7 +682,7 @@ function yuno_in01_Bain_103157()
 	end
 end
 
-npc("yuno_in01","Bajin",spr_1_M_01,100,153,7,0,0,"yuno_in01_Bajin_100153")
+npc("yuno_in01","Bajin",SPRITE_1_M_01,100,153,7,0,0,"yuno_in01_Bajin_100153")
 function yuno_in01_Bajin_100153()
 	local max_max_c = CheckMaxCount(1201,1)
 	if max_max_c == 1 then

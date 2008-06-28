@@ -21,7 +21,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("prontera","Bulletin Board#pron",spr_2_BULLETIN_BOARD,148,49,0,0,0,"prontera_Bulletin_Board#pron_14849")
+npc("prontera","Bulletin Board#pron",SPRITE_2_BULLETIN_BOARD,148,49,0,0,0,"prontera_Bulletin_Board#pron_14849")
 function prontera_Bulletin_Board#pron_14849()
 	dialog "[Prontera: Capital of the]"
 	dialog "[Rune-Midgarts Kingdom]"
@@ -53,7 +53,7 @@ function prontera_Bulletin_Board#pron_14849()
 	close()
 end
 
-npc("geffen","Bulletin Board#geffen",spr_2_BULLETIN_BOARD,124,65,0,0,0,"geffen_Bulletin_Board#geffen_12465")
+npc("geffen","Bulletin Board#geffen",SPRITE_2_BULLETIN_BOARD,124,65,0,0,0,"geffen_Bulletin_Board#geffen_12465")
 function geffen_Bulletin_Board#geffen_12465()
 	dialog "[Geffen: The City of Magic]"
 	dialog "Welcome to Geffen, the City of Magic. Geffen is well known for its various legends related to magic."
@@ -72,7 +72,7 @@ function geffen_Bulletin_Board#geffen_12465()
 	close()
 end
 
-npc("gef_tower","Bulletin Board#gefdun",spr_2_BULLETIN_BOARD,55,142,0,0,0,"gef_tower_Bulletin_Board#gefdun_55142")
+npc("gef_tower","Bulletin Board#gefdun",SPRITE_2_BULLETIN_BOARD,55,142,0,0,0,"gef_tower_Bulletin_Board#gefdun_55142")
 function gef_tower_Bulletin_Board#gefdun_55142()
 	dialog "[Geffen Dungeon]"
 	dialog "^CC0000Caution!^000000"
@@ -91,7 +91,7 @@ function gef_tower_Bulletin_Board#gefdun_55142()
 	close()
 end
 
-npc("payon","Bulletin Board#pay",spr_2_BULLETIN_BOARD,178,108,0,0,0,"payon_Bulletin_Board#pay_178108")
+npc("payon","Bulletin Board#pay",SPRITE_2_BULLETIN_BOARD,178,108,0,0,0,"payon_Bulletin_Board#pay_178108")
 function payon_Bulletin_Board#pay_178108()
 	dialog "[Payon: The Mountain City]"
 	dialog "Welcome to Payon, the mountain city. Payon has recently been renovated, so we hope you enjoy the clean, nice streets and buildings."
@@ -113,7 +113,7 @@ function payon_Bulletin_Board#pay_178108()
 	close()
 end
 
-npc("pay_arche","Bulletin Board#archervil",spr_2_BULLETIN_BOARD,79,31,0,0,0,"pay_arche_Bulletin_Board#archervil_7931")
+npc("pay_arche","Bulletin Board#archervil",SPRITE_2_BULLETIN_BOARD,79,31,0,0,0,"pay_arche_Bulletin_Board#archervil_7931")
 function pay_arche_Bulletin_Board#archervil_7931()
 	dialog "[Archer Village]"
 	dialog "Welcome to the Payon Archer Village where Novices can change their jobs to Archer."
@@ -126,7 +126,7 @@ function pay_arche_Bulletin_Board#archervil_7931()
 	close()
 end
 
-npc("pay_arche","Bulletin Board#paydun",spr_2_BULLETIN_BOARD,39,134,0,0,0,"pay_arche_Bulletin_Board#paydun_39134")
+npc("pay_arche","Bulletin Board#paydun",SPRITE_2_BULLETIN_BOARD,39,134,0,0,0,"pay_arche_Bulletin_Board#paydun_39134")
 function pay_arche_Bulletin_Board#paydun_39134()
 	dialog "[Payon Cave]"
 	dialog "^CC0000Caution!^000000"
@@ -137,7 +137,7 @@ function pay_arche_Bulletin_Board#paydun_39134()
 	close()
 end
 
-npc("alberta","Bulletin Board#alberta",spr_2_BULLETIN_BOARD,111,59,0,0,0,"alberta_Bulletin_Board#alberta_11159")
+npc("alberta","Bulletin Board#alberta",SPRITE_2_BULLETIN_BOARD,111,59,0,0,0,"alberta_Bulletin_Board#alberta_11159")
 function alberta_Bulletin_Board#alberta_11159()
 	dialog "[Alberta: The Port City]"
 	dialog "Welcome to Alberta, the Port City."
@@ -162,7 +162,7 @@ function alberta_Bulletin_Board#alberta_11159()
 	close()
 end
 
-npc("alb2trea","Bulletin Board#sunken",spr_2_BULLETIN_BOARD,75,101,0,0,0,"alb2trea_Bulletin_Board#sunken_75101")
+npc("alb2trea","Bulletin Board#sunken",SPRITE_2_BULLETIN_BOARD,75,101,0,0,0,"alb2trea_Bulletin_Board#sunken_75101")
 function alb2trea_Bulletin_Board#sunken_75101()
 	dialog "[Island Near Sunken Ship]"
 	dialog "^CC0000Caution!^000000"
@@ -182,7 +182,7 @@ function alb2trea_Bulletin_Board#sunken_75101()
 	close()
 end
 
-npc("aldebaran","Bulletin Board#alde",spr_2_BULLETIN_BOARD,146,106,0,0,0,"aldebaran_Bulletin_Board#alde_146106")
+npc("aldebaran","Bulletin Board#alde",SPRITE_2_BULLETIN_BOARD,146,106,0,0,0,"aldebaran_Bulletin_Board#alde_146106")
 function aldebaran_Bulletin_Board#alde_146106()
 	dialog "[Al De Baran: The Border City]"
 	dialog "Welcome to Al De Baran, the border city of the Rune-Midgarts Kingdom. Al De Baran's beautiful canals and majestic Clock Tower are a source of pride for its citizens."
@@ -198,7 +198,7 @@ function aldebaran_Bulletin_Board#alde_146106()
 	close()
 end
 
-npc("xmas_fild01","Bulletin Board#lutie",spr_2_BULLETIN_BOARD,75,80,0,0,0,"xmas_fild01_Bulletin_Board#lutie_7580")
+npc("xmas_fild01","Bulletin Board#lutie",SPRITE_2_BULLETIN_BOARD,75,80,0,0,0,"xmas_fild01_Bulletin_Board#lutie_7580")
 function xmas_fild01_Bulletin_Board#lutie_7580()
 	dialog "[Lutie: The Winter Town]"
 	dialog "Welcome to Lutie, the town of year round snowfall. This town's main industry... is toy manufacturing!"
@@ -211,7 +211,7 @@ function xmas_fild01_Bulletin_Board#lutie_7580()
 	close()
 end
 
-npc("xmas","Bulletin Board#toy",spr_2_BULLETIN_BOARD,147,311,0,0,0,"xmas_Bulletin_Board#toy_147311")
+npc("xmas","Bulletin Board#toy",SPRITE_2_BULLETIN_BOARD,147,311,0,0,0,"xmas_Bulletin_Board#toy_147311")
 function xmas_Bulletin_Board#toy_147311()
 	dialog "[Toy Factory]"
 	dialog "^CC0000Caution!^000000"
@@ -226,7 +226,7 @@ function xmas_Bulletin_Board#toy_147311()
 	close()
 end
 
-npc("comodo","Bulletin Board#comodo",spr_2_BULLETIN_BOARD,210,148,0,0,0,"comodo_Bulletin_Board#comodo_210148")
+npc("comodo","Bulletin Board#comodo",SPRITE_2_BULLETIN_BOARD,210,148,0,0,0,"comodo_Bulletin_Board#comodo_210148")
 function comodo_Bulletin_Board#comodo_210148()
 	dialog "[Comodo: The Beach City]"
 	dialog "Welcome! This town of Comodo is surrounded by many ancient relics from a forgotten era."
@@ -251,7 +251,7 @@ function comodo_Bulletin_Board#comodo_210148()
 	close()
 end
 
-npc("yuno","Bulletin Board#juno",spr_2_BULLETIN_BOARD,153,113,0,0,0,"yuno_Bulletin_Board#juno_153113")
+npc("yuno","Bulletin Board#juno",SPRITE_2_BULLETIN_BOARD,153,113,0,0,0,"yuno_Bulletin_Board#juno_153113")
 function yuno_Bulletin_Board#juno_153113()
 	dialog "[Juno: Capital of]"
 	dialog "[The Schubaltzwald Republic]"
@@ -280,7 +280,7 @@ function yuno_Bulletin_Board#juno_153113()
 	close()
 end
 
-npc("yuno_fild03","Bulletin Board#noggroad",spr_2_BULLETIN_BOARD,37,143,0,0,0,"yuno_fild03_Bulletin_Board#noggroad_37143")
+npc("yuno_fild03","Bulletin Board#noggroad",SPRITE_2_BULLETIN_BOARD,37,143,0,0,0,"yuno_fild03_Bulletin_Board#noggroad_37143")
 function yuno_fild03_Bulletin_Board#noggroad_37143()
 	dialog "[Lava Dungeon: Nogg Road]"
 	dialog "^CC0000Caution!^000000"
@@ -292,7 +292,7 @@ function yuno_fild03_Bulletin_Board#noggroad_37143()
 	close()
 end
 
-npc("aldebaran","Bulletin Board#clocktower",spr_2_BULLETIN_BOARD,136,133,0,0,0,"aldebaran_Bulletin_Board#clocktower_136133")
+npc("aldebaran","Bulletin Board#clocktower",SPRITE_2_BULLETIN_BOARD,136,133,0,0,0,"aldebaran_Bulletin_Board#clocktower_136133")
 function aldebaran_Bulletin_Board#clocktower_136133()
 	dialog "[Clock Tower]"
 	dialog "^CC0000Caution!^000000"
@@ -306,7 +306,7 @@ function aldebaran_Bulletin_Board#clocktower_136133()
 	close()
 end
 
-npc("morocc","Bulletin Board#morroc",spr_2_BULLETIN_BOARD,152,110,0,0,0,"morocc_Bulletin_Board#morroc_152110")
+npc("morocc","Bulletin Board#morroc",SPRITE_2_BULLETIN_BOARD,152,110,0,0,0,"morocc_Bulletin_Board#morroc_152110")
 function morocc_Bulletin_Board#morroc_152110()
 	dialog "[Morroc: The Frontier Town]"
 	dialog "Welcome to Morroc, the City of the Desert. Morroc was built on an oasis, so this town can accomodate its many visitors and travelers."
@@ -322,7 +322,7 @@ function morocc_Bulletin_Board#morroc_152110()
 	close()
 end
 
-npc("izlude","Bulletin Board#izlude",spr_2_BULLETIN_BOARD,131,116,0,0,0,"izlude_Bulletin_Board#izlude_131116")
+npc("izlude","Bulletin Board#izlude",SPRITE_2_BULLETIN_BOARD,131,116,0,0,0,"izlude_Bulletin_Board#izlude_131116")
 function izlude_Bulletin_Board#izlude_131116()
 	dialog "[Izlude: The Satellite City]"
 	dialog "Welcome to Izlude, the satellite of Prontera. Izlude was built to support Prontera's defense and to accomodate its burgeoning population."
@@ -338,7 +338,7 @@ function izlude_Bulletin_Board#izlude_131116()
 	close()
 end
 
-npc("umbala","Bulletin Board#umbala",spr_2_BULLETIN_BOARD,137,94,0,0,0,"umbala_Bulletin_Board#umbala_13794")
+npc("umbala","Bulletin Board#umbala",SPRITE_2_BULLETIN_BOARD,137,94,0,0,0,"umbala_Bulletin_Board#umbala_13794")
 function umbala_Bulletin_Board#umbala_13794()
 	dialog "[Umbala: The Utan Village]"
 	dialog "Welcome to Umbala,"
@@ -358,7 +358,7 @@ function umbala_Bulletin_Board#umbala_13794()
 	close()
 end
 
-npc("niflheim","Bulletin Board#Niflheim",spr_2_BULLETIN_BOARD,200,191,0,0,0,"niflheim_Bulletin_Board#Niflheim_200191")
+npc("niflheim","Bulletin Board#Niflheim",SPRITE_2_BULLETIN_BOARD,200,191,0,0,0,"niflheim_Bulletin_Board#Niflheim_200191")
 function niflheim_Bulletin_Board#Niflheim_200191()
 	dialog "[Niflheim: City of the Dead]"
 	dialog "This is Niflheim."
@@ -384,7 +384,7 @@ function niflheim_Bulletin_Board#Niflheim_200191()
 	close()
 end
 
-npc("gef_fild10","Bulletin Board#orcdungeon",spr_2_BULLETIN_BOARD,69,340,0,0,0,"gef_fild10_Bulletin_Board#orcdungeon_69340")
+npc("gef_fild10","Bulletin Board#orcdungeon",SPRITE_2_BULLETIN_BOARD,69,340,0,0,0,"gef_fild10_Bulletin_Board#orcdungeon_69340")
 function gef_fild10_Bulletin_Board#orcdungeon_69340()
 	dialog "[Orc Dungeon]"
 	dialog "^CC0000Caution!^000000"
@@ -402,7 +402,7 @@ function gef_fild10_Bulletin_Board#orcdungeon_69340()
 	close()
 end
 
-npc("gef_fild09","Bulletin Board#orcvillage1",spr_2_BOARD1,227,29,0,0,0,"gef_fild09_Bulletin_Board#orcvillage1_22729")
+npc("gef_fild09","Bulletin Board#orcvillage1",SPRITE_2_BOARD1,227,29,0,0,0,"gef_fild09_Bulletin_Board#orcvillage1_22729")
 function gef_fild09_Bulletin_Board#orcvillage1_22729()
 	dialog "[Orc Village]"
 	dialog "^CC0000Caution!^000000"
@@ -414,7 +414,7 @@ function gef_fild09_Bulletin_Board#orcvillage1_22729()
 	close()
 end
 
-npc("gef_fild13","Bulletin Board#orcvillage2",spr_2_BOARD1,202,31,0,0,0,"gef_fild13_Bulletin_Board#orcvillage2_20231")
+npc("gef_fild13","Bulletin Board#orcvillage2",SPRITE_2_BOARD1,202,31,0,0,0,"gef_fild13_Bulletin_Board#orcvillage2_20231")
 function gef_fild13_Bulletin_Board#orcvillage2_20231()
 	dialog "[Orc Village]"
 	dialog "^CC0000Caution!^000000"
@@ -426,7 +426,7 @@ function gef_fild13_Bulletin_Board#orcvillage2_20231()
 	close()
 end
 
-npc("gef_fild13","Bulletin Board#kobold1",spr_2_BOARD2,29,206,0,0,0,"gef_fild13_Bulletin_Board#kobold1_29206")
+npc("gef_fild13","Bulletin Board#kobold1",SPRITE_2_BOARD2,29,206,0,0,0,"gef_fild13_Bulletin_Board#kobold1_29206")
 function gef_fild13_Bulletin_Board#kobold1_29206()
 	dialog "[Kobold Village]"
 	dialog "^CC0000Caution!^000000"
@@ -435,7 +435,7 @@ function gef_fild13_Bulletin_Board#kobold1_29206()
 	close()
 end
 
-npc("gef_fild08","Bulletin Board#kobold2",spr_2_BOARD2,211,24,0,0,0,"gef_fild08_Bulletin_Board#kobold2_21124")
+npc("gef_fild08","Bulletin Board#kobold2",SPRITE_2_BOARD2,211,24,0,0,0,"gef_fild08_Bulletin_Board#kobold2_21124")
 function gef_fild08_Bulletin_Board#kobold2_21124()
 	dialog "[Kobold Village]"
 	dialog "^CC0000Caution!^000000"
@@ -444,7 +444,7 @@ function gef_fild08_Bulletin_Board#kobold2_21124()
 	close()
 end
 
-npc("gef_fild10","Bulletin Board#goblin1",spr_2_BOARD2,109,23,0,0,0,"gef_fild10_Bulletin_Board#goblin1_10923")
+npc("gef_fild10","Bulletin Board#goblin1",SPRITE_2_BOARD2,109,23,0,0,0,"gef_fild10_Bulletin_Board#goblin1_10923")
 function gef_fild10_Bulletin_Board#goblin1_10923()
 	dialog "[Goblin Village]"
 	dialog "^CC0000Caution!^000000"
@@ -452,7 +452,7 @@ function gef_fild10_Bulletin_Board#goblin1_10923()
 	close()
 end
 
-npc("moc_fild15","Bulletin Board#anthell",spr_2_BULLETIN_BOARD,267,264,0,0,0,"moc_fild15_Bulletin_Board#anthell_267264")
+npc("moc_fild15","Bulletin Board#anthell",SPRITE_2_BULLETIN_BOARD,267,264,0,0,0,"moc_fild15_Bulletin_Board#anthell_267264")
 function moc_fild15_Bulletin_Board#anthell_267264()
 	dialog "[Ant Hell]"
 	dialog "^CC0000Caution!^000000"
@@ -466,7 +466,7 @@ function moc_fild15_Bulletin_Board#anthell_267264()
 	close()
 end
 
-npc("moc_ruins","Bulletin Board#pyramid",spr_2_BULLETIN_BOARD,61,164,0,0,0,"moc_ruins_Bulletin_Board#pyramid_61164")
+npc("moc_ruins","Bulletin Board#pyramid",SPRITE_2_BULLETIN_BOARD,61,164,0,0,0,"moc_ruins_Bulletin_Board#pyramid_61164")
 function moc_ruins_Bulletin_Board#pyramid_61164()
 	dialog "[Pyramids]"
 	dialog "^CC0000Caution!^000000"
@@ -483,7 +483,7 @@ function moc_ruins_Bulletin_Board#pyramid_61164()
 	close()
 end
 
-npc("moc_fild19","Bulletin Board#sphinx",spr_2_BULLETIN_BOARD,107,101,0,0,0,"moc_fild19_Bulletin_Board#sphinx_107101")
+npc("moc_fild19","Bulletin Board#sphinx",SPRITE_2_BULLETIN_BOARD,107,101,0,0,0,"moc_fild19_Bulletin_Board#sphinx_107101")
 function moc_fild19_Bulletin_Board#sphinx_107101()
 	dialog "[Sphinx]"
 	dialog "^CC0000Caution!^000000"
@@ -497,7 +497,7 @@ function moc_fild19_Bulletin_Board#sphinx_107101()
 	close()
 end
 
-npc("izlu2dun","Bulletin Board#izlude",spr_2_BULLETIN_BOARD,104,91,0,0,0,"izlu2dun_Bulletin_Board#izlude_10491")
+npc("izlu2dun","Bulletin Board#izlude",SPRITE_2_BULLETIN_BOARD,104,91,0,0,0,"izlu2dun_Bulletin_Board#izlude_10491")
 function izlu2dun_Bulletin_Board#izlude_10491()
 	dialog "[Byalan Island]"
 	dialog "^CC0000Caution!^000000"
@@ -511,7 +511,7 @@ function izlu2dun_Bulletin_Board#izlude_10491()
 	close()
 end
 
-npc("mjolnir_02","Bulletin Board#coal",spr_2_BULLETIN_BOARD,76,362,0,0,0,"mjolnir_02_Bulletin_Board#coal_76362")
+npc("mjolnir_02","Bulletin Board#coal",SPRITE_2_BULLETIN_BOARD,76,362,0,0,0,"mjolnir_02_Bulletin_Board#coal_76362")
 function mjolnir_02_Bulletin_Board#coal_76362()
 	dialog "[Coal Mine]"
 	dialog "^CC0000Caution!^000000"
@@ -522,7 +522,7 @@ function mjolnir_02_Bulletin_Board#coal_76362()
 	close()
 end
 
-npc("prt_fild05","Bulletin Board#sewer",spr_2_BULLETIN_BOARD,278,220,0,0,0,"prt_fild05_Bulletin_Board#sewer_278220")
+npc("prt_fild05","Bulletin Board#sewer",SPRITE_2_BULLETIN_BOARD,278,220,0,0,0,"prt_fild05_Bulletin_Board#sewer_278220")
 function prt_fild05_Bulletin_Board#sewer_278220()
 	dialog "[Culvert]"
 	dialog "Culvert is comprised of a total of 4 levels, and is a good training ground for new adventurers."
@@ -535,7 +535,7 @@ function prt_fild05_Bulletin_Board#sewer_278220()
 	close()
 end
 
-npc("glast_01","Bulletin Board#castle",spr_2_BULLETIN_BOARD,369,308,0,0,0,"glast_01_Bulletin_Board#castle_369308")
+npc("glast_01","Bulletin Board#castle",SPRITE_2_BULLETIN_BOARD,369,308,0,0,0,"glast_01_Bulletin_Board#castle_369308")
 function glast_01_Bulletin_Board#castle_369308()
 	dialog "[Glast Heim]"
 	dialog "Glast Heim is an enormous dungeon with countless levels. This dungeon is definitely not for new adventurers or even experienced adventurers."

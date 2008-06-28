@@ -21,7 +21,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("comodo","Campground Boy",spr_4_M_BIBI,206,310,4,0,0,"comodo_Campground_Boy_206310")
+npc("comodo","Campground Boy",SPRITE_4_M_BIBI,206,310,4,0,0,"comodo_Campground_Boy_206310")
 function comodo_Campground_Boy_206310()
 	if getvar("comodo_npc") < 4 then
 		--choose v[comodo_npc]
@@ -185,7 +185,7 @@ function comodo_Campground_Boy_206310()
 		end
 	return
 
-npc("comodo","Camping Youth",spr_1_M_YOUNGKNIGHT,204,310,4,0,0,"comodo_Camping_Youth_204310")
+npc("comodo","Camping Youth",SPRITE_1_M_YOUNGKNIGHT,204,310,4,0,0,"comodo_Camping_Youth_204310")
 function comodo_Camping_Youth_204310()
 	if getvar(comodo_npc) < 5 then
 		--choose v[comodo_npc]
@@ -335,7 +335,7 @@ function comodo_Camping_Youth_204310()
 	end
 end
 
-npc("comodo","Camping Maiden",spr_1_F_LIBRARYGIRL,209,305,4,0,0,"comodo_Camping_Maiden_209305")
+npc("comodo","Camping Maiden",SPRITE_1_F_LIBRARYGIRL,209,305,4,0,0,"comodo_Camping_Maiden_209305")
 function comodo_Camping_Maiden_209305()
 	dialog "[Emralhandas]"
 	dialog "Rockha, let me pour"
@@ -406,7 +406,7 @@ function comodo_Camping_Maiden_209305()
 	end
 end
 
-npc("comodo","Campground Lad",spr_4_M_KID1,209,314,4,0,0,"comodo_Campground_Lad_209314")
+npc("comodo","Campground Lad",SPRITE_4_M_KID1,209,314,4,0,0,"comodo_Campground_Lad_209314")
 function comodo_Campground_Lad_209314()
 	if getvar(comodo_npc) < 4 then
 		choose v[comodo_npc]
@@ -480,7 +480,7 @@ function comodo_Campground_Lad_209314()
 	end
 end
 
-npc("comodo","BBQ Boy",spr_4_M_04,221,310,4,0,0,"comodo_BBQ_Boy_221310")
+npc("comodo","BBQ Boy",SPRITE_4_M_04,221,310,4,0,0,"comodo_BBQ_Boy_221310")
 function comodo_BBQ_Boy_221310()
 	dialog "[Rinta]"
 	dialog "I didn't mean to,"
@@ -499,7 +499,7 @@ function comodo_BBQ_Boy_221310()
 	close()
 end
 
-npc("comodo","BBQ Visitor",spr_4_F_01,218,309,4,0,0,"comodo_BBQ_Visitor_218309")
+npc("comodo","BBQ Visitor",SPRITE_4_F_01,218,309,4,0,0,"comodo_BBQ_Visitor_218309")
 function comodo_BBQ_Visitor_218309()
 	dialog "[Razy]"
 	dialog "Those people over there"
@@ -519,7 +519,7 @@ function comodo_BBQ_Visitor_218309()
 	close()
 end
 
-npc("comodo","BBQ Papa",spr_1_M_04,216,310,4,0,0,"comodo_BBQ_Papa_216310")
+npc("comodo","BBQ Papa",SPRITE_1_M_04,216,310,4,0,0,"comodo_BBQ_Papa_216310")
 function comodo_BBQ_Papa_216310()
 	dialog "[BBQ Boy]"
 	dialog "D-daddy! Is what those"
@@ -567,7 +567,7 @@ function comodo_BBQ_Papa_216310()
 	close()
 end
 
-npc("comodo","BBQ Mama",spr_1_F_MERCHANT_02,215,307,4,0,0,"comodo_BBQ_Mama_215307")
+npc("comodo","BBQ Mama",SPRITE_1_F_MERCHANT_02,215,307,4,0,0,"comodo_BBQ_Mama_215307")
 function comodo_BBQ_Mama_215307()
 	dialog "[BBQ Boy]"
 	dialog "D-daddy! Is what those"
@@ -615,7 +615,7 @@ function comodo_BBQ_Mama_215307()
 	close()
 end
 
-npc("comodo","BBQ Boy",spr_4_M_KID1,213,310,4,0,0,"comodo_BBQ_Boy_213310")
+npc("comodo","BBQ Boy",SPRITE_4_M_KID1,213,310,4,0,0,"comodo_BBQ_Boy_213310")
 function comodo_BBQ_Boy_213310()
 	dialog "[BBQ Boy]"
 	dialog "D-daddy! Is what those"
@@ -663,7 +663,7 @@ function comodo_BBQ_Boy_213310()
 	close()
 end
 
-npc("cmd_in02","Chief",spr_1_M_03,32,140,4,0,0,"cmd_in02_Chief_32140")
+npc("cmd_in02","Chief",SPRITE_1_M_03,32,140,4,0,0,"cmd_in02_Chief_32140")
 function cmd_in02_Chief_32140()
 	if getvar(comodo_npc) > 4 then
 		dialog "[Tausupa]"
@@ -815,7 +815,7 @@ function cmd_in02_Chief_32140()
 		end
 	return
 
-npc("cmd_in02","Martine",spr_1_M_02,73,81,4,0,0,"cmd_in02_Martine_7381")
+npc("cmd_in02","Martine",SPRITE_1_M_02,73,81,4,0,0,"cmd_in02_Martine_7381")
 function cmd_in02_Martine_7381()
 	dialog "[Martine]"
 	dialog "Gambling...? The games"
@@ -841,7 +841,7 @@ function cmd_in02_Martine_7381()
 	close()
 end
 
-npc("cmd_in02","Scoursege",spr_1_M_BARD,48,55,4,0,0,"cmd_in02_Scoursege_4855")
+npc("cmd_in02","Scoursege",SPRITE_1_M_BARD,48,55,4,0,0,"cmd_in02_Scoursege_4855")
 function cmd_in02_Scoursege_4855()
 	dialog "[Scoursege]"
 	dialog "Damn it! Where did that"
@@ -858,7 +858,7 @@ function cmd_in02_Scoursege_4855()
 	close()
 end
 
-npc("cmd_in02","Roberto",spr_4_M_SEAMAN,64,43,4,0,0,"cmd_in02_Roberto_6443")
+npc("cmd_in02","Roberto",SPRITE_4_M_SEAMAN,64,43,4,0,0,"cmd_in02_Roberto_6443")
 function cmd_in02_Roberto_6443()
 	dialog "[Roberto]"
 	dialog "Heh heh heh..."
@@ -870,7 +870,7 @@ function cmd_in02_Roberto_6443()
 	close()
 end
 
-npc("cmd_in02","Deniroz",spr_4_M_ORIENT02,89,72,4,0,0,"cmd_in02_Deniroz_8972")
+npc("cmd_in02","Deniroz",SPRITE_4_M_ORIENT02,89,72,4,0,0,"cmd_in02_Deniroz_8972")
 function cmd_in02_Deniroz_8972()
 	dialog "[Deniroz]"
 	dialog "All I need is for this"
@@ -889,7 +889,7 @@ function cmd_in02_Deniroz_8972()
 	close()
 end
 
-npc("cmd_in02","Shalone",spr_4W_F_01,178,92,4,0,0,"cmd_in02_Shalone_17892")
+npc("cmd_in02","Shalone",SPRITE_4W_F_01,178,92,4,0,0,"cmd_in02_Shalone_17892")
 function cmd_in02_Shalone_17892()
 	dialog "[Shalone]"
 	dialog "Oh, I'm sorry, sir,"
@@ -901,7 +901,7 @@ function cmd_in02_Shalone_17892()
 	close()
 end
 
-npc("cmd_in02","Stonae",spr_4W_M_02,178,86,4,0,0,"cmd_in02_Stonae_17886")
+npc("cmd_in02","Stonae",SPRITE_4W_M_02,178,86,4,0,0,"cmd_in02_Stonae_17886")
 function cmd_in02_Stonae_17886()
 	dialog "[Stonae]"
 	dialog "N-no..."
@@ -913,7 +913,7 @@ function cmd_in02_Stonae_17886()
 	close()
 end
 
-npc("cmd_in02","G . J",spr_4_M_04,172,105,4,0,0,"cmd_in02_G_._J_172105")
+npc("cmd_in02","G . J",SPRITE_4_M_04,172,105,4,0,0,"cmd_in02_G_._J_172105")
 function cmd_in02_G_._J_172105()
 	dialog "[G . J]"
 	dialog "The more I think about it,"
@@ -939,7 +939,7 @@ function cmd_in02_G_._J_172105()
 	close()
 end
 
-npc("cmd_in02","Loyar",spr_4_M_01,174,126,4,0,0,"cmd_in02_Loyar_174126")
+npc("cmd_in02","Loyar",SPRITE_4_M_01,174,126,4,0,0,"cmd_in02_Loyar_174126")
 function cmd_in02_Loyar_174126()
 	dialog "[Loyar]"
 	dialog "Comodo Casino's interior"
@@ -997,7 +997,7 @@ function cmd_in02_Loyar_174126()
 	end
 end
 
-npc("cmd_in02","Moo",spr_4_M_MANAGER,57,62,4,0,0,"cmd_in02_Moo_5762")
+npc("cmd_in02","Moo",SPRITE_4_M_MANAGER,57,62,4,0,0,"cmd_in02_Moo_5762")
 function cmd_in02_Moo_5762()
 	local mooz = math.random(1 10
 	if mooz == 1 then
@@ -1034,7 +1034,7 @@ function cmd_in02_Moo_5762()
 	end
 end
 
-npc("cmd_fild04","Zyosegirl",spr_4_F_04,188,74,4,0,0,"cmd_fild04_Zyosegirl_18874")
+npc("cmd_fild04","Zyosegirl",SPRITE_4_F_04,188,74,4,0,0,"cmd_fild04_Zyosegirl_18874")
 function cmd_fild04_Zyosegirl_18874()
 	dialog "[Zyosegirl]"
 	dialog "People call me the"
@@ -1053,7 +1053,7 @@ function cmd_fild04_Zyosegirl_18874()
 	close()
 end
 
-npc("cmd_fild04","Ziyaol",spr_4_M_SEAMAN,248,86,4,0,0,"cmd_fild04_Ziyaol_24886")
+npc("cmd_fild04","Ziyaol",SPRITE_4_M_SEAMAN,248,86,4,0,0,"cmd_fild04_Ziyaol_24886")
 function cmd_fild04_Ziyaol_24886()
 	dialog "[Ziyaol]"
 	dialog "Ahhh, it's nice being"
@@ -1081,7 +1081,7 @@ function cmd_fild04_Ziyaol_24886()
 	close()
 end
 
-npc("cmd_fild04","Daeguro",spr_4_F_KID2,267,137,4,0,0,"cmd_fild04_Daeguro_267137")
+npc("cmd_fild04","Daeguro",SPRITE_4_F_KID2,267,137,4,0,0,"cmd_fild04_Daeguro_267137")
 function cmd_fild04_Daeguro_267137()
 	dialog "[Daeguro]"
 	dialog "I love playing in"
@@ -1093,7 +1093,7 @@ function cmd_fild04_Daeguro_267137()
 	close()
 end
 
-npc("moc_fild12","Serutero",spr_1_M_ORIENT01,35,303,4,0,0,"moc_fild12_Serutero_35303")
+npc("moc_fild12","Serutero",SPRITE_1_M_ORIENT01,35,303,4,0,0,"moc_fild12_Serutero_35303")
 function moc_fild12_Serutero_35303()
 	dialog "[Serutero]"
 	dialog "Hello, I'm Serutero,"
@@ -1161,7 +1161,7 @@ function moc_fild12_Serutero_35303()
 	end
 end
 
-npc("cmd_fild07","Rahasu",spr_4W_SAILOR,192,58,4,0,0,"cmd_fild07_Rahasu_19258")
+npc("cmd_fild07","Rahasu",SPRITE_4W_SAILOR,192,58,4,0,0,"cmd_fild07_Rahasu_19258")
 function cmd_fild07_Rahasu_19258()
 	dialog "[Rahasu]"
 	dialog "Hey, I'm Rahasu."
@@ -1198,7 +1198,7 @@ function cmd_fild07_Rahasu_19258()
 	end
 end
 
-npc("cmd_fild07","Hallosu",spr_4W_SAILOR,52,280,4,0,0,"cmd_fild07_Hallosu_52280")
+npc("cmd_fild07","Hallosu",SPRITE_4W_SAILOR,52,280,4,0,0,"cmd_fild07_Hallosu_52280")
 function cmd_fild07_Hallosu_52280()
 	dialog "[Hallosu]"
 	dialog "Hello, this is one of the"
@@ -1210,7 +1210,7 @@ function cmd_fild07_Hallosu_52280()
 	close()
 end
 
-npc("cmd_fild07","Zain",spr_4W_SAILOR,299,83,4,0,0,"cmd_fild07_Zain_29983")
+npc("cmd_fild07","Zain",SPRITE_4W_SAILOR,299,83,4,0,0,"cmd_fild07_Zain_29983")
 function cmd_fild07_Zain_29983()
 	dialog "[Zain]"
 	dialog "Would you like to"
@@ -1253,7 +1253,7 @@ function cmd_fild07_Zain_29983()
 	end
 end
 
-npc("cmd_fild07","Sarumane",spr_4W_SAILOR,94,134,4,0,0,"cmd_fild07_Sarumane_94134")
+npc("cmd_fild07","Sarumane",SPRITE_4W_SAILOR,94,134,4,0,0,"cmd_fild07_Sarumane_94134")
 function cmd_fild07_Sarumane_94134()
 	dialog "[Sarumane]"
 	dialog "Would you like to"
@@ -1296,7 +1296,7 @@ function cmd_fild07_Sarumane_94134()
 	end
 end
 
-npc("comodo","Toruna",spr_4_M_MANAGER,88,97,4,0,0,"comodo_Toruna_8897")
+npc("comodo","Toruna",SPRITE_4_M_MANAGER,88,97,4,0,0,"comodo_Toruna_8897")
 function comodo_Toruna_8897()
 	dialog "[Toruna]"
 	dialog "When I think about it,"
@@ -1432,7 +1432,7 @@ function comodo_Toruna_8897()
 	end
 end
 
-npc("comodo","Rakusa",spr_1_F_MERCHANT_01,164,291,4,0,0,"comodo_Rakusa_164291")
+npc("comodo","Rakusa",SPRITE_1_F_MERCHANT_01,164,291,4,0,0,"comodo_Rakusa_164291")
 function comodo_Rakusa_164291()
 	if ((getvar(comodo_npc) == 6) or (getvar(comodo_npc) == 7)) then
 		choose v[comodo_npc]
@@ -1483,7 +1483,7 @@ function comodo_Rakusa_164291()
 	end
 end
 
-npc("comodo","Kichiri",spr_4W_M_02,169,284,4,0,0,"comodo_Kichiri_169284")
+npc("comodo","Kichiri",SPRITE_4W_M_02,169,284,4,0,0,"comodo_Kichiri_169284")
 function comodo_Kichiri_169284()
 	if ((getvar(comodo_npc) == 7) or (getvar(comodo_npc) == 8)) then
 		choose v[comodo_npc]
@@ -1533,7 +1533,7 @@ function comodo_Kichiri_169284()
 	end
 end
 
-npc("comodo","Magatu",spr_1_M_JOBTESTER,163,280,4,0,0,"comodo_Magatu_163280")
+npc("comodo","Magatu",SPRITE_1_M_JOBTESTER,163,280,4,0,0,"comodo_Magatu_163280")
 function comodo_Magatu_163280()
 	if ((getvar(comodo_npc) == 8) or (getvar(comodo_npc) == 9)) then
 		choose v[comodo_npc]
@@ -1596,7 +1596,7 @@ function comodo_Magatu_163280()
 	end
 end
 
-npc("cmd_in02","Manzi",spr_4_M_03,189,99,4,0,0,"cmd_in02_Manzi_18999")
+npc("cmd_in02","Manzi",SPRITE_4_M_03,189,99,4,0,0,"cmd_in02_Manzi_18999")
 function cmd_in02_Manzi_18999()
 	if ((getvar(comodo_npc) == 9) or (getvar(comodo_npc) == 10)) then
 		choose v[comodo_npc]
@@ -1686,7 +1686,7 @@ function cmd_in02_Manzi_18999()
 	end
 end
 
-npc("comodo","Hullaris",spr_4_F_GODEMOM,187,153,4,0,0,"comodo_Hullaris_187153")
+npc("comodo","Hullaris",SPRITE_4_F_GODEMOM,187,153,4,0,0,"comodo_Hullaris_187153")
 function comodo_Hullaris_187153()
 	if ((getvar(comodo_npc) == 10) or (getvar(comodo_npc) == 11) or (getvar(comodo_npc) == 12) or (getvar(comodo_npc) == 13)) then
 		choose v[comodo_npc]
@@ -1930,7 +1930,7 @@ function comodo_Hullaris_187153()
 	end
 end
 
-npc("beach_dun3","Nigirboran",spr_4_M_BIBI,30,220,4,0,0,"beach_dun3_Nigirboran_30220")
+npc("beach_dun3","Nigirboran",SPRITE_4_M_BIBI,30,220,4,0,0,"beach_dun3_Nigirboran_30220")
 function beach_dun3_Nigirboran_30220()
 	if ((getvar(comodo_npc) == 11) or (getvar(comodo_npc) == 12) or (getvar(comodo_npc) == 13) or (getvar(comodo_npc) == 14)) then
 		choose v[comodo_npc]
@@ -2162,7 +2162,7 @@ function beach_dun3_Nigirboran_30220()
 	end
 end
 
-npc("aldebaran","Meteurengut",spr_1_M_WIZARD,44,53,4,0,0,"aldebaran_Meteurengut_4453")
+npc("aldebaran","Meteurengut",SPRITE_1_M_WIZARD,44,53,4,0,0,"aldebaran_Meteurengut_4453")
 function aldebaran_Meteurengut_4453()
 	if ((getvar(comodo_npc) == 14) or (getvar(comodo_npc) == 15) or (getvar(comodo_npc) == 16) or (getvar(comodo_npc) == 17)) then
 		choose v[comodo_npc]
@@ -2388,7 +2388,7 @@ function aldebaran_Meteurengut_4453()
 	end
 end
 
-npc("morocc","Zaka",spr_4W_M_03,201,30,4,0,0,"morocc_Zaka_20130")
+npc("morocc","Zaka",SPRITE_4W_M_03,201,30,4,0,0,"morocc_Zaka_20130")
 function morocc_Zaka_20130()
 	if ((getvar(comodo_npc) == 17) or (getvar(comodo_npc) == 18) or (getvar(comodo_npc) == 19) or (getvar(comodo_npc) == 20) or (getvar(comodo_npc) == 21) or (getvar(comodo_npc) == 22)) then
 		choose v[comodo_npc]
@@ -2608,7 +2608,7 @@ function morocc_Zaka_20130()
 	end
 end
 
-npc("comodo","Won",spr_1_M_MOC_LORD,232,87,4,0,0,"comodo_Won_23287")
+npc("comodo","Won",SPRITE_1_M_MOC_LORD,232,87,4,0,0,"comodo_Won_23287")
 function comodo_Won_23287()
 	if ((getvar(comodo_npc) == 22) or (getvar(comodo_npc) == 23) or (getvar(comodo_npc) == 24)) then
 		choose v[comodo_npc]

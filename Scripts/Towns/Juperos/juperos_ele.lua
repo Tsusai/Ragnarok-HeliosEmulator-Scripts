@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("jupe_ele_r","Switch#ufe",spr_CLEAR_NPC,51,98,0,0,0,"jupe_ele_r_Switch#ufe_5198")
+npc("jupe_ele_r","Switch#ufe",SPRITE_CLEAR_NPC,51,98,0,0,0,"jupe_ele_r_Switch#ufe_5198")
 --[[OnCommand: "off"
 	disablenpc "Switch#ufe"
 end
@@ -181,7 +181,7 @@ OnTimer:(23000)
 	broadcastinmap2("FF0000","FW_NORMAL",12,0,0,"Look! And remember!")
 end
 
-npc("jupe_ele_r","Switch On#ufe",spr_CLEAR_NPC,51,98,0,0,0,"jupe_ele_r_Switch_On#ufe_5198")
+npc("jupe_ele_r","Switch On#ufe",SPRITE_CLEAR_NPC,51,98,0,0,0,"jupe_ele_r_Switch_On#ufe_5198")
 OnInit:()
 	disablenpc "Switch On#ufe"
 end
@@ -385,7 +385,7 @@ OnTimer:(10000)
 	disablenpc "Elevator On#ufe"
 end
 
-npc("jupe_ele","TimeOut#ufe",spr_CLEAR_NPC,14,6,1,0,0,"jupe_ele_TimeOut#ufe_146")
+npc("jupe_ele","TimeOut#ufe",SPRITE_CLEAR_NPC,14,6,1,0,0,"jupe_ele_TimeOut#ufe_146")
 OnCommand: "on"
 	InitTimer()
 	local mapcount
@@ -470,7 +470,7 @@ OnTimer:(132000)
 	stoptimer()
 end
 
-npc("jupe_ele","Guard-1#ufe",spr_CLEAR_NPC,15,6,1,0,0,"jupe_ele_Guard-1#ufe_156")
+npc("jupe_ele","Guard-1#ufe",SPRITE_CLEAR_NPC,15,6,1,0,0,"jupe_ele_Guard-1#ufe_156")
 OnCommand: "on"
 	InitTimer()
 end
@@ -536,7 +536,7 @@ OnMyMobDead:()
 	end
 end
 
-npc("jupe_ele","Guard-2#ufe",spr_CLEAR_NPC,16,6,1,0,0,"jupe_ele_Guard-2#ufe_166")
+npc("jupe_ele","Guard-2#ufe",SPRITE_CLEAR_NPC,16,6,1,0,0,"jupe_ele_Guard-2#ufe_166")
 OnCommand: "on"
 	InitTimer()
 end
@@ -606,7 +606,7 @@ OnMyMobDead:()
 	end
 end
 
-npc("jupe_ele","Guard-3#ufe",spr_CLEAR_NPC,17,6,1,0,0,"jupe_ele_Guard-3#ufe_176")
+npc("jupe_ele","Guard-3#ufe",SPRITE_CLEAR_NPC,17,6,1,0,0,"jupe_ele_Guard-3#ufe_176")
 OnCommand: "on"
 	InitTimer()
 end
@@ -672,7 +672,7 @@ OnMyMobDead:()
 	end
 end
 
-npc("jupe_ele","Guard-4#ufe",spr_CLEAR_NPC,18,6,1,0,0,"jupe_ele_Guard-4#ufe_186")
+npc("jupe_ele","Guard-4#ufe",SPRITE_CLEAR_NPC,18,6,1,0,0,"jupe_ele_Guard-4#ufe_186")
 OnCommand: "on"
 	InitTimer()
 end
@@ -718,7 +718,7 @@ OnMyMobDead:()
 	end
 end
 
-npc("jupe_ele","GuardEnd#ufe",spr_CLEAR_NPC,19,6,1,0,0,"jupe_ele_GuardEnd#ufe_196")
+npc("jupe_ele","GuardEnd#ufe",SPRITE_CLEAR_NPC,19,6,1,0,0,"jupe_ele_GuardEnd#ufe_196")
 OnInit:()
 	disablenpc "GuardEnd#ufe"
 end
@@ -929,7 +929,7 @@ function juperos_02_jupe_goto2F_3359()
 	end
 end
 
-npc("yuno_in04","Librarian",spr_4_M_01,34,67,4,0,0,"yuno_in04_Librarian_3467")
+npc("yuno_in04","Librarian",SPRITE_4_M_01,34,67,4,0,0,"yuno_in04_Librarian_3467")
 function yuno_in04_Librarian_3467()
 	dialog "[Librarian]"
 	dialog "Welcome to"
@@ -1047,7 +1047,7 @@ function yuno_in04_Librarian_3467()
 	end
 end
 
-npc("yuno_in04","Scholar",spr_8_F_GIRL,190,125,4,0,0,"yuno_in04_Scholar_190125")
+npc("yuno_in04","Scholar",SPRITE_8_F_GIRL,190,125,4,0,0,"yuno_in04_Scholar_190125")
 function yuno_in04_Scholar_190125()
 	if getvar(yuno_book) == 0 then
 		dialog "[Scholar]"
@@ -3830,7 +3830,7 @@ function yuno_in04_Scholar_190125()
 	end
 end
 
-npc("yuno_in04","How to Travel Alone#yuno01",spr_HIDDEN_NPC,118,17,0,0,0,"yuno_in04_How_to_Travel_Alone#yuno01_11817")
+npc("yuno_in04","How to Travel Alone#yuno01",SPRITE_HIDDEN_NPC,118,17,0,0,0,"yuno_in04_How_to_Travel_Alone#yuno01_11817")
 function yuno_in04_How_to_Travel_Alone#yuno01_11817()
 	dialog "^8B6914*Traveling Alone*"
 	dialog "''The Guide to Mastering"
@@ -3845,7 +3845,7 @@ function yuno_in04_How_to_Travel_Alone#yuno01_11817()
 	close()
 end
 
-npc("yuno_in04","Jellopy Soup#yuno02",spr_HIDDEN_NPC,116,106,0,0,0,"yuno_in04_Jellopy_Soup#yuno02_116106")
+npc("yuno_in04","Jellopy Soup#yuno02",SPRITE_HIDDEN_NPC,116,106,0,0,0,"yuno_in04_Jellopy_Soup#yuno02_116106")
 function yuno_in04_Jellopy_Soup#yuno02_116106()
 	dialog "^8B6914*Jellopy Soup*"
 	dialog "By Kim Crawford^000000^000000"
@@ -3907,7 +3907,7 @@ function yuno_in04_Jellopy_Soup#yuno02_116106()
 	end
 end
 
-npc("yuno_in04","Aragham Caul Biography#yuno03",spr_HIDDEN_NPC,118,6,0,0,0,"yuno_in04_Aragham_Caul_Biography#yuno03_1186")
+npc("yuno_in04","Aragham Caul Biography#yuno03",SPRITE_HIDDEN_NPC,118,6,0,0,0,"yuno_in04_Aragham_Caul_Biography#yuno03_1186")
 function yuno_in04_Aragham_Caul_Biography#yuno03_1186()
 	dialog "^8B6914*The Spectacle that is"
 	dialog "the Life of Aragham Caul*"
@@ -3925,7 +3925,7 @@ function yuno_in04_Aragham_Caul_Biography#yuno03_1186()
 	close()
 end
 
-npc("yuno_in04","Schwaltzvalt Adventurer#yuno04",spr_HIDDEN_NPC,118,15,0,0,0,"yuno_in04_Schwaltzvalt_Adventurer#yuno04_11815")
+npc("yuno_in04","Schwaltzvalt Adventurer#yuno04",SPRITE_HIDDEN_NPC,118,15,0,0,0,"yuno_in04_Schwaltzvalt_Adventurer#yuno04_11815")
 function yuno_in04_Schwaltzvalt_Adventurer#yuno04_11815()
 	dialog "^8B6914*The Schwaltzvalt Adventurer*"
 	dialog "Edited by the Sage Historical"
@@ -3994,7 +3994,7 @@ function yuno_in04_Schwaltzvalt_Adventurer#yuno04_11815()
 	end
 end
 
-npc("yuno_in04","Stack of Books#yuno05",spr_HIDDEN_NPC,178,111,0,0,0,"yuno_in04_Stack_of_Books#yuno05_178111")
+npc("yuno_in04","Stack of Books#yuno05",SPRITE_HIDDEN_NPC,178,111,0,0,0,"yuno_in04_Stack_of_Books#yuno05_178111")
 function yuno_in04_Stack_of_Books#yuno05_178111()
 	dialog "^3355FFYou find a series"
 	dialog "of paperback books"
@@ -4020,7 +4020,7 @@ function yuno_in04_Stack_of_Books#yuno05_178111()
 	close()
 end
 
-npc("yuno_in04","Stack of Books#yuno06",spr_HIDDEN_NPC,188,127,0,0,0,"yuno_in04_Stack_of_Books#yuno06_188127")
+npc("yuno_in04","Stack of Books#yuno06",SPRITE_HIDDEN_NPC,188,127,0,0,0,"yuno_in04_Stack_of_Books#yuno06_188127")
 function yuno_in04_Stack_of_Books#yuno06_188127()
 	dialog "^3355FFYou find a series"
 	dialog "of heavy, hardbound"
@@ -4043,7 +4043,7 @@ function yuno_in04_Stack_of_Books#yuno06_188127()
 	close()
 end
 
-npc("yuno_in04","Paper#yuno07",spr_HIDDEN_NPC,188,116,0,0,0,"yuno_in04_Paper#yuno07_188116")
+npc("yuno_in04","Paper#yuno07",SPRITE_HIDDEN_NPC,188,116,0,0,0,"yuno_in04_Paper#yuno07_188116")
 function yuno_in04_Paper#yuno07_188116()
 	dialog "^3355FFIt's a piece of"
 	dialog "paper that looks"
@@ -4107,7 +4107,7 @@ function yuno_in04_Paper#yuno07_188116()
 	close()
 end
 
-npc("yuno_in04","Book#yuno08",spr_HIDDEN_NPC,188,118,0,0,0,"yuno_in04_Book#yuno08_188118")
+npc("yuno_in04","Book#yuno08",SPRITE_HIDDEN_NPC,188,118,0,0,0,"yuno_in04_Book#yuno08_188118")
 function yuno_in04_Book#yuno08_188118()
 	if getvar(yuno_book) > 7 then
 		dialog "^8B6914*Self-Honesty*"
@@ -4171,7 +4171,7 @@ function yuno_in04_Book#yuno08_188118()
 	end
 end
 
-npc("yuno_in04","Book#yuno09",spr_HIDDEN_NPC,186,104,0,0,0,"yuno_in04_Book#yuno09_186104")
+npc("yuno_in04","Book#yuno09",SPRITE_HIDDEN_NPC,186,104,0,0,0,"yuno_in04_Book#yuno09_186104")
 function yuno_in04_Book#yuno09_186104()
 	dialog "^3355FFYou find a book"
 	dialog "without a title"
@@ -4203,7 +4203,7 @@ function yuno_in04_Book#yuno09_186104()
 	end
 end
 
-npc("yuno_in04","Book#yuno10",spr_HIDDEN_NPC,188,109,0,0,0,"yuno_in04_Book#yuno10_188109")
+npc("yuno_in04","Book#yuno10",SPRITE_HIDDEN_NPC,188,109,0,0,0,"yuno_in04_Book#yuno10_188109")
 function yuno_in04_Book#yuno10_188109()
 	dialog "^3355FFYou find a book and"
 	dialog "find that the all of the"
@@ -4239,7 +4239,7 @@ function yuno_in04_Book#yuno10_188109()
 	end
 end
 
-npc("yuno_in04","Bundle of Files#yuno11",spr_HIDDEN_NPC,186,125,0,0,0,"yuno_in04_Bundle_of_Files#yuno11_186125")
+npc("yuno_in04","Bundle of Files#yuno11",SPRITE_HIDDEN_NPC,186,125,0,0,0,"yuno_in04_Bundle_of_Files#yuno11_186125")
 function yuno_in04_Bundle_of_Files#yuno11_186125()
 	if getvar(yuno_book) < 5 then
 		dialog "^8B6914*Thesis: The Fall of Juperos*"
@@ -4702,7 +4702,7 @@ function yuno_in04_Bundle_of_Files#yuno11_186125()
 	end
 end
 
-npc("yuno_in04","Penniless Hollgrehenn#yuno20",spr_HIDDEN_NPC,174,111,0,0,0,"yuno_in04_Penniless_Hollgrehenn#yuno20_174111")
+npc("yuno_in04","Penniless Hollgrehenn#yuno20",SPRITE_HIDDEN_NPC,174,111,0,0,0,"yuno_in04_Penniless_Hollgrehenn#yuno20_174111")
 function yuno_in04_Penniless_Hollgrehenn#yuno20_174111()
 	dialog "^8B6914*Penniless Hollgrehenn*"
 	dialog " * Pennyless Hollgrehenn * "
@@ -4723,7 +4723,7 @@ function yuno_in04_Penniless_Hollgrehenn#yuno20_174111()
 	close()
 end
 
-npc("yuno_in04","Ambitious Hollgrehenn#yuno20",spr_HIDDEN_NPC,168,109,0,0,0,"yuno_in04_Ambitious_Hollgrehenn#yuno20_168109")
+npc("yuno_in04","Ambitious Hollgrehenn#yuno20",SPRITE_HIDDEN_NPC,168,109,0,0,0,"yuno_in04_Ambitious_Hollgrehenn#yuno20_168109")
 function yuno_in04_Ambitious_Hollgrehenn#yuno20_168109()
 	dialog "^8B6914*Hollgrehenn: The Ambition* "
 	dialog "By Aragham Caul* "
@@ -4748,7 +4748,7 @@ function yuno_in04_Ambitious_Hollgrehenn#yuno20_168109()
 	close()
 end
 
-npc("yuno_in04","Popular Feasts#yuno20",spr_HIDDEN_NPC,102,106,0,0,0,"yuno_in04_Popular_Feasts#yuno20_102106")
+npc("yuno_in04","Popular Feasts#yuno20",SPRITE_HIDDEN_NPC,102,106,0,0,0,"yuno_in04_Popular_Feasts#yuno20_102106")
 function yuno_in04_Popular_Feasts#yuno20_102106()
 	dialog "^8B6914*Popular Feasts*"
 	dialog "By Cabbage Pickle Community"
@@ -4795,7 +4795,7 @@ function yuno_in04_Popular_Feasts#yuno20_102106()
 	close()
 end
 
-npc("yuno_in04","Hamerun, Rat Hunter#yuno20",spr_HIDDEN_NPC,111,108,0,0,0,"yuno_in04_Hamerun,_Rat_Hunter#yuno20_111108")
+npc("yuno_in04","Hamerun, Rat Hunter#yuno20",SPRITE_HIDDEN_NPC,111,108,0,0,0,"yuno_in04_Hamerun,_Rat_Hunter#yuno20_111108")
 function yuno_in04_Hamerun,_Rat_Hunter#yuno20_111108()
 	local name = PcName()
 	dialog("[","+PcName+"]"")
@@ -4804,7 +4804,7 @@ function yuno_in04_Hamerun,_Rat_Hunter#yuno20_111108()
 	close()
 end
 
-npc("yuno_in04","Red Book#yuno20",spr_HIDDEN_NPC,167,127,0,0,0,"yuno_in04_Red_Book#yuno20_167127")
+npc("yuno_in04","Red Book#yuno20",SPRITE_HIDDEN_NPC,167,127,0,0,0,"yuno_in04_Red_Book#yuno20_167127")
 function yuno_in04_Red_Book#yuno20_167127()
 	dialog "^3355FFYou find a book"
 	dialog "with red binding.^000000"
@@ -4864,7 +4864,7 @@ function yuno_in04_Red_Book#yuno20_167127()
 	close()
 end
 
-npc("yuno_in04","Scroll#yuno20",spr_HIDDEN_NPC,121,109,0,0,0,"yuno_in04_Scroll#yuno20_121109")
+npc("yuno_in04","Scroll#yuno20",SPRITE_HIDDEN_NPC,121,109,0,0,0,"yuno_in04_Scroll#yuno20_121109")
 function yuno_in04_Scroll#yuno20_121109()
 	dialog "^3355FFYou've found an"
 	dialog "antiquated scroll"
@@ -4919,7 +4919,7 @@ function yuno_in04_Scroll#yuno20_121109()
 	close()
 end
 
-npc("juperos_01","Bronze Statue#jupe01",spr_CLEAR_NPC,99,112,0,0,0,"juperos_01_Bronze_Statue#jupe01_99112")
+npc("juperos_01","Bronze Statue#jupe01",SPRITE_CLEAR_NPC,99,112,0,0,0,"juperos_01_Bronze_Statue#jupe01_99112")
 function juperos_01_Bronze_Statue#jupe01_99112()
 	if (getvar(yuno_book) > 3) then
 		dialog "^3355FF''Do you wish to see"
@@ -4983,7 +4983,7 @@ function juperos_01_Bronze_Statue#jupe01_99112()
 	end
 end
 
-npc("juperos_01","Stone Statue#jupe02",spr_CLEAR_NPC,123,92,0,0,0,"juperos_01_Stone_Statue#jupe02_12392")
+npc("juperos_01","Stone Statue#jupe02",SPRITE_CLEAR_NPC,123,92,0,0,0,"juperos_01_Stone_Statue#jupe02_12392")
 function juperos_01_Stone_Statue#jupe02_12392()
 	if (getvar(yuno_book) > 0) then
 		dialog "^3355FFIt's a stone statue"
@@ -5007,7 +5007,7 @@ function juperos_01_Stone_Statue#jupe02_12392()
 	end
 end
 
-npc("juperos_01","Bronze Statue#jupe03",spr_CLEAR_NPC,99,71,0,0,0,"juperos_01_Bronze_Statue#jupe03_9971")
+npc("juperos_01","Bronze Statue#jupe03",SPRITE_CLEAR_NPC,99,71,0,0,0,"juperos_01_Bronze_Statue#jupe03_9971")
 function juperos_01_Bronze_Statue#jupe03_9971()
 	dialog "^3355FFIt's an elaborate"
 	dialog "bronze statue that"
@@ -5016,14 +5016,14 @@ function juperos_01_Bronze_Statue#jupe03_9971()
 	close()
 end
 
-npc("juperos_01","Sculpture#jupe05",spr_CLEAR_NPC,79,92,0,0,0,"juperos_01_Sculpture#jupe05_7992")
+npc("juperos_01","Sculpture#jupe05",SPRITE_CLEAR_NPC,79,92,0,0,0,"juperos_01_Sculpture#jupe05_7992")
 function juperos_01_Sculpture#jupe05_7992()
 	dialog "^3355FFIt's a sculpture that"
 	dialog "looks familiar to you.^000000"
 	close()
 end
 
-npc("juperos_01","Machine Statue#jupe04",spr_CLEAR_NPC,215,127,0,0,0,"juperos_01_Machine_Statue#jupe04_215127")
+npc("juperos_01","Machine Statue#jupe04",SPRITE_CLEAR_NPC,215,127,0,0,0,"juperos_01_Machine_Statue#jupe04_215127")
 function juperos_01_Machine_Statue#jupe04_215127()
 	dialog "^3355FFThis is the bust of a"
 	dialog "humanoid machine with"

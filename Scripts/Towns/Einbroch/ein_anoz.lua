@@ -21,7 +21,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("einbroch","Uwe Kleine",spr_4_M_03,215,180,6,0,0,"einbroch_Uwe_Kleine_215180")
+npc("einbroch","Uwe Kleine",SPRITE_4_M_03,215,180,6,0,0,"einbroch_Uwe_Kleine_215180")
 OnCommand: "on"
 	enablenpc "Uwe Kleine"
 end

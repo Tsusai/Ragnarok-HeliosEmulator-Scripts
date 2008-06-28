@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("comodo","Munak's Grandma",spr_8_F_GRANDMOTHER,112,182,0,5,5,"comodo_Munaks_Grandma_112182")
+npc("comodo","Munak's Grandma",SPRITE_8_F_GRANDMOTHER,112,182,0,5,5,"comodo_Munaks_Grandma_112182")
 function comodo_Munaks_Grandma_112182()
 	if getvar("Girl's_Diary") > 0 then
 		dialog "[Munak's Grandma]"

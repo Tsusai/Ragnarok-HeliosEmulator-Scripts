@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("prontera","Hypnotist_2",spr_4_F_TELEPORTER,146,232,4,0,0,"prontera_Hypnotist_2_146232")
+npc("prontera","Hypnotist_2",SPRITE_4_F_TELEPORTER,146,232,4,0,0,"prontera_Hypnotist_2_146232")
 function prontera_Hypnotist_2_146232()
 	dialog "[Hypnotist]"
 	dialog "Greetings, adventurer."

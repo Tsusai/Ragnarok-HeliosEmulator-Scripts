@@ -21,7 +21,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("einbech","Cavitar",spr_4_M_EINOLD,97,167,5,0,0,"einbech_Cavitar_97167")
+npc("einbech","Cavitar",SPRITE_4_M_EINOLD,97,167,5,0,0,"einbech_Cavitar_97167")
 function einbech_Cavitar_97167()
 	if (getvar(ein_gear1) == 2) then
 		dialog "[Cavitar]"

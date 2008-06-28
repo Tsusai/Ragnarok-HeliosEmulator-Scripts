@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("prt_in","Customer#SoloHan",spr_4_M_04,173,13,4,0,0,"prt_in_CustomerSoloHan_17313")
+npc("prt_in","Customer#SoloHan",SPRITE_4_M_04,173,13,4,0,0,"prt_in_CustomerSoloHan_17313")
 function prt_in_CustomerSoloHan_17313()
 	if (getvar(VAR_ISMARRIED) == 0) then
 		dialog "[SoloHan]"
@@ -204,7 +204,7 @@ function prt_in_CustomerSoloHan_17313()
 	end
 end
 
-npc("prt_in","Customer#Bachewcca",spr_4_M_ORIENT02,170,14,0,0,0,"prt_in_Customer#Bachewcca_17014")
+npc("prt_in","Customer#Bachewcca",SPRITE_4_M_ORIENT02,170,14,0,0,0,"prt_in_Customer#Bachewcca_17014")
 function prt_in_Customer#Bachewcca_17014()
 	dialog "[Bachewcca]"
 	dialog ".............."
@@ -214,7 +214,7 @@ function prt_in_Customer#Bachewcca_17014()
 	close()
 end
 
-npc("jawaii_in","Employee#jaw1",spr_4_F_07,25,94,0,0,0,"jawaii_in_Employee#jaw1_2594")
+npc("jawaii_in","Employee#jaw1",SPRITE_4_F_07,25,94,0,0,0,"jawaii_in_Employee#jaw1_2594")
 function jawaii_in_Employee#jaw1_2594()
 	dialog "[Employee Tryteh]"
 	dialog "Welcome to Jawaii Tavern~"
@@ -242,7 +242,7 @@ OnCommand: "solo"
 	Emotion("Employee#jaw1","ET_HUK")
 end
 
-npc("jawaii_in","Employee#jaw2",spr_4_F_07,25,96,0,0,0,"jawaii_in_Employee#jaw2_2596")
+npc("jawaii_in","Employee#jaw2",SPRITE_4_F_07,25,96,0,0,0,"jawaii_in_Employee#jaw2_2596")
 function jawaii_in_Employee#jaw2_2596()
 	dialog "[Employee Fey]"
 	dialog "Welcome to Jawaii Tavern~"
@@ -271,7 +271,7 @@ OnCommand: "solo"
 	Emotion("Employee#jaw2","ET_HUK")
 end
 
-npc("jawaii_in","Employee#jaw3",spr_4_F_07,25,98,0,0,0,"jawaii_in_Employee#jaw3_2598")
+npc("jawaii_in","Employee#jaw3",SPRITE_4_F_07,25,98,0,0,0,"jawaii_in_Employee#jaw3_2598")
 function jawaii_in_Employee#jaw3_2598()
 	dialog "[Employee Buffy]"
 	dialog "Welcome to Jawaii Tavern~"
@@ -316,7 +316,7 @@ OnCommand: "solo"
 	Emotion("Employee#jaw3","ET_HUK")
 end
 
-npc("jawaii_in","Employee#jaw4",spr_4_F_07,25,100,0,0,0,"jawaii_in_Employee#jaw4_25100")
+npc("jawaii_in","Employee#jaw4",SPRITE_4_F_07,25,100,0,0,0,"jawaii_in_Employee#jaw4_25100")
 function jawaii_in_Employee#jaw4_25100()
 	dialog "[Employee Itere]"
 	dialog "Welcome to"
@@ -354,7 +354,7 @@ OnCommand: "solo"
 	Emotion("Employee#jaw4","ET_HUK")
 end
 
-npc("jawaii_in","Employee#jaw5",spr_4_F_07,30,94,4,0,0,"jawaii_in_Employee#jaw5_3094")
+npc("jawaii_in","Employee#jaw5",SPRITE_4_F_07,30,94,4,0,0,"jawaii_in_Employee#jaw5_3094")
 function jawaii_in_Employee#jaw5_3094()
 	dialog "[Employee Tonia]"
 	dialog "Welcome to Jawaii Tavern~"
@@ -386,7 +386,7 @@ OnCommand: "solo"
 	Emotion("Employee#jaw5","ET_HUK")
 end
 
-npc("jawaii_in","Employee#jaw6",spr_4_F_07,30,96,4,0,0,"jawaii_in_Employee#jaw6_3096")
+npc("jawaii_in","Employee#jaw6",SPRITE_4_F_07,30,96,4,0,0,"jawaii_in_Employee#jaw6_3096")
 function jawaii_in_Employee#jaw6_3096()
 	dialog "[Employee Kay]"
 	dialog "Welcome to Jawaii Tavern~"
@@ -410,7 +410,7 @@ OnCommand: "solo"
 	Emotion("Employee#jaw6","ET_HUK")
 end
 
-npc("jawaii_in","Employee#jaw7",spr_4_F_07,30,98,4,0,0,"jawaii_in_Employee#jaw7_3098")
+npc("jawaii_in","Employee#jaw7",SPRITE_4_F_07,30,98,4,0,0,"jawaii_in_Employee#jaw7_3098")
 function jawaii_in_Employee#jaw7_3098()
 	dialog "[Employee Amy]"
 	dialog "Welcome to Jawaii Tavern~"
@@ -443,7 +443,7 @@ OnCommand: "solo"
 	Emotion("Employee#jaw7","ET_HUK")
 end
 
-npc("jawaii_in","Employee#jaw8",spr_4_F_07,30,100,4,0,0,"jawaii_in_Employee#jaw8_30100")
+npc("jawaii_in","Employee#jaw8",SPRITE_4_F_07,30,100,4,0,0,"jawaii_in_Employee#jaw8_30100")
 function jawaii_in_Employee#jaw8_30100()
 	dialog "[Employee Yasmine]"
 	dialog "Welcome to Jawaii Tavern~"
@@ -489,7 +489,7 @@ function jawaii_in_jaw_em_order_2896()
 	end
 end
 
-npc("jawaii_in","Waitress#jawaii",spr_1_F_PUBGIRL,15,104,0,0,0,"jawaii_in_Waitress#jawaii_15104")
+npc("jawaii_in","Waitress#jawaii",SPRITE_1_F_PUBGIRL,15,104,0,0,0,"jawaii_in_Waitress#jawaii_15104")
 function jawaii_in_Waitress#jawaii_15104()
 	local max_max_c = CheckMaxCount 1201 1
 	if max_max_c == 1 then
@@ -615,7 +615,7 @@ function jawaii_in_Waitress#jawaii_15104()
 	end
 end
 
-npc("jawaii_in","Bartender#jaw",spr_1_ETC_01,28,124,0,0,0,"jawaii_in_Bartender#jaw_28124")
+npc("jawaii_in","Bartender#jaw",SPRITE_1_ETC_01,28,124,0,0,0,"jawaii_in_Bartender#jaw_28124")
 function jawaii_in_Bartender#jaw_28124()
 	local name = PcName()
 	dialog "[Bartender]"
@@ -942,7 +942,7 @@ function jawaii_in_Bartender#jaw_28124()
 	end
 end
 
-npc("jawaii_in","Customer#jaw_1",spr_4W_M_01,43,115,0,0,0,"jawaii_in_Customer#jaw_1_43115")
+npc("jawaii_in","Customer#jaw_1",SPRITE_4W_M_01,43,115,0,0,0,"jawaii_in_Customer#jaw_1_43115")
 function jawaii_in_Customer#jaw_1_43115()
 	if (getvar(VAR_ISMARRIED) == 0) then
 		if (getvar(VAR_MONEY) > 99) then
@@ -998,7 +998,7 @@ function jawaii_in_Customer#jaw_1_43115()
 	end
 end
 
-npc("jawaii_in","Customer#Cage",spr_4W_M_02,41,106,3,0,0,"jawaii_in_Customer#Cage_41106")
+npc("jawaii_in","Customer#Cage",SPRITE_4W_M_02,41,106,3,0,0,"jawaii_in_Customer#Cage_41106")
 function jawaii_in_Customer#Cage_41106()
 	if (getvar(VAR_ISMARRIED) == 1) then
 		dialog "[Cage]"
@@ -1048,7 +1048,7 @@ function jawaii_in_Customer#Cage_41106()
 	end
 end
 
-npc("izlude","Honeymoon Helper#Izlude",spr_1_F_LIBRARYGIRL,171,185,3,0,0,"izlude_Honeymoon_Helper#Izlude_171185")
+npc("izlude","Honeymoon Helper#Izlude",SPRITE_1_F_LIBRARYGIRL,171,185,3,0,0,"izlude_Honeymoon_Helper#Izlude_171185")
 function izlude_Honeymoon_Helper#Izlude_171185()
 	dialog "[Helper]"
 	dialog "Newlyweds and"
@@ -1101,7 +1101,7 @@ function izlude_Honeymoon_Helper#Izlude_171185()
 	end
 end
 
-npc("jawaii","Mariner#toizu",spr_4W_SAILOR,239,112,7,0,0,"jawaii_Mariner#toizu_239112")
+npc("jawaii","Mariner#toizu",SPRITE_4W_SAILOR,239,112,7,0,0,"jawaii_Mariner#toizu_239112")
 function jawaii_Mariner#toizu_239112()
 	dialog "[Mariner]"
 	dialog "This ship"
@@ -1135,7 +1135,7 @@ function jawaii_Mariner#toizu_239112()
 	end
 end
 
-npc("jawaii","Mariner#toalbe",spr_4W_SAILOR,122,263,5,0,0,"jawaii_Mariner#toalbe_122263")
+npc("jawaii","Mariner#toalbe",SPRITE_4W_SAILOR,122,263,5,0,0,"jawaii_Mariner#toalbe_122263")
 function jawaii_Mariner#toalbe_122263()
 	dialog "[Mariner]"
 	dialog "This ship"
@@ -1169,7 +1169,7 @@ function jawaii_Mariner#toalbe_122263()
 	end
 end
 
-npc("jawaii","Tavern Lady",spr_1_F_PUBGIRL,188,218,7,0,0,"jawaii_Tavern_Lady_188218")
+npc("jawaii","Tavern Lady",SPRITE_1_F_PUBGIRL,188,218,7,0,0,"jawaii_Tavern_Lady_188218")
 function jawaii_Tavern_Lady_188218()
 	dialog "[Lady]"
 	dialog "Oh, dear!"
@@ -1204,7 +1204,7 @@ function jawaii_Tavern_Lady_188218()
 	end
 end
 
-npc("jawaii","Jawaii Resident#heart",spr_4_F_07,220,235,3,0,0,"jawaii_Jawaii_Resident#heart_220235")
+npc("jawaii","Jawaii Resident#heart",SPRITE_4_F_07,220,235,3,0,0,"jawaii_Jawaii_Resident#heart_220235")
 function jawaii_Jawaii_Resident#heart_220235()
 	dialog "[Jawa Jawa]"
 	dialog "You know what's"
@@ -1227,7 +1227,7 @@ function jawaii_Jawaii_Resident#heart_220235()
 	close()
 end
 
-npc("jawaii","Jawaii Resident#desc1",spr_4_F_07,240,146,5,0,0,"jawaii_Jawaii_Resident#desc1_240146")
+npc("jawaii","Jawaii Resident#desc1",SPRITE_4_F_07,240,146,5,0,0,"jawaii_Jawaii_Resident#desc1_240146")
 function jawaii_Jawaii_Resident#desc1_240146()
 	dialog "[Waii Waii]"
 	dialog "Welcome to Jawaii!"
@@ -1241,7 +1241,7 @@ function jawaii_Jawaii_Resident#desc1_240146()
 	close()
 end
 
-npc("jawaii","Jawaii Resident#desc2",spr_4_F_07,168,247,5,0,0,"jawaii_Jawaii_Resident#desc2_168247")
+npc("jawaii","Jawaii Resident#desc2",SPRITE_4_F_07,168,247,5,0,0,"jawaii_Jawaii_Resident#desc2_168247")
 function jawaii_Jawaii_Resident#desc2_168247()
 	dialog "[Waja Waja]"
 	dialog "Ah, you must be a tourist."
@@ -1258,7 +1258,7 @@ function jawaii_Jawaii_Resident#desc2_168247()
 	close()
 end
 
-npc("jawaii","Jawaii Resident#desc3",spr_4_F_07,165,121,1,0,0,"jawaii_Jawaii_Resident#desc3_165121")
+npc("jawaii","Jawaii Resident#desc3",SPRITE_4_F_07,165,121,1,0,0,"jawaii_Jawaii_Resident#desc3_165121")
 function jawaii_Jawaii_Resident#desc3_165121()
 	dialog "[Iwa Iwa]"
 	dialog "Jawaii~"
@@ -1284,7 +1284,7 @@ function jawaii_Jawaii_Resident#desc3_165121()
 	close()
 end
 
-npc("jawaii","Employee#sroom",spr_4_M_NFMAN,141,200,3,0,0,"jawaii_Employee#sroom_141200")
+npc("jawaii","Employee#sroom",SPRITE_4_M_NFMAN,141,200,3,0,0,"jawaii_Employee#sroom_141200")
 function jawaii_Employee#sroom_141200()
 	dialog "[Alowa]"
 	dialog "W-Welcome...?"
@@ -1334,7 +1334,7 @@ function jawaii_Employee#sroom_141200()
 	end
 end
 
-npc("jawaii","Employee#antroom",spr_1_F_MERCHANT_02,108,199,5,0,0,"jawaii_Employee#antroom_108199")
+npc("jawaii","Employee#antroom",SPRITE_1_F_MERCHANT_02,108,199,5,0,0,"jawaii_Employee#antroom_108199")
 function jawaii_Employee#antroom_108199()
 	dialog "[Pine Oran]"
 	dialog "Welcome to"
@@ -1386,7 +1386,7 @@ function jawaii_Employee#antroom_108199()
 	end
 end
 
-npc("jawaii","Employee#horoom",spr_4_F_04,107,189,5,0,0,"jawaii_Employee#horoom_107189")
+npc("jawaii","Employee#horoom",SPRITE_4_F_04,107,189,5,0,0,"jawaii_Employee#horoom_107189")
 function jawaii_Employee#horoom_107189()
 	dialog "[Sharkie Rania]"
 	dialog "I'll take you"
@@ -1421,7 +1421,7 @@ function jawaii_Employee#horoom_107189()
 	end
 end
 
-npc("jawaii","Employee#villroom",spr_4_F_04,112,173,7,0,0,"jawaii_Employee#villroom_112173")
+npc("jawaii","Employee#villroom",SPRITE_4_F_04,112,173,7,0,0,"jawaii_Employee#villroom_112173")
 function jawaii_Employee#villroom_112173()
 	dialog "[Larks Rania]"
 	dialog "Hello dear,"
@@ -1470,7 +1470,7 @@ function jawaii_Employee#villroom_112173()
 	end
 end
 
-npc("jawaii","Honeymoon Helper#Jawaii",spr_1_F_LIBRARYGIRL,214,168,5,0,0,"jawaii_Honeymoon_Helper#Jawaii_214168")
+npc("jawaii","Honeymoon Helper#Jawaii",SPRITE_1_F_LIBRARYGIRL,214,168,5,0,0,"jawaii_Honeymoon_Helper#Jawaii_214168")
 function jawaii_Honeymoon_Helper#Jawaii_214168()
 	dialog "[Helper]"
 	dialog "There is no place"

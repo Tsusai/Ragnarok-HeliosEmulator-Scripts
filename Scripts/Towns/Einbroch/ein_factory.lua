@@ -213,7 +213,7 @@ OnMyMobDead:()
 	end
 end
 
-npc("einbroch","Liotzburg",spr_4_M_YURI,132,84,3,2,2,"einbroch_Liotzburg_13284")
+npc("einbroch","Liotzburg",SPRITE_4_M_YURI,132,84,3,2,2,"einbroch_Liotzburg_13284")
 OnCommand: "on"
 	enablenpc "Liotzburg"
 end
@@ -297,7 +297,7 @@ function einbroch_Liotzburg_13284()
 	close()
 end
 
-npc("ein_in01","Zelmeto",spr_4_M_REPAIR,67,242,3,0,0,"ein_in01_Zelmeto_67242")
+npc("ein_in01","Zelmeto",SPRITE_4_M_REPAIR,67,242,3,0,0,"ein_in01_Zelmeto_67242")
 function ein_in01_Zelmeto_67242()
 	local x = GetGlobalVar "050318_ryu_ein"
 	if x > 9 then
@@ -935,7 +935,7 @@ function ein_in01_Zelmeto_67242()
 	end
 end
 
-npc("ein_in01","2nd Control Panel #inspection1",spr_HIDDEN_NPC,49,232,3,0,0,"ein_in01_2nd_Control_Panel_#inspection1_49232")
+npc("ein_in01","2nd Control Panel #inspection1",SPRITE_HIDDEN_NPC,49,232,3,0,0,"ein_in01_2nd_Control_Panel_#inspection1_49232")
 function ein_in01_2nd_Control_Panel_#inspection1_49232()
 	if ((getvar(ein_factory) != 1) and (getvar(ein_factory) != 2)) then
 		return
@@ -955,7 +955,7 @@ function ein_in01_2nd_Control_Panel_#inspection1_49232()
 	end
 end
 
-npc("ein_in01","3rd Pressure Governor #inspection2",spr_HIDDEN_NPC,108,217,3,0,0,"ein_in01_3rd_Pressure_Governor_#inspection2_108217")
+npc("ein_in01","3rd Pressure Governor #inspection2",SPRITE_HIDDEN_NPC,108,217,3,0,0,"ein_in01_3rd_Pressure_Governor_#inspection2_108217")
 function ein_in01_3rd_Pressure_Governor_#inspection2_108217()
 	if ((getvar(ein_factory) != 3) and (getvar(ein_factory) != 4)) then
 		return
@@ -976,7 +976,7 @@ function ein_in01_3rd_Pressure_Governor_#inspection2_108217()
 	end
 end
 
-npc("ein_in01","Main Control Panel #inspection3",spr_HIDDEN_NPC,62,258,3,0,0,"ein_in01_Main_Control_Panel_#inspection3_62258")
+npc("ein_in01","Main Control Panel #inspection3",SPRITE_HIDDEN_NPC,62,258,3,0,0,"ein_in01_Main_Control_Panel_#inspection3_62258")
 function ein_in01_Main_Control_Panel_#inspection3_62258()
 	if ((getvar(ein_factory) != 5) and (getvar(ein_factory) != 6)) then
 		return
@@ -997,7 +997,7 @@ function ein_in01_Main_Control_Panel_#inspection3_62258()
 	end
 end
 
-npc("ein_in01","Conveyor #inspection4",spr_HIDDEN_NPC,46,197,3,0,0,"ein_in01_Conveyor_#inspection4_46197")
+npc("ein_in01","Conveyor #inspection4",SPRITE_HIDDEN_NPC,46,197,3,0,0,"ein_in01_Conveyor_#inspection4_46197")
 function ein_in01_Conveyor_#inspection4_46197()
 	if ((getvar(ein_factory) != 7) and (getvar(ein_factory) != 8)) then
 		return
@@ -1017,7 +1017,7 @@ function ein_in01_Conveyor_#inspection4_46197()
 	end
 end
 
-npc("ein_in01","Pipe #inspection5",spr_HIDDEN_NPC,100,266,3,0,0,"ein_in01_Pipe_#inspection5_100266")
+npc("ein_in01","Pipe #inspection5",SPRITE_HIDDEN_NPC,100,266,3,0,0,"ein_in01_Pipe_#inspection5_100266")
 function ein_in01_Pipe_#inspection5_100266()
 	if ((getvar(ein_factory) != 9) and (getvar(ein_factory) != 10)) then
 		return
@@ -1038,7 +1038,7 @@ function ein_in01_Pipe_#inspection5_100266()
 	end
 end
 
-npc("ein_in01","Conveyor #inspection6",spr_HIDDEN_NPC,95,239,3,0,0,"ein_in01_Conveyor_#inspection6_95239")
+npc("ein_in01","Conveyor #inspection6",SPRITE_HIDDEN_NPC,95,239,3,0,0,"ein_in01_Conveyor_#inspection6_95239")
 function ein_in01_Conveyor_#inspection6_95239()
 	if ((getvar(ein_factory) != 11) and (getvar(ein_factory) != 12)) then
 		return
@@ -1058,7 +1058,7 @@ function ein_in01_Conveyor_#inspection6_95239()
 	end
 end
 
-npc("sec_in02","Factory Quest Test",spr_4_M_REPAIR,127,86,3,0,0,"sec_in02_Factory_Quest_Test_12786")
+npc("sec_in02","Factory Quest Test",SPRITE_4_M_REPAIR,127,86,3,0,0,"sec_in02_Factory_Quest_Test_12786")
 function sec_in02_Factory_Quest_Test_12786()
 	dlgwrite(0,9000)
 	if error then

@@ -20,7 +20,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("alberta","Guide",spr_8W_SOLDIER,23,238,4,0,0,"alberta_Guide_23238")
+npc("alberta","Guide",SPRITE_8W_SOLDIER,23,238,4,0,0,"alberta_Guide_23238")
 function alberta_Guide_23238()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Alberta Guide]"
@@ -165,7 +165,7 @@ function alberta_Guide_23238()
 	showimage("prt_soldier.bmp",255)
 end
 
-npc("alberta","Guide",spr_8W_SOLDIER,120,60,3,0,0,"alberta_Guide_12060")
+npc("alberta","Guide",SPRITE_8W_SOLDIER,120,60,3,0,0,"alberta_Guide_12060")
 function alberta_Guide_12060()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Alberta Guide]"

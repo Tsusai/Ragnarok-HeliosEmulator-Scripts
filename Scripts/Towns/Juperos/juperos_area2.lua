@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("jupe_area2","#hole#2-1",spr_CLEAR_NPC,74,224,0,0,0,"jupe_area2_#hole#2-1_74224")
+npc("jupe_area2","#hole#2-1",SPRITE_CLEAR_NPC,74,224,0,0,0,"jupe_area2_#hole#2-1_74224")
 --[[OnCommand: "on"
 	enablenpc "#hole#2-1"
 end
@@ -351,7 +351,7 @@ OnCommand: "on"
 		end
 	return
 
-npc("jupe_area2","#hole#2-2",spr_CLEAR_NPC,138,238,0,0,0,"jupe_area2_#hole#2-2_138238")
+npc("jupe_area2","#hole#2-2",SPRITE_CLEAR_NPC,138,238,0,0,0,"jupe_area2_#hole#2-2_138238")
 OnCommand: "on"
 	enablenpc "#hole#2-2"
 end
@@ -680,7 +680,7 @@ OnCommand: "on"
 	return
 
 
-npc("jupe_area2","#hole#2-3",spr_CLEAR_NPC,127,146,0,0,0,"jupe_area2_#hole#2-3_127146")
+npc("jupe_area2","#hole#2-3",SPRITE_CLEAR_NPC,127,146,0,0,0,"jupe_area2_#hole#2-3_127146")
 OnCommand: "on"
 	enablenpc "#hole#2-3"
 end
@@ -1010,7 +1010,7 @@ OnCommand: "on"
 		end
 	return
 
-npc("jupe_area2","#hole#2-4",spr_CLEAR_NPC,113,49,0,0,0,"jupe_area2_#hole#2-4_11349")
+npc("jupe_area2","#hole#2-4",SPRITE_CLEAR_NPC,113,49,0,0,0,"jupe_area2_#hole#2-4_11349")
 OnCommand: "on"
 	enablenpc "#hole#2-4"
 end
@@ -1338,7 +1338,7 @@ OnCommand: "on"
 		end
 	return
 
-npc("jupe_area2","Lever#ufe",spr_CLEAR_NPC,51,162,0,0,0,"jupe_area2_Lever#ufe_51162")
+npc("jupe_area2","Lever#ufe",SPRITE_CLEAR_NPC,51,162,0,0,0,"jupe_area2_Lever#ufe_51162")
 OnCommand: "on"
 	enablenpc "Lever#ufe"
 end

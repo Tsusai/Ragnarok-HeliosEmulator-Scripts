@@ -51,7 +51,7 @@ function lhz_dun02_LhzD02M_LhzD03M_149149()
 	end
 end
 
---[[npc("lhz_dun02","Warning#lhz_east",spr_2_BULLETIN_BOARD,177,150,0,0,0,"lhz_dun02_Warning#lhz_east_177150")
+--[[npc("lhz_dun02","Warning#lhz_east",SPRITE_2_BULLETIN_BOARD,177,150,0,0,0,"lhz_dun02_Warning#lhz_east_177150")
 function lhz_dun02_Warning#lhz_east_177150()
 	dialog "^FF0000Warning^000000"
 	dialog "Unauthorized personnel"
@@ -59,7 +59,7 @@ function lhz_dun02_Warning#lhz_east_177150()
 	close()
 end
 
-npc("lhz_dun02","Warning#lhz_south",spr_2_BULLETIN_BOARD,150,122,0,0,0,"lhz_dun02_Warning#lhz_south_150122")
+npc("lhz_dun02","Warning#lhz_south",SPRITE_2_BULLETIN_BOARD,150,122,0,0,0,"lhz_dun02_Warning#lhz_south_150122")
 function lhz_dun02_Warning#lhz_south_150122()
 	dialog "^FF0000Warning^000000"
 	dialog "Unauthorized personnel"
@@ -67,7 +67,7 @@ function lhz_dun02_Warning#lhz_south_150122()
 	close()
 end
 
-npc("lhz_dun02","Warning#lhz_west",spr_2_BULLETIN_BOARD,122,149,0,0,0,"lhz_dun02_Warning#lhz_west_122149")
+npc("lhz_dun02","Warning#lhz_west",SPRITE_2_BULLETIN_BOARD,122,149,0,0,0,"lhz_dun02_Warning#lhz_west_122149")
 function lhz_dun02_Warning#lhz_west_122149()
 	dialog "^FF0000Warning^000000"
 	dialog "Unauthorized personnel"
@@ -75,7 +75,7 @@ function lhz_dun02_Warning#lhz_west_122149()
 	close()
 end
 
-npc("lhz_dun02","Warning#lhz_north",spr_2_BULLETIN_BOARD,149,178,0,0,0,"lhz_dun02_Warning#lhz_north_149178")
+npc("lhz_dun02","Warning#lhz_north",SPRITE_2_BULLETIN_BOARD,149,178,0,0,0,"lhz_dun02_Warning#lhz_north_149178")
 function lhz_dun02_Warning#lhz_north_149178()
 	dialog "^FF0000Warning^000000"
 	dialog "Unauthorized personnel"

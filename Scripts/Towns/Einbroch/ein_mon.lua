@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("einbech","Shena",spr_4_F_EINOLD,46,107,6,0,0,"einbech_Shena_46107")
+npc("einbech","Shena",SPRITE_4_F_EINOLD,46,107,6,0,0,"einbech_Shena_46107")
 function einbech_Shena_46107()
 	dialog "[Shena]"
 	dialog "I think it's weird!"
@@ -269,7 +269,7 @@ function einbech_Shena_46107()
 	end
 end
 
-npc("einbech","Luda",spr_4_F_EINWOMAN,48,107,4,0,0,"einbech_Luda_48107")
+npc("einbech","Luda",SPRITE_4_F_EINWOMAN,48,107,4,0,0,"einbech_Luda_48107")
 function einbech_Luda_48107()
 	dialog "[Shena]"
 	dialog "I think it's weird!"
@@ -520,7 +520,7 @@ function einbech_Luda_48107()
 	end
 end
 
-npc("einbech","Jung",spr_4_M_EINMAN,148,242,5,0,0,"einbech_Jung_148242")
+npc("einbech","Jung",SPRITE_4_M_EINMAN,148,242,5,0,0,"einbech_Jung_148242")
 function einbech_Jung_148242()
 	dialog "[Jung]"
 	dialog "I'm one of the few"
@@ -661,7 +661,7 @@ function einbech_Jung_148242()
 	close()
 end
 
-npc("einbech","Franz",spr_4_M_REPAIR,148,246,5,0,0,"einbech_Franz_148246")
+npc("einbech","Franz",SPRITE_4_M_REPAIR,148,246,5,0,0,"einbech_Franz_148246")
 function einbech_Franz_148246()
 	dialog "[Franz]"
 	dialog "So bored..."

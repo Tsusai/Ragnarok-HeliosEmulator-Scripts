@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("prontera","Peco Peco Breeder",spr_8W_SOLDIER,55,350,5,0,0,"prontera_Peco_Peco_Breeder_55350")
+npc("prontera","Peco Peco Breeder",SPRITE_8W_SOLDIER,55,350,5,0,0,"prontera_Peco_Peco_Breeder_55350")
 function prontera_Peco_Peco_Breeder_55350()
 	dialog "[Peco Peco Breeder]"
 	if ((getvar(VAR_JOB) == KNIGHT) or (getvar(VAR_JOB) == KNIGHT_H)) then
@@ -75,7 +75,7 @@ function prontera_Peco_Peco_Breeder_55350()
 end
 
 --npc "in_hunter" "Falcon Breeder" 8W_SOLDIER 146 99 3 5 5
-npc("hu_in01","Falcon Breeder",spr_8W_SOLDIER,381,304,5,0,0,"hu_in01_Falcon_Breeder_381304")
+npc("hu_in01","Falcon Breeder",SPRITE_8W_SOLDIER,381,304,5,0,0,"hu_in01_Falcon_Breeder_381304")
 function hu_in01_Falcon_Breeder_381304()
 	dialog "[Falcon Breeder]"
 	if ((getvar(VAR_JOB) == HUNTER) or (getvar(VAR_JOB) == HUNTER_H)) then

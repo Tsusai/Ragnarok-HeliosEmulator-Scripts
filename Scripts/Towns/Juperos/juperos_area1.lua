@@ -293,7 +293,7 @@ function juperos_02_Restricted_Area_Entrance#jupe_130149()
 	moveto("jupe_gate",50,167)
 end
 
-npc("jupe_area1","#hole#1-1",spr_CLEAR_NPC,88,224,0,0,0,"jupe_area1_#hole#1-1_88224")
+npc("jupe_area1","#hole#1-1",SPRITE_CLEAR_NPC,88,224,0,0,0,"jupe_area1_#hole#1-1_88224")
 OnCommand: "on"
 	enablenpc "#hole#1-1"
 end
@@ -624,7 +624,7 @@ OnMyMobDead:()
 end
 
 
-npc("jupe_area1","#hole#1-2",spr_CLEAR_NPC,25,238,0,0,0,"jupe_area1_#hole#1-2_25238")
+npc("jupe_area1","#hole#1-2",SPRITE_CLEAR_NPC,25,238,0,0,0,"jupe_area1_#hole#1-2_25238")
 OnCommand: "on"
 	enablenpc "#hole#1-2"
 end
@@ -953,7 +953,7 @@ OnMyMobDead:()
 	end
 end
 
-npc("jupe_area1","#hole#1-3",spr_CLEAR_NPC,36,146,0,0,0,"jupe_area1_#hole#1-3_36146")
+npc("jupe_area1","#hole#1-3",SPRITE_CLEAR_NPC,36,146,0,0,0,"jupe_area1_#hole#1-3_36146")
 OnCommand: "on"
 	enablenpc "#hole#1-3"
 end
@@ -1285,7 +1285,7 @@ OnCommand: "on"
 	return
 
 
-npc("jupe_area1","#hole#1-4",spr_CLEAR_NPC,50,49,0,0,0,"jupe_area1_#hole#1-4_5049")
+npc("jupe_area1","#hole#1-4",SPRITE_CLEAR_NPC,50,49,0,0,0,"jupe_area1_#hole#1-4_5049")
 OnCommand: "on"
 	enablenpc "#hole#1-4"
 end
@@ -1611,7 +1611,7 @@ OnCommand: "on"
 		end
 	return
 
-npc("jupe_area1","Lever#ufe",spr_CLEAR_NPC,112,162,0,0,0,"jupe_area1_Lever#ufe_112162")
+npc("jupe_area1","Lever#ufe",SPRITE_CLEAR_NPC,112,162,0,0,0,"jupe_area1_Lever#ufe_112162")
 OnCommand: "on"
 	enablenpc "Lever#ufe"
 end

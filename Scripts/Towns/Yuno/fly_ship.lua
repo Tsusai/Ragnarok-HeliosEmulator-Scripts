@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("yuno","Airship  Representative",spr_4W_SAILOR,142,183,5,0,0,"yuno_Airship__Representative_142183")
+npc("yuno","Airship  Representative",SPRITE_4W_SAILOR,142,183,5,0,0,"yuno_Airship__Representative_142183")
 function yuno_Airship__Representative_142183()
 	dialog "[Airship Representative]"
 	dialog "Good day, I am here to inform you"

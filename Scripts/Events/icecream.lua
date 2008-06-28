@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("morocc","Ice Cream Maker",spr_4_M_03,160,143,4,0,0,"morocc_Ice_Cream_Maker_160143")
+npc("morocc","Ice Cream Maker",SPRITE_4_M_03,160,143,4,0,0,"morocc_Ice_Cream_Maker_160143")
 function morocc_Ice_Cream_Maker_160143()
 	dialog "[Ice Cream Maker]"
 	dialog "Fresh Ice Cream made with snow from Lutie!"
@@ -91,7 +91,7 @@ function morocc_Ice_Cream_Maker_160143()
 	end
 end
 
-npc("moc_fild16","Ice Cream Maker",spr_4_M_03,88,304,4,0,0,"moc_fild16_Ice_Cream_Maker_88304")
+npc("moc_fild16","Ice Cream Maker",SPRITE_4_M_03,88,304,4,0,0,"moc_fild16_Ice_Cream_Maker_88304")
 function moc_fild16_Ice_Cream_Maker_88304()
 	dialog "[Ice Cream Maker]"
 	dialog "Fresh Ice Cream made with snow from Lutie!"
@@ -163,7 +163,7 @@ function moc_fild16_Ice_Cream_Maker_88304()
 	end
 end
 
-npc("alberta","Ice Cream Maker",spr_4_M_03,120,53,4,0,0,"alberta_Ice_Cream_Maker_12053")
+npc("alberta","Ice Cream Maker",SPRITE_4_M_03,120,53,4,0,0,"alberta_Ice_Cream_Maker_12053")
 function alberta_Ice_Cream_Maker_12053()
 	dialog "[Ice Cream Maker]"
 	dialog "Fresh Ice Cream made with snow from Lutie!"

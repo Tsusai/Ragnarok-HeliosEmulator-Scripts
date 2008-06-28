@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("airplane","Crewman_ein",spr_4_M_ZONDAOYAJI,47,61,7,0,0,"airplane_Crewman_ein_4761")
+npc("airplane","Crewman_ein",SPRITE_4_M_ZONDAOYAJI,47,61,7,0,0,"airplane_Crewman_ein_4761")
 function airplane_Crewman_ein_4761()
 	if getvar(ein_tre) == 4 then
 		dialog "[Kain Himere]"
@@ -614,7 +614,7 @@ function airplane_Crewman_ein_4761()
 	end
 end
 
-npc("ein_in01","_door_ein",spr_HIDDEN_NPC,227,279,3,5,5,"ein_in01__door_ein_227279")
+npc("ein_in01","_door_ein",SPRITE_HIDDEN_NPC,227,279,3,5,5,"ein_in01__door_ein_227279")
 function ein_in01__door_ein_227279()
 	if (getvar(ein_tre) == 5) then
 		setitem("ein_tre",6)
@@ -663,7 +663,7 @@ function ein_in01__door_ein_227279()
 	end
 end
 
-npc("ein_in01","Elle Cherno",spr_4_F_KID2,261,241,3,3,3,"ein_in01_Elle_Cherno_261241")
+npc("ein_in01","Elle Cherno",SPRITE_4_F_KID2,261,241,3,3,3,"ein_in01_Elle_Cherno_261241")
 function ein_in01_Elle_Cherno_261241()
 	dialog "[Elle Cherno]"
 	dialog "Let's get to work"
@@ -859,7 +859,7 @@ function ein_in01_Elle_Cherno_261241()
 	end
 end
 
-npc("ein_in01","Theo Cherno",spr_4_M_REPAIR,123,94,7,0,0,"ein_in01_Theo_Cherno_12394")
+npc("ein_in01","Theo Cherno",SPRITE_4_M_REPAIR,123,94,7,0,0,"ein_in01_Theo_Cherno_12394")
 function ein_in01_Theo_Cherno_12394()
 	if (getvar(ein_tre) == 7) then
 		ShowEffect("_exp_ein","EF_COMBOATTACK1")
@@ -1037,7 +1037,7 @@ function ein_in01_Theo_Cherno_12394()
 	end
 end
 
-npc("ein_in01","Tarsha Cherno",spr_4_F_EINWOMAN,125,99,5,0,0,"ein_in01_Tarsha_Cherno_12599")
+npc("ein_in01","Tarsha Cherno",SPRITE_4_F_EINWOMAN,125,99,5,0,0,"ein_in01_Tarsha_Cherno_12599")
 function ein_in01_Tarsha_Cherno_12599()
 	if (getvar(ein_tre) == 7) then
 		ShowEffect("_exp_ein","EF_COMBOATTACK1")
@@ -1425,9 +1425,9 @@ function ein_in01_Tarsha_Cherno_12599()
 	end
 end
 
-npc("ein_in01","_exp_ein",spr_HIDDEN_NPC,127,94,3,0,0,"ein_in01__exp_ein_12794")
+npc("ein_in01","_exp_ein",SPRITE_HIDDEN_NPC,127,94,3,0,0,"ein_in01__exp_ein_12794")
 
-npc("ein_in01","Unidentified Machine_ein",spr_HIDDEN_NPC,122,103,3,0,0,"ein_in01_Unidentified_Machine_ein_122103")
+npc("ein_in01","Unidentified Machine_ein",SPRITE_HIDDEN_NPC,122,103,3,0,0,"ein_in01_Unidentified_Machine_ein_122103")
 function ein_in01_Unidentified_Machine_ein_122103()
 	dialog "^3355FFIt's..."
 	dialog "It's a really"
@@ -1437,7 +1437,7 @@ function ein_in01_Unidentified_Machine_ein_122103()
 	close()
 end
 
-npc("ein_in01","Mirror_ein",spr_HIDDEN_NPC,121,99,3,0,0,"ein_in01_Mirror_ein_12199")
+npc("ein_in01","Mirror_ein",SPRITE_HIDDEN_NPC,121,99,3,0,0,"ein_in01_Mirror_ein_12199")
 function ein_in01_Mirror_ein_12199()
 	if getvar(ein_tre) == 8 then
 		dialog "^3355FFIt's a mirror."
@@ -1558,7 +1558,7 @@ function ein_in01_Mirror_ein_12199()
 	end
 end
 
-npc("einbech","Tree_ein-1",spr_HIDDEN_NPC,45,113,3,0,0,"einbech_Tree_ein-1_45113")
+npc("einbech","Tree_ein-1",SPRITE_HIDDEN_NPC,45,113,3,0,0,"einbech_Tree_ein-1_45113")
 function einbech_Tree_ein-1_45113()
 	if (getvar(ein_tre) == 11) then
 		dialog "^3355FFYou crouch down"
@@ -1888,7 +1888,7 @@ function einbech_Tree_ein-1_45113()
 	end
 end
 
-npc("einbech","Tree_ein-2",spr_HIDDEN_NPC,36,100,3,0,0,"einbech_Tree_ein-2_36100")
+npc("einbech","Tree_ein-2",SPRITE_HIDDEN_NPC,36,100,3,0,0,"einbech_Tree_ein-2_36100")
 function einbech_Tree_ein-2_36100()
 	if (getvar(ein_tre) == 11) then
 		dialog "^3355FFYou crouch down"
@@ -2218,7 +2218,7 @@ function einbech_Tree_ein-2_36100()
 	end
 end
 
-npc("einbech","Tree_ein-3",spr_HIDDEN_NPC,44,90,3,0,0,"einbech_Tree_ein-3_4490")
+npc("einbech","Tree_ein-3",SPRITE_HIDDEN_NPC,44,90,3,0,0,"einbech_Tree_ein-3_4490")
 function einbech_Tree_ein-3_4490()
 	if (getvar(ein_tre) == 11) then
 		dialog "^3355FFYou crouch down"
@@ -2548,7 +2548,7 @@ function einbech_Tree_ein-3_4490()
 	end
 end
 
-npc("einbech","Tree_ein-4",spr_HIDDEN_NPC,53,94,3,0,0,"einbech_Tree_ein-4_5394")
+npc("einbech","Tree_ein-4",SPRITE_HIDDEN_NPC,53,94,3,0,0,"einbech_Tree_ein-4_5394")
 function einbech_Tree_ein-4_5394()
 	if (getvar(ein_tre) == 11) then
 		dialog "^3355FFYou crouch down"
@@ -2878,7 +2878,7 @@ function einbech_Tree_ein-4_5394()
 	end
 end
 
-npc("ein_in01","Unidentified Machine_ein",spr_HIDDEN_NPC,117,80,3,0,0,"ein_in01_Unidentified_Machine_ein_11780")
+npc("ein_in01","Unidentified Machine_ein",SPRITE_HIDDEN_NPC,117,80,3,0,0,"ein_in01_Unidentified_Machine_ein_11780")
 function ein_in01_Unidentified_Machine_ein_11780()
 	if (getvar(ein_tre) > 12) then
 		dialog("[","+PcName+"]"")

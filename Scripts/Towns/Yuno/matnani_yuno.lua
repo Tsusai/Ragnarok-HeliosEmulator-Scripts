@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("yuno","A Citizen of Juno",spr_8_F,157,87,4,0,0,"yuno_A_Citizen_of_Juno_15787")
+npc("yuno","A Citizen of Juno",SPRITE_8_F,157,87,4,0,0,"yuno_A_Citizen_of_Juno_15787")
 function yuno_A_Citizen_of_Juno_15787()
 	dialog "[Shalima]"
 	dialog "When you go north from Al De Baran, you will arrive at 'Elmeth Plateau,' a place covered with molten rock."
@@ -54,7 +54,7 @@ function yuno_A_Citizen_of_Juno_15787()
 	end
 end
 
-npc("yuno","Freidrich",spr_4_F_NOVICE,184,173,4,0,0,"yuno_Freidrich_184173")
+npc("yuno","Freidrich",SPRITE_4_F_NOVICE,184,173,4,0,0,"yuno_Freidrich_184173")
 function yuno_Freidrich_184173()
 	local imprezza = math.random(1,5)
 	if imprezza == 1 then
@@ -88,7 +88,7 @@ function yuno_Freidrich_184173()
 	end
 end
 
-npc("yuno","Sage Yklah",spr_4_M_JOB_WIZARD,261,99,4,0,0,"yuno_Sage_Yklah_26199")
+npc("yuno","Sage Yklah",SPRITE_4_M_JOB_WIZARD,261,99,4,0,0,"yuno_Sage_Yklah_26199")
 function yuno_Sage_Yklah_26199()
 	if ((getvar(comodo_npc) == 23) or (getvar(comodo_npc) == 24) or (getvar(comodo_npc) == 25)) then
 		mresult = getvar("comodo_npc")	
@@ -288,7 +288,7 @@ function yuno_Sage_Yklah_26199()
 	end
 end
 
-npc("yuno","Sage Syklah",spr_4_M_JOB_WIZARD,305,207,4,0,0,"yuno_Sage_Syklah_305207")
+npc("yuno","Sage Syklah",SPRITE_4_M_JOB_WIZARD,305,207,4,0,0,"yuno_Sage_Syklah_305207")
 function yuno_Sage_Syklah_305207()
 	if ((getvar(comodo_npc) == 25) or (getvar(comodo_npc) == 26) or (getvar(comodo_npc) == 27)) then
 		choose getvar("comodo_npc")
@@ -410,7 +410,7 @@ function yuno_Sage_Syklah_305207()
 	end
 end
 
-npc("yuno","Sage Esklah",spr_4_M_JOB_WIZARD,213,298,4,0,0,"yuno_Sage_Esklah_213298")
+npc("yuno","Sage Esklah",SPRITE_4_M_JOB_WIZARD,213,298,4,0,0,"yuno_Sage_Esklah_213298")
 function yuno_Sage_Esklah_213298()
 	if ((getvar(comodo_npc) == 27) or (getvar(comodo_npc) == 28) or (getvar(comodo_npc) == 29) or (getvar(comodo_npc) == 30)) then
 		choose getvar("comodo_npc")
@@ -569,7 +569,7 @@ function yuno_Sage_Esklah_213298()
 	end
 end
 
-npc("mjolnir_02","Muriniel's Cottage",spr_HIDDEN_NPC,170,193,4,0,0,"mjolnir_02_Muriniel's_Cottage_170193")
+npc("mjolnir_02","Muriniel's Cottage",SPRITE_HIDDEN_NPC,170,193,4,0,0,"mjolnir_02_Muriniel's_Cottage_170193")
 function mjolnir_02_Muriniel's_Cottage_170193()
 	if ((getvar(comodo_npc) == 30) or (getvar(comodo_npc) == 31)) then
 		choose getvar("comodo_npc")
@@ -629,7 +629,7 @@ function mjolnir_02_Muriniel's_Cottage_170193()
 	end
 end
 
-npc("yuno","Juno Granny",spr_8_F_GRANDMOTHER,337,227,4,0,0,"yuno_Juno_Granny_337227")
+npc("yuno","Juno Granny",SPRITE_8_F_GRANDMOTHER,337,227,4,0,0,"yuno_Juno_Granny_337227")
 function yuno_Juno_Granny_337227()
 	local fourzeroracle = math.random(1,50)
 	if fourzeroracle == 1 then
@@ -688,7 +688,7 @@ function yuno_Juno_Granny_337227()
 end
 
 
-npc("yuno","Juno Fighter",spr_4_M_JOB_HUNTER,328,239,4,0,0,"yuno_Juno_Fighter_328239")
+npc("yuno","Juno Fighter",SPRITE_4_M_JOB_HUNTER,328,239,4,0,0,"yuno_Juno_Fighter_328239")
 function yuno_Juno_Fighter_328239()
 	dialog "[Sergiof]"
 	dialog "My name is Sergiof,"
@@ -704,7 +704,7 @@ function yuno_Juno_Fighter_328239()
 end
 
 
-npc("yuno","Juno Despot",spr_4_M_JOB_ASSASSIN,343,68,4,0,0,"yuno_Juno_Despot_34368")
+npc("yuno","Juno Despot",SPRITE_4_M_JOB_ASSASSIN,343,68,4,0,0,"yuno_Juno_Despot_34368")
 function yuno_Juno_Despot_34368()
 	local ninoh = math.random(1,1000)
 	if ninoh == 1 then
@@ -732,7 +732,7 @@ function yuno_Juno_Despot_34368()
 end
 
 
-npc("yuno","Juno Sage",spr_2_F_MAGICMASTER,165,111,4,0,0,"yuno_Juno_Sage_165111")
+npc("yuno","Juno Sage",SPRITE_2_F_MAGICMASTER,165,111,4,0,0,"yuno_Juno_Sage_165111")
 function yuno_Juno_Sage_165111()
 	local Rimorpios = math.random(1,50)
 	if Rimorpios == 25 then
@@ -781,7 +781,7 @@ function yuno_Juno_Sage_165111()
 	end
 end
 
-npc("yuno","Juno Artisan",spr_1_M_JOBGUIDER,157,205,4,0,0,"yuno_Juno_Artisan_157205")
+npc("yuno","Juno Artisan",SPRITE_1_M_JOBGUIDER,157,205,4,0,0,"yuno_Juno_Artisan_157205")
 function yuno_Juno_Artisan_157205()
 	dialog "[Artisan]"
 	dialog "*Mumble mumble...*"
@@ -825,7 +825,7 @@ function yuno_Juno_Artisan_157205()
 	end
 end
 
-npc("yuno","Juno Soldier",spr_8W_SOLDIER,150,283,4,0,0,"yuno_Juno_Soldier_150283")
+npc("yuno","Juno Soldier",SPRITE_8W_SOLDIER,150,283,4,0,0,"yuno_Juno_Soldier_150283")
 function yuno_Juno_Soldier_150283()
 	dialog "[Juno Soldier]"
 	dialog "Welcome to Juno, the city of noble-mindedness."
@@ -841,7 +841,7 @@ function yuno_Juno_Soldier_150283()
 	close()
 end
 
-npc("yuno","Juno Soldier",spr_8W_SOLDIER,165,283,4,0,0,"yuno_Juno_Soldier_165283")
+npc("yuno","Juno Soldier",SPRITE_8W_SOLDIER,165,283,4,0,0,"yuno_Juno_Soldier_165283")
 function yuno_Juno_Soldier_165283()
 	dialog "[Juno Soldier]"
 	dialog "Welcome to Juno, the city of noble-mindedness."
@@ -858,7 +858,7 @@ function yuno_Juno_Soldier_165283()
 	close()
 end
 
-npc("yuno","Juno Soldier",spr_8W_SOLDIER,227,292,4,0,0,"yuno_Juno_Soldier_227292")
+npc("yuno","Juno Soldier",SPRITE_8W_SOLDIER,227,292,4,0,0,"yuno_Juno_Soldier_227292")
 function yuno_Juno_Soldier_227292()
 	dialog "[Juno Soldier]"
 	dialog "Welcome to Juno, the city of noble-mindedness."
@@ -871,7 +871,7 @@ function yuno_Juno_Soldier_227292()
 	close()
 end
 
-npc("yuno","Juno Soldier",spr_8W_SOLDIER,165,228,4,0,0,"yuno_Juno_Soldier_165228")
+npc("yuno","Juno Soldier",SPRITE_8W_SOLDIER,165,228,4,0,0,"yuno_Juno_Soldier_165228")
 function yuno_Juno_Soldier_165228()
 	dialog "[Juno Soldier]"
 	dialog "Welcome to Juno, the city of noble-mindedness."
@@ -887,7 +887,7 @@ function yuno_Juno_Soldier_165228()
 	close()
 end
 
-npc("yuno","Juno Soldier",spr_8W_SOLDIER,150,228,4,0,0,"yuno_Juno_Soldier_150228")
+npc("yuno","Juno Soldier",SPRITE_8W_SOLDIER,150,228,4,0,0,"yuno_Juno_Soldier_150228")
 function yuno_Juno_Soldier_150228()
 	dialog "[Juno Soldier]"
 	dialog "Welcome to Juno, the city of noble-mindedness."
@@ -904,7 +904,7 @@ function yuno_Juno_Soldier_150228()
 	close()
 end
 
-npc("yuno","Juno Soldier",spr_8W_SOLDIER,334,182,4,0,0,"yuno_Juno_Soldier_334182")
+npc("yuno","Juno Soldier",SPRITE_8W_SOLDIER,334,182,4,0,0,"yuno_Juno_Soldier_334182")
 function yuno_Juno_Soldier_334182()
 	dialog "[Juno Soldier]"
 	dialog "Welcome to Juno, the city of noble-mindedness."
@@ -918,7 +918,7 @@ function yuno_Juno_Soldier_334182()
 end
 
 
-npc("yuno","Juno Soldier",spr_8W_SOLDIER,263,320,4,0,0,"yuno_Juno_Soldier_263320")
+npc("yuno","Juno Soldier",SPRITE_8W_SOLDIER,263,320,4,0,0,"yuno_Juno_Soldier_263320")
 function yuno_Juno_Soldier_263320()
 	dialog "[Juno Soldier]"
 	dialog "Welcome to Juno, the city of noble-mindedness."

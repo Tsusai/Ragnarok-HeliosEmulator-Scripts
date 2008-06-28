@@ -19,7 +19,7 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("comodo","Kachua",spr_4_F_02,219,158,6,0,0,"comodo_Kachua_219158")
+npc("comodo","Kachua",SPRITE_4_F_02,219,158,6,0,0,"comodo_Kachua_219158")
 function comodo_Kachua_219158()
 	-- item check
 	local max_max_c = CheckMaxCount(1201,1)
@@ -598,7 +598,7 @@ function comodo_Kachua_219158()
 	showimage("katsua03.bmp",255)
 end
 
-npc("comodo","Devellin",spr_4_F_01,204,148,7,0,0,"comodo_Devellin_204148")
+npc("comodo","Devellin",SPRITE_4_F_01,204,148,7,0,0,"comodo_Devellin_204148")
 function comodo_Devellin_204148()
 	dialog "[Devellin]"
 	dialog "It seems some traveller showed"
@@ -612,7 +612,7 @@ function comodo_Devellin_204148()
 	close()
 end
 
-npc("comodo","Suspicious Guy",spr_2_M_THIEFMASTER,210,154,2,0,0,"comodo_Suspicious_Guy_210154")
+npc("comodo","Suspicious Guy",SPRITE_2_M_THIEFMASTER,210,154,2,0,0,"comodo_Suspicious_Guy_210154")
 function comodo_Suspicious_Guy_210154()
 	if ((getvar(VAR_JOB) == ASSASSIN) or (getvar(VAR_JOB) == ROGUE) or (getvar(VAR_JOB) == THIEF)) then
 		dialog "[Cain]"
@@ -698,7 +698,7 @@ function comodo_Suspicious_Guy_210154()
 	end
 end
 
-npc("mjolnir_02","Blacksmith Miner",spr_4_F_JOB_BLACKSMITH,85,362,3,0,0,"mjolnir_02_Blacksmith_Miner_85362")
+npc("mjolnir_02","Blacksmith Miner",SPRITE_4_F_JOB_BLACKSMITH,85,362,3,0,0,"mjolnir_02_Blacksmith_Miner_85362")
 function mjolnir_02_Blacksmith_Miner_85362()
 	-- item check
 	local max_max_c = CheckMaxCount(1201,1)

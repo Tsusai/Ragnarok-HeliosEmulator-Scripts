@@ -21,7 +21,7 @@
 -- |                                                             |
 -- \____________________________________________________________/
 
-npc("einbroch","Mark",spr_4_M_EINMAN,218,198,5,0,0,"einbroch_Mark_218198")
+npc("einbroch","Mark",SPRITE_4_M_EINMAN,218,198,5,0,0,"einbroch_Mark_218198")
 OnCommand: "on"
 	enablenpc "Mark"
 end
@@ -124,7 +124,7 @@ function einbroch_Mark_218198()
 	close()
 end
 
-npc("einbroch","Morei",spr_4_M_EINMAN2,175,196,5,0,0,"einbroch_Morei_175196")
+npc("einbroch","Morei",SPRITE_4_M_EINMAN2,175,196,5,0,0,"einbroch_Morei_175196")
 OnCommand: "on"
 	enablenpc "Morei"
 end
@@ -175,7 +175,7 @@ function einbroch_Morei_175196()
 	close()
 end
 
-npc("einbroch","Oberu",spr_4_M_EINMAN,173,229,5,0,0,"einbroch_Oberu_173229")
+npc("einbroch","Oberu",SPRITE_4_M_EINMAN,173,229,5,0,0,"einbroch_Oberu_173229")
 OnCommand: "on"
 	enablenpc "Oberu"
 end
@@ -278,7 +278,7 @@ function einbroch_Oberu_173229()
 	close()
 end
 
-npc("einbroch","Khemko",spr_4_M_EINMAN,176,172,5,0,0,"einbroch_Khemko_176172")
+npc("einbroch","Khemko",SPRITE_4_M_EINMAN,176,172,5,0,0,"einbroch_Khemko_176172")
 OnCommand: "on"
 	enablenpc "Khemko"
 end
@@ -381,7 +381,7 @@ function einbroch_Khemko_176172()
 	close()
 end
 
-npc("einbroch","Train Station Staff#ein-1",spr_4_M_EIN_SOLDIER,232,272,3,0,0,"einbroch_Train_Station_Staff#ein-1_232272")
+npc("einbroch","Train Station Staff#ein-1",SPRITE_4_M_EIN_SOLDIER,232,272,3,0,0,"einbroch_Train_Station_Staff#ein-1_232272")
 OnCommand: "on"
 	enablenpc "Train Station Staff#ein-1"
 end
@@ -449,7 +449,7 @@ function einbroch_Train_Station_Staff#ein-1_232272()
 	end
 end
 
-npc("einbroch","Train Station Staff#ein-2",spr_4_M_EIN_SOLDIER,252,301,3,0,0,"einbroch_Train_Station_Staff#ein-2_252301")
+npc("einbroch","Train Station Staff#ein-2",SPRITE_4_M_EIN_SOLDIER,252,301,3,0,0,"einbroch_Train_Station_Staff#ein-2_252301")
 OnCommand: "on"
 	enablenpc "Train Station Staff#ein-2"
 end
@@ -516,7 +516,7 @@ function einbroch_Train_Station_Staff#ein-2_252301()
 	end
 end
 
-npc("einbroch","Leslie#ein_1",spr_4_F_EINOLD,259,326,3,0,0,"einbroch_Leslie#ein_1_259326")
+npc("einbroch","Leslie#ein_1",SPRITE_4_F_EINOLD,259,326,3,0,0,"einbroch_Leslie#ein_1_259326")
 OnCommand: "on"
 	enablenpc "Leslie#ein_1"
 end
@@ -545,7 +545,7 @@ function einbroch_Leslie#ein_1_259326()
 	close()
 end
 
-npc("einbroch","Tan#ein",spr_4_M_EINMAN,236,191,3,0,0,"einbroch_Tan#ein_236191")
+npc("einbroch","Tan#ein",SPRITE_4_M_EINMAN,236,191,3,0,0,"einbroch_Tan#ein_236191")
 OnCommand: "on"
 	enablenpc "Tan#ein"
 end
@@ -576,7 +576,7 @@ function einbroch_Tan#ein_236191()
 	close()
 end
 
-npc("einbroch","Little Toby#ein-1",spr_4_M_EINMAN,228,121,5,0,0,"einbroch_Little_Toby#ein-1_228121")
+npc("einbroch","Little Toby#ein-1",SPRITE_4_M_EINMAN,228,121,5,0,0,"einbroch_Little_Toby#ein-1_228121")
 OnCommand: "on"
 	enablenpc "Little Toby#ein-1"
 end
@@ -606,7 +606,7 @@ function einbroch_Little_Toby#ein-1_228121()
 	close()
 end
 
-npc("einbroch","Airship Engineer#ein-1",spr_4_M_EINMAN,40,116,1,0,0,"einbroch_Airship_Engineer#ein-1_40116")
+npc("einbroch","Airship Engineer#ein-1",SPRITE_4_M_EINMAN,40,116,1,0,0,"einbroch_Airship_Engineer#ein-1_40116")
 OnCommand: "on"
 	enablenpc "Airship Engineer#ein-1"
 end
@@ -678,7 +678,7 @@ function einbroch_Airship_Engineer#ein-1_40116()
 	end
 end
 
-npc("einbroch","Centzu",spr_4_M_EINMAN2,294,312,3,0,0,"einbroch_Centzu_294312")
+npc("einbroch","Centzu",SPRITE_4_M_EINMAN2,294,312,3,0,0,"einbroch_Centzu_294312")
 OnCommand: "on"
 	enablenpc "Centzu"
 end
@@ -710,7 +710,7 @@ function einbroch_Centzu_294312()
 	close()
 end
 
-npc("einbroch","Khowropher",spr_4_M_EINOLD,232,255,5,0,0,"einbroch_Khowropher_232255")
+npc("einbroch","Khowropher",SPRITE_4_M_EINOLD,232,255,5,0,0,"einbroch_Khowropher_232255")
 OnCommand: "on"
 	enablenpc "Khowropher"
 end
@@ -742,7 +742,7 @@ function einbroch_Khowropher_232255()
 	close()
 end
 
-npc("einbroch","Khetine",spr_4_M_EINMAN,143,109,5,0,0,"einbroch_Khetine_143109")
+npc("einbroch","Khetine",SPRITE_4_M_EINMAN,143,109,5,0,0,"einbroch_Khetine_143109")
 OnCommand: "on"
 	enablenpc "Khetine"
 end
@@ -767,7 +767,7 @@ function einbroch_Khetine_143109()
 	close()
 end
 
-npc("einbroch","Sleik",spr_4_M_EINMAN2,229,149,3,0,0,"einbroch_Sleik_229149")
+npc("einbroch","Sleik",SPRITE_4_M_EINMAN2,229,149,3,0,0,"einbroch_Sleik_229149")
 OnCommand: "on"
 	enablenpc "Sleik"
 end
@@ -792,7 +792,7 @@ function einbroch_Sleik_229149()
 	close()
 end
 
-npc("airport","Young Man#air",spr_4W_M_03,174,41,6,0,0,"airport_Young_Man#air_17441")
+npc("airport","Young Man#air",SPRITE_4W_M_03,174,41,6,0,0,"airport_Young_Man#air_17441")
 function airport_Young_Man#air_17441()
 	dialog "[Runnan]"
 	dialog "...And that's why"
@@ -812,7 +812,7 @@ function airport_Young_Man#air_17441()
 	close()
 end
 
-npc("airport","Old Man#air",spr_4_M_ORIENT01,176,41,4,0,0,"airport_Old_Man#air_17641")
+npc("airport","Old Man#air",SPRITE_4_M_ORIENT01,176,41,4,0,0,"airport_Old_Man#air_17641")
 function airport_Old_Man#air_17641()
 	dialog "[Zhen Lan]"
 	dialog "Now, I hear that the"
@@ -843,7 +843,7 @@ function airport_Old_Man#air_17641()
 	close()
 end
 
-npc("einbech","Nemuk",spr_4_M_EINMAN,172,113,4,0,0,"einbech_Nemuk_172113")
+npc("einbech","Nemuk",SPRITE_4_M_EINMAN,172,113,4,0,0,"einbech_Nemuk_172113")
 function einbech_Nemuk_172113()
 	dialog "[Nemuk]"
 	dialog "You seem to be an"
@@ -901,7 +901,7 @@ function einbech_Nemuk_172113()
 	end
 
 
-npc("einbech","Young Man#air",spr_4_M_EINMAN,197,139,4,0,0,"einbech_Young_Man#air_197139")
+npc("einbech","Young Man#air",SPRITE_4_M_EINMAN,197,139,4,0,0,"einbech_Young_Man#air_197139")
 function einbech_Young_Man#air_197139()
 	dialog "[Heinz]"
 	dialog "Wow..."
@@ -937,7 +937,7 @@ function einbech_Young_Man#air_197139()
 	close()
 end
 
-npc("einbech","Mogan",spr_4_M_EINMINER,128,238,5,0,0,"einbech_Mogan_128238")
+npc("einbech","Mogan",SPRITE_4_M_EINMINER,128,238,5,0,0,"einbech_Mogan_128238")
 function einbech_Mogan_128238()
 	dialog "[Mogan]"
 	dialog "Recently, there were a few"
@@ -963,7 +963,7 @@ function einbech_Mogan_128238()
 	close()
 end
 
-npc("einbech","Hander",spr_4_M_EINMINER,129,234,5,0,0,"einbech_Hander_129234")
+npc("einbech","Hander",SPRITE_4_M_EINMINER,129,234,5,0,0,"einbech_Hander_129234")
 function einbech_Hander_129234()
 	dialog "[Hander]"
 	dialog "Those Einbroch bastards!"
@@ -988,7 +988,7 @@ function einbech_Hander_129234()
 	close()
 end
 
-npc("einbech","Gushenmu",spr_4_M_EINMINER,105,218,5,0,0,"einbech_Gushenmu_105218")
+npc("einbech","Gushenmu",SPRITE_4_M_EINMINER,105,218,5,0,0,"einbech_Gushenmu_105218")
 function einbech_Gushenmu_105218()
 	dialog "[Gushenmu]"
 	dialog "I've lived here a long time"
@@ -1021,7 +1021,7 @@ function einbech_Gushenmu_105218()
 	close()
 end
 
-npc("einbech","Train Station Staff#ein-3",spr_4_M_EIN_SOLDIER,39,215,5,0,0,"einbech_Train_Station_Staff#ein-3_39215")
+npc("einbech","Train Station Staff#ein-3",SPRITE_4_M_EIN_SOLDIER,39,215,5,0,0,"einbech_Train_Station_Staff#ein-3_39215")
 function einbech_Train_Station_Staff#ein-3_39215()
 	dialog "[Staff]"
 	dialog "Welcome to"
@@ -1061,7 +1061,7 @@ function einbech_Train_Station_Staff#ein-3_39215()
 	end
 end
 
-npc("einbech","Train Station Manager#ein",spr_4_M_EIN_SOLDIER,157,215,3,0,0,"einbech_Train_Station_Manager#ein_157215")
+npc("einbech","Train Station Manager#ein",SPRITE_4_M_EIN_SOLDIER,157,215,3,0,0,"einbech_Train_Station_Manager#ein_157215")
 function einbech_Train_Station_Manager#ein_157215()
 	dialog "[Train Station Manager]"
 	dialog "This train station"
@@ -1072,7 +1072,7 @@ function einbech_Train_Station_Manager#ein_157215()
 	close()
 end
 
-npc("airplane","Airship Crew#ein-1",spr_4_M_EIN_SOLDIER,100,69,3,0,0,"airplane_Airship_Crew#ein-1_10069")
+npc("airplane","Airship Crew#ein-1",SPRITE_4_M_EIN_SOLDIER,100,69,3,0,0,"airplane_Airship_Crew#ein-1_10069")
 function airplane_Airship_Crew#ein-1_10069()
 	dialog "[Airship Crew]"
 	dialog "If we've landed at"
@@ -1084,7 +1084,7 @@ function airplane_Airship_Crew#ein-1_10069()
 	close()
 end
 
-npc("airplane","Umbala Kid#ein_p",spr_4_M_UMKID,64,94,1,0,0,"airplane_Umbala_Kid#ein_p_6494")
+npc("airplane","Umbala Kid#ein_p",SPRITE_4_M_UMKID,64,94,1,0,0,"airplane_Umbala_Kid#ein_p_6494")
 function airplane_Umbala_Kid#ein_p_6494()
 	if getvar(um_trans) == 10 then
 		Emotion("Umbala Kid#ein_p","ET_PROFUSELY_SWAT")
@@ -1107,7 +1107,7 @@ function airplane_Umbala_Kid#ein_p_6494()
 	end
 end
 
-npc("airplane","Umbala Lady#ein_p",spr_4_F_UMWOMAN,66,93,3,0,0,"airplane_Umbala_Lady#ein_p_6693")
+npc("airplane","Umbala Lady#ein_p",SPRITE_4_F_UMWOMAN,66,93,3,0,0,"airplane_Umbala_Lady#ein_p_6693")
 function airplane_Umbala_Lady#ein_p_6693()
 	if getvar(um_trans) == 10 then
 		Emotion("Umbala Lady#ein_p","ET_THINK")
@@ -1131,7 +1131,7 @@ function airplane_Umbala_Lady#ein_p_6693()
 	end
 end
 
-npc("airplane","Umbala Man#ein_p",spr_4_M_UMSOLDIER,71,91,7,0,0,"airplane_Umbala_Man#ein_p_7191")
+npc("airplane","Umbala Man#ein_p",SPRITE_4_M_UMSOLDIER,71,91,7,0,0,"airplane_Umbala_Man#ein_p_7191")
 function airplane_Umbala_Man#ein_p_7191()
 	if getvar(um_trans) == 10 then
 		dialog "[Chrmlim]"
@@ -1177,7 +1177,7 @@ function airplane_Umbala_Man#ein_p_7191()
 	end
 end
 
-npc("einbech","Tollaf",spr_4_M_EINMAN,151,168,3,0,0,"einbech_Tollaf_151168")
+npc("einbech","Tollaf",SPRITE_4_M_EINMAN,151,168,3,0,0,"einbech_Tollaf_151168")
 function einbech_Tollaf_151168()
 	dialog "[Tollaf]"
 	dialog "Ah...!"
@@ -1195,7 +1195,7 @@ function einbech_Tollaf_151168()
 	close()
 end
 
-npc("einbech","Raust",spr_4_M_EINOLD,93,139,5,0,0,"einbech_Raust_93139")
+npc("einbech","Raust",SPRITE_4_M_EINOLD,93,139,5,0,0,"einbech_Raust_93139")
 function einbech_Raust_93139()
 	dialog "[Raust]"
 	dialog "I don't get it!"
@@ -1224,7 +1224,7 @@ function einbech_Raust_93139()
 	close()
 end
 
-npc("einbech","Mjunia",spr_4_F_EINWOMAN,149,154,3,0,0,"einbech_Mjunia_149154")
+npc("einbech","Mjunia",SPRITE_4_F_EINWOMAN,149,154,3,0,0,"einbech_Mjunia_149154")
 function einbech_Mjunia_149154()
 	dialog "[Mjunia]"
 	dialog "It's hard being a woman"
@@ -1264,7 +1264,7 @@ function einbech_Mjunia_149154()
 	close()
 end
 
-npc("einbech","Ekuri",spr_4_M_EINMINER,130,253,1,0,0,"einbech_Ekuri_130253")
+npc("einbech","Ekuri",SPRITE_4_M_EINMINER,130,253,1,0,0,"einbech_Ekuri_130253")
 function einbech_Ekuri_130253()
 	dialog "[Ekuri]"
 	dialog "Yo-heave-ho!"
@@ -1294,7 +1294,7 @@ function einbech_Ekuri_130253()
 	close()
 end
 
-npc("ein_in01","Teinz",spr_4_M_REPAIR,113,211,3,0,0,"ein_in01_Teinz_113211")
+npc("ein_in01","Teinz",SPRITE_4_M_REPAIR,113,211,3,0,0,"ein_in01_Teinz_113211")
 function ein_in01_Teinz_113211()
 	dialog "[Teinz]"
 	dialog "If you just pay me money,"
@@ -1312,7 +1312,7 @@ function ein_in01_Teinz_113211()
 	close()
 end
 
-npc("ein_in01","Lowe",spr_4_M_REPAIR,48,220,5,0,0,"ein_in01_Lowe_48220")
+npc("ein_in01","Lowe",SPRITE_4_M_REPAIR,48,220,5,0,0,"ein_in01_Lowe_48220")
 function ein_in01_Lowe_48220()
 	dialog "[Lowe]"
 	dialog "..."
@@ -1340,7 +1340,7 @@ function ein_in01_Lowe_48220()
 	close()
 end
 
-npc("ein_in01","Dinje",spr_4_F_EINWOMAN,87,237,5,0,0,"ein_in01_Dinje_87237")
+npc("ein_in01","Dinje",SPRITE_4_F_EINWOMAN,87,237,5,0,0,"ein_in01_Dinje_87237")
 function ein_in01_Dinje_87237()
 	dialog "[Dinje]"
 	dialog "Do you know why a woman"
@@ -1369,7 +1369,7 @@ function ein_in01_Dinje_87237()
 	close()
 end
 
-npc("ein_in01","Tsuen",spr_4_M_REPAIR,84,218,3,0,0,"ein_in01_Tsuen_84218")
+npc("ein_in01","Tsuen",SPRITE_4_M_REPAIR,84,218,3,0,0,"ein_in01_Tsuen_84218")
 function ein_in01_Tsuen_84218()
 	dialog "[Tsuen]"
 	dialog "There was a time"
@@ -1403,7 +1403,7 @@ function ein_in01_Tsuen_84218()
 	close()
 end
 
-npc("ein_in01","Gesin",spr_4_M_DIEMAN,103,239,1,0,0,"ein_in01_Gesin_103239")
+npc("ein_in01","Gesin",SPRITE_4_M_DIEMAN,103,239,1,0,0,"ein_in01_Gesin_103239")
 function ein_in01_Gesin_103239()
 	dialog "[Gesin]"
 	dialog "Arrrgh!"
@@ -1435,7 +1435,7 @@ function ein_in01_Gesin_103239()
 	close()
 end
 
-npc("ein_in01","Pevtatin",spr_4_M_EINMINER,33,275,1,0,0,"ein_in01_Pevtatin_33275")
+npc("ein_in01","Pevtatin",SPRITE_4_M_EINMINER,33,275,1,0,0,"ein_in01_Pevtatin_33275")
 function ein_in01_Pevtatin_33275()
 	dialog "[Pevtatin]"
 	dialog "Good god!"
@@ -1458,7 +1458,7 @@ function ein_in01_Pevtatin_33275()
 	close()
 end
 
-npc("ein_in01","Rombell",spr_4_M_REPAIR,36,204,3,0,0,"ein_in01_Rombell_36204")
+npc("ein_in01","Rombell",SPRITE_4_M_REPAIR,36,204,3,0,0,"ein_in01_Rombell_36204")
 function ein_in01_Rombell_36204()
 	dialog "[Rombell]"
 	dialog "It's great that the"
@@ -1485,7 +1485,7 @@ function ein_in01_Rombell_36204()
 	close()
 end
 
-npc("ein_in01","Vonstein",spr_4_M_EINMAN,64,271,3,0,0,"ein_in01_Vonstein_64271")
+npc("ein_in01","Vonstein",SPRITE_4_M_EINMAN,64,271,3,0,0,"ein_in01_Vonstein_64271")
 function ein_in01_Vonstein_64271()
 	dialog "[Vonstein]"
 	dialog "Staring at this"
@@ -1503,7 +1503,7 @@ function ein_in01_Vonstein_64271()
 	close()
 end
 
-npc("ein_in01","Dorf",spr_4_M_REPAIR,49,202,3,0,0,"ein_in01_Dorf_49202")
+npc("ein_in01","Dorf",SPRITE_4_M_REPAIR,49,202,3,0,0,"ein_in01_Dorf_49202")
 function ein_in01_Dorf_49202()
 	dialog "[Dorf]"
 	dialog "Machines are sooo"
@@ -1527,7 +1527,7 @@ function ein_in01_Dorf_49202()
 	close()
 end
 
-npc("ein_in01","Khashurantze",spr_4_M_EIN_SOLDIER,68,209,5,0,0,"ein_in01_Khashurantze_68209")
+npc("ein_in01","Khashurantze",SPRITE_4_M_EIN_SOLDIER,68,209,5,0,0,"ein_in01_Khashurantze_68209")
 function ein_in01_Khashurantze_68209()
 	dialog "[Khashurantze]"
 	dialog "I'm sorry, but you need"
@@ -1538,7 +1538,7 @@ function ein_in01_Khashurantze_68209()
 	moveto("einbroch",179,63)
 end
 
-npc("ein_in01","Zherin",spr_4_M_REPAIR,85,261,3,0,0,"ein_in01_Zherin_85261")
+npc("ein_in01","Zherin",SPRITE_4_M_REPAIR,85,261,3,0,0,"ein_in01_Zherin_85261")
 function ein_in01_Zherin_85261()
 	dialog "[Zherin]"
 	dialog "I'm in charge of this"
@@ -1563,7 +1563,7 @@ function ein_in01_Zherin_85261()
 	close()
 end
 
-npc("ein_in01","Canphotii",spr_4_M_EIN_SOLDIER,43,252,3,0,0,"ein_in01_Canphotii_43252")
+npc("ein_in01","Canphotii",SPRITE_4_M_EIN_SOLDIER,43,252,3,0,0,"ein_in01_Canphotii_43252")
 function ein_in01_Canphotii_43252()
 	dialog "[Canphotii]"
 	dialog "Hustle, hustle!"
@@ -1588,7 +1588,7 @@ function ein_in01_Canphotii_43252()
 	close()
 end
 
-npc("ein_in01","Hotel Employee",spr_4_M_EINMAN,206,224,3,0,0,"ein_in01_Hotel_Employee_206224")
+npc("ein_in01","Hotel Employee",SPRITE_4_M_EINMAN,206,224,3,0,0,"ein_in01_Hotel_Employee_206224")
 function ein_in01_Hotel_Employee_206224()
 	dialog "[Hotel Employee]"
 	dialog "Good day, welcome to the"
@@ -1658,7 +1658,7 @@ function ein_in01_Hotel_Employee_206224()
 	close()
 end
 
-npc("einbech","Bulletin Board#einbech11",spr_4_BULLETIN_BOARD2,135,250,5,0,0,"einbech_Bulletin_Board#einbech11_135250")
+npc("einbech","Bulletin Board#einbech11",SPRITE_4_BULLETIN_BOARD2,135,250,5,0,0,"einbech_Bulletin_Board#einbech11_135250")
 function einbech_Bulletin_Board#einbech11_135250()
 	dialog " "
 	dialog "    Mine Dungeon Entrance    "
@@ -1666,7 +1666,7 @@ function einbech_Bulletin_Board#einbech11_135250()
 	close()
 end
 
-npc("einbech","Bulletin Board#einbech22",spr_4_BULLETIN_BOARD2,90,214,5,0,0,"einbech_Bulletin_Board#einbech22_90214")
+npc("einbech","Bulletin Board#einbech22",SPRITE_4_BULLETIN_BOARD2,90,214,5,0,0,"einbech_Bulletin_Board#einbech22_90214")
 function einbech_Bulletin_Board#einbech22_90214()
 	dialog " "
 	dialog "    Train Station    "
@@ -1674,7 +1674,7 @@ function einbech_Bulletin_Board#einbech22_90214()
 	close()
 end
 
-npc("einbech","Bulletin Board#einbech33",spr_4_BULLETIN_BOARD2,158,189,4,0,0,"einbech_Bulletin_Board#einbech33_158189")
+npc("einbech","Bulletin Board#einbech33",SPRITE_4_BULLETIN_BOARD2,158,189,4,0,0,"einbech_Bulletin_Board#einbech33_158189")
 function einbech_Bulletin_Board#einbech33_158189()
 	dialog " "
 	dialog "    Freight Train Station    "
@@ -1682,7 +1682,7 @@ function einbech_Bulletin_Board#einbech33_158189()
 	close()
 end
 
-npc("einbech","Bulletin Board#einbech44",spr_4_BULLETIN_BOARD2,180,136,5,0,0,"einbech_Bulletin_Board#einbech44_180136")
+npc("einbech","Bulletin Board#einbech44",SPRITE_4_BULLETIN_BOARD2,180,136,5,0,0,"einbech_Bulletin_Board#einbech44_180136")
 function einbech_Bulletin_Board#einbech44_180136()
 	dialog " "
 	dialog "    Tool Shop    "
@@ -1690,7 +1690,7 @@ function einbech_Bulletin_Board#einbech44_180136()
 	close()
 end
 
-npc("einbech","Bulletin Board#einbech55",spr_4_BULLETIN_BOARD2,133,114,5,0,0,"einbech_Bulletin_Board#einbech55_133114")
+npc("einbech","Bulletin Board#einbech55",SPRITE_4_BULLETIN_BOARD2,133,114,5,0,0,"einbech_Bulletin_Board#einbech55_133114")
 function einbech_Bulletin_Board#einbech55_133114()
 	dialog " "
 	dialog "    Tavern    "
@@ -1698,7 +1698,7 @@ function einbech_Bulletin_Board#einbech55_133114()
 	close()
 end
 
-npc("einbech","Bulletin Board#einbech01",spr_4_BULLETIN_BOARD2,77,105,5,0,0,"einbech_Bulletin_Board#einbech01_77105")
+npc("einbech","Bulletin Board#einbech01",SPRITE_4_BULLETIN_BOARD2,77,105,5,0,0,"einbech_Bulletin_Board#einbech01_77105")
 function einbech_Bulletin_Board#einbech01_77105()
 	dialog "Welcome to 'Einbech'."
 	wait()
@@ -1707,7 +1707,7 @@ function einbech_Bulletin_Board#einbech01_77105()
 	close()
 end
 
-npc("einbech","Bulletin Board#einbech03",spr_4_BULLETIN_BOARD2,181,127,5,0,0,"einbech_Bulletin_Board#einbech03_181127")
+npc("einbech","Bulletin Board#einbech03",SPRITE_4_BULLETIN_BOARD2,181,127,5,0,0,"einbech_Bulletin_Board#einbech03_181127")
 function einbech_Bulletin_Board#einbech03_181127()
 	dialog "Northwest - Train Station"
 	dialog "South - Tavern"
@@ -1715,7 +1715,7 @@ function einbech_Bulletin_Board#einbech03_181127()
 	close()
 end
 
-npc("einbroch","Bulletin Board",spr_4_BULLETIN_BOARD2,244,255,5,0,0,"einbroch_Bulletin_Board_244255")
+npc("einbroch","Bulletin Board",SPRITE_4_BULLETIN_BOARD2,244,255,5,0,0,"einbroch_Bulletin_Board_244255")
 function einbroch_Bulletin_Board_244255()
 	dialog " "
 	dialog "    Train Station    "
@@ -1723,7 +1723,7 @@ function einbroch_Bulletin_Board_244255()
 	close()
 end
 
-npc("einbroch","Bulletin Board",spr_4_BULLETIN_BOARD2,253,203,5,0,0,"einbroch_Bulletin_Board_253203")
+npc("einbroch","Bulletin Board",SPRITE_4_BULLETIN_BOARD2,253,203,5,0,0,"einbroch_Bulletin_Board_253203")
 function einbroch_Bulletin_Board_253203()
 	dialog " "
 	dialog "    Hotel    "
@@ -1731,7 +1731,7 @@ function einbroch_Bulletin_Board_253203()
 	close()
 end
 
-npc("einbroch","Bulletin Board",spr_4_BULLETIN_BOARD2,68,206,5,0,0,"einbroch_Bulletin_Board_68206")
+npc("einbroch","Bulletin Board",SPRITE_4_BULLETIN_BOARD2,68,206,5,0,0,"einbroch_Bulletin_Board_68206")
 function einbroch_Bulletin_Board_68206()
 	dialog " "
 	dialog "    Airship Airport    "
@@ -1739,7 +1739,7 @@ function einbroch_Bulletin_Board_68206()
 	close()
 end
 
-npc("einbroch","Bulletin Board#einbroch03",spr_4_BULLETIN_BOARD2,90,84,5,0,0,"einbroch_Bulletin_Board#einbroch03_9084")
+npc("einbroch","Bulletin Board#einbroch03",SPRITE_4_BULLETIN_BOARD2,90,84,5,0,0,"einbroch_Bulletin_Board#einbroch03_9084")
 function einbroch_Bulletin_Board#einbroch03_9084()
 	dialog " "
 	dialog "    Laboratory    "
@@ -1747,7 +1747,7 @@ function einbroch_Bulletin_Board#einbroch03_9084()
 	close()
 end
 
-npc("einbroch","Bulletin Board#einbroch04",spr_4_BULLETIN_BOARD2,101,106,5,0,0,"einbroch_Bulletin_Board#einbroch04_101106")
+npc("einbroch","Bulletin Board#einbroch04",SPRITE_4_BULLETIN_BOARD2,101,106,5,0,0,"einbroch_Bulletin_Board#einbroch04_101106")
 function einbroch_Bulletin_Board#einbroch04_101106()
 	dialog " "
 	dialog "    Airship Repair Shop    "
@@ -1755,7 +1755,7 @@ function einbroch_Bulletin_Board#einbroch04_101106()
 	close()
 end
 
-npc("einbroch","Bulletin Board#einbroch05",spr_4_BULLETIN_BOARD2,220,208,5,0,0,"einbroch_Bulletin_Board#einbroch05_220208")
+npc("einbroch","Bulletin Board#einbroch05",SPRITE_4_BULLETIN_BOARD2,220,208,5,0,0,"einbroch_Bulletin_Board#einbroch05_220208")
 function einbroch_Bulletin_Board#einbroch05_220208()
 	dialog " "
 	dialog "    Weapon Shop    "
@@ -1763,7 +1763,7 @@ function einbroch_Bulletin_Board#einbroch05_220208()
 	close()
 end
 
-npc("einbroch","Bulletin Board#einbroch06",spr_4_BULLETIN_BOARD2,132,76,5,0,0,"einbroch_Bulletin_Board#einbroch06_13276")
+npc("einbroch","Bulletin Board#einbroch06",SPRITE_4_BULLETIN_BOARD2,132,76,5,0,0,"einbroch_Bulletin_Board#einbroch06_13276")
 function einbroch_Bulletin_Board#einbroch06_13276()
 	dialog " "
 	dialog "    Factory    "
@@ -1771,7 +1771,7 @@ function einbroch_Bulletin_Board#einbroch06_13276()
 	close()
 end
 
-npc("einbroch","Bulletin Board#einbroch11",spr_4_BULLETIN_BOARD2,152,46,5,0,0,"einbroch_Bulletin_Board#einbroch11_15246")
+npc("einbroch","Bulletin Board#einbroch11",SPRITE_4_BULLETIN_BOARD2,152,46,5,0,0,"einbroch_Bulletin_Board#einbroch11_15246")
 function einbroch_Bulletin_Board#einbroch11_15246()
 	dialog "West - Laboratory, Airship Repair Shop"
 	dialog "South - Einbroch Front Gate"
@@ -1780,7 +1780,7 @@ function einbroch_Bulletin_Board#einbroch11_15246()
 	close()
 end
 
-npc("einbroch","Bulletin Board#einbroch22",spr_4_BULLETIN_BOARD2,235,141,5,0,0,"einbroch_Bulletin_Board#einbroch22_235141")
+npc("einbroch","Bulletin Board#einbroch22",SPRITE_4_BULLETIN_BOARD2,235,141,5,0,0,"einbroch_Bulletin_Board#einbroch22_235141")
 function einbroch_Bulletin_Board#einbroch22_235141()
 	dialog "Southwest - Airship Repair Shop, Laboratory"
 	dialog "Northwest - Airport"
@@ -1788,7 +1788,7 @@ function einbroch_Bulletin_Board#einbroch22_235141()
 	close()
 end
 
-npc("einbroch","Bulletin Board#einbroch33",spr_4_BULLETIN_BOARD2,162,256,5,0,0,"einbroch_Bulletin_Board#einbroch33_162256")
+npc("einbroch","Bulletin Board#einbroch33",SPRITE_4_BULLETIN_BOARD2,162,256,5,0,0,"einbroch_Bulletin_Board#einbroch33_162256")
 function einbroch_Bulletin_Board#einbroch33_162256()
 	dialog "East - Train Station"
 	dialog "Southeast - Hotel"
@@ -1797,7 +1797,7 @@ function einbroch_Bulletin_Board#einbroch33_162256()
 	close()
 end
 
-npc("einbroch","Bulletin Board#einbroch44",spr_4_BULLETIN_BOARD2,183,174,5,0,0,"einbroch_Bulletin_Board#einbroch44_183174")
+npc("einbroch","Bulletin Board#einbroch44",SPRITE_4_BULLETIN_BOARD2,183,174,5,0,0,"einbroch_Bulletin_Board#einbroch44_183174")
 function einbroch_Bulletin_Board#einbroch44_183174()
 	dialog "East - Weapon Shop, Hotel"
 	dialog "South - Factory"
@@ -1806,7 +1806,7 @@ function einbroch_Bulletin_Board#einbroch44_183174()
 	close()
 end
 
-npc("einbroch","Bulletin Board#einbroch55",spr_4_BULLETIN_BOARD2,104,202,5,0,0,"einbroch_Bulletin_Board#einbroch55_104202")
+npc("einbroch","Bulletin Board#einbroch55",SPRITE_4_BULLETIN_BOARD2,104,202,5,0,0,"einbroch_Bulletin_Board#einbroch55_104202")
 function einbroch_Bulletin_Board#einbroch55_104202()
 	dialog "Northeast - Train Station"
 	dialog "East - Weapon Shop,Hotel"
@@ -1814,7 +1814,7 @@ function einbroch_Bulletin_Board#einbroch55_104202()
 	close()
 end
 
-npc("ein_in01","Cendadt",spr_4_M_REPAIR,31,217,3,0,0,"ein_in01_Cendadt_31217")
+npc("ein_in01","Cendadt",SPRITE_4_M_REPAIR,31,217,3,0,0,"ein_in01_Cendadt_31217")
 function ein_in01_Cendadt_31217()
 	dialog "[Cendadt]"
 	dialog "This factory has a lot"
@@ -1847,7 +1847,7 @@ function ein_in01_Cendadt_31217()
 	close()
 end
 
-npc("ein_in01","Tavern Lady",spr_4_M_EINMAN2,279,92,3,0,0,"ein_in01_Tavern_Lady_27992")
+npc("ein_in01","Tavern Lady",SPRITE_4_M_EINMAN2,279,92,3,0,0,"ein_in01_Tavern_Lady_27992")
 function ein_in01_Tavern_Lady_27992()
 	dialog "[Tavern Lady]"
 	dialog "Most Einbech men are"
@@ -1872,7 +1872,7 @@ function ein_in01_Tavern_Lady_27992()
 	close()
 end
 
-npc("ein_in01","Ryan Danger#air#einbech_bar",spr_4_M_EINMAN,277,95,7,0,0,"ein_in01_Ryan_Danger#air#einbech_bar_27795")
+npc("ein_in01","Ryan Danger#air#einbech_bar",SPRITE_4_M_EINMAN,277,95,7,0,0,"ein_in01_Ryan_Danger#air#einbech_bar_27795")
 function ein_in01_Ryan_Danger#air#einbech_bar_27795()
 	dialog "[R.D. Kim]"
 	dialog "Oooh..."
@@ -1925,7 +1925,7 @@ function ein_in01_Ryan_Danger#air#einbech_bar_27795()
 	close()
 end
 
-npc("ein_in01","Drunken Man#einbech_bar",spr_4_M_DIEMAN,281,85,3,0,0,"ein_in01_Drunken_Man#einbech_bar_28185")
+npc("ein_in01","Drunken Man#einbech_bar",SPRITE_4_M_DIEMAN,281,85,3,0,0,"ein_in01_Drunken_Man#einbech_bar_28185")
 function ein_in01_Drunken_Man#einbech_bar_28185()
 	dialog "[Drunken Man]"
 	dialog "...^333333*Hiccup*^000000..."
