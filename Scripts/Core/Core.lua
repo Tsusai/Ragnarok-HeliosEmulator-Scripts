@@ -36,4 +36,7 @@
    
  --Mob Master List
   require("Scripts/Mobs/Mob_Main")
+  
+--Events Master List
+  require("Scripts/Events/Event_main")
    
