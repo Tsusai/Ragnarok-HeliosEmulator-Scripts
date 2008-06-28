@@ -22,8 +22,6 @@
 
 npc("geffen","Guide",SPRITE_4_M_GEF_SOLDIER,203,116,0,0,0,"geffen_Guide_203116")
 function geffen_Guide_203116()
-	local compass_check = 0
-	local wait_button_chk = 0
 	showimage("gef_soldier.bmp",2)
 	dialog "[Geffen Guide]"
 	dialog "Welcome to Geffen,"
@@ -46,9 +44,9 @@ function geffen_Guide_203116()
 				dialog "on your Mini-Map?"
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					compass_check = 1
+					local compass_check = 1
 				elseif mresultb == 2 then
-					 2
+					local compass_check = 2
 				end
 			end
 			while(1) do
@@ -148,7 +146,7 @@ function geffen_Guide_203116()
 			compass(6,134,221,2,"0xFFFF0000")
 			compass(7,204,214,2,"0xFFFF0000")
 			compass(8,204,214,2,"0xFF00FF00")
-			compass_check = 0
+			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Geffen Guide]"
 			dialog "Advances in sorcery and"
@@ -209,9 +207,9 @@ function geffen_Guide_11862()
 				dialog "on your Mini-Map?"
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					compass_check = 1
+					local compass_check = 1
 				elseif mresultb == 2 then
-					 2
+					local compass_check = 2
 				end
 			end
 			while(1) do
@@ -311,7 +309,7 @@ function geffen_Guide_11862()
 			compass(6,134,221,2,"0xFFFF0000")
 			compass(7,204,214,2,"0xFFFF0000")
 			compass(8,204,214,2,"0xFF00FF00")
-			compass_check = 0
+			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Geffen Guide]"
 			dialog "Advances in sorcery and"

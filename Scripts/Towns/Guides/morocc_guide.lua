@@ -22,8 +22,6 @@
 
 npc("morocc","Guide",SPRITE_4_M_MOC_SOLDIER,153,286,6,0,0,"morocc_Guide_153286")
 function morocc_Guide_153286()
-	local compass_check = 0
-	local wait_button_chk = 0
 	showimage("moc_soldier.bmp",2)
 	dialog "[Morroc Guide]"
 	dialog "Welcome to Morroc,"
@@ -48,9 +46,9 @@ function morocc_Guide_153286()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					compass_check = 1
+					local compass_check = 1
 				elseif mresultb == 2 then
-					 2
+					local compass_check = 2
 				end
 			end
 			while(1) do
@@ -140,7 +138,7 @@ function morocc_Guide_153286()
 			compass(5,175,220,2,"0xFFFF0000")
 			compass(6,175,220,2,"0xFFFF0000")
 			compass(7,175,220,2,"0xFFFF0000")
-			compass_check = 0
+			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Morroc Guide]"
 			dialog "Advances in sorcery and"
@@ -203,9 +201,9 @@ function morocc_Guide_5497()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					compass_check = 1
+					local compass_check = 1
 				elseif mresultb == 2 then
-					 2
+					local compass_check = 2
 				end
 			end
 			while(1) do
@@ -295,7 +293,7 @@ function morocc_Guide_5497()
 			compass(5,175,220,2,"0xFFFF0000")
 			compass(6,175,220,2,"0xFFFF0000")
 			compass(7,175,220,2,"0xFFFF0000")
-			compass_check = 0
+			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Morroc Guide]"
 			dialog "Advances in sorcery and"

@@ -22,8 +22,6 @@
 
 npc("hugel","Hugel Guide Granny",SPRITE_4_F_LGTGRAND,98,56,3,0,0,"hugel_Hugel_Guide_Granny_9856")
 function hugel_Hugel_Guide_Granny_9856()
-	local compass_check = 0
-	local wait_button_chk = 0
 	dialog "[Hugel Guide Granny]"
 	dialog "Oh, hello~ you are one energetic adventurer."
 	dialog "Welcome to Hugel. I was honored to guide you to this beautiful village."
@@ -44,14 +42,14 @@ function hugel_Hugel_Guide_Granny_9856()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					compass_check = 1
+					local compass_check = 1
 				elseif mresultb == 2 then
-					 2
+					local compass_check = 2
 				end
 			end
 			while(1) do
 				if wait_button_chk == 0 then
-					wait_button_chk = 1
+					wait_button_chk("=",1)
 				else
 					wait()
 				end
@@ -174,7 +172,7 @@ function hugel_Hugel_Guide_Granny_9856()
 			compass(10,52,91,1,"0xFFFFFFFF")
 			compass(11,58,72,1,"0xFFFF9900")
 			compass(12,55,209,1,"0xFF66FFFF")
-			compass_check = 0
+			compass_check("=",0)
 			dialog "[Hugel Guide Granny]"
 			dialog "Okay, they are gone now. If you have more locations to ask, just let me know."
 		elseif mresulta == 3 then

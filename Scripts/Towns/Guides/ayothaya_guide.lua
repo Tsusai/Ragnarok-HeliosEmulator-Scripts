@@ -121,7 +121,7 @@ function ayothaya_Noi_203169()
 		compass(4,232,76,2,"0xFF00FF00")
 		compass(5,208,283,2,"0xFF00FF00")
 		compass(6,253,99,2,"0xFF00FF00")
-		compass_check = 0
+		compass_check("=",0)
 		dialog "[Noi]"
 		dialog "Alright..."
 		dialog "I've removed all the"
