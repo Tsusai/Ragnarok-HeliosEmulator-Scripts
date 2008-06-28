@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 57-
+[2008/6/28] Spre - Fixed guides using aeomins fix.
+-
+
 -Rev 56-
 [2008/6/28] Spre - Committ the Juice_Maker quest
 -

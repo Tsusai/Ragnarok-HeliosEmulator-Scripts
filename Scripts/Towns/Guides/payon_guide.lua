@@ -22,6 +22,8 @@
 
 npc("payon","Guide",SPRITE_4_M_PAY_SOLDIER,162,67,4,0,0,"payon_Guide_16267")
 function payon_Guide_16267()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("pay_soldier.bmp",2)
 	dialog "[Payon Guide]"
 	dialog "Welcome to the"
@@ -46,14 +48,14 @@ function payon_Guide_16267()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					local compass_check = 1
+					compass_check = 1
 				elseif mresultb == 2 then
-					local compass_check = 2
+					 2
 				end
 			end
 			while(1) do
 				if wait_button_chk == 0 then
-					wait_button_chk("=",1)
+					wait_button_chk = 1
 				else
 					wait()
 				end
@@ -175,7 +177,7 @@ function payon_Guide_16267()
 			compass(8,237,41,2,"0xFF0000FF")
 			compass(9,46,345,2,"0xFF00FF00")
 			compass(10,175,220,2,"0xFFFF0000")
-			compass_check("=",0)
+			compass_check = 0
 		elseif mresulta == 3 then
 			dialog "[Payon Guide]"
 			dialog "Advances in sorcery and"
@@ -233,14 +235,14 @@ function pay_arche_Guide_8530()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					local compass_check = 1
+					compass_check = 1
 				elseif mresultb == 2 then
-					local compass_check = 2
+					 2
 				end
 			end
 			while(1) do
 				if wait_button_chk == 0 then
-					wait_button_chk("=",1)
+					wait_button_chk = 1
 				else
 					wait()
 				end
@@ -290,7 +292,7 @@ function pay_arche_Guide_8530()
 			compass(0,237,41,2,"0xFF00FF00")
 			compass(1,237,41,2,"0xFF0000FF")
 			compass(2,46,345,2,"0xFF00FF00")
-			compass_check("=",0)
+			compass_check = 0
 		elseif mresulta == 3 then
 			dialog "[Payon Guide]"
 			dialog "Advances in sorcery and"
