@@ -22,6 +22,8 @@
 
 npc("amatsu","Amatsu Guide",SPRITE_4_F_JPN,207,89,3,0,0,"amatsu_Amatsu_Guide_20789")
 function amatsu_Amatsu_Guide_20789()
+	local compass_check = 0
+	local wait_button_chk = 0
 	dialog "[Amachang]"
 	dialog "Welcome to Amatsu,"
 	dialog "the town of kind towners"

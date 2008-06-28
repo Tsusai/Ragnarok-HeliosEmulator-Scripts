@@ -22,6 +22,8 @@
 
 npc("veins","Veins Guide",SPRITE_4_M_RASWORD,210,345,5,0,0,"veins_Veins_Guide_210345")
 function veins_Veins_Guide_210345()
+	local compass_check = 0
+	local wait_button_chk = 0
 	dialog "[Veins Guide]"
 	dialog "Thank you for comming through the harsh sandstorms."
 	dialog "Welcome to Veins, the Canyon Village."
@@ -44,14 +46,14 @@ function veins_Veins_Guide_210345()
 				wait()
 				local mresultb = menu("Yes","No")
 					if mresultb == 1 then
-						local compass_check = 1
+						compass_check = 1
 					elseif mresultb == 2 then
 						local compass_check = 2
 				end
 			end
 			while(1) do
 			if wait_button_chk == 0 then
-				wait_button_chk("=",1)
+				wait_button_chk = 1
 			else
 				wait()
 			end
@@ -139,7 +141,7 @@ function veins_Veins_Guide_210345()
 			compass(6,272,292,2,"0xFF00FF00")
 			compass(7,140,227,2,"0xFF00FF00")
 			compass(8,149,184,2,"0xFF00FF00")
-			compass_check("=",0)
+			compass_check = 0
 			dialog "[Veins Guide]"
 			dialog "Okay, they are gone now. If you have more locations to ask, just let me know."
 		elseif mresulta == 3 then
@@ -181,14 +183,14 @@ function veins_Veins_Guide_189101()
 				wait()
 				local mresultb = menu("Yes","No")
 					if mresultb == 1 then
-						local compass_check = 1
+						compass_check = 1
 					elseif mresultb == 2 then
 						local compass_check = 2
 				end
 			end
 			while(1) do
 			if wait_button_chk == 0 then
-				wait_button_chk("=",1)
+				wait_button_chk = 1
 			else
 				wait()
 			end
@@ -285,7 +287,7 @@ function veins_Veins_Guide_189101()
 			compass(6,272,292,2,"0xFF00FF00")
 			compass(7,140,227,2,"0xFF00FF00")
 			compass(8,149,184,2,"0xFF00FF00")
-			compass_check("=",0)
+			compass_check = 0
 			dialog "[Veins Guide]"
 			dialog "Okay, they are gone now. If you have more locations to ask, just let me know."
 		elseif mresulta == 3 then

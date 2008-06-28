@@ -22,6 +22,8 @@
 
 npc("lighthalzen","Guide",SPRITE_4_M_EIN_SOLDIER,207,310,5,0,0,"lighthalzen_Guide_207310")
 function lighthalzen_Guide_207310()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("ein_soldier.bmp",2)
 	dialog "[Lighthalzen Guide]"
 	dialog "Welcome to Lighthalzen,"
@@ -53,14 +55,14 @@ function lighthalzen_Guide_207310()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					local compass_check = 1
+					compass_check = 1
 				elseif mresultb == 2 then
 					local compass_check = 2
 				end
 			end
 			while(1) do
 				if wait_button_chk == 0 then
-					wait_button_chk("=",1)
+					wait_button_chk = 1
 				else
 					wait()
 				end
@@ -205,7 +207,7 @@ function lighthalzen_Guide_207310()
 			compass(9,93,110,2,"0xFF00FF00")
 			compass(10,196,46,2,"0xFF00FF00")
 			compass(11,199,163,2,"0xFF00FF00")
-			compass_check("=",0)
+			compass_check = 0
 		elseif mresulta == 3 then
 			dialog "[Lighthalzen Guide]"
 			dialog "Advances in sorcery and"
@@ -284,14 +286,14 @@ function lighthalzen_Guide_220311()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					local compass_check = 1
+					compass_check = 1
 				elseif mresultb == 2 then
 					local compass_check = 2
 				end
 			end
 			while(1) do
 				if wait_button_chk == 0 then
-					wait_button_chk("=",1)
+					wait_button_chk = 1
 				else
 					wait()
 				end
@@ -343,7 +345,7 @@ function lighthalzen_Guide_220311()
 			compass(2,324,301,2,"0xFF00FF00")
 			compass(3,365,300,2,"0xFF00FF00")
 			compass(4,340,240,2,"0xFF00FF00")
-			compass_check("=",0)
+			compass_check = 0
 		elseif mresulta == 3 then
 			dialog "[Lighthalzen Guide]"
 			dialog "Advances in sorcery and"
@@ -422,14 +424,14 @@ function lighthalzen_Guide_154100()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					local compass_check = 1
+					compass_check = 1
 				elseif mresultb == 2 then
 					local compass_check = 2
 				end
 			end
 			while(1) do
 				if wait_button_chk == 0 then
-					wait_button_chk("=",1)
+					wait_button_chk = 1
 				else
 					wait()
 				end
@@ -574,7 +576,7 @@ function lighthalzen_Guide_154100()
 			compass(9,93,110,2,"0xFF00FF00")
 			compass(10,196,46,2,"0xFF00FF00")
 			compass(11,199,163,2,"0xFF00FF00")
-			compass_check("=",0)
+			compass_check = 0
 		elseif mresulta == 3 then
 			dialog "[Lighthalzen Guide]"
 			dialog "Advances in sorcery and"
@@ -653,14 +655,14 @@ function lighthalzen_Guide_307224()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					local compass_check = 1
+					compass_check = 1
 				elseif mresultb == 2 then
 					local compass_check = 2
 				end
 			end
 			while(1) do
 				if wait_button_chk == 0 then
-					wait_button_chk("=",1)
+					wait_button_chk = 1
 				else
 					wait()
 				end
@@ -712,7 +714,7 @@ function lighthalzen_Guide_307224()
 			compass(2,324,301,2,"0xFF00FF00")
 			compass(3,365,300,2,"0xFF00FF00")
 			compass(4,340,240,2,"0xFF00FF00")
-			compass_check("=",0)
+			compass_check = 0
 		elseif mresulta == 3 then
 			dialog "[Lighthalzen Guide]"
 			dialog "Advances in sorcery and"
