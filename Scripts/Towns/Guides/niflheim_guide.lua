@@ -135,7 +135,7 @@ function niflheim_Roaming_Man_107156()
 		compass(3,217,196,2,"0xFF00FF00")
 		compass(4,216,171,2,"0xFF00FF00")
 		compass(5,189,207,2,"0xFF00FF00")
-		compass_check("=",0)
+		compass_check = 0
 		dialog "[Ricael]"
 		dialog "I removed the location marks from"
 		dialog "your mini-map. Go ahead and ask"
