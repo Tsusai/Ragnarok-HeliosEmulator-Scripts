@@ -15,6 +15,12 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 50-
+[2008/6/28] Spre - I still have access. I DELETED EVERYTHING!  .. ok joke :P
+[2008/6/28] Spre - Decided to Commit some things I never did. Commited Events/Breeder.lua Still needs some functions.
+[2008/6/28] Spre - Also Commited the Einbroch town scripts, they all have minr issues so they aren't loading in the main file yet.
+-
+
 -Rev 49-
 [2008/3/18] Spre - Added CashItem scripts from Yaros 11.1? Note Helios doesn't have their functions yet.
 -

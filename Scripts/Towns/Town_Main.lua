@@ -37,6 +37,8 @@ require("Scripts/Towns/Yuno/fly_ship")
 require("Scripts/Towns/Yuno/yuno_museum")
 require("Scripts/Towns/Yuno/yuno_ryusei")
 require("Scripts/Towns/Juperos/jupe_global")
+--require("Scripts/Towns/Einbroch/ein_tre")
+--require("Scripts/Towns/Einbroch/ein_mon")
 
 
 --
