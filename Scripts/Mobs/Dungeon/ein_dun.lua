@@ -18,3 +18,24 @@
 --|    No Mob functions, this is just here for me   |--
 --|     when we get them                            |--
 --\_________________________________________________/--
+
+--ein_dun01
+putmob("ein_dun01",0,0,0,0,70,"PITMAN",0,0,0)
+putmob("ein_dun01",0,0,0,0,30,"NOXIOUS",300000,0,0)
+putmob("ein_dun01",0,0,0,0,30,"PORCELLIO",0,0,0)
+putmob("ein_dun01",0,0,0,0,10,"VENOMOUS",300000,0,0)
+putmob("ein_dun01",0,0,0,0,5,"WASTE_STOVE",1800000,600000,0)
+putmob("ein_dun01",0,0,0,0,1,"UNGOLIANT",3600000,3000000,0)
+
+--ein_dun02
+putmob("ein_dun02",0,0,0,0,10,"OBSIDIAN",0,0,0)
+putmob("ein_dun02",0,0,0,0,15,"MINERAL",0,0,0)
+putmob("ein_dun02",75,151,60,133,30,"OBSIDIAN",300000,0,0)
+putmob("ein_dun02",230,155,63,140,35,"MINERAL",300000,0,0)
+putmob("ein_dun02",0,0,0,0,10,"TEDDY_BEAR",0,0,0)
+putmob("ein_dun02",155,230,140,55,20,"TEDDY_BEAR",480000,0,0)
+putmob("ein_dun02",0,0,0,0,10,"WASTE_STOVE",0,0,0)
+putmob("ein_dun02",154,80,134,55,20,"WASTE_STOVE",480000,0,0)
+--putmob "ein_dun02" 0 0 0 0 10 NOXIOUS 0 0 0
+--putmob "ein_dun02" 154 80 134 55 20 NOXIOUS 480000 0 0
+putboss("ein_dun02",0,0,0,0,1,"RSX_0806",7500000,7200000,0)

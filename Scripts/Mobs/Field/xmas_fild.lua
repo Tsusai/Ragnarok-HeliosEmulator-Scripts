@@ -18,3 +18,10 @@
 --|    No Mob functions, this is just here for me   |--
 --|     when we get them                            |--
 --\_________________________________________________/--
+
+-- Lutie Field
+putmob("xmas_fild01",0,0,0,0,35,"MARIN",0,0,0)
+--putmob "xmas_fild01" 0 0 0 0 5 PORING_ 0 0 0
+putmob("xmas_fild01",0,0,0,0,20,"SASQUATCH",0,0,0)
+putboss("xmas_fild01",0,0,0,0,1,"GARM",7200000,3600000,1)
+putmob("xmas_fild01",0,0,0,0,1,"GARM_BABY",1800000,0,0)

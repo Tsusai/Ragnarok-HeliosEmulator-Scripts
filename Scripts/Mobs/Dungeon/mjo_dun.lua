@@ -18,3 +18,22 @@
 --|    No Mob functions, this is just here for me   |--
 --|     when we get them                            |--
 --\_________________________________________________/--
+
+-- mjo_dun01
+putmob("mjo_dun01",0,0,0,0,30,"FARMILIAR",0,0,0)
+putmob("mjo_dun01",0,0,0,0,60,"TAROU",0,0,0)
+putmob("mjo_dun01",0,0,0,0,20,"MARTIN",0,0,0)
+
+-- mjo_dun02
+putmob("mjo_dun02",0,0,0,0,60,"MARTIN",0,0,0)
+putmob("mjo_dun02",0,0,0,0,20,"DRAINLIAR",0,0,0)
+putmob("mjo_dun02",0,0,0,0,20,"SKEL_WORKER",0,0,0)
+putmob("mjo_dun02",0,0,0,0,35,"GIEARTH",30000,10000,0)
+
+-- mjo_dun03
+putmob("mjo_dun03",0,0,0,0,5,"MARTIN",0,0,0)
+putmob("mjo_dun03",0,0,0,0,70,"SKEL_WORKER",0,0,0)
+putmob("mjo_dun03",0,0,0,0,5,"GIEARTH",0,0,0)
+putmob("mjo_dun03",0,0,0,0,35,"MYST",0,0,0)
+putmob("mjo_dun03",0,0,0,0,2,"CRAMP",300000,150000,0)
+putmob("mjo_dun03",0,0,0,0,1,"CRAMP",50000,25000,0)

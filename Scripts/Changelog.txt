@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 52-
+[2008/6/28] Spre - Added all the mobs I did, Fields and dungeons, Helios doesn't have th eputmob function yet, but they shouldn't error when it does.
+-
+
 -Rev 51-
 [2008/6/28] Spre - Decided to add all the events I had finished. All Load, and pass syntax Checks Using Aeomins Syntac program.
 [2008/6/28] Spre - Also Committed all of the traders I did, Please note, Helios doesn;t fully support them.
