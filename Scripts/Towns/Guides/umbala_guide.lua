@@ -131,7 +131,7 @@ function umbala_Adventurer_12894()
 		compass(4,126,154,2,"0xFF00FF00")
 		compass(5,136,127,2,"0xFF00FF00")
 		compass(6,139,198,2,"0xFF00FF00")
-		compass_check = 0
+		compass_check("=",0)
 		dialog "[Adventurer]"
 		dialog "I removed all the marks from your"
 		dialog "mini map. Feel free to ask me"

@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 58-
+[2008/6/28] Spre - Reverted Rev57 - Something fucked the files.
+-
+
 -Rev 57-
 [2008/6/28] Spre - Fixed guides using aeomins fix.
 -

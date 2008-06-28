@@ -20,10 +20,8 @@
 --|                                                 |--
 --\_________________________________________________/--
 
-npc("alberta","Guide",SPRITE_8W_SOLDIER,23,238,4,0,0,"alberta_Guide_23238")
+npc("alberta","Guide",spr_8W_SOLDIER,23,238,4,0,0,"alberta_Guide_23238")
 function alberta_Guide_23238()
-	local compass_check = 0
-	local wait_button_chk = 0
 	showimage("prt_soldier.bmp",2)
 	dialog "[Alberta Guide]"
 	dialog "Welcome to Alberta,"
@@ -48,9 +46,9 @@ function alberta_Guide_23238()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					compass_check = 1
+					local compass_check = 1
 				elseif mresultb == 2 then
-					 2
+					local compass_check = 2
 				end
 			end
 			while(1) do
@@ -130,7 +128,7 @@ function alberta_Guide_23238()
 			compass(4,46,345,2,"0xFF00FF00")
 			compass(5,175,220,2,"0xFFFF0000")
 			compass(6,175,220,2,"0xFFFF0000")
-			compass_check = 0
+			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Alberta Guide]"
 			dialog "Advances in sorcery and"
@@ -167,7 +165,7 @@ function alberta_Guide_23238()
 	showimage("prt_soldier.bmp",255)
 end
 
-npc("alberta","Guide",SPRITE_8W_SOLDIER,120,60,3,0,0,"alberta_Guide_12060")
+npc("alberta","Guide",spr_8W_SOLDIER,120,60,3,0,0,"alberta_Guide_12060")
 function alberta_Guide_12060()
 	showimage("prt_soldier.bmp",2)
 	dialog "[Alberta Guide]"
@@ -193,9 +191,9 @@ function alberta_Guide_12060()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					compass_check = 1
+					local compass_check = 1
 				elseif mresultb == 2 then
-					 2
+					local compass_check = 2
 				end
 			end
 			while(1) do
@@ -275,7 +273,7 @@ function alberta_Guide_12060()
 			compass(4,46,345,2,"0xFF00FF00")
 			compass(5,175,220,2,"0xFFFF0000")
 			compass(6,175,220,2,"0xFFFF0000")
-			compass_check = 0
+			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Alberta Guide]"
 			dialog "Advances in sorcery and"

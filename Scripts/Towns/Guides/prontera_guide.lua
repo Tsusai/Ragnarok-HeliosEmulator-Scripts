@@ -22,8 +22,6 @@
 
 npc("prontera","Guide",SPRITE_8W_SOLDIER,154,187,4,0,0,"prontera_Guide_154187")
 function prontera_Guide_154187()
-	local compass_check = 0
-	local wait_button_chk = 0
 	showimage("prt_soldier.bmp",2)
 	dialog "[Prontera Guide]"
 	dialog "Welcome to Prontera,"
@@ -46,9 +44,9 @@ function prontera_Guide_154187()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					compass_check = 1
+					local compass_check = 1
 				elseif mresultb == 2 then
-					 2
+					local compass_check = 2
 				end
 			end
 			while(1) do
@@ -217,7 +215,7 @@ function prontera_Guide_154187()
 			compass(15,133,183,2,"0xFF00FF00")
 			compass(16,156,360,2,"0xFF00FF00")
 			compass(17,75,91,2,"0xFF00FF00")
-			compass_check = 0
+			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Prontera Guide]"
 			dialog "Advances in sorcery and"
@@ -278,9 +276,9 @@ function prontera_East_GateGuide_282208()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					compass_check = 1
+					local compass_check = 1
 				elseif mresultb == 2 then
-					 2
+					local compass_check = 2
 				end
 			end
 			while(1) do
@@ -449,7 +447,7 @@ function prontera_East_GateGuide_282208()
 			compass(15,133,183,2,"0xFF00FF00")
 			compass(16,156,360,2,"0xFF00FF00")
 			compass(17,75,91,2,"0xFF00FF00")
-			compass_check = 0
+			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Prontera Guide]"
 			dialog "Advances in sorcery and"
@@ -510,9 +508,9 @@ function prontera_West_GateGuide_29200()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					compass_check = 1
+					local compass_check = 1
 				elseif mresultb == 2 then
-					 2
+					local compass_check = 2
 				end
 			end
 			while(1) do
@@ -681,7 +679,7 @@ function prontera_West_GateGuide_29200()
 			compass(15,133,183,2,"0xFF00FF00")
 			compass(16,156,360,2,"0xFF00FF00")
 			compass(17,75,91,2,"0xFF00FF00")
-			compass_check = 0
+			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Prontera Guide]"
 			dialog "Advances in sorcery and"
@@ -742,9 +740,9 @@ function prontera_South_GateGuide_16029()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					compass_check = 1
+					local compass_check = 1
 				elseif mresultb == 2 then
-					 2
+					local compass_check = 2
 				end
 			end
 			while(1) do
@@ -913,7 +911,7 @@ function prontera_South_GateGuide_16029()
 			compass(15,133,183,2,"0xFF00FF00")
 			compass(16,156,360,2,"0xFF00FF00")
 			compass(17,75,91,2,"0xFF00FF00")
-			compass_check = 0
+			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Prontera Guide]"
 			dialog "Advances in sorcery and"
@@ -974,9 +972,9 @@ function prontera_North_GateGuide_151330()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					compass_check = 1
+					local compass_check = 1
 				elseif mresultb == 2 then
-					 2
+					local compass_check = 2
 				end
 			end
 			while(1) do
@@ -1145,7 +1143,7 @@ function prontera_North_GateGuide_151330()
 			compass(15,133,183,2,"0xFF00FF00")
 			compass(16,156,360,2,"0xFF00FF00")
 			compass(17,75,91,2,"0xFF00FF00")
-			compass_check = 0
+			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Prontera Guide]"
 			dialog "Advances in sorcery and"

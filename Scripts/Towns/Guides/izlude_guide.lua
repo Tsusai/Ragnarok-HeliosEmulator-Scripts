@@ -22,8 +22,6 @@
 
 npc("izlude","Guide",SPRITE_8W_SOLDIER,121,87,6,0,0,"izlude_Guide_12187")
 function izlude_Guide_12187()
-	local compass_check = 0
-	local wait_button_chk = 0
 	showimage("prt_soldier.bmp",2)
 	dialog "[Izlude Guide]"
 	dialog "Welcome to Izlude,"
@@ -47,9 +45,9 @@ function izlude_Guide_12187()
 				wait()
 				local mresultb = menu("Yes","No")
 				if mresultb == 1 then
-					compass_check = 1
+					local compass_check = 1
 				elseif mresultb == 2 then
-					 2
+					local compass_check = 2
 				end
 			end
 			while(1) do
@@ -136,7 +134,7 @@ function izlude_Guide_12187()
 			compass(3,175,220,2,"0xFFFF0000")
 			compass(4,134,221,2,"0xFFFF0000")
 			compass(5,204,214,2,"0xFFFF0000")
-			compass_check = 0
+			compass_check("=",0)
 		elseif mresulta == 3 then
 			dialog "[Izlude Guide]"
 			dialog "Advances in sorcery and"

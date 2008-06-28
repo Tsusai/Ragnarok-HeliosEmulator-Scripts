@@ -22,8 +22,6 @@
 
 npc("louyang","Soldier#BA",SPRITE_4_M_CHNSOLDIER,213,213,3,0,0,"louyang_SoldierBA_213213")
 function louyang_SoldierBA_213213()
-	local compass_check = 0
-	local wait_button_chk = 0
 	dialog "[Soldier]"
 	dialog "Welcome to Louyang,"
 	dialog "a city with a long"
@@ -141,7 +139,7 @@ function louyang_SoldierBA_213213()
 		compass(5,145,174,2,"0xFF00FF00")
 		compass(6,135,98,2,"0xFF00FF00")
 		compass(7,280,167,2,"0xFF00FF00")
-		compass_check = 0
+		compass_check("=",0)
 		dialog "[Soldier]"
 		dialog "There, I've erased all the marks on your mini-map. Feel free to ask me about building locations whenever you need to."
 		close()
@@ -274,7 +272,7 @@ function louyang_SoldierBB_160175()
 		compass(5,145,174,2,"0xFF00FF00")
 		compass(6,135,98,2,"0xFF00FF00")
 		compass(7,280,167,2,"0xFF00FF00")
-		compass_check = 0
+		compass_check("=",0)
 		dialog "[Soldier]"
 		dialog "There, I've erased all the marks on your mini-map. Feel free to ask me about building locations whenever you need to."
 		close()
@@ -401,7 +399,7 @@ function louyang_Representative_224104()
 		compass(5,145,174,2,"0xFF00FF00")
 		compass(6,135,98,2,"0xFF00FF00")
 		compass(7,280,167,2,"0xFF00FF00")
-		compass_check = 0
+		compass_check("=",0)
 		dialog "[Representative]"
 		dialog "Done! All the marks on your mini-map are erased. Feel free to ask me about building locations whenever you need to."
 		close()

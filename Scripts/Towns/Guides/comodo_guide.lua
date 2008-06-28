@@ -22,8 +22,6 @@
 
 npc("comodo","Comodo Guide",SPRITE_8_F_GIRL,322,178,4,0,0,"comodo_Comodo_Guide_322178")
 function comodo_Comodo_Guide_322178()
-	local compass_check = 0
-	local wait_button_chk = 0
 	dialog "[Native Kokomo]"
 	dialog "Welcome to Comodo, the"
 	dialog "city of dreams and fantasy,"
