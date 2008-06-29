@@ -35,7 +35,6 @@ function izlude_Guide_12187()
 		wait()
 		local mresulta = menu("City Guide","Remove Marks from Mini-Map","Notice.","Cancel")
 		if mresulta == 1 then
-			local compass_check
 			dialog "[Izlude Guide]"
 			dialog "Please select"
 			dialog "a location from"
@@ -49,7 +48,7 @@ function izlude_Guide_12187()
 				if mresultb == 1 then
 					compass_check = 1
 				elseif mresultb == 2 then
-					local compass_check = 2
+					compass_check = 2
 				end
 			end
 			while(1) do

@@ -43,7 +43,6 @@ function niflheim_Roaming_Man_107156()
 	wait()
 	local mresulta = menu("Ask building locations.","Remove marks on the mini-map.","Cancel.")
 	if mresulta == 1 then
-		local compass_check
 		dialog "[Ricael]"
 		dialog "So, um, which place do you want to know about?"
 		wait()

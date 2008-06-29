@@ -36,8 +36,6 @@ function lighthalzen_Guide_207310()
 		wait()
 		local mresulta = menu("City Guide","Remove Marks from Mini-Map","Notice.","Cancel")
 		if mresulta == 1 then
-			local compass_check
-			local wait_button_chk
 			dialog "[Lighthalzen Guide]"
 			dialog "Please be aware that I'm"
 			dialog "in charge of providing info"
@@ -57,7 +55,7 @@ function lighthalzen_Guide_207310()
 				if mresultb == 1 then
 					compass_check = 1
 				elseif mresultb == 2 then
-					local compass_check = 2
+					compass_check = 2
 				end
 			end
 			while(1) do
@@ -288,7 +286,7 @@ function lighthalzen_Guide_220311()
 				if mresultb == 1 then
 					compass_check = 1
 				elseif mresultb == 2 then
-					local compass_check = 2
+					compass_check = 2
 				end
 			end
 			while(1) do
@@ -426,7 +424,7 @@ function lighthalzen_Guide_154100()
 				if mresultb == 1 then
 					compass_check = 1
 				elseif mresultb == 2 then
-					local compass_check = 2
+					compass_check = 2
 				end
 			end
 			while(1) do
@@ -657,7 +655,7 @@ function lighthalzen_Guide_307224()
 				if mresultb == 1 then
 					compass_check = 1
 				elseif mresultb == 2 then
-					local compass_check = 2
+					compass_check = 2
 				end
 			end
 			while(1) do

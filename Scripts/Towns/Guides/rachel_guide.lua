@@ -35,8 +35,6 @@ function rachel_Rachel_Guide_138146()
 		wait()
 		local mresulta = menu("Village Guide","Remove Marks from Mini-Map","Notice","Cancel")
 		if mresulta == 1 then
-			local compass_check
-			local wait_button_chk
 			dialog "[Rachel Guide]"
 			dialog "I can tell you any building location as long as it is in Rachel."
 			dialog "So where do you want to go?"
@@ -49,7 +47,7 @@ function rachel_Rachel_Guide_138146()
 				if mresultb == 1 then
 					compass_check = 1
 				elseif mresultb == 2 then
-					local compass_check = 2
+					compass_check = 2
 				end
 			end
 			while(1) do
