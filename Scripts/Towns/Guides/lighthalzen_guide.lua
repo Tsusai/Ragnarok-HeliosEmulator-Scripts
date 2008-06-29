@@ -253,6 +253,8 @@ end
 
 npc("lighthalzen","Guide",SPRITE_4_M_EIN_SOLDIER,220,311,3,0,0,"lighthalzen_Guide_220311")
 function lighthalzen_Guide_220311()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("ein_soldier.bmp",2)
 	dialog "[Lighthalzen Guide]"
 	dialog "Welcome to Lighthalzen,"
@@ -265,8 +267,6 @@ function lighthalzen_Guide_220311()
 		wait()
 		local mresulta = menu("City Guide","Remove Marks from Mini-Map","Notice.","Cancel")
 		if mresulta == 1 then
-			local compass_check
-			local wait_button_chk
 			dialog "[Lighthalzen Guide]"
 			dialog "Please be aware that I'm"
 			dialog "in charge of providing info"
@@ -391,6 +391,8 @@ end
 
 npc("lighthalzen","Guide",SPRITE_4_M_EIN_SOLDIER,154,100,5,0,0,"lighthalzen_Guide_154100")
 function lighthalzen_Guide_154100()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("ein_soldier.bmp",2)
 	dialog "[Lighthalzen Guide]"
 	dialog "Welcome to Lighthalzen,"
@@ -403,8 +405,6 @@ function lighthalzen_Guide_154100()
 		wait()
 		local mresulta = menu("City Guide","Remove Marks from Mini-Map","Notice.","Cancel")
 		if mresulta == 1 then
-			local compass_check
-			local wait_button_chk
 			dialog "[Lighthalzen Guide]"
 			dialog "Please be aware that I'm"
 			dialog "in charge of providing info"
@@ -622,6 +622,8 @@ end
 
 npc("lighthalzen","Guide",SPRITE_4_M_EIN_SOLDIER,307,224,3,0,0,"lighthalzen_Guide_307224")
 function lighthalzen_Guide_307224()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("ein_soldier.bmp",2)
 	dialog "[Lighthalzen Guide]"
 	dialog "Welcome to Lighthalzen,"
@@ -634,8 +636,6 @@ function lighthalzen_Guide_307224()
 		wait()
 		local mresulta = menu("City Guide","Remove Marks from Mini-Map","Notice.","Cancel")
 		if mresulta == 1 then
-			local compass_check
-			local wait_button_chk
 			dialog "[Lighthalzen Guide]"
 			dialog "Please be aware that I'm"
 			dialog "in charge of providing info"

@@ -213,6 +213,8 @@ end
 
 npc("pay_arche","Guide",SPRITE_4_M_PAY_SOLDIER,85,30,2,0,0,"pay_arche_Guide_8530")
 function pay_arche_Guide_8530()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("pay_soldier.bmp",2)
 	dialog "[Payon Guide]"
 	dialog "Welcome to the"
@@ -224,8 +226,6 @@ function pay_arche_Guide_8530()
 		wait()
 		local mresulta = menu("City Guide","Remove Marks from Mini-Map","Notice","Cancel")
 		if mresulta == 1 then
-			local compass_check
-			local wait_button_chk
 			dialog "[Payon Guide]"
 			dialog "Please, select a menu."
 			if compass_check == 0 then

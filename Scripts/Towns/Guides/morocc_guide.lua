@@ -178,6 +178,8 @@ end
 
 npc("morocc","Guide",SPRITE_4_M_MOC_SOLDIER,54,97,0,0,0,"morocc_Guide_5497")
 function morocc_Guide_5497()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("moc_soldier.bmp",2)
 	dialog "[Morroc Guide]"
 	dialog "Welcome to Morroc,"
@@ -190,7 +192,6 @@ function morocc_Guide_5497()
 		wait()
 		local mresulta = menu("City Guide","Remove Marks from Mini-Map","Notice","Cancel")
 		if mresulta == 1 then
-			local compass_check
 			dialog "[Morroc Guide]"
 			dialog "Please select"
 			dialog "a location from"

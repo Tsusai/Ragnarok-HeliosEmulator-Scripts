@@ -121,6 +121,8 @@ end
 
 npc("comodo","Comodo Guide",SPRITE_8_F_GIRL,176,350,4,0,0,"comodo_Comodo_Guide_176350")
 function comodo_Comodo_Guide_176350()
+	local compass_check = 0
+	local wait_button_chk = 0
 	dialog "[Native Nutcoco]"
 	dialog "Welcome to Comodo, the"
 	dialog "city of dreams and fantasy,"
@@ -218,6 +220,8 @@ end
 
 npc("comodo","Comodo Guide",SPRITE_8_F_GIRL,37,219,4,0,0,"comodo_Comodo_Guide_37219")
 function comodo_Comodo_Guide_37219()
+	local compass_check = 0
+	local wait_button_chk = 0
 	dialog "[Native Papaya]"
 	dialog "Welcome to Comodo, the"
 	dialog "city of dreams and fantasy,"

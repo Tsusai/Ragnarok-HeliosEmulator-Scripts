@@ -39,7 +39,6 @@ function umbala_Adventurer_12894()
 	wait()
 	local mresulta = menu("Locations of buildings.","Remove marks on the mini map.","Quit.")
 	if mresulta == 1 then
-		local compass_check
 		dialog "[Adventurer]"
 		dialog "So, which one do you want to check?"
 		wait()

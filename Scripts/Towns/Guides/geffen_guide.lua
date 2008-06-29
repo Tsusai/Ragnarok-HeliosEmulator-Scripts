@@ -186,6 +186,8 @@ end
 
 npc("geffen","Guide",SPRITE_4_M_GEF_SOLDIER,118,62,0,0,0,"geffen_Guide_11862")
 function geffen_Guide_11862()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("gef_soldier.bmp",2)
 	dialog "[Geffen Guide]"
 	dialog "Welcome to Geffen,"
@@ -197,7 +199,6 @@ function geffen_Guide_11862()
 		wait()
 		local mresulta = menu("City Guide","Remove Marks from Mini-Map","Notice.","Cancel")
 		if mresulta == 1 then
-			local compass_check
 			dialog "[Geffen Guide]"
 			dialog "Please select"
 			dialog "a location from"

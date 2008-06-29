@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 61-
+[2008/6/28] Spre - If it doesnt go right this time, Imma kill a midget - Fixed guides
+-
+
 -Rev 60-
 [2008/6/28] Spre - More Guide Fixes, I missed some values.
 -

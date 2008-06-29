@@ -156,6 +156,8 @@ end
 
 npc("louyang","Soldier#BB",SPRITE_4_M_CHNSOLDIER,160,175,3,0,0,"louyang_SoldierBB_160175")
 function louyang_SoldierBB_160175()
+	local compass_check = 0
+	local wait_button_chk = 0
 	dialog "[Soldier]"
 	dialog "Welcome to Louyang,"
 	dialog "a city with a long"
@@ -177,7 +179,6 @@ function louyang_SoldierBB_160175()
 	wait()
 	local mresulta = menu("Ask Building Locations.","Remove all marks from mini-map.","Cancel.")
 	if mresulta == 1 then
-		local compass_check
 		dialog "[Soldier]"
 		dialog "Where would you like to go?"
 		wait()
@@ -289,6 +290,8 @@ end
 
 npc("louyang","Representative",SPRITE_4_F_CHNWOMAN,224,104,3,0,0,"louyang_Representative_224104")
 function louyang_Representative_224104()
+	local compass_check = 0
+	local wait_button_chk = 0
 	dialog "[Representative]"
 	dialog "Welcome to Louyang,"
 	dialog "an ancient land with"
@@ -304,7 +307,6 @@ function louyang_Representative_224104()
 	wait()
 	local mresulta = menu("Ask Building Locations.","Remove all marks from mini-map.","Cancel.")
 	if mresulta == 1 then
-		local compass_check
 		dialog "[Representative]"
 		dialog "Where would you like to go?"
 		wait()

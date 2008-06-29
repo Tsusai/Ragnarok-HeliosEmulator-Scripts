@@ -79,6 +79,8 @@ end
 
 npc("amatsu","Guide Man",SPRITE_8_M_JPNSOLDIER,251,283,4,0,0,"amatsu_Guide_Man_251283")
 function amatsu_Guide_Man_251283()
+	local compass_check = 0
+	local wait_button_chk = 0
 	dialog "[Guide Man]"
 	dialog "Welcome, tourist from Rune-Midgard."
 	dialog "I'm the guide of"
