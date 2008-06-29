@@ -39,7 +39,6 @@ function ayothaya_Noi_203169()
 	wait()
 	local mresulta = menu("Building Locations.","Remove marks from mini-map.","Cancel.")
 	if mresulta == 1 then
-		local compass_check
 		dialog "[Noi]"
 		dialog "Where would"
 		dialog "you like to visit?"

@@ -232,6 +232,8 @@ end
 
 npc("einbroch","Guide",SPRITE_4_M_EIN_SOLDIER,155,43,4,0,0,"einbroch_Guide_15543")
 function einbroch_Guide_15543()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("ein_soldier.bmp",2)
 	dialog "[Einbroch Guide]"
 	dialog "Welcome"
@@ -243,8 +245,6 @@ function einbroch_Guide_15543()
 		wait()
 		local mresulta = menu("City Guide.","Remove Marks from Mini-Map.","Notice.","Cancel.")
 		if mresulta == 1 then
-			local compass_check
-			local wait_button_chk
 			dialog "[Einbroch Guide]"
 			dialog "Please select"
 			dialog "a location from"
@@ -441,6 +441,8 @@ end
 
 npc("einbroch","Guide",SPRITE_4_M_EIN_SOLDIER,162,317,4,0,0,"einbroch_Guide_162317")
 function einbroch_Guide_162317()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("ein_soldier.bmp",2)
 	dialog "[Einbroch Guide]"
 	dialog "Welcome"
@@ -452,8 +454,6 @@ function einbroch_Guide_162317()
 		wait()
 		local mresulta = menu("City Guide.","Remove Marks from Mini-Map.","Notice.","Cancel.")
 		if mresulta == 1 then
-			local compass_check
-			local wait_button_chk
 			dialog "[Einbroch Guide]"
 			dialog "Please select"
 			dialog "a location from"
@@ -650,6 +650,8 @@ end
 
 npc("einbech","Guide",SPRITE_4_M_EIN_SOLDIER,67,37,4,0,0,"einbech_Guide_6737")
 function einbech_Guide_6737()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("ein_soldier.bmp",2)
 	dialog "[Einbech Guide]"
 	dialog "Welcome to Einbech,"
@@ -661,8 +663,6 @@ function einbech_Guide_6737()
 		wait()
 		local mresulta = menu("City Guide.","Remove Marks from Mini-Map.","Notice.","Cancel.")
 		if mresulta == 1 then
-			local compass_check
-			local wait_button_chk
 			dialog "[Einbech Guide]"
 			dialog "Please select"
 			dialog "a location from"
@@ -808,6 +808,8 @@ end
 
 npc("einbech","Guide",SPRITE_4_M_EIN_SOLDIER,48,214,4,0,0,"einbech_Guide_48214")
 function einbech_Guide_48214()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("ein_soldier.bmp",2)
 	dialog "[Einbech Guide]"
 	dialog "Welcome to Einbech,"
@@ -819,8 +821,7 @@ function einbech_Guide_48214()
 		wait()
 		local mresulta = menu("City Guide.","Remove Marks from Mini-Map.","Notice.","Cancel.")
 		if mresulta == 1 then
-			local compass_check
-			local wait_button_chk
+
 			dialog "[Einbech Guide]"
 			dialog "Please select"
 			dialog "a location from"

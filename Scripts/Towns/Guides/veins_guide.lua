@@ -159,6 +159,8 @@ end
 
 npc("veins","Veins Guide",SPRITE_4_M_RASWORD,189,101,5,0,0,"veins_Veins_Guide_189101")
 function veins_Veins_Guide_189101()
+	local compass_check = 0
+	local wait_button_chk = 0
 	dialog "[Veins Guide]"
 	dialog "Thank you for comming through the harsh sandstorms."
 	dialog "Welcome to Veins, the Canyon Village."
@@ -169,8 +171,6 @@ function veins_Veins_Guide_189101()
 	wait()
 	local mresulta = menu("Village Guide","Remove Marks from Mini-Map","Notice","Cancel")
 		if mresulta == 1 then
-			local compass_check
-			local wait_button_chk
 			dialog "[Veins Guide]"
 			dialog "I can tell you any building location as long as it is in Veins."
 			dialog "So where do you want to go?"

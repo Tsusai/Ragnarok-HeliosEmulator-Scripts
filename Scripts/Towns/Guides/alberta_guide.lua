@@ -36,7 +36,6 @@ function alberta_Guide_23238()
 		wait()
 		local mresulta = menu("City Guide","Remove Marks from Mini-Map","Notice","Cancel")
 		if mresulta == 1 then
-			local compass_check
 			dialog "[Alberta Guide]"
 			dialog "Please select"
 			dialog "a location from"
@@ -169,6 +168,8 @@ end
 
 npc("alberta","Guide",SPRITE_8W_SOLDIER,120,60,3,0,0,"alberta_Guide_12060")
 function alberta_Guide_12060()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("prt_soldier.bmp",2)
 	dialog "[Alberta Guide]"
 	dialog "Welcome to Alberta,"
@@ -181,7 +182,6 @@ function alberta_Guide_12060()
 		wait()
 		local mresulta = menu("City Guide","Remove Marks from Mini-Map","Notice","Cancel")
 		if mresulta == 1 then
-			local compass_check
 			dialog "[Alberta Guide]"
 			dialog "Please select"
 			dialog "a location from"

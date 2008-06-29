@@ -34,7 +34,6 @@ function prontera_Guide_154187()
 		wait()
 		local mresulta = menu("City Guide.","Remove Marks from Mini-Map","Notice","Cancel")
 		if mresulta == 1 then
-			local compass_check
 			dialog "[Prontera Guide]"
 			dialog "Please select"
 			dialog "a location from"
@@ -256,6 +255,8 @@ end
 
 npc("prontera","East GateGuide",SPRITE_8W_SOLDIER,282,208,2,0,0,"prontera_East_GateGuide_282208")
 function prontera_East_GateGuide_282208()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("prt_soldier.bmp",2)
 	dialog "[Prontera Guide]"
 	dialog "Welcome to Prontera,"
@@ -266,7 +267,6 @@ function prontera_East_GateGuide_282208()
 		wait()
 		local mresulta = menu("City Guide.","Remove Marks from Mini-Map","Notice","Cancel")
 		if mresulta == 1 then
-			local compass_check
 			dialog "[Prontera Guide]"
 			dialog "Please select"
 			dialog "a location from"
@@ -488,6 +488,8 @@ end
 
 npc("prontera","West GateGuide",SPRITE_8W_SOLDIER,29,200,6,0,0,"prontera_West_GateGuide_29200")
 function prontera_West_GateGuide_29200()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("prt_soldier.bmp",2)
 	dialog "[Prontera Guide]"
 	dialog "Welcome to Prontera,"
@@ -498,7 +500,6 @@ function prontera_West_GateGuide_29200()
 		wait()
 		local mresulta = menu("City Guide.","Remove Marks from Mini-Map","Notice","Cancel")
 		if mresulta == 1 then
-			local compass_check
 			dialog "[Prontera Guide]"
 			dialog "Please select"
 			dialog "a location from"
@@ -720,6 +721,8 @@ end
 
 npc("prontera","South GateGuide",SPRITE_8W_SOLDIER,160,29,0,0,0,"prontera_South_GateGuide_16029")
 function prontera_South_GateGuide_16029()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("prt_soldier.bmp",2)
 	dialog "[Prontera Guide]"
 	dialog "Welcome to Prontera,"
@@ -730,7 +733,6 @@ function prontera_South_GateGuide_16029()
 		wait()
 		local mresulta = menu("City Guide.","Remove Marks from Mini-Map","Notice","Cancel")
 		if mresulta == 1 then
-			local compass_check
 			dialog "[Prontera Guide]"
 			dialog "Please select"
 			dialog "a location from"
@@ -952,6 +954,8 @@ end
 
 npc("prontera","North GateGuide",SPRITE_8W_SOLDIER,151,330,4,0,0,"prontera_North_GateGuide_151330")
 function prontera_North_GateGuide_151330()
+	local compass_check = 0
+	local wait_button_chk = 0
 	showimage("prt_soldier.bmp",2)
 	dialog "[Prontera Guide]"
 	dialog "Welcome to Prontera,"
@@ -962,7 +966,6 @@ function prontera_North_GateGuide_151330()
 		wait()
 		local mresulta = menu("City Guide.","Remove Marks from Mini-Map","Notice","Cancel")
 		if mresulta == 1 then
-			local compass_check
 			dialog "[Prontera Guide]"
 			dialog "Please select"
 			dialog "a location from"
