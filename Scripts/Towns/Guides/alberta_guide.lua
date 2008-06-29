@@ -50,7 +50,7 @@ function alberta_Guide_23238()
 				if mresultb == 1 then
 					compass_check = 1
 				elseif mresultb == 2 then
-					local compass_check = 2
+					compass_check = 2
 				end
 			end
 			while(1) do
@@ -195,7 +195,7 @@ function alberta_Guide_12060()
 				if mresultb == 1 then
 					compass_check = 1
 				elseif mresultb == 2 then
-					local compass_check = 2
+					compass_check = 2
 				end
 			end
 			while(1) do

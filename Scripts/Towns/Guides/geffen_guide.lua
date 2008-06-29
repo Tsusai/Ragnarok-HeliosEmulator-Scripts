@@ -35,7 +35,6 @@ function geffen_Guide_203116()
 		wait()
 		local mresulta = menu("City Guide","Remove Marks from Mini-Map","Notice.","Cancel")
 		if mresulta == 1 then
-			local compass_check
 			dialog "[Geffen Guide]"
 			dialog "Please select"
 			dialog "a location from"
@@ -48,7 +47,7 @@ function geffen_Guide_203116()
 				if mresultb == 1 then
 					compass_check = 1
 				elseif mresultb == 2 then
-					local compass_check = 2
+					compass_check = 2
 				end
 			end
 			while(1) do
@@ -211,7 +210,7 @@ function geffen_Guide_11862()
 				if mresultb == 1 then
 					compass_check = 1
 				elseif mresultb == 2 then
-					local compass_check = 2
+					compass_check = 2
 				end
 			end
 			while(1) do

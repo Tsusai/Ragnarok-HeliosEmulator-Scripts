@@ -45,7 +45,6 @@ function louyang_SoldierBA_213213()
 	wait()
 	local mresulta = menu("Ask Building Locations.","Remove all marks from mini-map.","Cancel.")
 	if mresulta == 1 then
-		local compass_check
 		dialog "[Soldier]"
 		dialog "Where would you like to go?"
 		wait()
