@@ -42,4 +42,7 @@
   
 --Trader Master List
   require("Scripts/Trader/Trader_Main")
+  
+--Jobs Master List
+  require("Scripts/Job/Job_Main")
    
