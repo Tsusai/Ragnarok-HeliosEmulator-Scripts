@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 64-
+[2008/09/28] Spre - Added Mage, Archer, Merchant job quests. Merchant requires an overhaul. Also skills are required.
+-
+
 -Rev 63-
 [2008/09/24] RaX - Added sample JobChange npc to new_1-1 with the rest of our test npcs.
 -
