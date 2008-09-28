@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 63-
+[2008/09/24] RaX - Added sample JobChange npc to new_1-1 with the rest of our test npcs.
+-
+
 -Rev 62-
 [2008/09/24] Spre - Added Acolyte Job quest, Loads Might still have unsupported functions.
 -
