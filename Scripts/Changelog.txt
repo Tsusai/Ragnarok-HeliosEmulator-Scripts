@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 65-
+[2008/09/28] Spre -  Yes I commited the Job_main without remving the  unfinished job quests.. my apologies
+-
+
 -Rev 64-
 [2008/09/28] Spre - Added Mage, Archer, Merchant job quests. Merchant requires an overhaul. Also skills are required.
 -
