@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 66-
+[2008/09/28] Spre -  LOL rax... Fixed JobChange sample it AND menu/vars both load and are in different areas!.
+-
+
 -Rev 65-
 [2008/09/28] Spre -  Yes I commited the Job_main without remving the  unfinished job quests.. my apologies
 -
