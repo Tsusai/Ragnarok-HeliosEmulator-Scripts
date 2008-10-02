@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 67-
+[2008/10/01] RaX - added sample script AddItem
+-
+
 -Rev 66-
 [2008/09/28] Spre -  LOL rax... Fixed JobChange sample it AND menu/vars both load and are in different areas!.
 -
