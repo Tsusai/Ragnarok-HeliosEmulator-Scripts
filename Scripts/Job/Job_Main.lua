@@ -9,9 +9,9 @@
 --|                                                 |--
 --|-------------------------------------------------|--
 --| 28/06/2008                                      |--
---|   -First Version for Helios  [Spre]				|--
---|	28/09/2008										|--
---|	  -Added all First Class Jobs					|--
+--|   -First Version for Helios  [Spre]             |--
+--| 28/09/2008                                      |--
+--|   -Added all First Class Jobs                   |--
 --|-------------------------------------------------|--
 --| Credits: Gravity                                |--
 --|          Yaros                                  |--
@@ -22,6 +22,7 @@
 --\_________________________________________________/--
 
 
+require("Scripts/Quests/Jobs/novice_1")
 require("Scripts/Job/1st/job_acolyte/npc")
 require("Scripts/Job/1st/job_archer/npc")
 require("Scripts/Job/1st/job_magician/npc")

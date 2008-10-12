@@ -20,11 +20,6 @@
 --\_________________________________________________/--
 
 --
---Job Quests
---
-require("Scripts/Quests/Jobs/novice_1")
-
---
 --Item Quests
 --
 
