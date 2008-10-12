@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 71-
+[2008/10/11] RabidCh - Forgot a require.
+-
+
 -Rev 70-
 [2008/10/11] RabidCh - Moved novice_1.lua.
 [2008/10/11] RabidCh - Uncommented some of the Novice Land scripts but most of them are still broken.
