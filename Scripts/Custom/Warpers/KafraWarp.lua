@@ -21,6 +21,7 @@ function Kafra_Warp()
 		dialog("We hope you enjoy your stay in " .. Done .. ".")
 		close()
 	end
+	close()
 end
 
 function Kafra_Warp_Towns()

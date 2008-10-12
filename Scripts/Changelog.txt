@@ -15,8 +15,15 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 70-
+[2008/10/11] RabidCh - Moved novice_1.lua.
+[2008/10/11] RabidCh - Uncommented some of the Novice Land scripts but most of them are still broken.
+[2008/10/11] RabidCh - Fixed one of the cancel instances on the custom warper.
+[2008/10/11] RabidCh - Fixed function names on the previous couple revision warps.
+-
+
 -Rev 69-
-[2008/10/11] LimitLine - Fixed X,Y radius of Namelesss Island and Abbey Dungeon warps.
+[2008/10/11] LimitLine - Fixed X,Y radius of Nameless Island and Abbey Dungeon warps.
 -
 
 -Rev 68-

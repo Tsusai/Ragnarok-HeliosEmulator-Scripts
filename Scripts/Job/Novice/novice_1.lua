@@ -60,7 +60,7 @@ function new_1_1_Guard_144107()
 	close()
 end
 
---npc("new_1-2","Receptionist",SPRITE_4_M_04,100,29,4,0,0,"new_1_2_Receptionist_10029")
+npc("new_1-2","Receptionist",SPRITE_4_M_04,100,29,4,0,0,"new_1_2_Receptionist_10029")
 function new_1_2_Receptionist_10029()
 	dialog "[Training Grounds Receptionist]"
 	dialog "Welcome!"
@@ -73,141 +73,138 @@ function new_1_2_Receptionist_10029()
 	dialog "please choose the"
 	dialog "^000099Training Grounds Introduction^000000"
 	dialog "menu for more information."
-	while(1) do
+	wait()
+	local mresult = menu("Apply for training.","Direct access to Ragnarok Online.","^0099FFTraining Grounds Introduction.^000000","I need a moment to think.")
+	if mresult == 1 then
+		dialog "[Training Grounds Receptionist]"
+		dialog "Thank you for applying for Novice"
+		dialog "training. For detailed information"
+		dialog "of each training course, please"
+		dialog "inquire the Guides for assistance."
 		wait()
-		local mresult = menu("Apply for training.","Direct access to Ragnarok Online.","^0099FFTraining Grounds Introduction.^000000","I need a moment to think.")
-		if mresult == 1 then
+		if getitem(nov_get_item01) == 0 then
+			setitem(nov_get_item01,1)
+			getgold(50)
 			dialog "[Training Grounds Receptionist]"
-			dialog "Thank you for applying for Novice"
-			dialog "training. For detailed information"
-			dialog "of each training course, please"
-			dialog "inquire the Guides for assistance."
+			dialog "To get you started, we will supply"
+			dialog "you with a provision of 50 Zeny."
+			dialog "When you have questions about the"
+			dialog "training course process, please"
+			dialog "feel free to ask any of the"
+			dialog "Tutors."
 			wait()
-			if getitem(nov_get_item01) == 0 then
-				setitem(nov_get_item01,1)
-				getgold(50)
-				dialog "[Training Grounds Receptionist]"
-				dialog "To get you started, we will supply"
-				dialog "you with a provision of 50 Zeny."
-				dialog "When you have questions about the"
-				dialog "training course process, please"
-				dialog "feel free to ask any of the"
-				dialog "Tutors."
-				wait()
-			end
-			dialog "[Training Grounds Receptionist]"
-			dialog "You will now be transferred"
-			dialog "to the Training Grounds."
-			moveto("new_1-2",100,70)
-			break
-		elseif mresult == 2 then
-			setitem(nov_3_merchant,0)
-			local village = math.random(1,6)
-			setitem(nov_1st_cos,0)
-			setitem(nov_2nd_cos,0)
-			setitem(nov_3_swordman,0)
-			setitem(nov_3_archer,0)
-			setitem(nov_3_thief,0)
-			setitem(nov_3_magician,0)
-			setitem(nov_3_acolyte,0)
-			setitem(nov_3_merchant,0)
-			dialog "[Training Grounds Receptionist]"
-			dialog "I understand."
-			dialog "Please do your "
-			dialog "best, and I wish you"
-			dialog "the best of luck!"
-			close()
-			setitem(nov_1st_cos,0)
-			setitem(nov_2nd_cos,0)
-			setitem(nov_3_swordman,0)
-			setitem(nov_3_archer,0)
-			setitem(nov_3_thief,0)
-			setitem(nov_3_magician,0)
-			setitem(nov_3_acolyte,0)
-			setitem(nov_3_merchant,0)
-			if village == 1 then
-				checkpoint("prontera",273,354)
-				moveto("prontera",273,354)
-			elseif village == 2 then
-				checkpoint("morocc",160,94)
-				moveto("morocc",160,94)
-			elseif village == 3 then
-				checkpoint("geffen",120,100)
-				moveto("geffen",120,100)
-			elseif village == 4 then
-				checkpoint("payon",70,100)
-				moveto("payon",70,100)
-			elseif village == 5 then
-				checkpoint("alberta",116,57)
-				moveto("alberta",116,57)
-			elseif village == 6 then
-				checkpoint("izlude",94,103)
-				moveto("izlude",94,103)
-			end
-			break
-		elseif mresult == 3 then
-			dialog "[Training Grounds Receptionist]"
-			dialog "This training grounds was"
-			dialog "established in order to provide"
-			dialog "useful information to new players"
-			dialog "of Ragnarok Online by the"
-			dialog "Rune-Midgarts Kingdom's Board of"
-			dialog "Education."
-			wait()
-			dialog "[Training Grounds Receptionist]"
-			dialog "The training course is organised"
-			dialog "into two parts: the Basic Knowledge"
-			dialog "classes, and Field Combat"
-			dialog "training."
-			wait()
-			dialog "[Training Grounds Receptionist]"
-			dialog "Through the first course, players"
-			dialog "will learn the necessary knowledge"
-			dialog "for a smoother gaming experience."
-			wait()
-			dialog "[Training Grounds Receptionist]"
-			dialog "In Field Combat Training,"
-			dialog "players will engage in actual"
-			dialog "battle with weak monsters so they"
-			dialog "can learn the basics of fighting."
-			wait()
-			dialog "[Training Grounds Receptionist]"
-			dialog "With this battle practice,"
-			dialog "players will be able to gain more"
-			dialog "experience before they enter the"
-			dialog "real world."
-			wait()
-			dialog "[Training Grounds Receptionist]"
-			dialog "At the end of the training, we will"
-			dialog "provide an introduction to the 1st"
-			dialog "Job Classes. This will help players"
-			dialog "decide which job class is best for"
-			dialog "them."
-			wait()
-			dialog "[Training Grounds Receptionist]"
-			dialog "If you wish to participate in the"
-			dialog "training grounds, please choose"
-			dialog "'^3355FFApply for training^000000' in the"
-			dialog "menu."
-			wait()
-			dialog "[Training Grounds Receptionist]"
-			dialog "Otherwise, if you want to skip the"
-			dialog "basic training and immediately"
-			dialog "enter the world of Ragnarok Online,"
-			dialog "please choose '^3355FFDirect access to^000000"
-			dialog "^3355FFRagnarok Online^000000.'"
-			wait()
-		elseif mresult == 4 then
-			dialog "[Training Grounds Receptionist]"
-			dialog "I understand."
-			dialog "Please, take your time."
-			close()
-			break
 		end
+		dialog "[Training Grounds Receptionist]"
+		dialog "You will now be transferred"
+		dialog "to the Training Grounds."
+		moveto("new_1-2",100,70)
+		break
+	elseif mresult == 2 then
+		setitem(nov_3_merchant,0)
+		local village = math.random(1,6)
+		setitem(nov_1st_cos,0)
+		setitem(nov_2nd_cos,0)
+		setitem(nov_3_swordman,0)
+		setitem(nov_3_archer,0)
+		setitem(nov_3_thief,0)
+		setitem(nov_3_magician,0)
+		setitem(nov_3_acolyte,0)
+		setitem(nov_3_merchant,0)
+		dialog "[Training Grounds Receptionist]"
+		dialog "I understand."
+		dialog "Please do your "
+		dialog "best, and I wish you"
+		dialog "the best of luck!"
+		close()
+		setitem(nov_1st_cos,0)
+		setitem(nov_2nd_cos,0)
+		setitem(nov_3_swordman,0)
+		setitem(nov_3_archer,0)
+		setitem(nov_3_thief,0)
+		setitem(nov_3_magician,0)
+		setitem(nov_3_acolyte,0)
+		setitem(nov_3_merchant,0)
+		if village == 1 then
+			checkpoint("prontera",273,354)
+			moveto("prontera",273,354)
+		elseif village == 2 then
+			checkpoint("morocc",160,94)
+			moveto("morocc",160,94)
+		elseif village == 3 then
+			checkpoint("geffen",120,100)
+			moveto("geffen",120,100)
+		elseif village == 4 then
+			checkpoint("payon",70,100)
+			moveto("payon",70,100)
+		elseif village == 5 then
+			checkpoint("alberta",116,57)
+			moveto("alberta",116,57)
+		elseif village == 6 then
+			checkpoint("izlude",94,103)
+			moveto("izlude",94,103)
+		end
+		break
+	elseif mresult == 3 then
+		dialog "[Training Grounds Receptionist]"
+		dialog "This training grounds was"
+		dialog "established in order to provide"
+		dialog "useful information to new players"
+		dialog "of Ragnarok Online by the"
+		dialog "Rune-Midgarts Kingdom's Board of"
+		dialog "Education."
+		wait()
+		dialog "[Training Grounds Receptionist]"
+		dialog "The training course is organised"
+		dialog "into two parts: the Basic Knowledge"
+		dialog "classes, and Field Combat"
+		dialog "training."
+		wait()
+		dialog "[Training Grounds Receptionist]"
+		dialog "Through the first course, players"
+		dialog "will learn the necessary knowledge"
+		dialog "for a smoother gaming experience."
+		wait()
+		dialog "[Training Grounds Receptionist]"
+		dialog "In Field Combat Training,"
+		dialog "players will engage in actual"
+		dialog "battle with weak monsters so they"
+		dialog "can learn the basics of fighting."
+		wait()
+		dialog "[Training Grounds Receptionist]"
+		dialog "With this battle practice,"
+		dialog "players will be able to gain more"
+		dialog "experience before they enter the"
+		dialog "real world."
+		wait()
+		dialog "[Training Grounds Receptionist]"
+		dialog "At the end of the training, we will"
+		dialog "provide an introduction to the 1st"
+		dialog "Job Classes. This will help players"
+		dialog "decide which job class is best for"
+		dialog "them."
+		wait()
+		dialog "[Training Grounds Receptionist]"
+		dialog "If you wish to participate in the"
+		dialog "training grounds, please choose"
+		dialog "'^3355FFApply for training^000000' in the"
+		dialog "menu."
+		wait()
+		dialog "[Training Grounds Receptionist]"
+		dialog "Otherwise, if you want to skip the"
+		dialog "basic training and immediately"
+		dialog "enter the world of Ragnarok Online,"
+		dialog "please choose '^3355FFDirect access to^000000"
+		dialog "^3355FFRagnarok Online^000000.'"
+	elseif mresult == 4 then
+		dialog "[Training Grounds Receptionist]"
+		dialog "I understand."
+		dialog "Please, take your time."
+		close()
+		break
 	end
 end
 
---npc("new_1-1","Shion",SPRITE_4_F_JOB_HUNTER,53,114,4,0,0,"new_1_1_Shion_53114")
+npc("new_1-1","Shion",SPRITE_4_F_JOB_HUNTER,53,114,4,0,0,"new_1_1_Shion_53114")
 function new_1_1_Shion_53114()
 	local name = PcName
 	if ((getvar(nov_get_item04) > 9) or (getvar(nov_get_item05) > 9)) then
@@ -420,7 +417,7 @@ function new_1_1_Shion_53114()
 	end
 end
 
---npc("new_1-2","Interface Tutor",SPRITE_4_M_CRU,99,105,3,0,0,"new_1_2_Interface_Tutor_99105")
+npc("new_1-2","Interface Tutor",SPRITE_4_M_CRU,99,105,3,0,0,"new_1_2_Interface_Tutor_99105")
 function new_1_2_Interface_Tutor_99105()
 	local name = PcName
 	if ((getvar(nov_get_item02) > 9) and (getvar(nov_get_item03) > 9) and (getvar(nov_get_item04) > 9)) then
@@ -1052,7 +1049,7 @@ function new_1_2_Interface_Tutor_99105()
 	end
 end
 
---npc("new_1-2","Skill Tutor",SPRITE_4_M_MONK,83,111,3,0,0,"new_1_2_Skill_Tutor_83111")
+npc("new_1-2","Skill Tutor",SPRITE_4_M_MONK,83,111,3,0,0,"new_1_2_Skill_Tutor_83111")
 function new_1_2_Skill_Tutor_83111()
 	local name = PcName
 	if ((getvar(nov_get_item02) > 9) and (getvar(nov_get_item03) > 9) and (getvar(nov_get_item04) > 9)) then
@@ -1629,7 +1626,7 @@ function new_1_2_Skill_Tutor_83111()
 	end
 end
 
---npc("new_1-2","Item Tutor",SPRITE_4_F_JOB_BLACKSMITH,115,111,3,0,0,"new_1_2_Item_Tutor_115111")
+npc("new_1-2","Item Tutor",SPRITE_4_F_JOB_BLACKSMITH,115,111,3,0,0,"new_1_2_Item_Tutor_115111")
 function new_1_2_Item_Tutor_115111()
 	local name = PcName
 	if ((getvar(nov_get_item02) > 9) and (getvar(nov_get_item03) > 9) and (getvar(nov_get_item04) > 9)) then
@@ -2476,7 +2473,7 @@ function new_1_2_Item_Tutor_115111()
 	end
 end
 
---npc("new_1-2","Kafra Employee",SPRITE_4_F_KAFRA1,118,108,3,0,0,"new_1_2_Kafra_Employee_118108")
+npc("new_1-2","Kafra Employee",SPRITE_4_F_KAFRA1,118,108,3,0,0,"new_1_2_Kafra_Employee_118108")
 function new_1_2_Kafra_Employee_118108()
 	dialog "[Kafra Employee]"
 	dialog "Welcome to"
@@ -2924,7 +2921,7 @@ function new_1_2_Kafra_Employee_118108()
 	end
 end
 
---npc("new_1-2","Instructor#Edwin",SPRITE_4_F_03,161,182,5,0,0,"new_1_2_InstructorEdwin_161182")
+npc("new_1-2","Instructor#Edwin",SPRITE_4_F_03,161,182,5,0,0,"new_1_2_InstructorEdwin_161182")
 function new_1_2_InstructorEdwin_161182()
 	local name = PcName
 	dialog "[Edwin]"
@@ -3181,7 +3178,7 @@ function new_1_2_InstructorEdwin_161182()
 	end
 end
 
---npc("new_1-2","Status Assistant",SPRITE_4_M_SAGE_A,182,182,3,0,0,"new_1_2_Status_Assistant_182182")
+npc("new_1-2","Status Assistant",SPRITE_4_M_SAGE_A,182,182,3,0,0,"new_1_2_Status_Assistant_182182")
 function new_1_2_Status_Assistant_182182()
 	local name = PcName
 	dialog "[Jare Riotte]"
@@ -3481,7 +3478,7 @@ function new_1_2_Status_Assistant_182182()
 	end
 end
 
---npc("new_1-2","Understandings of Skill",SPRITE_1_M_01,184,172,1,0,0,"new_1_2_Understandings_of_Skill_184172")
+npc("new_1-2","Understandings of Skill",SPRITE_1_M_01,184,172,1,0,0,"new_1_2_Understandings_of_Skill_184172")
 function new_1_2_Understandings_of_Skill_184172()
 	dialog "[Leo Handerson]"
 	dialog "Welcome~"
@@ -3858,7 +3855,7 @@ function new_1_2_Guide_Soldier_121101()
 	close()
 end
 
---npc("new_1-2","Helper",SPRITE_4_M_02,17,182,5,0,0,"new_1_2_Helper_17182")
+npc("new_1-2","Helper",SPRITE_4_M_02,17,182,5,0,0,"new_1_2_Helper_17182")
 function new_1_2_Helper_17182()
 	if (getvar(nov_2nd_cos) < 11) then
 		dialog "[Elmeen]"
@@ -4362,7 +4359,7 @@ function new_1_2_Helper_17182()
 	end
 end
 
---npc("new_1-2","Entrance Guard",SPRITE_4_F_03,38,182,3,0,0,"new_1_2_Entrance_Guard_38182")
+npc("new_1-2","Entrance Guard",SPRITE_4_F_03,38,182,3,0,0,"new_1_2_Entrance_Guard_38182")
 function new_1_2_Entrance_Guard_38182()
 	if (getvar(nov_2nd_cos) == 0) then
 		dialog "[Muriel]"
@@ -4551,7 +4548,7 @@ function new_1_2_Entrance_Guard_38182()
 	end
 end
 
---npc("new_1-3","Trainer",SPRITE_4_M_02,95,30,4,0,0,"new_1_3_Trainer_9530")
+npc("new_1-3","Trainer",SPRITE_4_M_02,95,30,4,0,0,"new_1_3_Trainer_9530")
 function new_1_3_Trainer_9530()
 	local warp1 = math.random(1,2)
 	dialog "[Hoffman]"
@@ -4618,7 +4615,7 @@ function new_1_3_Trainer_9530()
 	close()
 end
 
---npc("new_1-3","Test Examiner",SPRITE_4_M_03,96,174,3,0,0,"new_1_3_Test_Examiner_96174")
+npc("new_1-3","Test Examiner",SPRITE_4_M_03,96,174,3,0,0,"new_1_3_Test_Examiner_96174")
 function new_1_3_Test_Examiner_96174()
 	dialog "[Keyman]"
 	dialog "Good!!"
@@ -7766,7 +7763,7 @@ function new_1_4_Final_Tutor_10029()
 	end
 end
 
---npc("new_1-4","Bruce",SPRITE_1_M_LIBRARYMASTER,91,22,100,4,0,0,new_1_4_Bruce_9122)
+npc("new_1-4","Bruce",SPRITE_1_M_LIBRARYMASTER,91,22,100,4,0,0,new_1_4_Bruce_9122)
 function new_1_4_Bruce_9122()
 	local name = PcName
 	if (getvar(VAR_JOB) == NOVICE) then
