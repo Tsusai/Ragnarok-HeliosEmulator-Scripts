@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 74-
+[2008/10/12] RabidCh - Some more fixes in novice_1.lua.
+-
+
 -Rev 73-
 [2008/10/11] RabidCh - One more correction for Tsusai... in novice_1.lua
 -
