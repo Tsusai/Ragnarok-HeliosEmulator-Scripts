@@ -195,6 +195,7 @@ function new_1_2_Receptionist_10029()
 		dialog "enter the world of Ragnarok Online,"
 		dialog "please choose '^3355FFDirect access to^000000"
 		dialog "^3355FFRagnarok Online^000000.'"
+        break
 	elseif mresult == 4 then
 		dialog "[Training Grounds Receptionist]"
 		dialog "I understand."
