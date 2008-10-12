@@ -22,7 +22,7 @@
 --\_________________________________________________/--
 
 
-require("Scripts/Quests/Jobs/novice_1")
+require("Scripts/Job/Novice/novice_1")
 require("Scripts/Job/1st/job_acolyte/npc")
 require("Scripts/Job/1st/job_archer/npc")
 require("Scripts/Job/1st/job_magician/npc")
