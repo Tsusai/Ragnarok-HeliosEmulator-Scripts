@@ -100,32 +100,33 @@ function new_1_2_Receptionist_10029()
     		dialog "You will now be transferred"
     		dialog "to the Training Grounds."
     		moveto("new_1-2",100,70)
-    		break
+    		end
+            break
     	elseif mresult == 2 then
-    		setitem(nov_3_merchant,0)
+    		setitem("nov_3_merchant",0)
     		local village = math.random(1,6)
-    		setitem(nov_1st_cos,0)
-    		setitem(nov_2nd_cos,0)
-    		setitem(nov_3_swordman,0)
-    		setitem(nov_3_archer,0)
-    		setitem(nov_3_thief,0)
-    		setitem(nov_3_magician,0)
-    		setitem(nov_3_acolyte,0)
-    		setitem(nov_3_merchant,0)
+    		setitem("nov_1st_cos",0)
+    		setitem("nov_2nd_cos",0)
+    		setitem("nov_3_swordman",0)
+    		setitem("nov_3_archer,0")
+    		setitem("nov_3_thief,0")
+    		setitem("nov_3_magician,0")
+    		setitem("nov_3_acolyte,0")
+    		setitem("nov_3_merchant,0")
     		dialog "[Training Grounds Receptionist]"
     		dialog "I understand."
     		dialog "Please do your "
     		dialog "best, and I wish you"
     		dialog "the best of luck!"
     		close()
-    		setitem(nov_1st_cos,0)
-    		setitem(nov_2nd_cos,0)
-    		setitem(nov_3_swordman,0)
-    		setitem(nov_3_archer,0)
-    		setitem(nov_3_thief,0)
-    		setitem(nov_3_magician,0)
-    		setitem(nov_3_acolyte,0)
-    		setitem(nov_3_merchant,0)
+    		setitem("nov_1st_cos",0")
+    		setitem("nov_2nd_cos,0")
+    		setitem("nov_3_swordman,0")
+    		setitem("nov_3_archer,0")
+    		setitem("nov_3_thief,0")
+    		setitem("nov_3_magician,0")
+    		setitem("nov_3_acolyte,0")
+    		setitem("nov_3_merchant,0")
     		if village == 1 then
     			checkpoint("prontera",273,354)
     			moveto("prontera",273,354)
@@ -211,7 +212,7 @@ end
 npc("new_1-1","Shion",SPRITE_4_F_JOB_HUNTER,53,114,4,0,0,"new_1_1_Shion_53114")
 function new_1_1_Shion_53114()
 	local name = PcName
-	if ((getvar(nov_get_item04) > 9) or (getvar(nov_get_item05) > 9)) then
+	if ((getvar("nov_get_item04") > 9) or (getvar("nov_get_item05") > 9)) then
 		dialog "[Shion]"
 		dialog "Hm...?"
 		dialog "What are you"
@@ -233,7 +234,7 @@ function new_1_1_Shion_53114()
 		close()
 		moveto("new_1-2",99,99)
 		return
-	elseif (getvar(nov_1st_cos) > 2) then
+	elseif (getvar(""nov_1st_cos"") > 2) then
 		dialog "[Shion]"
 		dialog "The Training Grounds"
 		dialog "are located just past"
@@ -246,7 +247,7 @@ function new_1_1_Shion_53114()
 		dialog "some classes, you"
 		dialog "won't regret it."
 		close()
-	elseif (getvar(nov_1st_cos) == 2) then
+	elseif (getvar(""nov_1st_cos"") == 2) then
 		dialog "[Shion]"
 		dialog "Hey..."
 		dialog "You little rascal!"
@@ -281,10 +282,10 @@ function new_1_1_Shion_53114()
 		dialog "learn how to treat a lady nice,"
 		dialog "okay? Then they might give you"
 		dialog "gifts like this!"
-		setitem(nov_1st_cos,3)
+		setitem(""nov_1st_cos"",3)
 		getexp(9)
 		close()
-	elseif (getvar(nov_1st_cos) == 1) then
+	elseif (getvar(""nov_1st_cos"") == 1) then
 		dialog "[Shion]"
 		dialog "Huh...?"
 		dialog "Why are you"
@@ -301,7 +302,7 @@ function new_1_1_Shion_53114()
 		dialog "[Shion]"
 		dialog "You can even gain"
 		dialog "experience like this!"
-		setitem(nov_1st_cos,3)
+		setitem(""nov_1st_cos"",3)
 		getexp(9)
 		wait()
 		dialog "[Shion]"
@@ -363,7 +364,7 @@ function new_1_1_Shion_53114()
 			dialog "worry about getting lost."
 			dialog "Take care now~!"
 			close()
-			setitem(nov_1st_cos,1)
+			setitem(""nov_1st_cos"",1)
 			close()
 		elseif mresult == 2 then
 			dialog "[Shion]"
@@ -406,7 +407,7 @@ function new_1_1_Shion_53114()
 			dialog "at the entrance, so don't"
 			dialog "worry about getting lost."
 			dialog "Take care now~!"
-			setitem(nov_1st_cos,1)
+			setitem(""nov_1st_cos"",1)
 			close()
 		elseif mresult == 3 then
 			dialog "[Shion]"
@@ -415,7 +416,7 @@ function new_1_1_Shion_53114()
 			dialog "I'm volunteering my time and effort"
 			dialog "here, so you've got to show me a"
 			dialog "little bit of respect at least!"
-			setitem(nov_1st_cos,2)
+			setitem(""nov_1st_cos"",2)
 			close()
 		end
 	end
@@ -486,7 +487,7 @@ function new_1_2_Interface_Tutor_99105()
 			dialog "I will now dismiss that for you."
 			setitem(treasure_alb,0)
 			setitem(nov_1_2_cos_c,0)
-			setitem(nov_1st_cos,0)
+			setitem(""nov_1st_cos"",0)
 			setitem(nov_3_merchant,0)
 			setitem(nov_3_acolyte,0)
 			setitem(nov_3_magician,0)
@@ -825,7 +826,7 @@ function new_1_2_Interface_Tutor_99105()
 			dialog "I will now dismiss that for you."
 			setitem(treasure_alb,0)
 			setitem(nov_1_2_cos_c,0)
-			setitem(nov_1st_cos,0)
+			setitem(""nov_1st_cos"",0)
 			setitem(nov_3_merchant,0)
 			setitem(nov_3_acolyte,0)
 			setitem(nov_3_magician,0)
@@ -1138,7 +1139,7 @@ function new_1_2_Skill_Tutor_83111()
 			dialog "I will now dismiss that for you."
 			setitem(treasure_alb,0)
 			setitem(nov_1_2_cos_c,0)
-			setitem(nov_1st_cos,0)
+			setitem(""nov_1st_cos"",0)
 			setitem(nov_3_merchant,0)
 			setitem(nov_3_acolyte,0)
 			setitem(nov_3_magician,0)
@@ -1418,7 +1419,7 @@ function new_1_2_Skill_Tutor_83111()
 			dialog "I will now dismiss that for you."
 			setitem(treasure_alb,0)
 			setitem(nov_1_2_cos_c,0)
-			setitem(nov_1st_cos,0)
+			setitem(""nov_1st_cos"",0)
 			setitem(nov_3_merchant,0)
 			setitem(nov_3_acolyte,0)
 			setitem(nov_3_magician,0)
@@ -1689,7 +1690,7 @@ function new_1_2_Item_Tutor_115111()
 			dialog "I will now dismiss that for you."
 			setitem(treasure_alb,0)
 			setitem(nov_1_2_cos_c,0)
-			setitem(nov_1st_cos,0)
+			setitem(""nov_1st_cos"",0)
 			setitem(nov_3_merchant,0)
 			setitem(nov_3_acolyte,0)
 			setitem(nov_3_magician,0)
@@ -2145,7 +2146,7 @@ function new_1_2_Item_Tutor_115111()
 			dialog "I will now dismiss that for you."
 			setitem(treasure_alb,0)
 			setitem(nov_1_2_cos_c,0)
-			setitem(nov_1st_cos,0)
+			setitem(""nov_1st_cos"",0)
 			setitem(nov_3_merchant,0)
 			setitem(nov_3_acolyte,0)
 			setitem(nov_3_magician,0)
@@ -2487,7 +2488,7 @@ function new_1_2_Kafra_Employee_118108()
 	if (getvar(treasure_alb) > 0) then
 		setitem(treasure_alb,0)
 		setitem(nov_1_2_cos_c,0)
-		setitem(nov_1st_cos,0)
+		setitem(""nov_1st_cos"",0)
 		setitem(nov_3_merchant,0)
 		setitem(nov_3_acolyte,0)
 		setitem(nov_3_magician,0)
@@ -2770,28 +2771,28 @@ function new_1_2_Kafra_Employee_118108()
 				dialog "is also provided by"
 				dialog "the Kafra Corporation"
 				dialog "free of charge~!"
-				if (getvar(nov_1st_cos) < 20) then
+				if (getvar(""nov_1st_cos"") < 20) then
 					if getvar(VAR_CLEVEL) < 8 then
 						if getvar(VAR_CLEVEL) == 1 then
-							setitem(nov_1st_cos,20)
+							setitem(""nov_1st_cos"",20)
 							getexp(10)
 						elseif getvar(VAR_CLEVEL) == 2 then
-							setitem(nov_1st_cos,20)
+							setitem(""nov_1st_cos"",20)
 							getexp(17)
 						elseif getvar(VAR_CLEVEL) == 3 then
-							setitem(nov_1st_cos,20)
+							setitem(""nov_1st_cos"",20)
 							getexp(26)
 						elseif getvar(VAR_CLEVEL) == 4 then
-							setitem(nov_1st_cos,20)
+							setitem(""nov_1st_cos"",20)
 							getexp(37)
 						elseif getvar(VAR_CLEVEL) == 5 then
-							setitem(nov_1st_cos,20)
+							setitem(""nov_1st_cos"",20)
 							getexp(78)
 						elseif getvar(VAR_CLEVEL) == 6 then
-							setitem(nov_1st_cos,20)
+							setitem(""nov_1st_cos"",20)
 							getexp(115)
 						elseif getvar(VAR_CLEVEL) == 7 then
-							setitem(nov_1st_cos,20)
+							setitem(""nov_1st_cos"",20)
 							getexp(155)
 						end
 					end
