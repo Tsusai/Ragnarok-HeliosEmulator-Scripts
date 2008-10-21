@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 75-
+[2008/10/21] RaX - Modified menu_and_var script under sample to demonstrate typed variables.
+-
+
 -Rev 74-
 [2008/10/12] RabidCh - Some more fixes in novice_1.lua.
 -
