@@ -15,6 +15,11 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 76-
+[2008/10/24] RabidCh - Some more fixes in novice_1.lua, disabled some job scripts.
+[2008/10/24] RabidCh - Some of the scripting should really be getting finalized now.
+-
+
 -Rev 75-
 [2008/10/21] RaX - Modified menu_and_var script under sample to demonstrate typed variables.
 -
