@@ -23,9 +23,9 @@
 
 
 require("Scripts/Job/Novice/novice_1")
-require("Scripts/Job/1st/job_acolyte/npc")
-require("Scripts/Job/1st/job_archer/npc")
-require("Scripts/Job/1st/job_magician/npc")
+--require("Scripts/Job/1st/job_acolyte/npc")
+--require("Scripts/Job/1st/job_archer/npc")
+--require("Scripts/Job/1st/job_magician/npc")
 --Rrequires an overhaul
 --require("Scripts/Job/1st/job_merchant/npc")
 --[[require("Scripts/Job/1st/job_swordman/npc")

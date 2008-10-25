@@ -10,26 +10,27 @@
 --|-------------------------------------------------|--
 --| 29/12/2007                                      |--
 --|   -First Version for Helios  [Spre]             |--
+--| 14/10/2008                                      |--  
+--|   - Updated a little and fixed variables        |--
+--|     to start to get this working [RabidCh]      |--
 --|-------------------------------------------------|--
 --| Credits: Gravity                                |--
 --|          Muad_Dib                               |--
 --|-------------------------------------------------|--
 --| Notes:                                          |--
---|                                                 |--
---|                                                 |--
 --\_________________________________________________/--
 
 npc("new_1-1","Bulletin Board",SPRITE_HIDDEN_NPC,66,114,4,0,0,"new_1_1_Bulletin_Board_66114")
 function new_1_1_Bulletin_Board_66114()
 	dialog "^FF0000=================================^000000"
-	dialog "^FF0000 ==^000000 ^E40CAA[Welcome] ^CC0000to^FF9000Training ^3366FFGrounds^E40CAA [Welcome] ^FF0000==^000000"
+	dialog "^FF0000 ^000000 ^E40CAA[Welcome] ^CC0000to^FF9000 Novice^7FFF00 Training^00FF00 Grounds^E40CAA [Welcome] ^FF0000^000000"
 	dialog "^FF0000=================================^000000"
 	close()
 end
 
 npc("new_1-1","Guard",SPRITE_8W_SOLDIER,144,116,2,0,0,"new_1_1_Guard_144116")
 function new_1_1_Guard_144116()
-	dialog "[Training Ground Guard]"
+	dialog "[Training Grounds Guard]"
 	dialog "Welcome to the Training Grounds."
 	dialog "You are now in the outer court"
 	dialog "yard. Please go inside the castle"
@@ -39,7 +40,7 @@ end
 
 npc("new_1-1","Guard",SPRITE_8W_SOLDIER,144,107,2,0,0,"new_1_1_Guard_144107")
 function new_1_1_Guard_144107()
-	dialog "[Training Ground Guard]"
+	dialog "[Training Grounds Guard]"
 	local temp = math.random(1,2)
 	if temp == 1 then
 		dialog "Come in!"
@@ -47,177 +48,172 @@ function new_1_1_Guard_144107()
 		dialog "to welcome you to"
 		dialog "the Training Grounds!"
 		wait()
-		dialog "[Training Ground Guard]"
+		dialog "[Training Grounds Guard]"
 		dialog "In here, you can prepare"
 		dialog "yourself for your future"
 		dialog "adventures throughout the"
 		dialog "Ragnarok world!"
 	else
 		dialog "Go, Novice, go!"
-		dialog "Fight, and grow stronger! Look"
-		dialog "towards a brighter tomorrow!"
+		dialog "Fight, and grow stronger! Look towards a brighter tomorrow!"
 	end
 	close()
 end
 
 npc("new_1-2","Receptionist",SPRITE_4_M_04,100,29,4,0,0,"new_1_2_Receptionist_10029")
 function new_1_2_Receptionist_10029()
+	local name = getvar(VAR_CHARACTERNAME)
 	dialog "[Training Grounds Receptionist]"
-	dialog "Welcome!"
-	dialog "You are at the entrance"
-	dialog "of the ^3366FFTraining Grounds^000000."
+	dialog "Hello, you look to be new here."
+	dialog "What is your name?"
 	wait()
-	dialog "[Training Grounds Receptionist]"
-	dialog "If you're new"
-	dialog "to the Ragnarok world,"
-	dialog "please choose the"
-	dialog "^000099Training Grounds Introduction^000000"
-	dialog "menu for more information."
-    while (1) do
-        wait()
-    	local mresult = menu("Apply for training.","Direct access to Ragnarok Online.","^0099FFTraining Grounds Introduction.^000000","I need a moment to think.")
-    	if mresult == 1 then
-    		dialog "[Training Grounds Receptionist]"
-    		dialog "Thank you for applying for Novice"
-    		dialog "training. For detailed information"
-    		dialog "of each training course, please"
-    		dialog "inquire the Guides for assistance."
-    		wait()
-    		if getvar("nov_get_item01") == 0 then
-    			setitem("nov_get_item01",1)
-    			getgold(50)
-    			dialog "[Training Grounds Receptionist]"
-    			dialog "To get you started, we will supply"
-    			dialog "you with a provision of 50 Zeny."
-    			dialog "When you have questions about the"
-    			dialog "training course process, please"
-    			dialog "feel free to ask any of the"
-    			dialog "Tutors."
-    			wait()
-    		end
-    		wait()
-            dialog "[Training Grounds Receptionist]"
-    		dialog "You will now be transferred"
-    		dialog "to the Training Grounds."
-    		moveto("new_1-2",100,70)
-    		end
-            break
-    	elseif mresult == 2 then
-    		setitem("nov_3_merchant",0)
-    		local village = math.random(1,6)
-    		setitem("nov_1st_cos",0)
-    		setitem("nov_2nd_cos",0)
-    		setitem("nov_3_swordman",0)
-    		setitem("nov_3_archer,0")
-    		setitem("nov_3_thief,0")
-    		setitem("nov_3_magician,0")
-    		setitem("nov_3_acolyte,0")
-    		setitem("nov_3_merchant,0")
-    		dialog "[Training Grounds Receptionist]"
-    		dialog "I understand."
-    		dialog "Please do your "
-    		dialog "best, and I wish you"
-    		dialog "the best of luck!"
-    		close()
-    		setitem("nov_1st_cos",0")
-    		setitem("nov_2nd_cos,0")
-    		setitem("nov_3_swordman,0")
-    		setitem("nov_3_archer,0")
-    		setitem("nov_3_thief,0")
-    		setitem("nov_3_magician,0")
-    		setitem("nov_3_acolyte,0")
-    		setitem("nov_3_merchant,0")
-    		if village == 1 then
-    			checkpoint("prontera",273,354)
-    			moveto("prontera",273,354)
-    		elseif village == 2 then
-    			checkpoint("morocc",160,94)
-    			moveto("morocc",160,94)
-    		elseif village == 3 then
-    			checkpoint("geffen",120,100)
-    			moveto("geffen",120,100)
-    		elseif village == 4 then
-    			checkpoint("payon",70,100)
-    			moveto("payon",70,100)
-    		elseif village == 5 then
-    			checkpoint("alberta",116,57)
-    			moveto("alberta",116,57)
-    		elseif village == 6 then
-    			checkpoint("izlude",94,103)
-    			moveto("izlude",94,103)
-    		end
-    		break
-    	elseif mresult == 3 then
-    		dialog "[Training Grounds Receptionist]"
-    		dialog "This training grounds was"
-    		dialog "established in order to provide"
-    		dialog "useful information to new players"
-    		dialog "of Ragnarok Online by the"
-    		dialog "Rune-Midgarts Kingdom's Board of"
-    		dialog "Education."
-    		wait()
-    		dialog "[Training Grounds Receptionist]"
-    		dialog "The training course is organised"
-    		dialog "into two parts: the Basic Knowledge"
-    		dialog "classes, and Field Combat"
-    		dialog "training."
-    		wait()
-    		dialog "[Training Grounds Receptionist]"
-    		dialog "Through the first course, players"
-    		dialog "will learn the necessary knowledge"
-    		dialog "for a smoother gaming experience."
-    		wait()
-    		dialog "[Training Grounds Receptionist]"
-    		dialog "In Field Combat Training,"
-    		dialog "players will engage in actual"
-    		dialog "battle with weak monsters so they"
-    		dialog "can learn the basics of fighting."
-    		wait()
-    		dialog "[Training Grounds Receptionist]"
-    		dialog "With this battle practice,"
-    		dialog "players will be able to gain more"
-    		dialog "experience before they enter the"
-    		dialog "real world."
-    		wait()
-    		dialog "[Training Grounds Receptionist]"
-    		dialog "At the end of the training, we will"
-    		dialog "provide an introduction to the 1st"
-    		dialog "Job Classes. This will help players"
-    		dialog "decide which job class is best for"
-    		dialog "them."
-    		wait()
-    		dialog "[Training Grounds Receptionist]"
-    		dialog "If you wish to participate in the"
-    		dialog "training grounds, please choose"
-    		dialog "'^3355FFApply for training^000000' in the"
-    		dialog "menu."
-    		wait()
-    		dialog "[Training Grounds Receptionist]"
-    		dialog "Otherwise, if you want to skip the"
-    		dialog "basic training and immediately"
-    		dialog "enter the world of Ragnarok Online,"
-    		dialog "please choose '^3355FFDirect access to^000000"
-    		dialog "^3355FFRagnarok Online^000000.'"
-            break
-    	elseif mresult == 4 then
-    		dialog "[Training Grounds Receptionist]"
-    		dialog "I understand."
-    		dialog "Please, take your time."
-    		close()
-    		break
-    	end
-    end
+	if name ~= inputstr() then
+		dialog "[Training Grounds Receptionist]"
+		dialog "Sorry, but I don't think I heard you correctly"
+		close()
+	else
+		dialog "[Training Grounds Receptionist]"
+		dialog "Welcome!"
+		dialog "You are at the entrance"
+		dialog "of the ^3355FFTraining Grounds^000000."
+		wait()
+		dialog "[Training Grounds Receptionist]"
+		dialog "If you're new"
+		dialog "to the Ragnarok world,"
+		dialog "please choose the"
+		dialog "^3355FFTraining Grounds Introduction^000000"
+		dialog "menu for more information."
+		while(1) do
+			wait()
+			local mresult = menu("Apply for training.","Direct access to Ragnarok Online.","^0099FFTraining Grounds Introduction.^000000","I need a moment to think.")
+			if mresult == 1 then
+				dialog "[Training Grounds Receptionist]"
+				dialog "Thank you for applying for Novice"
+				dialog "training. For detailed information"
+				dialog "of each training course, please"
+				dialog "inquire the Guides for assistance."
+				wait()
+				if getvar("nov_get_item01") == 0 then
+					setvar("nov_get_item01",1)
+					dialog "[Training Grounds Receptionist]"
+					dialog "When you have questions about the training course process, please"
+					dialog "feel free to ask any of the"
+					dialog "Tutors."
+					dialog "[Training Grounds Receptionist]"
+					dialog "You will now be transferred"
+					dialog "to the Training Grounds."
+					wait()
+					moveto("new_1-2",100,70)
+				end
+			break
+			elseif mresult == 2 then
+				local village = math.random(1,6)
+				setvar("nov_1st_cos",0)
+				setvar("nov_2nd_cos",0)
+				setvar("nov_3_swordman",0)
+				setvar("nov_3_archer",0)
+				setvar("nov_3_thief",0)
+				setvar("nov_3_magician",0)
+				setvar("nov_3_acolyte",0)
+				setvar("nov_3_merchant",0)
+				dialog "[Training Grounds Receptionist]"
+				dialog "I understand."
+				dialog "Please do your"
+				dialog "best, and I wish you"
+				dialog "the best of luck!"
+				close()
+				if village == 1 then
+					checkpoint("prontera",273,354)
+					moveto("prontera",273,354)
+				elseif village == 2 then
+					checkpoint("morocc",160,94)
+					moveto("morocc",160,94)
+				elseif village == 3 then
+					checkpoint("geffen",120,100)
+					moveto("geffen",120,100)
+				elseif village == 4 then
+					checkpoint("payon",87,117)
+					moveto("payon",87,117)
+				elseif village == 5 then
+					checkpoint("alberta",116,57)
+					moveto("alberta",116,57)
+				elseif village == 6 then
+					checkpoint("izlude",94,103)
+					moveto("izlude",94,103)
+				end
+			break
+			elseif mresult == 3 then
+				dialog "[Training Grounds Receptionist]"
+				dialog "This training grounds was"
+				dialog "established in order to provide"
+				dialog "useful information to new players"
+				dialog "of Ragnarok Online by the"
+				dialog "Rune-Midgarts Kingdom's Board of"
+				dialog "Education."
+				wait()
+				dialog "[Training Grounds Receptionist]"
+				dialog "The training course is organized"
+				dialog "into two parts: the Basic Knowledge"
+				dialog "classes, and Field Combat"
+				dialog "training."
+				wait()
+				dialog "[Training Grounds Receptionist]"
+				dialog "Through the first course, players"
+				dialog "will learn the necessary knowledge"
+				dialog "for a smoother gaming experience."
+				wait()
+				dialog "[Training Grounds Receptionist]"
+				dialog "In Field Combat Training,"
+				dialog "players will engage in actual"
+				dialog "battle with weak monsters so they"
+				dialog "can learn the basics of fighting."
+				wait()
+				dialog "[Training Grounds Receptionist]"
+				dialog "With this battle practice,"
+				dialog "players will be able to gain more"
+				dialog "experience before they enter the"
+				dialog "real world."
+				wait()
+				dialog "[Training Grounds Receptionist]"
+				dialog "At the end of the training, we will"
+				dialog "provide an introduction to the 1st"
+				dialog "Job Classes. This will help players"
+				dialog "decide which job class is best for"
+				dialog "them."
+				wait()
+				dialog "[Training Grounds Receptionist]"
+				dialog "If you wish to participate in the"
+				dialog "training grounds, please choose"
+				dialog "'^3355FFApply for training^000000' in the"
+				dialog "menu."
+				wait()
+				dialog "[Training Grounds Receptionist]"
+				dialog "Otherwise, if you want to skip the"
+				dialog "basic training and immediately"
+				dialog "enter the world of Ragnarok Online,"
+				dialog "please choose '^3355FFDirect access to^000000"
+				dialog "^3355FFRagnarok Online^000000.'"
+			break
+			elseif mresult == 4 then
+				dialog "[Training Grounds Receptionist]"
+				dialog "I understand."
+				dialog "Please, take your time."
+				close()
+			break
+			end
+		end
+	end
 end
 
 npc("new_1-1","Shion",SPRITE_4_F_JOB_HUNTER,53,114,4,0,0,"new_1_1_Shion_53114")
 function new_1_1_Shion_53114()
-	local name = PcName
+	local name = getvar(VAR_CHARACTERNAME) -- PcName isn't working
 	if ((getvar("nov_get_item04") > 9) or (getvar("nov_get_item05") > 9)) then
 		dialog "[Shion]"
 		dialog "Hm...?"
 		dialog "What are you"
 		dialog "still doing here?"
-		dialog "Oh, you used a ^3366FFButterfly Wing^000000,"
+		dialog "Oh, you used a ^3355FFButterfly Wing^000000,"
 		dialog "didn't you?"
 		wait()
 		dialog "[Shion]"
@@ -234,7 +230,7 @@ function new_1_1_Shion_53114()
 		close()
 		moveto("new_1-2",99,99)
 		return
-	elseif (getvar(""nov_1st_cos"") > 2) then
+	elseif (getvar("nov_1st_cos") > 2) then
 		dialog "[Shion]"
 		dialog "The Training Grounds"
 		dialog "are located just past"
@@ -246,8 +242,9 @@ function new_1_1_Shion_53114()
 		dialog "be sitting through"
 		dialog "some classes, you"
 		dialog "won't regret it."
+		dialog "Now, go for it!"
 		close()
-	elseif (getvar(""nov_1st_cos"") == 2) then
+	elseif (getvar("nov_1st_cos") == 2) then
 		dialog "[Shion]"
 		dialog "Hey..."
 		dialog "You little rascal!"
@@ -282,10 +279,10 @@ function new_1_1_Shion_53114()
 		dialog "learn how to treat a lady nice,"
 		dialog "okay? Then they might give you"
 		dialog "gifts like this!"
-		setitem(""nov_1st_cos"",3)
+		setvar("nov_1st_cos",3)
 		getexp(9)
 		close()
-	elseif (getvar(""nov_1st_cos"") == 1) then
+	elseif (getvar("nov_1st_cos") == 1) then
 		dialog "[Shion]"
 		dialog "Huh...?"
 		dialog "Why are you"
@@ -302,7 +299,7 @@ function new_1_1_Shion_53114()
 		dialog "[Shion]"
 		dialog "You can even gain"
 		dialog "experience like this!"
-		setitem(""nov_1st_cos"",3)
+		setvar("nov_1st_cos",3)
 		getexp(9)
 		wait()
 		dialog "[Shion]"
@@ -364,7 +361,7 @@ function new_1_1_Shion_53114()
 			dialog "worry about getting lost."
 			dialog "Take care now~!"
 			close()
-			setitem(""nov_1st_cos"",1)
+			setvar("nov_1st_cos",1)
 			close()
 		elseif mresult == 2 then
 			dialog "[Shion]"
@@ -407,7 +404,7 @@ function new_1_1_Shion_53114()
 			dialog "at the entrance, so don't"
 			dialog "worry about getting lost."
 			dialog "Take care now~!"
-			setitem(""nov_1st_cos"",1)
+			setvar("nov_1st_cos",1)
 			close()
 		elseif mresult == 3 then
 			dialog "[Shion]"
@@ -416,7 +413,7 @@ function new_1_1_Shion_53114()
 			dialog "I'm volunteering my time and effort"
 			dialog "here, so you've got to show me a"
 			dialog "little bit of respect at least!"
-			setitem(""nov_1st_cos"",2)
+			setvar("nov_1st_cos",2)
 			close()
 		end
 	end
@@ -424,18 +421,18 @@ end
 
 npc("new_1-2","Interface Tutor",SPRITE_4_M_CRU,99,105,3,0,0,"new_1_2_Interface_Tutor_99105")
 function new_1_2_Interface_Tutor_99105()
-	local name = PcName
-	if ((getvar(nov_get_item02) > 9) and (getvar(nov_get_item03) > 9) and (getvar(nov_get_item04) > 9)) then
-		dialog "[Chris]"
+	local name = getvar(VAR_CHARACTERNAME)
+	if ((getvar("nov_get_item02") > 9) and (getvar("nov_get_item03") > 9) and (getvar("nov_get_item04") > 9)) then
+		dialog "[Kris]"
 		dialog "You've completed all the essential"
 		dialog "courses. Have you spoken to the"
 		dialog "assistant tutors already? The field"
 		dialog "combat training will be your next"
-		dialog "course. Woudl you like to proceed?"
+		dialog "course. Would you like to proceed?"
 		wait()
 		local mresult = menu("Sure!","No, I'll come back later.","Send me to a town!")
 		if mresult == 1 then
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Your next course is Field Combat"
 			dialog "training. Please listen carefully"
 			dialog "to your next trainer, and I hope"
@@ -444,7 +441,7 @@ function new_1_2_Interface_Tutor_99105()
 			moveto("new_1-2",28,178)
 			return
 		elseif mresult == 2 then
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Alright then. In the meantime, you"
 			dialog "might want to speak to the"
 			dialog "assistant tutors, as the basic"
@@ -452,19 +449,19 @@ function new_1_2_Interface_Tutor_99105()
 			dialog "courses may not be enough for new"
 			dialog "adventurers."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Feel free to come back any time"
 			dialog "when you need my assistance."
 			close()
 		elseif mresult == 3 then
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "So, would you like to be sent to a"
 			dialog "town? If you're confident that"
 			dialog "you've learnt enough, head over to"
 			dialog "the right and speak to the ^3366FFKafra^000000"
 			dialog "^3366FFEmployee^000000."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "The Kafra Services are very"
 			dialog "convenient once you get out into"
 			dialog "the real world. Their Teleport"
@@ -472,36 +469,36 @@ function new_1_2_Interface_Tutor_99105()
 			dialog "town to town, and you can keep your"
 			dialog "items safe in the Kafra Storage."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "We may never meet again, but I hope"
 			dialog "you grow stronger and become a"
 			dialog "great adventurer. Godspeed."
 			close()
 		end
-	elseif (getvar(nov_get_item02) < 10) then
-		dialog "[Chris]"
+	elseif (getvar("nov_get_item02") < 10) then
+		dialog "[Kris]"
 		dialog "Hello, may I see your"
 		dialog "proof of registration?"
-		if (getvar(treasure_alb) > 0) then
+		if (getvar("treasure_alb") > 0) then
 			dialog "You were previously on the longer training course."
 			dialog "I will now dismiss that for you."
-			setitem(treasure_alb,0)
-			setitem(nov_1_2_cos_c,0)
-			setitem(""nov_1st_cos"",0)
-			setitem(nov_3_merchant,0)
-			setitem(nov_3_acolyte,0)
-			setitem(nov_3_magician,0)
-			setitem(nov_3_archer,0)
+			setvar("treasure_alb",0)
+			setvar("nov_1_2_cos_c",0)
+			setvar("nov_1st_cos",0)
+			setvar("nov_3_merchant",0)
+			setvar("nov_3_acolyte",0)
+			setvar("nov_3_magician",0)
+			setvar("nov_3_archer",0)
 		end
 		wait()
-		dialog "[Chris]"
+		dialog "[Kris]"
 		dialog "Okay, now"
 		dialog "you're ready to go."
 		dialog "In my class, I teach the"
 		dialog "use of the most basic"
 		dialog "interfaces."
 		wait()
-		dialog "[Chris]"
+		dialog "[Kris]"
 		dialog(""..name..",")
 		dialog "would you like to learn"
 		dialog "more about interface"
@@ -509,25 +506,25 @@ function new_1_2_Interface_Tutor_99105()
 		wait()
 		local mresult = menu("Yes.","Nah, I'm a pro~","Cancel.")
 		if mresult == 1 then
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "First, it's possible to move every"
 			dialog "interface window on your screen by"
 			dialog "dragging the window. Just click on"
 			dialog "the window, hold down the mouse"
 			dialog "button and move your mouse."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Now, let me explain each interface"
 			dialog "window according to their default"
 			dialog "positions on your screen."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "At the upper left side of your"
 			dialog "screen, you will see a window with"
 			dialog "your character name and level. This"
 			dialog "is the ^3366FFBasic Information Window.^000000"
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			if getvar(VAR_CLEVEL) < 8 then
 				dialog "Let me give you"
 				dialog "some experience points."
@@ -535,7 +532,7 @@ function new_1_2_Interface_Tutor_99105()
 				dialog "Window and observe the change in"
 				dialog "your Base Level experience gauge."
 				wait()
-				dialog "[Chris]"
+				dialog "[Kris]"
 				dialog "Did you see...?"
 				dialog "As you gain experience,"
 				dialog "the experience gauge fills up."
@@ -543,25 +540,25 @@ function new_1_2_Interface_Tutor_99105()
 				dialog "experience level, and the gauge is"
 				dialog "reset to 0."
 				if getvar(VAR_CLEVEL) == 1 then
-					setitem(nov_get_item02,10)
+					setvar("nov_get_item02",10)
 					getexp(10)
 				elseif getvar(VAR_CLEVEL) == 2 then
-					setitem(nov_get_item02,10)
+					setvar("nov_get_item02",10)
 					getexp(17)
 				elseif getvar(VAR_CLEVEL) == 3 then
-					setitem(nov_get_item02,10)
+					setvar("nov_get_item02",10)
 					getexp(26)
 				elseif getvar(VAR_CLEVEL) == 4 then
-					setitem(nov_get_item02,10)
+					setvar("nov_get_item02",10)
 					getexp(37)
 				elseif getvar(VAR_CLEVEL) == 5 then
-					setitem(nov_get_item02,10)
+					setvar("nov_get_item02",10)
 					getexp(78)
 				elseif getvar(VAR_CLEVEL) == 6 then
-					setitem(nov_get_item02,10)
+					setvar("nov_get_item02",10)
 					getexp(115)
 				elseif getvar(VAR_CLEVEL) == 7 then
-					setitem(nov_get_item02,10)
+					setvar("nov_get_item02",10)
 					getexp(155)
 				end
 			else
@@ -571,7 +568,7 @@ function new_1_2_Interface_Tutor_99105()
 				dialog "gauge."
 			end
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "At the bottom of the Basic Info"
 			dialog "Window, you will see two different"
 			dialog "experience gauge bars. The top bar"
@@ -579,50 +576,50 @@ function new_1_2_Interface_Tutor_99105()
 			dialog "the bottom one displays experience"
 			dialog "for your current Job Level."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "When the Job Level"
 			dialog "Experience bar is filled, you will"
 			dialog "earn a Job Level, and a ^3366FFSkill^000000"
 			dialog "^3366FFPoint^000000. Skill Points are spent to"
 			dialog "learn skills for your character."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "On the right side"
 			dialog "of the Basic Info window,"
 			dialog "you will see various"
 			dialog "Menu buttons."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Clicking these Menu buttons will"
 			dialog "open other Interface Windows, such"
 			dialog "as the Inventory Window"
 			dialog "or Party Window."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Now..."
 			dialog "The ^3366FFChat Window^000000 is"
 			dialog "located at the bottom"
 			dialog "of your screen."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "At the bottom right of the Chat"
 			dialog "Window, you should see 2 blue"
 			dialog "buttons. The left button allows you"
 			dialog "to change your chatting options."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "The '^3366FFSend to All^000000' option"
 			dialog "allows you to chat with"
 			dialog "everyone on your screen."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "The '^3366FFSend to Party^000000' and '^3366FFSent to^000000"
 			dialog "^3366FFGuild^000000' option allows you to send"
 			dialog "messages to only members of your"
 			dialog "party or guild, regardless of how"
 			dialog "far away they are."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "You can drag the Scroll Bar"
 			dialog "on the right side of the Chat"
 			dialog "Window to review a conversation."
@@ -630,58 +627,55 @@ function new_1_2_Interface_Tutor_99105()
 			dialog "active, you won't have any problem"
 			dialog "communicating with other players."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Now, one of the most important"
 			dialog "interfaces is the ^3366FFMini-Map^000000, located"
 			dialog "at the upper-right of your screen."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "The red dots on the Mini-Map"
 			dialog "indicate locations of ^3366FFWarp Portals^000000"
 			dialog "which connect to different zones."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "If you've joined a party or a"
 			dialog "guild, the Mini-Map will also show"
 			dialog "you the location of your party or"
 			dialog "guild members if they are on the"
 			dialog "same map."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Please click the Menu buttons"
 			dialog "on the right side of your Basic"
 			dialog "Info window with the other"
 			dialog "interfaces."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Well, that was my brief overview on"
 			dialog "in-game interfaces. It might seem"
 			dialog "like a lot of information now, but"
 			dialog "it will soon become second nature."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			if getvar(VAR_JOBLEVEL) < 7 then
-				dialog "Let me give you a little bit of Job"
-				dialog "experience points. Open your Skill"
-				dialog "Window and distribute your"
-				dialog "Skill Points into ^3366FFBasic Skills^000000."
+				dialog "Let me give you a little bit of Job experience points. Open your Skill Window and distribute your Skill Points into ^3366FFBasic Skills^000000."
 				if getvar(VAR_JOBLEVEL) == 1 then
-					setitem(nov_get_item02,11)
+					setvar("nov_get_item02",11)
 					getJexp(10)
 				elseif getvar(VAR_JOBLEVEL) == 2 then
-					setitem(nov_get_item02,11)
+					setvar("nov_get_item02",11)
 					getJexp(18)
 				elseif getvar(VAR_JOBLEVEL) == 3 then
-					setitem(nov_get_item02,11)
+					setvar("nov_get_item02",11)
 					getJexp(28)
 				elseif getvar(VAR_JOBLEVEL) == 4 then
-					setitem(nov_get_item02,11)
+					setvar("nov_get_item02",11)
 					getJexp(40)
 				elseif getvar(VAR_JOBLEVEL) == 5 then
-					setitem(nov_get_item02,11)
+					setvar("nov_get_item02",11)
 					getJexp(91)
 				elseif getvar(VAR_JOBLEVEL) == 6 then
-					setitem(nov_get_item02,11)
+					setvar("nov_get_item02",11)
 					getJexp(151)
 				end
 			else
@@ -690,17 +684,17 @@ function new_1_2_Interface_Tutor_99105()
 				dialog "know the basic information by now."
 			end
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Now, why don't you speak to Edwin?"
 			dialog "He will teach you more regarding"
 			dialog "the basic use of Skills. Ah, and"
 			dialog "let me give you a small present: a"
 			dialog "Tattered Novice Ninja Suit!"
-			setitem(nov_get_item02,12)
+			setvar("nov_get_item02",12)
 			getitem(Novice_Plate,1)
 			close()
 		elseif mresult == 2 then
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Let me guide you"
 			dialog "to the Field Combat"
 			dialog "Training Course."
@@ -712,13 +706,13 @@ function new_1_2_Interface_Tutor_99105()
 		elseif mresult == 3 then
 			Emotion("Interface Tutor",ET_PROFUSELY_SWAT)
 		end
-	elseif (getvar(nov_get_item03) < 10) then
-		dialog "[Chris]"
+	elseif (getvar("nov_get_item03") < 10) then
+		dialog "[Kris]"
 		dialog "How may I help you?"
 		dialog "Can I see your proof of"
 		dialog "registration?"
 		wait()
-		dialog "[Chris]"
+		dialog "[Kris]"
 		dialog "It seems that you haven't attended"
 		dialog "the Skill Information class yet."
 		dialog "Please talk to a tutor to the very"
@@ -727,13 +721,13 @@ function new_1_2_Interface_Tutor_99105()
 		wait()
 		local mresult = menu("Thank you!","I'm tired of classes~","Cancel.")
 		if mresult == 1 then
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "When you attend the Skill"
 			dialog "Information class, you'll gain a"
 			dialog "better understanding of the use of"
 			dialog "skills."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Since the use of skills is integral"
 			dialog "to survival in Rune-Midgard, I"
 			dialog "strongly suggest that you attend"
@@ -743,7 +737,7 @@ function new_1_2_Interface_Tutor_99105()
 			moveto("new_1-2",84,107)
 			return
 		elseif mresult == 2 then
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "I see. In that case, you must be"
 			dialog "ready for the Field Combat Training"
 			dialog "Course. Shall I send you there"
@@ -751,14 +745,14 @@ function new_1_2_Interface_Tutor_99105()
 			wait()
 			local mresultb = menu("No! W-wait!","Please do~!")
 			if mresultb == 1 then
-				dialog "[Chris]"
+				dialog "[Kris]"
 				dialog "...?!"
 				dialog "O...kay then."
 				dialog "Please come back"
 				dialog "when you're ready."
 				close()
 			elseif mresultb == 2 then
-				dialog "[Chris]"
+				dialog "[Kris]"
 				dialog "Godspeed,"
 				dialog "young Novice."
 				close()
@@ -768,13 +762,13 @@ function new_1_2_Interface_Tutor_99105()
 		elseif mresult == 3 then
 			Emotion("Interface Tutor",ET_PROFUSELY_SWAT)
 		end
-	elseif (getvar(nov_get_item04) < 10) then
-		dialog "[Chris]"
+	elseif (getvar("nov_get_item04") < 10) then
+		dialog "[Kris]"
 		dialog "How may I help you?"
 		dialog "Can I see your proof of"
 		dialog "registration?"
 		wait()
-		dialog "[Chris]"
+		dialog "[Kris]"
 		dialog "It looks like you still haven't"
 		dialog "attended the Item Information class"
 		dialog "yet. Please speak to the tutor to"
@@ -783,7 +777,7 @@ function new_1_2_Interface_Tutor_99105()
 		wait()
 		local mresult = menu("Thank you!","I'm tired of classes~","Cancel.")
 		if mresult == 1 then
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "The Item Information class is very"
 			dialog "useful for you to learn how to use"
 			dialog "your Hot keys and Hot key bars."
@@ -792,7 +786,7 @@ function new_1_2_Interface_Tutor_99105()
 			moveto("new_1-2",115,107)
 			return
 		elseif mresult == 2 then
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "I see. In that case, you must be"
 			dialog "ready for the Field Combat Training"
 			dialog "Course. Shall I send you there"
@@ -800,14 +794,14 @@ function new_1_2_Interface_Tutor_99105()
 			wait()
 			local mresultb = menu("No! W-wait!","Please do~!")
 			if mresultb == 1 then
-				dialog "[Chris]"
+				dialog "[Kris]"
 				dialog "...?!"
 				dialog "O...kay then."
 				dialog "Please come back"
 				dialog "when you're ready."
 				close()
 			elseif mresultb == 2 then
-				dialog "[Chris]"
+				dialog "[Kris]"
 				dialog "Godspeed,"
 				dialog "young Novice."
 				close()
@@ -818,29 +812,29 @@ function new_1_2_Interface_Tutor_99105()
 			Emotion("Interface Tutor",ET_PROFUSELY_SWAT)
 		end
 	else
-		dialog "[Chris]"
+		dialog "[Kris]"
 		dialog "Hello, may I see your"
 		dialog "proof of registration?"
-		if (getvar(treasure_alb) > 0) then
+		if (getvar("treasure_alb") > 0) then
 			dialog "You were previously on the longer training course."
 			dialog "I will now dismiss that for you."
-			setitem(treasure_alb,0)
-			setitem(nov_1_2_cos_c,0)
-			setitem(""nov_1st_cos"",0)
-			setitem(nov_3_merchant,0)
-			setitem(nov_3_acolyte,0)
-			setitem(nov_3_magician,0)
-			setitem(nov_3_archer,0)
+			setvar("treasure_alb",0)
+			setvar("nov_1_2_cos_c",0)
+			setvar("nov_1st_cos",0)
+			setvar("nov_3_merchant",0)
+			setvar("nov_3_acolyte",0)
+			setvar("nov_3_magician",0)
+			setvar("nov_3_archer",0)
 		end
 		wait()
-		dialog "[Chris]"
+		dialog "[Kris]"
 		dialog "Okay, now"
 		dialog "you're ready to go."
 		dialog "In my class, I teach the"
 		dialog "use of the most basic"
 		dialog "interfaces."
 		wait()
-		dialog "[Chris]"
+		dialog "[Kris]"
 		dialog(""..name..",")
 		dialog "would you like to learn"
 		dialog "more about interface"
@@ -848,25 +842,25 @@ function new_1_2_Interface_Tutor_99105()
 		wait()
 		local mresult = menu("Yes.","Nah, I'm a pro~","Cancel.")
 		if mresult == 1 then
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "First, it's possible to move every"
 			dialog "interface window on your screen by"
 			dialog "dragging the window. Just click on"
 			dialog "the window, hold down the mouse"
 			dialog "button and move your mouse."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Now, let me explain each interface"
 			dialog "window according to their default"
 			dialog "positions on your screen."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "At the upper left side of your"
 			dialog "screen, you will see a window with"
 			dialog "your character name and level. This"
 			dialog "is the ^3366FFBasic Information Window.^000000"
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			if getvar(VAR_CLEVEL) < 8 then
 				dialog "Let me give you"
 				dialog "some experience points."
@@ -874,7 +868,7 @@ function new_1_2_Interface_Tutor_99105()
 				dialog "Window and observe the change in"
 				dialog "your Base Level experience gauge."
 				wait()
-				dialog "[Chris]"
+				dialog "[Kris]"
 				dialog "Did you see...?"
 				dialog "As you gain experience,"
 				dialog "the experience gauge fills up."
@@ -882,25 +876,25 @@ function new_1_2_Interface_Tutor_99105()
 				dialog "experience level, and the gauge is"
 				dialog "reset to 0."
 				if getvar(VAR_CLEVEL) == 1 then
-					setitem(nov_get_item02,10)
+					setvar("nov_get_item02",10)
 					getexp(10)
 				elseif getvar(VAR_CLEVEL) == 2 then
-					setitem(nov_get_item02,10)
+					setvar("nov_get_item02",10)
 					getexp(17)
 				elseif getvar(VAR_CLEVEL) == 3 then
-					setitem(nov_get_item02,10)
+					setvar("nov_get_item02",10)
 					getexp(26)
 				elseif getvar(VAR_CLEVEL) == 4 then
-					setitem(nov_get_item02,10)
+					setvar("nov_get_item02",10)
 					getexp(37)
 				elseif getvar(VAR_CLEVEL) == 5 then
-					setitem(nov_get_item02,10)
+					setvar("nov_get_item02",10)
 					getexp(78)
 				elseif getvar(VAR_CLEVEL) == 6 then
-					setitem(nov_get_item02,10)
+					setvar("nov_get_item02",10)
 					getexp(115)
 				elseif getvar(VAR_CLEVEL) == 7 then
-					setitem(nov_get_item02,10)
+					setvar("nov_get_item02",10)
 					getexp(155)
 				end
 			else
@@ -910,7 +904,7 @@ function new_1_2_Interface_Tutor_99105()
 				dialog "gauge."
 			end
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "At the bottom of the Basic Info"
 			dialog "Window, you will see two different"
 			dialog "experience gauge bars. The top bar"
@@ -918,50 +912,50 @@ function new_1_2_Interface_Tutor_99105()
 			dialog "the bottom one displays experience"
 			dialog "for your current Job Level."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "When the Job Level"
 			dialog "Experience bar is filled, you will"
 			dialog "earn a Job Level, and a ^3366FFSkill^000000"
 			dialog "^3366FFPoint^000000. Skill Points are spent to"
 			dialog "learn skills for your character."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "On the right side"
 			dialog "of the Basic Info window,"
 			dialog "you will see various"
 			dialog "Menu buttons."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Clicking these Menu buttons will"
 			dialog "open other Interface Windows, such"
 			dialog "as the Inventory Window"
 			dialog "or Party Window."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Now..."
 			dialog "The ^3366FFChat Window^000000 is"
 			dialog "located at the bottom"
 			dialog "of your screen."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "At the bottom right of the Chat"
 			dialog "Window, you should see 2 blue"
 			dialog "buttons. The left button allows you"
 			dialog "to change your chatting options."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "The '^3366FFSend to All^000000' option"
 			dialog "allows you to chat with"
 			dialog "everyone on your screen."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "The '^3366FFSend to Party^000000' and '^3366FFSent to^000000"
 			dialog "^3366FFGuild^000000' option allows you to send"
 			dialog "messages to only members of your"
 			dialog "party or guild, regardless of how"
 			dialog "far away they are."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "You can drag the Scroll Bar"
 			dialog "on the right side of the Chat"
 			dialog "Window to review a conversation."
@@ -969,58 +963,58 @@ function new_1_2_Interface_Tutor_99105()
 			dialog "active, you won't have any problem"
 			dialog "communicating with other players."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Now, one of the most important"
 			dialog "interfaces is the ^3366FFMini-Map^000000, located"
 			dialog "at the upper-right of your screen."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "The red dots on the Mini-Map"
 			dialog "indicate locations of ^3366FFWarp Portals^000000"
 			dialog "which connect to different zones."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "If you've joined a party or a"
 			dialog "guild, the Mini-Map will also show"
 			dialog "you the location of your party or"
 			dialog "guild members if they are on the"
 			dialog "same map."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Please click the Menu buttons"
 			dialog "on the right side of your Basic"
 			dialog "Info window with the other"
 			dialog "interfaces."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Well, that was my brief overview on"
 			dialog "in-game interfaces. It might seem"
 			dialog "like a lot of information now, but"
 			dialog "it will soon become second nature."
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			if getvar(VAR_JOBLEVEL) < 7 then
 				dialog "Let me give you a little bit of Job"
 				dialog "experience points. Open your Skill"
 				dialog "Window and distribute your"
 				dialog "Skill Points into ^3366FFBasic Skills^000000."
 				if getvar(VAR_JOBLEVEL) == 1 then
-					setitem(nov_get_item02,11)
+					setvar("nov_get_item02",11)
 					getJexp(10)
 				elseif getvar(VAR_JOBLEVEL) == 2 then
-					setitem(nov_get_item02,11)
+					setvar("nov_get_item02",11)
 					getJexp(18)
 				elseif getvar(VAR_JOBLEVEL) == 3 then
-					setitem(nov_get_item02,11)
+					setvar("nov_get_item02",11)
 					getJexp(28)
 				elseif getvar(VAR_JOBLEVEL) == 4 then
-					setitem(nov_get_item02,11)
+					setvar("nov_get_item02",11)
 					getJexp(40)
 				elseif getvar(VAR_JOBLEVEL) == 5 then
-					setitem(nov_get_item02,11)
+					setvar("nov_get_item02",11)
 					getJexp(91)
 				elseif getvar(VAR_JOBLEVEL) == 6 then
-					setitem(nov_get_item02,11)
+					setvar("nov_get_item02",11)
 					getJexp(151)
 				end
 			else
@@ -1029,17 +1023,17 @@ function new_1_2_Interface_Tutor_99105()
 				dialog "know the basic information by now."
 			end
 			wait()
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Now, why don't you speak to Edwin?"
 			dialog "He will teach you more regarding"
 			dialog "the basic use of Skills. Ah, and"
 			dialog "let me give you a small present: a"
 			dialog "Tattered Novice Ninja Suit!"
-			setitem(nov_get_item02,12)
+			setvar("nov_get_item02",12)
 			getitem(Novice_Plate,1)
 			close()
 		elseif mresult == 2 then
-			dialog "[Chris]"
+			dialog "[Kris]"
 			dialog "Let me guide you"
 			dialog "to the Field Combat"
 			dialog "Training Course."
@@ -1056,8 +1050,8 @@ end
 
 npc("new_1-2","Skill Tutor",SPRITE_4_M_MONK,83,111,3,0,0,"new_1_2_Skill_Tutor_83111")
 function new_1_2_Skill_Tutor_83111()
-	local name = PcName
-	if ((getvar(nov_get_item02) > 9) and (getvar(nov_get_item03) > 9) and (getvar(nov_get_item04) > 9)) then
+	local name = getvar(VAR_CHARACTERNAME)
+	if ((getvar("nov_get_item02") > 9) and (getvar("nov_get_item03") > 9) and (getvar("nov_get_item04") > 9)) then
 		dialog "[Cecil]"
 		dialog "Huh...?"
 		dialog "Did you need more help?"
@@ -1130,20 +1124,20 @@ function new_1_2_Skill_Tutor_83111()
 			dialog "right, okay?"
 			close()
 		end
-	elseif (getvar(nov_get_item03) < 10) then
+	elseif (getvar("nov_get_item03") < 10) then
 		dialog "[Cecil]"
 		dialog(""..name.."?")
 		dialog "Heh, I like your name!"
-		if (getvar(treasure_alb) > 0) then
+		if (getvar("treasure_alb") > 0) then
 			dialog "You were previously on the longer training course."
 			dialog "I will now dismiss that for you."
-			setitem(treasure_alb,0)
-			setitem(nov_1_2_cos_c,0)
-			setitem(""nov_1st_cos"",0)
-			setitem(nov_3_merchant,0)
-			setitem(nov_3_acolyte,0)
-			setitem(nov_3_magician,0)
-			setitem(nov_3_archer,0)
+			setvar("treasure_alb",0)
+			setvar("nov_1_2_cos_c",0)
+			setvar("nov_1st_cos",0)
+			setvar("nov_3_merchant",0)
+			setvar("nov_3_acolyte",0)
+			setvar("nov_3_magician",0)
+			setvar("nov_3_archer",0)
 		end
 		dialog "Then, shall we begin the class?"
 		wait()
@@ -1188,22 +1182,22 @@ function new_1_2_Skill_Tutor_83111()
 				dialog "allocate a Skill Point to your"
 				dialog "Basic Skills."
 				if getvar(VAR_JOBLEVEL) == 1 then
-					setitem(nov_get_item03,10)
+					setvar("nov_get_item03",10)
 					getJexp(10)
 				elseif getvar(VAR_JOBLEVEL) == 2 then
-					setitem(nov_get_item03,10)
+					setvar("nov_get_item03",10)
 					getJexp(18)
 				elseif getvar(VAR_JOBLEVEL) == 3 then
-					setitem(nov_get_item03,10)
+					setvar("nov_get_item03",10)
 					getJexp(28)
 				elseif getvar(VAR_JOBLEVEL) == 4 then
-					setitem(nov_get_item03,10)
+					setvar("nov_get_item03",10)
 					getJexp(40)
 				elseif getvar(VAR_JOBLEVEL) == 5 then
-					setitem(nov_get_item03,10)
+					setvar("nov_get_item03",10)
 					getJexp(91)
 				elseif getvar(VAR_JOBLEVEL) == 6 then
-					setitem(nov_get_item03,10)
+					setvar("nov_get_item03",10)
 					getJexp(151)
 				end
 			else
@@ -1233,29 +1227,29 @@ function new_1_2_Skill_Tutor_83111()
 			dialog "^3366FFYou have learnt^000000"
 			dialog "^3366FFFirst Aid Skill^000000"
 			EventAddSkill(NV_FIRSTAID,1)
-			setitem(skill_nov,3)
-			setitem(nov_get_item03,11)
+			setvar("skill_nov",3)
+			setvar("nov_get_item03",11)
 			wait()
 			if getvar(VAR_JOBLEVEL) < 7 then
 				dialog "^3366FFYou have gained a small^000000"
 				dialog "^3366FFamount of Job experience.^00000"
 				if getvar(VAR_JOBLEVEL) == 1 then
-					setitem(nov_get_item03,12)
+					setvar("nov_get_item03",12)
 					getJexp(10)
 				elseif getvar(VAR_JOBLEVEL) == 2 then
-					setitem(nov_get_item03,12)
+					setvar("nov_get_item03",12)
 					getJexp(18)
 				elseif getvar(VAR_JOBLEVEL) == 3 then
-					setitem(nov_get_item03,12)
+					setvar("nov_get_item03",12)
 					getJexp(28)
 				elseif getvar(VAR_JOBLEVEL) == 4 then
-					setitem(nov_get_item03,12)
+					setvar("nov_get_item03",12)
 					getJexp(40)
 				elseif getvar(VAR_JOBLEVEL) == 5 then
-					setitem(nov_get_item03,12)
+					setvar("nov_get_item03",12)
 					getJexp(91)
 				elseif getvar(VAR_JOBLEVEL) == 6 then
-					setitem(nov_get_item03,12)
+					setvar("nov_get_item03",12)
 					getJexp(151)
 				end
 			end
@@ -1283,25 +1277,25 @@ function new_1_2_Skill_Tutor_83111()
 			if getvar(VAR_CLEVEL) < 8 then
 				dialog "Behold: bonus experience!"
 				if getvar(VAR_CLEVEL) == 1 then
-					setitem(nov_get_item03,13)
+					setvar("nov_get_item03",13)
 					getexp(10)
 				elseif getvar(VAR_CLEVEL) == 2 then
-					setitem(nov_get_item03,13)
+					setvar("nov_get_item03",13)
 					getexp(17)
 				elseif getvar(VAR_CLEVEL) == 3 then
-					setitem(nov_get_item03,13)
+					setvar("nov_get_item03",13)
 					getexp(26)
 				elseif getvar(VAR_CLEVEL) == 4 then
-					setitem(nov_get_item03,13)
+					setvar("nov_get_item03",13)
 					getexp(37)
 				elseif getvar(VAR_CLEVEL) == 5 then
-					setitem(nov_get_item03,13)
+					setvar("nov_get_item03",13)
 					getexp(78)
 				elseif getvar(VAR_CLEVEL) == 6 then
-					setitem(nov_get_item03,13)
+					setvar("nov_get_item03",13)
 					getexp(115)
 				elseif getvar(VAR_CLEVEL) == 7 then
-					setitem(nov_get_item03,13)
+					setvar("nov_get_item03",13)
 					getexp(155)
 				end
 			else
@@ -1348,7 +1342,7 @@ function new_1_2_Skill_Tutor_83111()
 		elseif mresult == 3 then
 			Emotion("Skill Tutor",ET_HUK)
 		end
-	elseif (getvar(nov_get_item02) < 10) then
+	elseif (getvar("nov_get_item02") < 10) then
 		dialog "[Cecil]"
 		dialog "So how may"
 		dialog "I help you?"
@@ -1378,7 +1372,7 @@ function new_1_2_Skill_Tutor_83111()
 		elseif mresult == 3 then
 			Emotion("Skill Tutor",ET_HUK)
 		end
-	elseif (getvar(nov_get_item04) < 10) then
+	elseif (getvar("nov_get_item04") < 10) then
 		dialog "[Cecil]"
 		dialog "So how may"
 		dialog "I help you?"
@@ -1414,16 +1408,16 @@ function new_1_2_Skill_Tutor_83111()
 		dialog "[Cecil]"
 		dialog(""..name.."?")
 		dialog "Heh, I like your name!"
-		if (getvar(treasure_alb) > 0) then
+		if (getvar("treasure_alb") > 0) then
 			dialog "You were previously on the longer training course."
 			dialog "I will now dismiss that for you."
-			setitem(treasure_alb,0)
-			setitem(nov_1_2_cos_c,0)
-			setitem(""nov_1st_cos"",0)
-			setitem(nov_3_merchant,0)
-			setitem(nov_3_acolyte,0)
-			setitem(nov_3_magician,0)
-			setitem(nov_3_archer,0)
+			setvar("treasure_alb",0)
+			setvar("nov_1_2_cos_c",0)
+			setvar("nov_1st_cos",0)
+			setvar("nov_3_merchant",0)
+			setvar("nov_3_acolyte",0)
+			setvar("nov_3_magician",0)
+			setvar("nov_3_archer",0)
 		end
 		dialog "Then, shall we begin the class?"
 		wait()
@@ -1468,22 +1462,22 @@ function new_1_2_Skill_Tutor_83111()
 				dialog "allocate a Skill Point to your"
 				dialog "Basic Skills."
 				if getvar(VAR_JOBLEVEL) == 1 then
-					setitem(nov_get_item03,10)
+					setvar("nov_get_item03",10)
 					getJexp(10)
 				elseif getvar(VAR_JOBLEVEL) == 2 then
-					setitem(nov_get_item03,10)
+					setvar("nov_get_item03",10)
 					getJexp(18)
 				elseif getvar(VAR_JOBLEVEL) == 3 then
-					setitem(nov_get_item03,10)
+					setvar("nov_get_item03",10)
 					getJexp(28)
 				elseif getvar(VAR_JOBLEVEL) == 4 then
-					setitem(nov_get_item03,10)
+					setvar("nov_get_item03",10)
 					getJexp(40)
 				elseif getvar(VAR_JOBLEVEL) == 5 then
-					setitem(nov_get_item03,10)
+					setvar("nov_get_item03",10)
 					getJexp(91)
 				elseif getvar(VAR_JOBLEVEL) == 6 then
-					setitem(nov_get_item03,10)
+					setvar("nov_get_item03",10)
 					getJexp(151)
 				end
 			else
@@ -1513,29 +1507,29 @@ function new_1_2_Skill_Tutor_83111()
 			dialog "^3366FFYou have learnt^000000"
 			dialog "^3366FFFirst Aid Skill^000000"
 			EventAddSkill(NV_FIRSTAID,1)
-			setitem(skill_nov,3)
-			setitem(nov_get_item03,11)
+			setvar("skill_nov",3)
+			setvar("nov_get_item03",11)
 			wait()
 			if getvar(VAR_JOBLEVEL) < 7 then
 				dialog "^3366FFYou have gained a small^000000"
 				dialog "^3366FFamount of Job experience.^00000"
 				if getvar(VAR_JOBLEVEL) == 1 then
-					setitem(nov_get_item03,12)
+					setvar("nov_get_item03",12)
 					getJexp(10)
 				elseif getvar(VAR_JOBLEVEL) == 2 then
-					setitem(nov_get_item03,12)
+					setvar("nov_get_item03",12)
 					getJexp(18)
 				elseif getvar(VAR_JOBLEVEL) == 3 then
-					setitem(nov_get_item03,12)
+					setvar("nov_get_item03",12)
 					getJexp(28)
 				elseif getvar(VAR_JOBLEVEL) == 4 then
-					setitem(nov_get_item03,12)
+					setvar("nov_get_item03",12)
 					getJexp(40)
 				elseif getvar(VAR_JOBLEVEL) == 5 then
-					setitem(nov_get_item03,12)
+					setvar("nov_get_item03",12)
 					getJexp(91)
 				elseif getvar(VAR_JOBLEVEL) == 6 then
-					setitem(nov_get_item03,12)
+					setvar("nov_get_item03",12)
 					getJexp(151)
 				end
 			end
@@ -1563,25 +1557,25 @@ function new_1_2_Skill_Tutor_83111()
 			if getvar(VAR_CLEVEL) < 8 then
 				dialog "Behold: bonus experience!"
 				if getvar(VAR_CLEVEL) == 1 then
-					setitem(nov_get_item03,13)
+					setvar("nov_get_item03",13)
 					getexp(10)
 				elseif getvar(VAR_CLEVEL) == 2 then
-					setitem(nov_get_item03,13)
+					setvar("nov_get_item03",13)
 					getexp(17)
 				elseif getvar(VAR_CLEVEL) == 3 then
-					setitem(nov_get_item03,13)
+					setvar("nov_get_item03",13)
 					getexp(26)
 				elseif getvar(VAR_CLEVEL) == 4 then
-					setitem(nov_get_item03,13)
+					setvar("nov_get_item03",13)
 					getexp(37)
 				elseif getvar(VAR_CLEVEL) == 5 then
-					setitem(nov_get_item03,13)
+					setvar("nov_get_item03",13)
 					getexp(78)
 				elseif getvar(VAR_CLEVEL) == 6 then
-					setitem(nov_get_item03,13)
+					setvar("nov_get_item03",13)
 					getexp(115)
 				elseif getvar(VAR_CLEVEL) == 7 then
-					setitem(nov_get_item03,13)
+					setvar("nov_get_item03",13)
 					getexp(155)
 				end
 			else
@@ -1634,7 +1628,7 @@ end
 npc("new_1-2","Item Tutor",SPRITE_4_F_JOB_BLACKSMITH,115,111,3,0,0,"new_1_2_Item_Tutor_115111")
 function new_1_2_Item_Tutor_115111()
 	local name = PcName
-	if ((getvar(nov_get_item02) > 9) and (getvar(nov_get_item03) > 9) and (getvar(nov_get_item04) > 9)) then
+	if ((getvar("nov_get_item02") > 9) and (getvar("nov_get_item03") > 9) and (getvar("nov_get_item04") > 9)) then
 		dialog "[Alice]"
 		dialog "Huh...?"
 		dialog "Do you need help looking for"
@@ -1680,21 +1674,21 @@ function new_1_2_Item_Tutor_115111()
 			dialog "Hmpf...!"
 			close()
 		end
-	elseif (getvar(nov_get_item04) < 10) then
+	elseif (getvar("nov_get_item04") < 10) then
 		dialog "[Alice]"
 		dialog "*Yawn~*"
 		dialog "This is so boring."
 		dialog "Oh! Hello, you're new here."
-		if (getvar(treasure_alb) > 0) then
+		if (getvar("treasure_alb") > 0) then
 			dialog "You were previously on the longer training course."
 			dialog "I will now dismiss that for you."
-			setitem(treasure_alb,0)
-			setitem(nov_1_2_cos_c,0)
-			setitem(""nov_1st_cos"",0)
-			setitem(nov_3_merchant,0)
-			setitem(nov_3_acolyte,0)
-			setitem(nov_3_magician,0)
-			setitem(nov_3_archer,0)
+			setvar("treasure_alb",0)
+			setvar("nov_1_2_cos_c",0)
+			setvar("nov_1st_cos",0)
+			setvar("nov_3_merchant",0)
+			setvar("nov_3_acolyte",0)
+			setvar("nov_3_magician",0)
+			setvar("nov_3_archer",0)
 		end
 		dialog "So, you have come to attend"
 		dialog "my Item Information class?"
@@ -1721,7 +1715,7 @@ function new_1_2_Item_Tutor_115111()
 			dialog "gave you a Novice Potion. You can"
 			dialog "drink it by double-clicking it. Go"
 			dialog "ahead, try it!"
-			setitem(nov_get_item04,10)
+			setvar("nov_get_item04",10)
 			getitem(Novice_Potion,1)
 			hpdrain(50)
 			wait()
@@ -1733,25 +1727,25 @@ function new_1_2_Item_Tutor_115111()
 					dialog "a little reward"
 					dialog "just for listening."
 					if getvar(VAR_CLEVEL) == 1 then
-						setitem(nov_get_item04,11)
+						setvar("nov_get_item04",11)
 						getexp(10)
 					elseif getvar(VAR_CLEVEL) == 2 then
-						setitem(nov_get_item04,11)
+						setvar("nov_get_item04",11)
 						getexp(17)
 					elseif getvar(VAR_CLEVEL) == 3 then
-						setitem(nov_get_item04,11)
+						setvar("nov_get_item04",11)
 						getexp(26)
 					elseif getvar(VAR_CLEVEL) == 4 then
-						setitem(nov_get_item04,11)
+						setvar("nov_get_item04",11)
 						getexp(37)
 					elseif getvar(VAR_CLEVEL) == 5 then
-						setitem(nov_get_item04,11)
+						setvar("nov_get_item04",11)
 						getexp(78)
 					elseif getvar(VAR_CLEVEL) == 6 then
-						setitem(nov_get_item04,11)
+						setvar("nov_get_item04",11)
 						getexp(115)
 					elseif getvar(VAR_CLEVEL) == 7 then
-						setitem(nov_get_item04,11)
+						setvar("nov_get_item04",11)
 						getexp(155)
 					end
 				else
@@ -1783,7 +1777,7 @@ function new_1_2_Item_Tutor_115111()
 			dialog "on the Novice Slippers"
 			dialog "I just gave you to"
 			dialog "put them on."
-			setitem(nov_get_item04,12)
+			setvar("nov_get_item04",12)
 			getitem(Novice_Hood,1)
 			getitem(Novice_Boots,1)
 			getitem(Novice_Egg_Cap,1)
@@ -1796,25 +1790,25 @@ function new_1_2_Item_Tutor_115111()
 					dialog "You did it!"
 					dialog "You deserve a reward!"
 					if getvar(VAR_CLEVEL) == 1 then
-						setitem(nov_get_item04,13)
+						setvar("nov_get_item04",13)
 						getexp(10)
 					elseif getvar(VAR_CLEVEL) == 2 then
-						setitem(nov_get_item04,13)
+						setvar("nov_get_item04",13)
 						getexp(17)
 					elseif getvar(VAR_CLEVEL) == 3 then
-						setitem(nov_get_item04,13)
+						setvar("nov_get_item04",13)
 						getexp(26)
 					elseif getvar(VAR_CLEVEL) == 4 then
-						setitem(nov_get_item04,13)
+						setvar("nov_get_item04",13)
 						getexp(37)
 					elseif getvar(VAR_CLEVEL) == 5 then
-						setitem(nov_get_item04,13)
+						setvar("nov_get_item04",13)
 						getexp(78)
 					elseif getvar(VAR_CLEVEL) == 6 then
-						setitem(nov_get_item04,13)
+						setvar("nov_get_item04",13)
 						getexp(115)
 					elseif getvar(VAR_CLEVEL) == 7 then
-						setitem(nov_get_item04,13)
+						setvar("nov_get_item04",13)
 						getexp(155)
 					end
 				else
@@ -1870,22 +1864,22 @@ function new_1_2_Item_Tutor_115111()
 			dialog "and don't need to be activated."
 			if getvar(VAR_JOBLEVEL) < 7 then
 				if getvar(VAR_JOBLEVEL) == 1 then
-					setitem(nov_get_item04,14)
+					setvar("nov_get_item04",14)
 					getJexp(10)
 				elseif getvar(VAR_JOBLEVEL) == 2 then
-					setitem(nov_get_item04,14)
+					setvar("nov_get_item04",14)
 					getJexp(18)
 				elseif getvar(VAR_JOBLEVEL) == 3 then
-					setitem(nov_get_item04,14)
+					setvar("nov_get_item04",14)
 					getJexp(28)
 				elseif getvar(VAR_JOBLEVEL) == 4 then
-					setitem(nov_get_item04,14)
+					setvar("nov_get_item04",14)
 					getJexp(40)
 				elseif getvar(VAR_JOBLEVEL) == 5 then
-					setitem(nov_get_item04,14)
+					setvar("nov_get_item04",14)
 					getJexp(91)
 				elseif getvar(VAR_JOBLEVEL) == 6 then
-					setitem(nov_get_item04,14)
+					setvar("nov_get_item04",14)
 					getJexp(151)
 				end
 			end
@@ -1902,7 +1896,7 @@ function new_1_2_Item_Tutor_115111()
 			dialog "Grounds or you could be stuck here"
 			dialog "forever. Those items are for when"
 			dialog "you graduate, okay?"
-			setitem(nov_get_item04,15)
+			setvar("nov_get_item04",15)
 			getitem(Wing_Of_Fly,10)
 			getitem(Wing_Of_Butterfly,2)
 			getitem(Novice_Potion,50)
@@ -1913,22 +1907,22 @@ function new_1_2_Item_Tutor_115111()
 				dialog "I will give"
 				dialog "you some Job experience!"
 				if getvar(VAR_JOBLEVEL) == 1 then
-					setitem(nov_get_item04,16)
+					setvar("nov_get_item04",16)
 					getJexp(10)
 				elseif getvar(VAR_JOBLEVEL) == 2 then
-					setitem(nov_get_item04,16)
+					setvar("nov_get_item04",16)
 					getJexp(18)
 				elseif getvar(VAR_JOBLEVEL) == 3 then
-					setitem(nov_get_item04,16)
+					setvar("nov_get_item04",16)
 					getJexp(28)
 				elseif getvar(VAR_JOBLEVEL) == 4 then
-					setitem(nov_get_item04,16)
+					setvar("nov_get_item04",16)
 					getJexp(40)
 				elseif getvar(VAR_JOBLEVEL) == 5 then
-					setitem(nov_get_item04,16)
+					setvar("nov_get_item04",16)
 					getJexp(91)
 				elseif getvar(VAR_JOBLEVEL) == 6 then
-					setitem(nov_get_item04,16)
+					setvar("nov_get_item04",16)
 					getJexp(151)
 				end
 			else
@@ -2019,7 +2013,7 @@ function new_1_2_Item_Tutor_115111()
 			dialog "Alright then, take care~"
 			close()
 		end
-	elseif (getvar(nov_get_item02) < 10) then
+	elseif (getvar("nov_get_item02") < 10) then
 		dialog "[Alice]"
 		dialog "So how may"
 		dialog "I help you?"
@@ -2078,7 +2072,7 @@ function new_1_2_Item_Tutor_115111()
 			dialog "Alright then, take care~"
 			close()
 		end
-	elseif (getvar(nov_get_item03) < 10) then
+	elseif (getvar("nov_get_item03") < 10) then
 		dialog "[Alice]"
 		dialog "So how may"
 		dialog "I help you?"
@@ -2141,16 +2135,16 @@ function new_1_2_Item_Tutor_115111()
 		dialog "*Yawn~*"
 		dialog "This is so boring."
 		dialog "Oh! Hello, you're new here."
-		if (getvar(treasure_alb) > 0) then
+		if (getvar("treasure_alb") > 0) then
 			dialog "You were previously on the longer training course."
 			dialog "I will now dismiss that for you."
-			setitem(treasure_alb,0)
-			setitem(nov_1_2_cos_c,0)
-			setitem(""nov_1st_cos"",0)
-			setitem(nov_3_merchant,0)
-			setitem(nov_3_acolyte,0)
-			setitem(nov_3_magician,0)
-			setitem(nov_3_archer,0)
+			setvar("treasure_alb",0)
+			setvar("nov_1_2_cos_c",0)
+			setvar("nov_1st_cos",0)
+			setvar("nov_3_merchant",0)
+			setvar("nov_3_acolyte",0)
+			setvar("nov_3_magician",0)
+			setvar("nov_3_archer",0)
 		end
 		dialog "So, you have come to attend"
 		dialog "my Item Information class?"
@@ -2177,7 +2171,7 @@ function new_1_2_Item_Tutor_115111()
 			dialog "gave you a Novice Potion. You can"
 			dialog "drink it by double-clicking it. Go"
 			dialog "ahead, try it!"
-			setitem(nov_get_item04,10)
+			setvar("nov_get_item04",10)
 			getitem(Novice_Potion,1)
 			hpdrain(50)
 			wait()
@@ -2189,25 +2183,25 @@ function new_1_2_Item_Tutor_115111()
 					dialog "a little reward"
 					dialog "just for listening."
 					if getvar(VAR_CLEVEL) == 1 then
-						setitem(nov_get_item04,11)
+						setvar("nov_get_item04",11)
 						getexp(10)
 					elseif getvar(VAR_CLEVEL) == 2 then
-						setitem(nov_get_item04,11)
+						setvar("nov_get_item04",11)
 						getexp(17)
 					elseif getvar(VAR_CLEVEL) == 3 then
-						setitem(nov_get_item04,11)
+						setvar("nov_get_item04",11)
 						getexp(26)
 					elseif getvar(VAR_CLEVEL) == 4 then
-						setitem(nov_get_item04,11)
+						setvar("nov_get_item04",11)
 						getexp(37)
 					elseif getvar(VAR_CLEVEL) == 5 then
-						setitem(nov_get_item04,11)
+						setvar("nov_get_item04",11)
 						getexp(78)
 					elseif getvar(VAR_CLEVEL) == 6 then
-						setitem(nov_get_item04,11)
+						setvar("nov_get_item04",11)
 						getexp(115)
 					elseif getvar(VAR_CLEVEL) == 7 then
-						setitem(nov_get_item04,11)
+						setvar("nov_get_item04",11)
 						getexp(155)
 					end
 				else
@@ -2239,7 +2233,7 @@ function new_1_2_Item_Tutor_115111()
 			dialog "on the Novice Slippers"
 			dialog "I just gave you to"
 			dialog "put them on."
-			setitem(nov_get_item04,12)
+			setvar("nov_get_item04",12)
 			getitem(Novice_Hood,1)
 			getitem(Novice_Boots,1)
 			getitem(Novice_Egg_Cap,1)
@@ -2252,25 +2246,25 @@ function new_1_2_Item_Tutor_115111()
 					dialog "You did it!"
 					dialog "You deserve a reward!"
 					if getvar(VAR_CLEVEL) == 1 then
-						setitem(nov_get_item04,13)
+						setvar("nov_get_item04",13)
 						getexp(10)
 					elseif getvar(VAR_CLEVEL) == 2 then
-						setitem(nov_get_item04,13)
+						setvar("nov_get_item04",13)
 						getexp(17)
 					elseif getvar(VAR_CLEVEL) == 3 then
-						setitem(nov_get_item04,13)
+						setvar("nov_get_item04",13)
 						getexp(26)
 					elseif getvar(VAR_CLEVEL) == 4 then
-						setitem(nov_get_item04,13)
+						setvar("nov_get_item04",13)
 						getexp(37)
 					elseif getvar(VAR_CLEVEL) == 5 then
-						setitem(nov_get_item04,13)
+						setvar("nov_get_item04",13)
 						getexp(78)
 					elseif getvar(VAR_CLEVEL) == 6 then
-						setitem(nov_get_item04,13)
+						setvar("nov_get_item04",13)
 						getexp(115)
 					elseif getvar(VAR_CLEVEL) == 7 then
-						setitem(nov_get_item04,13)
+						setvar("nov_get_item04",13)
 						getexp(155)
 					end
 				else
@@ -2326,22 +2320,22 @@ function new_1_2_Item_Tutor_115111()
 			dialog "and don't need to be activated."
 			if getvar(VAR_JOBLEVEL) < 7 then
 				if getvar(VAR_JOBLEVEL) == 1 then
-					setitem(nov_get_item04,14)
+					setvar("nov_get_item04",14)
 					getJexp(10)
 				elseif getvar(VAR_JOBLEVEL) == 2 then
-					setitem(nov_get_item04,14)
+					setvar("nov_get_item04",14)
 					getJexp(18)
 				elseif getvar(VAR_JOBLEVEL) == 3 then
-					setitem(nov_get_item04,14)
+					setvar("nov_get_item04",14)
 					getJexp(28)
 				elseif getvar(VAR_JOBLEVEL) == 4 then
-					setitem(nov_get_item04,14)
+					setvar("nov_get_item04",14)
 					getJexp(40)
 				elseif getvar(VAR_JOBLEVEL) == 5 then
-					setitem(nov_get_item04,14)
+					setvar("nov_get_item04",14)
 					getJexp(91)
 				elseif getvar(VAR_JOBLEVEL) == 6 then
-					setitem(nov_get_item04,14)
+					setvar("nov_get_item04",14)
 					getJexp(151)
 				end
 			end
@@ -2358,7 +2352,7 @@ function new_1_2_Item_Tutor_115111()
 			dialog "Grounds or you could be stuck here"
 			dialog "forever. Those items are for when"
 			dialog "you graduate, okay?"
-			setitem(nov_get_item04,15)
+			setvar("nov_get_item04",15)
 			getitem(Wing_Of_Fly,10)
 			getitem(Wing_Of_Butterfly,2)
 			getitem(Novice_Potion,50)
@@ -2369,22 +2363,22 @@ function new_1_2_Item_Tutor_115111()
 				dialog "I will give"
 				dialog "you some Job experience!"
 				if getvar(VAR_JOBLEVEL) == 1 then
-					setitem(nov_get_item04,16)
+					setvar("nov_get_item04",16)
 					getJexp(10)
 				elseif getvar(VAR_JOBLEVEL) == 2 then
-					setitem(nov_get_item04,16)
+					setvar("nov_get_item04",16)
 					getJexp(18)
 				elseif getvar(VAR_JOBLEVEL) == 3 then
-					setitem(nov_get_item04,16)
+					setvar("nov_get_item04",16)
 					getJexp(28)
 				elseif getvar(VAR_JOBLEVEL) == 4 then
-					setitem(nov_get_item04,16)
+					setvar("nov_get_item04",16)
 					getJexp(40)
 				elseif getvar(VAR_JOBLEVEL) == 5 then
-					setitem(nov_get_item04,16)
+					setvar("nov_get_item04",16)
 					getJexp(91)
 				elseif getvar(VAR_JOBLEVEL) == 6 then
-					setitem(nov_get_item04,16)
+					setvar("nov_get_item04",16)
 					getJexp(151)
 				end
 			else
@@ -2485,14 +2479,14 @@ function new_1_2_Kafra_Employee_118108()
 	dialog "Kafra Corporation."
 	dialog "The Kafra services are"
 	dialog "always on your side."
-	if (getvar(treasure_alb) > 0) then
-		setitem(treasure_alb,0)
-		setitem(nov_1_2_cos_c,0)
-		setitem(""nov_1st_cos"",0)
-		setitem(nov_3_merchant,0)
-		setitem(nov_3_acolyte,0)
-		setitem(nov_3_magician,0)
-		setitem(nov_3_archer,0)
+	if (getvar("treasure_alb") > 0) then
+		setvar("treasure_alb",0)
+		setvar("nov_1_2_cos_c",0)
+		setvar("nov_1st_cos",0)
+		setvar("nov_3_merchant",0)
+		setvar("nov_3_acolyte",0)
+		setvar("nov_3_magician",0)
+		setvar("nov_3_archer",0)
 	end
 	wait()
 	dialog "[Kafra Employee]"
@@ -2508,7 +2502,7 @@ function new_1_2_Kafra_Employee_118108()
 	wait()
 	local mresult = menu("Teleport Service","About Kafra Service")
 	if mresult == 1 then
-		if ((getvar(nov_get_item02) < 10) and (getvar(nov_get_item03) < 10) and (getvar(nov_get_item04) < 10)) then
+		if ((getvar("nov_get_item02") < 10) and (getvar("nov_get_item03") < 10) and (getvar("nov_get_item04") < 10)) then
 			dialog "[Kafra Employee]"
 			dialog "I see, you must want to teleport to"
 			dialog "a town in Rune-Midgard immediately."
@@ -2554,8 +2548,8 @@ function new_1_2_Kafra_Employee_118108()
 				dialog "to go to Prontera."
 				dialog "May God be with you."
 				close()
-				if (getvar(nov_get_item05) < 11) then
-					setitem(nov_get_item05,11)
+				if (getvar("nov_get_item05") < 11) then
+					setvar("nov_get_item05",11)
 					getitem(Novice_Potion,100)
 					getitem(Novice_Knife,1)
 					getitem(Novice_Boots,1)
@@ -2576,8 +2570,8 @@ function new_1_2_Kafra_Employee_118108()
 				dialog "to go to Morroc."
 				dialog "May God be with you."
 				close()
-				if (getvar(nov_get_item05) < 11) then
-					setitem(nov_get_item05,11)
+				if (getvar("nov_get_item05") < 11) then
+					setvar("nov_get_item05",11)
 					getitem(Novice_Potion,100)
 					getitem(Novice_Knife,1)
 					getitem(Novice_Boots,1)
@@ -2598,8 +2592,8 @@ function new_1_2_Kafra_Employee_118108()
 				dialog "to go to Payon."
 				dialog "May God be with you."
 				close()
-				if (getvar(nov_get_item05) < 11) then
-					setitem(nov_get_item05,11)
+				if (getvar("nov_get_item05") < 11) then
+					setvar("nov_get_item05",11)
 					getitem(Novice_Potion,100)
 					getitem(Novice_Knife,1)
 					getitem(Novice_Boots,1)
@@ -2620,8 +2614,8 @@ function new_1_2_Kafra_Employee_118108()
 				dialog "to go to Alberta."
 				dialog "May God be with you."
 				close()
-				if (getvar(nov_get_item05) < 11) then
-					setitem(nov_get_item05,11)
+				if (getvar("nov_get_item05") < 11) then
+					setvar("nov_get_item05",11)
 					getitem(Novice_Potion,100)
 					getitem(Novice_Knife,1)
 					getitem(Novice_Boots,1)
@@ -2642,8 +2636,8 @@ function new_1_2_Kafra_Employee_118108()
 				dialog "to go to Geffen."
 				dialog "May God be with you."
 				close()
-				if (getvar(nov_get_item05) < 11) then
-					setitem(nov_get_item05,11)
+				if (getvar("nov_get_item05") < 11) then
+					setvar("nov_get_item05",11)
 					getitem(Novice_Potion,100)
 					getitem(Novice_Knife,1)
 					getitem(Novice_Boots,1)
@@ -2675,8 +2669,8 @@ function new_1_2_Kafra_Employee_118108()
 				dialog "to go to Prontera."
 				dialog "May God be with you."
 				close()
-				if (getvar(nov_get_item05) < 11) then
-					setitem(nov_get_item05,11)
+				if (getvar("nov_get_item05") < 11) then
+					setvar("nov_get_item05",11)
 					getitem(Cargo_Free_Ticket,5)
 					getitem(Warp_Free_Ticket,5)
 				end
@@ -2689,8 +2683,8 @@ function new_1_2_Kafra_Employee_118108()
 				dialog "to go to Morroc."
 				dialog "May God be with you."
 				close()
-				if (getvar(nov_get_item05) < 11) then
-					setitem(nov_get_item05,11)
+				if (getvar("nov_get_item05") < 11) then
+					setvar("nov_get_item05",11)
 					getitem(Cargo_Free_Ticket,5)
 					getitem(Warp_Free_Ticket,5)
 				end
@@ -2703,8 +2697,8 @@ function new_1_2_Kafra_Employee_118108()
 				dialog "to go to Payon."
 				dialog "May God be with you."
 				close()
-				if (getvar(nov_get_item05) < 11) then
-					setitem(nov_get_item05,11)
+				if (getvar("nov_get_item05") < 11) then
+					setvar("nov_get_item05",11)
 					getitem(Cargo_Free_Ticket,5)
 					getitem(Warp_Free_Ticket,5)
 				end
@@ -2717,8 +2711,8 @@ function new_1_2_Kafra_Employee_118108()
 				dialog "to go to Alberta."
 				dialog "May God be with you."
 				close()
-				if (getvar(nov_get_item05) < 11) then
-					setitem(nov_get_item05,11)
+				if (getvar("nov_get_item05") < 11) then
+					setvar("nov_get_item05",11)
 					getitem(Cargo_Free_Ticket,5)
 					getitem(Warp_Free_Ticket,5)
 				end
@@ -2731,8 +2725,8 @@ function new_1_2_Kafra_Employee_118108()
 				dialog "to go to Geffen."
 				dialog "May God be with you."
 				close()
-				if (getvar(nov_get_item05) < 11) then
-					setitem(nov_get_item05,11)
+				if (getvar("nov_get_item05") < 11) then
+					setvar("nov_get_item05",11)
 					getitem(Cargo_Free_Ticket,5)
 					getitem(Warp_Free_Ticket,5)
 				end
@@ -2771,28 +2765,28 @@ function new_1_2_Kafra_Employee_118108()
 				dialog "is also provided by"
 				dialog "the Kafra Corporation"
 				dialog "free of charge~!"
-				if (getvar(""nov_1st_cos"") < 20) then
+				if (getvar("nov_1st_cos") < 20) then
 					if getvar(VAR_CLEVEL) < 8 then
 						if getvar(VAR_CLEVEL) == 1 then
-							setitem(""nov_1st_cos"",20)
+							setvar("nov_1st_cos",20)
 							getexp(10)
 						elseif getvar(VAR_CLEVEL) == 2 then
-							setitem(""nov_1st_cos"",20)
+							setvar("nov_1st_cos",20)
 							getexp(17)
 						elseif getvar(VAR_CLEVEL) == 3 then
-							setitem(""nov_1st_cos"",20)
+							setvar("nov_1st_cos",20)
 							getexp(26)
 						elseif getvar(VAR_CLEVEL) == 4 then
-							setitem(""nov_1st_cos"",20)
+							setvar("nov_1st_cos",20)
 							getexp(37)
 						elseif getvar(VAR_CLEVEL) == 5 then
-							setitem(""nov_1st_cos"",20)
+							setvar("nov_1st_cos",20)
 							getexp(78)
 						elseif getvar(VAR_CLEVEL) == 6 then
-							setitem(""nov_1st_cos"",20)
+							setvar("nov_1st_cos",20)
 							getexp(115)
 						elseif getvar(VAR_CLEVEL) == 7 then
-							setitem(""nov_1st_cos"",20)
+							setvar("nov_1st_cos",20)
 							getexp(155)
 						end
 					end
@@ -2848,25 +2842,25 @@ function new_1_2_Kafra_Employee_118108()
 				dialog "one Inventory Slot. The maximum"
 				dialog "number of items that can be placed"
 				dialog "in Kafra Storage is 30,000."
-				if (getvar(nov_3_archer) < 20) then
+				if (getvar("nov_3_archer") < 20) then
 					if getvar(VAR_JOBLEVEL) < 7 then
 						if getvar(VAR_JOBLEVEL) == 1 then
-							setitem(nov_3_archer,20)
+							setvar("nov_3_archer",20)
 							getJexp(10)
 						elseif getvar(VAR_JOBLEVEL) == 2 then
-							setitem(nov_3_archer,20)
+							setvar("nov_3_archer",20)
 							getJexp(18)
 						elseif getvar(VAR_JOBLEVEL) == 3 then
-							setitem(nov_3_archer,20)
+							setvar("nov_3_archer",20)
 							getJexp(28)
 						elseif getvar(VAR_JOBLEVEL) == 4 then
-							setitem(nov_3_archer,20)
+							setvar("nov_3_archer",20)
 							getJexp(40)
 						elseif getvar(VAR_JOBLEVEL) == 5 then
-							setitem(nov_3_archer,20)
+							setvar("nov_3_archer",20)
 							getJexp(91)
 						elseif getvar(VAR_JOBLEVEL) == 6 then
-							setitem(nov_3_archer,20)
+							setvar("nov_3_archer",20)
 							getJexp(151)
 						end
 					end
@@ -3862,7 +3856,7 @@ end
 
 npc("new_1-2","Helper",SPRITE_4_M_02,17,182,5,0,0,"new_1_2_Helper_17182")
 function new_1_2_Helper_17182()
-	if (getvar(nov_2nd_cos) < 11) then
+	if (getvar("nov_2nd_cos") < 11) then
 		dialog "[Elmeen]"
 		dialog "Congratulations!"
 		dialog "You have passed the 1st training"
@@ -3956,27 +3950,27 @@ function new_1_2_Helper_17182()
 			wait()
 			dialog "[Elmeen]"
 			dialog "Haaaaaa~!"
-			if (getvar(nov_2nd_cos) < 1) then
+			if (getvar("nov_2nd_cos") < 1) then
 				if (getvar(VAR_CLEVEL) == 1) then
-					setitem(nov_2nd_cos,12)
+					setvar("nov_2nd_cos",12)
 					getexp(9)
 				elseif (getvar(VAR_CLEVEL) == 2) then
-					setitem(nov_2nd_cos,13)
+					setvar("nov_2nd_cos",13)
 					getexp(16)
 				elseif (getvar(VAR_CLEVEL) == 3) then
-					setitem(nov_2nd_cos,14)
+					setvar("nov_2nd_cos",14)
 					getexp(25)
 				elseif (getvar(VAR_CLEVEL) == 4) then
-					setitem(nov_2nd_cos,15)
+					setvar("nov_2nd_cos",15)
 					getexp(36)
 				elseif (getvar(VAR_CLEVEL) == 5) then
-					setitem(nov_2nd_cos,16)
+					setvar("nov_2nd_cos",16)
 					getexp(77)
 				elseif (getvar(VAR_CLEVEL) == 6) then
-					setitem(nov_2nd_cos,17)
+					setvar("nov_2nd_cos",17)
 					getexp(112)
 				elseif (getvar(VAR_CLEVEL) == 7) then
-					setitem(nov_2nd_cos,18)
+					setvar("nov_2nd_cos",18)
 					getexp(153)
 				end
 			end
@@ -4366,7 +4360,7 @@ end
 
 npc("new_1-2","Entrance Guard",SPRITE_4_F_03,38,182,3,0,0,"new_1_2_Entrance_Guard_38182")
 function new_1_2_Entrance_Guard_38182()
-	if (getvar(nov_2nd_cos) == 0) then
+	if (getvar("nov_2nd_cos") == 0) then
 		dialog "[Muriel]"
 		dialog "I'm sorry, but I can't let anybody"
 		dialog "who hasn't been instructed on"
@@ -4379,7 +4373,7 @@ function new_1_2_Entrance_Guard_38182()
 		dialog "first, so that you can receive some"
 		dialog "battle instructions?"
 		close()
-	elseif ((getvar(nov_2nd_cos) > 0) and (getvar(nov_2nd_cos) < 21)) then
+	elseif ((getvar("nov_2nd_cos") > 0) and (getvar("nov_2nd_cos") < 21)) then
 		dialog "[Muriel]"
 		dialog "Field Combat Training is an actual"
 		dialog "fighting class where you can gain"
@@ -4416,22 +4410,22 @@ function new_1_2_Entrance_Guard_38182()
 			dialog "I'm going to give you some useful"
 			dialog "supplies, so please use them in"
 			dialog "case of an emergency."
-			if (getvar(nov_2nd_cos) == 12) then
-				setitem(nov_2nd_cos,22)
-			elseif (getvar(nov_2nd_cos) == 13) then
-				setitem(nov_2nd_cos,23)
-			elseif (getvar(nov_2nd_cos) == 14) then
-				setitem(nov_2nd_cos,24)
-			elseif (getvar(nov_2nd_cos) == 15) then
-				setitem(nov_2nd_cos,25)
-			elseif (getvar(nov_2nd_cos) == 16) then
-				setitem(nov_2nd_cos,26)
-			elseif (getvar(nov_2nd_cos) == 17) then
-				setitem(nov_2nd_cos,27)
-			elseif (getvar(nov_2nd_cos) == 18) then
-				setitem(nov_2nd_cos,28)
+			if (getvar("nov_2nd_cos") == 12) then
+				setvar("nov_2nd_cos",22)
+			elseif (getvar("nov_2nd_cos") == 13) then
+				setvar("nov_2nd_cos",23)
+			elseif (getvar("nov_2nd_cos") == 14) then
+				setvar("nov_2nd_cos",24)
+			elseif (getvar("nov_2nd_cos") == 15) then
+				setvar("nov_2nd_cos",25)
+			elseif (getvar("nov_2nd_cos") == 16) then
+				setvar("nov_2nd_cos",26)
+			elseif (getvar("nov_2nd_cos") == 17) then
+				setvar("nov_2nd_cos",27)
+			elseif (getvar("nov_2nd_cos") == 18) then
+				setvar("nov_2nd_cos",28)
 			else
-				setitem(nov_2nd_cos,29)
+				setvar("nov_2nd_cos",29)
 			end
 			getitem(Powder_Of_Butterfly,1)
 			getitem(Wing_Of_Fly,9)
@@ -4455,7 +4449,7 @@ function new_1_2_Entrance_Guard_38182()
 			close()
 		end
 		close()
-	elseif ((getvar(nov_2nd_cos) > 20) and (getvar(nov_2nd_cos) < 31)) then
+	elseif ((getvar("nov_2nd_cos") > 20) and (getvar("nov_2nd_cos") < 31)) then
 		dialog "[Muriel]"
 		dialog "Oh well, I told you to be careful."
 		dialog "Cheer up! It's not a big deal."
@@ -4474,29 +4468,29 @@ function new_1_2_Entrance_Guard_38182()
 			dialog "I will give you"
 			dialog "some supplies again."
 			dialog "Please be careful!"
-			if (getvar(nov_2nd_cos) == 22) then
-				setitem(nov_2nd_cos,33)
+			if (getvar("nov_2nd_cos") == 22) then
+				setvar("nov_2nd_cos",33)
 				getexp(16)
-			elseif (getvar(nov_2nd_cos) == 23) then
-				setitem(nov_2nd_cos,34)
+			elseif (getvar("nov_2nd_cos") == 23) then
+				setvar("nov_2nd_cos",34)
 				getexp(25)
-			elseif (getvar(nov_2nd_cos) == 24) then
-				setitem(nov_2nd_cos,35)
+			elseif (getvar("nov_2nd_cos") == 24) then
+				setvar("nov_2nd_cos",35)
 				getexp(36)
-			elseif (getvar(nov_2nd_cos) == 25) then
-				setitem(nov_2nd_cos,36)
+			elseif (getvar("nov_2nd_cos") == 25) then
+				setvar("nov_2nd_cos",36)
 				getexp(77)
-			elseif (getvar(nov_2nd_cos) == 26) then
-				setitem(nov_2nd_cos,37)
+			elseif (getvar("nov_2nd_cos") == 26) then
+				setvar("nov_2nd_cos",37)
 				getexp(112)
-			elseif (getvar(nov_2nd_cos) == 27) then
-				setitem(nov_2nd_cos,38)
+			elseif (getvar("nov_2nd_cos") == 27) then
+				setvar("nov_2nd_cos",38)
 				getexp(153)
-			elseif (getvar(nov_2nd_cos) == 28) then
-				setitem(nov_2nd_cos,39)
+			elseif (getvar("nov_2nd_cos") == 28) then
+				setvar("nov_2nd_cos",39)
 				getexp(200)
-			elseif (getvar(nov_2nd_cos) == 29) then
-				setitem(nov_2nd_cos,40)
+			elseif (getvar("nov_2nd_cos") == 29) then
+				setvar("nov_2nd_cos",40)
 				getexp(200)
 			end
 			hpheal(100)
@@ -4516,7 +4510,7 @@ function new_1_2_Entrance_Guard_38182()
 			close()
 		end
 		close()
-	elseif (getvar(nov_2nd_cos) > 30) then
+	elseif (getvar("nov_2nd_cos") > 30) then
 		dialog "[Muriel]"
 		dialog "Oh well, I told you to be careful."
 		dialog "Cheer up! It's not a big deal."
@@ -4684,7 +4678,7 @@ function new_1_4_Final_Tutor_10029()
 	local acolyte_p
 	local merchant_p
 	local job_c
-	if (getvar(nov_3_swordman) == 20) then
+	if (getvar("nov_3_swordman") == 20) then
 		dialog "[Hanson]"
 		dialog "Good day,"
 		dialog("^A62A2A"..name.."^000000,")
@@ -5037,7 +5031,7 @@ function new_1_4_Final_Tutor_10029()
 			dialog "earned them."
 			wait()
 			---------------------------------------------------------------------------------------------------------------------------------------------------
-			setitem(nov_3_swordman,40)
+			setvar("nov_3_swordman",40)
 			getitem(Red_Potion,4)
 			getitem(Yellow_Potion,2)
 			getitem(Green_Potion,2)
@@ -5225,7 +5219,7 @@ function new_1_4_Final_Tutor_10029()
 					dialog "7 Phracon"
 					wait()
 					---------------------------------------------------------------------------------------------------------------------------------------------------
-					setitem(nov_3_swordman,40)
+					setvar("nov_3_swordman",40)
 					getitem(Cargo_Free_Ticket,5)
 					getitem(Warp_Free_Ticket,5)
 					getitem(Falchion,1)
@@ -5308,7 +5302,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -5369,7 +5363,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -5436,7 +5430,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -5497,7 +5491,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -5558,7 +5552,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -5635,7 +5629,7 @@ function new_1_4_Final_Tutor_10029()
 					dialog "7 Phracon"
 					wait()
 					---------------------------------------------------------------------------------------------------------------------------------------------------
-					setitem(nov_3_swordman,40)
+					setvar("nov_3_swordman",40)
 					getitem(Cargo_Free_Ticket,5)
 					getitem(Warp_Free_Ticket,5)
 					getitem(Rod,1)
@@ -5726,7 +5720,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -5787,7 +5781,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -5854,7 +5848,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -5915,7 +5909,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -5976,7 +5970,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -6052,7 +6046,7 @@ function new_1_4_Final_Tutor_10029()
 					dialog "7 Phracon"
 					wait()
 					---------------------------------------------------------------------------------------------------------------------------------------------------
-					setitem(nov_3_swordman,40)
+					setvar("nov_3_swordman",40)
 					getitem(Cargo_Free_Ticket,4)
 					getitem(Warp_Free_Ticket,4)
 					getitem(Cart_Free_Ticket,4)
@@ -6135,7 +6129,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -6196,7 +6190,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -6263,7 +6257,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -6324,7 +6318,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -6385,7 +6379,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -6464,7 +6458,7 @@ function new_1_4_Final_Tutor_10029()
 					dialog "7 Phracon"
 					wait()
 					-----------------------------------------------------------------------------------------------------------------------------------------------------()
-					setitem(nov_3_swordman,40)
+					setvar("nov_3_swordman",40)
 					getitem(Cargo_Free_Ticket,5)
 					getitem(Warp_Free_Ticket,5)
 					getitem(Main_Gauche,1)
@@ -6547,7 +6541,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -6608,7 +6602,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -6669,7 +6663,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -6730,7 +6724,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -6791,7 +6785,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -6867,7 +6861,7 @@ function new_1_4_Final_Tutor_10029()
 					dialog "7 Phracon"
 					wait()
 					-----------------------------------------------------------------------------------------------------------------------------------------------------()
-					setitem(nov_3_swordman,40)
+					setvar("nov_3_swordman",40)
 					getitem(Cargo_Free_Ticket,5)
 					getitem(Warp_Free_Ticket,5)
 					getitem(Composite_Bow,1)
@@ -6949,7 +6943,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -7010,7 +7004,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -7071,7 +7065,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -7138,7 +7132,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -7199,7 +7193,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -7278,7 +7272,7 @@ function new_1_4_Final_Tutor_10029()
 					dialog "7 Phracon"
 					wait()
 					-----------------------------------------------------------------------------------------------------------------------------------------------------()
-					setitem(nov_3_swordman,40)
+					setvar("nov_3_swordman",40)
 					getitem(Cargo_Free_Ticket,5)
 					getitem(Warp_Free_Ticket,5)
 					getitem(Mace,1)
@@ -7361,7 +7355,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -7422,7 +7416,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -7483,7 +7477,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -7550,7 +7544,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -7611,7 +7605,7 @@ function new_1_4_Final_Tutor_10029()
 						dialog "1 Adventurer's Suit"
 						dialog "^000099100 Zeny^000000"
 						--------------------------------------------------------------------------------------------------------------------------------------------------------------------------()
-						setitem(nov_3_swordman,40)
+						setvar("nov_3_swordman",40)
 						getitem(Cargo_Free_Ticket,5)
 						getitem(Warp_Free_Ticket,5)
 						getitem(Adventure_Suit,1)
@@ -7674,7 +7668,7 @@ function new_1_4_Final_Tutor_10029()
 			dialog(""..name..".")
 			dialog "Fare well."
 			wait()
-			setitem(nov_3_swordman,40)
+			setvar("nov_3_swordman",40)
 			if ((startmap > 0) and (startmap < 2)) then
 				checkpoint("prontera",117,72)
 				moveto("prt_fild08",170,371)
@@ -7703,7 +7697,7 @@ function new_1_4_Final_Tutor_10029()
 			close()
 		end
 		close()
-	elseif (getvar(nov_3_swordman) == 40) then
+	elseif (getvar("nov_3_swordman") == 40) then
 		dialog "[Hanson]"
 		dialog "Hmmm...?"
 		dialog "Why are you"
@@ -7768,11 +7762,11 @@ function new_1_4_Final_Tutor_10029()
 	end
 end
 
-npc("new_1-4","Bruce",SPRITE_1_M_LIBRARYMASTER,91,22,100,4,0,0,new_1_4_Bruce_9122)
+npc("new_1-4","Bruce",SPRITE_1_M_LIBRARYMASTER,91,22,4,0,0,"new_1_4_Bruce_9122")
 function new_1_4_Bruce_9122()
-	local name = PcName
+	local name = getvar(VAR_CHARACTERNAME)
 	if (getvar(VAR_JOB) == NOVICE) then
-		if (getvar(nov_3_swordman) == 20) then
+		if (getvar("nov_3_swordman") == 20) then
 			dialog "[Bruce]"
 			dialog "Let me explain the"
 			dialog "First Job Classes"
@@ -7832,7 +7826,7 @@ function new_1_4_Bruce_9122()
 					dialog "Second Job Class, Swordmen can"
 					dialog "change their jobs to ^A62A2AKnights^000000 or"
 					dialog "^A62A2ACrusaders^000000."
-					setitem(nov_3_swordman,20)
+					setvar("nov_3_swordman",20)
 					wait()
 				elseif mresult == 2 then
 					dialog "[Bruce]"
@@ -7864,7 +7858,7 @@ function new_1_4_Bruce_9122()
 					dialog "When advancing to the Second Job"
 					dialog "Class, Mages can change their jobs"
 					dialog "to ^A62A2AWizards^000000 or ^A62A2ASages^000000."
-					setitem(nov_3_swordman,20)
+					setvar("nov_3_swordman",20)
 					wait()
 				elseif mresult == 3 then
 					dialog "[Bruce]"
@@ -7895,7 +7889,7 @@ function new_1_4_Bruce_9122()
 					dialog "male Archers may advance to become"
 					dialog "^A62A2ABards^000000, and female Archers may"
 					dialog "become ^A62A2ADancers^000000."
-					setitem(nov_3_swordman,20)
+					setvar("nov_3_swordman",20)
 					wait()
 				elseif mresult == 4 then
 					dialog "[Bruce]"
@@ -7925,7 +7919,7 @@ function new_1_4_Bruce_9122()
 					dialog "When advancing to the Second Job"
 					dialog "Class, Merchants can change their"
 					dialog "jobs to ^A62A2ABlacksmiths^000000 or ^A62A2AAlchemists^000000."
-					setitem(nov_3_swordman,20)
+					setvar("nov_3_swordman",20)
 					wait()
 				elseif mresult == 5 then
 					dialog "[Bruce]"
@@ -7946,7 +7940,7 @@ function new_1_4_Bruce_9122()
 					dialog "When advancing to the Second Job"
 					dialog "Class, Thieves can change their"
 					dialog "jobs to ^A62A2AAssassins^000000 or ^A62A2ARogues^000000."
-					setitem(nov_3_swordman,20)
+					setvar("nov_3_swordman",20)
 					wait()
 				elseif mresult == 6 then
 					dialog "[Bruce]"
@@ -7968,7 +7962,7 @@ function new_1_4_Bruce_9122()
 					dialog "When advancing to the Second Job"
 					dialog "Class, Acolytes can change their"
 					dialog "jobs to ^A62A2APriests^000000 or ^A62A2AMonks^000000."
-					setitem(nov_3_swordman,20)
+					setvar("nov_3_swordman",20)
 					wait()
 				elseif mresult == 7 then
 					dialog "[Bruce]"
@@ -7987,7 +7981,7 @@ function new_1_4_Bruce_9122()
 				end
 			end
 			close()
-		elseif (getvar(nov_3_swordman) == 40) then
+		elseif (getvar("nov_3_swordman") == 40) then
 			dialog "[Bruce]"
 			dialog "I'm sorry, but I can no longer help you."
 			dialog "'Hanson' is waiting for you, please go see him."
@@ -8075,7 +8069,7 @@ function new_1_4_Bruce_9122()
 					dialog "Second Job Class, Swordmen can"
 					dialog "change their jobs to ^A62A2AKnights^000000 or"
 					dialog "^A62A2ACrusaders^000000."
-					setitem(nov_3_swordman,20)
+					setvar("nov_3_swordman",20)
 					wait()
 				elseif mresult == 2 then
 					dialog "[Bruce]"
@@ -8107,7 +8101,7 @@ function new_1_4_Bruce_9122()
 					dialog "When advancing to the Second Job"
 					dialog "Class, Mages can change their jobs"
 					dialog "to ^A62A2AWizards^000000 or ^A62A2ASages^000000."
-					setitem(nov_3_swordman,20)
+					setvar("nov_3_swordman",20)
 					wait()
 				elseif mresult == 3 then
 					dialog "[Bruce]"
@@ -8138,7 +8132,7 @@ function new_1_4_Bruce_9122()
 					dialog "male Archers may advance to become"
 					dialog "^A62A2ABards^000000, and female Archers may"
 					dialog "become ^A62A2ADancers^000000."
-					setitem(nov_3_swordman,20)
+					setvar("nov_3_swordman",20)
 					wait()
 				elseif mresult == 4 then
 					dialog "[Bruce]"
@@ -8168,7 +8162,7 @@ function new_1_4_Bruce_9122()
 					dialog "When advancing to the Second Job"
 					dialog "Class, Merchants can change their"
 					dialog "jobs to ^A62A2ABlacksmiths^000000 or ^A62A2AAlchemists^000000."
-					setitem(nov_3_swordman,20)
+					setvar("nov_3_swordman",20)
 					wait()
 				elseif mresult == 5 then
 					dialog "[Bruce]"
@@ -8189,7 +8183,7 @@ function new_1_4_Bruce_9122()
 					dialog "When advancing to the Second Job"
 					dialog "Class, Thieves can change their"
 					dialog "jobs to ^A62A2AAssassins^000000 or ^A62A2ARogues^000000."
-					setitem(nov_3_swordman,20)
+					setvar("nov_3_swordman",20)
 					wait()
 				elseif mresult == 6 then
 					dialog "[Bruce]"
@@ -8211,7 +8205,7 @@ function new_1_4_Bruce_9122()
 					dialog "When advancing to the Second Job"
 					dialog "Class, Acolytes can change their"
 					dialog "jobs to ^A62A2APriests^000000 or ^A62A2AMonks^000000."
-					setitem(nov_3_swordman,20)
+					setvar("nov_3_swordman",20)
 					wait()
 				elseif mresult == 7 then
 					dialog "[Bruce]"
