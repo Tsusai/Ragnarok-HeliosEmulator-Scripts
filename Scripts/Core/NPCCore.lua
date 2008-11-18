@@ -1,5 +1,5 @@
 ----------------------------------------------------------
---Core.lua                                              --
+--NPCCore.lua                                              --
 ----------------------------------------------------------
 
 -- This file loads the common constants and functions and

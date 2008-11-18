@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+-Rev 77-
+[2008/11/17] Tsusai - Renamed Core.lua to NPCCore.lua. Requires Core 629
+-
+
 -Rev 76-
 [2008/10/24] RabidCh - Some more fixes in novice_1.lua, disabled some job scripts.
 [2008/10/24] RabidCh - Some of the scripting should really be getting finalized now.
