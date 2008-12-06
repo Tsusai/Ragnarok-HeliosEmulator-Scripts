@@ -18,7 +18,7 @@
 --|      All item code is commented out             |--
 --|      untill the code is in Helios               |--
 --\_________________________________________________/--
-
+ 
 npc("prontera","Smile Assistance",SPRITE_4_F_03,157,187,4,4,5,"prontera_Smile_Assistance_157187")
 function prontera_Smile_Assistance_157187()
 	dialog "[Smile Girl]"
