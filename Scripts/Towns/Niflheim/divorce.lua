@@ -35,7 +35,7 @@ function nif_in_Deviruchi_190112()
 		dialog "I hear that my kind is very"
 		dialog "popular nowadays, heh heh~"
 		close()
-	elseif (GetVar(VAR_ISMARRIED)) == 0 then
+	elseif getvar(VAR_ISMARRIED) == 0 then
 		dialog "[Deviruchi]"
 		dialog "Bwah hah hah~!"
 		dialog "That look in your eyes~!"

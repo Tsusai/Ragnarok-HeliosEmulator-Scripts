@@ -53,7 +53,7 @@ if getvar("molgenstain") == 2 then
 			dialog "it when you adventurers"
 			dialog "just shut up and space out..."
 			close()
-	end
+		end
 	return
 end
 
@@ -128,9 +128,9 @@ wait()
 			dialog "see ya 'round. Take"
 			dialog "care of yourself, 'kay?"
 			close()
-	end
+		end
 	return
-end
+--end
 
 --if getvar(Karvodailnirol) > 0 then
 	local mresulta = menu("Talk","Talk about Karvodailnirol","Cancel")
@@ -272,7 +272,7 @@ end
 			--close()
 	--end
 	return
-end
+--end
 
 local mresulta = menu("Talk","Cancel")
 	if mresulta == 1 then

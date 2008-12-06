@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+- Rev 78 -
+[2008/12/05] Aeomin - Random changes
+-
+
 -Rev 77-
 [2008/11/17] Tsusai - Renamed Core.lua to NPCCore.lua. Requires Core 629
 -
