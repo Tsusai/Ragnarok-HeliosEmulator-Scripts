@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+- Rev 79 -
+[2008/12/07] Aeomin - Added create instance sample.
+-
+
 - Rev 78 -
 [2008/12/05] Aeomin - Random changes
 -
