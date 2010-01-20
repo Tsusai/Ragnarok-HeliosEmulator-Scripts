@@ -12,6 +12,8 @@
 --|   -First Version for Helios  [Spre]             |--
 --| 28/09/2008                                      |--
 --|   -Added all First Class Jobs                   |--
+--| 20/01/2010                                      |--
+--|   -Added Part 1 of Valkyrie.lua                 |--
 --|-------------------------------------------------|--
 --| Credits: Gravity                                |--
 --|          Yaros                                  |--
@@ -23,12 +25,14 @@
 
 
 require("Scripts/Job/Novice/novice_1")
---require("Scripts/Job/1st/job_acolyte/npc")
---require("Scripts/Job/1st/job_archer/npc")
---require("Scripts/Job/1st/job_magician/npc")
---Rrequires an overhaul
---require("Scripts/Job/1st/job_merchant/npc")
---[[require("Scripts/Job/1st/job_swordman/npc")
+--Isn't Done yet... Probably require new script commands...
+--require("Scripts/Job/valkyrie") --Transcendant Job Quest. 1 part of 3 finished.
+--requires an overhaul
+--[[require("Scripts/Job/1st/job_acolyte/npc")
+require("Scripts/Job/1st/job_archer/npc")
+require("Scripts/Job/1st/job_magician/npc")
+require("Scripts/Job/1st/job_merchant/npc")
+require("Scripts/Job/1st/job_swordman/npc")
 require("Scripts/Job/1st/job_swordman/mob")
 require("Scripts/Job/1st/job_swordman/1-1/npc")
 require("Scripts/Job/1st/job_swordman/1-1/link")
@@ -38,4 +42,5 @@ require("Scripts/Job/1st/job_swordman/3-1/npc")
 require("Scripts/Job/1st/job_swordman/3-1/link")
 require("Scripts/Job/1st/job_thief/npc")
 require("Scripts/Job/1st/job_thief/link")
-require("Scripts/Job/1st/job_thief/mob")]]--
+require("Scripts/Job/1st/job_thief/mob")
+]]--
