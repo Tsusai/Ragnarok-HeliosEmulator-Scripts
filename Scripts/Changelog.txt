@@ -15,6 +15,10 @@ Developers & Contributers
 
 --------------------------------------------------------------------------------
 
+- Rev 82 -
+[2010/01/20] Spre - Another Update to The trans Quest. Added the variables. Metheus_Sylphe Should load and function.
+-
+
 - Rev 81 -
 [2010/01/20] Spre - Silly me Forgot to save the changelog :P
 -
